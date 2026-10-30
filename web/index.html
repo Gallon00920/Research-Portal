@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AID Research Panel | Junson Capital</title>
-<link rel="stylesheet" href="app.css?v=12">
+<link rel="stylesheet" href="app.css?v=13">
 </head>
 <body>
 
@@ -215,6 +215,12 @@
     <div class="ov-head"><b data-i18n="gh_token_title"></b><button type="button" id="tokenClose" data-i18n="close"></button></div>
     <form class="form" id="tokenForm">
       <p class="hint" data-i18n="gh_token_hint"></p>
+      <ol class="hint steps">
+        <li data-i18n="gh_step1"></li>
+        <li data-i18n="gh_step2"></li>
+        <li data-i18n="gh_step3"></li>
+      </ol>
+      <p class="hint"><a id="tokenNewLink" target="_blank" rel="noopener" hidden data-i18n="gh_new_token"></a></p>
       <div class="grid2">
         <label class="span2"><span data-i18n="gh_token"></span><input type="password" id="tokenInput" autocomplete="off" placeholder="github_pat_…" required></label>
       </div>
@@ -226,8 +232,8 @@
 <div class="toast" id="toast" role="status"></div>
 
 <script src="config.js"></script>
-<script src="i18n.js?v=12"></script>
-<script src="static_data.js?v=12"></script>
-<script src="app.js?v=12"></script>
+<script src="i18n.js?v=13"></script>
+<script src="static_data.js?v=13"></script>
+<script src="app.js?v=13"></script>
 </body>
 </html>

@@ -913,7 +913,14 @@ function wire(){
   let tokenResolve = null;
   DL.setTokenPrompt(() => new Promise(resolve => { tokenResolve = resolve; $('tokenInput').value = ''; $('tokenMsg').textContent = ''; $('tokenOverlay').classList.add('open'); $('tokenInput').focus(); }));
   const closeToken = (val) => { $('tokenOverlay').classList.remove('open'); unlockScroll(); if (tokenResolve){ tokenResolve(val || ''); tokenResolve = null; } };
-  $('tokenForm').addEventListener('submit', ev => { ev.preventDefault(); const v = $('tokenInput').value.trim(); if (!v) return; DL.setToken(v); closeToken(v); });
+  $('tokenForm').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const v = $('tokenInput').value.trim(); if (!v) return;
+    const msg = $('tokenMsg'); msg.className = 'form-msg'; msg.textContent = '…';
+    try { if (DL.checkToken) await DL.checkToken(v); DL.setToken(v); msg.textContent = ''; closeToken(v); }
+    catch (e) { msg.className = 'form-msg err'; msg.textContent = e.message; }
+  });
+  if (DL.tokenUrl){ const a = $('tokenNewLink'); if (a){ a.href = DL.tokenUrl(); a.hidden = false; } }
   $('tokenClose').addEventListener('click', () => closeToken(''));
   $('tokenBtn').addEventListener('click', () => { $('tokenInput').value = DL.token ? DL.token() : ''; $('tokenMsg').textContent = ''; $('tokenOverlay').classList.add('open'); });
   document.addEventListener('keydown', e => {

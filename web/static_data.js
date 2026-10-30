@@ -86,9 +86,32 @@ window.DataLayer = (function(){
     const t = await ensureToken();
     const r = await fetch(GH + path, {method, headers: {Authorization: 'Bearer ' + t, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28', 'Content-Type': 'application/json'}, body: body ? JSON.stringify(body) : undefined});
     let data = null; try { data = await r.json(); } catch (e) {}
-    if (r.status === 401 || r.status === 403){ setToken(''); throw new Error('GitHub rejected the token (' + r.status + '): ' + ((data && data.message) || '')); }
+    if (r.status === 401 || r.status === 403 || (r.status === 404 && method !== 'GET')){
+      const msg = (data && data.message) || '';
+      setToken('');
+      throw Object.assign(new Error(tokenHelp(msg, r.status)), {tokenProblem: true});
+    }
     if (!r.ok) throw new Error('GitHub ' + r.status + ': ' + ((data && data.message) || path));
     return data;
+  }
+  function tokenHelp(msg, status){
+    return 'GitHub refused the token (' + status + (msg ? ': ' + msg : '') + '). ' +
+      'The token must be a fine-grained token with Repository access = "Only select repositories → ' + cfg.repo.split('/')[1] +
+      '" and Repository permissions → Contents = "Read and write". ' +
+      '令牌必须是 fine-grained token，Repository access 选择 “Only select repositories → ' + cfg.repo.split('/')[1] + '”，并把 Contents 权限设为 “Read and write”。';
+  }
+  /* verify a pasted token can read and write this repository */
+  async function checkToken(tok){
+    const h = {Authorization: 'Bearer ' + tok, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'};
+    const r = await fetch(GH + '/repos/' + cfg.repo, {headers: h});
+    let data = null; try { data = await r.json(); } catch (e) {}
+    if (!r.ok) throw new Error(tokenHelp((data && data.message) || '', r.status));
+    const perms = data.permissions || {};
+    if (!perms.push) throw new Error(tokenHelp('the token owner has no push access to this repository', r.status));
+    // a fine-grained token without Contents:write still answers the repo call; probe the write path with a harmless GET
+    const c = await fetch(GH + '/repos/' + cfg.repo + '/contents/ops/.gitkeep?ref=' + cfg.branch, {headers: h});
+    if (c.status === 403 || c.status === 401){ let d = null; try { d = await c.json(); } catch (e) {} throw new Error(tokenHelp((d && d.message) || '', c.status)); }
+    return true;
   }
   async function putFile(path, bytes, message){
     let sha;
@@ -172,8 +195,9 @@ window.DataLayer = (function(){
       return {pending: true, sectors: list};
     },
     setTokenPrompt(fn){ askToken = fn; },
-    token, setToken,
+    token, setToken, checkToken,
     actionsUrl(){ return 'https://github.com/' + cfg.repo + '/actions'; },
+    tokenUrl(){ return 'https://github.com/settings/personal-access-tokens/new'; },
   };
 
   /* ------------------------------------------------------------ API backend (local python server) */
