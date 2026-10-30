@@ -1,0 +1,14 @@
+# Render.com blueprint: creates a web service with a persistent disk for the uploaded reports.
+services:
+  - type: web
+    name: research-portal
+    runtime: docker
+    plan: starter
+    autoDeploy: true
+    disk:
+      name: reports
+      mountPath: /app/data/reports
+      sizeGB: 5
+    envVars:
+      - key: PORT
+        value: "8765"

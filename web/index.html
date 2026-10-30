@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AID Research Panel | Junson Capital</title>
+<link rel="stylesheet" href="app.css?v=10">
+</head>
+<body>
+
+<div class="hdr" id="hdr">
+<header class="topbar">
+  <div class="topbar-in">
+    <button type="button" class="brand" id="brandBtn"><b>JUNSON CAPITAL</b><span>AID RESEARCH</span></button>
+    <div class="searchwrap" id="searchWrap">
+      <input id="q" type="search" data-ph="search_ph" aria-label="search">
+      <button id="qbtn" type="button" data-i18n="search"></button>
+    </div>
+    <div class="top-actions">
+      <button type="button" class="toggle mini" id="langToggle" aria-label="interface language"><span>English</span><span>简体中文</span><i class="knob"></i></button>
+    </div>
+  </div>
+</header>
+<nav class="mainnav" aria-label="sectors">
+  <div class="mainnav-in" id="mainnav"></div>
+</nav>
+</div>
+
+<!-- ═══════ dashboard ═══════ -->
+<div id="view-dash" hidden>
+  <div class="hero tall">
+    <div class="hero-txt">
+      <h1 data-i18n="dash_title"></h1>
+      <p data-i18n="dash_sub"></p>
+    </div>
+  </div>
+  <div class="shell dash">
+    <div class="doc-card dash-grid">
+      <div class="dash-main">
+        <div class="sec-head">
+          <h2 data-i18n="sectors"></h2>
+          <button type="button" class="btn ghost small" id="manageSectorsBtn" data-i18n="manage_sectors"></button>
+        </div>
+        <div class="sector-cards" id="sectorCards"></div>
+      </div>
+      <aside class="dash-side">
+        <h2 data-i18n="latest_uploads"></h2>
+        <div id="dashRecent" class="recent-list"></div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════ report reader (also the sector page) ═══════ -->
+<div id="view-art" hidden>
+  <div class="hero" aria-hidden="true"></div>
+  <div class="shell">
+    <div class="doc-card">
+      <div class="doc-head">
+        <div class="crumbs">
+          <button type="button" class="back" id="backBtn">‹ <span data-i18n="dashboard"></span></button>
+          <span class="path" id="crumbPath"></span>
+          <button type="button" class="icon-btn" id="secEditBtn" data-title="edit_sector">✎</button>
+          <div class="pickers" id="pickers">
+            <label><span data-i18n="f_year"></span><select id="pYear"></select></label>
+            <label><span data-i18n="f_quarter"></span><select id="pQuarter"></select></label>
+            <span class="pick-count" id="pickCount"></span>
+          </div>
+          <div class="switches">
+            <button type="button" class="toggle" id="typeToggle" aria-label="full or summary"><span data-i18n="full"></span><span data-i18n="summary"></span><i class="knob"></i></button>
+            <button type="button" class="toggle" id="docLangToggle" aria-label="report language"><span>EN</span><span>中文</span><i class="knob"></i></button>
+            <button type="button" class="btn primary small" id="uploadBtn">⬆ <span data-i18n="upload_report"></span></button>
+          </div>
+        </div>
+        <div class="title-row" id="titleRow">
+          <h1 class="doc-title"><span id="docTitle"></span><span class="q" id="qBadge"></span></h1>
+          <div class="doc-meta" id="docMeta"></div>
+          <div class="tagrow" id="tagRow"></div>
+        </div>
+      </div>
+      <div class="toolbar" id="toolbar">
+        <button type="button" id="exBtn"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M7 15v-4m5 4V9m5 6v-6"/></svg><span id="exBtnLabel"></span></button>
+        <button type="button" class="only-m" id="tocBtn"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h10"/></svg><span data-i18n="contents"></span></button>
+        <button type="button" id="copyBtn"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1 0l2.4-2.4a5 5 0 0 0-7.1-7.1L11 5"/><path d="M14 11a5 5 0 0 0-7.1 0l-2.4 2.4a5 5 0 0 0 7.1 7.1L13 19"/></svg><span data-i18n="copy_link"></span></button>
+        <button type="button" id="dlBtn"><svg viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M4 21h16"/></svg><span data-i18n="download_source"></span></button>
+        <button type="button" id="printBtn"><svg viewBox="0 0 24 24"><path d="M6 9V3h12v6M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2M6 14h12v7H6z"/></svg><span data-i18n="print"></span></button>
+        <button type="button" id="editBtn"><svg viewBox="0 0 24 24"><path d="M4 20h4l10-10-4-4L4 16v4zM13 7l4 4"/></svg><span data-i18n="edit"></span></button>
+        <button type="button" id="delBtn" class="danger"><svg viewBox="0 0 24 24"><path d="M4 7h16M9 7V4h6v3m-7 4v7m4-7v7M6 7l1 13h10l1-13"/></svg><span data-i18n="delete"></span></button>
+        <button type="button" id="topBtn2"><svg viewBox="0 0 24 24"><path d="M12 19V5m-6 6 6-6 6 6"/></svg><span data-i18n="back_top"></span></button>
+      </div>
+      <div class="doc-grid" id="docGrid">
+        <aside class="rail" id="rail">
+          <h2 data-i18n="contents"></h2>
+          <nav id="railTree"></nav>
+        </aside>
+        <article class="art" id="art"></article>
+        <aside class="side">
+          <div class="morebox">
+            <h2 data-i18n="exhibit_index"></h2>
+            <div id="sideExhibits" class="side-ex"></div>
+          </div>
+        </aside>
+      </div>
+      <div class="empty-reader" id="emptyReader" hidden>
+        <div class="notice" id="emptyNotice"></div>
+        <div class="notice-actions">
+          <button type="button" class="btn ghost" id="emptyAlt" hidden></button>
+          <button type="button" class="btn primary" id="emptyUpload">⬆ <span data-i18n="upload_report"></span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="dash-footer">
+  <span>© 2026 Junson Capital · AID Research</span>
+  <span data-i18n="internal_only"></span>
+</footer>
+
+<!-- lightbox with zoom -->
+<div class="lightbox" id="lb" role="dialog" aria-modal="true">
+  <div class="lb-top">
+    <span class="cap" id="lbCap"></span>
+    <span class="lb-count" id="lbCount"></span>
+    <button type="button" id="lbZoomOut" title="-">−</button>
+    <span class="lb-zoom" id="lbZoom">100%</span>
+    <button type="button" id="lbZoomIn" title="+">+</button>
+    <button type="button" id="lbFit" data-i18n="fit"></button>
+    <button type="button" id="lbGoto" data-i18n="view_in_text"></button>
+    <button type="button" id="lbClose" data-i18n="close"></button>
+  </div>
+  <div class="lb-img" id="lbStage">
+    <img id="lbImg" alt="" draggable="false">
+    <button type="button" class="lb-arrow prev" id="lbPrev" aria-label="previous">‹</button>
+    <button type="button" class="lb-arrow next" id="lbNext" aria-label="next">›</button>
+  </div>
+  <div class="lb-hint" data-i18n="lb_hint"></div>
+</div>
+
+<!-- upload / edit modal -->
+<div class="overlay" id="upOverlay" role="dialog" aria-modal="true">
+  <div class="ov-panel narrow">
+    <div class="ov-head"><b id="upTitle"></b><button type="button" id="upClose" data-i18n="close"></button></div>
+    <form class="form" id="upForm">
+      <div class="drop" id="drop">
+        <input type="file" id="upFile" accept=".docx,.pdf">
+        <div class="drop-txt"><b data-i18n="drop_here"></b><span data-i18n="drop_types"></span></div>
+        <div class="drop-file" id="dropFile"></div>
+      </div>
+      <div class="grid2">
+        <label><span data-i18n="u_sector"></span><select id="upSector" required></select></label>
+        <label><span data-i18n="u_nature"></span><select id="upNature"></select></label>
+        <label><span data-i18n="u_lang"></span><select id="upLang"></select></label>
+        <label><span data-i18n="u_year"></span><input type="number" id="upYear" min="2000" max="2100" required></label>
+        <label><span data-i18n="u_quarter"></span><select id="upQuarter"></select></label>
+        <label><span data-i18n="u_title"></span><input type="text" id="upTitleIn" data-ph="u_title_ph"></label>
+        <label><span data-i18n="u_keywords"></span><input type="text" id="upKeywords" data-ph="u_keywords_ph"></label>
+      </div>
+      <div class="form-foot">
+        <span class="form-msg" id="upMsg"></span>
+        <button type="button" class="btn ghost" id="upCancel" data-i18n="cancel"></button>
+        <button type="submit" class="btn primary" id="upSubmit" data-i18n="upload"></button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- manage sectors -->
+<div class="overlay" id="secOverlay" role="dialog" aria-modal="true">
+  <div class="ov-panel narrow">
+    <div class="ov-head"><b data-i18n="manage_sectors"></b><button type="button" id="secClose" data-i18n="close"></button></div>
+    <div class="maint-body">
+      <p class="hint" data-i18n="order_hint"></p>
+      <div id="secList" class="sec-list"></div>
+      <form class="form inline" id="secForm">
+        <h3 class="form-title" id="secFormTitle"></h3>
+        <input type="hidden" id="sId">
+        <div class="grid2">
+          <label><span data-i18n="s_name_en"></span><input type="text" id="sNameEn" required></label>
+          <label><span data-i18n="s_name_cn"></span><input type="text" id="sNameCn"></label>
+          <label><span data-i18n="s_code"></span><input type="text" id="sCode" maxlength="4"></label>
+          <label><span data-i18n="s_region"></span><input type="text" id="sRegion"></label>
+          <label class="span2"><span data-i18n="s_coverage_en"></span><input type="text" id="sCovEn" data-ph="s_cov_ph"></label>
+          <label class="span2"><span data-i18n="s_coverage_cn"></span><input type="text" id="sCovCn" data-ph="s_cov_ph"></label>
+        </div>
+        <div class="form-foot">
+          <span class="form-msg" id="secMsg"></span>
+          <button type="button" class="btn ghost" id="secCancelEdit" data-i18n="cancel" hidden></button>
+          <button type="submit" class="btn primary" id="secSubmit"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="i18n.js?v=10"></script>
+<script src="app.js?v=10"></script>
+</body>
+</html>

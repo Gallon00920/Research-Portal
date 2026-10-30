@@ -1,0 +1,90 @@
+[
+  {
+    "id": "private_credit",
+    "code": "PC",
+    "name_en": "Private Credit",
+    "name_cn": "私募信贷",
+    "region": "North America",
+    "coverage_en": [
+      "Private credit",
+      "Direct lending",
+      "BDC",
+      "MM CLO"
+    ],
+    "coverage_cn": [
+      "私募信贷",
+      "直接贷款",
+      "商业发展公司 BDC",
+      "中型市场贷款抵押债券 MM CLO"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "private_equity",
+    "code": "PE",
+    "name_en": "Private Equity",
+    "name_cn": "私募股权",
+    "region": "Global",
+    "coverage_en": [
+      "私募股权"
+    ],
+    "coverage_cn": [
+      "私募股权"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "software_otf",
+    "code": "SW",
+    "name_en": "Software & OTF",
+    "name_cn": "软件与科技融资",
+    "region": "Global",
+    "coverage_en": [
+      "Software",
+      "Technology lending",
+      "OTF / BDC"
+    ],
+    "coverage_cn": [
+      "软件",
+      "科技贷款",
+      "OTF / BDC"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "infrastructure",
+    "code": "INF",
+    "name_en": "Infrastructure",
+    "name_cn": "基础设施",
+    "region": "Global",
+    "coverage_en": [
+      "Infrastructure debt",
+      "Energy transition",
+      "Digital infra"
+    ],
+    "coverage_cn": [
+      "基础设施债务",
+      "能源转型",
+      "数字基础设施"
+    ],
+    "status": "active"
+  },
+  {
+    "id": "aviation",
+    "code": "AVI",
+    "name_en": "Aviation",
+    "name_cn": "航空",
+    "region": "Global",
+    "coverage_en": [
+      "Aircraft leasing",
+      "Aviation finance",
+      "Aerospace"
+    ],
+    "coverage_cn": [
+      "飞机租赁",
+      "航空金融",
+      "航空航天"
+    ],
+    "status": "active"
+  }
+]

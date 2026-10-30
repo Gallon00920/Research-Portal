@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "research-panel",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["backend/server.py"],
+      "port": 8765
+    }
+  ]
+}
