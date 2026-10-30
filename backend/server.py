@@ -11,17 +11,22 @@ No database: every report lives in data/reports/<id>/ as
 """
 from __future__ import annotations
 
+import hashlib
+import hmac
 import json
+import os
 import re
+import secrets
 import shutil
 import sys
+import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
-from fastapi import FastAPI, File, Form, HTTPException, UploadFile
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 from fastapi.staticfiles import StaticFiles
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -47,6 +52,78 @@ DEFAULT_SECTORS = [
 ]
 
 app = FastAPI(title="AID Research Panel")
+
+# ------------------------------------------------------------------- login
+# Set PANEL_PASSWORD to require a shared password (recommended for any public URL).
+# Without it the site is open, which is fine on a laptop at http://127.0.0.1.
+PANEL_PASSWORD = os.environ.get("PANEL_PASSWORD", "").strip()
+SECRET_KEY = os.environ.get("SECRET_KEY", "").strip() or hashlib.sha256(("aid-panel:" + PANEL_PASSWORD).encode()).hexdigest()
+SESSION_COOKIE = "aid_session"
+SESSION_DAYS = 30
+PUBLIC_PATHS = {"/login.html", "/api/login", "/api/health"}
+
+
+def auth_enabled() -> bool:
+    return bool(PANEL_PASSWORD)
+
+
+def make_token() -> str:
+    exp = str(int(time.time()) + SESSION_DAYS * 86400)
+    sig = hmac.new(SECRET_KEY.encode(), ("ok:" + exp).encode(), hashlib.sha256).hexdigest()
+    return exp + "." + sig
+
+
+def token_ok(token: str | None) -> bool:
+    if not token or "." not in token:
+        return False
+    exp, sig = token.split(".", 1)
+    if not exp.isdigit() or int(exp) < time.time():
+        return False
+    good = hmac.new(SECRET_KEY.encode(), ("ok:" + exp).encode(), hashlib.sha256).hexdigest()
+    return hmac.compare_digest(good, sig)
+
+
+def is_https(request: Request) -> bool:
+    return request.url.scheme == "https" or request.headers.get("x-forwarded-proto", "").lower() == "https"
+
+
+@app.middleware("http")
+async def require_login(request: Request, call_next):
+    if not auth_enabled():
+        return await call_next(request)
+    path = request.url.path
+    if path in PUBLIC_PATHS or token_ok(request.cookies.get(SESSION_COOKIE)):
+        return await call_next(request)
+    if path.startswith("/api/"):
+        return JSONResponse({"error": "login required"}, status_code=401)
+    if path.endswith((".css", ".js", ".png", ".ico", ".svg")):
+        return await call_next(request)
+    return RedirectResponse("/login.html", status_code=302)
+
+
+@app.post("/api/login")
+async def api_login(request: Request, payload: dict[str, Any]):
+    if not auth_enabled():
+        return {"ok": True}
+    given = str(payload.get("password", ""))
+    if not hmac.compare_digest(given.encode(), PANEL_PASSWORD.encode()):
+        time.sleep(0.8)  # slow down guessing
+        raise HTTPException(401, "wrong password")
+    resp = JSONResponse({"ok": True})
+    resp.set_cookie(SESSION_COOKIE, make_token(), max_age=SESSION_DAYS * 86400, httponly=True, samesite="lax", secure=is_https(request))
+    return resp
+
+
+@app.post("/api/logout")
+def api_logout():
+    resp = JSONResponse({"ok": True})
+    resp.delete_cookie(SESSION_COOKIE)
+    return resp
+
+
+@app.get("/api/health")
+def api_health():
+    return {"ok": True, "auth": auth_enabled()}
 
 
 # ----------------------------------------------------------------- utilities
@@ -390,7 +467,7 @@ def api_meta():
     y, q = current_quarter()
     metas = all_meta()
     years = sorted({m["year"] for m in metas} | {y}, reverse=True)
-    return {"current_year": y, "current_quarter": q, "years": years, "report_count": len(metas)}
+    return {"current_year": y, "current_quarter": q, "years": years, "report_count": len(metas), "auth": auth_enabled()}
 
 
 # -------------------------------------------------------------------- static
@@ -414,4 +491,6 @@ app.mount("/", StaticFiles(directory=str(WEB), html=True), name="web")
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("server:app", host="127.0.0.1", port=8765, reload=False, app_dir=str(ROOT / "backend"))
+    if not auth_enabled():
+        print("PANEL_PASSWORD is not set: the panel is open to anyone who can reach it (fine for local use).")
+    uvicorn.run("server:app", host=os.environ.get("HOST", "127.0.0.1"), port=int(os.environ.get("PORT", "8765")), reload=False, app_dir=str(ROOT / "backend"))

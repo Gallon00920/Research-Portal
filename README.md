@@ -107,12 +107,17 @@ The app is a single Python process, so any container host works. A
 
 1. Push this repository to GitHub.
 2. On <https://render.com> choose **New → Blueprint**, pick the repository,
-   and accept the defaults. Render builds the Docker image, attaches a 5 GB
-   disk at `data/reports` so uploads survive restarts, and gives you a
+   and when asked enter a `PANEL_PASSWORD` (the shared sign-in password).
+   Render builds the Docker image, attaches a 5 GB disk at `data/reports`
+   so uploads survive restarts, and gives you a
    `https://research-portal-….onrender.com` URL.
-3. Anyone with the URL can read **and upload / delete** reports. Put the
-   service behind your company SSO (Render "Access control", Cloudflare
-   Access, or similar) before sharing the link outside the team.
+3. Share the URL and the password with the team. Everyone signs in on
+   `/login.html`; the session cookie lasts 30 days and **Sign out** in the
+   top bar ends it. Change the password in Render → Environment at any
+   time (existing sessions stay valid until `SECRET_KEY` is also rotated).
+
+Locally, `python backend/server.py` runs without a password unless you set
+`PANEL_PASSWORD` in the environment first.
 
 The uploaded reports are never committed to git (`data/reports/` is
 ignored); they live only on the server's disk.

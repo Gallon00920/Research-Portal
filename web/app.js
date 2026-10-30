@@ -37,6 +37,10 @@ function toast(msg){
 }
 async function api(path, opts){
   const r = await fetch(path, opts);
+  if (r.status === 401){
+    location.href = '/login.html?next=' + encodeURIComponent(location.hash);
+    throw new Error('login required');
+  }
   let data = null;
   try { data = await r.json(); } catch (e) { data = null; }
   if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
@@ -109,6 +113,7 @@ function setDocLang(l){
 async function loadAll(){
   const [sectors, reports, meta] = await Promise.all([api('/api/sectors'), api('/api/reports'), api('/api/meta')]);
   state.sectors = sectors; state.reports = reports; state.meta = meta;
+  $('logoutBtn').hidden = !meta.auth;
   buildNav();
 }
 
@@ -842,6 +847,7 @@ function wire(){
   $('brandBtn').addEventListener('click', () => nav('#/'));
   $('backBtn').addEventListener('click', () => nav('#/'));
   $('langToggle').addEventListener('click', () => setLang(state.lang === 'cn' ? 'en' : 'cn'));
+  $('logoutBtn').addEventListener('click', async () => { try { await fetch('/api/logout', {method: 'POST'}); } catch (e) {} location.href = '/login.html'; });
   $('q').addEventListener('input', doSearch);
   const jump = () => { const f = doSearch(); if (f) f.click(); };
   $('q').addEventListener('keydown', e => { if (e.key === 'Enter') jump(); });

@@ -77,6 +77,8 @@ select:focus,input:focus{border-color:var(--blue-500); outline:none}
 .toggle.mini span{color:#C7D9EC; font-size:11.5px; padding:4px 11px}
 .toggle.mini span.on{color:#fff}
 .toggle.mini .knob{top:2px; bottom:2px; left:2px; width:calc(50% - 2px); background:var(--blue-500)}
+.top-link{color:#C7D9EC; font-size:12px; padding:5px 9px; border-radius:3px; white-space:nowrap}
+.top-link:hover{background:rgba(255,255,255,.1); color:#fff}
 .seg.mini{border-color:rgba(255,255,255,.25)}
 .seg.mini button{color:#C7D9EC; font-size:11.5px; padding:4px 9px; border-left-color:rgba(255,255,255,.2)}
 .seg.mini button:not(.on):hover{background:rgba(255,255,255,.1)}
