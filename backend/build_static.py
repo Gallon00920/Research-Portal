@@ -289,8 +289,9 @@ def apply_ops(c: Crypto) -> int:
 def build_index(c: Crypto):
     metas = all_meta(c)
     y = datetime.now().year
+    # no timestamp here: the index must only change when the data changes, so the
+    # workflow does not commit (and conflict) on every run
     index = {
-        "generated": now_iso(),
         "sectors": load_sectors(),
         "reports": metas,
         "meta": {"current_year": y, "current_quarter": (datetime.now().month - 1) // 3 + 1,
