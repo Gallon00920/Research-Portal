@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AID Research Panel | Junson Capital</title>
-<link rel="stylesheet" href="app.css?v=11">
+<link rel="stylesheet" href="app.css?v=12">
 </head>
 <body>
 
@@ -18,6 +18,7 @@
     </div>
     <div class="top-actions">
       <button type="button" class="toggle mini" id="langToggle" aria-label="interface language"><span>English</span><span>简体中文</span><i class="knob"></i></button>
+      <button type="button" class="top-link" id="tokenBtn" data-i18n="gh_token_btn" hidden></button>
       <button type="button" class="top-link" id="logoutBtn" data-i18n="sign_out" hidden></button>
     </div>
   </div>
@@ -194,9 +195,39 @@
   </div>
 </div>
 
+<!-- password prompt (static / encrypted mode) -->
+<div class="overlay" id="loginOverlay" role="dialog" aria-modal="true">
+  <div class="ov-panel narrow">
+    <div class="ov-head"><b data-i18n="sign_in"></b></div>
+    <form class="form" id="loginForm">
+      <p class="hint" data-i18n="login_hint"></p>
+      <div class="grid2">
+        <label class="span2"><span data-i18n="password"></span><input type="password" id="loginPw" autocomplete="current-password" required></label>
+      </div>
+      <div class="form-foot"><span class="form-msg" id="loginMsg"></span><button type="submit" class="btn primary" id="loginSubmit" data-i18n="sign_in"></button></div>
+    </form>
+  </div>
+</div>
+
+<!-- GitHub token prompt (static mode writes) -->
+<div class="overlay" id="tokenOverlay" role="dialog" aria-modal="true">
+  <div class="ov-panel narrow">
+    <div class="ov-head"><b data-i18n="gh_token_title"></b><button type="button" id="tokenClose" data-i18n="close"></button></div>
+    <form class="form" id="tokenForm">
+      <p class="hint" data-i18n="gh_token_hint"></p>
+      <div class="grid2">
+        <label class="span2"><span data-i18n="gh_token"></span><input type="password" id="tokenInput" autocomplete="off" placeholder="github_pat_…" required></label>
+      </div>
+      <div class="form-foot"><span class="form-msg" id="tokenMsg"></span><button type="submit" class="btn primary" data-i18n="save"></button></div>
+    </form>
+  </div>
+</div>
+
 <div class="toast" id="toast" role="status"></div>
 
-<script src="i18n.js?v=11"></script>
-<script src="app.js?v=11"></script>
+<script src="config.js"></script>
+<script src="i18n.js?v=12"></script>
+<script src="static_data.js?v=12"></script>
+<script src="app.js?v=12"></script>
 </body>
 </html>

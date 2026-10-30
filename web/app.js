@@ -35,16 +35,22 @@ function toast(msg){
   n.textContent = msg; n.classList.add('show');
   clearTimeout(n._tm); n._tm = setTimeout(() => n.classList.remove('show'), 2000);
 }
-async function api(path, opts){
-  const r = await fetch(path, opts);
-  if (r.status === 401){
-    location.href = '/login.html?next=' + encodeURIComponent(location.hash);
-    throw new Error('login required');
+const DL = window.DataLayer;
+/* a write in static mode lands as a commit; the site shows it after the workflow rebuilds */
+function afterWrite(res){
+  if (res && res.pending){
+    const n = $('toast'); n.innerHTML = '';
+    n.appendChild(document.createTextNode(t('pending_saved') + ' '));
+    const a = el('a', null, t('view_actions')); a.href = DL.actionsUrl(); a.target = '_blank'; a.style.color = '#9FC4F0';
+    n.appendChild(a);
+    n.classList.add('show'); clearTimeout(n._tm); n._tm = setTimeout(() => n.classList.remove('show'), 9000);
+    return true;
   }
-  let data = null;
-  try { data = await r.json(); } catch (e) { data = null; }
-  if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
-  return data;
+  return false;
+}
+function handleErr(e){
+  if (e && e.needLogin){ if (e.redirect) location.href = e.redirect + '?next=' + encodeURIComponent(location.hash); else showLogin(); return; }
+  toast(e.message || String(e));
 }
 function fmtDate(iso){
   if (!iso) return '—';
@@ -111,9 +117,11 @@ function setDocLang(l){
 
 /* ---------------------------------------------------------------- data */
 async function loadAll(){
-  const [sectors, reports, meta] = await Promise.all([api('/api/sectors'), api('/api/reports'), api('/api/meta')]);
+  const {sectors, reports, meta} = await DL.load();
   state.sectors = sectors; state.reports = reports; state.meta = meta;
   $('logoutBtn').hidden = !meta.auth;
+  $('tokenBtn').hidden = DL.mode !== 'static';
+  $('dlBtn').hidden = !DL.canDownload();
   buildNav();
 }
 
@@ -225,8 +233,8 @@ function renderEmpty(s, period){
 /* ---------------------------------------------------------------- report reader */
 async function renderReport(id, anchor){
   let data;
-  try { data = await api('/api/reports/' + encodeURIComponent(id)); }
-  catch (e) { toast(e.message); nav('#/'); return; }
+  try { data = await DL.report(id); }
+  catch (e) { if (e.needLogin){ handleErr(e); return; } toast(e.message); nav('#/'); return; }
   const meta = data.meta, content = data.content;
   state.docLang = meta.language;
   try { localStorage.setItem('aid_doclang', state.docLang); } catch (e) {}
@@ -318,7 +326,7 @@ function buildPickers(s, meta){
     if (r) nav(hashReport(r.id));
   };
 }
-function imgUrl(name){ return '/api/reports/' + encodeURIComponent(state.reportId) + '/images/' + encodeURIComponent(name); }
+function imgUrl(name){ return DL.imageUrl(state.reportId, name); }
 const CAPTION_LABEL_RE = /^\s*((?:exhibit|figure|fig\.?|chart|table|graph)\s*\d+[A-Za-z]?|(?:图表|图|表|附图|附表)\s*\d+)/i;
 function exhibitLabel(b){
   const m = CAPTION_LABEL_RE.exec(b.caption || '');
@@ -674,25 +682,24 @@ async function submitUpload(ev){
     btn.disabled = true;
     if (state.editing){
       msg.className = 'form-msg'; msg.textContent = '…';
-      const m = await api('/api/reports/' + encodeURIComponent(state.editing.id), {
-        method: 'PUT', headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({sector, year: +year, quarter: +quarter, language, nature, title, keywords}),
-      });
-      closeUpload(); toast(t('save')); await loadAll();
+      const m = await DL.updateReport(state.editing.id, {sector, year: +year, quarter: +quarter, language, nature, title, keywords});
+      closeUpload();
+      if (afterWrite(m)) return;
+      toast(t('save')); await loadAll();
       nav(hashReport(m.id)); route();
       return;
     }
     const f = $('upFile').files[0];
     if (!f){ msg.className = 'form-msg err'; msg.textContent = t('choose_file'); btn.disabled = false; return; }
     msg.className = 'form-msg'; msg.textContent = t('uploading');
-    const fd = new FormData();
-    fd.append('file', f); fd.append('sector', sector); fd.append('year', year); fd.append('quarter', quarter);
-    fd.append('nature', nature); fd.append('language', language); fd.append('title', title); fd.append('keywords', keywords);
-    const m = await api('/api/upload', {method: 'POST', body: fd});
-    closeUpload(); toast(t('upload_ok'));
+    const m = await DL.upload({sector, year, quarter, nature, language, title, keywords}, f);
+    closeUpload();
+    if (afterWrite(m)) return;
+    toast(t('upload_ok'));
     await loadAll();
     nav(hashReport(m.id)); route();
   } catch (e) {
+    if (e.needLogin){ closeUpload(); handleErr(e); return; }
     msg.className = 'form-msg err'; msg.textContent = e.message;
   } finally { btn.disabled = false; }
 }
@@ -710,6 +717,21 @@ function wireUpload(){
 }
 
 /* ---------------------------------------------------------------- sector manager (add / edit / remove) */
+const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status'];
+function cleanSector(s){ const o = {}; SECTOR_KEYS.forEach(k => { if (s[k] !== undefined) o[k] = s[k]; }); if (!o.status) o.status = 'active'; return o; }
+function slugId(name){ return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || ('sector_' + Date.now().toString(36)); }
+/* persist the whole sector list (static mode commits data/sectors.json; API mode diffs) and refresh state */
+async function commitSectors(list){
+  const clean = list.map(cleanSector);
+  const res = await DL.saveSectors(clean);
+  if (res && res.pending){
+    // keep report counts/periods from the current state until the rebuild
+    state.sectors = clean.map(s => Object.assign({}, sectorById(s.id) || {}, s));
+    afterWrite(res);
+  } else {
+    await loadAll();
+  }
+}
 function openSectorManager(editSector){
   renderSectorList();
   fillSectorForm(editSector || null);
@@ -734,11 +756,12 @@ function renderSectorList(){
   const list = $('secList'); list.innerHTML = '';
   const saveOrder = async () => {
     const ids = Array.from(list.querySelectorAll('.sec-row')).map(r => r.dataset.id);
+    const ordered = ids.map(id => sectorById(id)).filter(Boolean);
     try {
-      await api('/api/sectors-order', {method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({order: ids})});
-      await loadAll(); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav();
+      await commitSectors(ordered);
+      renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav();
       toast(t('order_saved'));
-    } catch (e) { toast(e.message); renderSectorList(); }
+    } catch (e) { handleErr(e); renderSectorList(); }
   };
   let dragging = null;
   const clearMarks = () => list.querySelectorAll('.sec-row').forEach(r => r.classList.remove('drop-before', 'drop-after'));
@@ -783,8 +806,8 @@ function renderSectorList(){
     rm.disabled = !!s.report_count; if (s.report_count) rm.title = t('sector_has_reports');
     rm.addEventListener('click', async () => {
       if (!confirm(t('confirm_remove_sector'))) return;
-      try { await api('/api/sectors/' + encodeURIComponent(s.id), {method: 'DELETE'}); await loadAll(); renderSectorList(); if (state.view === 'dash') renderDash(); }
-      catch (e) { toast(e.message); }
+      try { await commitSectors(state.sectors.filter(x => x.id !== s.id)); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav(); }
+      catch (e) { handleErr(e); }
     });
     row.appendChild(rm);
     list.appendChild(row);
@@ -805,13 +828,20 @@ function wireSectorManager(){
       region: $('sRegion').value.trim(), coverage_en: covEn.length ? covEn : covCn, coverage_cn: covCn.length ? covCn : covEn,
     };
     const id = $('sId').value;
+    if (!payload.name_en){ $('secMsg').className = 'form-msg err'; $('secMsg').textContent = t('s_name_en'); return; }
     try {
-      if (id) await api('/api/sectors/' + encodeURIComponent(id), {method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)});
-      else await api('/api/sectors', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(payload)});
+      let list;
+      if (id) list = state.sectors.map(s => s.id === id ? Object.assign({}, s, payload) : s);
+      else {
+        const nid = slugId(payload.name_en);
+        if (sectorById(nid)) throw new Error('sector exists');
+        list = state.sectors.concat([Object.assign({id: nid, status: 'active'}, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || 'Global'})]);
+      }
+      await commitSectors(list);
       $('secMsg').className = 'form-msg ok'; $('secMsg').textContent = t('sector_saved');
-      await loadAll(); renderSectorList(); fillSectorForm(null);
-      if (state.view === 'dash') renderDash(); else route();
-    } catch (e) { $('secMsg').className = 'form-msg err'; $('secMsg').textContent = e.message; }
+      renderSectorList(); fillSectorForm(null);
+      if (state.view === 'dash') renderDash(); else { buildNav(); route(); }
+    } catch (e) { if (e.needLogin) handleErr(e); $('secMsg').className = 'form-msg err'; $('secMsg').textContent = e.message; }
   });
 }
 
@@ -847,7 +877,7 @@ function wire(){
   $('brandBtn').addEventListener('click', () => nav('#/'));
   $('backBtn').addEventListener('click', () => nav('#/'));
   $('langToggle').addEventListener('click', () => setLang(state.lang === 'cn' ? 'en' : 'cn'));
-  $('logoutBtn').addEventListener('click', async () => { try { await fetch('/api/logout', {method: 'POST'}); } catch (e) {} location.href = '/login.html'; });
+  $('logoutBtn').addEventListener('click', async () => { await DL.logout(); if (DL.mode === 'api') location.href = '/login.html'; else location.reload(); });
   $('q').addEventListener('input', doSearch);
   const jump = () => { const f = doSearch(); if (f) f.click(); };
   $('q').addEventListener('keydown', e => { if (e.key === 'Enter') jump(); });
@@ -860,17 +890,35 @@ function wire(){
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(() => toast(t('link_copied')), () => toast(url));
     else toast(url);
   });
-  $('dlBtn').addEventListener('click', () => { if (state.reportId) window.open('/api/reports/' + encodeURIComponent(state.reportId) + '/source', '_blank'); });
+  $('dlBtn').addEventListener('click', () => { if (state.reportId && DL.sourceUrl) window.open(DL.sourceUrl(state.reportId), '_blank'); });
   $('printBtn').addEventListener('click', () => window.print());
   $('editBtn').addEventListener('click', () => { if (state.report) openUpload(state.sectorId, state.report.meta); });
   $('delBtn').addEventListener('click', async () => {
     if (!state.report || !confirm(t('confirm_delete'))) return;
-    try { await api('/api/reports/' + encodeURIComponent(state.reportId), {method: 'DELETE'}); toast(t('deleted')); await loadAll(); nav(hashSector(state.sectorId)); route(); }
-    catch (e) { toast(e.message); }
+    try {
+      const res = await DL.deleteReport(state.reportId);
+      if (afterWrite(res)) return;
+      toast(t('deleted')); await loadAll(); nav(hashSector(state.sectorId)); route();
+    } catch (e) { handleErr(e); }
   });
+  // password prompt (static encrypted mode)
+  $('loginForm').addEventListener('submit', async ev => {
+    ev.preventDefault();
+    const msg = $('loginMsg'); msg.className = 'form-msg'; msg.textContent = '…'; $('loginSubmit').disabled = true;
+    try { await DL.login($('loginPw').value); $('loginOverlay').classList.remove('open'); unlockScroll(); await loadAll(); route(); }
+    catch (e) { msg.className = 'form-msg err'; msg.textContent = t('wrong_password'); }
+    finally { $('loginSubmit').disabled = false; }
+  });
+  // GitHub token prompt (static mode writes)
+  let tokenResolve = null;
+  DL.setTokenPrompt(() => new Promise(resolve => { tokenResolve = resolve; $('tokenInput').value = ''; $('tokenMsg').textContent = ''; $('tokenOverlay').classList.add('open'); $('tokenInput').focus(); }));
+  const closeToken = (val) => { $('tokenOverlay').classList.remove('open'); unlockScroll(); if (tokenResolve){ tokenResolve(val || ''); tokenResolve = null; } };
+  $('tokenForm').addEventListener('submit', ev => { ev.preventDefault(); const v = $('tokenInput').value.trim(); if (!v) return; DL.setToken(v); closeToken(v); });
+  $('tokenClose').addEventListener('click', () => closeToken(''));
+  $('tokenBtn').addEventListener('click', () => { $('tokenInput').value = DL.token ? DL.token() : ''; $('tokenMsg').textContent = ''; $('tokenOverlay').classList.add('open'); });
   document.addEventListener('keydown', e => {
     const lbOpen = $('lb').classList.contains('open');
-    if (e.key === 'Escape'){ if (lbOpen) closeLb(); else { closeUpload(); closeSectorManager(); } }
+    if (e.key === 'Escape'){ if (lbOpen) closeLb(); else { closeUpload(); closeSectorManager(); if ($('tokenOverlay').classList.contains('open')) closeToken(''); } }
     if (lbOpen && e.key === 'ArrowLeft') stepLb(-1);
     if (lbOpen && e.key === 'ArrowRight') stepLb(1);
     if (lbOpen && (e.key === '+' || e.key === '=')) zoomAt(1.25);
@@ -881,14 +929,20 @@ function wire(){
   window.addEventListener('hashchange', () => route());
 }
 
+function showLogin(){
+  $('loginOverlay').classList.add('open'); document.body.style.overflow = 'hidden';
+  setTimeout(() => $('loginPw').focus(), 50);
+}
 async function init(){
   try { const l = localStorage.getItem('aid_lang'); if (l === 'en' || l === 'cn') state.lang = l; } catch (e) {}
   state.docLang = state.lang;
   try { const d = localStorage.getItem('aid_doclang'); if (d === 'en' || d === 'cn') state.docLang = d; } catch (e) {}
   applyI18n();
   wire();
+  await DL.init();
+  if (DL.needsLogin()){ showLogin(); return; }
   try { await loadAll(); }
-  catch (e) { toast(e.message); }
+  catch (e) { handleErr(e); if (e.needLogin) return; }
   route();
 }
 init();

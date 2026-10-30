@@ -1,4 +1,13 @@
 __pycache__/
 *.pyc
-data/reports/
 server.*.log
+site/
+data/_tmp/
+
+# Plaintext report files stay on the machine that parsed them.
+# Only the encrypted copies (bundle.enc, meta.json.enc, index.json.enc) are committed.
+data/reports/*/source.*
+data/reports/*/content.json
+data/reports/*/meta.json
+data/reports/*/images/
+data/index.json
