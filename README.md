@@ -1,5 +1,7 @@
 # AID Research Panel
 
+Live site: <https://gallon00920.github.io/Research-Portal/>
+
 Internal website that visualises AID quarterly research reports by sector.
 Reports are uploaded as `.docx` or `.pdf`, parsed into structured content
 (headings, paragraphs, lists, tables, figures) and displayed in a reader that
