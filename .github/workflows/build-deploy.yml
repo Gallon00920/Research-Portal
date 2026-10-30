@@ -38,7 +38,7 @@ jobs:
       - name: Parse uploads and apply edits
         env:
           PANEL_PASSWORD: ${{ secrets.PANEL_PASSWORD }}
-        run: python backend/build_static.py --apply
+        run: python backend/build_static.py --apply --strip-plain
 
       - name: Commit parsed reports back to the repository
         run: |

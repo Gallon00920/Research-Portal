@@ -1,0 +1,55 @@
+{
+  "id": "software_otf-2026Q3-summary-d85dc786",
+  "title": "OTF 研究报告摘要 — 2026Q3",
+  "sector": "software_otf",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "summary",
+  "language": "cn",
+  "keywords": [
+    "持仓",
+    "非应计",
+    "同业",
+    "操作"
+  ],
+  "source_name": "OTF_2026Q3_Summary_中文版.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-10-30T03:23:41+00:00",
+  "stats": {
+    "blocks": 20,
+    "images": 4,
+    "tables": 4,
+    "chars": 1616
+  },
+  "exhibit_count": 8,
+  "masthead": "JUNSON Capital | Alternative Investment Division",
+  "toc": [
+    {
+      "level": 1,
+      "text": "OTF 关键指标速览"
+    },
+    {
+      "level": 1,
+      "text": "1. Key News（本季关键新闻）"
+    },
+    {
+      "level": 1,
+      "text": "2. Market Trend（行业量化趋势）"
+    },
+    {
+      "level": 1,
+      "text": "3. Impact on Our Portfolio（对持仓的传导）"
+    },
+    {
+      "level": 1,
+      "text": "4. Our Position：评估、Watch List 与操作建议"
+    },
+    {
+      "level": 1,
+      "text": "Watch List（下季核对项与触发线）"
+    }
+  ],
+  "summary": ""
+}

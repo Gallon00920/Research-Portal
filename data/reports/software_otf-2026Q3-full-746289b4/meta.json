@@ -1,0 +1,261 @@
+{
+  "id": "software_otf-2026Q3-full-746289b4",
+  "title": "Software & OTF Quarterly Update — 2026Q2 review, published 17 August 2026",
+  "sector": "software_otf",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "full",
+  "language": "en",
+  "keywords": [
+    "OTF",
+    "PIK",
+    "NAV",
+    "ARCC",
+    "BDC",
+    "NII"
+  ],
+  "source_name": "OTF_2026Q3_OTF.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-10-30T03:23:35+00:00",
+  "stats": {
+    "blocks": 147,
+    "images": 21,
+    "tables": 14,
+    "chars": 40400
+  },
+  "exhibit_count": 35,
+  "masthead": "Blue Owl Technology Finance Corp. (NYSE: OTF)",
+  "toc": [
+    {
+      "level": 1,
+      "text": "Summary"
+    },
+    {
+      "level": 3,
+      "text": "Software industry by AI impact"
+    },
+    {
+      "level": 3,
+      "text": "Private credit & public BDC industry"
+    },
+    {
+      "level": 3,
+      "text": "OTF update"
+    },
+    {
+      "level": 1,
+      "text": "1. News"
+    },
+    {
+      "level": 2,
+      "text": "1.1 Key news on Blue Owl & OTF"
+    },
+    {
+      "level": 2,
+      "text": "1.2 Key private credit news"
+    },
+    {
+      "level": 2,
+      "text": "1.3 AI related news"
+    },
+    {
+      "level": 1,
+      "text": "2. OTF update"
+    },
+    {
+      "level": 2,
+      "text": "2.1 Portfolio composition"
+    },
+    {
+      "level": 3,
+      "text": "Capital structure"
+    },
+    {
+      "level": 3,
+      "text": "Industry"
+    },
+    {
+      "level": 3,
+      "text": "Software layer exposure"
+    },
+    {
+      "level": 3,
+      "text": "Borrower fundamentals"
+    },
+    {
+      "level": 2,
+      "text": "2.2 Financial & debt"
+    },
+    {
+      "level": 3,
+      "text": "Cash yield trend"
+    },
+    {
+      "level": 3,
+      "text": "NAV bridge"
+    },
+    {
+      "level": 3,
+      "text": "NII & dividend coverage"
+    },
+    {
+      "level": 3,
+      "text": "Financing profile"
+    },
+    {
+      "level": 3,
+      "text": "Leverage ratio"
+    },
+    {
+      "level": 2,
+      "text": "2.3 Default concern"
+    },
+    {
+      "level": 3,
+      "text": "PIK"
+    },
+    {
+      "level": 3,
+      "text": "Non-accrual"
+    },
+    {
+      "level": 3,
+      "text": "Internal risk rating"
+    },
+    {
+      "level": 2,
+      "text": "2.4 Sell-side view & TP"
+    },
+    {
+      "level": 2,
+      "text": "2.5 Price comparison"
+    },
+    {
+      "level": 2,
+      "text": "2.6 Competitor analysis"
+    },
+    {
+      "level": 3,
+      "text": "2.6.1 BDC competitor analysis"
+    },
+    {
+      "level": 3,
+      "text": "2.6.2 Return comparison"
+    },
+    {
+      "level": 3,
+      "text": "NAV per share & Dividend yield"
+    },
+    {
+      "level": 3,
+      "text": "PIK income %"
+    },
+    {
+      "level": 3,
+      "text": "2.6.3 Asset quality comparison"
+    },
+    {
+      "level": 3,
+      "text": "Non-accrual% & Portfolio company average EBITDA"
+    },
+    {
+      "level": 2,
+      "text": "2.7 Things we should know"
+    },
+    {
+      "level": 3,
+      "text": "Fee mechanics have entered a non-linear zone"
+    },
+    {
+      "level": 3,
+      "text": "The distribution resets from Q4'26"
+    },
+    {
+      "level": 1,
+      "text": "3. Private credit & public BDC industry"
+    },
+    {
+      "level": 2,
+      "text": "3.1 Broker view summary"
+    },
+    {
+      "level": 2,
+      "text": "3.2 Consensus & key debate"
+    },
+    {
+      "level": 3,
+      "text": "Market consensus"
+    },
+    {
+      "level": 3,
+      "text": "Key focus / key debate"
+    },
+    {
+      "level": 2,
+      "text": "3.3 Fundamentals"
+    },
+    {
+      "level": 3,
+      "text": "Leverage & EBITDA coverage multiple"
+    },
+    {
+      "level": 3,
+      "text": "Non-accruals & PIK level"
+    },
+    {
+      "level": 2,
+      "text": "3.4 Things we should know"
+    },
+    {
+      "level": 3,
+      "text": "3.4.1 Software exposure in leveraged credit"
+    },
+    {
+      "level": 1,
+      "text": "4. Software industry by AI impact"
+    },
+    {
+      "level": 2,
+      "text": "4.1 Broker & company view summary"
+    },
+    {
+      "level": 3,
+      "text": "Broker view"
+    },
+    {
+      "level": 3,
+      "text": "Company view"
+    },
+    {
+      "level": 3,
+      "text": "Market consensus & key focus"
+    },
+    {
+      "level": 3,
+      "text": "Market consensus"
+    },
+    {
+      "level": 3,
+      "text": "Key focus / key debate"
+    },
+    {
+      "level": 2,
+      "text": "4.2 Things we should know"
+    },
+    {
+      "level": 2,
+      "text": "4.3 AI impact on software layers"
+    },
+    {
+      "level": 3,
+      "text": "AI’s impact across the layers"
+    },
+    {
+      "level": 3,
+      "text": "Vulnerability ranking: Application/Record > Orchestration/Intelligence ≈ Data/Platform > Infrastructure"
+    }
+  ],
+  "summary": "1 Section 36(b) of the Investment Company Act imposes a fiduciary duty on a fund's investment adviser with respect to the compensation it receives; shareholders may sue the adviser directly for excessive fees."
+}

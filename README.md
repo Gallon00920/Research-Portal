@@ -104,47 +104,47 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
 
 GitHub is the host: the site is served by GitHub Pages and the Python
 parser runs inside a GitHub Actions workflow
-(`.github/workflows/build-deploy.yml`). Because a Pages site is public,
-**everything in the repository is encrypted with the shared panel password**
-(AES-256-GCM, key derived with PBKDF2). The site asks for the password and
-decrypts in the browser; nothing readable is ever committed.
+(`.github/workflows/build-deploy.yml`). The site is open: no password,
+and every parsed report (metadata, content, images and the original file)
+is committed to the repository in plain form under `data/reports/`.
 
 ### One-time setup
 
-1. Repository → **Settings → Secrets and variables → Actions → New
-   repository secret**: name `PANEL_PASSWORD`, value = the password the team
-   will use to open the site.
-2. On the laptop that already holds the parsed reports run `.\publish.ps1`,
-   enter the same password, and it encrypts `data/reports/*` and pushes
-   them. The workflow then builds and deploys; the URL appears under
+1. Push the repository and let the workflow run once. The URL appears under
    **Settings → Pages** (`https://<owner>.github.io/Research-Portal/`).
-3. Everyone who will **upload or edit** from the site needs a GitHub
+   A private repository can use Pages only on GitHub Pro / Team /
+   Enterprise; on a free account make the repository public.
+2. Everyone who will **upload or edit** from the site needs a GitHub
    fine-grained personal access token limited to this repository with
-   *Contents: Read and write*. The site asks for it the first time and
-   keeps it in that browser only (top bar → **GitHub token**).
-
-A private repository can use Pages only on GitHub Pro / Team / Enterprise.
-On a free account make the repository public; the encryption is what keeps
-the content private, not the repository visibility.
+   *Contents: Read and write* (GitHub → Settings → Developer settings →
+   Personal access tokens → Fine-grained). The site asks for it the first
+   time and keeps it in that browser only (top bar → **GitHub token**).
+   Reading needs nothing.
 
 ### How changes flow
 
-- **Upload** on the site encrypts the file in the browser and commits
-  `incoming/<id>.<ext>.enc` plus an encrypted sidecar with sector, quarter,
-  language, title and keywords.
+- **Upload** on the site commits the file to `incoming/<id>.<ext>` plus a
+  small sidecar with sector, quarter, language, title and keywords.
 - **Edit / delete report** and **sector changes** commit small files to
   `ops/` or `data/sectors.json`.
-- Every push runs the workflow: it decrypts and parses new uploads, applies
-  the ops, writes `data/reports/<id>/bundle.enc` (metadata + content + table
-  and figure images), rebuilds `data/index.json.enc`, commits the result
-  back with `[skip ci]`, and deploys the `site/` folder to Pages. Allow
-  about two minutes, then refresh.
+- Every push runs the workflow: it parses new uploads, applies the ops,
+  writes `data/reports/<id>/` (meta, content, images, original), rebuilds
+  `data/index.json`, commits the result back with `[skip ci]`, and deploys
+  the `site/` folder to Pages. Allow about two minutes, then refresh.
+- `.\publish.ps1` pushes reports that were parsed on a laptop with the
+  local server.
+
+### Optional password
+
+Setting a `PANEL_PASSWORD` repository secret switches the whole pipeline
+to encrypted files (AES-256-GCM, PBKDF2 key): the site then asks for the
+password and decrypts in the browser, and nothing readable is committed.
+Run `.\publish.ps1` with the same password afterwards.
 
 ### Local use
 
-`python backend/server.py` still works as before (plaintext files in
-`data/reports/`, git-ignored). The optional `PANEL_PASSWORD` environment
-variable adds the cookie-based login to the local server too.
+`python backend/server.py` still works as before with the files in
+`data/reports/`.
 
 The uploaded reports are never committed to git (`data/reports/` is
 ignored); they live only on the server's disk.

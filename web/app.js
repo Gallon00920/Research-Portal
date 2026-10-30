@@ -890,7 +890,7 @@ function wire(){
     if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(() => toast(t('link_copied')), () => toast(url));
     else toast(url);
   });
-  $('dlBtn').addEventListener('click', () => { if (state.reportId && DL.sourceUrl) window.open(DL.sourceUrl(state.reportId), '_blank'); });
+  $('dlBtn').addEventListener('click', () => { if (state.reportId && DL.sourceUrl) window.open(DL.sourceUrl(state.reportId, state.report && state.report.meta), '_blank'); });
   $('printBtn').addEventListener('click', () => window.print());
   $('editBtn').addEventListener('click', () => { if (state.report) openUpload(state.sectorId, state.report.meta); });
   $('delBtn').addEventListener('click', async () => {

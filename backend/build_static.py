@@ -11,12 +11,11 @@
       frontend runs in static mode (reads data/, writes through the GitHub API).
 
 Files per report (data/reports/<id>/):
-  meta.json, content.json, images/, source.*   plaintext, local only (git-ignored)
-  meta.json.enc, bundle.enc                     encrypted with PANEL_PASSWORD, committed
+  meta.json, content.json, images/, source.*   plain files (default: committed and served as-is)
+  meta.json.enc, bundle.enc                     only when PANEL_PASSWORD is set (encrypted site)
 
-PANEL_PASSWORD must be set for the GitHub flow; without it the script only produces the
-plaintext files used by the local python server (and --site refuses to run unless
---allow-plain is given, so unencrypted research never reaches GitHub Pages by accident).
+Default is an open site: no password, everything committed in plain form. Setting the
+PANEL_PASSWORD secret switches the whole pipeline to encrypted files (see crypto_util.py).
 """
 from __future__ import annotations
 
@@ -100,6 +99,10 @@ def all_meta(c: Crypto) -> list[dict[str, Any]]:
                 if m:
                     out.append(m)
     out.sort(key=lambda m: (m.get("period_key", 0), m.get("uploaded_at", "")), reverse=True)
+    for m in out:  # tell the site whether the original file is available for download
+        d = REPORTS / m["id"]
+        src = next((p.name for p in d.iterdir() if p.name.startswith("source.")), None) if d.exists() else None
+        m["source_file"] = src
     return out
 
 
@@ -303,9 +306,24 @@ def build_index(c: Crypto):
     log("index:", len(metas), "reports", "(encrypted)" if c.on else "(plain)")
 
 
-def build_site(out: Path, c: Crypto, repo: str, branch: str, allow_plain: bool):
-    if not c.on and not allow_plain:
-        raise SystemExit("refusing to build an unencrypted site: set PANEL_PASSWORD (or pass --allow-plain for a local preview)")
+def strip_plaintext():
+    """Encrypted mode in CI: keep only the encrypted copies in the repository."""
+    if not REPORTS.exists():
+        return
+    for d in REPORTS.iterdir():
+        if not d.is_dir():
+            continue
+        for f in list(d.iterdir()):
+            if f.is_dir():
+                shutil.rmtree(f, ignore_errors=True)
+            elif not f.name.endswith(".enc"):
+                f.unlink()
+    for f in (DATA / "index.json",):
+        if f.exists():
+            f.unlink()
+
+
+def build_site(out: Path, c: Crypto, repo: str, branch: str):
     shutil.rmtree(out, ignore_errors=True)
     shutil.copytree(WEB, out, ignore=shutil.ignore_patterns("config.js", "login.html"))
     (out / "data").mkdir()
@@ -324,9 +342,9 @@ def build_site(out: Path, c: Crypto, repo: str, branch: str, allow_plain: bool):
                     shutil.copy(d / "bundle.enc", dst / "bundle.enc")
             else:
                 dst.mkdir(parents=True)
-                for name in ("meta.json", "content.json"):
-                    if (d / name).exists():
-                        shutil.copy(d / name, dst / name)
+                for f in d.iterdir():
+                    if f.name in ("meta.json", "content.json") or f.name.startswith("source."):
+                        shutil.copy(f, dst / f.name)
                 if (d / "images").exists():
                     shutil.copytree(d / "images", dst / "images")
     cfg = {"static": True, "encrypted": c.on, "repo": repo, "branch": branch, "built": now_iso()}
@@ -339,22 +357,24 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--apply", action="store_true", help="process incoming/ and ops/, refresh encrypted copies, rebuild the index")
     ap.add_argument("--site", metavar="DIR", help="write the static site into DIR")
-    ap.add_argument("--allow-plain", action="store_true", help="allow --site without encryption (local preview only)")
+    ap.add_argument("--strip-plain", action="store_true", help="encrypted mode: remove plaintext copies after building (used in CI)")
     ap.add_argument("--repo", default=os.environ.get("GITHUB_REPOSITORY", ""))
     ap.add_argument("--branch", default=os.environ.get("GITHUB_REF_NAME", "main"))
     a = ap.parse_args()
     c = Crypto()
-    log("encryption:", "on" if c.on else "off (PANEL_PASSWORD not set)")
+    log("encryption:", "on" if c.on else "off (open site, PANEL_PASSWORD not set)")
     if a.apply:
         n1 = process_incoming(c)
         n2 = apply_ops(c)
         n3 = sync_encrypted(c)
         build_index(c)
+        if c.on and a.strip_plain:
+            strip_plaintext()
         log(f"applied {n1} uploads, {n2} ops; refreshed {n3} encrypted reports")
     if a.site:
         if not (DATA / "index.json").exists() and not (DATA / "index.json.enc").exists():
             build_index(c)
-        build_site(Path(a.site), c, a.repo, a.branch, a.allow_plain)
+        build_site(Path(a.site), c, a.repo, a.branch)
 
 
 if __name__ == "__main__":

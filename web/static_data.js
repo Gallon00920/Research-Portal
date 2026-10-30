@@ -109,7 +109,8 @@ window.DataLayer = (function(){
   const staticBackend = {
     mode: 'static',
     needsLogin(){ return !!cfg.encrypted && !key; },
-    canDownload(){ return false; },
+    canDownload(){ return !cfg.encrypted; },
+    sourceUrl(id, meta){ return `data/reports/${id}/${(meta && meta.source_file) || 'source' + ((meta && meta.source_ext) || '.docx')}`; },
     async init(){ if (cfg.encrypted) await restoreKey(); },
     async login(password){
       const saltBuf = await getBytes('data/salt.txt');

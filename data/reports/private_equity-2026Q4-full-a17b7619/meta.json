@@ -1,0 +1,165 @@
+{
+  "id": "private_equity-2026Q4-full-a17b7619",
+  "title": "US Private Equity Quarterly Report (2026Q3)",
+  "sector": "private_equity",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "cn",
+  "keywords": [
+    "US PE",
+    "buyout & LBO",
+    "middle market",
+    "GP stakes"
+  ],
+  "source_name": "Junson_PE_Report_2026Q3_EN_v1.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-10-30T08:01:52+00:00",
+  "stats": {
+    "blocks": 102,
+    "images": 41,
+    "tables": 9,
+    "chars": 27510
+  },
+  "exhibit_count": 50,
+  "masthead": "JUNSON Capital Research",
+  "coverage": "US PE / buyout & LBO / middle market / GP stakes",
+  "publish_date": "26 Aug, 2026",
+  "toc": [
+    {
+      "level": 1,
+      "text": "Market Overview"
+    },
+    {
+      "level": 1,
+      "text": "Deal Activity"
+    },
+    {
+      "level": 2,
+      "text": "2.1 Deal value and count"
+    },
+    {
+      "level": 2,
+      "text": "2.2 Deal composition"
+    },
+    {
+      "level": 2,
+      "text": "2.3 LBO volume in M&A context"
+    },
+    {
+      "level": 2,
+      "text": "2.4 Middle market"
+    },
+    {
+      "level": 2,
+      "text": "2.5 How the volume measures nest — and where private credit connects"
+    },
+    {
+      "level": 1,
+      "text": "Valuations, Performance & Financing"
+    },
+    {
+      "level": 2,
+      "text": "3.1 Entry multiples"
+    },
+    {
+      "level": 2,
+      "text": "3.2 Fund performance: rolling horizon IRR"
+    },
+    {
+      "level": 1,
+      "text": "Exits & Liquidity"
+    },
+    {
+      "level": 2,
+      "text": "4.1 Exit activity"
+    },
+    {
+      "level": 2,
+      "text": "4.2 Holding periods and inventory"
+    },
+    {
+      "level": 1,
+      "text": "Fundraising & Dry Powder"
+    },
+    {
+      "level": 2,
+      "text": "5.1 Fundraising"
+    },
+    {
+      "level": 2,
+      "text": "5.2 Dry powder and deployment runway"
+    },
+    {
+      "level": 1,
+      "text": "Things We Should Know"
+    },
+    {
+      "level": 2,
+      "text": "7.1 AI is repricing PE's favourite sector"
+    },
+    {
+      "level": 2,
+      "text": "7.2 Scale is the dividing line of this fundraising cycle"
+    },
+    {
+      "level": 2,
+      "text": "7.3 How the PE market impacts the private credit market"
+    },
+    {
+      "level": 2,
+      "text": "7.4 How the PE market impacts GP-stakes funds"
+    },
+    {
+      "level": 2,
+      "text": "7.5 Implications for Junson"
+    },
+    {
+      "level": 1,
+      "text": "Fund Update"
+    },
+    {
+      "level": 2,
+      "text": "8.1 Blue Owl GP Stakes V"
+    },
+    {
+      "level": 2,
+      "text": "8.1.1 Fund snapshot"
+    },
+    {
+      "level": 2,
+      "text": "8.1.2 Portfolio composition"
+    },
+    {
+      "level": 2,
+      "text": "8.1.3 Fund-level performance"
+    },
+    {
+      "level": 1,
+      "text": "Competitor Analysis"
+    },
+    {
+      "level": 2,
+      "text": "9.1 Positioning vs. the GP-stakes universe"
+    },
+    {
+      "level": 2,
+      "text": "9.2 Head-to-head QoQ: GPS V vs. HPC Fund I"
+    },
+    {
+      "level": 2,
+      "text": "9.3 DPI benchmark: where the holdings sit on the buyout distribution curve"
+    },
+    {
+      "level": 2,
+      "text": "9.4 Relative momentum and percentile trajectory"
+    },
+    {
+      "level": 2,
+      "text": "9.5 Appendix — peer universe and methodology"
+    }
+  ],
+  "summary": "Q2 2026 was another false start for US private equity: deployment, exits and fundraising weakened together. Deal value fell -37.5% QoQ to US$177.3bn, exit value nearly halved to US$102.6bn, and YTD fundraising of US$159."
+}

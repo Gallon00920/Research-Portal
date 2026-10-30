@@ -1,0 +1,201 @@
+{
+  "id": "private_credit-2026Q3-full-44ca93f9",
+  "title": "Private Credit Quarterly Report (2026Q3)",
+  "sector": "private_credit",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "full",
+  "language": "en",
+  "keywords": [
+    "private credit",
+    "direct lending",
+    "BDC",
+    "MM CLO"
+  ],
+  "source_name": "Junson_Private_Credit_Report_2026Q3_EN_v3.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-10-30T03:23:31+00:00",
+  "stats": {
+    "blocks": 135,
+    "images": 46,
+    "tables": 18,
+    "chars": 27073
+  },
+  "exhibit_count": 64,
+  "masthead": "JUNSON Capital Research",
+  "coverage": "private credit / direct lending / BDC / MM CLO",
+  "publish_date": "13 Aug, 2026",
+  "toc": [
+    {
+      "level": 1,
+      "text": "Market Size"
+    },
+    {
+      "level": 2,
+      "text": "Private credit market size"
+    },
+    {
+      "level": 2,
+      "text": "Supply side"
+    },
+    {
+      "level": 2,
+      "text": "Demand side"
+    },
+    {
+      "level": 2,
+      "text": "Fund flow"
+    },
+    {
+      "level": 1,
+      "text": "Returns & Relative Value"
+    },
+    {
+      "level": 2,
+      "text": "Direct lending quarterly return vs. HY"
+    },
+    {
+      "level": 2,
+      "text": "Private credit spread premium over BSL"
+    },
+    {
+      "level": 1,
+      "text": "Pricing & Term"
+    },
+    {
+      "level": 2,
+      "text": "Spread"
+    },
+    {
+      "level": 2,
+      "text": "Covenant structure & PIK % (share of new deals with PIK toggle)"
+    },
+    {
+      "level": 2,
+      "text": "Non-sponsored private credit"
+    },
+    {
+      "level": 1,
+      "text": "Credit Fundamentals"
+    },
+    {
+      "level": 2,
+      "text": "Default rate"
+    },
+    {
+      "level": 2,
+      "text": "Recovery rate"
+    },
+    {
+      "level": 2,
+      "text": "Leverage ratio (debt/EBITDA)"
+    },
+    {
+      "level": 2,
+      "text": "Interest coverage ratio"
+    },
+    {
+      "level": 2,
+      "text": "BDC non-accrual rate"
+    },
+    {
+      "level": 2,
+      "text": "PIK income % of total income"
+    },
+    {
+      "level": 1,
+      "text": "Sentiment"
+    },
+    {
+      "level": 2,
+      "text": "Broker summary"
+    },
+    {
+      "level": 2,
+      "text": "Related news"
+    },
+    {
+      "level": 1,
+      "text": "Things We Should Know"
+    },
+    {
+      "level": 1,
+      "text": "Fund Update"
+    },
+    {
+      "level": 2,
+      "text": "PAG BRS Fund III (SRT strategy)"
+    },
+    {
+      "level": 3,
+      "text": "Fund snapshot"
+    },
+    {
+      "level": 3,
+      "text": "Portfolio composition"
+    },
+    {
+      "level": 3,
+      "text": "Fund level performance detail"
+    },
+    {
+      "level": 2,
+      "text": "Guggenheim Private Debt Fund IV (US direct lending)"
+    },
+    {
+      "level": 3,
+      "text": "Fund snapshot"
+    },
+    {
+      "level": 3,
+      "text": "Portfolio composition"
+    },
+    {
+      "level": 3,
+      "text": "Fund level performance detail"
+    },
+    {
+      "level": 2,
+      "text": "HSBC RCF Partnership Fund (RCF strategy)"
+    },
+    {
+      "level": 3,
+      "text": "Fund snapshot"
+    },
+    {
+      "level": 3,
+      "text": "Portfolio composition"
+    },
+    {
+      "level": 3,
+      "text": "Fund level performance detail"
+    },
+    {
+      "level": 1,
+      "text": "Competitor Analysis"
+    },
+    {
+      "level": 2,
+      "text": "Positioning scorecard"
+    },
+    {
+      "level": 2,
+      "text": "Relative momentum"
+    },
+    {
+      "level": 2,
+      "text": "Percentile trajectory"
+    },
+    {
+      "level": 2,
+      "text": "Cohort health monitor"
+    },
+    {
+      "level": 2,
+      "text": "Appendix — structural benchmarks & methodology (annual refresh)"
+    }
+  ],
+  "summary": "Global private debt AUM has reached approximately US$2,557bn, of which the institutional channel accounts for 77.1% (~US$1,971bn), retail 15.5% (~US$396bn) and the insurance estimate 7.4% (~US$189bn). Institutional AUM h"
+}

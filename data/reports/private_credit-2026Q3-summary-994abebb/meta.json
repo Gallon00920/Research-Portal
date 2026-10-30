@@ -1,0 +1,57 @@
+{
+  "id": "private_credit-2026Q3-summary-994abebb",
+  "title": "私募信贷研究报告摘要 — 2026Q3",
+  "sector": "private_credit",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "summary",
+  "language": "cn",
+  "keywords": [
+    "关键",
+    "基金"
+  ],
+  "source_name": "Junson_Private_Credit_2026Q3_Summary_中文版.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-10-30T03:23:34+00:00",
+  "stats": {
+    "blocks": 19,
+    "images": 4,
+    "tables": 5,
+    "chars": 1294
+  },
+  "exhibit_count": 9,
+  "masthead": "JUNSON Capital | Alternative Investment Division",
+  "toc": [
+    {
+      "level": 1,
+      "text": "关键信用指标一览（2026Q1）"
+    },
+    {
+      "level": 1,
+      "text": "1. Key News（本季关键事件）"
+    },
+    {
+      "level": 1,
+      "text": "2. Market Trend（市场量化趋势）"
+    },
+    {
+      "level": 1,
+      "text": "卖方立场（五家）"
+    },
+    {
+      "level": 1,
+      "text": "3. Impact on Our Portfolio（对持仓的传导）"
+    },
+    {
+      "level": 1,
+      "text": "4. Our Position：三只基金、Watch List 与操作建议"
+    },
+    {
+      "level": 1,
+      "text": "Watch List（下季核对项与信号）"
+    }
+  ],
+  "summary": ""
+}
