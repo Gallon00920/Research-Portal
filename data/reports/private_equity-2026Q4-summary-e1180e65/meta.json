@@ -1,0 +1,53 @@
+{
+  "id": "private_equity-2026Q4-summary-e1180e65",
+  "title": "2026Q3 US Private Equity Research Summary",
+  "sector": "private_equity",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "summary",
+  "language": "en",
+  "keywords": [
+    "IRR",
+    "DPI",
+    "GPS",
+    "US PE",
+    "Right",
+    "PitchBook"
+  ],
+  "source_name": "Junson_PE_2026Q3_Summary_EN.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-03T09:27:15.697Z",
+  "stats": {
+    "blocks": 17,
+    "images": 4,
+    "tables": 4,
+    "chars": 3840
+  },
+  "exhibit_count": 8,
+  "masthead": "JUNSON Capital | Alternative Investment Division",
+  "toc": [
+    {
+      "level": 1,
+      "text": "Key market indicators at a glance (2026Q2)"
+    },
+    {
+      "level": 1,
+      "text": "1. Key News"
+    },
+    {
+      "level": 1,
+      "text": "2. Market Trend"
+    },
+    {
+      "level": 1,
+      "text": "3. Impact on Our Portfolio (GP stakes)"
+    },
+    {
+      "level": 1,
+      "text": "4. Our Position: GPS V, benchmark and actions"
+    }
+  ],
+  "summary": "Conclusion: all three legs weakened together this quarter — deployment (-37.5% QoQ), exits (-46.3% QoQ) and fundraising (extreme concentration at the top) — and the through-line is liquidity: until distributions resume, "
+}
