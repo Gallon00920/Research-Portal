@@ -1,6 +1,6 @@
 {
   "id": "software_otf-2026Q3-summary-d85dc786",
-  "title": "OTF 研究报告摘要 — 2026Q3",
+  "title": "2026Q3 OTF 研究报告摘要",
   "sector": "software_otf",
   "year": 2026,
   "quarter": 3,
@@ -51,5 +51,6 @@
       "text": "Watch List（下季核对项与触发线）"
     }
   ],
-  "summary": ""
+  "summary": "",
+  "updated_at": "2026-11-03T09:39:54+00:00"
 }
