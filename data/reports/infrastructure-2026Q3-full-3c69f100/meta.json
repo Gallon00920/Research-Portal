@@ -1,0 +1,134 @@
+{
+  "id": "infrastructure-2026Q3-full-3c69f100",
+  "title": "2026Q3 AI Infrastructure Opportunities Mapping",
+  "sector": "infrastructure",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "full",
+  "language": "en",
+  "keywords": [
+    "AI infrastructure value chain",
+    "data centers",
+    "infrastructure debt",
+    "ABF",
+    "direct lending"
+  ],
+  "source_name": "Junson_AI_Infrastructure_Report_2026Q3_EN_v3.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-03T08:52:53.503Z",
+  "stats": {
+    "blocks": 75,
+    "images": 3,
+    "tables": 11,
+    "chars": 40659
+  },
+  "exhibit_count": 14,
+  "masthead": "JUNSON Capital Research",
+  "coverage": "AI infrastructure value chain / data centers / infrastructure debt / ABF / direct lending",
+  "publish_date": "5 Oct, 2026",
+  "toc": [
+    {
+      "level": 1,
+      "text": "Value Chain"
+    },
+    {
+      "level": 2,
+      "text": "Three layers: from chips to the end-user"
+    },
+    {
+      "level": 2,
+      "text": "The AI value chain vs the data center value chain"
+    },
+    {
+      "level": 1,
+      "text": "Supply Bottlenecks"
+    },
+    {
+      "level": 2,
+      "text": "Constraints sit upstream and midstream; downstream delays are transmitted"
+    },
+    {
+      "level": 2,
+      "text": "Won't vs can't: why the two deepest shortages are structural"
+    },
+    {
+      "level": 1,
+      "text": "Equity or Credit? The Positioning Map"
+    },
+    {
+      "level": 2,
+      "text": "Two questions decide the instrument"
+    },
+    {
+      "level": 2,
+      "text": "Yield anchors"
+    },
+    {
+      "level": 1,
+      "text": "Capital Market Depth"
+    },
+    {
+      "level": 2,
+      "text": "Row-by-row read"
+    },
+    {
+      "level": 1,
+      "text": "Upstream: Sub-sector Detail"
+    },
+    {
+      "level": 2,
+      "text": "Primer: fab, fabless, foundry and IDM"
+    },
+    {
+      "level": 2,
+      "text": "Four upstream conclusions"
+    },
+    {
+      "level": 1,
+      "text": "Midstream: Sub-sector Detail"
+    },
+    {
+      "level": 2,
+      "text": "Four midstream conclusions"
+    },
+    {
+      "level": 1,
+      "text": "Downstream: Sub-sector Detail"
+    },
+    {
+      "level": 2,
+      "text": "Four downstream conclusions"
+    },
+    {
+      "level": 1,
+      "text": "Downside Risks"
+    },
+    {
+      "level": 2,
+      "text": "Five risks that cut across the chain"
+    },
+    {
+      "level": 2,
+      "text": "Sub-sector downside risks"
+    },
+    {
+      "level": 1,
+      "text": "Fund Evaluation"
+    },
+    {
+      "level": 2,
+      "text": "The investable fund universe: three types"
+    },
+    {
+      "level": 2,
+      "text": "Five questions, anchored to this report"
+    },
+    {
+      "level": 2,
+      "text": "Type-specific diligence emphases"
+    }
+  ],
+  "summary": "We map the data center value chain in three layers. Upstream supplies semiconductors and core components: the GPU die and HBM memory are packaged together into a single device through TSMC's CoWoS process; the packaged c"
+}

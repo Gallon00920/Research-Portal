@@ -1,0 +1,142 @@
+{
+  "id": "infrastructure-2026Q3-full-2bd31bc5",
+  "title": "2026Q3 AI 基础设施投资机会全景",
+  "sector": "infrastructure",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "full",
+  "language": "en",
+  "keywords": [
+    "AI 基础设施产业链",
+    "数据中心",
+    "infrastructure debt",
+    "ABF",
+    "direct lending"
+  ],
+  "source_name": "Junson_AI_Infrastructure_Report_2026Q3_CN_v3.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-03T08:53:35.888Z",
+  "stats": {
+    "blocks": 75,
+    "images": 3,
+    "tables": 11,
+    "chars": 15413
+  },
+  "exhibit_count": 14,
+  "masthead": "JUNSON Capital Research",
+  "coverage": "AI 基础设施产业链 / 数据中心 / infrastructure debt / ABF / direct lending",
+  "publish_date": "2026 年 10 月 5 日",
+  "toc": [
+    {
+      "level": 1,
+      "text": "产业链全景"
+    },
+    {
+      "level": 2,
+      "text": "三层结构：从芯片到终端用户"
+    },
+    {
+      "level": 2,
+      "text": "AI 价值链 vs 数据中心产业链"
+    },
+    {
+      "level": 1,
+      "text": "供给瓶颈"
+    },
+    {
+      "level": 2,
+      "text": "瓶颈集中在上中游；下游延期是传导性的"
+    },
+    {
+      "level": 2,
+      "text": "“不敢”与“不能”：两大最深短缺为何是结构性的"
+    },
+    {
+      "level": 1,
+      "text": "股还是债？机会定位图"
+    },
+    {
+      "level": 2,
+      "text": "两个问题决定工具"
+    },
+    {
+      "level": 2,
+      "text": "横轴怎么读：现金流被合同锁定的程度"
+    },
+    {
+      "level": 2,
+      "text": "纵轴怎么读：违约时能拿走什么"
+    },
+    {
+      "level": 2,
+      "text": "收益率锚点"
+    },
+    {
+      "level": 1,
+      "text": "资本市场深度"
+    },
+    {
+      "level": 2,
+      "text": "逐行解读"
+    },
+    {
+      "level": 1,
+      "text": "上游：分板块明细"
+    },
+    {
+      "level": 2,
+      "text": "名词卡：fab、fabless、foundry 与 IDM"
+    },
+    {
+      "level": 2,
+      "text": "上游四个结论"
+    },
+    {
+      "level": 1,
+      "text": "中游：分板块明细"
+    },
+    {
+      "level": 2,
+      "text": "中游四个结论"
+    },
+    {
+      "level": 1,
+      "text": "下游：分板块明细"
+    },
+    {
+      "level": 2,
+      "text": "下游四个结论"
+    },
+    {
+      "level": 1,
+      "text": "下行风险"
+    },
+    {
+      "level": 2,
+      "text": "贯穿全链的五大风险"
+    },
+    {
+      "level": 2,
+      "text": "分板块下行风险"
+    },
+    {
+      "level": 1,
+      "text": "基金评估"
+    },
+    {
+      "level": 2,
+      "text": "可投基金宇宙：三种类型"
+    },
+    {
+      "level": 2,
+      "text": "五个问题，锚定本报告"
+    },
+    {
+      "level": 2,
+      "text": "分类型尽调重点"
+    }
+  ],
+  "summary": "我们把数据中心产业链分为三层。上游供应半导体与核心零部件：GPU 裸片与 HBM 存储通过 TSMC 的 CoWoS 工艺封装成一颗器件；封装好的芯片再焊到载板 / PCB（芯片的“座位”）上；光模块完全不在封装之内，而是插在交换机上连接机柜。上游还包括 CPU、网络与电源半导体，以及晶圆厂背后的设备与材料层；本文聚焦上述五个零部件，因为它们占 AI 服务器 BOM 价值的大头，也是当前供给瓶颈与定价权所在。中游把零部件变成整机、把楼变"
+}
