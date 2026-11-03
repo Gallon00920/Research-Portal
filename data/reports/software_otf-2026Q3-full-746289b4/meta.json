@@ -1,6 +1,6 @@
 {
   "id": "software_otf-2026Q3-full-746289b4",
-  "title": "Software & OTF Quarterly Update — 2026Q2 review, published 17 August 2026",
+  "title": "2026Q3 Software & OTF Quarterly Update",
   "sector": "software_otf",
   "year": 2026,
   "quarter": 3,
@@ -257,5 +257,6 @@
       "text": "Vulnerability ranking: Application/Record > Orchestration/Intelligence ≈ Data/Platform > Infrastructure"
     }
   ],
-  "summary": "1 Section 36(b) of the Investment Company Act imposes a fiduciary duty on a fund's investment adviser with respect to the compensation it receives; shareholders may sue the adviser directly for excessive fees."
+  "summary": "1 Section 36(b) of the Investment Company Act imposes a fiduciary duty on a fund's investment adviser with respect to the compensation it receives; shareholders may sue the adviser directly for excessive fees.",
+  "updated_at": "2026-11-03T09:30:42+00:00"
 }
