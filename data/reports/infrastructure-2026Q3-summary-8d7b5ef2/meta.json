@@ -1,6 +1,6 @@
 {
   "id": "infrastructure-2026Q3-summary-8d7b5ef2",
-  "title": "AI Infrastructure Opportunities Mapping — Report Summary (2026Q3)",
+  "title": "2026Q3 AI Infrastructure Opportunities Mapping Summary",
   "sector": "infrastructure",
   "year": 2026,
   "quarter": 3,
@@ -29,5 +29,6 @@
   "masthead": "JUNSON Capital | Alternative Investment Division",
   "coverage": "AI infrastructure value chain / data centers / infrastructure debt / ABF / direct lending    |    Full report dated 5 Oct 2026",
   "toc": [],
-  "summary": "Upstream supplies the five components carrying the bulk of AI server BOM value: GPU, HBM, advanced packaging (CoWoS), PCB/substrate, optical modules. Midstream runs two production lines — components into complete racks, "
+  "summary": "Upstream supplies the five components carrying the bulk of AI server BOM value: GPU, HBM, advanced packaging (CoWoS), PCB/substrate, optical modules. Midstream runs two production lines — components into complete racks, ",
+  "updated_at": "2026-11-03T09:37:44+00:00"
 }
