@@ -1,0 +1,33 @@
+{
+  "id": "infrastructure-2026Q3-summary-54e2fa04",
+  "title": "AI 基础设施研究报告摘要 — 2026Q3",
+  "sector": "infrastructure",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "summary",
+  "language": "cn",
+  "keywords": [
+    "AI 基础设施产业链",
+    "数据中心",
+    "基建私募信贷",
+    "ABF",
+    "直接贷款",
+    "完整报告日期: 2026年10月5日"
+  ],
+  "source_name": "AI_Infrastructure_2026Q3_Summary_中文版.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-03T09:20:23.777Z",
+  "stats": {
+    "blocks": 22,
+    "images": 0,
+    "tables": 4,
+    "chars": 4630
+  },
+  "exhibit_count": 4,
+  "masthead": "JUNSON Capital | Alternative Investment Division",
+  "coverage": "AI 基础设施产业链 / 数据中心 / 基建私募信贷 / ABF / 直接贷款    |    完整报告日期: 2026年10月5日",
+  "toc": [],
+  "summary": "上游供应 AI 服务器 BOM 价值占比最高的五类零部件: GPU、HBM、先进封装 (CoWoS)、PCB/载板、光模块。中游有两条生产线——零部件装成整机柜、楼壳变成带电机房——两条线背后是发电环节, 数据中心越来越多直接采购电力 (「电力是新的土地」)。下游有内部结构: colo 是房东层 (Equinix、Digital Realty、Vantage、GDS); 超大规模云厂商横跨两层——自建数据中心, 同时是 colo 最大租"
+}
