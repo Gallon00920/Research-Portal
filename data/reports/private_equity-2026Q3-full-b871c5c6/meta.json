@@ -1,6 +1,6 @@
 {
   "id": "private_equity-2026Q3-full-b871c5c6",
-  "title": "US Private Equity Quarterly Report (2026Q3)",
+  "title": "2026Q3 US Private Equity Quarterly Report",
   "sector": "private_equity",
   "year": 2026,
   "quarter": 3,
@@ -159,5 +159,6 @@
       "text": "9.5 Appendix — peer universe and methodology"
     }
   ],
-  "summary": "Q2 2026 was another false start for US private equity: deployment, exits and fundraising weakened together. Deal value fell -37.5% QoQ to US$177.3bn, exit value nearly halved to US$102.6bn, and YTD fundraising of US$159."
+  "summary": "Q2 2026 was another false start for US private equity: deployment, exits and fundraising weakened together. Deal value fell -37.5% QoQ to US$177.3bn, exit value nearly halved to US$102.6bn, and YTD fundraising of US$159.",
+  "updated_at": "2026-11-03T09:27:10+00:00"
 }
