@@ -26,10 +26,12 @@
     "name_cn": "私募股权",
     "region": "Global",
     "coverage_en": [
-      "Private Equity"
+      "Private Equity",
+      "GP Stakes"
     ],
     "coverage_cn": [
-      "私募股权"
+      "私募股权",
+      "GP少数股权投资"
     ],
     "status": "active"
   },
