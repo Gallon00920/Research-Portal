@@ -40,6 +40,11 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   that sector in the current language straight away (no card grid). If none
   exists you get a notice with an upload button and, when available, a link
   to the other-language version.
+- **One edition per sector, quarter, type and language.** Uploading a report
+  for a combination that already exists replaces the old one (the upload
+  toast says so). A sector's report count is the number of quarters it
+  covers: the English and Chinese editions, and the full report and
+  summary, of one quarter count once.
 - **Report page** (`#/r/<id>`): breadcrumb, **year and quarter pickers** to
   jump to another edition of the same sector, title with period badge,
   keywords, a **sticky toolbar** (exhibits, copy link, download source,

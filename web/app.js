@@ -76,6 +76,8 @@ function langReports(lang){ return state.reports.filter(r => r.nature === 'full'
 function findReport(sector, period, lang, nature){ return state.reports.find(r => r.sector === sector && r.period === period && r.language === lang && r.nature === nature) || null; }
 function sectorReports(sectorId, lang){ return langReports(lang).filter(r => r.sector === sectorId); }
 function latestOf(list){ return list.slice().sort(byUploaded)[0] || null; }
+/* a sector's report count = number of quarters it covers; languages and full/summary editions of one quarter count once */
+function sectorQuarters(sectorId){ return new Set(state.reports.filter(r => r.sector === sectorId).map(r => r.year + '-' + r.quarter)).size; }
 
 /* ---------------------------------------------------------------- i18n + theme */
 function applyI18n(){
@@ -136,7 +138,7 @@ function buildNav(){
     const b = el('button', (state.view !== 'dash' && state.sectorId === s.id) ? 'active' : '');
     b.type = 'button';
     b.appendChild(document.createTextNode(sectorName(s)));
-    const cnt = sectorReports(s.id).length;
+    const cnt = sectorQuarters(s.id);
     if (cnt) b.appendChild(el('em', null, String(cnt)));
     b.addEventListener('click', () => nav(hashSector(s.id)));
     n.appendChild(b);
@@ -171,7 +173,8 @@ function renderDash(){
       Array.from(periods).sort((a, b) => periodKey(b) - periodKey(a)).slice(0, 4).forEach(p => bd.appendChild(el('span', 'bdg', p)));
     } else bd.appendChild(el('span', 'bdg', t('coming_soon')));
     card.appendChild(bd);
-    card.appendChild(el('span', 'sc-go', (mine.length ? (t('enter') + ' · ' + nReports(mine.length) + ' · ' + nQuarters(periods.size)) : t('upload_first')) + ' ›'));
+    const nq = sectorQuarters(s.id);
+    card.appendChild(el('span', 'sc-go', (nq ? (t('enter') + ' · ' + nReports(nq)) : t('upload_first')) + ' ›'));
     card.addEventListener('click', () => nav(hashSector(s.id)));
     grid.appendChild(card);
   });
@@ -297,9 +300,24 @@ function buildSegs(meta, s){
   setToggle('docLangToggle', state.docLang === 'cn', !langAvailable);
   $('docLangToggle').onclick = () => { if (langAvailable) setDocLang(other); };
 }
+/* the edition to open for a quarter: same type and language as the current report when
+   possible, then the same type in another language, then the full report, then anything */
+function bestEdition(list, meta){
+  if (!list.length) return null;
+  const nature = meta ? meta.nature : 'full';
+  const prefs = [
+    r => r.nature === nature && r.language === state.docLang,
+    r => r.nature === 'full' && r.language === state.docLang,
+    r => r.nature === nature,
+    r => r.nature === 'full',
+  ];
+  for (const ok of prefs){ const hit = latestOf(list.filter(ok)); if (hit) return hit; }
+  return latestOf(list);
+}
 function buildPickers(s, meta){
-  const mine = sectorReports(s.id);
-  const years = Array.from(new Set(mine.map(r => r.year))).sort((a, b) => b - a);
+  // every quarter the sector has, in any language and of either type
+  const all = state.reports.filter(r => r.sector === s.id);
+  const years = Array.from(new Set(all.map(r => r.year))).sort((a, b) => b - a);
   const py = $('pYear'), pq = $('pQuarter');
   py.innerHTML = ''; pq.innerHTML = '';
   if (!years.length){ py.appendChild(opt('', '—')); pq.appendChild(opt('', '—')); py.disabled = pq.disabled = true; $('pickCount').textContent = ''; return; }
@@ -309,22 +327,16 @@ function buildPickers(s, meta){
   py.value = String(curYear);
   const fillQ = (year) => {
     pq.innerHTML = '';
-    const qs = Array.from(new Set(mine.filter(r => r.year === year).map(r => r.quarter))).sort((a, b) => b - a);
+    const qs = Array.from(new Set(all.filter(r => r.year === year).map(r => r.quarter))).sort((a, b) => b - a);
     qs.forEach(q => pq.appendChild(opt(String(q), 'Q' + q + ' · ' + q + 'Q' + year)));
     return qs;
   };
   const qs = fillQ(curYear);
   pq.value = String(meta ? meta.quarter : qs[0]);
-  $('pickCount').textContent = nReports(mine.length);
-  py.onchange = () => {
-    const y = +py.value; const q2 = fillQ(y); pq.value = String(q2[0]);
-    const r = latestOf(mine.filter(x => x.year === y && x.quarter === q2[0]));
-    if (r) nav(hashReport(r.id));
-  };
-  pq.onchange = () => {
-    const r = latestOf(mine.filter(x => x.year === +py.value && x.quarter === +pq.value));
-    if (r) nav(hashReport(r.id));
-  };
+  $('pickCount').textContent = nReports(sectorQuarters(s.id));
+  const open = (y, q) => { const r = bestEdition(all.filter(x => x.year === y && x.quarter === q), meta); if (r) nav(hashReport(r.id)); };
+  py.onchange = () => { const y = +py.value; const q2 = fillQ(y); pq.value = String(q2[0]); open(y, q2[0]); };
+  pq.onchange = () => open(+py.value, +pq.value);
 }
 function imgUrl(name){ return DL.imageUrl(state.reportId, name); }
 const CAPTION_LABEL_RE = /^\s*((?:exhibit|figure|fig\.?|chart|table|graph)\s*\d+[A-Za-z]?|(?:图表|图|表|附图|附表)\s*\d+)/i;
@@ -695,7 +707,7 @@ async function submitUpload(ev){
     const m = await DL.upload({sector, year, quarter, nature, language, title, keywords}, f);
     closeUpload();
     if (afterWrite(m)) return;
-    toast(t('upload_ok'));
+    toast(m.replaced && m.replaced.length ? t('upload_replaced') : t('upload_ok'));
     await loadAll();
     nav(hashReport(m.id)); route();
   } catch (e) {
@@ -796,14 +808,15 @@ function renderSectorList(){
       saveOrder();
     });
     row.appendChild(el('span', 'sc-code', s.code));
-    const nm = el('span', 'nm'); nm.textContent = s.name_en; nm.appendChild(el('span', null, s.name_cn + (s.report_count ? ' · ' + s.report_count + ' ' + t('reports') : '')));
+    const nq = sectorQuarters(s.id);
+    const nm = el('span', 'nm'); nm.textContent = s.name_en; nm.appendChild(el('span', null, s.name_cn + (nq ? ' · ' + nReports(nq) : '')));
     const cov = sectorCoverage(s); if (cov) nm.appendChild(el('span', 'cov', cov));
     row.appendChild(nm);
     const ed = el('button', null, t('edit')); ed.type = 'button';
     ed.addEventListener('click', () => { fillSectorForm(s); $('sNameEn').focus(); });
     row.appendChild(ed);
     const rm = el('button', 'rm', t('remove')); rm.type = 'button';
-    rm.disabled = !!s.report_count; if (s.report_count) rm.title = t('sector_has_reports');
+    rm.disabled = nq > 0; if (nq > 0) rm.title = t('sector_has_reports');
     rm.addEventListener('click', async () => {
       if (!confirm(t('confirm_remove_sector'))) return;
       try { await commitSectors(state.sectors.filter(x => x.id !== s.id)); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav(); }

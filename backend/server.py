@@ -184,6 +184,26 @@ def report_dir(rid: str) -> Path:
     return d
 
 
+def report_key(m: dict[str, Any]) -> tuple:
+    """One edition per sector + quarter + type + language; a new upload with the same key replaces the old one."""
+    return (m.get("sector"), m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
+
+
+def remove_duplicates(meta: dict[str, Any]) -> list[str]:
+    """Delete every other report that has the same key as `meta`. Returns the removed ids."""
+    removed = []
+    for other in all_meta():
+        if other.get("id") != meta.get("id") and report_key(other) == report_key(meta):
+            shutil.rmtree(REPORTS / other["id"], ignore_errors=True)
+            removed.append(other["id"])
+    return removed
+
+
+def quarter_count(metas: list[dict[str, Any]]) -> int:
+    """How many quarters a sector covers: languages and full/summary editions of one quarter count once."""
+    return len({(m.get("year"), m.get("quarter")) for m in metas})
+
+
 def parse_period(s: str | None) -> int | None:
     """Accept '2Q2026', '2026Q2', '2026-2' -> 20262."""
     if not s:
@@ -206,7 +226,8 @@ def api_sectors():
     metas = all_meta()
     for s in sectors:
         mine = [m for m in metas if m.get("sector") == s["id"]]
-        s["report_count"] = len(mine)
+        s["report_count"] = quarter_count(mine)
+        s["file_count"] = len(mine)
         s["latest_period"] = mine[0]["period"] if mine else None
         s["latest_period_key"] = mine[0]["period_key"] if mine else None
         s["periods"] = sorted({m["period"] for m in mine}, key=lambda p: parse_period(p), reverse=True)
@@ -347,6 +368,7 @@ def api_update_report(rid: str, payload: dict[str, Any]):
         meta.update(year=y, quarter=qq, period=period_label(y, qq), period_key=period_key(y, qq))
     meta["updated_at"] = now_iso()
     (d / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
+    meta["replaced"] = remove_duplicates(meta)
     return meta
 
 
@@ -459,7 +481,10 @@ async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year
         "uploaded_at": now_iso(),
     }
     _write_content(d, meta, parsed, keep_title=bool(meta["title"]))
-    return read_meta(d)
+    saved = read_meta(d) or meta
+    # same sector + quarter + type + language already present: this upload replaces it
+    saved["replaced"] = remove_duplicates(saved)
+    return saved
 
 
 @app.get("/api/meta")

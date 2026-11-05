@@ -180,6 +180,36 @@ def period_label(y: int, q: int) -> str:
     return f"{q}Q{y}"
 
 
+def report_key(m: dict[str, Any]) -> tuple:
+    return (m.get("sector"), m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
+
+
+def dedupe_all(c: Crypto) -> int:
+    """Keep only the most recently uploaded report per key (cleans up older duplicate uploads)."""
+    seen: dict[tuple, dict[str, Any]] = {}
+    n = 0
+    for m in sorted(all_meta(c), key=lambda m: m.get("uploaded_at", ""), reverse=True):
+        k = report_key(m)
+        if k in seen:
+            shutil.rmtree(REPORTS / m["id"], ignore_errors=True)
+            log("duplicate removed", m["id"], "(kept", seen[k]["id"] + ")")
+            n += 1
+        else:
+            seen[k] = m
+    return n
+
+
+def remove_duplicates(meta: dict[str, Any], c: Crypto) -> int:
+    """One edition per sector + quarter + type + language: drop older reports with the same key."""
+    n = 0
+    for other in all_meta(c):
+        if other.get("id") != meta.get("id") and report_key(other) == report_key(meta):
+            shutil.rmtree(REPORTS / other["id"], ignore_errors=True)
+            log("replaced", other["id"], "by", meta.get("id"))
+            n += 1
+    return n
+
+
 # ------------------------------------------------------------------ incoming
 def process_incoming(c: Crypto) -> int:
     if not INCOMING.exists():
@@ -230,6 +260,7 @@ def process_incoming(c: Crypto) -> int:
         fill_meta_from_parsed(meta, parsed)
         content = {"blocks": parsed["blocks"], "exhibits": parsed["exhibits"], "stats": parsed["stats"]}
         save_report(d, meta, content, c)
+        remove_duplicates(meta, c)
         p.unlink()
         mp.unlink()
         done += 1
@@ -270,6 +301,7 @@ def apply_ops(c: Crypto) -> int:
                         meta.update(year=y, quarter=q, period=period_label(y, q), period_key=y * 10 + q)
                     meta["updated_at"] = now_iso()
                     save_report(d, meta, None, c)
+                    remove_duplicates(meta, c)
             elif kind == "delete":
                 shutil.rmtree(REPORTS / op["id"], ignore_errors=True)
             elif kind == "sectors":
@@ -367,11 +399,12 @@ def main():
     if a.apply:
         n1 = process_incoming(c)
         n2 = apply_ops(c)
+        n4 = dedupe_all(c)
         n3 = sync_encrypted(c)
         build_index(c)
         if c.on and a.strip_plain:
             strip_plaintext()
-        log(f"applied {n1} uploads, {n2} ops; refreshed {n3} encrypted reports")
+        log(f"applied {n1} uploads, {n2} ops; removed {n4} duplicates; refreshed {n3} encrypted reports")
     if a.site:
         if not (DATA / "index.json").exists() and not (DATA / "index.json.enc").exists():
             build_index(c)

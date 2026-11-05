@@ -3,9 +3,9 @@
   "title": "2026Q3 US Private Equity Research Summary",
   "sector": "private_equity",
   "year": 2026,
-  "quarter": 4,
-  "period": "4Q2026",
-  "period_key": 20264,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
   "nature": "summary",
   "language": "en",
   "keywords": [
@@ -49,5 +49,6 @@
       "text": "4. Our Position: GPS V, benchmark and actions"
     }
   ],
-  "summary": "Conclusion: all three legs weakened together this quarter — deployment (-37.5% QoQ), exits (-46.3% QoQ) and fundraising (extreme concentration at the top) — and the through-line is liquidity: until distributions resume, "
+  "summary": "Conclusion: all three legs weakened together this quarter — deployment (-37.5% QoQ), exits (-46.3% QoQ) and fundraising (extreme concentration at the top) — and the through-line is liquidity: until distributions resume, ",
+  "updated_at": "2026-11-05T03:03:09+00:00"
 }
