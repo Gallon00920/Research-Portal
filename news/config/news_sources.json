@@ -1,0 +1,211 @@
+{
+  "retentionDays": 90,
+  "lookbackDays": 90,
+  "maxItemsPerGp": 6,
+  "minimumScore": 5,
+  "claude": {
+    "model": "claude-opus-5-5",
+    "apiKeyEnv": "ANTHROPIC_API_KEY",
+    "effort": "low",
+    "maxTokens": 16000,
+    "refusalFallback": true
+  },
+  "classification": {
+    "enabled": true
+  },
+  "semanticScoring": {
+    "enabled": true,
+    "queryCachePath": "data/semantic_queries.json",
+    "backend": "auto",
+    "colbertModel": "colbert-ir/colbertv2.0",
+    "rawScoreMin": 0,
+    "rawScoreMax": 30,
+    "scoreScale": 12,
+    "minimumFinalScore": 7
+  },
+  "translation": {
+    "enabled": true,
+    "targetLanguage": "Simplified Chinese"
+  },
+  "ratingWeights": {
+    "institution": 18,
+    "strategy": 12,
+    "event": 30,
+    "source": 25,
+    "freshness": 15
+  },
+  "gps": [
+    "Blue Owl",
+    "KKR",
+    "CIFC",
+    "PAG",
+    "Pretium",
+    "Guggenheim",
+    "Neuberger",
+    "BasePoint",
+    "Bain Capital",
+    "Blackstone",
+    "Apollo",
+    "TPG",
+    "Golub",
+    "CVC",
+    "Canyon"
+  ],
+  "gpGroups": {
+    "invested": ["Blue Owl", "KKR", "CIFC", "PAG", "Pretium", "Guggenheim", "Neuberger", "BasePoint", "Bain Capital"],
+    "watch": ["Blackstone", "Apollo", "TPG", "Golub", "CVC", "Canyon"]
+  },
+  "gpAliases": {
+    "Blue Owl": ["blue owl", "blueowl", "owl rock", "dyal capital", "dyal", "blue owl technology finance", "nyse: otf", " obdc", " ocic", " orcc"],
+    "KKR": ["kkr", "kohlberg kravis roberts", "global atlantic", " fsk ", " fsk's", " kref"],
+    "CIFC": ["cifc"],
+    "PAG": [" pag ", "pag's", "pacific alliance group"],
+    "Pretium": ["pretium", "progress residential", "deephaven", "anchor loans", "selene finance", " pret 20"],
+    "Guggenheim": ["guggenheim"],
+    "Neuberger": ["neuberger berman", "neuberger", " nb private"],
+    "BasePoint": ["basepoint"],
+    "Bain Capital": ["bain capital", "baincapital", " bcsf"],
+    "Blackstone": ["blackstone", "bcred", " bxsl", " bxmt", " bx trust", " bx commercial mortgage"],
+    "Apollo": ["apollo global", "apollo management", "apollo asset", "apollo debt", "apollo credit", "apollo's", "apollo ", "athene", "midcap financial", "redding ridge"],
+    "TPG": [" tpg ", "tpg inc", "tpg's", "angelo gordon", "tpg angelo", "twin brook", "northwoods capital", "ag mortgage investment trust", " trtx"],
+    "Golub": ["golub", " gbdc"],
+    "CVC": ["cvc capital", "cvc credit", " cvc ", "cordatus"],
+    "Canyon": ["canyon partners", "canyon capital", "canyon clo"]
+  },
+  "gpQueries": {
+    "Blue Owl": ["\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"", "Blue Owl private credit direct lending BDC"],
+    "KKR": ["\"KKR\" OR \"Kohlberg Kravis Roberts\"", "KKR private credit direct lending asset-based finance CLO"],
+    "CIFC": ["\"CIFC\" OR \"CIFC Asset Management\"", "CIFC CLO credit"],
+    "PAG": ["\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"", "PAG private credit direct lending real estate credit"],
+    "Pretium": ["\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing", "Pretium residential credit mortgage"],
+    "Guggenheim": ["\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit", "Guggenheim private credit CLO asset backed lending"],
+    "Neuberger": ["\"Neuberger Berman\"", "Neuberger Berman private credit direct lending"],
+    "BasePoint": ["\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund", "BasePoint private credit asset backed lending"],
+    "Bain Capital": ["\"Bain Capital\" OR \"BainCapital\"", "Bain Capital credit private debt direct lending"],
+    "Blackstone": ["\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment", "Blackstone private credit direct lending BCRED"],
+    "Apollo": ["\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit", "Apollo private credit direct lending asset backed finance"],
+    "TPG": ["\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"", "TPG Angelo Gordon private credit"],
+    "Golub": ["\"Golub Capital\" OR \"Golub\" credit", "Golub Capital BDC direct lending"],
+    "CVC": ["\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund", "CVC Credit private credit CLO"],
+    "Canyon": ["\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit", "Canyon Partners credit fund"]
+  },
+  "sourceQueries": [
+    "private credit direct lending Blue Owl Blackstone Apollo BDC",
+    "private credit direct lending KKR Bain Capital Guggenheim Golub",
+    "private credit CLO CIFC KKR Guggenheim CVC Canyon asset backed lending",
+    "private credit real estate mortgage Pretium BasePoint PAG TPG",
+    "aircraft leasing aviation finance Apollo KKR private credit",
+    "GP stakes private credit Blue Owl Dyal Blackstone",
+    "data center AI infrastructure financing private credit Blackstone Apollo KKR",
+    "Europe private credit direct lending Apollo KKR CVC Neuberger Berman",
+    "site:dbrs.morningstar.com CLO OR BDC OR \"private credit\" OR \"direct lending\" OR \"middle market\"",
+    "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
+    "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
+  ],
+  "rssFeeds": [
+    {
+      "name": "SEC Blue Owl Technology Finance filings",
+      "url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001747777&type=8-K%25&owner=exclude&count=40&output=atom"
+    },
+    {
+      "name": "PR Newswire Financial Services",
+      "url": "https://www.prnewswire.com/rss/financial-services-latest-news/financial-services-latest-news-list.rss"
+    },
+    {
+      "name": "Business Wire Finance News",
+      "url": "https://feed.businesswire.com/rss/home/?rss=G1QFDERJXkJeEFpQWw=="
+    },
+    {
+      "name": "ABF Journal",
+      "url": "https://www.abfjournal.com/feed/"
+    },
+    {
+      "name": "HousingWire",
+      "url": "https://www.housingwire.com/feed/"
+    },
+    {
+      "name": "Private Equity Wire Credit",
+      "url": "https://www.privateequitywire.co.uk/feed/"
+    },
+    {
+      "name": "Connect Money Private Debt",
+      "url": "https://www.connectmoney.com/feed?story-market=private-debt"
+    },
+    {
+      "name": "Connect Money CLOs",
+      "url": "https://www.connectmoney.com/feed?story-market=clos"
+    },
+    {
+      "name": "Connect Money Business Lending & Finance",
+      "url": "https://www.connectmoney.com/feed?story-market=business-lending-finance"
+    },
+    {
+      "name": "Connect Money Alternative Assets",
+      "url": "https://www.connectmoney.com/feed?story-market=alternative-assets"
+    },
+    {
+      "name": "Connect Money Real Estate",
+      "url": "https://www.connectmoney.com/feed?story-market=real-estate"
+    },
+    {
+      "name": "Mortgage News Daily Industry News",
+      "url": "https://www.mortgagenewsdaily.com/rss/news"
+    },
+    {
+      "name": "Mortgage News Daily MBS Commentary",
+      "url": "https://www.mortgagenewsdaily.com/rss/mbs"
+    },
+    {
+      "name": "Mortgage News Daily Full News",
+      "url": "https://www.mortgagenewsdaily.com/rss/full"
+    }
+  ],
+  "htmlSources": [
+    {
+      "name": "Asset Securitization Report",
+      "url": "https://asreport.americanbanker.com/feed",
+      "parser": "asset_securitization_report"
+    },
+    {
+      "name": "ABL Advisor News",
+      "url": "https://www.abladvisor.com/NewsList.aspx",
+      "parser": "generic_listing"
+    },
+    {
+      "name": "Structured Credit Investor Weekly Issue",
+      "url": "https://www.structuredcreditinvestor.com/weeklyissue/default.asp",
+      "parser": "generic_listing"
+    },
+    {
+      "name": "Inside Mortgage Finance MBS & ABS",
+      "url": "https://www.insidemortgagefinance.com/articles/topic/676-inside-mbs-abs",
+      "parser": "generic_listing"
+    },
+    {
+      "name": "Inside Mortgage Finance News",
+      "url": "https://www.insidemortgagefinance.com/articles/topic/1578?page=1",
+      "parser": "generic_listing"
+    }
+  ],
+  "preferredSources": [
+    "Reuters",
+    "Bloomberg",
+    "Financial Times",
+    "Wall Street Journal",
+    "Private Credit Daily",
+    "Creditflux",
+    "Structured Credit Investor",
+    "ABL Advisor",
+    "Asset Securitization Report",
+    "PR Newswire",
+    "Business Wire",
+    "SEC",
+    "Morningstar DBRS",
+    "PitchBook",
+    "Apollo",
+    "KKR",
+    "Blue Owl",
+    "Bain Capital",
+    "Blackstone"
+  ]
+}

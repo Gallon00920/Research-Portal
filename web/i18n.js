@@ -3,6 +3,8 @@ window.I18N = {
   en: {
     search: "Search", search_ph: "Search reports, sections, exhibits…",
     dashboard: "Dashboard", dash_title: "AID Market Research Panel",
+    nav_panel: "Research Panel", nav_news: "News tracker", news_title: "AID Credit News Radar",
+    news_hero: "Track capital's next move.", news_hero_sub: "Institution updates, legal events and credit strategies in one search.",
     dash_sub: "Quarterly sector reports, positions monitoring — Junson Capital Alternative Investment Division",
     sectors: "Research Sectors", manage_sectors: "Manage sectors", latest_uploads: "Latest Uploads",
     no_reports_yet: "No reports yet", enter: "Open", reports: "reports", report: "report", latest: "latest",
@@ -54,6 +56,8 @@ window.I18N = {
   cn: {
     search: "搜索", search_ph: "搜索报告、章节、图表…",
     dashboard: "总览", dash_title: "AID 市场研究面板",
+    nav_panel: "研究面板", nav_news: "新闻追踪", news_title: "AID 信用新闻雷达",
+    news_hero: "追踪资本的下一步。", news_hero_sub: "机构动态、法律事件与信用策略，一处检索。",
     dash_sub: "季度板块研究报告与持仓监控 — Junson Capital 另类投资团队",
     sectors: "研究板块", manage_sectors: "管理板块", latest_uploads: "最新上传",
     no_reports_yet: "暂无报告", enter: "进入", reports: "份报告", report: "份报告", latest: "最新",

@@ -1,0 +1,265 @@
+{
+  "canonicalHash": "d0b2adfdcebd9ebe930e2d2004639de170ebffff",
+  "queries": [
+    "Plain-English framing:",
+    "News about loans, debt funds, and credit deals in the U.S. (and some European markets) involving major private credit firms like Apollo, KKR, Blue Owl, and Pretium—especially when covering software companies, real estate mortgages, aircraft financing, CLOs, or when those firms raise new funds, restructure troubled loans, or adjust how they manage their credit portfolios.",
+    "Industry/trade-press framing:"
+  ],
+  "hydeByGp": {
+    "Blue Owl": {
+      "promptHash": "2a3230aebbdbecf36aff1fbad62b0205c4006edd",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Blue Owl acts as lead arranger or lender on a direct lending deal, such as providing a unitranche or senior secured loan to finance a sponsor-backed buyout or refinance a company's existing debt.",
+        "News about one of Blue Owl's BDCs (e.g., Blue Owl Capital Corp / OBDC, OBDE, OTF), including quarterly earnings, non-accruals, dividend changes, mergers between BDCs, or redemption and liquidity issues in its non-traded vehicles.",
+        "Blue Owl raises or closes a credit-focused fund, launches or prices a CLO, or expands into asset-based finance, investment-grade private credit, or structured financing partnerships, such as forward-flow agreements or insurance-linked credit mandates."
+      ],
+      "notRelevant": [
+        "Blue Owl's GP Stakes business buys a minority stake in another private equity firm or sports franchise, with no lending, debt financing, or credit component involved.",
+        "Blue Owl's real assets or infrastructure arm acquires, develops, or sells a data center, net-lease property, or other infrastructure asset as an equity owner. Corporate news like executive hires outside the credit platform, stock-price moves, or general firm-wide AUM milestones also falls here unless it is specifically tied to credit strategies."
+      ]
+    },
+    "Portfolio": {
+      "promptHash": "6d846f95199c8a6f7a8c85cb745af23306778d8d",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Portfolio's direct lending or private credit arm provides, leads, or refinances a loan facility (e.g., unitranche, senior secured, or mezzanine debt) for a company or sponsor-backed buyout, or raises a new private credit fund or BDC capital.",
+        "Portfolio prices, resets, or refinances a CLO, or completes an asset-based finance or structured credit transaction (e.g., a portfolio purchase of consumer, equipment, or specialty finance loans, an NAV loan, or a securitization).",
+        "A Portfolio-managed BDC or credit vehicle reports earnings, changes its dividend, has non-accruals or credit-quality changes, or receives a rating action. This also covers credit-focused hires, partnerships (e.g., a bank–private credit tie-up), and regulatory scrutiny of its lending business."
+      ],
+      "notRelevant": [
+        "Portfolio's private equity funds acquire, invest in, or exit a company through a buyout, IPO, or secondary sale, with no Portfolio credit or lending involvement described.",
+        "Portfolio's infrastructure or real estate equity strategies buy or sell assets (e.g., a data center, toll road, or office portfolio). Also excluded is firm-wide corporate news unrelated to credit, such as executive changes outside credit, headquarters moves, philanthropy, or overall firm fundraising totals that are not broken out by credit strategy."
+      ]
+    },
+    "Apollo": {
+      "promptHash": "594b96d739b00392f86cebcf80bfed87ba1ed995",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Apollo or one of its affiliates (e.g., Apollo Debt Solutions BDC, MidCap Financial, Atlas SP Partners) provides, leads, or refinances a loan or private credit facility for a company. Examples include a unitranche loan backing a sponsor's acquisition or a large direct-lending deal that replaces a syndicated loan.",
+        "Apollo raises, launches, or reports on a credit-focused vehicle or product. Examples include closing a direct lending or asset-backed finance fund, pricing a new CLO, BDC earnings or NAV updates, or a private credit partnership with a bank or wealth platform.",
+        "Apollo originates or acquires asset-based or structured-finance exposure. Examples include buying a loan portfolio from a bank, financing aircraft, fleet, or consumer receivables, or providing investment-grade private credit (such as a large capex financing for a corporate) that is often placed with Athene."
+      ],
+      "notRelevant": [
+        "Apollo's private equity funds agree to acquire, take private, or sell an operating company through an equity buyout. Examples include an Apollo PE fund buying a retailer or exiting a portfolio company via IPO, with no mention of Apollo providing debt financing.",
+        "General Apollo corporate or non-credit news. Examples include executive hires or departures outside the credit business, firm-wide earnings commentary on PE or real estate equity performance, infrastructure or real estate equity asset sales, lawsuits, or political and philanthropic stories about leadership."
+      ]
+    },
+    "OTF": {
+      "promptHash": "aa0a2f37c9c1bd57b5e089d8dd48364fb36a773a",
+      "relevant": [
+        "OTF announces a $450M direct lending facility to a middle-market industrial company, structured as a first-lien term loan with covenant-lite features—highlighting its credit underwriting approach and portfolio exposure in asset-based finance.",
+        "OTF’s CLO management platform issues its third collateralized loan obligation this year, with $1.2B in leveraged loan assets, featuring revised warehouse lines and enhanced risk retention disclosures per SEC guidelines.",
+        "OTF acquires a minority stake in a BDC through a strategic co-investment vehicle, explicitly to provide senior secured debt financing and gain exposure to the BDC’s underlying loan portfolio."
+      ],
+      "notRelevant": [
+        "OTF leads a $2.8B leveraged buyout of a software services firm alongside a PE co-sponsor, acquiring 100% equity ownership with no debt financing or credit-related role for OTF.",
+        "OTF sells its 40% equity interest in a wind farm portfolio to an infrastructure fund—purely an equity divestiture with no associated lending, credit facilities, or structured financing involvement."
+      ]
+    },
+    "Pretium": {
+      "promptHash": "00afc23c9cb48aaecf013f5436fb006577b00b26",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Pretium raises, closes, or deploys capital for a credit vehicle, such as a residential mortgage credit fund, an asset-based finance strategy, or a private lending/opportunistic credit fund, including details on fund size, LP commitments, or target returns.",
+        "Pretium or an affiliate (e.g., Anchor Loans, Selene Finance) originates, buys, services, or securitizes loans. Examples include business-purpose/fix-and-flip lending, purchases of re-performing or non-performing mortgage pools, and RMBS/ABS deals rated by agencies like KBRA, DBRS, or Moody's.",
+        "Pretium is involved in a financing transaction as lender or structured-finance counterparty. This covers providing debt, warehouse facilities, or rescue capital to a company, as well as credit-related hires, team launches, or leadership changes in its credit business."
+      ],
+      "notRelevant": [
+        "Pretium's single-family rental platform (e.g., Progress Residential) buys, sells, or operates homes, or faces tenant, rent, or housing-policy scrutiny, with no lending, securitization, or debt-financing angle.",
+        "Pretium makes a private equity or real estate equity investment, buyout, or asset sale (e.g., acquiring an operating company or a portfolio of properties for equity ownership). This also covers general corporate news such as office openings, philanthropy, or non-credit executive appointments."
+      ]
+    },
+    "KKR": {
+      "promptHash": "39a53d11e4848bd2a9d949c86412c38a6d62eff4",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "KKR provides or leads a private credit financing, such as a direct loan, unitranche facility, or refinancing package for a company. Examples include KKR Credit lending to a sponsor-backed borrower or a non-KKR-owned business.",
+        "News about KKR's credit vehicles: fundraising, performance, or portfolio updates for its BDCs (e.g., FS KKR Capital Corp.), CLO issuance or pricing, or closes of its private credit and opportunistic credit funds.",
+        "KKR originates, acquires, or partners on asset-based finance or structured credit deals. Examples include buying a consumer loan portfolio, forward-flow agreements, insurance-linked credit via Global Atlantic, or partnerships with banks to take on loan risk."
+      ],
+      "notRelevant": [
+        "KKR's private equity arm agrees to acquire, take private, or sell a portfolio company, with no discussion of KKR providing the debt financing. Examples include a buyout of a software firm or an IPO exit of a PE holding.",
+        "KKR buys or sells an infrastructure or real estate equity asset, such as a stake in a fiber network, data center, or office portfolio. Firm-level corporate news with no credit angle also falls here, such as executive hires outside credit, quarterly earnings commentary focused on PE, or philanthropy."
+      ]
+    },
+    "Bayview": {
+      "promptHash": "7dba20cab598d1b3c874e3ee45caeffc54886638",
+      "relevant": [
+        "Bayview announces the closing of its new $1.2 billion senior secured direct lending fund, targeting middle-market companies with covenant-lite structures and unitranche facilities.",
+        "Bayview serves as collateral manager for a newly issued $750 million AAA-rated CLO, with focus on U.S. broadly syndicated loans and enhanced warehouse financing terms.",
+        "Bayview provides a $200 million asset-based revolving credit facility to a manufacturing company, secured by inventory and receivables, structured with borrowing base mechanics and monthly reporting covenants."
+      ],
+      "notRelevant": [
+        "Bayview acquires a portfolio of solar generation assets through its infrastructure equity platform — no debt financing, credit structuring, or lender role involved.",
+        "Bayview leads a leveraged buyout of a software company via its private equity arm, using equity capital and third-party debt arranged by other lenders — Bayview itself does not provide or manage the financing."
+      ]
+    },
+    "CIFC": {
+      "promptHash": "d6d0d8edf07bdddcf7abff84bf0e09edea635898",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "CIFC prices, closes or refinances a CLO (e.g., \"CIFC Funding 2024-III\"), with details on deal size, tranche spreads, AAA pricing, reset or reinvestment-period terms, or the collateral manager's role.",
+        "CIFC provides or leads a financing package as lender, arranger or agent, such as a unitranche loan, senior secured term loan or asset-based facility for a borrower. This includes cases where the borrower is a PE-backed company.",
+        "CIFC raises capital for or launches a credit-focused vehicle, such as a senior loan fund, opportunistic credit fund, private credit/direct lending strategy or BDC. It also covers hires, promotions or AUM updates specific to its credit, CLO or structured-finance teams."
+      ],
+      "notRelevant": [
+        "CIFC or an affiliated entity makes a private equity investment, buyout or equity stake acquisition in a company, or exits one, without CIFC providing debt financing.",
+        "General corporate news about CIFC that is not tied to its credit or lending activities, such as office relocations, executive or board changes, or firm-wide branding and ESG announcements. This also covers the purchase or sale of infrastructure or real estate equity assets where CIFC acts as owner rather than lender."
+      ]
+    },
+    "NB": {
+      "promptHash": "83c7906f7fe2b4a2c5600623ed8e5ddb543abc1b",
+      "relevant": [
+        "NB announces the launch of a new $1.2 billion senior secured direct lending fund targeting middle-market companies, with commitments from institutional investors and a focus on first-lien, cash-flow-based underwriting.",
+        "NB’s CLO management platform issues its seventh collateralized loan obligation, featuring exposure to U.S. leveraged loans and governed by a standard cash flow waterfall with credit enhancement features.",
+        "NB provides a $450 million asset-based lending facility to a manufacturing company, secured by inventory and accounts receivable, structured as a revolving credit line with borrowing base mechanics."
+      ],
+      "notRelevant": [
+        "NB acquires a portfolio of solar generation assets through its infrastructure equity strategy — no debt financing, lending, or credit structuring is involved or disclosed.",
+        "NB leads a $3.8 billion leveraged buyout of a consumer goods company via its flagship private equity fund, with financing arranged entirely by third-party banks and no NB-originated credit facility or balance sheet exposure."
+      ]
+    },
+    "HSBC AM": {
+      "promptHash": "a3dcda72ec7405909d2a98f2f1f11a0c4f7c77bf",
+      "relevant": [
+        "HSBC AM announces the launch of a new $1.2 billion senior secured direct lending fund targeting mid-market U.S. corporates, with commitments from institutional investors and a focus on first-lien, cash-flow-based underwriting.",
+        "HSBC AM’s CLO platform prices its seventh collateralized loan obligation (CLO 7.0), featuring a $450 million Class A tranche rated AAA, backed by a diversified portfolio of broadly syndicated leveraged loans.",
+        "HSBC AM provides a $280 million asset-based revolving credit facility to a European logistics company, secured against inventory and receivables, as part of its structured finance offering for sponsor-backed businesses."
+      ],
+      "notRelevant": [
+        "HSBC AM acquires a 70% stake in a Spanish renewable energy developer through its infrastructure equity strategy — no debt financing, credit structuring, or lending component involved.",
+        "HSBC AM leads a €950 million buyout of a German industrial software firm via its flagship private equity fund, using equity capital and third-party acquisition financing arranged externally — HSBC AM itself did not originate, underwrite, or hold any credit instrument."
+      ]
+    },
+    "Bain Capital": {
+      "promptHash": "05ef074a30496640348ff9d77f4067a9520c4e41",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "An article reporting that Bain Capital Credit has priced a new CLO, upsized a direct lending fund, or closed a fundraise for a credit strategy, such as private credit, special situations, or asset-based finance, including deal size, investors, or target returns.",
+        "Coverage of Bain Capital Specialty Finance (BCSF), its BDC, covering quarterly earnings, dividend declarations, net investment income, non-accruals, portfolio credit quality, or debt issuance.",
+        "A story where Bain Capital acts as lender, arranger, or structured-finance provider, for example by providing a unitranche loan to a sponsor-backed company, buying a loan portfolio from a bank, or forming an asset-based lending partnership. This applies even when the borrower is in an infrastructure or real estate context."
+      ],
+      "notRelevant": [
+        "An article about Bain Capital Private Equity acquiring, investing in, or exiting a company through a buyout, IPO, or secondary sale, with no discussion of Bain Capital providing or arranging the financing.",
+        "News about Bain Capital's real estate or infrastructure equity deals, such as buying an office portfolio or selling a data center stake. This also covers general firm news like executive hires outside credit, philanthropy, Bain Capital Ventures startup rounds, or political commentary."
+      ]
+    },
+    "Guggenheim": {
+      "promptHash": "e6135abaa388bd74a4188fa6e9eac6c866690aa2",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "An article about Guggenheim Investments closing, raising, or launching a private credit vehicle, such as a direct lending fund, a BDC, or an asset-based finance strategy. It typically includes fund size, investor commitments, or target borrowers.",
+        "Coverage of Guggenheim pricing, issuing, refinancing, or managing a CLO or other structured-finance transaction (e.g., ABS, CMBS, or warehouse facilities). It typically includes tranche details, ratings, or spreads.",
+        "A report of Guggenheim acting as a lender, arranger, or credit provider in a specific financing, such as a unitranche loan, NAV facility, or senior secured term loan to a company or asset owner, including loans to real estate or infrastructure borrowers."
+      ],
+      "notRelevant": [
+        "An article about Guggenheim's private equity or real estate equity activity, such as acquiring a controlling stake in a company, buying a property as owner, or exiting an equity investment, with no lending or financing role for Guggenheim's credit business.",
+        "Unrelated corporate or advisory news. Examples include Guggenheim Securities advising on an M&A deal, executive hires outside the credit platform, sports team ownership (e.g., the Dodgers), philanthropy, the Guggenheim Museum, or firm-wide legal and regulatory matters not tied to credit strategies."
+      ]
+    },
+    "PAG": {
+      "promptHash": "392fc82ef2bb4345e62ff288b180cc66cca60bd8",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "An article reporting that PAG's private credit business provided or led a direct loan, unitranche, mezzanine or structured financing to a company, often in Asia-Pacific markets such as India, China, Australia, Korea or Japan. Examples include a special-situations loan, an acquisition financing package, or a refinancing of existing debt.",
+        "News about PAG raising, closing or deploying capital in a credit-focused vehicle, such as a new Asia private credit fund, a performing or special-situations credit strategy, or a separately managed lending mandate. The same applies to hires and departures within its credit or lending team.",
+        "Coverage of PAG's asset-based or structured-finance activity. This includes financing secured by real estate, receivables, consumer loans, NPL portfolios or other collateral, as well as CLO, securitization or portfolio-financing transactions. It also covers a real estate or infrastructure deal where PAG acts specifically as the lender or debt provider rather than the equity owner."
+      ],
+      "notRelevant": [
+        "An article about PAG's private equity arm acquiring, investing equity in, or exiting a portfolio company through a buyout, IPO or trade sale, with no credit or lending component. Examples include PAG buying a controlling stake in a consumer brand or selling a business to a strategic buyer.",
+        "News on PAG's real estate or infrastructure equity activity, such as purchasing an office tower, logistics park or data center as owner, or selling an infrastructure asset. It also covers general firm-level corporate news like IPO plans, leadership changes outside credit, or firmwide AUM milestones that don't specifically address its credit strategies."
+      ]
+    },
+    "Basepoint": {
+      "promptHash": "579b4a689f039f139f74b40b37cf019dd2c373d4",
+      "relevant": [
+        "Basepoint announces a $450 million senior secured direct lending facility to a middle-market manufacturing company, structured as a floating-rate term loan with asset-based covenants.",
+        "Basepoint closes its third CLO, a $1.2 billion AAA-rated vehicle focused on U.S. leveraged loan collateral, with 95% ramp-up completed within six months.",
+        "Basepoint serves as administrative agent and lead lender in a $300 million asset-based revolving credit facility for a logistics firm, secured by accounts receivable and inventory."
+      ],
+      "notRelevant": [
+        "Basepoint acquires a portfolio of solar generation assets through its infrastructure equity fund — no debt financing, credit structuring, or lending involvement is disclosed.",
+        "Basepoint leads a $1.8 billion take-private transaction of a software company via its flagship private equity fund, funded entirely with equity capital and unrelated to any credit strategy or financing vehicle."
+      ]
+    },
+    "Neuberger": {
+      "promptHash": "22dfaf522427110ad6bbd4c818fe8fc4189c9358",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Neuberger closes or raises capital for a private credit vehicle, such as a direct lending fund, a specialty finance fund, or its BDC (e.g., NB Private Markets or NB Private Debt). Typical details include commitments, target size, investor base, or a capital raise or listing.",
+        "Neuberger prices, resets, or refinances a CLO, or launches or expands a CLO or loan platform. Typical details include tranche sizes, spreads, the collateral manager role, or growth in leveraged loan AUM.",
+        "Neuberger provides financing in a specific deal, such as a unitranche loan, an asset-based finance facility, or a NAV loan to a sponsor or borrower. It also counts when the firm hires or promotes a portfolio manager to lead a credit, lending, or structured-finance strategy."
+      ],
+      "notRelevant": [
+        "Neuberger's private equity arm makes a buyout, co-investment, secondary, or GP-stake investment, or exits one, with no lending or financing role by the firm. Examples include acquiring a majority stake in a software company or closing a PE secondaries fund.",
+        "The article covers Neuberger's corporate or non-credit business. Examples include firm-wide leadership changes, employee-ownership news, equity or multi-asset fund performance, an infrastructure or real estate equity asset sale, or ESG or proxy-voting commentary."
+      ]
+    },
+    "Blackstone": {
+      "promptHash": "d7f032ce40cc8c087e00f83963fb943bfe7ed4e5",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "An article about Blackstone Credit & Insurance (BXCI) or one of its vehicles, such as BCRED or BXSL, providing financing. Examples include leading a unitranche or direct loan to support a sponsor's buyout, refinancing a company's debt, or reporting the BDC's fundraising, NAV, or loan-book performance.",
+        "An article about Blackstone's structured-finance or asset-based finance activity. Examples include pricing or refinancing a CLO, buying a loan portfolio from a bank, entering a forward-flow agreement, or partnering with a bank or insurer on private credit origination.",
+        "An article where Blackstone acts as a lender or credit investor in real estate or infrastructure. Examples include Blackstone Real Estate Debt Strategies originating a commercial mortgage, or Blackstone Mortgage Trust (BXMT) reporting on its loan book, defaults, or new loan originations."
+      ],
+      "notRelevant": [
+        "An article about a Blackstone private equity fund acquiring or selling a company. An example is a take-private buyout or an IPO exit of a portfolio company, where Blackstone is the equity owner and its credit arm plays no financing role.",
+        "An article about Blackstone's infrastructure or real estate equity activity, or general corporate news. Examples include buying a data center portfolio or apartment complex as owner, BREIT redemption limits, executive hires outside credit, or firm-wide quarterly earnings that don't focus on credit results."
+      ]
+    },
+    "TPG": {
+      "promptHash": "0d0aaca808db55a58a9503c0cc08628359f2da62",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "An article about TPG's credit platform (largely built through its 2023 acquisition of Angelo Gordon, now TPG Angelo Gordon) raising capital, closing a fund, or deploying money in direct lending, middle-market lending, or asset-based finance. Examples include a new private credit fund close or a loan facility provided to a borrower.",
+        "Coverage of TPG-managed credit vehicles, such as its business development companies (e.g., TCPC-style BDC news, earnings, dividends, non-accruals) or its CLO issuance, pricing, refinancing, or resets.",
+        "News of TPG providing or arranging financing, such as structured credit, real estate debt, NAV loans, or partnerships with banks or insurers to originate or buy loan portfolios. This applies even when the borrower or asset sits in a PE, infrastructure, or real estate context, as long as TPG's role is lender or financing provider."
+      ],
+      "notRelevant": [
+        "An article about TPG's private equity activity, such as TPG Capital or TPG Rise acquiring, investing in, or exiting a portfolio company through a buyout, minority stake, IPO, or sale. These stay out unless TPG's credit arm is supplying the debt.",
+        "General TPG corporate or non-credit strategy news. Examples include infrastructure or real estate equity asset sales, executive hires outside credit, firm-wide earnings commentary focused on PE fundraising, or TPG's own stock performance with no specific credit or lending angle."
+      ]
+    },
+    "CVC": {
+      "promptHash": "4096a3d2477b826233fdabe46e71f72e00f1ca9e",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "An article about CVC Credit (formerly CVC Credit Partners) raising, closing or deploying a direct lending, senior secured or private credit fund, such as a new European Direct Lending fund close or a unitranche loan CVC is providing to a mid-market borrower.",
+        "Coverage of CVC's CLO activity, such as pricing, issuing, resetting or refinancing a CVC Cordatus CLO or a U.S. CLO vehicle, or news about its CLO management platform, risk-retention capital or tranche spreads.",
+        "News on CVC's credit-adjacent vehicles or strategies, such as a BDC or evergreen private credit product, asset-based finance or structured credit deals, or credit team hires, departures or reorganizations at CVC Credit."
+      ],
+      "notRelevant": [
+        "An article about CVC Capital Partners' private equity activity, such as acquiring, exiting or IPO-ing a portfolio company (a sports league stake, consumer brand or software firm), where CVC acts only as equity owner and the financing is not the focus.",
+        "General CVC corporate news unrelated to credit, such as group earnings, share price moves after its Amsterdam listing, or infrastructure strategy deals like DIF Capital Partners buying or selling an energy or transport asset with no lending or structured-finance angle."
+      ]
+    },
+    "Golub": {
+      "promptHash": "fdae63fdbfd61e3702bb4b3bfae70b4d438a01e6",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Golub Capital acts as administrative agent, sole lead arranger, or lender on a unitranche, first-lien, or revolving credit facility, such as financing a sponsor-backed leveraged buyout or refinancing a middle-market company's debt.",
+        "Golub's BDCs (e.g., Golub Capital BDC / GBDC) report quarterly earnings, net investment income, dividends, non-accruals, or portfolio credit quality, or announce mergers, capital raises, or debt issuance.",
+        "Golub prices or closes a CLO, raises a direct lending or asset-based finance fund, secures a credit-focused capital partnership or separately managed account, or launches a new lending, NAV-financing, or structured-credit strategy."
+      ],
+      "notRelevant": [
+        "Golub's private equity or infrastructure arm acquires, sells, or recapitalizes an operating company or asset as an equity owner (e.g., a buyout or the sale of a portfolio company or infrastructure asset) with no mention of Golub providing or arranging financing.",
+        "General corporate news about Golub with no credit or financing angle, such as philanthropic initiatives, office openings, workplace rankings or awards, sponsorships, or personnel announcements for non-credit teams."
+      ]
+    },
+    "Canyon": {
+      "promptHash": "f79c64c5a516651749402a61b6a8dbc0ff16c0f3",
+      "model": "claude-opus-5-5",
+      "relevant": [
+        "Canyon Partners raises or closes a credit-focused fund or vehicle, such as a distressed debt fund, structured credit fund, CLO, or real estate debt/lending fund, or launches or expands a direct lending or asset-based finance strategy.",
+        "Canyon provides financing to a borrower, for example by originating or participating in a loan, refinancing, rescue financing, DIP loan, or bridge/mezzanine loan for a company or real estate project, or by buying a portfolio of loans or receivables.",
+        "Canyon acts as a creditor in a restructuring, bankruptcy, or debt workout (e.g., joins an ad hoc bondholder group, takes control through a debt-for-equity swap, or trades distressed bonds or leveraged loans), or hires or promotes staff for its credit, CLO, or structured finance teams."
+      ],
+      "notRelevant": [
+        "Canyon makes or exits an equity investment that involves no lending or financing role. Examples include a private equity-style acquisition of a company, a real estate equity purchase or joint venture, or the sale of an owned infrastructure or property asset.",
+        "General Canyon corporate or personnel news unrelated to credit. Examples include founder profiles, philanthropy, office moves, firm-wide AUM headlines, executive changes outside the credit business, or political donations by its principals."
+      ]
+    }
+  }
+}

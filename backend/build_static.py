@@ -41,6 +41,7 @@ REPORTS = DATA / "reports"
 INCOMING = ROOT / "incoming"
 OPS = ROOT / "ops"
 WEB = ROOT / "web"
+NEWS_DATA = ROOT / "news" / "data" / "news.json"
 SALT_FILE = DATA / "salt.txt"
 
 
@@ -364,6 +365,9 @@ def build_site(out: Path, c: Crypto, repo: str, branch: str):
         f = DATA / name
         if f.exists():
             shutil.copy(f, out / "data" / name)
+    # news tracker data, written hourly by news/scripts/update_news.py (served plain, never encrypted)
+    if NEWS_DATA.exists():
+        shutil.copy(NEWS_DATA, out / "data" / "news.json")
     if REPORTS.exists():
         for d in REPORTS.iterdir():
             if not d.is_dir():

@@ -38,6 +38,7 @@ DATA = ROOT / "data"
 REPORTS = DATA / "reports"
 SECTORS_FILE = DATA / "sectors.json"
 WEB = ROOT / "web"
+NEWS_DATA = ROOT / "news" / "data" / "news.json"  # written by news/scripts/update_news.py
 REPORTS.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_SECTORS = [
@@ -493,6 +494,14 @@ def api_meta():
     metas = all_meta()
     years = sorted({m["year"] for m in metas} | {y}, reverse=True)
     return {"current_year": y, "current_quarter": q, "years": years, "report_count": len(metas), "auth": auth_enabled()}
+
+
+@app.get("/data/news.json")
+def news_data():
+    """News tracker data; the GitHub Pages build copies the same file to data/news.json."""
+    if not NEWS_DATA.exists():
+        raise HTTPException(404, "news data not found; run news/scripts/update_news.py")
+    return FileResponse(NEWS_DATA, media_type="application/json")
 
 
 # -------------------------------------------------------------------- static

@@ -1,0 +1,101 @@
+name: Update news tracker
+
+# Hourly refresh of the Credit News Radar data (news/data/news.json). The updater lives
+# under news/ and is unchanged from the standalone Credit_bearing_news_updater repository.
+# After committing new data it dispatches build-deploy.yml so GitHub Pages picks it up
+# (a push made with GITHUB_TOKEN does not trigger other workflows by itself).
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: "Update mode"
+        required: true
+        default: "recent"
+        type: choice
+        options:
+          - today
+          - recent
+  schedule:
+    - cron: "0 * * * *"
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: news-tracker-update
+  cancel-in-progress: false
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Work on the latest main
+        run: git switch -C main origin/main
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+          cache-dependency-path: |
+            news/requirements-semantic.txt
+            news/requirements-colbert.txt
+
+      - name: Cache Hugging Face models
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/huggingface
+          key: huggingface-colbert-${{ runner.os }}-${{ hashFiles('news/requirements-colbert.txt') }}
+          restore-keys: |
+            huggingface-colbert-${{ runner.os }}-
+
+      - name: Install semantic dependencies
+        run: pip install -r news/requirements-semantic.txt
+
+      - name: Install optional ColBERT dependencies
+        run: pip install -r news/requirements-colbert.txt || echo "PyLate unavailable; updater will fall back to Claude relevance-judge semantic scoring."
+
+      - name: Run updater
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.mode }}" = "today" ]; then
+            python3 news/scripts/update_news.py --recent-days 1
+          else
+            python3 news/scripts/update_news.py --recent-days 3
+          fi
+
+      - name: Commit updated data
+        id: commit
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add news/data/news.json news/data/semantic_queries.json
+          if git diff --cached --quiet; then
+            echo "No news data changes to commit."
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "news: hourly data update [skip ci]"
+            # the report build may push to main at the same time: rebase and retry
+            for i in 1 2 3; do
+              git push origin HEAD:main && break
+              echo "push rejected, retrying after rebase ($i)"
+              git fetch origin main
+              git rebase origin/main || { git rebase --abort; exit 1; }
+            done
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Rebuild and deploy the site with the new data
+        if: steps.commit.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run build-deploy.yml --ref main

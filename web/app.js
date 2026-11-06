@@ -82,7 +82,12 @@ function sectorQuarters(sectorId){ return new Set(state.reports.filter(r => r.se
 /* ---------------------------------------------------------------- i18n + theme */
 function applyI18n(){
   document.documentElement.lang = state.lang === 'cn' ? 'zh-CN' : 'en';
-  document.querySelectorAll('[data-i18n]').forEach(n => { n.textContent = t(n.getAttribute('data-i18n')); });
+  // the news tracker (news.js) translates its own labels; only its hero uses panel keys
+  document.querySelectorAll('[data-i18n]').forEach(n => {
+    const k = n.getAttribute('data-i18n');
+    if (n.closest('#view-news') && !(k in window.I18N.en)) return;
+    n.textContent = t(k);
+  });
   document.querySelectorAll('[data-ph]').forEach(n => { n.placeholder = t(n.getAttribute('data-ph')); });
   document.querySelectorAll('[data-title]').forEach(n => { n.title = t(n.getAttribute('data-title')); });
   setToggle('langToggle', state.lang === 'cn', false);
@@ -102,6 +107,7 @@ function setLang(l){
   state.lang = l;
   try { localStorage.setItem('aid_lang', l); } catch (e) {}
   applyI18n();
+  if (window.NewsTracker) window.NewsTracker.setLanguage(l);
   route();
 }
 /* switch the report language only (the in-page EN / 中文 switch) */
@@ -131,22 +137,20 @@ async function loadAll(){
 function buildNav(){
   const n = $('mainnav');
   n.innerHTML = '';
-  const dash = el('button', state.view === 'dash' ? 'active' : '', t('dashboard'));
-  dash.type = 'button'; dash.addEventListener('click', () => nav('#/'));
-  n.appendChild(dash);
-  state.sectors.forEach(s => {
-    const b = el('button', (state.view !== 'dash' && state.sectorId === s.id) ? 'active' : '');
-    b.type = 'button';
-    b.appendChild(document.createTextNode(sectorName(s)));
-    const cnt = sectorQuarters(s.id);
-    if (cnt) b.appendChild(el('em', null, String(cnt)));
-    b.addEventListener('click', () => nav(hashSector(s.id)));
-    n.appendChild(b);
-  });
-  const up = el('button', 'right'); up.type = 'button';
-  up.textContent = '⬆ ' + t('upload_report');
-  up.addEventListener('click', () => openUpload(state.sectorId));
-  n.appendChild(up);
+  // two sections only: the research panel (dashboard + sector reports) and the news tracker;
+  // sectors are opened from the cards on the dashboard
+  const panel = el('button', state.view !== 'news' ? 'active' : '', t('nav_panel'));
+  panel.type = 'button'; panel.addEventListener('click', () => nav('#/'));
+  n.appendChild(panel);
+  const news = el('button', state.view === 'news' ? 'active' : '', t('nav_news'));
+  news.type = 'button'; news.addEventListener('click', () => nav('#/news'));
+  n.appendChild(news);
+  if (state.view !== 'news'){
+    const up = el('button', 'right'); up.type = 'button';
+    up.textContent = '⬆ ' + t('upload_report');
+    up.addEventListener('click', () => openUpload(state.sectorId));
+    n.appendChild(up);
+  }
 }
 
 /* ---------------------------------------------------------------- dashboard */
@@ -863,12 +867,22 @@ function showView(v){
   state.view = v;
   $('view-dash').hidden = v !== 'dash';
   $('view-art').hidden = v !== 'art';
-  $('searchWrap').style.visibility = v === 'dash' ? 'hidden' : '';
+  $('view-news').hidden = v !== 'news';
+  $('searchWrap').style.visibility = v === 'art' ? '' : 'hidden';
+}
+/* news tracker: the Credit News Radar module (news.js) renders into #view-news and follows the UI language */
+function renderNews(){
+  showView('news');
+  state.sectorId = null; state.reportId = null; state.report = null;
+  buildNav();
+  if (window.NewsTracker) window.NewsTracker.mount(state.lang);
+  document.title = t('news_title') + ' | Junson Capital';
 }
 function parseHash(){
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   if (!h) return {view: 'dash'};
   const p = h.split('/');
+  if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 's' && p[1]) return {view: 'sector', id: p[1]};
   if (p[0] === 'r' && p[1]) return {view: 'art', id: p[1], anchor: p.slice(2).join('/') || null};
   return {view: 'dash'};
@@ -877,6 +891,7 @@ async function route(){
   const h = parseHash();
   try {
     if (h.view === 'dash') renderDash();
+    else if (h.view === 'news') renderNews();
     else if (h.view === 'sector') openSector(h.id);
     else if (h.view === 'art'){
       if (state.view === 'art' && state.reportId === h.id && h.anchor){ const n = document.getElementById(h.anchor); if (n) n.scrollIntoView(); return; }

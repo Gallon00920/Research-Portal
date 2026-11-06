@@ -156,13 +156,43 @@ Run `.\publish.ps1` with the same password afterwards.
 The uploaded reports are never committed to git (`data/reports/` is
 ignored); they live only on the server's disk.
 
+## News tracker
+
+The "News tracker" tab (`#/news`) is the AID Credit News Radar, merged into
+this repository from `Credit_bearing_news_updater`. Everything it needs is
+under `news/`:
+
+- `news/scripts/update_news.py` fetches Google News / publisher feeds for the
+  monitored institutions, classifies and scores each item with Claude (and
+  optionally a ColBERT model), translates it, and appends it to
+  `news/data/news.json`. `news/README.md` and `news/docs/news_methodology.md`
+  describe the method; `news/config/news_sources.json` holds the sources,
+  aliases and weights.
+- `.github/workflows/update-news.yml` runs that script every hour (or on
+  demand with the "Refresh news" button in the tab), commits the new data and
+  dispatches `build-deploy.yml` so GitHub Pages serves it. It needs two
+  repository secrets: `ANTHROPIC_API_KEY` (required) and `HF_TOKEN`
+  (optional, for the ColBERT model download).
+- The page reads `data/news.json`: locally `backend/server.py` serves
+  `news/data/news.json` at that path, and `build_static.py` copies it into
+  `site/data/` for the static site. Scores are fixed at retrieval; filters,
+  weights and the summary run in the browser (`web/news.js`, `web/news.css`).
+
+Run it locally with `python news/scripts/update_news.py --recent-days 3`
+(`--dry-run` to preview). The "Refresh news" button asks for a fine-grained
+token with *Actions: read and write* on this repository; it is kept in the
+browser only.
+
 ## Layout
 
 ```
-backend/server.py          FastAPI app + static hosting of web/
+backend/server.py          FastAPI app + static hosting of web/ (+ /data/news.json)
 backend/parsers/           docx / pdf parsers and shared helpers
 web/index.html, app.css    page shell and design system
 web/app.js, i18n.js        routing, rendering, UI strings (en / cn)
+web/news.js, news.css      the News tracker view
+news/scripts/, config/     news updater pipeline and its sources / weights
+news/data/news.json        news data (committed hourly by update-news.yml)
 data/sectors.json          sector registry (created on first run)
 data/reports/<id>/         meta.json, content.json, images/, source.<ext>
 ```

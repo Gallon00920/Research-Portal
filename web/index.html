@@ -4,7 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AID Research Panel | Junson Capital</title>
-<link rel="stylesheet" href="app.css?v=15">
+<link rel="stylesheet" href="app.css?v=16">
+<link rel="stylesheet" href="news.css?v=16">
 </head>
 <body>
 
@@ -112,6 +113,225 @@
       </div>
     </div>
   </div>
+</div>
+
+<!-- ═══════ news tracker (AID Credit News Radar) ═══════ -->
+<div id="view-news" hidden>
+  <div class="hero tall">
+    <div class="hero-txt">
+      <h1><span data-i18n="news_hero"></span></h1>
+      <p data-i18n="news_hero_sub"></p>
+    </div>
+  </div>
+  <div class="shell dash">
+    <div class="doc-card">
+      <div class="tabbar">
+        <nav class="highlight-events" aria-label="Event filter">
+          <div class="tabs" id="eventTabs"></div>
+        </nav>
+        <div class="tab-actions">
+          <button class="btn small ghost" type="button" data-action="github-settings" id="githubSettingsButton">GitHub connection</button>
+          <button class="btn small refresh" type="button" data-action="reload" id="refreshButton">
+            <span data-icon="refresh-cw" data-size="14" id="refreshIcon"></span><span id="refreshLabel">Refresh news</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="doc-grid">
+        <aside class="rail news-rail">
+          <div class="side-label"><span data-i18n="monitoringUniverse">MONITORING UNIVERSE</span> <span id="universeCount">15</span></div>
+          <label class="firm all">
+            <input type="checkbox" id="allFirms" checked />
+            <span data-i18n="allFunds">All funds</span>
+            <small id="allFirmsCount">15 / 15</small>
+          </label>
+          <div class="fund-groups" id="fundGroups"></div>
+          <button class="add-firm-toggle" type="button" data-action="toggle-firm-manager" id="addFirmToggle">+ Add institution</button>
+          <div id="firmManager"></div>
+          <p class="firm-error" role="status" id="firmError" hidden></p>
+          <div class="side-bottom">
+            <span class="side-label" data-i18n="coverageNotes">COVERAGE NOTES</span>
+            <p id="coverageNoteA"></p>
+            <p id="coverageNoteB"></p>
+          </div>
+        </aside>
+
+        <main class="news-main">
+          <form class="search" id="searchForm">
+            <span data-icon="search" data-size="18"></span>
+            <input id="searchInput" aria-label="News keywords" maxlength="180" />
+            <button type="submit" data-i18n="searchButton">Search</button>
+          </form>
+
+          <section class="ranking-tools">
+            <label class="date-filter"><span data-i18n="dateLabel">Date</span>
+              <select id="dateSelect" aria-label="Date range">
+                <option value="7" data-i18n="days7">Last 7 days</option>
+                <option value="30" data-i18n="days30" selected>Last 30 days</option>
+                <option value="90" data-i18n="days90">Last 90 days</option>
+                <option value="365" data-i18n="days365">Last year</option>
+                <option value="all" data-i18n="daysAll">Any time</option>
+                <option value="exact" data-i18n="daysExact">Exact date…</option>
+                <option value="custom" data-i18n="daysCustom">Custom range…</option>
+              </select>
+            </label>
+            <label><span data-i18n="minScoreLabel">Priority filter</span>
+              <select id="minScoreSelect" aria-label="Minimum importance score">
+                <option value="0" data-i18n="scoreAll">All scores</option>
+                <option value="50" data-i18n="score50">50 and above</option>
+                <option value="65" data-i18n="score65">65 and above · priority reading</option>
+                <option value="80" data-i18n="score80">80 and above · high priority</option>
+              </select>
+            </label>
+            <label><span data-i18n="sortLabel">Sort</span>
+              <select id="sortSelect" aria-label="Sort news">
+                <option value="importance" data-i18n="sortImportance">Importance first</option>
+                <option value="recent" data-i18n="sortRecent">Newest first</option>
+                <option value="oldest" data-i18n="sortOldest">Oldest first</option>
+                <option value="institution" data-i18n="sortInstitution">GP relevance</option>
+                <option value="strategy" data-i18n="sortStrategy">Strategy relevance</option>
+                <option value="event" data-i18n="sortEvent">Event importance</option>
+                <option value="source" data-i18n="sortSource">Source priority</option>
+                <option value="freshness" data-i18n="sortFreshness">Freshness</option>
+              </select>
+            </label>
+            <div class="result-actions">
+              <button class="btn primary summary-button" type="button" data-action="toggle-summary" id="summaryButton">Generate summary</button>
+            </div>
+          </section>
+
+          <form class="date-range" id="dateRangeForm" hidden>
+            <label><span data-i18n="startDate">Start date</span><input type="date" id="rangeStart" /></label>
+            <span class="range-to" data-i18n="rangeTo">to</span>
+            <label><span data-i18n="endDate">End date</span><input type="date" id="rangeEnd" /></label>
+            <button type="submit" class="btn primary small" data-i18n="applyDates">Apply dates</button>
+            <small data-i18n="rangeHint">Inclusive of both ends; either end may be left blank.</small>
+            <p role="alert" id="rangeError" hidden></p>
+          </form>
+
+          <div class="date-range exact-date" id="exactDateBar" hidden>
+            <button type="button" class="btn small day-nav" data-action="exact-prev" aria-label="Previous day">‹</button>
+            <label><span data-i18n="exactDate">Date</span><input type="date" id="exactDateInput" /></label>
+            <button type="button" class="btn small day-nav" data-action="exact-next" aria-label="Next day">›</button>
+            <button type="button" class="btn small day-today" data-action="exact-today" data-i18n="today">Today</button>
+            <small id="exactDateHint"></small>
+          </div>
+
+          <details class="weights" id="weightDetails">
+            <summary data-i18n="weightSettings">Weighted ranking settings</summary>
+            <div class="weights-body">
+              <p data-i18n="weightIntro"></p>
+              <div class="weight-controls" id="weightControls"></div>
+              <p data-i18n="weightNoteA"></p>
+              <p data-i18n="weightNoteB"></p>
+              <p class="warning" id="zeroWeightWarning" hidden data-i18n="zeroWeights"></p>
+              <button type="button" class="btn small" data-action="reset-weights" data-i18n="resetWeights">Restore default weights</button>
+            </div>
+          </details>
+
+          <section class="strategies focus-strategies">
+            <div class="filter-label"><span data-icon="sliders-horizontal" data-size="14"></span> <span data-i18n="focusStrategies">Focus strategies</span></div>
+            <div class="strategy-list" id="focusStrategies"></div>
+          </section>
+
+          <div class="legal-note" id="legalNote" hidden>
+            <span data-icon="scale" data-size="18"></span>
+            <p data-i18n="legalNote"></p>
+          </div>
+
+          <div class="results-header"><h2><span id="resultsTitle">Latest news</span><span id="resultsCount">…</span></h2></div>
+          <div class="selection-line" id="selectionLine"></div>
+
+          <section class="results">
+            <p class="feed-backup" role="status" id="feedNote" hidden></p>
+            <section class="news-summary" id="newsSummary" aria-label="Filtered news summary" hidden></section>
+            <div id="articles" aria-live="polite"></div>
+          </section>
+        </main>
+
+        <aside class="side news-side">
+          <div class="context-block strategy-browser">
+            <div class="eyebrow">STRATEGY GROUPS</div>
+            <h3 data-i18n="strategyGroups">Strategy groups</h3>
+            <button class="all-strategies" type="button" data-action="select-strategy" data-strategy="" id="allStrategiesButton">All strategies</button>
+            <section class="strategy-manager" id="strategyManager" hidden></section>
+            <p class="warning" role="status" id="strategyError" hidden></p>
+            <div class="strategy-categories" id="strategyCategories"></div>
+          </div>
+          <div class="context-block coverage-block">
+            <div class="eyebrow">SEARCH COVERAGE</div>
+            <h3 data-i18n="coverageTitle">Coverage of this run</h3>
+            <div class="coverage-total"><strong id="coverageOk">—</strong><span id="coverageTotal"></span></div>
+            <p class="warning" id="coverageWarning" hidden></p>
+            <div class="coverage-list" id="coverageList"></div>
+            <p class="timestamp" id="coverageTimestamp"></p>
+          </div>
+          <div class="context-block notes">
+            <div class="eyebrow">READ THE SIGNAL</div>
+            <h3 data-i18n="notesTitle">Reading notes</h3>
+            <p data-i18n="notesA"></p>
+            <p data-i18n="notesB"></p>
+            <p data-i18n="notesC"></p>
+          </div>
+          <div class="context-block">
+            <button class="query-toggle" type="button" data-action="toggle-queries"><span data-i18n="queryToggle">Search queries & fallback search</span> <span data-icon="chevron-down" data-size="14"></span></button>
+            <div class="query-list" id="queryList" hidden></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </div>
+
+  <dialog id="reportDialog" class="report-dialog">
+    <form id="reportForm" method="dialog">
+      <div class="report-heading">
+        <div>
+          <p class="eyebrow" data-i18n="reportEyebrow">Feedback</p>
+          <h2 data-i18n="reportTitle">Report classification issue</h2>
+        </div>
+        <button class="report-close" type="button" data-report-close aria-label="Close">×</button>
+      </div>
+      <div class="dlg-body">
+        <p id="reportArticleTitle" class="report-article-title"></p>
+        <fieldset>
+          <legend data-i18n="reportReason">Reason</legend>
+          <label><input type="radio" name="reasonType" value="wrong_gp" checked /> <span data-i18n="wrongGp">Wrong GP</span></label>
+          <label><input type="radio" name="reasonType" value="wrong_sector" /> <span data-i18n="wrongSector">Wrong strategy</span></label>
+          <label><input type="radio" name="reasonType" value="not_credit" /> <span data-i18n="notCredit">Not credit related</span></label>
+        </fieldset>
+        <label><span data-i18n="correctGps">Correct GP(s)</span><select id="correctGps" multiple></select></label>
+        <label><span data-i18n="correctSectors">Correct strategy(ies)</span><select id="correctSectors" multiple></select></label>
+        <label><span data-i18n="reportDetails">Additional reason</span><textarea id="reportDetails" rows="4"></textarea></label>
+        <div class="report-actions">
+          <button type="button" class="btn ghost secondary-button" data-report-close data-i18n="cancelReport">Cancel</button>
+          <button type="submit" class="btn primary primary-button" data-i18n="submitReport">Submit report</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="githubDialog" class="refresh-dialog">
+    <form id="githubForm" method="dialog">
+      <div class="report-heading">
+        <div>
+          <p class="eyebrow" data-i18n="githubEyebrow">Live refresh</p>
+          <h2 data-i18n="githubTitle">Connect GitHub to refresh today's news</h2>
+        </div>
+        <button class="report-close" type="button" data-github-close aria-label="Close">×</button>
+      </div>
+      <div class="dlg-body">
+        <p class="refresh-warning" data-i18n="githubIntro"></p>
+        <p class="refresh-warning" data-i18n="githubSteps"></p>
+        <label><span data-i18n="githubTokenLabel">GitHub token</span><input type="password" id="githubTokenInput" autocomplete="off" spellcheck="false" /></label>
+        <p class="refresh-warning status" id="githubStatus" hidden></p>
+        <div class="report-actions">
+          <a class="btn ghost secondary-button" id="githubActionsLink" href="#" target="_blank" rel="noopener noreferrer" data-i18n="githubOpenActions">Open Actions page instead</a>
+          <button type="button" class="btn ghost secondary-button" id="githubForget" data-i18n="githubForget" hidden>Remove token</button>
+          <button type="submit" class="btn primary primary-button" id="githubSave" data-i18n="githubSave">Save and refresh</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
 </div>
 
 <footer class="dash-footer">
@@ -232,8 +452,9 @@
 <div class="toast" id="toast" role="status"></div>
 
 <script src="config.js"></script>
-<script src="i18n.js?v=15"></script>
-<script src="static_data.js?v=15"></script>
-<script src="app.js?v=15"></script>
+<script src="i18n.js?v=16"></script>
+<script src="static_data.js?v=16"></script>
+<script src="news.js?v=16"></script>
+<script src="app.js?v=16"></script>
 </body>
 </html>
