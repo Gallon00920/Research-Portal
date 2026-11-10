@@ -36,18 +36,18 @@ jobs:
       - name: Install fonts (CJK) and Python packages
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-dejavu-core
-          pip install -r requirements.txt cryptography
+          pip install -r panel/requirements.txt cryptography
 
       - name: Parse uploads and apply edits
         env:
           PANEL_PASSWORD: ${{ secrets.PANEL_PASSWORD }}
-        run: python backend/build_static.py --apply --strip-plain
+        run: python panel/backend/build_static.py --apply --strip-plain
 
       - name: Commit parsed reports back to the repository
         run: |
           git config user.name "aid-panel-bot"
           git config user.email "aid-panel-bot@users.noreply.github.com"
-          git add -A data incoming ops
+          git add -A panel/data panel/incoming panel/ops
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else
@@ -63,7 +63,7 @@ jobs:
       - name: Build static site
         env:
           PANEL_PASSWORD: ${{ secrets.PANEL_PASSWORD }}
-        run: python backend/build_static.py --site site
+        run: python panel/backend/build_static.py --site site
 
       - uses: actions/configure-pages@v5
         with:

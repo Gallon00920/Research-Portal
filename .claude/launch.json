@@ -4,7 +4,7 @@
     {
       "name": "research-panel",
       "runtimeExecutable": "python",
-      "runtimeArgs": ["backend/server.py"],
+      "runtimeArgs": ["panel/backend/server.py"],
       "port": 8765
     }
   ]

@@ -5,12 +5,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends fonts-noto-cjk 
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
-COPY requirements.txt .
+COPY panel/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-COPY backend ./backend
+COPY panel/backend ./panel/backend
 COPY web ./web
-COPY data/sectors.json ./data/sectors.json
+COPY panel/web ./panel/web
+COPY news/web ./news/web
+COPY news/data/news.json ./news/data/news.json
+COPY panel/data/sectors.json ./panel/data/sectors.json
 
 ENV PORT=8765
 EXPOSE 8765
-CMD ["sh", "-c", "python -m uvicorn server:app --app-dir backend --host 0.0.0.0 --port ${PORT}"]
+CMD ["sh", "-c", "python -m uvicorn server:app --app-dir panel/backend --host 0.0.0.0 --port ${PORT}"]

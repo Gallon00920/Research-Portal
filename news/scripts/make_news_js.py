@@ -19,7 +19,13 @@ def rep(old, new, count=1):
 # data/news.json is served by backend/server.py locally and copied into site/data by build_static.py;
 # the refresh button dispatches this repository's update-news.yml
 rep('const GITHUB_REPO = "Gallon00920/Credit_bearing_news_updater";',
-    'const GITHUB_REPO = (window.AID_CONFIG && window.AID_CONFIG.repo) || "Gallon00920/Research-Portal";')
+    '''/* repository that hosts this site: set by build_static.py on GitHub Pages, otherwise read from the Pages URL */
+function repoFromPagesUrl() {
+  const host = /^([^.]+)\\.github\\.io$/i.exec(location.hostname);
+  const first = location.pathname.split("/").filter(Boolean)[0];
+  return host && first ? `${host[1]}/${first}` : "";
+}
+const GITHUB_REPO = (window.AID_CONFIG && window.AID_CONFIG.repo) || repoFromPagesUrl();''')
 rep('''async function init() {
   loadLocalState();
   bindStaticEvents();

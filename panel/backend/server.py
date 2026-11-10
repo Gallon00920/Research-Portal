@@ -1,9 +1,12 @@
 """AID Research Panel — API + static file server.
 
-Run:  python backend/server.py   (or run.bat)
+Run:  python panel/backend/server.py   (or panel\run.bat)
 Then open http://127.0.0.1:8765
 
-No database: every report lives in data/reports/<id>/ as
+Serves the frontend as one flat tree from web/ (shared shell), panel/web/ (this
+feature) and news/web/ (the News tracker), plus news/data/news.json at /data/news.json.
+
+No database: every report lives in panel/data/reports/<id>/ as
   meta.json      card metadata (title, sector, quarter, keywords, ...)
   content.json   parsed blocks + exhibit index
   images/        extracted figures
@@ -27,7 +30,6 @@ from typing import Any
 
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
 from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
-from fastapi.staticfiles import StaticFiles
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
@@ -37,8 +39,10 @@ from parsers import parse_report  # noqa: E402
 DATA = ROOT / "data"
 REPORTS = DATA / "reports"
 SECTORS_FILE = DATA / "sectors.json"
-WEB = ROOT / "web"
-NEWS_DATA = ROOT / "news" / "data" / "news.json"  # written by news/scripts/update_news.py
+REPO = ROOT.parent  # repository root: web/ (shared shell), panel/, news/
+WEB = ROOT / "web"  # panel frontend: app.js, i18n.js, static_data.js, login.html
+STATIC_DIRS = (REPO / "web", WEB, REPO / "news" / "web")  # served flat; first match wins
+NEWS_DATA = REPO / "news" / "data" / "news.json"  # written by news/scripts/update_news.py
 REPORTS.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_SECTORS = [
@@ -519,7 +523,16 @@ async def no_cache_static(request, call_next):
     return response
 
 
-app.mount("/", StaticFiles(directory=str(WEB), html=True), name="web")
+@app.get("/{path:path}")
+def static_file(path: str):
+    """Frontend files from web/, panel/web/ and news/web/ as one flat tree (index.html at /)."""
+    name = path or "index.html"
+    for d in STATIC_DIRS:
+        base = d.resolve()
+        f = (base / name).resolve()
+        if f.is_file() and f.is_relative_to(base):
+            return FileResponse(f)
+    raise HTTPException(404, "not found")
 
 
 if __name__ == "__main__":

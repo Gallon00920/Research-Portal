@@ -1,16 +1,17 @@
 """Static build for GitHub Pages.
 
-  python backend/build_static.py --apply
+  python panel/backend/build_static.py --apply          (paths below are relative to panel/)
       * incoming/<id>.<ext>[.enc] + incoming/<id>.meta.json[.enc]  -> data/reports/<id>/ (parsed)
       * ops/*.json[.enc] (update_meta / delete / sectors)          -> applied, then removed
       * every report that has plaintext files gets an up-to-date encrypted copy
       * data/index.json(.enc) rebuilt (all report metadata)
 
-  python backend/build_static.py --site site
-      copies web/ + the encrypted data into site/ and writes site/config.js so the
+  python panel/backend/build_static.py --site site
+      copies web/ (shared shell), panel/web/ and news/web/ flat into site/, adds the report
+      data and news/data/news.json under site/data/, and writes site/config.js so the
       frontend runs in static mode (reads data/, writes through the GitHub API).
 
-Files per report (data/reports/<id>/):
+Files per report (panel/data/reports/<id>/):
   meta.json, content.json, images/, source.*   plain files (default: committed and served as-is)
   meta.json.enc, bundle.enc                     only when PANEL_PASSWORD is set (encrypted site)
 
@@ -40,8 +41,9 @@ DATA = ROOT / "data"
 REPORTS = DATA / "reports"
 INCOMING = ROOT / "incoming"
 OPS = ROOT / "ops"
-WEB = ROOT / "web"
-NEWS_DATA = ROOT / "news" / "data" / "news.json"
+REPO = ROOT.parent  # repository root: web/ (shared shell), panel/, news/
+WEB_DIRS = (REPO / "web", ROOT / "web", REPO / "news" / "web")  # copied flat into the site, in this order
+NEWS_DATA = REPO / "news" / "data" / "news.json"
 SALT_FILE = DATA / "salt.txt"
 
 
@@ -359,7 +361,8 @@ def strip_plaintext():
 
 def build_site(out: Path, c: Crypto, repo: str, branch: str):
     shutil.rmtree(out, ignore_errors=True)
-    shutil.copytree(WEB, out, ignore=shutil.ignore_patterns("config.js", "login.html"))
+    for d in WEB_DIRS:
+        shutil.copytree(d, out, dirs_exist_ok=True, ignore=shutil.ignore_patterns("config.js", "login.html"))
     (out / "data").mkdir()
     for name in ("sectors.json", "salt.txt", "index.json", "index.json.enc"):
         f = DATA / name

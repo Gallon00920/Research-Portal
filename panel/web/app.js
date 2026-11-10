@@ -139,12 +139,12 @@ function buildNav(){
   n.innerHTML = '';
   // two sections only: the research panel (dashboard + sector reports) and the news tracker;
   // sectors are opened from the cards on the dashboard
-  const panel = el('button', state.view !== 'news' ? 'active' : '', t('nav_panel'));
-  panel.type = 'button'; panel.addEventListener('click', () => nav('#/'));
-  n.appendChild(panel);
   const news = el('button', state.view === 'news' ? 'active' : '', t('nav_news'));
   news.type = 'button'; news.addEventListener('click', () => nav('#/news'));
   n.appendChild(news);
+  const panel = el('button', state.view !== 'news' ? 'active' : '', t('nav_panel'));
+  panel.type = 'button'; panel.addEventListener('click', () => nav('#/'));
+  n.appendChild(panel);
   if (state.view !== 'news'){
     const up = el('button', 'right'); up.type = 'button';
     up.textContent = '⬆ ' + t('upload_report');

@@ -1,5 +1,5 @@
 # Push the reports stored on this machine to GitHub, where the workflow deploys them.
-# Run from the project folder:   .\publish.ps1
+# Run from the project folder:   .\panel\publish.ps1   (it works from panel/, so the paths below are relative to panel/)
 # Leave the password empty for the open site. If the repository has a PANEL_PASSWORD
 # secret, enter the same value here so the files are encrypted the same way.
 $ErrorActionPreference = "Stop"

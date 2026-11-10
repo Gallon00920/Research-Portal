@@ -5,7 +5,13 @@
 (function () {
 "use strict";
 const DATA_URL = "data/news.json";
-const GITHUB_REPO = (window.AID_CONFIG && window.AID_CONFIG.repo) || "Gallon00920/Research-Portal";
+/* repository that hosts this site: set by build_static.py on GitHub Pages, otherwise read from the Pages URL */
+function repoFromPagesUrl() {
+  const host = /^([^.]+)\.github\.io$/i.exec(location.hostname);
+  const first = location.pathname.split("/").filter(Boolean)[0];
+  return host && first ? `${host[1]}/${first}` : "";
+}
+const GITHUB_REPO = (window.AID_CONFIG && window.AID_CONFIG.repo) || repoFromPagesUrl();
 const GITHUB_BRANCH = "main";
 const WORKFLOW_FILE = "update-news.yml";
 const REPORT_ISSUE_URL = `https://github.com/${GITHUB_REPO}/issues/new`;

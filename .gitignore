@@ -2,4 +2,4 @@ __pycache__/
 *.pyc
 server.*.log
 site/
-data/_tmp/
+panel/data/_tmp/

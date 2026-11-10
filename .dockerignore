@@ -1,4 +1,4 @@
-data/reports/
+panel/data/reports/
 __pycache__/
 *.pyc
 *.log

@@ -1,24 +1,26 @@
 # AID Research Panel
 
-Live site: <https://gallon00920.github.io/Research-Portal/>
+Live site: the GitHub Pages URL of the repository that hosts it (Settings → Pages).
 
 Internal website that visualises AID quarterly research reports by sector.
 Reports are uploaded as `.docx` or `.pdf`, parsed into structured content
 (headings, paragraphs, lists, tables, figures) and displayed in a reader that
 mirrors the AID Research Portal design. No database: every report lives as
-files under `data/reports/<id>/`.
+files under `panel/data/reports/<id>/`. The same site also hosts the
+**News tracker** (see below); the two features live in `panel/` and `news/`,
+and only the shared page shell is in `web/`.
 
 ## Run
 
 ```bash
-run.bat
+panel\run.bat
 ```
 
 or
 
 ```bash
-python -m pip install -r requirements.txt
-python backend/server.py
+python -m pip install -r panel/requirements.txt
+python panel/backend/server.py
 ```
 
 Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
@@ -68,7 +70,7 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
 
 ## Parsing
 
-- `backend/parsers/docx_parser.py` walks the Word body in order: heading
+- `panel/backend/parsers/docx_parser.py` walks the Word body in order: heading
   styles (English or Chinese style names) become headings, and so do
   manually formatted headings (bold, short, larger font) because the AID
   reports use the Normal style throughout. The masthead lines at the top
@@ -82,7 +84,7 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   figure or table, and "Source:/Note:/资料来源：/注：" lines become notes.
   Exhibits keep the document's own labels ("Exhibit 12", "图3"); those
   without a caption borrow the nearest heading in the index.
-- `backend/parsers/pdf_parser.py` (PyMuPDF) extracts text blocks, detects
+- `panel/backend/parsers/pdf_parser.py` (PyMuPDF) extracts text blocks, detects
   headings by font size, finds tables with `find_tables()` and renders
   embedded images and vector charts to PNG.
 - Every figure/table is numbered in document order; the list is returned as
@@ -113,12 +115,12 @@ GitHub is the host: the site is served by GitHub Pages and the Python
 parser runs inside a GitHub Actions workflow
 (`.github/workflows/build-deploy.yml`). The site is open: no password,
 and every parsed report (metadata, content, images and the original file)
-is committed to the repository in plain form under `data/reports/`.
+is committed to the repository in plain form under `panel/data/reports/`.
 
 ### One-time setup
 
 1. Push the repository and let the workflow run once. The URL appears under
-   **Settings → Pages** (`https://<owner>.github.io/Research-Portal/`).
+   **Settings → Pages** (`https://<owner>.github.io/<repository>/`).
    A private repository can use Pages only on GitHub Pro / Team /
    Enterprise; on a free account make the repository public.
 2. Everyone who will **upload or edit** from the site needs a GitHub
@@ -130,31 +132,29 @@ is committed to the repository in plain form under `data/reports/`.
 
 ### How changes flow
 
-- **Upload** on the site commits the file to `incoming/<id>.<ext>` plus a
-  small sidecar with sector, quarter, language, title and keywords.
+- **Upload** on the site commits the file to `panel/incoming/<id>.<ext>` plus
+  a small sidecar with sector, quarter, language, title and keywords.
 - **Edit / delete report** and **sector changes** commit small files to
-  `ops/` or `data/sectors.json`.
+  `panel/ops/` or `panel/data/sectors.json`.
 - Every push runs the workflow: it parses new uploads, applies the ops,
-  writes `data/reports/<id>/` (meta, content, images, original), rebuilds
-  `data/index.json`, commits the result back with `[skip ci]`, and deploys
-  the `site/` folder to Pages. Allow about two minutes, then refresh.
-- `.\publish.ps1` pushes reports that were parsed on a laptop with the
-  local server.
+  writes `panel/data/reports/<id>/` (meta, content, images, original),
+  rebuilds `panel/data/index.json`, commits the result back with
+  `[skip ci]`, and deploys the `site/` folder to Pages. Allow about two
+  minutes, then refresh.
+- `.\panel\publish.ps1` pushes reports that were parsed on a laptop with
+  the local server.
 
 ### Optional password
 
 Setting a `PANEL_PASSWORD` repository secret switches the whole pipeline
 to encrypted files (AES-256-GCM, PBKDF2 key): the site then asks for the
 password and decrypts in the browser, and nothing readable is committed.
-Run `.\publish.ps1` with the same password afterwards.
+Run `.\panel\publish.ps1` with the same password afterwards.
 
 ### Local use
 
-`python backend/server.py` still works as before with the files in
-`data/reports/`.
-
-The uploaded reports are never committed to git (`data/reports/` is
-ignored); they live only on the server's disk.
+`python panel/backend/server.py` still works as before with the files in
+`panel/data/reports/`.
 
 ## News tracker
 
@@ -173,10 +173,11 @@ under `news/`:
   dispatches `build-deploy.yml` so GitHub Pages serves it. It needs two
   repository secrets: `ANTHROPIC_API_KEY` (required) and `HF_TOKEN`
   (optional, for the ColBERT model download).
-- The page reads `data/news.json`: locally `backend/server.py` serves
+- The page reads `data/news.json`: locally `panel/backend/server.py` serves
   `news/data/news.json` at that path, and `build_static.py` copies it into
   `site/data/` for the static site. Scores are fixed at retrieval; filters,
-  weights and the summary run in the browser (`web/news.js`, `web/news.css`).
+  weights and the summary run in the browser (`news/web/news.js`,
+  `news/web/news.css`).
 
 Run it locally with `python news/scripts/update_news.py --recent-days 3`
 (`--dry-run` to preview). The "Refresh news" button asks for a fine-grained
@@ -185,16 +186,28 @@ browser only.
 
 ## Layout
 
+One folder per feature; the frontend files of all three folders are served
+(and built into `site/`) as one flat tree, so `index.html` references
+`app.js`, `news.js` etc. without folder prefixes.
+
 ```
-backend/server.py          FastAPI app + static hosting of web/ (+ /data/news.json)
-backend/parsers/           docx / pdf parsers and shared helpers
-web/index.html, app.css    page shell and design system
-web/app.js, i18n.js        routing, rendering, UI strings (en / cn)
-web/news.js, news.css      the News tracker view
-news/scripts/, config/     news updater pipeline and its sources / weights
-news/data/news.json        news data (committed hourly by update-news.yml)
-data/sectors.json          sector registry (created on first run)
-data/reports/<id>/         meta.json, content.json, images/, source.<ext>
+web/                         shared shell: index.html (both views' markup), app.css
+                             (design system), config.js
+panel/                       the research panel
+  backend/server.py          FastAPI app + static hosting (+ /data/news.json)
+  backend/build_static.py    parses uploads, applies ops, builds site/ for Pages
+  backend/parsers/           docx / pdf parsers and shared helpers
+  web/app.js, i18n.js        routing, rendering, UI strings (en / cn)
+  web/static_data.js         static-mode data layer (GitHub Pages + Contents API)
+  data/sectors.json          sector registry (created on first run)
+  data/reports/<id>/         meta.json, content.json, images/, source.<ext>
+  incoming/, ops/            uploads and edits waiting for the build workflow
+  requirements.txt, run.bat, publish.ps1
+news/                        the News tracker
+  web/news.js, news.css      the view (module + scoped styles)
+  scripts/, config/, docs/   news updater pipeline, its sources / weights, method
+  data/news.json             news data (committed hourly by update-news.yml)
+.github/workflows/           build-deploy.yml (panel) and update-news.yml (news)
 ```
 
 Design reference: the AID Research Portal pages (`AID_Portal_Demo_DT.html`

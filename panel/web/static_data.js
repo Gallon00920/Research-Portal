@@ -1,5 +1,5 @@
 /* Data layer. Two backends behind one interface:
-     - API mode (python backend/server.py): talks to /api/...
+     - API mode (python panel/backend/server.py): talks to /api/...
      - static mode (GitHub Pages, window.AID_CONFIG.static): reads data/ files, optionally
        decrypting them with the shared password, and writes through the GitHub API by
        committing files to incoming/ and ops/ that the build workflow applies.
@@ -13,7 +13,7 @@ window.DataLayer = (function(){
   const ITER = 310000;
   const te = new TextEncoder(), td = new TextDecoder();
 
-  /* ------------------------------------------------------------ crypto (matches backend/crypto_util.py) */
+  /* ------------------------------------------------------------ crypto (matches panel/backend/crypto_util.py) */
   let key = null;            // CryptoKey (AES-GCM) once signed in
   async function deriveKey(password, salt){
     const base = await crypto.subtle.importKey('raw', te.encode(password), 'PBKDF2', false, ['deriveKey']);
@@ -100,6 +100,8 @@ window.DataLayer = (function(){
       '" and Repository permissions → Contents = "Read and write". ' +
       '令牌必须是 fine-grained token，Repository access 选择 “Only select repositories → ' + cfg.repo.split('/')[1] + '”，并把 Contents 权限设为 “Read and write”。';
   }
+  /* the panel's files live under panel/ in the repository; the built site serves data/ flat */
+  const REPO_DIR = 'panel/';
   /* verify a pasted token can read and write this repository */
   async function checkToken(tok){
     const h = {Authorization: 'Bearer ' + tok, Accept: 'application/vnd.github+json', 'X-GitHub-Api-Version': '2022-11-28'};
@@ -109,7 +111,7 @@ window.DataLayer = (function(){
     const perms = data.permissions || {};
     if (!perms.push) throw new Error(tokenHelp('the token owner has no push access to this repository', r.status));
     // a fine-grained token without Contents:write still answers the repo call; probe the write path with a harmless GET
-    const c = await fetch(GH + '/repos/' + cfg.repo + '/contents/ops/.gitkeep?ref=' + cfg.branch, {headers: h});
+    const c = await fetch(GH + '/repos/' + cfg.repo + '/contents/' + REPO_DIR + 'ops/.gitkeep?ref=' + cfg.branch, {headers: h});
     if (c.status === 403 || c.status === 401){ let d = null; try { d = await c.json(); } catch (e) {} throw new Error(tokenHelp((d && d.message) || '', c.status)); }
     return true;
   }
@@ -180,18 +182,18 @@ window.DataLayer = (function(){
       const id = uid();
       const ext = (file.name.split('.').pop() || 'docx').toLowerCase();
       let bytes = new Uint8Array(await file.arrayBuffer());
-      let path = `incoming/${id}.${ext}`;
+      let path = `${REPO_DIR}incoming/${id}.${ext}`;
       if (cfg.encrypted){ if (!key) throw Object.assign(new Error('login required'), {needLogin: true}); bytes = await encryptBuf(bytes); path += '.enc'; }
       await putFile(path, bytes, `upload: ${file.name}`);
       const side = Object.assign({}, fields, {source_name: file.name, uploaded_at: new Date().toISOString()});
-      await putJson(`incoming/${id}.meta.json`, side, `upload meta: ${file.name}`);
+      await putJson(`${REPO_DIR}incoming/${id}.meta.json`, side, `upload meta: ${file.name}`);
       return {pending: true, id};
     },
-    async updateReport(id, payload){ await putJson(`ops/${Date.now()}-${uid().slice(0, 6)}.json`, Object.assign({op: 'update_meta', id}, payload), `edit: ${id}`); return {pending: true, id}; },
-    async deleteReport(id){ await putJson(`ops/${Date.now()}-${uid().slice(0, 6)}.json`, {op: 'delete', id}, `delete: ${id}`); return {pending: true}; },
+    async updateReport(id, payload){ await putJson(`${REPO_DIR}ops/${Date.now()}-${uid().slice(0, 6)}.json`, Object.assign({op: 'update_meta', id}, payload), `edit: ${id}`); return {pending: true, id}; },
+    async deleteReport(id){ await putJson(`${REPO_DIR}ops/${Date.now()}-${uid().slice(0, 6)}.json`, {op: 'delete', id}, `delete: ${id}`); return {pending: true}; },
     async saveSectors(list){
       const bytes = te.encode(JSON.stringify(list, null, 2));
-      await putFile('data/sectors.json', bytes, 'sectors: update');
+      await putFile(REPO_DIR + 'data/sectors.json', bytes, 'sectors: update');
       return {pending: true, sectors: list};
     },
     setTokenPrompt(fn){ askToken = fn; },
