@@ -1,0 +1,192 @@
+{
+  "id": "software_otf-2026Q4-full-dc34e000",
+  "title": "2026Q4 Software & OTF 季度更新",
+  "sector": "software_otf",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "cn",
+  "keywords": [
+    "软件",
+    "价值",
+    "对比",
+    "收益",
+    "行业",
+    "公允"
+  ],
+  "source_name": "OTF_2026Q4_OTF_CN.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-09T03:39:38.766Z",
+  "stats": {
+    "blocks": 106,
+    "images": 14,
+    "tables": 9,
+    "chars": 16114
+  },
+  "exhibit_count": 23,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Summary"
+    },
+    {
+      "level": 3,
+      "text": "OTF Q3'26 业绩"
+    },
+    {
+      "level": 3,
+      "text": "OTF 股价与估值"
+    },
+    {
+      "level": 3,
+      "text": "私募信贷与公众 BDC 行业"
+    },
+    {
+      "level": 1,
+      "text": "1. News"
+    },
+    {
+      "level": 2,
+      "text": "1.1 Blue Owl 与 OTF 关键新闻"
+    },
+    {
+      "level": 2,
+      "text": "1.2 私募信贷关键新闻"
+    },
+    {
+      "level": 2,
+      "text": "1.3 AI 相关新闻"
+    },
+    {
+      "level": 1,
+      "text": "2. OTF update"
+    },
+    {
+      "level": 2,
+      "text": "2.1 组合构成"
+    },
+    {
+      "level": 3,
+      "text": "资本结构"
+    },
+    {
+      "level": 3,
+      "text": "行业"
+    },
+    {
+      "level": 3,
+      "text": "借款人基本面"
+    },
+    {
+      "level": 2,
+      "text": "2.2 财务与债务"
+    },
+    {
+      "level": 3,
+      "text": "现金收益率趋势"
+    },
+    {
+      "level": 3,
+      "text": "NAV 桥"
+    },
+    {
+      "level": 3,
+      "text": "NII 与分红覆盖"
+    },
+    {
+      "level": 3,
+      "text": "融资结构"
+    },
+    {
+      "level": 3,
+      "text": "杠杆率"
+    },
+    {
+      "level": 2,
+      "text": "2.3 违约关注"
+    },
+    {
+      "level": 3,
+      "text": "PIK"
+    },
+    {
+      "level": 3,
+      "text": "非应计"
+    },
+    {
+      "level": 3,
+      "text": "内部风险评级"
+    },
+    {
+      "level": 2,
+      "text": "2.4 股价与卖方观点——de-rating 的解剖"
+    },
+    {
+      "level": 2,
+      "text": "2.4.1 Q2 业绩后的价格路径"
+    },
+    {
+      "level": 2,
+      "text": "2.4.2 五大驱动，按权重排序"
+    },
+    {
+      "level": 3,
+      "text": "驱动一 — 利率冲击首先打在收益型资产上"
+    },
+    {
+      "level": 3,
+      "text": "驱动二 — OTF 是市场上最纯的 AI 信用空头标的"
+    },
+    {
+      "level": 3,
+      "text": "驱动三 — Blue Owl 平台的拖累"
+    },
+    {
+      "level": 3,
+      "text": "驱动四 — 分红重置正在被定价"
+    },
+    {
+      "level": 3,
+      "text": "驱动五 — 诉讼滴灌与单边的资金流"
+    },
+    {
+      "level": 2,
+      "text": "2.4.3 业绩前市场定价了什么、卖方说了什么"
+    },
+    {
+      "level": 2,
+      "text": "2.5 价格比较——对 BDC 同业与软件股"
+    },
+    {
+      "level": 2,
+      "text": "2.7 本季应知事项"
+    },
+    {
+      "level": 3,
+      "text": "SpaceX——Class C 已变现，Class A 仍在账上"
+    },
+    {
+      "level": 3,
+      "text": "AI 算力借贷加速——Nscale 与 CoreWeave"
+    },
+    {
+      "level": 1,
+      "text": "3. 私募信贷与公众 BDC 行业"
+    },
+    {
+      "level": 2,
+      "text": "3.1 券商观点汇总 — 本季文件夹内的报告"
+    },
+    {
+      "level": 2,
+      "text": "3.2 共识与核心分歧"
+    },
+    {
+      "level": 2,
+      "text": "3.3 杠杆信用中的软件敞口 — 2028 到期墙的数字"
+    }
+  ],
+  "summary": "2026Q4 · Q3'26 业绩取自 11 月 4 日 10-Q 与业绩演示材料；价格与新闻截至 2026 年 10 月 13 日"
+}

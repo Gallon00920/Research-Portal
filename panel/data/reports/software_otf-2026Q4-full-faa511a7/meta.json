@@ -1,0 +1,192 @@
+{
+  "id": "software_otf-2026Q4-full-faa511a7",
+  "title": "2026Q4 Software & OTF Quarterly Update",
+  "sector": "software_otf",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "en",
+  "keywords": [
+    "OTF",
+    "October",
+    "BDC",
+    "NAV",
+    "NII",
+    "Blue Owl"
+  ],
+  "source_name": "OTF_2026Q4_OTF_EN.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-09T03:38:57.913Z",
+  "stats": {
+    "blocks": 108,
+    "images": 14,
+    "tables": 9,
+    "chars": 33633
+  },
+  "exhibit_count": 23,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Summary"
+    },
+    {
+      "level": 3,
+      "text": "OTF Q3'26 results"
+    },
+    {
+      "level": 3,
+      "text": "OTF share price & valuation"
+    },
+    {
+      "level": 3,
+      "text": "Private credit & public BDC industry"
+    },
+    {
+      "level": 1,
+      "text": "1. News"
+    },
+    {
+      "level": 2,
+      "text": "1.1 Key news on Blue Owl & OTF"
+    },
+    {
+      "level": 2,
+      "text": "1.2 Key private credit news"
+    },
+    {
+      "level": 2,
+      "text": "1.3 AI related news"
+    },
+    {
+      "level": 1,
+      "text": "2. OTF update"
+    },
+    {
+      "level": 2,
+      "text": "2.1 Portfolio composition"
+    },
+    {
+      "level": 3,
+      "text": "Capital structure"
+    },
+    {
+      "level": 3,
+      "text": "Industry"
+    },
+    {
+      "level": 3,
+      "text": "Borrower fundamentals"
+    },
+    {
+      "level": 2,
+      "text": "2.2 Financial & debt"
+    },
+    {
+      "level": 3,
+      "text": "Cash yield trend"
+    },
+    {
+      "level": 3,
+      "text": "NAV bridge"
+    },
+    {
+      "level": 3,
+      "text": "NII & dividend coverage"
+    },
+    {
+      "level": 3,
+      "text": "Financing profile"
+    },
+    {
+      "level": 3,
+      "text": "Leverage ratio"
+    },
+    {
+      "level": 2,
+      "text": "2.3 Default concern"
+    },
+    {
+      "level": 3,
+      "text": "PIK"
+    },
+    {
+      "level": 3,
+      "text": "Non-accrual"
+    },
+    {
+      "level": 3,
+      "text": "Internal risk rating"
+    },
+    {
+      "level": 2,
+      "text": "2.4 Share price & sell-side view — anatomy of the de-rating"
+    },
+    {
+      "level": 2,
+      "text": "2.4.1 Price path since the Q2 print"
+    },
+    {
+      "level": 2,
+      "text": "2.4.2 Five drivers, in order of weight"
+    },
+    {
+      "level": 3,
+      "text": "Driver 1 — The rate shock hit yield vehicles first"
+    },
+    {
+      "level": 3,
+      "text": "Driver 2 — OTF is the market’s purest AI-credit short"
+    },
+    {
+      "level": 3,
+      "text": "Driver 3 — The Blue Owl platform overhang"
+    },
+    {
+      "level": 3,
+      "text": "Driver 4 — The dividend reset is being priced now"
+    },
+    {
+      "level": 3,
+      "text": "Driver 5 — Litigation drip and a one-sided flow picture"
+    },
+    {
+      "level": 2,
+      "text": "2.4.3 What was priced in and what the sell side said into the print"
+    },
+    {
+      "level": 2,
+      "text": "2.5 Price comparison — vs BDC peers and vs software equities"
+    },
+    {
+      "level": 2,
+      "text": "2.7 Things we should know"
+    },
+    {
+      "level": 3,
+      "text": "SpaceX — Class C monetized, Class A still on the book"
+    },
+    {
+      "level": 3,
+      "text": "AI-compute lending steps up — Nscale and CoreWeave"
+    },
+    {
+      "level": 1,
+      "text": "3. Private credit & public BDC industry"
+    },
+    {
+      "level": 2,
+      "text": "3.1 Broker view summary — reports in this quarter’s folder"
+    },
+    {
+      "level": 2,
+      "text": "3.2 Consensus & key debate"
+    },
+    {
+      "level": 2,
+      "text": "3.3 Software exposure in leveraged credit — the 2028 wall in numbers"
+    }
+  ],
+  "summary": "2026Q4 · Q3'26 results per the November 4 10-Q and earnings deck; prices and news through October 13, 2026"
+}
