@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-12T18:04:30.682829+00:00",
+  "updatedAt": "2026-11-12T23:21:39.209100+00:00",
   "scope": {
     "regions": [
       "US",
@@ -175707,6 +175707,109 @@
               "finalScore": 19.94,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-10-f74852e7e28f",
+            "title": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance - Kalkine Media",
+            "titleZh": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance - Kalkine Media",
+            "summary": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance Kalkine Media",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUktPbVhfWUluWDZGbnhWRGM2V3dpVlpGVGkxMkdaN2w4eFBPQk9qSElNcUtTWVNDdHZRdFhzTHNWdDc4ZVVzaUtoNjBfT21LbFB4a1BrLVl5ZG93ZFpfQVJGa093N3NWVjNsakdteXZaZ3EySDBLQlh4cllJaTZDOHc4MmxsbWhYS0JpTkh1NUFaeGk1UFlPVmNYZVZWQUh4dXo3cnZfbUpKc1JET0JMSWVDWE9kaUpLZUpVLW9EZEo2REVGZ3hTWUdtVQ?oc=5",
+            "source": "Kalkine Media",
+            "publishedAt": "2026-11-10",
+            "lede": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance Kalkine Media",
+            "articleExcerpt": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance - Kalkine Media. Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance Kalkine Media",
+            "contentFingerprint": "9b087d6e9c4528cb",
+            "region": "US",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine Media"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 5.58,
+              "finalScore": 21.58,
+              "semanticEnabled": true
+            }
           }
         ],
         "Blackstone": [
@@ -179659,6 +179762,109 @@
             "keywordScore": 14,
             "semanticScore": 5.94,
             "finalScore": 19.94,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-10-f74852e7e28f",
+          "title": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance - Kalkine Media",
+          "titleZh": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance - Kalkine Media",
+          "summary": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance Kalkine Media",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxOUktPbVhfWUluWDZGbnhWRGM2V3dpVlpGVGkxMkdaN2w4eFBPQk9qSElNcUtTWVNDdHZRdFhzTHNWdDc4ZVVzaUtoNjBfT21LbFB4a1BrLVl5ZG93ZFpfQVJGa093N3NWVjNsakdteXZaZ3EySDBLQlh4cllJaTZDOHc4MmxsbWhYS0JpTkh1NUFaeGk1UFlPVmNYZVZWQUh4dXo3cnZfbUpKc1JET0JMSWVDWE9kaUpLZUpVLW9EZEo2REVGZ3hTWUdtVQ?oc=5",
+          "source": "Kalkine Media",
+          "publishedAt": "2026-11-10",
+          "lede": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance Kalkine Media",
+          "articleExcerpt": "Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance - Kalkine Media. Amrit Kanwal Submits Initial SEC Ownership Report for Bain Capital Specialty Finance Kalkine Media",
+          "contentFingerprint": "9b087d6e9c4528cb",
+          "region": "US",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine Media"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 5.58,
+            "finalScore": 21.58,
             "semanticEnabled": true
           }
         },
@@ -188141,9 +188347,285 @@
               "finalScore": 8.0,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-13c006c874ab",
+            "title": "Guggenheim keeps this U.S. biotech stock as its top pick - Yahoo Finance",
+            "titleZh": "Guggenheim keeps this U.S. biotech stock as its top pick - Yahoo Finance",
+            "summary": "Guggenheim keeps this U.S. biotech stock as its top pick Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPREtEdzY1SU04VkFfb0VIb01sZ1NrUzhCWEpGcG5LTHpkeTVIY3Z5cG14Ri00MWZCbHJGS0g1TGRDd3FXbmNBaWlBRXktY1c5ckhXZkotWFlyOWpNTEJ0bktTRWtPdlB5V1U1Vl9TQmxQMlZuOWdaSFVsQ3VPbExKQXMyRmNOM1dhUkpDOVNSa25rN0o3aXdjQg?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-12",
+            "lede": "Guggenheim keeps this U.S. biotech stock as its top pick Yahoo Finance",
+            "articleExcerpt": "Guggenheim keeps this U.S. biotech stock as its top pick - Yahoo Finance. Guggenheim keeps this U.S. biotech stock as its top pick Yahoo Finance",
+            "contentFingerprint": "819b52b34fbf95fe",
+            "region": "US",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 4.81,
+              "finalScore": 17.81,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-5908d87eb9eb",
+            "title": "Guggenheim highlights top biotechnology stock - Yahoo Finance",
+            "titleZh": "Guggenheim highlights top biotechnology stock - Yahoo Finance",
+            "summary": "Guggenheim highlights top biotechnology stock Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT1B1Zi1DeUIzWU1Kcnl6V01leGxOa2pwWkxZLU54NlpsSGFtbVdKaDdEUndnMnB3MkptZmJtTTc5bU5NeXc1QTBKVjlMUUtjSnpiT3VEZDNsSHVRcGM5TkY3a2pXdmFUX0tyYXJjUnZoeEJieFlZY1c3NFM4dmdERGtrbGpHdDVxcFRDeTl5YktrUnhWSnloQkxvU2JfNlNkM192dU5VRU5YUQ?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-12",
+            "lede": "Guggenheim highlights top biotechnology stock Yahoo Finance",
+            "articleExcerpt": "Guggenheim highlights top biotechnology stock - Yahoo Finance. Guggenheim highlights top biotechnology stock Yahoo Finance",
+            "contentFingerprint": "20e0e54bdb5976e2",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.66,
+              "finalScore": 15.66,
+              "semanticEnabled": true
+            }
           }
         ],
-        "Neuberger": [],
+        "Neuberger": [
+          {
+            "id": "2026-11-12-b87bc9b24975",
+            "title": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing - Stock Traders Daily",
+            "titleZh": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing - Stock Traders Daily",
+            "summary": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing Stock Traders Daily",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNY1dnTnB0aFppNHp5MndoYkxibU0zZVN1bFFPbW1WaEowbVhVYkI3U1JDczNDNmhWZXdmNEtab2FUeS12bnZUZ3pWUk5IZjN0MlVvWWFfZDRtZDZSQjhZeTRjSmVYcDRDd042ZFByaW9va2FFQVB3QUd3VG43a1dBYV8zZGJUbGRGOEtsamxiTlZ1RlFRV3dlOGFhdzdNbHdDV2c5SkxUVldWSFA3bUxJLXFHSnZ5eGxFU0FELVlINjBCTl9jTEhOZ29UODdLakhMa3NObWdCMDkzcXBaWVdCU1VNbURkSVd4eW80aUpfN0RvdXpWMmNfRw?oc=5",
+            "source": "Stock Traders Daily",
+            "publishedAt": "2026-11-12",
+            "lede": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing Stock Traders Daily",
+            "articleExcerpt": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing - Stock Traders Daily. How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing Stock Traders Daily",
+            "contentFingerprint": "68867ea9f9c37871",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Stock Traders Daily"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.7,
+              "finalScore": 7.7,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "BasePoint": [],
         "Bain Capital": [],
         "Blackstone": [
@@ -188819,6 +189301,99 @@
               "keywordScore": 3,
               "semanticScore": 4.19,
               "finalScore": 7.19,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-4691a74a5842",
+            "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-12",
+            "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "f714af33589a21bb",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.47,
+              "finalScore": 16.47,
               "semanticEnabled": true
             }
           }
@@ -189657,6 +190232,281 @@
           }
         },
         {
+          "id": "2026-11-12-13c006c874ab",
+          "title": "Guggenheim keeps this U.S. biotech stock as its top pick - Yahoo Finance",
+          "titleZh": "Guggenheim keeps this U.S. biotech stock as its top pick - Yahoo Finance",
+          "summary": "Guggenheim keeps this U.S. biotech stock as its top pick Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPREtEdzY1SU04VkFfb0VIb01sZ1NrUzhCWEpGcG5LTHpkeTVIY3Z5cG14Ri00MWZCbHJGS0g1TGRDd3FXbmNBaWlBRXktY1c5ckhXZkotWFlyOWpNTEJ0bktTRWtPdlB5V1U1Vl9TQmxQMlZuOWdaSFVsQ3VPbExKQXMyRmNOM1dhUkpDOVNSa25rN0o3aXdjQg?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-12",
+          "lede": "Guggenheim keeps this U.S. biotech stock as its top pick Yahoo Finance",
+          "articleExcerpt": "Guggenheim keeps this U.S. biotech stock as its top pick - Yahoo Finance. Guggenheim keeps this U.S. biotech stock as its top pick Yahoo Finance",
+          "contentFingerprint": "819b52b34fbf95fe",
+          "region": "US",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 4.81,
+            "finalScore": 17.81,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-5908d87eb9eb",
+          "title": "Guggenheim highlights top biotechnology stock - Yahoo Finance",
+          "titleZh": "Guggenheim highlights top biotechnology stock - Yahoo Finance",
+          "summary": "Guggenheim highlights top biotechnology stock Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPT1B1Zi1DeUIzWU1Kcnl6V01leGxOa2pwWkxZLU54NlpsSGFtbVdKaDdEUndnMnB3MkptZmJtTTc5bU5NeXc1QTBKVjlMUUtjSnpiT3VEZDNsSHVRcGM5TkY3a2pXdmFUX0tyYXJjUnZoeEJieFlZY1c3NFM4dmdERGtrbGpHdDVxcFRDeTl5YktrUnhWSnloQkxvU2JfNlNkM192dU5VRU5YUQ?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-12",
+          "lede": "Guggenheim highlights top biotechnology stock Yahoo Finance",
+          "articleExcerpt": "Guggenheim highlights top biotechnology stock - Yahoo Finance. Guggenheim highlights top biotechnology stock Yahoo Finance",
+          "contentFingerprint": "20e0e54bdb5976e2",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.66,
+            "finalScore": 15.66,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-b87bc9b24975",
+          "title": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing - Stock Traders Daily",
+          "titleZh": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing - Stock Traders Daily",
+          "summary": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing Stock Traders Daily",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxNY1dnTnB0aFppNHp5MndoYkxibU0zZVN1bFFPbW1WaEowbVhVYkI3U1JDczNDNmhWZXdmNEtab2FUeS12bnZUZ3pWUk5IZjN0MlVvWWFfZDRtZDZSQjhZeTRjSmVYcDRDd042ZFByaW9va2FFQVB3QUd3VG43a1dBYV8zZGJUbGRGOEtsamxiTlZ1RlFRV3dlOGFhdzdNbHdDV2c5SkxUVldWSFA3bUxJLXFHSnZ5eGxFU0FELVlINjBCTl9jTEhOZ29UODdLakhMa3NObWdCMDkzcXBaWVdCU1VNbURkSVd4eW80aUpfN0RvdXpWMmNfRw?oc=5",
+          "source": "Stock Traders Daily",
+          "publishedAt": "2026-11-12",
+          "lede": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing Stock Traders Daily",
+          "articleExcerpt": "How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing - Stock Traders Daily. How Neuberger Berman High Yield Strategies Fund (NHS) Affects Rotational Strategy Timing Stock Traders Daily",
+          "contentFingerprint": "68867ea9f9c37871",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Stock Traders Daily"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.7,
+            "finalScore": 7.7,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-5c007591a546",
           "title": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
           "titleZh": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
@@ -190328,6 +191178,99 @@
           }
         },
         {
+          "id": "2026-11-12-4691a74a5842",
+          "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-12",
+          "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "f714af33589a21bb",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-12T23:10:51.654206+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.47,
+            "finalScore": 16.47,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-ba76a47cf533",
           "title": "CVC Limited 2026 AGM: Resolutions Passed, FY2026 Total Income Rises to $212.2 Million - Kalkine",
           "titleZh": "CVC Limited 2026 AGM: Resolutions Passed, FY2026 Total Income Rises to $212.2 Million - Kalkine",
@@ -190782,7 +191725,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 18,
+      "count": 17,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -190790,12 +191733,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 100,
+      "count": 101,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -190803,7 +191746,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
@@ -190816,12 +191759,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 16,
+      "count": 17,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -190829,12 +191772,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 9,
+      "count": 8,
       "selected": 3,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -190842,20 +191785,20 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
       "count": 7,
-      "selected": 3,
+      "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
@@ -190868,7 +191811,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
@@ -190881,12 +191824,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 46,
+      "count": 36,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -190894,7 +191837,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
@@ -190907,12 +191850,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 24,
+      "count": 32,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -190920,12 +191863,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 10,
+      "count": 8,
       "selected": 5,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -190933,12 +191876,12 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 3,
+      "count": 4,
       "selected": 0,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -190946,12 +191889,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 18,
+      "count": 17,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -190959,12 +191902,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 26,
+      "count": 27,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -190972,12 +191915,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 639,
+      "count": 660,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -190994,9 +191937,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-12T17:55:35.364971+00:00",
+      "asOf": "2026-11-12T23:10:51.654206+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-12T17:55:35.364971+00:00"
+  "checkedAt": "2026-11-12T23:10:51.654206+00:00"
 }
