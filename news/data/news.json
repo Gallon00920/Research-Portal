@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-12T09:18:34.484638+00:00",
+  "updatedAt": "2026-11-12T18:04:30.682829+00:00",
   "scope": {
     "regions": [
       "US",
@@ -174795,7 +174795,101 @@
             }
           }
         ],
-        "Guggenheim": [],
+        "Guggenheim": [
+          {
+            "id": "2026-11-10-0fd7f9e112e6",
+            "title": "Guggenheim reiterates this biotech stock as a top pick - Yahoo Finance",
+            "titleZh": "Guggenheim reiterates this biotech stock as a top pick - Yahoo Finance",
+            "summary": "Guggenheim reiterates this biotech stock as a top pick Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU211WmJaWWFNZ3VteF92cWJpQklxVlB4emVtbERxQUNyVEVnOGx6c2R6aUtqTFREMDZvWEpqQWJrNkZVNVlxd1JVWFJuRGY3a1NJVDdvbnM5ZWRxYnJ4MU44QUhROWtWZko4MXNjUEdxLUpKZExBcTR1dndOOE1rbngyUlBEWTZra2ZxVFBVdW1GVkdyMmhCRllUcEcwTE5XZ0hhQ2ZMQnc2UVNfOUNr?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-10",
+            "lede": "Guggenheim reiterates this biotech stock as a top pick Yahoo Finance",
+            "articleExcerpt": "Guggenheim reiterates this biotech stock as a top pick - Yahoo Finance. Guggenheim reiterates this biotech stock as a top pick Yahoo Finance",
+            "contentFingerprint": "d6d585aba3c5a00a",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.99,
+              "finalScore": 15.99,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Neuberger": [
           {
             "id": "2026-11-10-2a16f09ff16b",
@@ -178658,6 +178752,99 @@
             "keywordScore": 3,
             "semanticScore": 4.08,
             "finalScore": 7.08,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-10-0fd7f9e112e6",
+          "title": "Guggenheim reiterates this biotech stock as a top pick - Yahoo Finance",
+          "titleZh": "Guggenheim reiterates this biotech stock as a top pick - Yahoo Finance",
+          "summary": "Guggenheim reiterates this biotech stock as a top pick Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPU211WmJaWWFNZ3VteF92cWJpQklxVlB4emVtbERxQUNyVEVnOGx6c2R6aUtqTFREMDZvWEpqQWJrNkZVNVlxd1JVWFJuRGY3a1NJVDdvbnM5ZWRxYnJ4MU44QUhROWtWZko4MXNjUEdxLUpKZExBcTR1dndOOE1rbngyUlBEWTZra2ZxVFBVdW1GVkdyMmhCRllUcEcwTE5XZ0hhQ2ZMQnc2UVNfOUNr?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-10",
+          "lede": "Guggenheim reiterates this biotech stock as a top pick Yahoo Finance",
+          "articleExcerpt": "Guggenheim reiterates this biotech stock as a top pick - Yahoo Finance. Guggenheim reiterates this biotech stock as a top pick Yahoo Finance",
+          "contentFingerprint": "d6d585aba3c5a00a",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.99,
+            "finalScore": 15.99,
             "semanticEnabled": true
           }
         },
@@ -182867,6 +183054,110 @@
               "finalScore": 9.89,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-11-e9d857ce3986",
+            "title": "AI Data Centers and the New Compute of Politics, Power and Capex - Neuberger Berman",
+            "titleZh": "AI Data Centers and the New Compute of Politics, Power and Capex - Neuberger Berman",
+            "summary": "AI Data Centers and the New Compute of Politics, Power and Capex Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUnBDREstc3VQV05MWXZjcWExUmt5SFowVEdVN01fcFA4QUVjRU1pUm1Takt6SWhrYW96UUR6NDEyLWNwTzVwZWs5c3JDaTV4MmpvcVVBcl83bXJ2SS1nQVUtMUlGWXk1S04xUXNVSzZhSGs2NFZoUExEc21pbXhfRGNOYmZTTkRkOFRVNWdqRUZ2RzJJc3c?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-11",
+            "lede": "AI Data Centers and the New Compute of Politics, Power and Capex Neuberger Berman",
+            "articleExcerpt": "AI Data Centers and the New Compute of Politics, Power and Capex - Neuberger Berman. AI Data Centers and the New Compute of Politics, Power and Capex Neuberger Berman",
+            "contentFingerprint": "10c392c76fa411bc",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [
+              "data-center",
+              "ai"
+            ],
+            "sectors": [
+              "data-center",
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center",
+                "ai"
+              ],
+              "titleStrategies": [
+                "data-center",
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.65,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center",
+                    "ai"
+                  ],
+                  "semanticValue": 0.3
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 9,
+              "semanticScore": 3.66,
+              "finalScore": 12.66,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -182971,6 +183262,109 @@
               "keywordScore": 14,
               "semanticScore": 6.15,
               "finalScore": 20.15,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-11-98c335f66151",
+            "title": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company - MarketBeat",
+            "titleZh": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company - MarketBeat",
+            "summary": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOS1RUkxtaXRNajhySUVfWmlxNTRCbjd6V0djM1V5NnlwdUF2cWtfc1BzcGlfa1pxUk1tUElIY09BYmRYQktwc2NnNTdkVjVzbVVQXzB2U0NYNlpfb3lQSXprT3p3TWxtb3pqTV9zRGFFTFRyZ3ZnbV9wRDE4TTRPV2hoREUxUF9tWUh4YjU2SFdrTVpaMTZVY2FfMEd3bGlPbTNzVktqWjlORmd5LXZiNGJZMDZOUUlIWE5pZWVaR2twSlV5R2E0Tk5xRHhubkxaSzZXMS00R0ZjRlpfVFZJdjFQYW1zX1dX?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-11",
+            "lede": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company MarketBeat",
+            "articleExcerpt": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company - MarketBeat. Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company MarketBeat",
+            "contentFingerprint": "ba08cc2be8dcbf2e",
+            "region": "US",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.76,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 6.18,
+              "finalScore": 22.18,
               "semanticEnabled": true
             }
           }
@@ -185855,6 +186249,110 @@
           }
         },
         {
+          "id": "2026-11-11-e9d857ce3986",
+          "title": "AI Data Centers and the New Compute of Politics, Power and Capex - Neuberger Berman",
+          "titleZh": "AI Data Centers and the New Compute of Politics, Power and Capex - Neuberger Berman",
+          "summary": "AI Data Centers and the New Compute of Politics, Power and Capex Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPUnBDREstc3VQV05MWXZjcWExUmt5SFowVEdVN01fcFA4QUVjRU1pUm1Takt6SWhrYW96UUR6NDEyLWNwTzVwZWs5c3JDaTV4MmpvcVVBcl83bXJ2SS1nQVUtMUlGWXk1S04xUXNVSzZhSGs2NFZoUExEc21pbXhfRGNOYmZTTkRkOFRVNWdqRUZ2RzJJc3c?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-11",
+          "lede": "AI Data Centers and the New Compute of Politics, Power and Capex Neuberger Berman",
+          "articleExcerpt": "AI Data Centers and the New Compute of Politics, Power and Capex - Neuberger Berman. AI Data Centers and the New Compute of Politics, Power and Capex Neuberger Berman",
+          "contentFingerprint": "10c392c76fa411bc",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [
+            "data-center",
+            "ai"
+          ],
+          "sectors": [
+            "data-center",
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center",
+              "ai"
+            ],
+            "titleStrategies": [
+              "data-center",
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.65,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center",
+                  "ai"
+                ],
+                "semanticValue": 0.3
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 9,
+            "semanticScore": 3.66,
+            "finalScore": 12.66,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-11-303701f2bd08",
           "title": "Bain Capital Specialty Finance Inc (BCSF) (Q3 2026) Earnings Call Highlights: NII Covers ... - Yahoo Finance",
           "titleZh": "Bain Capital Specialty Finance Inc (BCSF) (Q3 2026) Earnings Call Highlights: NII Covers ... - Yahoo Finance",
@@ -185954,6 +186452,109 @@
             "keywordScore": 14,
             "semanticScore": 6.15,
             "finalScore": 20.15,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-11-98c335f66151",
+          "title": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company - MarketBeat",
+          "titleZh": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company - MarketBeat",
+          "summary": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxOOS1RUkxtaXRNajhySUVfWmlxNTRCbjd6V0djM1V5NnlwdUF2cWtfc1BzcGlfa1pxUk1tUElIY09BYmRYQktwc2NnNTdkVjVzbVVQXzB2U0NYNlpfb3lQSXprT3p3TWxtb3pqTV9zRGFFTFRyZ3ZnbV9wRDE4TTRPV2hoREUxUF9tWUh4YjU2SFdrTVpaMTZVY2FfMEd3bGlPbTNzVktqWjlORmd5LXZiNGJZMDZOUUlIWE5pZWVaR2twSlV5R2E0Tk5xRHhubkxaSzZXMS00R0ZjRlpfVFZJdjFQYW1zX1dX?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-11",
+          "lede": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company MarketBeat",
+          "articleExcerpt": "Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company - MarketBeat. Bain Capital Specialty Finance (NYSE:BCSF) Given New $11.00 Price Target at Wells Fargo & Company MarketBeat",
+          "contentFingerprint": "ba08cc2be8dcbf2e",
+          "region": "US",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.76,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 6.18,
+            "finalScore": 22.18,
             "semanticEnabled": true
           }
         },
@@ -187156,7 +187757,297 @@
     },
     "2026-11-12": {
       "byGp": {
-        "Blue Owl": [],
+        "Blue Owl": [
+          {
+            "id": "2026-11-12-0a86cf20a67e",
+            "title": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? - Yahoo Finance",
+            "titleZh": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? - Yahoo Finance",
+            "summary": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWjhpUkNvdWk4QmY2ZlM5dkRVZkdjb3F2RGlXYkZaNG1KUjN3eURBa2dOZ3hUZlFndFkyUGdhMmhwZDV3eXJfS2M0TEJPQ1oySXE1UWJfWG5HUjcxZE93d2xBQXFKNU1Bc3QxWDZzZ0dmLThoZndYbWY0N05QTGhJSHZseUt0LWFicWFlVkNDTHExVmk1UEdiZGNDazRzTnhRNzhvVV84Yw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-12",
+            "lede": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? Yahoo Finance",
+            "articleExcerpt": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? - Yahoo Finance. Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? Yahoo Finance",
+            "contentFingerprint": "71fa8bfab795e4b2",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.78,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.56
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.76,
+              "finalScore": 20.759999999999998,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-4c93ab42c415",
+            "title": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions - Yahoo Finance UK",
+            "titleZh": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions - Yahoo Finance UK",
+            "summary": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9HYTB3Q0FnWWFHcmRBclZCdXNmaUVxN2RIcXlua3F6WVBhY1RpTDZtSWRzYlBwMVRHMVhHNXhIR3JuTG50NWlpakRQTHNjSFY3bzViT011LV9tMlJxVVhEeWZtVm52elZBa1VONjF4dWo?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-12",
+            "lede": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions Yahoo Finance UK",
+            "articleExcerpt": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions - Yahoo Finance UK. Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions Yahoo Finance UK",
+            "contentFingerprint": "f059fa4868c6a155",
+            "region": "Europe",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.27,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 6.51,
+              "finalScore": 18.509999999999998,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-4e6647b176f1",
+            "title": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) - The Globe and Mail",
+            "titleZh": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) - The Globe and Mail",
+            "summary": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) The Globe and Mail",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcVFCbGVNWF8yNW1xU0hJZ2dnMi1WOUVJU1poT1ZzdGI4YVhtaFRhZ0pjVkppVURZMFRBWGVTcWlRd0dqRFBsdkR1QkJVYUtTTzgyRndpQk9VejJxTWUybmMxYTY1ZGl0N1UxVUwzRVZNM0R1LUN4T2ZtSlNZakFFdWVPN2lkOVRWVThWaFFsWDFHNG1HZk9hN2JTeHRfYW9jQlVHa3Vjb0lMeGNHVTlNM2tKQklPY1RqdmZDS25DM3RBNUxVTENCc2V4VVNPSW90enNUbnpjODlYUnJ4VHhra09kUEJXUkFSUnV4MEF3cW4?oc=5",
+            "source": "The Globe and Mail",
+            "publishedAt": "2026-11-12",
+            "lede": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) The Globe and Mail",
+            "articleExcerpt": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) - The Globe and Mail. RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) The Globe and Mail",
+            "contentFingerprint": "94b8a0b8fed15256",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.27,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "The Globe and Mail"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.46,
+              "finalScore": 17.46,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "KKR": [],
         "CIFC": [],
         "PAG": [],
@@ -187255,7 +188146,210 @@
         "Neuberger": [],
         "BasePoint": [],
         "Bain Capital": [],
-        "Blackstone": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-12-5c007591a546",
+            "title": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
+            "titleZh": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
+            "summary": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing Bloomberg.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa2oxazhYbzZKejJYbVJkbTNCQTNPeW5kVVFPbHp3QUNXS01CQkh6X3JDOGI5NXBWOE5ybHRRV2oxc0txcW5zbFpCZUU4djFKNkFSSE1qQjc0eVNDT1ZTYk1xVlpEa3VWUlhoLVdqZW85aG5ZV2dXUjVqOFV5SzNEbHl1Mld5V2xZV3NOWTJWVFJLZUgydGU0dDc5a2hLY2ZlZktGNmxkTDRfVHhMcUgwdzdUMEtQS2pLNTZhaml3?oc=5",
+            "source": "Bloomberg.com",
+            "publishedAt": "2026-11-12",
+            "lede": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing Bloomberg.com",
+            "articleExcerpt": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com. Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing Bloomberg.com",
+            "contentFingerprint": "30006a0512e298c5",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.7,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 1.0,
+                  "code": "tier_top",
+                  "source": "Bloomberg.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 95,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 17,
+              "semanticScore": 4.89,
+              "finalScore": 21.89,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-9c92c1297d39",
+            "title": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 - MarketBeat",
+            "titleZh": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 - MarketBeat",
+            "summary": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORFNfcV94OTk3MGZUYW84VFM2ZFdPOG5fR2lRTExkZkJaRC00WnRNRHJ0UndUMHotQ0V2dnQwYk9xbkhXUTM0NWdhZVFtZ19xcHpmYndBbDdPZ0ZhVEVweWJJU1duQVFGTlRyUE9ON3M3MklTS202OVd0Z1AtQl9GZFBlZVg1QjlOcHZ3T1JuLTVqVzFCbFBjcE5ObUFFbU5DN2FkekIzY2RvZmVfcnI2MmNIZ0pGVXQwOXpUN3NXQ19tdUpUaHluMVZfakZIQzAzU3J5cVJjT1R4Zw?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-12",
+            "lede": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 MarketBeat",
+            "articleExcerpt": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 - MarketBeat. Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 MarketBeat",
+            "contentFingerprint": "c92379ee802e8db8",
+            "region": "US",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "resi"
+            ],
+            "sectors": [
+              "resi"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "resi"
+              ],
+              "titleStrategies": [
+                "resi"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "resi"
+                  ],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 54,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 5.28,
+              "finalScore": 21.28,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Apollo": [
           {
             "id": "2026-11-12-271c6fb35d05",
@@ -187638,6 +188732,95 @@
               "finalScore": 8.57,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-1aea94763c49",
+            "title": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds - IPE Real Assets",
+            "titleZh": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds - IPE Real Assets",
+            "summary": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds IPE Real Assets",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNTdaT3A1ZHZGYzJiQnpWNFhjUU9PODRIUUVMTlE5aUdZQ0dDN2xsYll3d2NPWlA5dlR3UkhsaEhJX21lWC1aSnlmbUpmczVjWHZ1NENHVlZ2RjFRalFwWVhnUDVtZFF1UElEOUdJcUpBR2VlQXE5aVJOZlBBeEx1MHFGY19WZ0hHM1BfWkdHZlhZQ3h5bEtmbnBfV0g5T3J4Qkk3ejR3TEZtTmZGSXp2ZGFjTDJlSjJ5?oc=5",
+            "source": "IPE Real Assets",
+            "publishedAt": "2026-11-12",
+            "lede": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds IPE Real Assets",
+            "articleExcerpt": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds - IPE Real Assets. Louisiana Teachers commits $175m to Mesirow and TPG real estate funds IPE Real Assets",
+            "contentFingerprint": "feb64d6dfe2cb7b0",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.35
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "IPE Real Assets"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 61,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.19,
+              "finalScore": 7.19,
+              "semanticEnabled": true
+            }
           }
         ],
         "Golub": [],
@@ -187819,11 +189002,571 @@
               "finalScore": 7.56,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-24065b203268",
+            "title": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings - Traders Union",
+            "titleZh": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings - Traders Union",
+            "summary": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings Traders Union",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONzZnLW1TOWktdmhFNEdxZUNSY0prN0U0THY4aWJMTUdSSDZTeDFENHA4dUdDM1ZVNU42c3FMNVNuM0MyajREMXVyaFB0ZHdvdG5tNl9DYUNFdG1pd0R0WUQtcERBYWV2Z3hFd3ZJWjhzMXY3ZkhEekRGZzdmcURGZGpmTEtPUDZLMHhld0ttSjZKb2pRVmpWS0dn?oc=5",
+            "source": "Traders Union",
+            "publishedAt": "2026-11-12",
+            "lede": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings Traders Union",
+            "articleExcerpt": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings - Traders Union. CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings Traders Union",
+            "contentFingerprint": "e49f1a711ddfa55d",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Traders Union"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.85,
+              "finalScore": 16.85,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-1d78381332e7",
+            "title": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced - TradingView",
+            "titleZh": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced - TradingView",
+            "summary": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOZFpIOHZTeVlHQU1JV3NQdF9GWHlBOFlPMmVyNUp5ZmV3OVRLTUpPZVlJZVMyNUlrMEdFQmhrSEMxSUxxejdIM0tGby1Lb3BFVTBhek5EbVRyOEVrbGJLQkZObUVUV0JDZ2NEQWMwc2I3NWlWbWhIMGJpNGoxZ2lrUmI5azgyMjBsdzdwX2xGM1JnX3o5Z0Jzdk5uNVlVZjY3NlVFckFyNnVPbzg0b0xQYjVjWDF3dmNWOGRfTnl3cnVQZWI4VGVPT3Y3S1gzTThHYWNpVmgwZWdQTkdTbmd1MWRhdjRjMzBva1FmWnRTSVNOcWhvV0tQZDNfWjZzNkFKb180RGk0QzVaWjFrRERFZmYxVDViUHRNR0tjRlkza281V1hBLU4xaW9URXpKVUFuVFBtNDRCUGc?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-12",
+            "lede": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced TradingView",
+            "articleExcerpt": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced - TradingView. CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced TradingView",
+            "contentFingerprint": "d0971a0f299f8412",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.74,
+              "finalScore": 8.74,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-be82dbe69703",
+            "title": "SpaceData takes strategic investment from map giant Zenrin's CVC - Dealroom",
+            "titleZh": "SpaceData takes strategic investment from map giant Zenrin's CVC - Dealroom",
+            "summary": "SpaceData takes strategic investment from map giant Zenrin's CVC Dealroom",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQR1cwaVNCNE56MTVVcldNcm5DeVdpaXpteTVDUXpnbW9wdGd4anhJeWEycHJnTkJXUzhzaGVub1dLNU14T0lhVHR4MUFVekJIS0NaUDVINV9ZU3M3eUZGY1RnSmpYVm1CSFdmR25CcW4ycUEtVGxSS0hQQms5ODI4eDRVMi1NdEllcG9fSEowSEl1Wk1hVlVhMjl3MEV0ODA?oc=5",
+            "source": "Dealroom",
+            "publishedAt": "2026-11-12",
+            "lede": "SpaceData takes strategic investment from map giant Zenrin's CVC Dealroom",
+            "articleExcerpt": "SpaceData takes strategic investment from map giant Zenrin's CVC - Dealroom. SpaceData takes strategic investment from map giant Zenrin's CVC Dealroom",
+            "contentFingerprint": "290ddbd05f24a5d3",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Dealroom"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.27,
+              "finalScore": 8.27,
+              "semanticEnabled": true
+            }
           }
         ],
         "Canyon": []
       },
       "items": [
+        {
+          "id": "2026-11-12-0a86cf20a67e",
+          "title": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? - Yahoo Finance",
+          "titleZh": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? - Yahoo Finance",
+          "summary": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWjhpUkNvdWk4QmY2ZlM5dkRVZkdjb3F2RGlXYkZaNG1KUjN3eURBa2dOZ3hUZlFndFkyUGdhMmhwZDV3eXJfS2M0TEJPQ1oySXE1UWJfWG5HUjcxZE93d2xBQXFKNU1Bc3QxWDZzZ0dmLThoZndYbWY0N05QTGhJSHZseUt0LWFicWFlVkNDTHExVmk1UEdiZGNDazRzTnhRNzhvVV84Yw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-12",
+          "lede": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? Yahoo Finance",
+          "articleExcerpt": "Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? - Yahoo Finance. Are Investors Undervaluing Blue Owl Capital Corporation (OBDC) Right Now? Yahoo Finance",
+          "contentFingerprint": "71fa8bfab795e4b2",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.78,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.56
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.76,
+            "finalScore": 20.759999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-4c93ab42c415",
+          "title": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions - Yahoo Finance UK",
+          "titleZh": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions - Yahoo Finance UK",
+          "summary": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9HYTB3Q0FnWWFHcmRBclZCdXNmaUVxN2RIcXlua3F6WVBhY1RpTDZtSWRzYlBwMVRHMVhHNXhIR3JuTG50NWlpakRQTHNjSFY3bzViT011LV9tMlJxVVhEeWZtVm52elZBa1VONjF4dWo?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-12",
+          "lede": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions Yahoo Finance UK",
+          "articleExcerpt": "Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions - Yahoo Finance UK. Blue Owl Technology Finance Corp (F4G.DU) recent insider transactions Yahoo Finance UK",
+          "contentFingerprint": "f059fa4868c6a155",
+          "region": "Europe",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.27,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 6.51,
+            "finalScore": 18.509999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-4e6647b176f1",
+          "title": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) - The Globe and Mail",
+          "titleZh": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) - The Globe and Mail",
+          "summary": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) The Globe and Mail",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxQcVFCbGVNWF8yNW1xU0hJZ2dnMi1WOUVJU1poT1ZzdGI4YVhtaFRhZ0pjVkppVURZMFRBWGVTcWlRd0dqRFBsdkR1QkJVYUtTTzgyRndpQk9VejJxTWUybmMxYTY1ZGl0N1UxVUwzRVZNM0R1LUN4T2ZtSlNZakFFdWVPN2lkOVRWVThWaFFsWDFHNG1HZk9hN2JTeHRfYW9jQlVHa3Vjb0lMeGNHVTlNM2tKQklPY1RqdmZDS25DM3RBNUxVTENCc2V4VVNPSW90enNUbnpjODlYUnJ4VHhra09kUEJXUkFSUnV4MEF3cW4?oc=5",
+          "source": "The Globe and Mail",
+          "publishedAt": "2026-11-12",
+          "lede": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) The Globe and Mail",
+          "articleExcerpt": "RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) - The Globe and Mail. RBC Capital Keeps Their Hold Rating on Blue Owl Technology Finance Corp. (OTF) The Globe and Mail",
+          "contentFingerprint": "94b8a0b8fed15256",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.27,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "The Globe and Mail"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.46,
+            "finalScore": 17.46,
+            "semanticEnabled": true
+          }
+        },
         {
           "id": "2026-11-12-8f57368623ab",
           "title": "Guggenheim Floating Rate Strategies Fund Q3 2026 Commentary - Seeking Alpha",
@@ -187910,6 +189653,208 @@
             "keywordScore": 3,
             "semanticScore": 5.0,
             "finalScore": 8.0,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-5c007591a546",
+          "title": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
+          "titleZh": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
+          "summary": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing Bloomberg.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNa2oxazhYbzZKejJYbVJkbTNCQTNPeW5kVVFPbHp3QUNXS01CQkh6X3JDOGI5NXBWOE5ybHRRV2oxc0txcW5zbFpCZUU4djFKNkFSSE1qQjc0eVNDT1ZTYk1xVlpEa3VWUlhoLVdqZW85aG5ZV2dXUjVqOFV5SzNEbHl1Mld5V2xZV3NOWTJWVFJLZUgydGU0dDc5a2hLY2ZlZktGNmxkTDRfVHhMcUgwdzdUMEtQS2pLNTZhaml3?oc=5",
+          "source": "Bloomberg.com",
+          "publishedAt": "2026-11-12",
+          "lede": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing Bloomberg.com",
+          "articleExcerpt": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com. Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing Bloomberg.com",
+          "contentFingerprint": "30006a0512e298c5",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.7,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 1.0,
+                "code": "tier_top",
+                "source": "Bloomberg.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 95,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 17,
+            "semanticScore": 4.89,
+            "finalScore": 21.89,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-9c92c1297d39",
+          "title": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 - MarketBeat",
+          "titleZh": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 - MarketBeat",
+          "summary": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxORFNfcV94OTk3MGZUYW84VFM2ZFdPOG5fR2lRTExkZkJaRC00WnRNRHJ0UndUMHotQ0V2dnQwYk9xbkhXUTM0NWdhZVFtZ19xcHpmYndBbDdPZ0ZhVEVweWJJU1duQVFGTlRyUE9ON3M3MklTS202OVd0Z1AtQl9GZFBlZVg1QjlOcHZ3T1JuLTVqVzFCbFBjcE5ObUFFbU5DN2FkekIzY2RvZmVfcnI2MmNIZ0pGVXQwOXpUN3NXQ19tdUpUaHluMVZfakZIQzAzU3J5cVJjT1R4Zw?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-12",
+          "lede": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 MarketBeat",
+          "articleExcerpt": "Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 - MarketBeat. Blackstone Mortgage Trust, Inc. (NYSE:BXMT) Stock Has Average Target Price of $17.00 MarketBeat",
+          "contentFingerprint": "c92379ee802e8db8",
+          "region": "US",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "resi"
+          ],
+          "sectors": [
+            "resi"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "resi"
+            ],
+            "titleStrategies": [
+              "resi"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "resi"
+                ],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 54,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 5.28,
+            "finalScore": 21.28,
             "semanticEnabled": true
           }
         },
@@ -188294,6 +190239,95 @@
           }
         },
         {
+          "id": "2026-11-12-1aea94763c49",
+          "title": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds - IPE Real Assets",
+          "titleZh": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds - IPE Real Assets",
+          "summary": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds IPE Real Assets",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNTdaT3A1ZHZGYzJiQnpWNFhjUU9PODRIUUVMTlE5aUdZQ0dDN2xsYll3d2NPWlA5dlR3UkhsaEhJX21lWC1aSnlmbUpmczVjWHZ1NENHVlZ2RjFRalFwWVhnUDVtZFF1UElEOUdJcUpBR2VlQXE5aVJOZlBBeEx1MHFGY19WZ0hHM1BfWkdHZlhZQ3h5bEtmbnBfV0g5T3J4Qkk3ejR3TEZtTmZGSXp2ZGFjTDJlSjJ5?oc=5",
+          "source": "IPE Real Assets",
+          "publishedAt": "2026-11-12",
+          "lede": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds IPE Real Assets",
+          "articleExcerpt": "Louisiana Teachers commits $175m to Mesirow and TPG real estate funds - IPE Real Assets. Louisiana Teachers commits $175m to Mesirow and TPG real estate funds IPE Real Assets",
+          "contentFingerprint": "feb64d6dfe2cb7b0",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.35
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.8,
+                "code": "tier_trade",
+                "source": "IPE Real Assets"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 61,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.19,
+            "finalScore": 7.19,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-ba76a47cf533",
           "title": "CVC Limited 2026 AGM: Resolutions Passed, FY2026 Total Income Rises to $212.2 Million - Kalkine",
           "titleZh": "CVC Limited 2026 AGM: Resolutions Passed, FY2026 Total Income Rises to $212.2 Million - Kalkine",
@@ -188470,6 +190504,277 @@
             "finalScore": 7.56,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-12-24065b203268",
+          "title": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings - Traders Union",
+          "titleZh": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings - Traders Union",
+          "summary": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings Traders Union",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxONzZnLW1TOWktdmhFNEdxZUNSY0prN0U0THY4aWJMTUdSSDZTeDFENHA4dUdDM1ZVNU42c3FMNVNuM0MyajREMXVyaFB0ZHdvdG5tNl9DYUNFdG1pd0R0WUQtcERBYWV2Z3hFd3ZJWjhzMXY3ZkhEekRGZzdmcURGZGpmTEtPUDZLMHhld0ttSjZKb2pRVmpWS0dn?oc=5",
+          "source": "Traders Union",
+          "publishedAt": "2026-11-12",
+          "lede": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings Traders Union",
+          "articleExcerpt": "CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings - Traders Union. CVC Cordatus loan fund XVIII DAC reset notes win Fitch final ratings Traders Union",
+          "contentFingerprint": "e49f1a711ddfa55d",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Traders Union"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.85,
+            "finalScore": 16.85,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-1d78381332e7",
+          "title": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced - TradingView",
+          "titleZh": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced - TradingView",
+          "summary": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAJBVV95cUxOZFpIOHZTeVlHQU1JV3NQdF9GWHlBOFlPMmVyNUp5ZmV3OVRLTUpPZVlJZVMyNUlrMEdFQmhrSEMxSUxxejdIM0tGby1Lb3BFVTBhek5EbVRyOEVrbGJLQkZObUVUV0JDZ2NEQWMwc2I3NWlWbWhIMGJpNGoxZ2lrUmI5azgyMjBsdzdwX2xGM1JnX3o5Z0Jzdk5uNVlVZjY3NlVFckFyNnVPbzg0b0xQYjVjWDF3dmNWOGRfTnl3cnVQZWI4VGVPT3Y3S1gzTThHYWNpVmgwZWdQTkdTbmd1MWRhdjRjMzBva1FmWnRTSVNOcWhvV0tQZDNfWjZzNkFKb180RGk0QzVaWjFrRERFZmYxVDViUHRNR0tjRlkza281V1hBLU4xaW9URXpKVUFuVFBtNDRCUGc?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-12",
+          "lede": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced TradingView",
+          "articleExcerpt": "CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced - TradingView. CVC Brasil Operadora e Agência de Viagens: Bookings grew, profit returned, and digital transformation advanced TradingView",
+          "contentFingerprint": "d0971a0f299f8412",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.74,
+            "finalScore": 8.74,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-be82dbe69703",
+          "title": "SpaceData takes strategic investment from map giant Zenrin's CVC - Dealroom",
+          "titleZh": "SpaceData takes strategic investment from map giant Zenrin's CVC - Dealroom",
+          "summary": "SpaceData takes strategic investment from map giant Zenrin's CVC Dealroom",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQR1cwaVNCNE56MTVVcldNcm5DeVdpaXpteTVDUXpnbW9wdGd4anhJeWEycHJnTkJXUzhzaGVub1dLNU14T0lhVHR4MUFVekJIS0NaUDVINV9ZU3M3eUZGY1RnSmpYVm1CSFdmR25CcW4ycUEtVGxSS0hQQms5ODI4eDRVMi1NdEllcG9fSEowSEl1Wk1hVlVhMjl3MEV0ODA?oc=5",
+          "source": "Dealroom",
+          "publishedAt": "2026-11-12",
+          "lede": "SpaceData takes strategic investment from map giant Zenrin's CVC Dealroom",
+          "articleExcerpt": "SpaceData takes strategic investment from map giant Zenrin's CVC - Dealroom. SpaceData takes strategic investment from map giant Zenrin's CVC Dealroom",
+          "contentFingerprint": "290ddbd05f24a5d3",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Dealroom"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-12T17:55:35.364971+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.27,
+            "finalScore": 8.27,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -188477,7 +190782,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 17,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -188485,7 +190790,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
@@ -188498,12 +190803,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 1,
+      "count": 0,
       "selected": 0,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -188511,12 +190816,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 10,
+      "count": 16,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -188524,12 +190829,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 8,
+      "count": 9,
       "selected": 3,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -188537,25 +190842,25 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 5,
-      "selected": 2,
+      "count": 7,
+      "selected": 3,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 9,
+      "count": 10,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -188563,7 +190868,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
@@ -188576,12 +190881,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 42,
+      "count": 46,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -188589,12 +190894,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 100,
+      "count": 101,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -188602,12 +190907,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 28,
+      "count": 24,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -188615,12 +190920,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 12,
+      "count": 10,
       "selected": 5,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -188628,12 +190933,12 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 1,
+      "count": 3,
       "selected": 0,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -188641,12 +190946,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 21,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -188654,12 +190959,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 27,
+      "count": 26,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -188667,12 +190972,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 578,
+      "count": 639,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -188689,9 +190994,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-12T09:12:52.723555+00:00",
+      "asOf": "2026-11-12T17:55:35.364971+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-12T09:12:52.723555+00:00"
+  "checkedAt": "2026-11-12T17:55:35.364971+00:00"
 }
