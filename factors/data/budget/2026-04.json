@@ -1,0 +1,183 @@
+{
+  "tab": "budget",
+  "year": 2026,
+  "month": 4,
+  "extracted_at": "2026-11-12T07:37:42+00:00",
+  "model": "claude-opus-5-5",
+  "source_image": "2026-04.png",
+  "title": "AWIS预算完成度",
+  "sections": [
+    {
+      "title": "2Q26 QTD AID现金流入 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "现金收益",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 573,
+                  "text": "573万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金收益",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 604,
+                  "text": "604万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "4月收息",
+                      "value": 308,
+                      "text": "308万"
+                    },
+                    {
+                      "label": "5月收息",
+                      "value": 296,
+                      "text": "296万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年4月实际收息308万，二季度总收入截至目前604万",
+            "26年4月预算完成度 54%",
+            "26年第二季度预算完成度 105%"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "归还本金",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 200,
+                  "text": "200万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "2026一季度还本397万",
+            "2Q26 QTD实际还本为零"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "现金流入",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 773,
+                  "text": "773万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金流入",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 604,
+                  "text": "604万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年现金流入同收息一致",
+            "26年4月预算完成度 40%",
+            "26年第二季度预算完成度 78%"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2Q26 QTD AID现金流出 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 703,
+                  "text": "703万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 250,
+                  "text": "250万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "5月流出",
+                      "value": 250,
+                      "text": "250万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年4月实际流出为零，二季度总流出截至目前250万",
+            "26年4月预算完成度 0%",
+            "26年第二季度预算完成度 36%"
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "en": {
+    "AWIS预算完成度": "AWIS Budget Completion",
+    "2Q26 QTD AID现金流入 (万美元)": "2Q26 QTD AID Cash Inflows (US$ million)",
+    "现金收益": "Cash income",
+    "预算": "Budget",
+    "实际": "Actual",
+    "4月收息": "Apr interest",
+    "5月收息": "May interest",
+    "归还本金": "Principal repaid",
+    "现金流入": "Cash inflows",
+    "2Q26 QTD AID现金流出 (万美元)": "2Q26 QTD AID Cash Outflows (US$ million)",
+    "5月流出": "May outflows",
+    "26年4月实际收息308万，二季度总收入截至目前604万": "Actual interest received in April 2026 was 3.08 million; total Q2 income to date is 6.04 million",
+    "26年4月预算完成度 54%": "April 2026 budget completion: 54%",
+    "26年第二季度预算完成度 105%": "Q2 2026 budget completion: 105%",
+    "2026一季度还本397万": "Principal repaid in 2026Q1 was 3.97 million",
+    "2Q26 QTD实际还本为零": "2Q26 QTD actual principal repaid is zero",
+    "26年现金流入同收息一致": "2026 cash inflows are in line with interest received",
+    "26年4月预算完成度 40%": "April 2026 budget completion: 40%",
+    "26年第二季度预算完成度 78%": "Q2 2026 budget completion: 78%",
+    "26年4月实际流出为零，二季度总流出截至目前250万": "Actual outflows in April 2026 were zero; total Q2 outflows to date are 2.50 million",
+    "26年4月预算完成度 0%": "April 2026 budget completion: 0%",
+    "26年第二季度预算完成度 36%": "Q2 2026 budget completion: 36%"
+  },
+  "notes": [],
+  "dismissed": []
+}

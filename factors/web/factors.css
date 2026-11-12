@@ -56,9 +56,10 @@
 #view-factors .ff-section{border:1px solid var(--line); border-radius:5px; background:var(--card); min-width:0; display:flex; flex-direction:column}
 #view-factors .ff-section > header{display:flex; flex-wrap:wrap; align-items:center; gap:6px 16px; padding:12px 20px; border-bottom:1px solid var(--line-soft); border-top:3px solid var(--navy-800); border-radius:5px 5px 0 0}
 #view-factors .ff-section > header h3{font-size:14.5px; flex:1; min-width:140px}
-/* the legend takes its own line under the title in every panel, so a narrow panel's legend
-   never wraps on its own and the charts of neighbouring panels start at the same height */
-#view-factors .ff-legend{display:flex; flex-wrap:wrap; flex-basis:100%; gap:4px 12px; font-size:11.5px; color:var(--ink-2)}
+/* one legend for the whole month's report, above the panels: the same colour is the same month
+   in every chart, so the panels carry only their titles */
+#view-factors .ff-legend{display:flex; flex-wrap:wrap; gap:4px 12px; font-size:11.5px; color:var(--ink-2)}
+#view-factors .ff-legend.top{margin:0 0 12px}
 #view-factors .ff-legend span{display:inline-flex; align-items:center; gap:5px; white-space:nowrap}
 #view-factors .ff-legend i{width:10px; height:10px; border-radius:2px; flex-shrink:0}
 /* a hairline divides budget / actual from the parts of an actual bar (the blue shades) */

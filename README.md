@@ -230,8 +230,14 @@ raised. On the page the part is drawn and labelled as on the slide, without
 a number beside the bar; the tooltip and the numbers table give the derived
 amount, marked "derived". If several parts of one bar lack a number, the
 remainder is split equally and a warning says so. Parts are coloured by
-month ("6月收息" and "6月流入" share June's colour), and the legend lists the
-months. `extract_factors.py --recheck` re-runs these checks on saved months.
+month ("6月收息" and "6月流入" share June's colour). The colours are assigned
+once for the whole month's report, so the same colour is the same month in
+every chart of every panel, and one legend at the top of the page lists the
+months. Beside a bar each part therefore shows only its figure, plus the
+source word when the slide has one ("收息 78万"; "同4月收息" keeps its
+wording); the month is told by the colour. The tooltip and the numbers table
+keep the full labels. `extract_factors.py --recheck` re-runs these checks on
+saved months.
 
 **English version.** The slides are usually Chinese. Right after an image is
 read, a second Claude call translates its labels and commentary (titles,

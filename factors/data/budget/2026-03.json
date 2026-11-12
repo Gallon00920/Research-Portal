@@ -1,0 +1,215 @@
+{
+  "tab": "budget",
+  "year": 2026,
+  "month": 3,
+  "extracted_at": "2026-11-12T07:39:24+00:00",
+  "model": "claude-opus-5-5",
+  "source_image": "2026-03.png",
+  "title": "AWIS预算完成度",
+  "sections": [
+    {
+      "title": "1Q26 AID现金流入 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "现金收益",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 679,
+                  "text": "679万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金收益",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 577,
+                  "text": "577万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "1月",
+                      "value": 458,
+                      "text": "458万"
+                    },
+                    {
+                      "label": "2月",
+                      "value": 96,
+                      "text": "96万"
+                    },
+                    {
+                      "label": "3月",
+                      "value": 42,
+                      "text": "42万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年1-3月实际收息577万",
+            "26年第一季度预算完成度 85%"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "归还本金",
+                  "kind": "actual",
+                  "value": 397,
+                  "text": "397万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "",
+                      "value": 370,
+                      "text": "370万"
+                    },
+                    {
+                      "label": "",
+                      "value": 26,
+                      "text": "26万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "主要为PAG和HSBC RCF项目归还本金"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "现金流入",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 679,
+                  "text": "679万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金流入",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 974,
+                  "text": "974万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "",
+                      "value": 828,
+                      "text": "828万"
+                    },
+                    {
+                      "label": "",
+                      "value": 96,
+                      "text": "96万"
+                    },
+                    {
+                      "label": "",
+                      "value": 68,
+                      "text": "68万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年1-3月实际现金流入974万",
+            "26年第一季度预算完成度 143%"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "1Q26 AID现金流出 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 1883,
+                  "text": "1,883万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 1362,
+                  "text": "1,362万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "1月",
+                      "value": 250,
+                      "text": "250万"
+                    },
+                    {
+                      "label": "3月",
+                      "value": 1112,
+                      "text": "1,112万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年1-3月实际现金流出1,362万",
+            "26年第一季度预算完成度 72%"
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [
+    "“现金收益”: the parts add up to 596 but the bar says 577.",
+    "“现金流入”: the parts add up to 992 but the bar says 974."
+  ],
+  "en": {
+    "AWIS预算完成度": "AWIS Budget Completion",
+    "1Q26 AID现金流入 (万美元)": "1Q26 AID Cash Inflows (US$ million)",
+    "现金收益": "Cash income",
+    "预算": "Budget",
+    "实际": "Actual",
+    "1月": "Jan",
+    "2月": "Feb",
+    "3月": "Mar",
+    "归还本金": "Principal repaid",
+    "现金流入": "Cash inflows",
+    "1Q26 AID现金流出 (万美元)": "1Q26 AID Cash Outflows (US$ million)",
+    "26年1-3月实际收息577万": "Actual interest received for January–March 2026: 5.77 million",
+    "26年第一季度预算完成度 85%": "1Q26 budget completion: 85%",
+    "主要为PAG和HSBC RCF项目归还本金": "Mainly principal repaid on the PAG and HSBC RCF deals",
+    "26年1-3月实际现金流入974万": "Actual cash inflows for January–March 2026: 9.74 million",
+    "26年第一季度预算完成度 143%": "1Q26 budget completion: 143%",
+    "26年1-3月实际现金流出1,362万": "Actual cash outflows for January–March 2026: 13.62 million",
+    "26年第一季度预算完成度 72%": "1Q26 budget completion: 72%"
+  },
+  "notes": [],
+  "dismissed": []
+}

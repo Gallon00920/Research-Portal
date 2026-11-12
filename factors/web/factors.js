@@ -459,18 +459,20 @@ function renderPerformance(body, doc) {
 /* ---------------------------------------------------------------- budget charts */
 /* What a part of a stacked bar is coloured by. Slides name parts by month and source
    ("6月收息", "5月流入", "同4月收息"); every part of one month gets that month's colour, so a
-   quarter needs three colours however many sources it has. A label with no month is its own key. */
+   quarter needs three colours however many sources it has. A label with no month is its own key.
+   The colours are assigned once for the whole month's report: the same colour means the same
+   month in every chart of every panel, and one legend at the top says which is which. */
 function partKey(label) {
   const m = /(\d{1,2})\s*月/.exec(label || '');
   return m ? 'm' + Number(m[1]) : (label || '');
 }
 function partMonth(key) { return /^m\d+$/.test(key) ? Number(key.slice(1)) : NaN; }
-function partColors(section) {
+function partColors(sections) {
   const keys = [], names = {};
-  section.blocks.forEach((b) => b.charts.forEach((c) => c.bars.forEach((bar) => (bar.segments || []).forEach((sg) => {
+  sections.forEach((section) => section.blocks.forEach((b) => b.charts.forEach((c) => c.bars.forEach((bar) => (bar.segments || []).forEach((sg) => {
     const k = partKey(sg.label);
     if (!keys.includes(k)) { keys.push(k); names[k] = sg.label; }
-  }))));
+  })))));
   // months run dark (earliest) to light (latest); anything else keeps the order it appears in
   const ordered = keys.every((k) => !isNaN(partMonth(k))) ? keys.slice().sort((x, y) => partMonth(x) - partMonth(y)) : keys;
   const n = ordered.length, map = {};
@@ -484,6 +486,15 @@ function partColors(section) {
 function partName(colors, key) {
   const m = partMonth(key);
   return isNaN(m) ? L(colors.names[key]) : new Date(2000, m - 1, 1).toLocaleDateString(locale(), {month: 'short'});
+}
+/* the text beside a part of a bar. Its colour already tells the month (see the legend), so the
+   month is left out and only what the month does not say stays: the source word, if the slide
+   has one ("收息" / "interest"), and the amount. "同4月收息" (same as April's) keeps its wording. */
+const MONTH_WORD = /(\d{1,2}\s*月|\b(?:Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|June?|July?|Aug(?:ust)?|Sep(?:t|tember)?|Oct(?:ober)?|Nov(?:ember)?|Dec(?:ember)?)\b\.?)/g;
+function partText(sg) {
+  const full = L(sg.label) || '';
+  const rest = /^(同|same as)/i.test(full) ? full : full.replace(MONTH_WORD, ' ').replace(/\s+/g, ' ').trim();
+  return (rest + ' ' + V(sg)).trim();
 }
 /* a part's amount. The slide may print none ("同4月收息"): then its size was worked out from the
    rest of the bar, and it is shown as such wherever the amount is given. */
@@ -539,7 +550,7 @@ function textWidth(text) {
   return measurer.measureText(text).width;
 }
 function sideWidth(bar) {
-  const lines = (bar.segments || []).map((sg) => (L(sg.label) + ' ' + V(sg)).trim());
+  const lines = (bar.segments || []).map(partText);
   const widest = Math.max.apply(null, lines.map(textWidth).concat([0]));
   return Math.max(G.SIDE, Math.min(G.SIDE_MAX, Math.ceil(widest) + 30));
 }
@@ -602,7 +613,7 @@ function drawChart(chart, max, colors, slot) {
         segs.forEach((sg, i) => {
           const ly = base - 8 - i * 17, lx = col.cx + BAR / 2 + 10;
           g.appendChild(s('rect', {x: lx, y: ly - 9, width: 9, height: 9, rx: 1.5, fill: colors.map[partKey(sg.label)]}));
-          g.appendChild(s('text', {class: 'pl', x: lx + 13, y: ly}, (L(sg.label) + ' ' + V(sg)).trim()));
+          g.appendChild(s('text', {class: 'pl', x: lx + 13, y: ly}, partText(sg)));
         });
       }
     } else if (hgt > 0) {
@@ -647,8 +658,18 @@ function watchWidth(el, fn) {
 }
 
 function renderBudget(body, doc) {
+  const colors = partColors(doc.sections || []);
+  const legend = h('div', 'ff-legend top');
+  const item = (color, label) => { const sp = h('span'); const i = h('i'); i.style.background = color; sp.appendChild(i); sp.appendChild(document.createTextNode(label)); return sp; };
+  legend.appendChild(item(C_BUDGET, t('budget')));
+  legend.appendChild(item(C_ACTUAL, t('actual')));
+  if (colors.keys.length) {
+    const sep = h('span', 'sep'); sep.title = t('parts'); sep.setAttribute('role', 'separator'); sep.setAttribute('aria-label', t('parts'));
+    legend.appendChild(sep);
+    colors.keys.forEach((k) => legend.appendChild(item(colors.map[k], partName(colors, k))));
+  }
+  body.appendChild(legend);
   const sections = (doc.sections || []).map((section) => {
-    const colors = partColors(section);
     const bars = [];
     section.blocks.forEach((b) => b.charts.forEach((c) => c.bars.forEach((bar) => bars.push(bar))));
     // one value scale for the whole section, as on the slide
@@ -661,16 +682,6 @@ function renderBudget(body, doc) {
     const el = h('section', 'ff-section');
     const header = h('header');
     header.appendChild(h('h3', null, L(section.title)));
-    const legend = h('div', 'ff-legend');
-    const item = (color, label) => { const sp = h('span'); const i = h('i'); i.style.background = color; sp.appendChild(i); sp.appendChild(document.createTextNode(label)); return sp; };
-    legend.appendChild(item(C_BUDGET, t('budget')));
-    legend.appendChild(item(C_ACTUAL, t('actual')));
-    if (colors.keys.length) {
-      const sep = h('span', 'sep'); sep.title = t('parts'); sep.setAttribute('role', 'separator'); sep.setAttribute('aria-label', t('parts'));
-      legend.appendChild(sep);
-      colors.keys.forEach((k) => legend.appendChild(item(colors.map[k], partName(colors, k))));
-    }
-    header.appendChild(legend);
     el.appendChild(header);
 
     const blocks = h('div', 'ff-blocks');
