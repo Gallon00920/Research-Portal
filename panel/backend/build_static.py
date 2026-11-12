@@ -42,8 +42,9 @@ REPORTS = DATA / "reports"
 INCOMING = ROOT / "incoming"
 OPS = ROOT / "ops"
 REPO = ROOT.parent  # repository root: web/ (shared shell), panel/, news/
-WEB_DIRS = (REPO / "web", ROOT / "web", REPO / "news" / "web", REPO / "factors" / "web")  # copied flat into the site, in this order
+WEB_DIRS = (REPO / "web", ROOT / "web", REPO / "news" / "web", REPO / "factors" / "web", REPO / "macro" / "web")  # copied flat into the site, in this order
 FACTORS_DATA = REPO / "factors" / "data"  # written by factors/scripts/extract_factors.py
+MACRO_DATA = REPO / "macro" / "data"  # written by macro/scripts/extract_macro.py
 NEWS_DATA = REPO / "news" / "data" / "news.json"
 SALT_FILE = DATA / "salt.txt"
 
@@ -379,6 +380,12 @@ def build_site(out: Path, c: Crypto, repo: str, branch: str):
             log("fund key factors data left out: the site is encrypted and this data is not")
         else:
             shutil.copytree(FACTORS_DATA, out / "data" / "factors")
+    # macro / market slide briefs: the same rule
+    if MACRO_DATA.is_dir():
+        if c.on:
+            log("macro / market data left out: the site is encrypted and this data is not")
+        else:
+            shutil.copytree(MACRO_DATA, out / "data" / "macro")
     if REPORTS.exists():
         for d in REPORTS.iterdir():
             if not d.is_dir():

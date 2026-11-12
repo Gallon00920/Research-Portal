@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Macro / Market — slide briefs read from screenshots. Scoped to #view-macro;
+   chrome, tokens, buttons, hero, card, overlay and form styles come from web/app.css.
+   ========================================================================== */
+#view-macro{ --mk-bar-h:50px; --mk-pos:#e3f1e6; --mk-pos-ink:#2a7a3b; --mk-neg:#fbe7e4; --mk-neg-ink:#b33a2b; --mk-warn:#fdf3dc; --mk-warn-ink:#8a6410; --mk-neu:#eeeeee; --mk-neu-ink:#555 }
+#view-macro h2,#view-macro h3,#view-macro h4{margin:0; font-weight:700; line-height:1.35}
+#view-macro p{margin:0}
+#view-macro ul{margin:0; padding:0; list-style:none}
+
+/* ───────── sticky strip: brief title, month picker, upload ───────── */
+#view-macro .mk-bar{display:flex; align-items:center; gap:12px; padding:0 22px; min-height:var(--mk-bar-h); border-bottom:1px solid var(--line-soft); border-radius:4px 4px 0 0;
+  position:sticky; top:var(--tb-top); z-index:30; background:var(--card); transition:top .28s ease; box-shadow:0 6px 14px -10px rgba(10,30,60,.25)}
+#view-macro .mk-bar-title{flex:1; min-width:0; font-size:13.5px; font-weight:600; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+#view-macro .mk-controls{display:flex; align-items:center; gap:10px; flex-shrink:0}
+#view-macro .mk-controls label{display:flex; align-items:center; gap:6px; font-size:11px; font-weight:700; color:var(--muted); letter-spacing:.3px; text-transform:uppercase; white-space:nowrap}
+#view-macro .mk-controls select{font-weight:600; color:var(--ink-2); text-transform:none; letter-spacing:0; min-width:78px}
+#view-macro .mk-controls select:disabled{opacity:.55}
+
+/* ───────── body ───────── */
+#view-macro .mk-body{padding:22px 26px 30px; min-height:240px; transition:opacity .15s}
+#view-macro .mk-body.is-loading{opacity:.5}
+#view-macro .mk-head{display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 12px; margin-bottom:14px}
+#view-macro .mk-head h2{font-size:19px}
+#view-macro .mk-period{font-size:11.5px; font-weight:700; letter-spacing:.4px; color:#fff; background:var(--navy-800); border-radius:3px; padding:2px 8px}
+#view-macro .mk-warn{border-left:4px solid #d03b3b; background:#fdf3f2; padding:11px 16px; border-radius:0 4px 4px 0; margin:0 0 16px; font-size:12.5px; line-height:1.6; color:var(--ink-2)}
+#view-macro .mk-warn b{display:block; color:var(--ink); font-size:13px}
+#view-macro .mk-warn ul{list-style:disc; padding-left:18px}
+#view-macro .mk-toc{display:flex; flex-wrap:wrap; gap:6px 10px; margin:0 0 18px; font-size:12.5px}
+#view-macro .mk-toc a{border:1px solid var(--line); border-radius:999px; padding:3px 11px; color:var(--blue-600); font-weight:600; background:var(--card)}
+#view-macro .mk-toc a:hover{border-color:var(--blue-500)}
+#view-macro .mk-meta{margin-top:18px; padding-top:12px; border-top:1px solid var(--line-soft); font-size:12px; color:var(--muted); display:flex; flex-wrap:wrap; gap:4px 14px}
+#view-macro .mk-meta a{font-weight:600}
+#view-macro .mk-empty{border:1px dashed var(--line); border-radius:5px; padding:44px 20px; text-align:center; color:var(--muted); font-size:13.5px}
+#view-macro .mk-empty b{display:block; color:var(--ink); font-size:15px; margin-bottom:6px}
+#view-macro .mk-empty .btn{margin-top:16px}
+
+/* ───────── one slide ───────── */
+#view-macro .mk-slide{border:1px solid var(--line); border-radius:5px; background:var(--card); margin:0 0 18px; scroll-margin-top:calc(var(--tb-top) + var(--mk-bar-h) + 12px)}
+#view-macro .mk-slide > header{display:flex; align-items:center; gap:12px; padding:12px 20px; border-bottom:1px solid var(--line-soft); border-top:3px solid var(--navy-800); border-radius:5px 5px 0 0}
+#view-macro .mk-slide > header h3{flex:1; min-width:0; font-size:16px; color:var(--navy-800)}
+#view-macro .mk-no{width:26px; height:26px; border-radius:50%; background:var(--navy-800); color:#fff; font-size:12px; font-weight:700; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0}
+#view-macro .mk-src{font-size:12px; font-weight:600; white-space:nowrap}
+#view-macro .mk-sub{padding:12px 20px 0; font-size:13.5px; line-height:1.6; color:var(--ink-2)}
+#view-macro .mk-blocks{display:grid; grid-template-columns:repeat(auto-fit, minmax(340px, 1fr)); gap:16px; padding:16px 20px 20px}
+#view-macro .mk-block{min-width:0}
+#view-macro .mk-block.wide{grid-column:1 / -1}
+#view-macro .mk-bhead{background:var(--navy-800); color:#fff; border-radius:3px 3px 0 0; padding:7px 12px; text-align:center}
+#view-macro .mk-bhead h4{font-size:13px; color:#fff}
+#view-macro .mk-chart{border:1px solid var(--line-soft); border-radius:4px; background:#fafbfd}
+#view-macro .mk-svg{display:block; width:100%; height:auto; padding:8px 6px 2px; font-family:inherit}
+#view-macro .mk-svg .grid{stroke:var(--line-soft); stroke-width:1}
+#view-macro .mk-svg .tick{font-size:12px; fill:var(--muted)}
+#view-macro .mk-svg .cat{font-size:12.5px; fill:var(--ink-2)}
+#view-macro .mk-svg .val{font-size:12.5px}
+#view-macro .mk-legend{display:flex; flex-wrap:wrap; gap:4px 14px; padding:4px 12px 10px; font-size:12px; color:var(--ink-2)}
+#view-macro .mk-legend span{display:inline-flex; align-items:center; gap:5px}
+#view-macro .mk-legend i{width:10px; height:10px; border-radius:2px; flex-shrink:0}
+#view-macro .mk-notes{display:flex; flex-wrap:wrap; gap:4px 14px; padding:0 12px 10px; font-size:11.5px; color:var(--muted)}
+#view-macro .mk-tablewrap .mk-notes,#view-macro .mk-tablewrap .mk-legend{padding-left:0}
+
+/* horizontal bars with a coloured part */
+#view-macro .mk-hlist{padding:12px 14px 6px; display:flex; flex-direction:column; gap:5px}
+#view-macro .mk-hgroup{font-size:12.5px; font-weight:700; color:var(--ink); margin:6px 0 2px}
+#view-macro .mk-hrow{display:grid; grid-template-columns:minmax(120px, 170px) 1fr; align-items:center; gap:10px}
+#view-macro .mk-hlabel{text-align:right; font-size:13px; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+#view-macro .mk-htrack{display:flex; align-items:center; gap:8px; min-width:0}
+#view-macro .mk-hfill{height:18px; border-radius:2px; position:relative; overflow:hidden; flex-shrink:0; max-width:calc(100% - 150px)}
+#view-macro .mk-hpart{position:absolute; left:0; top:0; bottom:0; display:block}
+#view-macro .mk-hval{font-size:12.5px; color:var(--ink-2); white-space:nowrap}
+
+/* tables with coloured cells */
+#view-macro .mk-scroll{overflow:auto}
+#view-macro .mk-table{width:100%; border-collapse:collapse; font-size:13px}
+#view-macro .mk-table th,#view-macro .mk-table td{padding:8px 12px; border-bottom:1px solid var(--line-soft); text-align:left; vertical-align:top; line-height:1.5; min-width:84px}
+/* a wide table scrolls sideways rather than wrapping its cells character by character */
+#view-macro .mk-table td{min-width:110px}
+#view-macro .mk-table thead th{background:var(--navy-800); color:#fff; font-weight:700; font-size:12.5px; white-space:nowrap}
+#view-macro .mk-table tbody th{font-weight:700; color:var(--ink); white-space:nowrap}
+#view-macro .mk-table .tone-positive{background:var(--mk-pos); color:var(--mk-pos-ink)}
+#view-macro .mk-table .tone-negative{background:var(--mk-neg); color:var(--mk-neg-ink)}
+#view-macro .mk-table .tone-warning{background:var(--mk-warn); color:var(--mk-warn-ink)}
+#view-macro .mk-table .tone-neutral{background:var(--mk-neu); color:var(--mk-neu-ink)}
+
+/* text blocks */
+#view-macro .mk-bullets{border:1px solid var(--line-soft); border-radius:4px; background:#fafbfd; padding:12px 16px}
+#view-macro .mk-bullets h4,#view-macro .mk-text h4,#view-macro .mk-callout h4{font-size:13px; margin-bottom:6px; color:var(--navy-800)}
+#view-macro .mk-bullets ul{list-style:disc; padding-left:18px; font-size:13.5px; line-height:1.65; color:var(--ink-2)}
+#view-macro .mk-bullets li + li{margin-top:6px}
+#view-macro .mk-callout{border-left:4px solid #b89a4e; background:#f4f1ea; padding:12px 16px; border-radius:0 4px 4px 0; font-size:13.5px; line-height:1.65; color:var(--ink)}
+#view-macro .mk-text{font-size:13.5px; line-height:1.65; color:var(--ink-2)}
+#view-macro .mk-foot{font-size:11.5px; line-height:1.5; color:var(--muted); font-style:italic}
+
+/* upload: the ordered list of slides */
+#view-macro .mk-files label{display:flex; gap:8px; align-items:center}
+#view-macro .mk-files .mk-fno{width:20px; height:20px; border-radius:50%; background:var(--navy-800); color:#fff; font-size:11px; font-weight:700; display:inline-flex; align-items:center; justify-content:center; flex-shrink:0}
+#view-macro .mk-files .mk-fname{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+#view-macro .mk-files .rm:disabled{opacity:.3}
+#view-macro .form > .lbl{margin:-6px 0 4px}
+@media (max-width: 720px){ #view-macro .mk-hrow{grid-template-columns:1fr} #view-macro .mk-hlabel{text-align:left} #view-macro .mk-bar-title{display:none} }
+@media print{ #view-macro .mk-bar{position:static} }

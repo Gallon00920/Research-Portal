@@ -3,12 +3,12 @@
             #/s/<sector>       opens the latest report of that sector in the current language
             #/portfolio        portfolio management dashboard (the same page for the portfolio funds)
             #/portfolio/s/<id> opens the latest report of that fund
-            #/macro, #/macro/s/<id>   the same for Macro / Market
+            #/macro[/YYYY-MM]  Macro / Market: slide briefs read from screenshots (macro/web/macro.js)
             #/r/<id>[/anchor]  report reader (any space; the space follows the report's sector)
    Only full reports in the current UI language are ever listed.
-   Three "spaces" share this code (see SPACES): the research sectors (space "research", the
-   default), the portfolio funds ("portfolio") and Macro / Market ("macro"). A sector's `space`
-   field says which dashboard lists it.
+   Two "spaces" share this code (see SPACES): the research sectors (space "research", the
+   default) and the portfolio funds ("portfolio"). A sector's `space` field says which dashboard
+   lists it.
 */
 (function(){
 'use strict';
@@ -79,7 +79,6 @@ function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : '
 const SPACES = {
   research:  {hash: '#/',          sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
   portfolio: {hash: '#/portfolio', sectorHash: '#/portfolio/s/', title: 'pm_title',   sub: 'pm_sub',   sectors: 'pm_sectors', nav: 'nav_portfolio'},
-  macro:     {hash: '#/macro',     sectorHash: '#/macro/s/',     title: 'mk_title',   sub: 'mk_sub',   sectors: 'mk_sectors', nav: 'nav_macro'},
 };
 const SPACE_IDS = Object.keys(SPACES);
 function spaceOf(sectorId){ const s = sectorById(sectorId); return (s && SPACES[s.space]) ? s.space : 'research'; }
@@ -129,6 +128,7 @@ function setLang(l){
   applyI18n();
   if (window.NewsTracker) window.NewsTracker.setLanguage(l);
   if (window.FundFactors) window.FundFactors.setLanguage(l);
+  if (window.MacroMarket) window.MacroMarket.setLanguage(l);
   route();
 }
 /* switch the report language only (the in-page EN / 中文 switch) */
@@ -161,9 +161,9 @@ function buildNav(){
   const n = $('mainnav');
   n.innerHTML = '';
   // tab order: fund key factors, portfolio management, the news tracker, the research panel
-  // (dashboard + sector reports), then the remaining spaces (the same dashboard + reports for
-  // other sector lists); sectors are opened from the cards on the dashboard
-  const isPanel = state.view !== 'news' && state.view !== 'factors';
+  // (dashboard + sector reports), then macro / market (slide briefs); sectors are opened from
+  // the cards on the dashboard
+  const isPanel = state.view !== 'news' && state.view !== 'factors' && state.view !== 'macro';
   const tab = (label, active, hash) => {
     const b = el('button', active ? 'active' : '', label);
     b.type = 'button'; b.addEventListener('click', () => nav(hash));
@@ -175,6 +175,7 @@ function buildNav(){
   tab(t('nav_news'), state.view === 'news', '#/news');
   spaceBtn('research');
   SPACE_IDS.filter(sp => sp !== 'research' && sp !== 'portfolio').forEach(spaceBtn);
+  tab(t('nav_macro'), state.view === 'macro', '#/macro');
   // "Upload report" sits on the dashboard beside the sector list and in a report page's crumb bar
 }
 
@@ -1114,6 +1115,7 @@ function showView(v){
   $('view-art').hidden = v !== 'art';
   $('view-news').hidden = v !== 'news';
   $('view-factors').hidden = v !== 'factors';
+  $('view-macro').hidden = v !== 'macro';
   $('searchWrap').style.visibility = v === 'art' ? '' : 'hidden';
   renderAiChat();
 }
@@ -1133,12 +1135,21 @@ function renderFactors(tab, ym){
   if (window.FundFactors) window.FundFactors.mount(state.lang, tab, ym);
   document.title = t('factors_title') + ' | Junson Capital';
 }
+/* macro / market: macro.js renders into #view-macro (the month comes from the address) */
+function renderMacro(ym){
+  showView('macro');
+  state.sectorId = null; state.reportId = null; state.report = null;
+  buildNav();
+  if (window.MacroMarket) window.MacroMarket.mount(state.lang, ym);
+  document.title = t('mk_title') + ' | Junson Capital';
+}
 function parseHash(){
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   if (!h) return {view: 'dash', space: 'research'};
   const p = h.split('/');
   if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
+  if (p[0] === 'macro') return {view: 'macro', ym: p[1] || null};
   if (SPACES[p[0]] && p[0] !== 'research'){
     if (p[1] === 's' && p[2]) return {view: 'sector', id: p[2]};
     return {view: 'dash', space: p[0]};
@@ -1153,6 +1164,7 @@ async function route(){
     if (h.view === 'dash') renderDash(h.space);
     else if (h.view === 'news') renderNews();
     else if (h.view === 'factors') renderFactors(h.tab, h.ym);
+    else if (h.view === 'macro') renderMacro(h.ym);
     else if (h.view === 'sector') openSector(h.id);
     else if (h.view === 'art'){
       if (state.view === 'art' && state.reportId === h.id && h.anchor){ const n = document.getElementById(h.anchor); if (n) n.scrollIntoView(); return; }

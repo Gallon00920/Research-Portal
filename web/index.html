@@ -4,9 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AID Research Panel | Junson Capital</title>
-<link rel="stylesheet" href="app.css?v=24">
-<link rel="stylesheet" href="news.css?v=24">
-<link rel="stylesheet" href="factors.css?v=24">
+<link rel="stylesheet" href="app.css?v=25">
+<link rel="stylesheet" href="news.css?v=25">
+<link rel="stylesheet" href="factors.css?v=25">
+<link rel="stylesheet" href="macro.css?v=25">
 </head>
 <body>
 
@@ -348,6 +349,19 @@
   </div>
 </div>
 
+<!-- ═══════ macro / market (macro/web/macro.js builds the card's content) ═══════ -->
+<div id="view-macro" hidden>
+  <div class="hero tall">
+    <div class="hero-txt">
+      <h1 data-i18n="mk_title"></h1>
+      <p data-i18n="mk_sub"></p>
+    </div>
+  </div>
+  <div class="shell dash">
+    <div class="doc-card" id="macroCard"></div>
+  </div>
+</div>
+
 <footer class="dash-footer">
   <span>© 2026 Junson Capital · AID Research</span>
   <span data-i18n="internal_only"></span>
@@ -491,10 +505,11 @@
 </div>
 
 <script src="config.js"></script>
-<script src="i18n.js?v=24"></script>
-<script src="static_data.js?v=24"></script>
-<script src="news.js?v=24"></script>
-<script src="factors.js?v=24"></script>
-<script src="app.js?v=24"></script>
+<script src="i18n.js?v=25"></script>
+<script src="static_data.js?v=25"></script>
+<script src="news.js?v=25"></script>
+<script src="factors.js?v=25"></script>
+<script src="macro.js?v=25"></script>
+<script src="app.js?v=25"></script>
 </body>
 </html>

@@ -50,11 +50,18 @@ jobs:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
         run: python factors/scripts/extract_factors.py --apply
 
+      # Macro / Market: Claude reads each slide image the site committed to macro/incoming/ and
+      # writes that month's brief (same secret, same waiting rule as above).
+      - name: Read macro / market slides
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python macro/scripts/extract_macro.py --apply
+
       - name: Commit parsed reports back to the repository
         run: |
           git config user.name "aid-panel-bot"
           git config user.email "aid-panel-bot@users.noreply.github.com"
-          git add -A panel/data panel/incoming panel/ops factors/data factors/incoming factors/failed
+          git add -A panel/data panel/incoming panel/ops factors/data factors/incoming factors/failed macro/data macro/incoming macro/failed
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else

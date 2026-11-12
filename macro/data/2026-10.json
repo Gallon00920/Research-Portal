@@ -1,0 +1,928 @@
+{
+  "year": 2026,
+  "month": 10,
+  "title": "市场加息预期更新",
+  "extracted_at": "2026-11-12T09:54:17+00:00",
+  "model": "manual transcription",
+  "pages": [
+    {
+      "n": 1,
+      "title": "市场加息预期更新",
+      "subtitle": "",
+      "blocks": [
+        {
+          "type": "chart",
+          "kind": "line",
+          "title": "9月点阵图：联邦基金利率中位数（vs 6月）",
+          "unit": "%",
+          "notes": [],
+          "categories": [
+            "9月加息前",
+            "2026",
+            "2027",
+            "2028",
+            "长期"
+          ],
+          "series": [
+            {
+              "name": "9月",
+              "points": [
+                {
+                  "text": "3.625%",
+                  "value": 3.625
+                },
+                {
+                  "text": "4.1%",
+                  "value": 4.1
+                },
+                {
+                  "text": "4.1%",
+                  "value": 4.1
+                },
+                {
+                  "text": "3.9%",
+                  "value": 3.9
+                },
+                {
+                  "text": "3.2%",
+                  "value": 3.2
+                }
+              ]
+            },
+            {
+              "name": "6月",
+              "points": [
+                {
+                  "text": "3.625%",
+                  "value": 3.625
+                },
+                {
+                  "text": "3.8%",
+                  "value": 3.8
+                },
+                {
+                  "text": "3.6%",
+                  "value": 3.6
+                },
+                {
+                  "text": "3.4%",
+                  "value": 3.4
+                },
+                {
+                  "text": "3.1%",
+                  "value": 3.1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "table",
+          "title": "市场定价与组合影响",
+          "columns": [
+            "",
+            "9月点阵图³",
+            "当前市场定价²"
+          ],
+          "rows": [
+            [
+              {
+                "text": "2026年底",
+                "tone": "none"
+              },
+              {
+                "text": "再加息一次，约4.1%",
+                "tone": "none"
+              },
+              {
+                "text": "12月加息概率73%–82%",
+                "tone": "none"
+              }
+            ],
+            [
+              {
+                "text": "未来12个月",
+                "tone": "none"
+              },
+              {
+                "text": "2027年按兵不动",
+                "tone": "none"
+              },
+              {
+                "text": "累计加息约69bp",
+                "tone": "none"
+              }
+            ],
+            [
+              {
+                "text": "降息时点",
+                "tone": "none"
+              },
+              {
+                "text": "2028–2029年",
+                "tone": "none"
+              },
+              {
+                "text": "12个月内未定价降息",
+                "tone": "none"
+              }
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "type": "bullets",
+          "title": "",
+          "items": [
+            "10月大概率按兵不动：CME FedWatch显示维持3.75%–4.00%的概率约90%¹",
+            "市场比点阵图更鹰派：OIS定价未来12个月累计加息约69bp（约2.75次），“更高更久”进一步强化²",
+            "通胀再度抬头：9月CPI同比3.7%（8月3.4%），核心2.6%（8月2.4%）³",
+            "组合影响：私募信贷与CLO BB/B等浮动利率资产票息随基准利率上行，同时需关注借款人利息覆盖倍数承压"
+          ]
+        },
+        {
+          "type": "footnotes",
+          "items": [
+            "1. CME FedWatch，截至2026年10月27日（10月会议前）；2. rateprobability，OIS隐含定价，截至2026年10月；3. 美国劳工统计局9月CPI、美联储2026年9月及6月SEP年末利率中位数；加息前为3.50%–3.75%区间中值"
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_image": "01.png"
+    },
+    {
+      "n": 2,
+      "title": "组合约48%资产为浮动利率，加息直接抬升其收益",
+      "subtitle": "",
+      "blocks": [
+        {
+          "type": "chart",
+          "kind": "hbar",
+          "title": "持仓规模与浮动利率占比（$m）",
+          "unit": "$m",
+          "notes": [
+            "浮动利率部分",
+            "固定/部分浮动"
+          ],
+          "bars": [
+            {
+              "group": "浮动为主 · 48%",
+              "label": "PAG BRS",
+              "value": 31.6,
+              "text": "31.6 · 浮动100%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "100%",
+                  "share": 1.0
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "CIFC CLO IG",
+              "value": 31.5,
+              "text": "31.5 · 浮动100%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "100%",
+                  "share": 1.0
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "Guggenheim",
+              "value": 25.6,
+              "text": "25.6 · 浮动100%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "100%",
+                  "share": 1.0
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "Apollo ABL",
+              "value": 25.4,
+              "text": "25.4 · 浮动52%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "52%",
+                  "share": 0.52
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "CIFC CLO Equity",
+              "value": 18.4,
+              "text": "18.4 · 浮动100%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "100%",
+                  "share": 1.0
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "OTF",
+              "value": 17.1,
+              "text": "17.1 · 浮动97%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "97%",
+                  "share": 0.97
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "Basepoint ABL",
+              "value": 15.2,
+              "text": "15.2 · 浮动87.3%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "87.3%",
+                  "share": 0.873
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "NB ABL",
+              "value": 7.8,
+              "text": "7.8 · 浮动55%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "55%",
+                  "share": 0.55
+                }
+              ]
+            },
+            {
+              "group": "浮动为主 · 48%",
+              "label": "HSBC RCF",
+              "value": 1.3,
+              "text": "1.3 · 浮动100%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "100%",
+                  "share": 1.0
+                }
+              ]
+            },
+            {
+              "group": "固定 / 部分浮动 · 46%",
+              "label": "Progress (Pretium)",
+              "value": 47.3,
+              "text": "47.3 · 浮动0%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "0%",
+                  "share": 0.0
+                }
+              ]
+            },
+            {
+              "group": "固定 / 部分浮动 · 46%",
+              "label": "Oak Street",
+              "value": 41.0,
+              "text": "41.0 · 浮动0%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "0%",
+                  "share": 0.0
+                }
+              ]
+            },
+            {
+              "group": "固定 / 部分浮动 · 46%",
+              "label": "Global Atlantic",
+              "value": 40.3,
+              "text": "40.3 · 浮动13%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "13%",
+                  "share": 0.13
+                }
+              ]
+            },
+            {
+              "group": "固定 / 部分浮动 · 46%",
+              "label": "Bayview MSR",
+              "value": 21.1,
+              "text": "21.1 · 浮动0%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "0%",
+                  "share": 0.0
+                }
+              ]
+            },
+            {
+              "group": "固定 / 部分浮动 · 46%",
+              "label": "Bain Capital Griffin",
+              "value": 17.4,
+              "text": "17.4 · 浮动0%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "0%",
+                  "share": 0.0
+                }
+              ]
+            },
+            {
+              "group": "无利率敞口 · 6%",
+              "label": "Dyal V",
+              "value": 23.6,
+              "text": "23.6 · 浮动0%",
+              "parts": [
+                {
+                  "name": "浮动利率部分",
+                  "text": "0%",
+                  "share": 0.0
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "warnings": [],
+      "source_image": "02.png"
+    },
+    {
+      "n": 3,
+      "title": "组合以浮动利率资产为主可对冲加息，主要风险在借款人信用",
+      "subtitle": "9月FOMC重启加息后，预计年内还会再加息一次，2027年按兵不动，2028年才开始降息。在“更高更久”的利率环境下，组合内部的影响分化明显，大致可以分成四组。",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "",
+          "columns": [
+            "分组",
+            "持仓",
+            "核心逻辑"
+          ],
+          "rows": [
+            [
+              {
+                "text": "受益",
+                "tone": "positive"
+              },
+              {
+                "text": "Bayview MSR、Global Atlantic、CIFC CLO IG",
+                "tone": "none"
+              },
+              {
+                "text": "估值与收入随利率上升而改善，是组合真正的利率对冲",
+                "tone": "none"
+              }
+            ],
+            [
+              {
+                "text": "短期受益、中期信用承压",
+                "tone": "warning"
+              },
+              {
+                "text": "OTF, Guggenheim, PAG BRS, CIFC CLO Equity, Apollo, Basepoint, NB ABF",
+                "tone": "none"
+              },
+              {
+                "text": "浮息收入先升，借款人ICR随后恶化，损失滞后2–3个季度体现",
+                "tone": "none"
+              }
+            ],
+            [
+              {
+                "text": "估值承压",
+                "tone": "negative"
+              },
+              {
+                "text": "Oak Street、Progress",
+                "tone": "none"
+              },
+              {
+                "text": "资本化率扩张直接压低估值，以估值问题为主而非信用问题",
+                "tone": "none"
+              }
+            ],
+            [
+              {
+                "text": "间接影响",
+                "tone": "neutral"
+              },
+              {
+                "text": "Dyal V、BainCap Griffin、HSBC RCF",
+                "tone": "none"
+              },
+              {
+                "text": "通过募资退出、燃油成本、欧元利率与汇率等渠道间接传导",
+                "tone": "none"
+              }
+            ]
+          ],
+          "notes": []
+        },
+        {
+          "type": "callout",
+          "title": "",
+          "text": "15只基金中约9只以浮动利率为主，收入端对加息有天然的对冲。但组合的主要风险不是久期，而是浮息借款人的信用风险：这部分风险集中在直接贷款和CLO股权，并且会滞后2–3个季度才在NAV中体现。"
+        }
+      ],
+      "warnings": [],
+      "source_image": "03.png"
+    },
+    {
+      "n": 4,
+      "title": "逐项影响：信用风险集中在直接贷款与CLO股权",
+      "subtitle": "",
+      "blocks": [
+        {
+          "type": "table",
+          "title": "",
+          "columns": [
+            "基金",
+            "策略",
+            "利率结构",
+            "收入端",
+            "估值端",
+            "信用风险",
+            "综合"
+          ],
+          "rows": [
+            [
+              {
+                "text": "Dyal V",
+                "tone": "none"
+              },
+              {
+                "text": "GP股权",
+                "tone": "none"
+              },
+              {
+                "text": "间接（管理费 + carry）",
+                "tone": "none"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "负面",
+                "tone": "negative"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "中性偏负",
+                "tone": "negative"
+              }
+            ],
+            [
+              {
+                "text": "OTF",
+                "tone": "none"
+              },
+              {
+                "text": "科技直接贷款",
+                "tone": "none"
+              },
+              {
+                "text": "浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性偏负",
+                "tone": "neutral"
+              },
+              {
+                "text": "高",
+                "tone": "negative"
+              },
+              {
+                "text": "短正中负",
+                "tone": "warning"
+              }
+            ],
+            [
+              {
+                "text": "Oak Street",
+                "tone": "none"
+              },
+              {
+                "text": "单租户净租赁",
+                "tone": "none"
+              },
+              {
+                "text": "固定租金 + 递增条款",
+                "tone": "none"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "负面（长期）",
+                "tone": "negative"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "中性偏负",
+                "tone": "negative"
+              }
+            ],
+            [
+              {
+                "text": "Progress",
+                "tone": "none"
+              },
+              {
+                "text": "独栋租赁",
+                "tone": "none"
+              },
+              {
+                "text": "租金逐年重定价",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "负面",
+                "tone": "negative"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "中性偏负",
+                "tone": "negative"
+              }
+            ],
+            [
+              {
+                "text": "Global Atlantic",
+                "tone": "none"
+              },
+              {
+                "text": "再保险",
+                "tone": "none"
+              },
+              {
+                "text": "固定收益投资组合",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "短期负面",
+                "tone": "negative"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              }
+            ],
+            [
+              {
+                "text": "PAG BRS",
+                "tone": "none"
+              },
+              {
+                "text": "银行风险分担",
+                "tone": "none"
+              },
+              {
+                "text": "多为浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "中高",
+                "tone": "negative"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              }
+            ],
+            [
+              {
+                "text": "Bayview MSR",
+                "tone": "none"
+              },
+              {
+                "text": "MSR",
+                "tone": "none"
+              },
+              {
+                "text": "利率上升利好",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              }
+            ],
+            [
+              {
+                "text": "CIFC CLO IG",
+                "tone": "none"
+              },
+              {
+                "text": "CLO IG",
+                "tone": "none"
+              },
+              {
+                "text": "浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              }
+            ],
+            [
+              {
+                "text": "CIFC CLO Mezz + Equity",
+                "tone": "none"
+              },
+              {
+                "text": "CLO夹层 + 股权",
+                "tone": "none"
+              },
+              {
+                "text": "浮息（资产与负债两端）",
+                "tone": "none"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "负面",
+                "tone": "negative"
+              },
+              {
+                "text": "高",
+                "tone": "negative"
+              },
+              {
+                "text": "负面",
+                "tone": "negative"
+              }
+            ],
+            [
+              {
+                "text": "Basepoint ABL",
+                "tone": "none"
+              },
+              {
+                "text": "ABL",
+                "tone": "none"
+              },
+              {
+                "text": "多为浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "中高",
+                "tone": "negative"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              }
+            ],
+            [
+              {
+                "text": "NB ABL",
+                "tone": "none"
+              },
+              {
+                "text": "ABL",
+                "tone": "none"
+              },
+              {
+                "text": "多为浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "中",
+                "tone": "warning"
+              },
+              {
+                "text": "中性偏正",
+                "tone": "positive"
+              }
+            ],
+            [
+              {
+                "text": "Apollo ABL",
+                "tone": "none"
+              },
+              {
+                "text": "ABL",
+                "tone": "none"
+              },
+              {
+                "text": "多为浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "中",
+                "tone": "warning"
+              },
+              {
+                "text": "中性偏正",
+                "tone": "positive"
+              }
+            ],
+            [
+              {
+                "text": "BainCap Griffin",
+                "tone": "none"
+              },
+              {
+                "text": "飞机租赁",
+                "tone": "none"
+              },
+              {
+                "text": "租金随利率上调；融资成本上升",
+                "tone": "none"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "中性偏正",
+                "tone": "positive"
+              },
+              {
+                "text": "中高",
+                "tone": "negative"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              }
+            ],
+            [
+              {
+                "text": "Guggenheim",
+                "tone": "none"
+              },
+              {
+                "text": "中型企业直接贷款",
+                "tone": "none"
+              },
+              {
+                "text": "浮息",
+                "tone": "none"
+              },
+              {
+                "text": "正面",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "高",
+                "tone": "negative"
+              },
+              {
+                "text": "短正中负",
+                "tone": "warning"
+              }
+            ],
+            [
+              {
+                "text": "HSBC RCF（€）",
+                "tone": "none"
+              },
+              {
+                "text": "循环信贷",
+                "tone": "none"
+              },
+              {
+                "text": "浮息（EURIBOR）",
+                "tone": "none"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              },
+              {
+                "text": "低",
+                "tone": "positive"
+              },
+              {
+                "text": "中性",
+                "tone": "neutral"
+              }
+            ]
+          ],
+          "notes": []
+        }
+      ],
+      "warnings": [],
+      "source_image": "04.png"
+    }
+  ],
+  "warnings": []
+}

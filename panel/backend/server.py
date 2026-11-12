@@ -43,8 +43,9 @@ REPORTS = DATA / "reports"
 SECTORS_FILE = DATA / "sectors.json"
 REPO = ROOT.parent  # repository root: web/ (shared shell), panel/, news/
 WEB = ROOT / "web"  # panel frontend: app.js, i18n.js, static_data.js, login.html
-STATIC_DIRS = (REPO / "web", WEB, REPO / "news" / "web", REPO / "factors" / "web")  # served flat; first match wins
+STATIC_DIRS = (REPO / "web", WEB, REPO / "news" / "web", REPO / "factors" / "web", REPO / "macro" / "web")  # served flat; first match wins
 FACTORS = REPO / "factors"  # fund key factors: data/, incoming/, scripts/extract_factors.py
+MACRO = REPO / "macro"  # macro / market slide briefs: data/, incoming/, scripts/extract_macro.py
 NEWS_DATA = REPO / "news" / "data" / "news.json"  # written by news/scripts/update_news.py
 REPORTS.mkdir(parents=True, exist_ok=True)
 
@@ -683,6 +684,58 @@ def factors_notes(tab: str, ym: str, payload: dict[str, Any]):
     except ef.ExtractionError as exc:
         raise HTTPException(422, str(exc))
     return {"ok": True, "notes": doc["notes"], "dismissed": doc["dismissed"]}
+
+
+# -------------------------------------------------------------------- macro / market
+def _macro_module():
+    """macro/scripts/extract_macro.py, imported on first use (it needs the anthropic package)."""
+    for scripts in (str(MACRO / "scripts"), str(FACTORS / "scripts")):
+        if scripts not in sys.path:
+            sys.path.insert(0, scripts)
+    import extract_macro
+    return extract_macro
+
+
+@app.get("/data/macro/{path:path}")
+def macro_data(path: str):
+    """Macro / Market briefs and their slide images; the GitHub Pages build copies them to data/macro/."""
+    base = (MACRO / "data").resolve()
+    f = (base / path).resolve()
+    if not f.is_file() or not f.is_relative_to(base):
+        raise HTTPException(404, "not found")
+    return FileResponse(f)
+
+
+@app.post("/api/macro/upload")
+def macro_upload(files: list[UploadFile] = File(...), year: int = Form(...), month: int = Form(...), title: str = Form("")):
+    """Read the dropped slide images with Claude, in the order given, and save them as the month's brief
+    (replacing any earlier upload for that month)."""
+    em = _macro_module()
+    by_type = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp", "image/gif": ".gif"}
+    images = []
+    for up in files:
+        ext = Path(up.filename or "").suffix.lower() or by_type.get(up.content_type or "", "")
+        images.append((up.file.read(), ext))
+    try:
+        doc = em.extract(year, month, title, images)
+    except em.MissingKeyError as exc:
+        raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
+    except em.ExtractionError as exc:
+        raise HTTPException(422, str(exc))
+    return {"ok": True, "year": doc["year"], "month": doc["month"], "pages": len(doc["pages"]), "warnings": doc.get("warnings") or []}
+
+
+@app.post("/api/macro/{ym}/translate")
+def macro_translate(ym: str):
+    """Create the English labels of a brief that still shows Chinese (Claude translates them)."""
+    em = _macro_module()
+    try:
+        doc = em.translate_month(ym)
+    except em.MissingKeyError as exc:
+        raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
+    except em.ExtractionError as exc:
+        raise HTTPException(422, str(exc))
+    return {"ok": True, "count": len(doc.get("en") or {})}
 
 
 # -------------------------------------------------------------------- static

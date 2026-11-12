@@ -69,20 +69,58 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   keywords), reorder by dragging rows (this sets the order in the top bar
   and on the dashboard) or remove sectors. Sectors are stored in `data/sectors.json`
   and can also be edited by hand.
-- **Portfolio management** (`#/portfolio`) and **Macro / Market**
-  (`#/macro`): the same dashboard, sector pages, reader, upload and manage
-  dialog, for other sector lists. Portfolio management starts with the
-  portfolio funds (Dyal V, OTF, Oak Street, … HSBC RCF); Macro / Market
-  starts empty, so add its sectors with "Manage sectors" first. These are
-  "spaces" (the `SPACES` table in `panel/web/app.js`): every entry in
+- **Portfolio management** (`#/portfolio`): the same dashboard, sector
+  pages, reader, upload and manage dialog, for the portfolio funds (Dyal V,
+  OTF, Oak Street, … HSBC RCF). The research sectors and the portfolio funds
+  are "spaces" (the `SPACES` table in `panel/web/app.js`): every entry in
   `data/sectors.json` has a `space` field, `research` (the default when
-  missing), `portfolio` or `macro`, and a report belongs to the space of its
-  sector. Sector pages open at `#/<space>/s/<id>`; report pages keep
-  `#/r/<id>` in every space. Each dashboard lists and manages only its own
-  space's sectors, and "Upload report" offers only them; the manage dialog
-  adds new entries to the space it was opened from and leaves the other
-  spaces' parts of the file untouched. Reports are stored, parsed and built
-  exactly as research reports.
+  missing) or `portfolio`, and a report belongs to the space of its sector.
+  Fund pages open at `#/portfolio/s/<id>`; report pages keep `#/r/<id>` in
+  both spaces. Each dashboard lists and manages only its own space's
+  sectors, and "Upload report" offers only them; the manage dialog adds new
+  entries to the space it was opened from and leaves the other space's part
+  of the file untouched. Reports are stored, parsed and built exactly as
+  research reports.
+- **Macro / Market** (`#/macro`) works like Fund key factors, for slide
+  decks: see below.
+
+## Macro / Market
+
+The "Macro / Market" tab (`#/macro`) holds one brief per month, rebuilt
+slide by slide from screenshots, with the same logic as Fund key factors.
+You drop several slide images at once (PNG, JPEG or WebP; drag, choose or
+paste), put them in reading order (arrows in the list), give the brief a
+title and a month, and Claude reads each image in turn into one generic
+shape: the slide title and subtitle, then blocks in reading order: charts
+(a line or vertical-bar chart over categories with every printed value, or
+horizontal bars with group headings and a coloured part per bar), tables
+with the colour of each cell (positive, negative, warning, neutral),
+bullet lists, call-outs, plain text and footnotes. The page draws them:
+charts as SVG, tables with the toned cells, a slide index at the top, and
+a link to the source image on every slide. An upload for a month that
+already has a brief replaces it.
+
+- `macro/scripts/extract_macro.py` holds the schema and prompt, parses the
+  numbers (a part of a bar given as a percentage becomes its share), lists
+  what did not add up as warnings, translates the labels and sentences into
+  English like the factors script (`en` map in the brief; "Create English
+  labels" on the local server for a brief that still shows Chinese), and
+  writes `macro/data/<YYYY-MM>.json` with the images in
+  `macro/data/<YYYY-MM>/<nn>.<ext>` and `macro/data/index.json`.
+  `--from-raw pages.json` saves a hand-written transcription instead of
+  calling Claude; `AI_MOCK=1` writes placeholder slides.
+- **On GitHub Pages** the site commits the images to
+  `macro/incoming/<YYYY-MM>-<nn>.<ext>` plus `<YYYY-MM>.meta.json` (the
+  title); `build-deploy.yml` runs the script with the `ANTHROPIC_API_KEY`
+  secret and redeploys. **Locally** `POST /api/macro/upload` reads the
+  slides at once (about a minute per slide). The data is served at
+  `data/macro/…` in both modes and, like the factors data, is left out of
+  an encrypted site.
+
+The October 2026 brief in the repository (the rate-hike update: dot plot,
+floating-rate share of the portfolio, the four impact groups and the
+fund-by-fund table) was transcribed by hand from the four slides with
+`--from-raw`; upload the slides again to have Claude read them.
 
 ## AI: generating reports, and a chat that edits them
 

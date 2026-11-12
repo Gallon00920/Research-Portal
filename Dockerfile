@@ -14,6 +14,7 @@ COPY panel/web ./panel/web
 COPY news/web ./news/web
 COPY news/data/news.json ./news/data/news.json
 COPY factors ./factors
+COPY macro ./macro
 COPY panel/data/sectors.json ./panel/data/sectors.json
 
 ENV PORT=8765
