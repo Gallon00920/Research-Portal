@@ -63,7 +63,7 @@ window.I18N = {
     dashboard: "总览", dash_title: "AID 市场研究面板",
     nav_panel: "研究面板", nav_news: "新闻追踪", news_title: "AID 信用新闻雷达",
     nav_factors: "基金关键指标", factors_title: "基金关键指标",
-    nav_portfolio: "组合管理", pm_title: "投资组合管理",
+    nav_portfolio: "投资组合管理", pm_title: "投资组合管理",
     pm_sub: "各持仓基金的报告 — Junson Capital 另类投资团队",
     pm_sectors: "组合板块",
     nav_macro: "宏观 / 市场", mk_title: "宏观 / 市场",
