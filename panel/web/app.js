@@ -1,8 +1,12 @@
 /* Junson Capital — AID Research Panel (frontend)
-   Routes:  #/                 dashboard
+   Routes:  #/                 research dashboard
             #/s/<sector>       opens the latest report of that sector in the current language
-            #/r/<id>[/anchor]  report reader
+            #/portfolio        portfolio management dashboard (the same page for the portfolio funds)
+            #/portfolio/s/<id> opens the latest report of that fund
+            #/r/<id>[/anchor]  report reader (either space; the space follows the report's sector)
    Only full reports in the current UI language are ever listed.
+   Two "spaces" share this code: the research sectors (space "research", the default) and the
+   portfolio funds (space "portfolio"). A sector's `space` field says which dashboard lists it.
 */
 (function(){
 'use strict';
@@ -12,7 +16,7 @@ const state = {
   lang: 'en', docLang: 'en',
   sectors: [], reports: [],
   meta: {current_year: new Date().getFullYear(), current_quarter: Math.floor(new Date().getMonth()/3)+1},
-  view: 'dash', sectorId: null, reportId: null, report: null,
+  view: 'dash', space: 'research', sectorId: null, reportId: null, report: null,
   exhibits: [], lbIndex: -1, zoom: {s:1, tx:0, ty:0, fit:1},
   editing: null,
 };
@@ -64,7 +68,12 @@ function periodKey(p){ const m = /^(\d)Q(\d{4})$/.exec(p || ''); return m ? (+m[
 function otherLang(){ return state.docLang === 'cn' ? 'en' : 'cn'; }
 function nav(hash){ if (location.hash === hash) route(); else location.hash = hash; window.scrollTo({top:0}); }
 function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : ''); }
-function hashSector(id){ return '#/s/' + id; }
+/* spaces: which dashboard a sector belongs to */
+function spaceOf(sectorId){ const s = sectorById(sectorId); return (s && s.space) || 'research'; }
+function spaceSectors(space){ const sp = space || state.space; return state.sectors.filter(s => ((s.space || 'research') === sp)); }
+function spaceTitle(space){ return t((space || state.space) === 'portfolio' ? 'pm_title' : 'dash_title'); }
+function hashDash(space){ return (space || state.space) === 'portfolio' ? '#/portfolio' : '#/'; }
+function hashSector(id){ return (spaceOf(id) === 'portfolio' ? '#/portfolio/s/' : '#/s/') + id; }
 function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function byUploaded(a, b){ return (b.uploaded_at || '').localeCompare(a.uploaded_at || ''); }
 function nReports(n){ return n === 1 && state.lang === 'en' ? '1 report' : t('reports_in_lang', {n}); }
@@ -136,18 +145,22 @@ async function loadAll(){
 function buildNav(){
   const n = $('mainnav');
   n.innerHTML = '';
-  // three sections: the news tracker, the research panel (dashboard + sector reports) and
-  // fund key factors; sectors are opened from the cards on the dashboard
+  // four sections: the news tracker, the research panel (dashboard + sector reports), fund key
+  // factors and portfolio management (the same dashboard + reports for the portfolio funds);
+  // sectors are opened from the cards on the dashboard
   const news = el('button', state.view === 'news' ? 'active' : '', t('nav_news'));
   news.type = 'button'; news.addEventListener('click', () => nav('#/news'));
   n.appendChild(news);
   const isPanel = state.view !== 'news' && state.view !== 'factors';
-  const panel = el('button', isPanel ? 'active' : '', t('nav_panel'));
+  const panel = el('button', isPanel && state.space === 'research' ? 'active' : '', t('nav_panel'));
   panel.type = 'button'; panel.addEventListener('click', () => nav('#/'));
   n.appendChild(panel);
   const factors = el('button', state.view === 'factors' ? 'active' : '', t('nav_factors'));
   factors.type = 'button'; factors.addEventListener('click', () => nav('#/factors'));
   n.appendChild(factors);
+  const pm = el('button', isPanel && state.space === 'portfolio' ? 'active' : '', t('nav_portfolio'));
+  pm.type = 'button'; pm.addEventListener('click', () => nav('#/portfolio'));
+  n.appendChild(pm);
   if (isPanel){
     const up = el('button', 'right'); up.type = 'button';
     up.textContent = '⬆ ' + t('upload_report');
@@ -157,13 +170,19 @@ function buildNav(){
 }
 
 /* ---------------------------------------------------------------- dashboard */
-function renderDash(){
+function renderDash(space){
   showView('dash');
+  state.space = space || state.space || 'research';
   state.sectorId = null; state.reportId = null; state.report = null;
   buildNav();
+  // the hero and the section title name the space (research sectors or portfolio funds)
+  const pm = state.space === 'portfolio';
+  $('dashTitle').textContent = spaceTitle();
+  $('dashSub').textContent = t(pm ? 'pm_sub' : 'dash_sub');
+  $('dashSectorsH').textContent = t(pm ? 'pm_sectors' : 'sectors');
   const grid = $('sectorCards');
   grid.innerHTML = '';
-  state.sectors.forEach(s => {
+  spaceSectors().forEach(s => {
     const mine = sectorReports(s.id);
     const latest = mine.slice().sort((a, b) => b.period_key - a.period_key)[0];
     const periods = new Set(mine.map(r => r.period));
@@ -174,7 +193,9 @@ function renderDash(){
     card.appendChild(top);
     card.appendChild(el('b', null, sectorName(s)));
     const cov = sectorCoverage(s);
-    card.appendChild(el('span', 'sc-cov', (state.lang === 'cn' ? (s.name_en || '') : (s.name_cn || '')) + (cov ? ' · ' + cov : '')));
+    // the other-language name, unless it is the same (fund names stay as they are)
+    const other = state.lang === 'cn' ? (s.name_en || '') : (s.name_cn || '');
+    card.appendChild(el('span', 'sc-cov', [other !== sectorName(s) ? other : '', cov].filter(Boolean).join(' · ')));
     const bd = el('div', 'sc-badges');
     if (latest){
       Array.from(periods).sort((a, b) => periodKey(b) - periodKey(a)).slice(0, 4).forEach(p => bd.appendChild(el('span', 'bdg', p)));
@@ -188,10 +209,10 @@ function renderDash(){
   const ph = el('button', 'scard ph'); ph.type = 'button';
   ph.appendChild(el('div', 'plus', '+'));
   ph.appendChild(el('b', null, t('manage_sectors')));
-  ph.addEventListener('click', openSectorManager);
+  ph.addEventListener('click', () => openSectorManager());
   grid.appendChild(ph);
-  renderRecent(langReports().sort(byUploaded).slice(0, 6));
-  document.title = t('dash_title') + ' | Junson Capital';
+  renderRecent(langReports().filter(r => spaceOf(r.sector) === state.space).sort(byUploaded).slice(0, 6));
+  document.title = spaceTitle() + ' | Junson Capital';
 }
 function renderRecent(list){
   const box = $('dashRecent');
@@ -214,7 +235,8 @@ function renderRecent(list){
 /* ---------------------------------------------------------------- sector → latest report */
 function openSector(id){
   const s = sectorById(id);
-  if (!s){ nav('#/'); return; }
+  if (!s){ nav(hashDash()); return; }
+  state.space = spaceOf(id);
   const latest = latestOf(sectorReports(id));
   if (latest){ history.replaceState(null, '', hashReport(latest.id)); renderReport(latest.id, null); return; }
   renderEmpty(s, null);
@@ -237,18 +259,19 @@ function renderEmpty(s, period){
   if (latestMine){ alt.textContent = t('open_latest') + ' (' + latestMine.period + ')'; alt.onclick = () => nav(hashReport(latestMine.id)); }
   else if (other){ alt.textContent = t('open_other_lang'); alt.onclick = () => { setLang(otherLang()); }; }
   $('emptyUpload').onclick = () => openUpload(s.id);
-  document.title = sectorName(s) + ' — AID Research | Junson Capital';
+  document.title = sectorName(s) + ' — ' + spaceTitle() + ' | Junson Capital';
 }
 
 /* ---------------------------------------------------------------- report reader */
 async function renderReport(id, anchor){
   let data;
   try { data = await DL.report(id); }
-  catch (e) { if (e.needLogin){ handleErr(e); return; } toast(e.message); nav('#/'); return; }
+  catch (e) { if (e.needLogin){ handleErr(e); return; } toast(e.message); nav(hashDash()); return; }
   const meta = data.meta, content = data.content;
   state.docLang = meta.language;
   try { localStorage.setItem('aid_doclang', state.docLang); } catch (e) {}
   state.report = data; state.reportId = id; state.sectorId = meta.sector; state.exhibits = [];
+  state.space = spaceOf(meta.sector);
   showView('art');
   buildNav();
   const s = sectorById(meta.sector) || {id: meta.sector, name_en: meta.sector};
@@ -287,7 +310,7 @@ async function renderReport(id, anchor){
   $('exBtnLabel').textContent = t('exhibits') + (state.exhibits.length ? ' (' + state.exhibits.length + ')' : '');
   startSpy();
   doSearch();
-  document.title = meta.title + ' ' + meta.period + ' — AID Research | Junson Capital';
+  document.title = meta.title + ' ' + meta.period + ' — ' + spaceTitle() + ' | Junson Capital';
   if (anchor) requestAnimationFrame(() => { const n = document.getElementById(anchor); if (n) n.scrollIntoView(); });
 }
 function opt(v, label){ const o = el('option', null, label); o.value = v; return o; }
@@ -700,7 +723,9 @@ function openUpload(sectorId, editMeta){
   $('upTitle').textContent = isEdit ? t('edit_report') : t('upload_report');
   $('drop').hidden = isEdit;
   $('upFile').value = ''; $('dropFile').textContent = '';
-  fillSelect($('upSector'), state.sectors.map(s => [s.id, sectorName(s)]), isEdit ? editMeta.sector : (sectorId || (state.sectors[0] && state.sectors[0].id)));
+  // the sectors of the space the upload belongs to (the report's own, else the page's)
+  const choices = spaceSectors(isEdit ? spaceOf(editMeta.sector) : (sectorId ? spaceOf(sectorId) : state.space));
+  fillSelect($('upSector'), choices.map(s => [s.id, sectorName(s)]), isEdit ? editMeta.sector : (sectorId || (choices[0] && choices[0].id)));
   fillSelect($('upQuarter'), [1,2,3,4].map(q => [String(q), 'Q' + q]), String(isEdit ? editMeta.quarter : state.meta.current_quarter));
   fillSelect($('upNature'), [['full', t('full')], ['summary', t('summary')]], isEdit ? editMeta.nature : 'full');
   fillSelect($('upLang'), [['en', t('en')], ['cn', t('cn')], ['', t('auto_detect')]], isEdit ? editMeta.language : state.docLang);
@@ -760,12 +785,16 @@ function wireUpload(){
 }
 
 /* ---------------------------------------------------------------- sector manager (add / edit / remove) */
-const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status'];
+const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status', 'space'];
 function cleanSector(s){ const o = {}; SECTOR_KEYS.forEach(k => { if (s[k] !== undefined) o[k] = s[k]; }); if (!o.status) o.status = 'active'; return o; }
 function slugId(name){ return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || ('sector_' + Date.now().toString(36)); }
-/* persist the whole sector list (static mode commits data/sectors.json; API mode diffs) and refresh state */
-async function commitSectors(list){
-  const clean = list.map(cleanSector);
+/* persist the sector list of the current space (static mode commits data/sectors.json; API mode
+   diffs) and refresh state. The file holds both spaces: research sectors first, then the
+   portfolio funds; only the current space's part is replaced. */
+async function commitSectors(spaceList){
+  const research = state.space === 'research' ? spaceList : spaceSectors('research');
+  const portfolio = state.space === 'portfolio' ? spaceList : spaceSectors('portfolio');
+  const clean = research.concat(portfolio).map(cleanSector);
   const res = await DL.saveSectors(clean);
   if (res && res.pending){
     // keep report counts/periods from the current state until the rebuild
@@ -808,7 +837,7 @@ function renderSectorList(){
   };
   let dragging = null;
   const clearMarks = () => list.querySelectorAll('.sec-row').forEach(r => r.classList.remove('drop-before', 'drop-after'));
-  state.sectors.forEach((s, idx) => {
+  spaceSectors().forEach((s, idx) => {
     const row = el('div', 'sec-row');
     row.dataset.id = s.id; row.draggable = true;
     const grip = el('span', 'grip', '⋮⋮'); grip.title = t('drag_hint');
@@ -840,7 +869,9 @@ function renderSectorList(){
     });
     row.appendChild(el('span', 'sc-code', s.code));
     const nq = sectorQuarters(s.id);
-    const nm = el('span', 'nm'); nm.textContent = s.name_en; nm.appendChild(el('span', null, s.name_cn + (nq ? ' · ' + nReports(nq) : '')));
+    const nm = el('span', 'nm'); nm.textContent = s.name_en;
+    // the Chinese name, unless it is the same (fund names stay as they are)
+    nm.appendChild(el('span', null, [s.name_cn !== s.name_en ? s.name_cn : '', nq ? nReports(nq) : ''].filter(Boolean).join(' · ')));
     const cov = sectorCoverage(s); if (cov) nm.appendChild(el('span', 'cov', cov));
     row.appendChild(nm);
     const ed = el('button', null, t('edit')); ed.type = 'button';
@@ -850,7 +881,7 @@ function renderSectorList(){
     rm.disabled = nq > 0; if (nq > 0) rm.title = t('sector_has_reports');
     rm.addEventListener('click', async () => {
       if (!confirm(t('confirm_remove_sector'))) return;
-      try { await commitSectors(state.sectors.filter(x => x.id !== s.id)); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav(); }
+      try { await commitSectors(spaceSectors().filter(x => x.id !== s.id)); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav(); }
       catch (e) { handleErr(e); }
     });
     row.appendChild(rm);
@@ -858,7 +889,7 @@ function renderSectorList(){
   });
 }
 function wireSectorManager(){
-  $('manageSectorsBtn').addEventListener('click', openSectorManager);
+  $('manageSectorsBtn').addEventListener('click', () => openSectorManager());
   $('secClose').addEventListener('click', closeSectorManager);
   $('secOverlay').addEventListener('click', e => { if (e.target === $('secOverlay')) closeSectorManager(); });
   $('secCancelEdit').addEventListener('click', () => fillSectorForm(null));
@@ -875,11 +906,11 @@ function wireSectorManager(){
     if (!payload.name_en){ $('secMsg').className = 'form-msg err'; $('secMsg').textContent = t('s_name_en'); return; }
     try {
       let list;
-      if (id) list = state.sectors.map(s => s.id === id ? Object.assign({}, s, payload) : s);
+      if (id) list = spaceSectors().map(s => s.id === id ? Object.assign({}, s, payload) : s);
       else {
         const nid = slugId(payload.name_en);
         if (sectorById(nid)) throw new Error('sector exists');
-        list = state.sectors.concat([Object.assign({id: nid, status: 'active'}, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || 'Global'})]);
+        list = spaceSectors().concat([Object.assign({id: nid, status: 'active', space: state.space}, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || (state.space === 'portfolio' ? '' : 'Global')})]);
       }
       await commitSectors(list);
       $('secMsg').className = 'form-msg ok'; $('secMsg').textContent = t('sector_saved');
@@ -916,18 +947,22 @@ function renderFactors(tab, ym){
 }
 function parseHash(){
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-  if (!h) return {view: 'dash'};
+  if (!h) return {view: 'dash', space: 'research'};
   const p = h.split('/');
   if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
+  if (p[0] === 'portfolio'){
+    if (p[1] === 's' && p[2]) return {view: 'sector', id: p[2]};
+    return {view: 'dash', space: 'portfolio'};
+  }
   if (p[0] === 's' && p[1]) return {view: 'sector', id: p[1]};
   if (p[0] === 'r' && p[1]) return {view: 'art', id: p[1], anchor: p.slice(2).join('/') || null};
-  return {view: 'dash'};
+  return {view: 'dash', space: 'research'};
 }
 async function route(){
   const h = parseHash();
   try {
-    if (h.view === 'dash') renderDash();
+    if (h.view === 'dash') renderDash(h.space);
     else if (h.view === 'news') renderNews();
     else if (h.view === 'factors') renderFactors(h.tab, h.ym);
     else if (h.view === 'sector') openSector(h.id);
@@ -941,7 +976,7 @@ async function route(){
 /* ---------------------------------------------------------------- wire up */
 function wire(){
   $('brandBtn').addEventListener('click', () => nav('#/'));
-  $('backBtn').addEventListener('click', () => nav('#/'));
+  $('backBtn').addEventListener('click', () => nav(hashDash()));
   $('langToggle').addEventListener('click', () => setLang(state.lang === 'cn' ? 'en' : 'cn'));
   $('logoutBtn').addEventListener('click', async () => { await DL.logout(); if (DL.mode === 'api') location.href = '/login.html'; else location.reload(); });
   $('q').addEventListener('input', doSearch);

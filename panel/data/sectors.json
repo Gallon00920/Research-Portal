@@ -88,5 +88,170 @@
       "航空航天"
     ],
     "status": "active"
+  },
+  {
+    "id": "dyal_v",
+    "code": "DYAL",
+    "name_en": "Dyal V",
+    "name_cn": "Dyal V",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "otf",
+    "code": "OTF",
+    "name_en": "OTF",
+    "name_cn": "OTF",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "oak_street",
+    "code": "OAK",
+    "name_en": "Oak Street",
+    "name_cn": "Oak Street",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "progress",
+    "code": "PRG",
+    "name_en": "Progress",
+    "name_cn": "Progress",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "global_atlantic",
+    "code": "GA",
+    "name_en": "Global Atlantic",
+    "name_cn": "Global Atlantic",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "pag_brs",
+    "code": "PAG",
+    "name_en": "PAG BRS",
+    "name_cn": "PAG BRS",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "bayview_msr",
+    "code": "BVW",
+    "name_en": "Bayview MSR",
+    "name_cn": "Bayview MSR",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "cifc_clo_ig",
+    "code": "CIG",
+    "name_en": "CIFC CLO IG",
+    "name_cn": "CIFC CLO IG",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "cifc_clo_equity",
+    "code": "CEQ",
+    "name_en": "CIFC CLO Equity",
+    "name_cn": "CIFC CLO Equity",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "basepoint_abl",
+    "code": "BPT",
+    "name_en": "Basepoint ABL",
+    "name_cn": "Basepoint ABL",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "nb_abl",
+    "code": "NB",
+    "name_en": "NB ABL",
+    "name_cn": "NB ABL",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "apollo_abl",
+    "code": "APO",
+    "name_en": "Apollo ABL",
+    "name_cn": "Apollo ABL",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "baincap_griffin",
+    "code": "BCG",
+    "name_en": "BainCap Griffin",
+    "name_cn": "BainCap Griffin",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "guggenheim",
+    "code": "GUG",
+    "name_en": "Guggenheim",
+    "name_cn": "Guggenheim",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
+  },
+  {
+    "id": "hsbc_rcf",
+    "code": "HSBC",
+    "name_en": "HSBC RCF",
+    "name_cn": "HSBC RCF",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio"
   }
 ]

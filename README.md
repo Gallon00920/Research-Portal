@@ -68,6 +68,17 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   keywords), reorder by dragging rows (this sets the order in the top bar
   and on the dashboard) or remove sectors. Sectors are stored in `data/sectors.json`
   and can also be edited by hand.
+- **Portfolio management** (`#/portfolio`): the same dashboard, sector
+  pages, reader, upload and manage dialog, for the portfolio funds (Dyal V,
+  OTF, Oak Street, … HSBC RCF) instead of the research sectors. The two
+  are "spaces": every entry in `data/sectors.json` has a `space` field,
+  `research` (the default when missing) or `portfolio`, and a report belongs
+  to the space of its sector. Fund pages open at `#/portfolio/s/<id>`;
+  report pages keep `#/r/<id>` in both spaces. Each dashboard lists and
+  manages only its own space's sectors, and "Upload report" offers only
+  them; the manage dialog adds new entries to the space it was opened from
+  and leaves the other space's part of the file untouched. Reports are
+  stored, parsed and built exactly as research reports.
 
 ## Parsing
 

@@ -2,7 +2,7 @@
   "tab": "budget",
   "year": 2026,
   "month": 3,
-  "extracted_at": "2026-11-12T07:39:24+00:00",
+  "extracted_at": "2026-11-12T07:51:37+00:00",
   "model": "claude-opus-5-5",
   "source_image": "2026-03.png",
   "title": "AWIS预算完成度",
@@ -202,13 +202,13 @@
     "归还本金": "Principal repaid",
     "现金流入": "Cash inflows",
     "1Q26 AID现金流出 (万美元)": "1Q26 AID Cash Outflows (US$ million)",
-    "26年1-3月实际收息577万": "Actual interest received for January–March 2026: 5.77 million",
-    "26年第一季度预算完成度 85%": "1Q26 budget completion: 85%",
+    "26年1-3月实际收息577万": "Actual interest received in January–March 2026 was 5.77 million",
+    "26年第一季度预算完成度 85%": "Q1 2026 budget completion: 85%",
     "主要为PAG和HSBC RCF项目归还本金": "Mainly principal repaid on the PAG and HSBC RCF deals",
-    "26年1-3月实际现金流入974万": "Actual cash inflows for January–March 2026: 9.74 million",
-    "26年第一季度预算完成度 143%": "1Q26 budget completion: 143%",
-    "26年1-3月实际现金流出1,362万": "Actual cash outflows for January–March 2026: 13.62 million",
-    "26年第一季度预算完成度 72%": "1Q26 budget completion: 72%"
+    "26年1-3月实际现金流入974万": "Actual cash inflows in January–March 2026 were 9.74 million",
+    "26年第一季度预算完成度 143%": "Q1 2026 budget completion: 143%",
+    "26年1-3月实际现金流出1,362万": "Actual cash outflows in January–March 2026 were 13.62 million",
+    "26年第一季度预算完成度 72%": "Q1 2026 budget completion: 72%"
   },
   "notes": [],
   "dismissed": []

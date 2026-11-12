@@ -255,9 +255,12 @@ def api_add_sector(payload: dict[str, Any]):
     code = (payload.get("code") or "".join(w[0] for w in name_en.split()[:3])).upper()[:4]
     sectors.append({
         "id": sid, "code": code, "name_en": name_en, "name_cn": (payload.get("name_cn") or name_en).strip(),
-        "region": payload.get("region") or "Global",
+        # an empty region is kept as given (portfolio funds have none); only a missing one defaults
+        "region": payload["region"] if payload.get("region") is not None else "Global",
         "coverage_en": payload.get("coverage_en") or [], "coverage_cn": payload.get("coverage_cn") or [],
         "status": payload.get("status") or "active",
+        # which dashboard lists it: "research" (the default) or "portfolio" (Portfolio management)
+        "space": payload.get("space") or "research",
     })
     save_sectors(sectors)
     return sectors[-1]
@@ -283,7 +286,7 @@ def api_update_sector(sid: str, payload: dict[str, Any]):
         if s["id"] == sid:
             if "name_en" in payload and not (payload["name_en"] or "").strip():
                 raise HTTPException(400, "name_en required")
-            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status"):
+            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space"):
                 if k in payload and payload[k] is not None:
                     s[k] = payload[k]
             save_sectors(sectors)
