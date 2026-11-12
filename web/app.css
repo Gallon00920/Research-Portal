@@ -364,3 +364,9 @@ table.data tr:nth-child(even) td{background:var(--chip)}
   .grid2{grid-template-columns:1fr}
   .filters label{flex:1 1 40%}
 }
+
+/* five tabs plus the upload button: on a narrow window the tabs tighten up before the bar has to scroll */
+@media (max-width: 960px){
+  .mainnav-in{gap:0; scrollbar-width:thin}
+  .mainnav button{padding:0 9px; font-size:12.5px; gap:5px}
+}

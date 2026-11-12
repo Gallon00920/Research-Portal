@@ -3,10 +3,12 @@
             #/s/<sector>       opens the latest report of that sector in the current language
             #/portfolio        portfolio management dashboard (the same page for the portfolio funds)
             #/portfolio/s/<id> opens the latest report of that fund
-            #/r/<id>[/anchor]  report reader (either space; the space follows the report's sector)
+            #/macro, #/macro/s/<id>   the same for Macro / Market
+            #/r/<id>[/anchor]  report reader (any space; the space follows the report's sector)
    Only full reports in the current UI language are ever listed.
-   Two "spaces" share this code: the research sectors (space "research", the default) and the
-   portfolio funds (space "portfolio"). A sector's `space` field says which dashboard lists it.
+   Three "spaces" share this code (see SPACES): the research sectors (space "research", the
+   default), the portfolio funds ("portfolio") and Macro / Market ("macro"). A sector's `space`
+   field says which dashboard lists it.
 */
 (function(){
 'use strict';
@@ -68,12 +70,19 @@ function periodKey(p){ const m = /^(\d)Q(\d{4})$/.exec(p || ''); return m ? (+m[
 function otherLang(){ return state.docLang === 'cn' ? 'en' : 'cn'; }
 function nav(hash){ if (location.hash === hash) route(); else location.hash = hash; window.scrollTo({top:0}); }
 function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : ''); }
-/* spaces: which dashboard a sector belongs to */
-function spaceOf(sectorId){ const s = sectorById(sectorId); return (s && s.space) || 'research'; }
-function spaceSectors(space){ const sp = space || state.space; return state.sectors.filter(s => ((s.space || 'research') === sp)); }
-function spaceTitle(space){ return t((space || state.space) === 'portfolio' ? 'pm_title' : 'dash_title'); }
-function hashDash(space){ return (space || state.space) === 'portfolio' ? '#/portfolio' : '#/'; }
-function hashSector(id){ return (spaceOf(id) === 'portfolio' ? '#/portfolio/s/' : '#/s/') + id; }
+/* spaces: which dashboard a sector belongs to. Each has its own routes and strings; the order
+   here is the order of the tabs and of the parts of data/sectors.json */
+const SPACES = {
+  research:  {hash: '#/',          sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
+  portfolio: {hash: '#/portfolio', sectorHash: '#/portfolio/s/', title: 'pm_title',   sub: 'pm_sub',   sectors: 'pm_sectors', nav: 'nav_portfolio'},
+  macro:     {hash: '#/macro',     sectorHash: '#/macro/s/',     title: 'mk_title',   sub: 'mk_sub',   sectors: 'mk_sectors', nav: 'nav_macro'},
+};
+const SPACE_IDS = Object.keys(SPACES);
+function spaceOf(sectorId){ const s = sectorById(sectorId); return (s && SPACES[s.space]) ? s.space : 'research'; }
+function spaceSectors(space){ const sp = space || state.space; return state.sectors.filter(s => ((SPACES[s.space] ? s.space : 'research') === sp)); }
+function spaceTitle(space){ return t(SPACES[space || state.space].title); }
+function hashDash(space){ return SPACES[space || state.space].hash; }
+function hashSector(id){ return SPACES[spaceOf(id)].sectorHash + id; }
 function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function byUploaded(a, b){ return (b.uploaded_at || '').localeCompare(a.uploaded_at || ''); }
 function nReports(n){ return n === 1 && state.lang === 'en' ? '1 report' : t('reports_in_lang', {n}); }
@@ -145,22 +154,23 @@ async function loadAll(){
 function buildNav(){
   const n = $('mainnav');
   n.innerHTML = '';
-  // four sections: the news tracker, the research panel (dashboard + sector reports), fund key
-  // factors and portfolio management (the same dashboard + reports for the portfolio funds);
-  // sectors are opened from the cards on the dashboard
+  // the news tracker, the research panel (dashboard + sector reports), fund key factors, then
+  // the other spaces (the same dashboard + reports for other sector lists); sectors are
+  // opened from the cards on the dashboard
   const news = el('button', state.view === 'news' ? 'active' : '', t('nav_news'));
   news.type = 'button'; news.addEventListener('click', () => nav('#/news'));
   n.appendChild(news);
   const isPanel = state.view !== 'news' && state.view !== 'factors';
-  const panel = el('button', isPanel && state.space === 'research' ? 'active' : '', t('nav_panel'));
-  panel.type = 'button'; panel.addEventListener('click', () => nav('#/'));
-  n.appendChild(panel);
+  const spaceBtn = (sp) => {
+    const b = el('button', isPanel && state.space === sp ? 'active' : '', t(SPACES[sp].nav));
+    b.type = 'button'; b.addEventListener('click', () => nav(SPACES[sp].hash));
+    n.appendChild(b);
+  };
+  spaceBtn('research');
   const factors = el('button', state.view === 'factors' ? 'active' : '', t('nav_factors'));
   factors.type = 'button'; factors.addEventListener('click', () => nav('#/factors'));
   n.appendChild(factors);
-  const pm = el('button', isPanel && state.space === 'portfolio' ? 'active' : '', t('nav_portfolio'));
-  pm.type = 'button'; pm.addEventListener('click', () => nav('#/portfolio'));
-  n.appendChild(pm);
+  SPACE_IDS.filter(sp => sp !== 'research').forEach(spaceBtn);
   if (isPanel){
     const up = el('button', 'right'); up.type = 'button';
     up.textContent = '⬆ ' + t('upload_report');
@@ -175,11 +185,11 @@ function renderDash(space){
   state.space = space || state.space || 'research';
   state.sectorId = null; state.reportId = null; state.report = null;
   buildNav();
-  // the hero and the section title name the space (research sectors or portfolio funds)
-  const pm = state.space === 'portfolio';
+  // the hero and the section title name the space (research sectors, portfolio funds, ...)
+  const sp = SPACES[state.space];
   $('dashTitle').textContent = spaceTitle();
-  $('dashSub').textContent = t(pm ? 'pm_sub' : 'dash_sub');
-  $('dashSectorsH').textContent = t(pm ? 'pm_sectors' : 'sectors');
+  $('dashSub').textContent = t(sp.sub);
+  $('dashSectorsH').textContent = t(sp.sectors);
   const grid = $('sectorCards');
   grid.innerHTML = '';
   spaceSectors().forEach(s => {
@@ -789,12 +799,10 @@ const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en'
 function cleanSector(s){ const o = {}; SECTOR_KEYS.forEach(k => { if (s[k] !== undefined) o[k] = s[k]; }); if (!o.status) o.status = 'active'; return o; }
 function slugId(name){ return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || ('sector_' + Date.now().toString(36)); }
 /* persist the sector list of the current space (static mode commits data/sectors.json; API mode
-   diffs) and refresh state. The file holds both spaces: research sectors first, then the
-   portfolio funds; only the current space's part is replaced. */
+   diffs) and refresh state. The file holds every space, in SPACES order (research sectors
+   first); only the current space's part is replaced. */
 async function commitSectors(spaceList){
-  const research = state.space === 'research' ? spaceList : spaceSectors('research');
-  const portfolio = state.space === 'portfolio' ? spaceList : spaceSectors('portfolio');
-  const clean = research.concat(portfolio).map(cleanSector);
+  const clean = SPACE_IDS.map(sp => sp === state.space ? spaceList : spaceSectors(sp)).flat().map(cleanSector);
   const res = await DL.saveSectors(clean);
   if (res && res.pending){
     // keep report counts/periods from the current state until the rebuild
@@ -910,7 +918,7 @@ function wireSectorManager(){
       else {
         const nid = slugId(payload.name_en);
         if (sectorById(nid)) throw new Error('sector exists');
-        list = spaceSectors().concat([Object.assign({id: nid, status: 'active', space: state.space}, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || (state.space === 'portfolio' ? '' : 'Global')})]);
+        list = spaceSectors().concat([Object.assign({id: nid, status: 'active', space: state.space}, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || (state.space === 'research' ? 'Global' : '')})]);
       }
       await commitSectors(list);
       $('secMsg').className = 'form-msg ok'; $('secMsg').textContent = t('sector_saved');
@@ -951,9 +959,9 @@ function parseHash(){
   const p = h.split('/');
   if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
-  if (p[0] === 'portfolio'){
+  if (SPACES[p[0]] && p[0] !== 'research'){
     if (p[1] === 's' && p[2]) return {view: 'sector', id: p[2]};
-    return {view: 'dash', space: 'portfolio'};
+    return {view: 'dash', space: p[0]};
   }
   if (p[0] === 's' && p[1]) return {view: 'sector', id: p[1]};
   if (p[0] === 'r' && p[1]) return {view: 'art', id: p[1], anchor: p.slice(2).join('/') || null};
