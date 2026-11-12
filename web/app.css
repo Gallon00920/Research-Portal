@@ -369,3 +369,40 @@ table.data tr:nth-child(even) td{background:var(--chip)}
   .mainnav-in{gap:0; scrollbar-width:thin}
   .mainnav button{padding:0 9px; font-size:12.5px; gap:5px}
 }
+
+/* ───────── AI: generation in the upload dialog, and the chat that edits a report ───────── */
+.mode-tabs{display:flex; gap:6px; margin-bottom:14px}
+.mode-tabs button{flex:1; padding:8px 10px; border:1px solid var(--line); border-radius:4px; font-size:13px; font-weight:600; color:var(--ink-2); background:var(--card)}
+.mode-tabs button.on{background:var(--blue-600); border-color:var(--blue-600); color:#fff}
+.form .row{display:flex; gap:6px}
+.form .row input{flex:1; min-width:0}
+.form .lbl{display:block; font-size:11px; font-weight:700; color:var(--muted); letter-spacing:.3px; text-transform:uppercase; margin-bottom:4px}
+.file-list{border:1px solid var(--line); border-radius:4px; max-height:180px; overflow:auto; padding:6px 10px; font-size:12.5px; background:var(--card)}
+.grid2 .file-list label{display:flex; flex-direction:row; gap:8px; align-items:center; padding:3px 0; font-size:12.5px; font-weight:500; letter-spacing:0; color:var(--ink)}
+.grid2 .file-list label input{width:auto; margin:0}
+.grid2 .file-list label .sz{margin-left:auto; color:var(--muted); font-size:11.5px}
+/* the source files dropped for AI generation, each with a remove button; the picked output folder */
+.form > .file-list{margin:-6px 0 12px}
+.file-list label{display:flex; gap:8px; align-items:center; padding:3px 0; font-size:12.5px; color:var(--ink)}
+.file-list label .sz{margin-left:auto; color:var(--muted); font-size:11.5px}
+.file-list label .rm{color:var(--muted); padding:0 4px; font-size:12px}
+.file-list label .rm:hover{color:#d03b3b}
+.form .dir-name{align-self:center; font-size:12.5px; font-weight:500; color:var(--ink-2); text-transform:none; letter-spacing:0; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+.ai-progress{margin-top:12px; border:1px solid var(--line); border-radius:4px; background:var(--chip); padding:10px 12px; font-size:12px; font-family:ui-monospace,Consolas,monospace; max-height:220px; overflow:auto; white-space:pre-wrap; line-height:1.5; color:var(--ink-2)}
+.ai-fab{position:fixed; right:22px; bottom:22px; width:54px; height:54px; border-radius:50%; background:var(--blue-600); color:#fff; font-weight:800; font-size:15px; letter-spacing:.5px; box-shadow:0 6px 18px rgba(10,30,60,.3); z-index:60}
+.ai-fab:hover{background:var(--blue-700)}
+.ai-chat{position:fixed; right:22px; bottom:88px; width:min(400px, calc(100vw - 32px)); height:min(560px, calc(100vh - 120px)); background:var(--card); color:var(--ink); border:1px solid var(--line); border-radius:8px; box-shadow:0 12px 36px rgba(10,30,60,.3); z-index:60; display:flex; flex-direction:column; overflow:hidden}
+.ai-chat[hidden]{display:none}
+.ai-head{display:flex; align-items:center; gap:10px; padding:10px 14px; background:var(--navy-800); color:#fff; font-size:13px}
+.ai-head b{font-size:14px}
+.ai-head span{flex:1; min-width:0; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; color:#C7D9EC; font-size:12px}
+.ai-head button{color:#fff; font-size:14px; padding:2px 6px}
+.ai-msgs{flex:1; overflow:auto; padding:12px; display:flex; flex-direction:column; gap:8px; background:var(--chip)}
+.ai-msg{max-width:88%; padding:8px 11px; border-radius:8px; font-size:13px; line-height:1.5; white-space:pre-wrap; word-break:break-word}
+.ai-msg.user{align-self:flex-end; background:var(--blue-600); color:#fff; border-bottom-right-radius:2px}
+.ai-msg.bot{align-self:flex-start; background:var(--card); border:1px solid var(--line); border-bottom-left-radius:2px}
+.ai-msg.bot.err{border-color:#d03b3b; color:#a02020}
+.ai-msg.wait{color:var(--muted); font-style:italic}
+.ai-form{display:flex; gap:8px; padding:10px; border-top:1px solid var(--line); align-items:flex-end}
+.ai-form textarea{flex:1; resize:none; font:inherit; font-size:13px; padding:8px 10px; border:1px solid var(--line); border-radius:4px; background:var(--card); color:var(--ink); min-width:0}
+@media print{ .ai-fab,.ai-chat{display:none !important} }

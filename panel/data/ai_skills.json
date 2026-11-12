@@ -1,0 +1,10 @@
+{
+  "private_credit": {
+    "skill_id": "skill_01L5LpRkwQhqJqhNuptLDTnK",
+    "name": "private-credit-quarterly-report"
+  },
+  "software_otf": {
+    "skill_id": "skill_01EVAM8VHFZhgXwVUvpuWkdb",
+    "name": "otf-quarterly-report"
+  }
+}

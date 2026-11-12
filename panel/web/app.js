@@ -42,6 +42,10 @@ function toast(msg){
   clearTimeout(n._tm); n._tm = setTimeout(() => n.classList.remove('show'), 2000);
 }
 const DL = window.DataLayer;
+/* AI (local server only): config from /api/ai/config, the upload dialog's mode, the running
+   generation job, and one chat thread per report */
+const AI = {config: null, mode: 'file', files: [], dir: null, job: null, timer: null, threads: {}};
+function aiOn(){ return DL.mode === 'api' && !!(AI.config && AI.config.enabled); }
 /* a write in static mode lands as a commit; the site shows it after the workflow rebuilds */
 function afterWrite(res){
   if (res && res.pending){
@@ -147,6 +151,8 @@ async function loadAll(){
   $('logoutBtn').hidden = !meta.auth;
   $('tokenBtn').hidden = DL.mode !== 'static';
   $('dlBtn').hidden = !DL.canDownload();
+  if (DL.aiConfig && !AI.config){ try { AI.config = await DL.aiConfig(); } catch (e) { AI.config = null; } }
+  $('aiFab').hidden = !aiOn();
   buildNav();
 }
 
@@ -286,6 +292,8 @@ async function renderReport(id, anchor){
   if (s.region){ cp.appendChild(el('i', null, '|')); cp.appendChild(document.createTextNode(s.region)); }
   buildPickers(s, meta);
   buildSegs(meta, s);
+
+  renderAiChat();
 
   // title / meta / tags
   $('docTitle').textContent = meta.title;
@@ -738,8 +746,184 @@ function openUpload(sectorId, editMeta){
   $('upSubmit').textContent = isEdit ? t('save') : t('upload');
   $('upSubmit').disabled = false;
   const msg = $('upMsg'); msg.textContent = ''; msg.className = 'form-msg';
+  // "Generate with AI" is offered on the research panel when the server can call Claude and at
+  // least one sector has a skill (a new report only; editing keeps the file mode)
+  const canAi = aiOn() && !isEdit && state.space === 'research' && Object.keys((AI.config && AI.config.sectors) || {}).length > 0;
+  $('upModes').hidden = !canAi;
+  setUploadMode('file', sectorId);
   $('upOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+/* the upload dialog's two modes: a hand-picked file, or a report that Claude generates with the
+   sector's skill from source files dropped into the dialog */
+function setUploadMode(mode, sectorId){
+  AI.mode = mode;
+  const ai = mode === 'ai', isEdit = !!state.editing;
+  $('modeFile').classList.toggle('on', !ai); $('modeAi').classList.toggle('on', ai);
+  $('drop').hidden = ai || isEdit;
+  $('upNatureLbl').hidden = ai; $('upKeywordsLbl').hidden = ai;
+  $('aiFields').hidden = !ai;
+  $('upLangLbl').textContent = t(ai ? 'ai_lang' : 'u_lang');
+  $('upSubmit').textContent = ai ? t('ai_generate') : (isEdit ? t('save') : t('upload'));
+  const cur = $('upSector').value || sectorId;
+  if (ai){
+    const able = spaceSectors('research').filter(s => AI.config.sectors[s.id]);
+    fillSelect($('upSector'), able.map(s => [s.id, sectorName(s)]), able.some(s => s.id === cur) ? cur : (able[0] && able[0].id));
+    fillSelect($('upLang'), [['en', t('en')], ['cn', t('cn')]], state.docLang === 'cn' ? 'cn' : 'en');
+    renderAiFiles(); renderAiDir();
+    $('aiProgress').hidden = !AI.job; if (AI.job) renderAiJob(AI.job);
+  } else {
+    const choices = spaceSectors(state.space);
+    fillSelect($('upSector'), choices.map(s => [s.id, sectorName(s)]), choices.some(s => s.id === cur) ? cur : (choices[0] && choices[0].id));
+    fillSelect($('upLang'), [['en', t('en')], ['cn', t('cn')], ['', t('auto_detect')]], isEdit ? state.editing.language : state.docLang);
+  }
+}
+/* the source files dropped or chosen so far (File objects); dropping more adds to the list */
+function addAiFiles(list){
+  Array.from(list || []).forEach(f => { if (!AI.files.some(x => x.name === f.name && x.size === f.size)) AI.files.push(f); });
+  renderAiFiles();
+}
+function renderAiFiles(){
+  const box = $('aiFiles'); box.innerHTML = '';
+  box.hidden = !AI.files.length;
+  AI.files.forEach((f, i) => {
+    const row = el('label');
+    row.appendChild(el('span', null, f.name));
+    row.appendChild(el('span', 'sz', Math.max(1, Math.round(f.size / 1024)) + ' KB'));
+    const rm = el('button', 'rm', '✕'); rm.type = 'button'; rm.title = t('remove');
+    rm.addEventListener('click', () => { AI.files.splice(i, 1); renderAiFiles(); });
+    row.appendChild(rm);
+    box.appendChild(row);
+  });
+}
+/* the folder the generated documents are saved to: picked with the browser's folder dialog
+   (Chrome / Edge on https or localhost); elsewhere the files are downloaded instead */
+function canPickDir(){ return typeof window.showDirectoryPicker === 'function'; }
+function renderAiDir(){
+  $('aiPickDir').disabled = !canPickDir();
+  $('aiDirName').textContent = AI.dir ? AI.dir.name : t(canPickDir() ? 'ai_dir_none' : 'ai_dir_unsupported');
+}
+async function pickAiDir(){
+  try { AI.dir = await window.showDirectoryPicker({mode: 'readwrite'}); }
+  catch (e) { if (e && e.name !== 'AbortError') toast(e.message); }
+  renderAiDir();
+}
+/* after a job: write the generated documents into the picked folder, or download them */
+async function saveAiOutputs(job){
+  const outputs = job.outputs || [];
+  if (!outputs.length) return;
+  if (AI.dir){
+    let n = 0;
+    for (const o of outputs){
+      try {
+        const r = await fetch(DL.aiJobFileUrl(job.id, o.name)); if (!r.ok) throw new Error(r.status + ' ' + o.name);
+        const fh = await AI.dir.getFileHandle(o.name, {create: true});
+        const w = await fh.createWritable(); await w.write(await r.blob()); await w.close();
+        n++;
+      } catch (e) { toast(e.message); }
+    }
+    toast(t('ai_saved', {n, dir: AI.dir.name}));
+  } else {
+    for (const o of outputs){
+      const a = document.createElement('a'); a.href = DL.aiJobFileUrl(job.id, o.name); a.download = o.name;
+      document.body.appendChild(a); a.click(); a.remove();
+      await new Promise(res => setTimeout(res, 600));
+    }
+    toast(t('ai_downloaded'));
+  }
+}
+function renderAiJob(job){
+  const box = $('aiProgress'); box.hidden = false;
+  box.textContent = (job.log || []).join('\n') || '…';
+  box.scrollTop = box.scrollHeight;
+}
+/* start a generation job and follow it until it ends; the dialog may be closed meanwhile */
+async function aiGenerateSubmit(){
+  const msg = $('upMsg'), btn = $('upSubmit');
+  if (!AI.files.length){ msg.className = 'form-msg err'; msg.textContent = t('ai_no_files'); return; }
+  const fd = new FormData();
+  AI.files.forEach(f => fd.append('files', f, f.name));
+  fd.append('sector', $('upSector').value); fd.append('year', $('upYear').value); fd.append('quarter', $('upQuarter').value);
+  fd.append('language', $('upLang').value); fd.append('title', $('upTitleIn').value.trim());
+  btn.disabled = true; msg.className = 'form-msg'; msg.textContent = '…';
+  try {
+    const res = await DL.aiGenerate(fd);
+    AI.job = {id: res.job, state: 'queued', log: []};
+    AI.files = []; renderAiFiles();
+    msg.textContent = t('ai_started');
+    renderAiJob(AI.job);
+    pollAiJob();
+  } catch (e) { msg.className = 'form-msg err'; msg.textContent = e.message; btn.disabled = false; }
+}
+function pollAiJob(){
+  clearTimeout(AI.timer);
+  if (!AI.job) return;
+  AI.timer = setTimeout(async () => {
+    try {
+      const job = await DL.aiJob(AI.job.id);
+      AI.job = job;
+      if (!$('aiProgress').hidden || $('upOverlay').classList.contains('open')) renderAiJob(job);
+      if (job.state === 'done' || job.state === 'error'){
+        const done = job.state === 'done';
+        AI.job = null; $('upSubmit').disabled = false;
+        const msg = $('upMsg'); msg.className = 'form-msg ' + (done ? 'ok' : 'err'); msg.textContent = done ? t('ai_done') : (t('ai_failed') + ': ' + (job.error || ''));
+        if (done){
+          toast(t('ai_done'));
+          await saveAiOutputs(job);
+          await loadAll();
+          const first = (job.reports || [])[0];
+          closeUpload();
+          if (first) nav(hashReport(first.id)); else route();
+        } else toast(t('ai_failed') + ': ' + (job.error || ''));
+        return;
+      }
+    } catch (e) { /* the server may be busy; keep polling */ }
+    pollAiJob();
+  }, 3000);
+}
+
+/* ---------------------------------------------------------------- AI chat: edits the report on screen */
+function aiThread(){ return state.reportId ? (AI.threads[state.reportId] = AI.threads[state.reportId] || []) : null; }
+function renderAiChat(){
+  if ($('aiChat').hidden) return;
+  $('aiCtx').textContent = state.reportId && state.report ? t('ai_ctx', {title: state.report.meta.title}) : t('ai_ctx_none');
+  const box = $('aiMsgs'); box.innerHTML = '';
+  (aiThread() || []).forEach(m => box.appendChild(el('div', 'ai-msg ' + (m.role === 'user' ? 'user' : 'bot' + (m.error ? ' err' : '')), m.content)));
+  if (AI.waiting) box.appendChild(el('div', 'ai-msg bot wait', t('ai_thinking')));
+  box.scrollTop = box.scrollHeight;
+  $('aiInput').disabled = !state.reportId || !!AI.waiting; $('aiSend').disabled = !state.reportId || !!AI.waiting;
+}
+async function sendAiMessage(){
+  const text = $('aiInput').value.trim();
+  const th = aiThread();
+  if (!text || !th || AI.waiting) return;
+  const id = state.reportId;
+  th.push({role: 'user', content: text});
+  $('aiInput').value = ''; AI.waiting = true; renderAiChat();
+  try {
+    const res = await DL.aiChat(id, th.filter(m => !m.error));
+    th.push({role: 'assistant', content: res.reply || (res.changed ? t('ai_changed') : '…')});
+    if (res.changed){
+      toast(t('ai_changed'));
+      // the report on screen is the one that changed (the user may have navigated meanwhile)
+      if (state.reportId === id) await renderReport(id, null);
+    }
+  } catch (e) { th.push({role: 'assistant', content: e.message, error: true}); }
+  AI.waiting = false; renderAiChat();
+}
+function wireAi(){
+  $('modeFile').addEventListener('click', () => setUploadMode('file'));
+  $('modeAi').addEventListener('click', () => setUploadMode('ai'));
+  const drop = $('aiDrop'), file = $('aiFile');
+  file.addEventListener('change', () => { addAiFiles(file.files); file.value = ''; });
+  ['dragenter', 'dragover'].forEach(evn => drop.addEventListener(evn, e => { e.preventDefault(); drop.classList.add('over'); }));
+  ['dragleave', 'drop'].forEach(evn => drop.addEventListener(evn, e => { e.preventDefault(); drop.classList.remove('over'); }));
+  drop.addEventListener('drop', e => addAiFiles(e.dataTransfer.files));
+  $('aiPickDir').addEventListener('click', pickAiDir);
+  $('aiFab').addEventListener('click', () => { const c = $('aiChat'); c.hidden = !c.hidden; renderAiChat(); if (!c.hidden) $('aiInput').focus(); });
+  $('aiClose').addEventListener('click', () => { $('aiChat').hidden = true; });
+  $('aiForm').addEventListener('submit', e => { e.preventDefault(); sendAiMessage(); });
+  $('aiInput').addEventListener('keydown', e => { if (e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); sendAiMessage(); } });
 }
 function closeUpload(){ $('upOverlay').classList.remove('open'); unlockScroll(); }
 async function submitUpload(ev){
@@ -749,6 +933,7 @@ async function submitUpload(ev){
   const sector = $('upSector').value, year = $('upYear').value, quarter = $('upQuarter').value;
   const language = $('upLang').value, nature = $('upNature').value;
   const title = $('upTitleIn').value.trim(), keywords = $('upKeywords').value.trim();
+  if (AI.mode === 'ai' && !state.editing){ await aiGenerateSubmit(); return; }
   try {
     btn.disabled = true;
     if (state.editing){
@@ -930,6 +1115,7 @@ function showView(v){
   $('view-news').hidden = v !== 'news';
   $('view-factors').hidden = v !== 'factors';
   $('searchWrap').style.visibility = v === 'art' ? '' : 'hidden';
+  renderAiChat();
 }
 /* news tracker: the Credit News Radar module (news.js) renders into #view-news and follows the UI language */
 function renderNews(){
@@ -1035,7 +1221,7 @@ function wire(){
     if (lbOpen && e.key === '-') zoomAt(1 / 1.25);
     if (lbOpen && e.key === '0') fitImage();
   });
-  wireLightbox(); wireUpload(); wireSectorManager(); wireHeader();
+  wireLightbox(); wireUpload(); wireSectorManager(); wireHeader(); wireAi();
   window.addEventListener('hashchange', () => route());
 }
 

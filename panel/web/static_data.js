@@ -249,6 +249,12 @@ window.DataLayer = (function(){
     sourceUrl(id){ return '/api/reports/' + encodeURIComponent(id) + '/source'; },
     setTokenPrompt(){},
     actionsUrl(){ return ''; },
+    /* AI: report generation with the uploaded Skills, and the chat that edits a report (server only) */
+    aiConfig(){ return api('/api/ai/config'); },
+    aiGenerate(formData){ return api('/api/ai/generate', {method: 'POST', body: formData}); },
+    aiJob(id){ return api('/api/ai/jobs/' + encodeURIComponent(id)); },
+    aiJobFileUrl(id, name){ return '/api/ai/jobs/' + encodeURIComponent(id) + '/files/' + encodeURIComponent(name); },
+    aiChat(reportId, messages){ return api('/api/ai/chat', {method: 'POST', headers: J, body: JSON.stringify({report_id: reportId, messages})}); },
   };
 
   return cfg.static ? staticBackend : apiBackend;

@@ -3,3 +3,4 @@ __pycache__/
 server.*.log
 site/
 panel/data/_tmp/
+panel/data/ai_jobs/

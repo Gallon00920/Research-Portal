@@ -1,0 +1,162 @@
+{
+  "id": "otf-2026Q3-full-5a9a3bab",
+  "title": "2026Q3 OTF 与 Public BDC 深度调研：股价大幅下跌原因分析",
+  "sector": "otf",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "full",
+  "language": "cn",
+  "keywords": [
+    "违约",
+    "到期",
+    "贷款",
+    "股价",
+    "隐含",
+    "风险"
+  ],
+  "source_name": "OTF 补充报告 2026Q3_v7（2026-11-08）.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-12T09:11:16+00:00",
+  "stats": {
+    "blocks": 92,
+    "images": 3,
+    "tables": 20,
+    "chars": 8305
+  },
+  "exhibit_count": 23,
+  "masthead": "OTF Q3 2026 更新：持仓复盘、信用风险与长期持有分析",
+  "toc": [
+    {
+      "level": 1,
+      "text": "更新摘要（2026-11-08，Q3 2026）"
+    },
+    {
+      "level": 1,
+      "text": "持仓复盘：Q2 vs Q3（10-Q 逐行重建）"
+    },
+    {
+      "level": 2,
+      "text": "关键指标变化"
+    },
+    {
+      "level": 2,
+      "text": "内部评级：Q3 分布"
+    },
+    {
+      "level": 2,
+      "text": "持仓变化"
+    },
+    {
+      "level": 1,
+      "text": "组合分布（Strats）"
+    },
+    {
+      "level": 3,
+      "text": "1. 按层级（占全部投资）"
+    },
+    {
+      "level": 3,
+      "text": "2. 按到期年份（占债务投资）"
+    },
+    {
+      "level": 3,
+      "text": "3. 按利差（现金 + PIK，占债务投资）"
+    },
+    {
+      "level": 1,
+      "text": "需要重点关注的资产"
+    },
+    {
+      "level": 2,
+      "text": "持仓分类与加权 mark"
+    },
+    {
+      "level": 2,
+      "text": "AI 对不同类型软件的影响"
+    },
+    {
+      "level": 2,
+      "text": "已有风险与观察名单"
+    },
+    {
+      "level": 3,
+      "text": "第一层：已实质受损"
+    },
+    {
+      "level": 3,
+      "text": "第二层：重点观察"
+    },
+    {
+      "level": 3,
+      "text": "第三层：股权端大幅减值"
+    },
+    {
+      "level": 3,
+      "text": "AI 高冲击、标记尚未调整的大额贷款（「可能下行」类）"
+    },
+    {
+      "level": 1,
+      "text": "问题公司背景：Cornerstone、Barracuda、Kaseya、Peraton"
+    },
+    {
+      "level": 2,
+      "text": "Cornerstone OnDemand：重组谈判中"
+    },
+    {
+      "level": 2,
+      "text": "Barracuda Networks：依赖救援融资"
+    },
+    {
+      "level": 2,
+      "text": "Kaseya：一级贷款回升，次级继续下调"
+    },
+    {
+      "level": 2,
+      "text": "Peraton：反弹但再融资仍是关键"
+    },
+    {
+      "level": 1,
+      "text": "当前市场 private credit spread 与 OTF 对比"
+    },
+    {
+      "level": 1,
+      "text": "信用恶化对派息的影响"
+    },
+    {
+      "level": 1,
+      "text": "股价隐含的违约情景"
+    },
+    {
+      "level": 3,
+      "text": "三种口径"
+    },
+    {
+      "level": 3,
+      "text": "股价敏感度（要求回报 8%，0.9x 退出，回收率 50%）"
+    },
+    {
+      "level": 3,
+      "text": "参数敏感度：隐含年违约率 / 5 年累计（股价 $9.7，要求回报 8%）"
+    },
+    {
+      "level": 3,
+      "text": "隐含情景与现实的差距"
+    },
+    {
+      "level": 1,
+      "text": "长期持有分析"
+    },
+    {
+      "level": 1,
+      "text": "方法说明、待核实事项与来源"
+    },
+    {
+      "level": 3,
+      "text": "待核实"
+    }
+  ],
+  "summary": "本版用 Q3 10-Q（9/30 持仓明细逐行重建，合计与 10-Q 一致）与 Q3 业绩演示、电话会更新 10/23 版的全部数据，结构不变，只列初版未覆盖的内容。一句话：Q3 NAV 上升靠股权兑现与估值，信用端在继续变差。",
+  "updated_at": "2026-11-12T09:12:17+00:00"
+}

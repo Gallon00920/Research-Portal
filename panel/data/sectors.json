@@ -90,6 +90,17 @@
     "status": "active"
   },
   {
+    "id": "royalty",
+    "code": "RYT",
+    "name_en": "Royalty",
+    "name_cn": "特许权",
+    "region": "Global",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "research"
+  },
+  {
     "id": "dyal_v",
     "code": "DYAL",
     "name_en": "Dyal V",

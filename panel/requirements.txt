@@ -6,3 +6,7 @@ python-docx
 pymupdf
 pillow
 cryptography
+# AI generation and the editing chat (panel/backend/ai_assist.py)
+anthropic
+# validates TLS with the OS trust store (needed behind TLS-inspecting corporate proxies)
+truststore

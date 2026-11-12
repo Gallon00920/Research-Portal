@@ -6,6 +6,13 @@
       "runtimeExecutable": "python",
       "runtimeArgs": ["panel/backend/server.py"],
       "port": 8765
+    },
+    {
+      "name": "research-panel-mock",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["panel/backend/server.py"],
+      "env": {"AI_MOCK": "1", "PORT": "8767"},
+      "port": 8767
     }
   ]
 }

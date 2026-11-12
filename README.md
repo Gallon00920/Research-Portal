@@ -84,6 +84,49 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   spaces' parts of the file untouched. Reports are stored, parsed and built
   exactly as research reports.
 
+## AI: generating reports, and a chat that edits them
+
+Both need the Python server (local or on a VM) with `ANTHROPIC_API_KEY`
+set; the GitHub Pages site has no backend, so it shows neither. Code in
+`panel/backend/ai_assist.py`; the model is `claude-opus-5-5` unless
+`AI_MODEL` says otherwise. `AI_MOCK=1` runs both without the API
+(placeholder documents, a chat that applies `replace N: …` commands) to try
+the pipeline.
+
+- **Generate with AI** is the second mode of the Research Panel's upload
+  dialog, offered for sectors that have a Skill uploaded to the Claude API.
+  `panel/data/ai_skills.json` maps a sector to its skill id (today
+  `private_credit` → private-credit-quarterly-report and `software_otf` →
+  otf-quarterly-report; add a line to cover another sector). You choose the
+  sector, quarter and the language of the full report, **drop the source
+  files** (broker reports, fund materials, trackers) into the dialog or
+  click to choose them, as for a manual upload, and pick the **folder on
+  your computer** where the generated `.docx` files go ("Choose folder…"
+  uses the browser's folder dialog, which Chrome and Edge offer on https or
+  localhost; without it the files are downloaded instead). The server keeps
+  the dropped files under `panel/data/ai_jobs/<job>/` (not committed),
+  uploads them with the Files API, runs the Skill in Claude's
+  code-execution container to write the full report (`full_en.docx` or
+  `full_cn.docx`), then, in the same container, has Claude write the full
+  report in the other language and an executive summary in both languages
+  with Anthropic's docx Skill. The four documents are saved to your folder
+  as `<sector>_<period>_<type>_<lang>.docx` and added to the panel exactly
+  like hand uploads, replacing any earlier edition of that quarter. The
+  Skills were written for an interactive session with a sign-off between
+  their exhibit and writing phases; the prompt tells Claude to carry on
+  through that gate and list its doubts in a "Notes for the reviewer"
+  section at the end. A run takes several minutes; the dialog shows the
+  progress log and can be closed meanwhile.
+- **AI assistant** (the round AI button at the bottom right) is a chat
+  about the report on screen. Claude gets the report's parsed content as
+  numbered blocks and changes it through tools: replace a block, insert a
+  paragraph / heading / list after a block, delete a block, change the title
+  or keywords. Edits are written straight into the report's `content.json`
+  and `meta.json` (contents rail, summary and `ai_edited_at` refreshed), so
+  the page redraws at once; the source `.docx` is not rewritten, and
+  figures cannot be redrawn (table cells and captions can be changed). Each
+  report keeps its own conversation for the session.
+
 ## Parsing
 
 - `panel/backend/parsers/docx_parser.py` walks the Word body in order: heading
