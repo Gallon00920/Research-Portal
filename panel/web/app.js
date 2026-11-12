@@ -61,7 +61,6 @@ function sectorName(s){ return (state.lang === 'cn' ? (s.name_cn || s.name_en) :
 function sectorCoverage(s){ const c = state.lang === 'cn' ? (s.coverage_cn && s.coverage_cn.length ? s.coverage_cn : s.coverage_en) : (s.coverage_en && s.coverage_en.length ? s.coverage_en : s.coverage_cn); return (c || []).join(' / '); }
 function sectorById(id){ return state.sectors.find(s => s.id === id) || null; }
 function periodKey(p){ const m = /^(\d)Q(\d{4})$/.exec(p || ''); return m ? (+m[2])*10 + (+m[1]) : 0; }
-function langLabel(l){ return t(l === 'cn' ? 'cn' : 'en'); }
 function otherLang(){ return state.docLang === 'cn' ? 'en' : 'cn'; }
 function nav(hash){ if (location.hash === hash) route(); else location.hash = hash; window.scrollTo({top:0}); }
 function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : ''); }
@@ -69,7 +68,6 @@ function hashSector(id){ return '#/s/' + id; }
 function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function byUploaded(a, b){ return (b.uploaded_at || '').localeCompare(a.uploaded_at || ''); }
 function nReports(n){ return n === 1 && state.lang === 'en' ? '1 report' : t('reports_in_lang', {n}); }
-function nQuarters(n){ return n === 1 && state.lang === 'en' ? '1 quarter' : n + ' ' + t('quarters'); }
 
 /* full reports in the current report language (state.docLang follows the UI language unless switched in the reader) */
 function langReports(lang){ return state.reports.filter(r => r.nature === 'full' && r.language === (lang || state.docLang)); }
@@ -108,6 +106,7 @@ function setLang(l){
   try { localStorage.setItem('aid_lang', l); } catch (e) {}
   applyI18n();
   if (window.NewsTracker) window.NewsTracker.setLanguage(l);
+  if (window.FundFactors) window.FundFactors.setLanguage(l);
   route();
 }
 /* switch the report language only (the in-page EN / 中文 switch) */
@@ -137,15 +136,19 @@ async function loadAll(){
 function buildNav(){
   const n = $('mainnav');
   n.innerHTML = '';
-  // two sections only: the research panel (dashboard + sector reports) and the news tracker;
-  // sectors are opened from the cards on the dashboard
+  // three sections: the news tracker, the research panel (dashboard + sector reports) and
+  // fund key factors; sectors are opened from the cards on the dashboard
   const news = el('button', state.view === 'news' ? 'active' : '', t('nav_news'));
   news.type = 'button'; news.addEventListener('click', () => nav('#/news'));
   n.appendChild(news);
-  const panel = el('button', state.view !== 'news' ? 'active' : '', t('nav_panel'));
+  const isPanel = state.view !== 'news' && state.view !== 'factors';
+  const panel = el('button', isPanel ? 'active' : '', t('nav_panel'));
   panel.type = 'button'; panel.addEventListener('click', () => nav('#/'));
   n.appendChild(panel);
-  if (state.view !== 'news'){
+  const factors = el('button', state.view === 'factors' ? 'active' : '', t('nav_factors'));
+  factors.type = 'button'; factors.addEventListener('click', () => nav('#/factors'));
+  n.appendChild(factors);
+  if (isPanel){
     const up = el('button', 'right'); up.type = 'button';
     up.textContent = '⬆ ' + t('upload_report');
     up.addEventListener('click', () => openUpload(state.sectorId));
@@ -581,6 +584,7 @@ function openLb(i){
   if (i === undefined || i < 0) i = v[0];
   if (v.indexOf(i) < 0){ const next = v.find(x => x > i); i = next !== undefined ? next : v[0]; }
   state.lbIndex = i;
+  state.lbSingle = false; setLbBrowsing(true);
   const ex = state.exhibits[i];
   const im = lbImg();
   im.style.transform = 'scale(0)';
@@ -592,7 +596,24 @@ function openLb(i){
   $('lb').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
+/* one image that is not a report exhibit (the Fund key factors source image): the same viewer
+   with zoom and pan, without the previous / next / "view in text" controls */
+function setLbBrowsing(on){ ['lbPrev', 'lbNext', 'lbGoto', 'lbCount'].forEach(id => { $(id).hidden = !on; }); }
+function openLbImage(src, caption){
+  state.lbSingle = true; setLbBrowsing(false);
+  const im = lbImg();
+  im.style.transform = 'scale(0)';
+  im.onload = fitImage;
+  im.src = src; im.alt = caption || '';
+  if (im.complete && im.naturalWidth) fitImage();
+  $('lbCap').textContent = caption || '';
+  $('lbCount').textContent = '';
+  $('lb').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+window.AIDLightbox = {open: openLbImage};
 function stepLb(dir){
+  if (state.lbSingle) return;
   const v = viewable();
   if (!v.length) return;
   const pos = v.indexOf(state.lbIndex);
@@ -638,6 +659,12 @@ function wireLightbox(){
   $('lbPrev').addEventListener('click', e => { e.stopPropagation(); stepLb(-1); });
   $('lbNext').addEventListener('click', e => { e.stopPropagation(); stepLb(1); });
   $('lbClose').addEventListener('click', closeLb);
+  // the dark area around the image closes it (the stage handles its own clicks above, so a drag
+  // to pan does not); so do the empty parts of the top bar and the hint line
+  $('lb').addEventListener('click', e => {
+    const c = e.target.classList;
+    if (e.target === $('lb') || c.contains('lb-top') || c.contains('lb-hint')) closeLb();
+  });
   $('lbGoto').addEventListener('click', () => {
     const ex = state.exhibits[state.lbIndex];
     closeLb();
@@ -868,6 +895,7 @@ function showView(v){
   $('view-dash').hidden = v !== 'dash';
   $('view-art').hidden = v !== 'art';
   $('view-news').hidden = v !== 'news';
+  $('view-factors').hidden = v !== 'factors';
   $('searchWrap').style.visibility = v === 'art' ? '' : 'hidden';
 }
 /* news tracker: the Credit News Radar module (news.js) renders into #view-news and follows the UI language */
@@ -878,11 +906,20 @@ function renderNews(){
   if (window.NewsTracker) window.NewsTracker.mount(state.lang);
   document.title = t('news_title') + ' | Junson Capital';
 }
+/* fund key factors: factors.js renders into #view-factors (sub-tab and month come from the address) */
+function renderFactors(tab, ym){
+  showView('factors');
+  state.sectorId = null; state.reportId = null; state.report = null;
+  buildNav();
+  if (window.FundFactors) window.FundFactors.mount(state.lang, tab, ym);
+  document.title = t('factors_title') + ' | Junson Capital';
+}
 function parseHash(){
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   if (!h) return {view: 'dash'};
   const p = h.split('/');
   if (p[0] === 'news') return {view: 'news'};
+  if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
   if (p[0] === 's' && p[1]) return {view: 'sector', id: p[1]};
   if (p[0] === 'r' && p[1]) return {view: 'art', id: p[1], anchor: p.slice(2).join('/') || null};
   return {view: 'dash'};
@@ -892,6 +929,7 @@ async function route(){
   try {
     if (h.view === 'dash') renderDash();
     else if (h.view === 'news') renderNews();
+    else if (h.view === 'factors') renderFactors(h.tab, h.ym);
     else if (h.view === 'sector') openSector(h.id);
     else if (h.view === 'art'){
       if (state.view === 'art' && state.reportId === h.id && h.anchor){ const n = document.getElementById(h.anchor); if (n) n.scrollIntoView(); return; }

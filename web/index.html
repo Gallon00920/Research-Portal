@@ -4,8 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AID Research Panel | Junson Capital</title>
-<link rel="stylesheet" href="app.css?v=16">
-<link rel="stylesheet" href="news.css?v=16">
+<link rel="stylesheet" href="app.css?v=17">
+<link rel="stylesheet" href="news.css?v=17">
+<link rel="stylesheet" href="factors.css?v=17">
 </head>
 <body>
 
@@ -334,6 +335,19 @@
   </dialog>
 </div>
 
+<!-- ═══════ fund key factors (factors/web/factors.js builds the card's content) ═══════ -->
+<div id="view-factors" hidden>
+  <div class="hero tall">
+    <div class="hero-txt">
+      <h1 data-i18n="factors_hero"></h1>
+      <p data-i18n="factors_hero_sub"></p>
+    </div>
+  </div>
+  <div class="shell dash">
+    <div class="doc-card" id="factorsCard"></div>
+  </div>
+</div>
+
 <footer class="dash-footer">
   <span>© 2026 Junson Capital · AID Research</span>
   <span data-i18n="internal_only"></span>
@@ -452,9 +466,10 @@
 <div class="toast" id="toast" role="status"></div>
 
 <script src="config.js"></script>
-<script src="i18n.js?v=16"></script>
-<script src="static_data.js?v=16"></script>
-<script src="news.js?v=16"></script>
-<script src="app.js?v=16"></script>
+<script src="i18n.js?v=17"></script>
+<script src="static_data.js?v=17"></script>
+<script src="news.js?v=17"></script>
+<script src="factors.js?v=17"></script>
+<script src="app.js?v=17"></script>
 </body>
 </html>

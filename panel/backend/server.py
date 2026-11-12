@@ -4,7 +4,8 @@ Run:  python panel/backend/server.py   (or panel\run.bat)
 Then open http://127.0.0.1:8765
 
 Serves the frontend as one flat tree from web/ (shared shell), panel/web/ (this
-feature) and news/web/ (the News tracker), plus news/data/news.json at /data/news.json.
+feature), news/web/ (the News tracker) and factors/web/ (Fund key factors), plus
+news/data/news.json at /data/news.json and factors/data/ at /data/factors/.
 
 No database: every report lives in panel/data/reports/<id>/ as
   meta.json      card metadata (title, sector, quarter, keywords, ...)
@@ -41,7 +42,8 @@ REPORTS = DATA / "reports"
 SECTORS_FILE = DATA / "sectors.json"
 REPO = ROOT.parent  # repository root: web/ (shared shell), panel/, news/
 WEB = ROOT / "web"  # panel frontend: app.js, i18n.js, static_data.js, login.html
-STATIC_DIRS = (REPO / "web", WEB, REPO / "news" / "web")  # served flat; first match wins
+STATIC_DIRS = (REPO / "web", WEB, REPO / "news" / "web", REPO / "factors" / "web")  # served flat; first match wins
+FACTORS = REPO / "factors"  # fund key factors: data/, incoming/, scripts/extract_factors.py
 NEWS_DATA = REPO / "news" / "data" / "news.json"  # written by news/scripts/update_news.py
 REPORTS.mkdir(parents=True, exist_ok=True)
 
@@ -508,6 +510,78 @@ def news_data():
     return FileResponse(NEWS_DATA, media_type="application/json")
 
 
+# -------------------------------------------------------------------- fund key factors
+def _factors_module():
+    """factors/scripts/extract_factors.py, imported on first use (it needs the anthropic package)."""
+    scripts = str(FACTORS / "scripts")
+    if scripts not in sys.path:
+        sys.path.insert(0, scripts)
+    import extract_factors
+    return extract_factors
+
+
+@app.get("/data/factors/{path:path}")
+def factors_data(path: str):
+    """Fund key factors data and source images; the GitHub Pages build copies them to data/factors/."""
+    base = (FACTORS / "data").resolve()
+    f = (base / path).resolve()
+    if not f.is_file() or not f.is_relative_to(base):
+        raise HTTPException(404, "not found")
+    return FileResponse(f)
+
+
+@app.post("/api/factors/upload")
+def factors_upload(file: UploadFile = File(...), tab: str = Form(...), year: int = Form(...), month: int = Form(...)):
+    """Read an uploaded image with Claude and save it as that month's data (replacing any earlier upload)."""
+    ef = _factors_module()
+    by_type = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp", "image/gif": ".gif"}
+    ext = Path(file.filename or "").suffix.lower() or by_type.get(file.content_type or "", "")
+    try:
+        doc = ef.extract(tab, year, month, file.file.read(), ext)
+    except ef.MissingKeyError as exc:
+        raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
+    except ef.ExtractionError as exc:
+        raise HTTPException(422, str(exc))
+    return {"ok": True, "tab": doc["tab"], "year": doc["year"], "month": doc["month"], "warnings": doc.get("warnings") or []}
+
+
+@app.post("/api/factors/{tab}/{ym}/translate")
+def factors_translate(tab: str, ym: str):
+    """Create the English labels of a month that still shows Chinese (Claude translates them)."""
+    ef = _factors_module()
+    try:
+        doc = ef.translate_month(tab, ym)
+    except ef.MissingKeyError as exc:
+        raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
+    except ef.ExtractionError as exc:
+        raise HTTPException(422, str(exc))
+    return {"ok": True, "count": len(doc.get("en") or {})}
+
+
+@app.post("/api/factors/{tab}/{ym}/move")
+def factors_move(tab: str, ym: str, payload: dict[str, Any]):
+    """File a month under another date: {"year": 2026, "month": 9, "replace": false}."""
+    ef = _factors_module()
+    try:
+        doc = ef.move_month(tab, ym, int(payload.get("year") or 0), int(payload.get("month") or 0), bool(payload.get("replace")))
+    except (TypeError, ValueError):
+        raise HTTPException(422, "year and month must be numbers")
+    except ef.ExtractionError as exc:
+        raise HTTPException(409 if "already has data" in str(exc) else 422, str(exc))
+    return {"ok": True, "tab": doc["tab"], "year": doc["year"], "month": doc["month"]}
+
+
+@app.put("/api/factors/{tab}/{ym}/notes")
+def factors_notes(tab: str, ym: str, payload: dict[str, Any]):
+    """Save a month's notes and which of its warnings they explain: {"notes": [...], "dismissed": [...]}."""
+    ef = _factors_module()
+    try:
+        doc = ef.set_notes(tab, ym, payload.get("notes") or [], payload.get("dismissed") or [])
+    except ef.ExtractionError as exc:
+        raise HTTPException(422, str(exc))
+    return {"ok": True, "notes": doc["notes"], "dismissed": doc["dismissed"]}
+
+
 # -------------------------------------------------------------------- static
 @app.exception_handler(HTTPException)
 async def http_exc(_, exc: HTTPException):
@@ -525,7 +599,7 @@ async def no_cache_static(request, call_next):
 
 @app.get("/{path:path}")
 def static_file(path: str):
-    """Frontend files from web/, panel/web/ and news/web/ as one flat tree (index.html at /)."""
+    """Frontend files from web/, panel/web/, news/web/ and factors/web/ as one flat tree (index.html at /)."""
     name = path or "index.html"
     for d in STATIC_DIRS:
         base = d.resolve()

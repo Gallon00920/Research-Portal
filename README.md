@@ -7,8 +7,9 @@ Reports are uploaded as `.docx` or `.pdf`, parsed into structured content
 (headings, paragraphs, lists, tables, figures) and displayed in a reader that
 mirrors the AID Research Portal design. No database: every report lives as
 files under `panel/data/reports/<id>/`. The same site also hosts the
-**News tracker** (see below); the two features live in `panel/` and `news/`,
-and only the shared page shell is in `web/`.
+**News tracker** and **Fund key factors** (see below); the three features
+live in `panel/`, `news/` and `factors/`, and only the shared page shell is in
+`web/`.
 
 ## Run
 
@@ -184,17 +185,121 @@ Run it locally with `python news/scripts/update_news.py --recent-days 3`
 token with *Actions: read and write* on this repository; it is kept in the
 browser only.
 
+## Fund key factors
+
+The "Fund key factors" tab (`#/factors`) shows two monthly sub-tabs, one month
+on screen at a time:
+
+- **Fund performance**: the fund performance table, drawn as a real table
+  (sticky header, completion shading, IRR column).
+- **Budget completion**: the budget completion slide, drawn as real charts
+  (budget against actual, stacked monthly parts, the slide's commentary).
+
+Nothing is typed in by hand. You upload an **image** of the month's slide or
+table (PNG, JPEG or WebP; drop, choose or paste a screenshot), pick the
+sub-tab, year and month it belongs to, and Claude reads the image into data.
+The page then draws it. The year and month pickers at the top choose which
+month is shown; an upload for a month that already has data replaces it.
+
+- `factors/scripts/extract_factors.py` sends the image to the Claude API
+  (`claude-opus-5-5` by default, `FACTORS_MODEL` to change it) with a fixed
+  JSON shape, parses the numbers and checks the arithmetic: every amount
+  column against the total row, every stacked bar against its parts. Anything
+  that does not add up is saved as a warning and shown above the chart or
+  table, together with a link to the uploaded image, so a misread figure is
+  easy to spot. It writes `factors/data/<tab>/<YYYY-MM>.json`, keeps the
+  image beside it, and rebuilds `factors/data/index.json`.
+- **On GitHub Pages** the site commits the image to
+  `factors/incoming/<tab>-<YYYY>-<MM>.<ext>`; `build-deploy.yml` runs the
+  script, commits the data and redeploys (about three minutes). It needs the
+  `ANTHROPIC_API_KEY` repository secret, the same one the news job uses.
+  Without it the upload waits in `factors/incoming/`. An image Claude cannot
+  read is moved to `factors/failed/` with the reason.
+- **Locally** `POST /api/factors/upload` runs the same script at once; start
+  the server with `ANTHROPIC_API_KEY` set and
+  `pip install -r factors/requirements.txt`.
+- The data is served at `data/factors/…` in both modes. It has no encrypted
+  form: a site built with `PANEL_PASSWORD` leaves it out.
+
+**Parts without a number.** A stacked bar can show a part that is labelled by
+month and source but has no figure of its own, for example "同4月收息" (the
+same as April). Claude is told to list such a part with an empty value, and
+the script keeps it: its size is what is left of the bar after the numbered
+parts, and it is marked `derived`. The stack then adds up, so no warning is
+raised. On the page the part is drawn and labelled as on the slide, without
+a number beside the bar; the tooltip and the numbers table give the derived
+amount, marked "derived". If several parts of one bar lack a number, the
+remainder is split equally and a warning says so. Parts are coloured by
+month ("6月收息" and "6月流入" share June's colour), and the legend lists the
+months. `extract_factors.py --recheck` re-runs these checks on saved months.
+
+**English version.** The slides are usually Chinese. Right after an image is
+read, a second Claude call translates its labels and commentary (titles,
+column headers, bar labels, legend entries, notes, footnotes) into English.
+The translations are stored in the month's file as `en`, a map from the
+original text to its English; the original is never changed. With the
+interface in English the page shows the English, with it in Chinese the
+original. Amounts printed in 万 are shown in millions in English (731万
+becomes 7.31M), matching the translated unit in the panel title, and the
+translator converts amounts inside sentences the same way. A translated
+sentence is only accepted if its figures match the original: every
+percentage must reappear, and every 万 amount must reappear divided by 100;
+otherwise the original sentence is kept. If an answer leaves items out, they
+are asked for once more. If the translation call fails, the
+month is still saved in its original language and is translated on a later
+run. `extract_factors.py --translate` translates every saved month that
+still shows Chinese (the workflow does this on each run); on the local
+server, a month without English shows a "Create English labels" link at the
+bottom when the interface is in English.
+
+**Wrong date.** If an image was uploaded under the wrong year or month, use
+"Change date" at the bottom of that month's page: the data, its notes and
+the image move to the date you pick. A month that already has data is only
+overwritten if you tick "Replace". Locally it is applied at once
+(`POST /api/factors/<tab>/<YYYY-MM>/move`); on GitHub Pages the page commits
+`factors/incoming/<tab>-<YYYY>-<MM>.move.json` and the workflow applies it,
+before reading any new image. From a terminal:
+`extract_factors.py --move-to 2026-09 --tab performance --year 2026 --month 8`.
+
+**Hidden projects in the budget total.** The fund performance table's total row
+includes new projects that the table itself does not list, so the budget
+column never adds up. `factors/config.json` names those projects and their
+budgets (currently New - Fund1 120,000 and New - Fund2 200,000). On every
+upload, when the budget total exceeds the sum of the rows by exactly the sum
+of those budgets, the script writes a note naming them (`auto_notes`) instead
+of a warning. Any other gap, in this or another column, is still a warning.
+When the projects or amounts change, edit the list and run
+`extract_factors.py --recheck` to apply it to the months already saved; an
+empty list turns the rule off.
+
+**Notes.** A month can carry a note, shown in a blue "Note" box above the chart
+or table: use it to explain a figure, for example a total that includes rows
+the source table hides. Write it on the page: "Explain with a note" in the
+warning box, or "Add a note" / "Edit note" at the bottom. In the dialog you
+also tick the warnings the note explains; those are then hidden on the page
+but stay in the data file (`warnings`, with the explained ones repeated in
+`dismissed`), so the record of what the checks found is kept. A new upload
+for the same month keeps the note, and keeps a warning hidden only if the new
+reading raises exactly the same warning. Locally the note is saved at once
+(`PUT /api/factors/<tab>/<YYYY-MM>/notes`); on GitHub Pages the page commits
+the month's data file and the site rebuilds. From a terminal:
+`extract_factors.py --note "…" --explains-warnings --tab … --year … --month …`.
+
+To enter a month without Claude, write the JSON by hand in the shape Claude
+returns and run `extract_factors.py --from-raw file.json --tab … --year …
+--month …`; the same checks apply.
+
 ## Layout
 
-One folder per feature; the frontend files of all three folders are served
+One folder per feature; the frontend files of all four folders are served
 (and built into `site/`) as one flat tree, so `index.html` references
-`app.js`, `news.js` etc. without folder prefixes.
+`app.js`, `news.js`, `factors.js` etc. without folder prefixes.
 
 ```
-web/                         shared shell: index.html (both views' markup), app.css
+web/                         shared shell: index.html (every view's markup), app.css
                              (design system), config.js
 panel/                       the research panel
-  backend/server.py          FastAPI app + static hosting (+ /data/news.json)
+  backend/server.py          FastAPI app + static hosting (+ /data/news.json, /data/factors/)
   backend/build_static.py    parses uploads, applies ops, builds site/ for Pages
   backend/parsers/           docx / pdf parsers and shared helpers
   web/app.js, i18n.js        routing, rendering, UI strings (en / cn)
@@ -207,7 +312,12 @@ news/                        the News tracker
   web/news.js, news.css      the view (module + scoped styles)
   scripts/, config/, docs/   news updater pipeline, its sources / weights, method
   data/news.json             news data (committed hourly by update-news.yml)
-.github/workflows/           build-deploy.yml (panel) and update-news.yml (news)
+factors/                     Fund key factors
+  web/factors.js, factors.css  the view: sub-tabs, month picker, charts, table, upload
+  scripts/extract_factors.py   image -> Claude -> checked data
+  data/<tab>/<YYYY-MM>.json    one month of data (+ the uploaded image); data/index.json
+  incoming/, failed/           uploads waiting for, or rejected by, the build workflow
+.github/workflows/           build-deploy.yml (panel + factors) and update-news.yml (news)
 ```
 
 Design reference: the AID Research Portal pages (`AID_Portal_Demo_DT.html`

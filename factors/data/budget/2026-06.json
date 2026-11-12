@@ -1,0 +1,285 @@
+{
+  "tab": "budget",
+  "year": 2026,
+  "month": 6,
+  "extracted_at": "2026-11-12T06:45:30+00:00",
+  "model": "claude-opus-5-5",
+  "source_image": "2026-06.png",
+  "title": "AWIS预算完成度及2Q计提",
+  "sections": [
+    {
+      "title": "2Q26 AID现金流入 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "现金收益",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 573,
+                  "text": "573万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金收益",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 661,
+                  "text": "661万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "4月收息",
+                      "value": 308,
+                      "text": "308万"
+                    },
+                    {
+                      "label": "5月收息",
+                      "value": 276,
+                      "text": "276万"
+                    },
+                    {
+                      "label": "6月收息",
+                      "value": 78,
+                      "text": "78万"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "归还本金",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 200,
+                  "text": "200万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "归还本金",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 245,
+                  "text": "245万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            },
+            {
+              "title": "2Q26现金流入",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 773,
+                  "text": "773万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 906,
+                  "text": "906万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "同4月收息",
+                      "value": 308,
+                      "text": "308万"
+                    },
+                    {
+                      "label": "5月流入",
+                      "value": 296,
+                      "text": "296万"
+                    },
+                    {
+                      "label": "6月流入",
+                      "value": 302,
+                      "text": "302万"
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年6月实际收息78万,二季度总收入共661万;",
+            "2Q26收益预算完成度 115%、1H26收益预算完成度101%、还本预算完成度 123%",
+            "26年6月现金流入302万,二季度总流入906万;",
+            "2Q26现金流入预算完成度 117%"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "1H26现金收益",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 1252,
+                  "text": "1,252万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 1268,
+                  "text": "1,268万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            },
+            {
+              "title": "1H26现金流入",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 1452,
+                  "text": "1,452万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 1880,
+                  "text": "1,880万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "1H26实际现金收益为1,268万、现金流入为1,880万",
+            "1H26收益预算完成度49%、现金流入完成度129%",
+            "1H26现金流入高于预算428万，其中还本高于预期；主要由于PAG基金1Q26有项目退出"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "2Q26 AID现金流出 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "2Q26 预算",
+                  "kind": "budget",
+                  "value": 703,
+                  "text": "703万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "2Q26 实际",
+                  "kind": "actual",
+                  "value": 1441,
+                  "text": "1,441万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "5月流出",
+                      "value": 250,
+                      "text": "250万"
+                    },
+                    {
+                      "label": "6月流出",
+                      "value": 1191,
+                      "text": "1,191万"
+                    }
+                  ]
+                },
+                {
+                  "group": "",
+                  "label": "1H26 预算",
+                  "kind": "budget",
+                  "value": 2586,
+                  "text": "2,586万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "1H26 实际",
+                  "kind": "actual",
+                  "value": 2803,
+                  "text": "2,803万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年二季度总流出1,441万",
+            "26年第二季度预算完成度 205%",
+            "26年上半年预算完成度 108%"
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "en": {
+    "AWIS预算完成度及2Q计提": "AWIS Budget Completion and 2Q Accruals",
+    "2Q26 AID现金流入 (万美元)": "2Q26 AID Cash Inflows (US$ million)",
+    "现金收益": "Cash income",
+    "预算": "Budget",
+    "实际": "Actual",
+    "4月收息": "Apr interest",
+    "5月收息": "May interest",
+    "6月收息": "Jun interest",
+    "归还本金": "Principal repaid",
+    "2Q26现金流入": "2Q26 Cash inflows",
+    "同4月收息": "Same as Apr interest",
+    "5月流入": "May inflows",
+    "6月流入": "Jun inflows",
+    "1H26现金收益": "1H26 Cash income",
+    "1H26现金流入": "1H26 Cash inflows",
+    "2Q26 AID现金流出 (万美元)": "2Q26 AID Cash Outflows (US$ million)",
+    "2Q26 预算": "2Q26 Budget",
+    "2Q26 实际": "2Q26 Actual",
+    "5月流出": "May outflows",
+    "6月流出": "Jun outflows",
+    "1H26 预算": "1H26 Budget",
+    "1H26 实际": "1H26 Actual",
+    "26年6月实际收息78万,二季度总收入共661万;": "Actual interest received in June 2026 was 0.78 million; total income for the second quarter was 6.61 million;",
+    "2Q26收益预算完成度 115%、1H26收益预算完成度101%、还本预算完成度 123%": "2Q26 income budget completion 115%, 1H26 income budget completion 101%, principal repayment budget completion 123%",
+    "26年6月现金流入302万,二季度总流入906万;": "Cash inflow in June 2026 was 3.02 million; total inflow for the second quarter was 9.06 million;",
+    "2Q26现金流入预算完成度 117%": "2Q26 cash inflow budget completion 117%",
+    "1H26实际现金收益为1,268万、现金流入为1,880万": "1H26 actual cash income was 12.68 million and cash inflow was 18.80 million",
+    "1H26收益预算完成度49%、现金流入完成度129%": "1H26 income budget completion 49%, cash inflow completion 129%",
+    "1H26现金流入高于预算428万，其中还本高于预期；主要由于PAG基金1Q26有项目退出": "1H26 cash inflow exceeded budget by 4.28 million, with principal repayments higher than expected, mainly due to a project exit in the PAG fund in 1Q26",
+    "26年二季度总流出1,441万": "Total outflow in Q2 2026 was 14.41 million",
+    "26年第二季度预算完成度 205%": "Q2 2026 budget completion 205%",
+    "26年上半年预算完成度 108%": "First half of 2026 budget completion 108%"
+  },
+  "notes": [],
+  "dismissed": []
+}

@@ -228,7 +228,6 @@ STRATEGY_GROUPS = [
     {"id": "other", "name": "Other", "cn": "其他策略"},
 ]
 STRATEGY_IDS = [strategy["id"] for strategy in STRATEGIES]
-STRATEGY_KEYWORDS = {strategy["id"]: strategy["keywords"] for strategy in STRATEGIES}
 # Legacy sub-sector labels saved by earlier versions map onto the new taxonomy.
 LEGACY_SECTOR_MAP = {
     "software": [],
@@ -1414,14 +1413,6 @@ def score_threshold(config: dict, semantic_scorer: "SemanticScorer | None") -> i
     if semantic_scorer and not getattr(semantic_scorer, "failed", False):
         return int(config.get("semanticScoring", {}).get("minimumFinalScore") or config.get("minimumScore", 7))
     return int(config.get("minimumScore", 7))
-
-
-def translate_summary(summary: str, translator: "ChineseTranslator | None") -> str:
-    if not summary:
-        return MISSING_ZH_SUMMARY
-    if not translator:
-        return MISSING_ZH_SUMMARY
-    return translator.translate(summary)
 
 
 def fetch_article_text(url: str) -> str:

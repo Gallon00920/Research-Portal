@@ -1,0 +1,3 @@
+anthropic
+# validates TLS with the OS trust store (needed behind TLS-inspecting corporate proxies)
+truststore

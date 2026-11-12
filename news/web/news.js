@@ -1,6 +1,6 @@
 /* AID Credit News Radar — embedded in the AID Research Panel as the "News tracker" view.
-   Generated from Credit_bearing_news_updater/src/app.js by make_news_js.py; the data is read
-   from that site's published data/news.json, and the hourly pipeline keeps running there.
+   Merged from the standalone Credit_bearing_news_updater app.js; the data is read from
+   data/news.json (news/data/news.json, refreshed hourly by update-news.yml).
    Exposes window.NewsTracker = { mount(lang), setLanguage(lang) }; lang is "en" | "cn" | "zh". */
 (function () {
 "use strict";

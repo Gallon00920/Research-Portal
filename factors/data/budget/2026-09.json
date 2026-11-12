@@ -1,0 +1,265 @@
+{
+  "tab": "budget",
+  "year": 2026,
+  "month": 9,
+  "extracted_at": "2026-11-12T02:47:06+00:00",
+  "model": "manual transcription",
+  "source_image": "2026-09.webp",
+  "title": "AWIS预算完成度",
+  "sections": [
+    {
+      "title": "3Q26 AID现金流入 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "3Q26现金流入",
+              "bars": [
+                {
+                  "group": "现金收益",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 731,
+                  "text": "731万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金收益",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 832,
+                  "text": "832万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "7月",
+                      "value": 159,
+                      "text": "159万"
+                    },
+                    {
+                      "label": "8月",
+                      "value": 379,
+                      "text": "379万"
+                    },
+                    {
+                      "label": "9月",
+                      "value": 292,
+                      "text": "292万"
+                    }
+                  ]
+                },
+                {
+                  "group": "归还本金",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 5.8,
+                  "text": "5.8万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "归还本金",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 367,
+                  "text": "367万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "9月",
+                      "value": 367,
+                      "text": "367万"
+                    }
+                  ]
+                },
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 736,
+                  "text": "736万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 1199,
+                  "text": "1199万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年7月实际收息159万、8月379万、9月292万，三季度总收息832万，完成度114%",
+            "3Q26还本367万全部发生在9月，带动现金流入预算完成度达163%",
+            "9月现金还本主要为Oak Street及Global Atlantic项目退出及还本"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "YTD现金收益",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 1983,
+                  "text": "1,983万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 2102,
+                  "text": "2,102万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            },
+            {
+              "title": "YTD总现金流入",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 2188,
+                  "text": "2,188万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 3104,
+                  "text": "3,104万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "9M26实际现金收益为2,102万、现金流入为3,104万",
+            "9M26收益预算完成度106%、现金流入完成度142%",
+            "9M26现金流入高于预算916万，主要由1H26 PAG基金1Q26项目退及9月Oak Street项目退出"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3Q26 call款 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "3Q26 预算",
+                  "kind": "budget",
+                  "value": 1153,
+                  "text": "1,153万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "3Q26 实际",
+                  "kind": "actual",
+                  "value": 1616,
+                  "text": "1,616万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "7月",
+                      "value": 102,
+                      "text": "102万"
+                    },
+                    {
+                      "label": "8月",
+                      "value": 706,
+                      "text": "706万"
+                    },
+                    {
+                      "label": "9月",
+                      "value": 808,
+                      "text": "808万"
+                    }
+                  ]
+                },
+                {
+                  "group": "",
+                  "label": "YTD 预算",
+                  "kind": "budget",
+                  "value": 3739,
+                  "text": "3,739万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "YTD 实际",
+                  "kind": "actual",
+                  "value": 4418,
+                  "text": "4,418万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年三季度总流出为1,616万",
+            "26年第三季度预算完成度140%",
+            "26年前三季度预算完成度118%",
+            "3只基金预计今年内结束call款：Global Atlantic, CLO Equity, PAG BRS"
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "en": {
+    "AWIS预算完成度": "AWIS budget completion",
+    "3Q26 AID现金流入 (万美元)": "3Q26 AID cash inflow (US$ million)",
+    "3Q26现金流入": "3Q26 cash inflow",
+    "现金收益": "Cash income",
+    "预算": "Budget",
+    "实际": "Actual",
+    "7月": "Jul",
+    "8月": "Aug",
+    "9月": "Sep",
+    "归还本金": "Principal repaid",
+    "YTD现金收益": "YTD cash income",
+    "YTD总现金流入": "YTD total cash inflow",
+    "3Q26 call款 (万美元)": "3Q26 capital calls (US$ million)",
+    "3Q26 预算": "3Q26 Budget",
+    "3Q26 实际": "3Q26 Actual",
+    "YTD 预算": "YTD Budget",
+    "YTD 实际": "YTD Actual",
+    "26年7月实际收息159万、8月379万、9月292万，三季度总收息832万，完成度114%": "Actual interest received was US$1.59 million in July 2026, US$3.79 million in August and US$2.92 million in September; total for the third quarter was US$8.32 million, 114% of budget.",
+    "3Q26还本367万全部发生在9月，带动现金流入预算完成度达163%": "All US$3.67 million of 3Q26 principal repayment came in September, lifting cash inflow to 163% of budget.",
+    "9月现金还本主要为Oak Street及Global Atlantic项目退出及还本": "September's principal repayment came mainly from project exits and repayments at Oak Street and Global Atlantic.",
+    "9M26实际现金收益为2,102万、现金流入为3,104万": "9M26 actual cash income was US$21.02 million and cash inflow was US$31.04 million.",
+    "9M26收益预算完成度106%、现金流入完成度142%": "9M26 income reached 106% of budget and cash inflow 142%.",
+    "9M26现金流入高于预算916万，主要由1H26 PAG基金1Q26项目退及9月Oak Street项目退出": "9M26 cash inflow was US$9.16 million above budget, mainly from the PAG fund's 1Q26 project exit in 1H26 and the Oak Street project exit in September.",
+    "26年三季度总流出为1,616万": "Total outflow in the third quarter of 2026 was US$16.16 million.",
+    "26年第三季度预算完成度140%": "Budget completion for the third quarter of 2026 is 140%.",
+    "26年前三季度预算完成度118%": "Budget completion for the first three quarters of 2026 is 118%.",
+    "3只基金预计今年内结束call款：Global Atlantic, CLO Equity, PAG BRS": "Three funds are expected to finish their capital calls this year: Global Atlantic, CLO Equity, PAG BRS."
+  },
+  "notes": [],
+  "dismissed": []
+}

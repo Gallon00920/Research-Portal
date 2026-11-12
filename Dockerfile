@@ -6,12 +6,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends fonts-noto-cjk 
 
 WORKDIR /app
 COPY panel/requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY factors/requirements.txt ./factors-requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt -r factors-requirements.txt
 COPY panel/backend ./panel/backend
 COPY web ./web
 COPY panel/web ./panel/web
 COPY news/web ./news/web
 COPY news/data/news.json ./news/data/news.json
+COPY factors ./factors
 COPY panel/data/sectors.json ./panel/data/sectors.json
 
 ENV PORT=8765

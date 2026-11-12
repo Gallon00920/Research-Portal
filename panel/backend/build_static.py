@@ -7,8 +7,8 @@
       * data/index.json(.enc) rebuilt (all report metadata)
 
   python panel/backend/build_static.py --site site
-      copies web/ (shared shell), panel/web/ and news/web/ flat into site/, adds the report
-      data and news/data/news.json under site/data/, and writes site/config.js so the
+      copies web/ (shared shell), panel/web/, news/web/ and factors/web/ flat into site/, adds
+      the report data, news/data/news.json and factors/data/ under site/data/, and writes site/config.js so the
       frontend runs in static mode (reads data/, writes through the GitHub API).
 
 Files per report (panel/data/reports/<id>/):
@@ -42,7 +42,8 @@ REPORTS = DATA / "reports"
 INCOMING = ROOT / "incoming"
 OPS = ROOT / "ops"
 REPO = ROOT.parent  # repository root: web/ (shared shell), panel/, news/
-WEB_DIRS = (REPO / "web", ROOT / "web", REPO / "news" / "web")  # copied flat into the site, in this order
+WEB_DIRS = (REPO / "web", ROOT / "web", REPO / "news" / "web", REPO / "factors" / "web")  # copied flat into the site, in this order
+FACTORS_DATA = REPO / "factors" / "data"  # written by factors/scripts/extract_factors.py
 NEWS_DATA = REPO / "news" / "data" / "news.json"
 SALT_FILE = DATA / "salt.txt"
 
@@ -371,6 +372,13 @@ def build_site(out: Path, c: Crypto, repo: str, branch: str):
     # news tracker data, written hourly by news/scripts/update_news.py (served plain, never encrypted)
     if NEWS_DATA.exists():
         shutil.copy(NEWS_DATA, out / "data" / "news.json")
+    # fund key factors: monthly data + source images. They have no encrypted form, so an
+    # encrypted (password) site leaves them out rather than publish them in the clear.
+    if FACTORS_DATA.is_dir():
+        if c.on:
+            log("fund key factors data left out: the site is encrypted and this data is not")
+        else:
+            shutil.copytree(FACTORS_DATA, out / "data" / "factors")
     if REPORTS.exists():
         for d in REPORTS.iterdir():
             if not d.is_dir():

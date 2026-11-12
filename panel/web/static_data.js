@@ -196,6 +196,8 @@ window.DataLayer = (function(){
       await putFile(REPO_DIR + 'data/sectors.json', bytes, 'sectors: update');
       return {pending: true, sectors: list};
     },
+    /* commit one file to the repository (used by other features, e.g. factors/incoming uploads) */
+    async commitFile(path, bytes, message){ await putFile(path, bytes, message); return {pending: true}; },
     setTokenPrompt(fn){ askToken = fn; },
     token, setToken, checkToken,
     actionsUrl(){ return 'https://github.com/' + cfg.repo + '/actions'; },

@@ -1,0 +1,12 @@
+{
+  "performance": {
+    "hidden_budget_items": {
+      "about": "Projects that the fund performance table leaves out but its total row includes. When the budget column's total exceeds the sum of the rows by exactly the sum of these amounts, the page shows a note naming them instead of a warning. Edit the list when the hidden projects or their budgets change; an empty list turns the rule off. Then run: python factors/scripts/extract_factors.py --recheck",
+      "column": "预算|budget",
+      "items": [
+        {"name": "New - Fund1", "amount": 120000},
+        {"name": "New - Fund2", "amount": 200000}
+      ]
+    }
+  }
+}

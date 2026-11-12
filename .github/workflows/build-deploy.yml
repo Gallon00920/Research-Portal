@@ -36,18 +36,25 @@ jobs:
       - name: Install fonts (CJK) and Python packages
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq fonts-noto-cjk fonts-dejavu-core
-          pip install -r panel/requirements.txt cryptography
+          pip install -r panel/requirements.txt cryptography -r factors/requirements.txt
 
       - name: Parse uploads and apply edits
         env:
           PANEL_PASSWORD: ${{ secrets.PANEL_PASSWORD }}
         run: python panel/backend/build_static.py --apply --strip-plain
 
+      # Fund key factors: Claude reads each image the site committed to factors/incoming/ and
+      # writes that month's data. Without the secret the uploads simply wait for a later run.
+      - name: Read fund key factors images
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: python factors/scripts/extract_factors.py --apply
+
       - name: Commit parsed reports back to the repository
         run: |
           git config user.name "aid-panel-bot"
           git config user.email "aid-panel-bot@users.noreply.github.com"
-          git add -A panel/data panel/incoming panel/ops
+          git add -A panel/data panel/incoming panel/ops factors/data factors/incoming factors/failed
           if git diff --cached --quiet; then
             echo "nothing to commit"
           else

@@ -1,0 +1,256 @@
+{
+  "tab": "budget",
+  "year": 2026,
+  "month": 7,
+  "extracted_at": "2026-11-12T06:24:39+00:00",
+  "model": "claude-opus-5-5",
+  "source_image": "2026-07.png",
+  "title": "AWIS预算完成度",
+  "sections": [
+    {
+      "title": "3Q26 QTD AID现金流入 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "现金收益",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 731,
+                  "text": "731万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "现金收益",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 353,
+                  "text": "353万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "7月收息",
+                      "value": 159,
+                      "text": "159万"
+                    },
+                    {
+                      "label": "8月收息",
+                      "value": 194,
+                      "text": "194万"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "归还本金",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 5.8,
+                  "text": "5.8万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "归还本金",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 0,
+                  "text": "0万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            },
+            {
+              "title": "3Q26现金流入",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 736,
+                  "text": "736万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 353,
+                  "text": "353万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年7月实际收息159万，三季度总收息共353万",
+            "3Q26收益预算完成度48%、9M26收益预算完成度82%、还本预算完成度0%"
+          ]
+        },
+        {
+          "charts": [
+            {
+              "title": "9M26现金收益",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 1983,
+                  "text": "1,983万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 1623,
+                  "text": "1,623万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            },
+            {
+              "title": "9M26现金流入",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "预算",
+                  "kind": "budget",
+                  "value": 2188,
+                  "text": "2,188万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "实际",
+                  "kind": "actual",
+                  "value": 2235,
+                  "text": "2,235万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "9M26实际现金收益为1,623万、现金流入为2,235万",
+            "9M26收益占全年预算完成度82%、现金流入完成度102%",
+            "9M26现金流入高于预算47万，其中1H26还本高于预期，主要由于PAG基金1Q26有项目退出"
+          ]
+        }
+      ]
+    },
+    {
+      "title": "3Q26 QTD AID现金流出 (万美元)",
+      "blocks": [
+        {
+          "charts": [
+            {
+              "title": "",
+              "bars": [
+                {
+                  "group": "",
+                  "label": "3Q26 预算",
+                  "kind": "budget",
+                  "value": 1153,
+                  "text": "1,153万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "3Q26 实际",
+                  "kind": "actual",
+                  "value": 808,
+                  "text": "808万",
+                  "unit": "万",
+                  "segments": [
+                    {
+                      "label": "7月流出",
+                      "value": 102,
+                      "text": "102万"
+                    },
+                    {
+                      "label": "8月流出",
+                      "value": 706,
+                      "text": "706万"
+                    }
+                  ]
+                },
+                {
+                  "group": "",
+                  "label": "9M26 预算",
+                  "kind": "budget",
+                  "value": 3739,
+                  "text": "3,739万",
+                  "unit": "万",
+                  "segments": []
+                },
+                {
+                  "group": "",
+                  "label": "9M26 实际",
+                  "kind": "actual",
+                  "value": 3611,
+                  "text": "3,611万",
+                  "unit": "万",
+                  "segments": []
+                }
+              ]
+            }
+          ],
+          "notes": [
+            "26年三季度总流出截至目前808万",
+            "26年第三季度预算完成度70%",
+            "26年前三季度预算完成度97%"
+          ]
+        }
+      ]
+    }
+  ],
+  "warnings": [],
+  "en": {
+    "AWIS预算完成度": "AWIS Budget Completion",
+    "3Q26 QTD AID现金流入 (万美元)": "3Q26 QTD AID Cash Inflows (US$ million)",
+    "现金收益": "Cash income",
+    "预算": "Budget",
+    "实际": "Actual",
+    "7月收息": "Jul interest received",
+    "8月收息": "Aug interest received",
+    "归还本金": "Principal repaid",
+    "3Q26现金流入": "3Q26 Cash inflows",
+    "9M26现金收益": "9M26 Cash income",
+    "9M26现金流入": "9M26 Cash inflows",
+    "3Q26 QTD AID现金流出 (万美元)": "3Q26 QTD AID Cash Outflows (US$ million)",
+    "3Q26 预算": "3Q26 Budget",
+    "3Q26 实际": "3Q26 Actual",
+    "7月流出": "Jul outflows",
+    "8月流出": "Aug outflows",
+    "9M26 预算": "9M26 Budget",
+    "9M26 实际": "9M26 Actual",
+    "26年7月实际收息159万，三季度总收息共353万": "Actual interest received in July 2026 was 1.59 million, bringing total interest received in the third quarter to 3.53 million.",
+    "3Q26收益预算完成度48%、9M26收益预算完成度82%、还本预算完成度0%": "3Q26 income budget completion was 48%, 9M26 income budget completion was 82%, and principal repayment budget completion was 0%.",
+    "9M26实际现金收益为1,623万、现金流入为2,235万": "9M26 actual cash income was 16.23 million and cash inflows were 22.35 million.",
+    "9M26收益占全年预算完成度82%、现金流入完成度102%": "9M26 income reached 82% of the full-year budget, and cash inflows reached 102%.",
+    "9M26现金流入高于预算47万，其中1H26还本高于预期，主要由于PAG基金1Q26有项目退出": "9M26 cash inflows exceeded budget by 0.47 million, as 1H26 principal repayments were higher than expected, mainly due to a project exit in the PAG fund in 1Q26.",
+    "26年三季度总流出截至目前808万": "Total outflows for the third quarter of 2026 to date are 8.08 million.",
+    "26年第三季度预算完成度70%": "Budget completion for the third quarter of 2026 is 70%.",
+    "26年前三季度预算完成度97%": "Budget completion for the first three quarters of 2026 is 97%."
+  },
+  "notes": [],
+  "dismissed": []
+}
