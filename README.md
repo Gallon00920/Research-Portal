@@ -37,8 +37,9 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   switches: a click always jumps to the other option.
 - **Dashboard** (`#/`): a card per sector (code, latest quarter, coverage,
   quarters available) and a right-hand panel with the 6 most recently
-  uploaded reports in the current language from any sector. Sector names
-  also form the bar at the top of every page.
+  uploaded reports in the current language from any sector. **Upload
+  report** sits beside the sector list (and in the crumb bar of every
+  report page); the last card in the grid opens **Manage sectors**.
 - **Sector** (`#/s/<sector>`): opens the most recently uploaded report of
   that sector in the current language straight away (no card grid). If none
   exists you get a notice with an upload button and, when available, a link

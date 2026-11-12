@@ -82,7 +82,6 @@ select:focus,input:focus{border-color:var(--blue-500); outline:none}
 .mainnav button:hover{color:#fff}
 .mainnav button.active{color:#fff; border-bottom-color:var(--blue-500)}
 .mainnav button em{font-style:normal; font-size:10.5px; background:#1A3A61; padding:1px 6px; border-radius:8px; color:#9FB8D4; font-weight:600}
-.mainnav button.right{margin-left:auto}
 
 /* ───────── hero ───────── */
 .hero{position:relative; height:132px; overflow:hidden; background:linear-gradient(100deg, var(--hero-a) 0%, var(--hero-b) 55%, var(--hero-c) 100%)}
@@ -365,7 +364,7 @@ table.data tr:nth-child(even) td{background:var(--chip)}
   .filters label{flex:1 1 40%}
 }
 
-/* five tabs plus the upload button: on a narrow window the tabs tighten up before the bar has to scroll */
+/* five tabs: on a narrow window they tighten up before the bar has to scroll */
 @media (max-width: 960px){
   .mainnav-in{gap:0; scrollbar-width:thin}
   .mainnav button{padding:0 9px; font-size:12.5px; gap:5px}

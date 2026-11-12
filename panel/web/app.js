@@ -171,12 +171,7 @@ function buildNav(){
   factors.type = 'button'; factors.addEventListener('click', () => nav('#/factors'));
   n.appendChild(factors);
   SPACE_IDS.filter(sp => sp !== 'research').forEach(spaceBtn);
-  if (isPanel){
-    const up = el('button', 'right'); up.type = 'button';
-    up.textContent = '⬆ ' + t('upload_report');
-    up.addEventListener('click', () => openUpload(state.sectorId));
-    n.appendChild(up);
-  }
+  // "Upload report" sits on the dashboard beside the sector list and in a report page's crumb bar
 }
 
 /* ---------------------------------------------------------------- dashboard */
@@ -792,6 +787,8 @@ function wireUpload(){
   $('upCancel').addEventListener('click', closeUpload);
   $('upOverlay').addEventListener('click', e => { if (e.target === $('upOverlay')) closeUpload(); });
   $('uploadBtn').addEventListener('click', () => openUpload(state.sectorId));
+  // the dashboard's upload button: the sector picker lists the current space's sectors
+  $('dashUploadBtn').addEventListener('click', () => openUpload(null));
 }
 
 /* ---------------------------------------------------------------- sector manager (add / edit / remove) */
@@ -897,7 +894,6 @@ function renderSectorList(){
   });
 }
 function wireSectorManager(){
-  $('manageSectorsBtn').addEventListener('click', () => openSectorManager());
   $('secClose').addEventListener('click', closeSectorManager);
   $('secOverlay').addEventListener('click', e => { if (e.target === $('secOverlay')) closeSectorManager(); });
   $('secCancelEdit').addEventListener('click', () => fillSectorForm(null));
