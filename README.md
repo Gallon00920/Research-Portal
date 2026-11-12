@@ -1,6 +1,7 @@
 # AID Research Panel
 
-Live site: the GitHub Pages URL of the repository that hosts it (Settings → Pages).
+Live site: the GitHub Pages URL of the repository that hosts it (Settings → Pages),
+or in public link https://gallon00920.github.io/Research-Portal/
 
 Internal website that visualises AID quarterly research reports by sector.
 Reports are uploaded as `.docx` or `.pdf`, parsed into structured content
