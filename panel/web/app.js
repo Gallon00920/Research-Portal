@@ -71,7 +71,7 @@ function otherLang(){ return state.docLang === 'cn' ? 'en' : 'cn'; }
 function nav(hash){ if (location.hash === hash) route(); else location.hash = hash; window.scrollTo({top:0}); }
 function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : ''); }
 /* spaces: which dashboard a sector belongs to. Each has its own routes and strings; the order
-   here is the order of the tabs and of the parts of data/sectors.json */
+   here is the order of the parts of data/sectors.json (the tab order is set in buildNav) */
 const SPACES = {
   research:  {hash: '#/',          sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
   portfolio: {hash: '#/portfolio', sectorHash: '#/portfolio/s/', title: 'pm_title',   sub: 'pm_sub',   sectors: 'pm_sectors', nav: 'nav_portfolio'},
@@ -154,23 +154,21 @@ async function loadAll(){
 function buildNav(){
   const n = $('mainnav');
   n.innerHTML = '';
-  // the news tracker, the research panel (dashboard + sector reports), fund key factors, then
-  // the other spaces (the same dashboard + reports for other sector lists); sectors are
-  // opened from the cards on the dashboard
-  const news = el('button', state.view === 'news' ? 'active' : '', t('nav_news'));
-  news.type = 'button'; news.addEventListener('click', () => nav('#/news'));
-  n.appendChild(news);
+  // tab order: fund key factors, portfolio management, the news tracker, the research panel
+  // (dashboard + sector reports), then the remaining spaces (the same dashboard + reports for
+  // other sector lists); sectors are opened from the cards on the dashboard
   const isPanel = state.view !== 'news' && state.view !== 'factors';
-  const spaceBtn = (sp) => {
-    const b = el('button', isPanel && state.space === sp ? 'active' : '', t(SPACES[sp].nav));
-    b.type = 'button'; b.addEventListener('click', () => nav(SPACES[sp].hash));
+  const tab = (label, active, hash) => {
+    const b = el('button', active ? 'active' : '', label);
+    b.type = 'button'; b.addEventListener('click', () => nav(hash));
     n.appendChild(b);
   };
+  const spaceBtn = (sp) => tab(t(SPACES[sp].nav), isPanel && state.space === sp, SPACES[sp].hash);
+  tab(t('nav_factors'), state.view === 'factors', '#/factors');
+  spaceBtn('portfolio');
+  tab(t('nav_news'), state.view === 'news', '#/news');
   spaceBtn('research');
-  const factors = el('button', state.view === 'factors' ? 'active' : '', t('nav_factors'));
-  factors.type = 'button'; factors.addEventListener('click', () => nav('#/factors'));
-  n.appendChild(factors);
-  SPACE_IDS.filter(sp => sp !== 'research').forEach(spaceBtn);
+  SPACE_IDS.filter(sp => sp !== 'research' && sp !== 'portfolio').forEach(spaceBtn);
   // "Upload report" sits on the dashboard beside the sector list and in a report page's crumb bar
 }
 
