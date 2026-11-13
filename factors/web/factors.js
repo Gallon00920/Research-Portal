@@ -1,4 +1,4 @@
-/* Fund key factors — third view of the AID Research Panel (#/factors/<tab>/<YYYY-MM>).
+/* Investment performance (folder: factors) — third view of the AID Research Panel (#/factors/<tab>/<YYYY-MM>).
    Two sub-tabs, one month on screen at a time:
      performance  the fund performance table, drawn as a real table
      budget       the budget completion slide, drawn as real charts

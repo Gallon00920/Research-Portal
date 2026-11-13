@@ -8,7 +8,7 @@ Reports are uploaded as `.docx` or `.pdf`, parsed into structured content
 (headings, paragraphs, lists, tables, figures) and displayed in a reader that
 mirrors the AID Research Portal design. No database: every report lives as
 files under `panel/data/reports/<id>/`. The same site also hosts the
-**News tracker** and **Fund key factors** (see below); the three features
+**News tracker** and **Investment performance** (see below); the three features
 live in `panel/`, `news/` and `factors/`, and only the shared page shell is in
 `web/`.
 
@@ -76,19 +76,31 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   are "spaces" (the `SPACES` table in `panel/web/app.js`): every entry in
   `data/sectors.json` has a `space` field, `research` (the default when
   missing) or `portfolio`, and a report belongs to the space of its sector.
-  Fund pages open at `#/portfolio/s/<id>`; report pages keep `#/r/<id>` in
-  both spaces. Each dashboard lists and manages only its own space's
-  sectors, and "Upload report" offers only them; the manage dialog adds new
-  entries to the space it was opened from and leaves the other space's part
-  of the file untouched. Reports are stored, parsed and built exactly as
-  research reports.
-- **Macro / Market** (`#/macro`) works like Fund key factors, for slide
+  Each dashboard lists and manages only its own space's sectors, and
+  "Upload report" offers only them; the manage dialog adds new entries to
+  the space it was opened from and leaves the other space's part of the
+  file untouched. Reports are stored, parsed and built exactly as research
+  reports. The portfolio space has two **sub-sectors**, AID analysis and
+  Quarterly updates, as a tab strip under the title (`#/portfolio/internal`,
+  `#/portfolio/quarterly`). Each sub-sector has its own list of funds: a
+  fund belongs to one of them (`section` on its entry in
+  `data/sectors.json`), its "Manage sectors" shows and edits only that
+  sub-sector's funds, and the upload dialog lists the funds of the
+  sub-sector chosen in it (the same fund name in both sub-sectors gets two
+  entries, the second with the sub-sector as an id suffix). Every portfolio
+  report also carries the sub-sector in its metadata (`section`), and one
+  edition per fund, sub-sector, quarter, type and language is kept. "Mark as exited" on a card moves the fund to
+  the grey **Exited funds** section below the grid (`status: exited` in
+  `data/sectors.json`); "Set active" on a grey card brings it back. Fund
+  pages open at `#/portfolio/<section>/s/<id>`; report pages keep
+  `#/r/<id>` in both spaces.
+- **Macro / Market** (`#/macro`) works like Investment performance, for slide
   decks: see below.
 
 ## Macro / Market
 
 The "Macro / Market" tab (`#/macro`) holds one brief per month, rebuilt
-slide by slide from screenshots, with the same logic as Fund key factors.
+slide by slide from screenshots, with the same logic as Investment performance.
 You drop several slide images at once (PNG, JPEG or WebP; drag, choose or
 paste), put them in reading order (arrows in the list), give the brief a
 title and a month, and Claude reads each image in turn into one generic
@@ -182,9 +194,24 @@ the pipeline.
   figure or table, and "Source:/Note:/资料来源：/注：" lines become notes.
   Exhibits keep the document's own labels ("Exhibit 12", "图3"); those
   without a caption borrow the nearest heading in the index.
-- `panel/backend/parsers/pdf_parser.py` (PyMuPDF) extracts text blocks, detects
-  headings by font size, finds tables with `find_tables()` and renders
-  embedded images and vector charts to PNG.
+- `panel/backend/parsers/pdf_parser.py` (PyMuPDF) handles the layouts fund
+  quarterly updates come in: investor letters, portrait reports and slide
+  decks. It drops running headers, footers, watermarks and page numbers (a
+  line that recurs on at least half of the pages), reads text line by line
+  so that large, bold, underlined and letter-style section titles become
+  headings and wrapped headings are joined, keeps bullets together, takes
+  tables from the ruled-line detection and reads each cell from the words
+  inside it (a coloured band above a table becomes its caption, as does a
+  short title line right above it), finds vector charts by clustering the
+  drawings itself (donuts, stacked bars) and renders them with their labels
+  to PNG, as it does for pasted images, and takes the title from the largest
+  text on the first page. A chart is never rewritten as a table: the
+  ruled-line detection also returns bar charts (bar edges read as cell
+  borders) and line charts (gridlines read as rules), so every candidate is
+  tested first and a chart is cropped to a picture instead. Banded tables
+  (shaded rows, no ruling lines) are read from their shading, with a dark
+  title band as the caption; a table that cannot be read is shown as a
+  picture.
 - Every figure/table is numbered in document order; the list is returned as
   `exhibits` and drives the gallery, the side index and the index at the
   end of the article.
@@ -282,9 +309,9 @@ Run it locally with `python news/scripts/update_news.py --recent-days 3`
 token with *Actions: read and write* on this repository; it is kept in the
 browser only.
 
-## Fund key factors
+## Investment performance
 
-The "Fund key factors" tab (`#/factors`) shows two monthly sub-tabs, one month
+The "Investment performance" tab (`#/factors`, folder `factors/`, formerly "Fund key factors") shows two monthly sub-tabs, one month
 on screen at a time:
 
 - **Fund performance**: the fund performance table, drawn as a real table
@@ -415,7 +442,7 @@ news/                        the News tracker
   web/news.js, news.css      the view (module + scoped styles)
   scripts/, config/, docs/   news updater pipeline, its sources / weights, method
   data/news.json             news data (committed hourly by update-news.yml)
-factors/                     Fund key factors
+factors/                     Investment performance (fund key factors)
   web/factors.js, factors.css  the view: sub-tabs, month picker, charts, table, upload
   scripts/extract_factors.py   image -> Claude -> checked data
   data/<tab>/<YYYY-MM>.json    one month of data (+ the uploaded image); data/index.json

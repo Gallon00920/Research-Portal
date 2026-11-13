@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AID Research Panel | Junson Capital</title>
-<link rel="stylesheet" href="app.css?v=25">
-<link rel="stylesheet" href="news.css?v=25">
-<link rel="stylesheet" href="factors.css?v=25">
-<link rel="stylesheet" href="macro.css?v=25">
+<link rel="stylesheet" href="app.css?v=31">
+<link rel="stylesheet" href="news.css?v=31">
+<link rel="stylesheet" href="factors.css?v=31">
+<link rel="stylesheet" href="macro.css?v=31">
 </head>
 <body>
 
@@ -41,12 +41,19 @@
   </div>
   <div class="shell dash">
     <div class="doc-card dash-grid">
+      <!-- portfolio management only: its two sub-sectors (internal review, quarterly updates) -->
+      <nav class="sub-tabs" id="dashTabs" aria-label="sub-sectors" hidden></nav>
       <div class="dash-main">
         <div class="sec-head">
           <h2 id="dashSectorsH"></h2>
           <button type="button" class="btn primary small" id="dashUploadBtn">⬆ <span data-i18n="upload_report"></span></button>
         </div>
         <div class="sector-cards" id="sectorCards"></div>
+        <!-- portfolio management only: funds marked as exited, in grey, with a way back -->
+        <div class="exited-funds" id="exitedFunds" hidden>
+          <h2 data-i18n="exited_title"></h2>
+          <div class="sector-cards" id="exitedCards"></div>
+        </div>
       </div>
       <aside class="dash-side">
         <h2 data-i18n="latest_uploads"></h2>
@@ -404,6 +411,7 @@
       </div>
       <div class="grid2">
         <label><span data-i18n="u_sector"></span><select id="upSector" required></select></label>
+        <label id="upSectionLbl" hidden><span data-i18n="u_section"></span><select id="upSection"></select></label>
         <label id="upNatureLbl"><span data-i18n="u_nature"></span><select id="upNature"></select></label>
         <label><span id="upLangLbl" data-i18n="u_lang"></span><select id="upLang"></select></label>
         <label><span data-i18n="u_year"></span><input type="number" id="upYear" min="2000" max="2100" required></label>
@@ -505,11 +513,11 @@
 </div>
 
 <script src="config.js"></script>
-<script src="i18n.js?v=25"></script>
-<script src="static_data.js?v=25"></script>
-<script src="news.js?v=25"></script>
-<script src="factors.js?v=25"></script>
-<script src="macro.js?v=25"></script>
-<script src="app.js?v=25"></script>
+<script src="i18n.js?v=31"></script>
+<script src="static_data.js?v=31"></script>
+<script src="news.js?v=31"></script>
+<script src="factors.js?v=31"></script>
+<script src="macro.js?v=31"></script>
+<script src="app.js?v=31"></script>
 </body>
 </html>

@@ -194,8 +194,10 @@ def report_dir(rid: str) -> Path:
 
 
 def report_key(m: dict[str, Any]) -> tuple:
-    """One edition per sector + quarter + type + language; a new upload with the same key replaces the old one."""
-    return (m.get("sector"), m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
+    """One edition per sector + sub-sector + quarter + type + language; a new upload with the same key
+    replaces the old one. The sub-sector ("section": internal review / quarterly updates) exists for
+    portfolio funds only and is empty elsewhere."""
+    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
 
 
 def remove_duplicates(meta: dict[str, Any]) -> list[str]:
@@ -251,7 +253,10 @@ def api_add_sector(payload: dict[str, Any]):
     name_en = (payload.get("name_en") or "").strip()
     if not name_en:
         raise HTTPException(400, "name_en required")
-    sid = re.sub(r"[^a-z0-9]+", "_", name_en.lower()).strip("_") or f"sector_{uuid.uuid4().hex[:6]}"
+    # the site may send the id it chose (a fund of the other portfolio sub-sector with the same
+    # name gets a suffix); otherwise the id is the name's slug
+    given = str(payload.get("id") or "").strip()
+    sid = given if re.fullmatch(r"[a-z0-9_]{1,80}", given) else (re.sub(r"[^a-z0-9]+", "_", name_en.lower()).strip("_") or f"sector_{uuid.uuid4().hex[:6]}")
     if any(s["id"] == sid for s in sectors):
         raise HTTPException(409, "sector exists")
     code = (payload.get("code") or "".join(w[0] for w in name_en.split()[:3])).upper()[:4]
@@ -264,6 +269,8 @@ def api_add_sector(payload: dict[str, Any]):
         # which dashboard lists it: "research" (the default) or "portfolio" (Portfolio management)
         "space": payload.get("space") or "research",
     })
+    if payload.get("section"):  # the portfolio sub-sector the fund belongs to
+        sectors[-1]["section"] = str(payload["section"])
     save_sectors(sectors)
     return sectors[-1]
 
@@ -288,7 +295,7 @@ def api_update_sector(sid: str, payload: dict[str, Any]):
         if s["id"] == sid:
             if "name_en" in payload and not (payload["name_en"] or "").strip():
                 raise HTTPException(400, "name_en required")
-            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space"):
+            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space", "section"):
                 if k in payload and payload[k] is not None:
                     s[k] = payload[k]
             save_sectors(sectors)
@@ -368,6 +375,8 @@ def api_update_report(rid: str, payload: dict[str, Any]):
     for k in ("title", "nature", "language", "sector"):
         if k in payload and payload[k]:
             meta[k] = payload[k]
+    if "section" in payload:  # the portfolio sub-sector; empty for research reports
+        meta["section"] = str(payload.get("section") or "")
     if "keywords" in payload:
         kws = payload["keywords"]
         if isinstance(kws, str):
@@ -447,7 +456,7 @@ def _write_content(d: Path, meta: dict[str, Any], parsed: dict[str, Any], keep_t
 
 
 def ingest_report(src_path: Path, source_name: str, sector: str, year: int | None, quarter: int | None,
-                  nature: str = "full", language: str = "", title: str = "", keywords: str = "") -> dict[str, Any]:
+                  nature: str = "full", language: str = "", title: str = "", keywords: str = "", section: str = "") -> dict[str, Any]:
     """Store one .docx / .pdf as a report: copy it into a new report folder, parse it, write meta +
     content, and replace any earlier edition with the same sector, quarter, type and language.
     Used by the upload endpoint and by AI generation."""
@@ -487,6 +496,7 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
         "period_key": period_key(year, quarter),
         "nature": nature,
         "language": language if language in ("en", "cn") else "",
+        "section": (section or "").strip(),
         "keywords": kws,
         "source_name": source_name,
         "source_ext": ext,
@@ -502,7 +512,7 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
 @app.post("/api/upload")
 async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year: int | None = Form(None),
                      quarter: int | None = Form(None), nature: str = Form("full"), language: str = Form(""),
-                     title: str = Form(""), keywords: str = Form("")):
+                     title: str = Form(""), keywords: str = Form(""), section: str = Form("")):
     ext = Path(file.filename or "").suffix.lower()
     if ext not in (".docx", ".pdf"):
         raise HTTPException(400, "Only .docx and .pdf reports are supported")
@@ -510,7 +520,7 @@ async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year
     try:
         with tmp.open("wb") as fh:
             shutil.copyfileobj(file.file, fh)
-        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords)
+        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords, section)
     finally:
         tmp.unlink(missing_ok=True)
 
