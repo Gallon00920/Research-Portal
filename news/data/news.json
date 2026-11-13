@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-13T04:57:17.688190+00:00",
+  "updatedAt": "2026-11-13T12:58:23.245981+00:00",
   "scope": {
     "regions": [
       "US",
@@ -182899,6 +182899,95 @@
               "finalScore": 19.1,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-11-7e0f4222f2d9",
+            "title": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] - WWD",
+            "titleZh": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] - WWD",
+            "summary": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] WWD",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVWNQWWlId2F5MG5TYWxQVGhzeks1dUtKeDhPbTFhM0Ezc2hPNzNrUjZNekFGdnFvWlpSSW8tb1JRWnpTa0s5M0xPT1Q1SXVJb2ZteWpObjFfcF9VU091UHM5RGxoS1pvcXNMV3gyazdiSEZlaWVmQnlkd3RmNUFHSTRjS0NZUmljZmplU245aEdneWZpWDZpS3RmcHNHWkVXdjFHSUpoRlE?oc=5",
+            "source": "WWD",
+            "publishedAt": "2026-11-11",
+            "lede": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] WWD",
+            "articleExcerpt": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] - WWD. Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] WWD",
+            "contentFingerprint": "384486cc33e75f80",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.33
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "WWD"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.02,
+              "finalScore": 7.02,
+              "semanticEnabled": true
+            }
           }
         ],
         "Neuberger": [
@@ -186564,6 +186653,95 @@
           }
         },
         {
+          "id": "2026-11-11-7e0f4222f2d9",
+          "title": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] - WWD",
+          "titleZh": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] - WWD",
+          "summary": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] WWD",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVWNQWWlId2F5MG5TYWxQVGhzeks1dUtKeDhPbTFhM0Ezc2hPNzNrUjZNekFGdnFvWlpSSW8tb1JRWnpTa0s5M0xPT1Q1SXVJb2ZteWpObjFfcF9VU091UHM5RGxoS1pvcXNMV3gyazdiSEZlaWVmQnlkd3RmNUFHSTRjS0NZUmljZmplU245aEdneWZpWDZpS3RmcHNHWkVXdjFHSUpoRlE?oc=5",
+          "source": "WWD",
+          "publishedAt": "2026-11-11",
+          "lede": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] WWD",
+          "articleExcerpt": "Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] - WWD. Janelle Monae, Jordan Roth and More Attend the Guggenheim Benefit 2026 [PHOTOS] WWD",
+          "contentFingerprint": "384486cc33e75f80",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.33
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "WWD"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.02,
+            "finalScore": 7.02,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-11-fe184d46fa0b",
           "title": "Neuberger Berman Group LLC Trims Stock Yards Bancorp Inc (SYBT) Stake by 7.88% - GuruFocus",
           "titleZh": "Neuberger Berman Group LLC Trims Stock Yards Bancorp Inc (SYBT) Stake by 7.88% - GuruFocus",
@@ -189188,12 +189366,209 @@
               "finalScore": 17.46,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-95a5f58dd899",
+            "title": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 - Moomoo",
+            "titleZh": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 - Moomoo",
+            "summary": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 Moomoo",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZWV0YW04eEU5SlJzd1NxTVBBcUhySTcxUVRiRzdXdW1IWWJsVWluRHp6UG1TV0RRdENHbXFDR0Q5VlhmY1lCVXA4a3RINVhuVmlSUkpmNE9QY29pS3pULVBFZHIydFRlRVJrRHo5cXJuOThQZndDalE4WGRUazBoQ242c0w0eDAzQ0loMno2Vk0wZzhmam5QN3Iwd0FnOXUwVXhWOTljWmg?oc=5",
+            "source": "Moomoo",
+            "publishedAt": "2026-11-12",
+            "lede": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 Moomoo",
+            "articleExcerpt": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 - Moomoo. RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 Moomoo",
+            "contentFingerprint": "5fa38902c8192f57",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Moomoo"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.42,
+              "finalScore": 20.42,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [],
         "CIFC": [],
         "PAG": [],
-        "Pretium": [],
+        "Pretium": [
+          {
+            "id": "2026-11-12-eb0b45558e05",
+            "title": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance",
+            "titleZh": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance",
+            "summary": "Progress Residential Pays $49.7M to Settle FTC Rental Case Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZzdCdlU5Y1RzX2kzVnRKM2JCNWZpeG1lRXBZbmVTM08tWGloVndXVHJaS3hJOE9mV1hFcURfanRLZFp0Uk9OV0djV1B1OWRmWDlmVDdaMHZMNUh6cmJRQ01iNHVRbkhkallTc2JPajV3cWtPUVYxWjJHang1VThYa2U0cE5vbTVkdU9JMVRZY0RJUjRnOTFUNw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-12",
+            "lede": "Progress Residential Pays $49.7M to Settle FTC Rental Case Yahoo Finance",
+            "articleExcerpt": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance. Progress Residential Pays $49.7M to Settle FTC Rental Case Yahoo Finance",
+            "contentFingerprint": "4ad1f9999005f823",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.33
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 59,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 3.97,
+              "finalScore": 14.97,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Guggenheim": [
           {
             "id": "2026-11-12-8f57368623ab",
@@ -190347,6 +190722,109 @@
               "finalScore": 16.38,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-9db6d05b1b0d",
+            "title": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny - www.pei-privaterealestate.com",
+            "titleZh": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny - www.pei-privaterealestate.com",
+            "summary": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny www.pei-privaterealestate.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSUdEWm9tMU5fendQc2tsTWdiTmV2RDVvdnRWamFrNjExdVpXQ191ZS01SHhYZUMwVVBOMmVwWTVIVmxEbXJhSkgzNXpsVGNoRk9NWE53VEdLTnE3NlhaTDAxd202YVU2QUVBcENhQnlBek9LZlh3bUhiUm1Ka1VucTFIZTZVdGNGR1FObXd1MjRLb25mNFdOQWRkZFY1MVlRdnBzY3ZHTFZUUFVzVjEwd2VRNGJHZVFmU1RpUmFjVHJpY2c5UjNpdHlrbXNIeTdzbmZWVEhCUlloT2gzY0YyWA?oc=5",
+            "source": "www.pei-privaterealestate.com",
+            "publishedAt": "2026-11-12",
+            "lede": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny www.pei-privaterealestate.com",
+            "articleExcerpt": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny - www.pei-privaterealestate.com. Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny www.pei-privaterealestate.com",
+            "contentFingerprint": "14a6d951b04724ff",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.8,
+                  "code": "fundraising",
+                  "ruleValue": 0.8,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "www.pei-privaterealestate.com"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.9,
+              "finalScore": 19.9,
+              "semanticEnabled": true
+            }
           }
         ],
         "Apollo": [
@@ -190549,6 +191027,99 @@
               "keywordScore": 14,
               "semanticScore": 5.23,
               "finalScore": 19.23,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-6c57ee485bab",
+            "title": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+            "titleZh": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+            "summary": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVkxqc1RQYnVvNER1YzBDRTNGeHljY05zZ1lIMHE1U3ZEUmhaY1ByaXZiMnN3SGg2QWtsTUFoSHB3VlMyci1ocGxEeWRHeFp4MVRqSVR3M1R4NGxGM1hkRV9BWm12VFBtdnRNR0tuTEhFUVpXQ0hDRnVlRFVUTkxVcTdpUHVRLWtBeEROY1pyQjliZw?oc=5",
+            "source": "Briefs Finance",
+            "publishedAt": "2026-11-12",
+            "lede": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+            "articleExcerpt": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance. Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+            "contentFingerprint": "5a945f5599ee8522",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Briefs Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.88,
+              "finalScore": 16.88,
               "semanticEnabled": true
             }
           }
@@ -191753,6 +192324,202 @@
           }
         },
         {
+          "id": "2026-11-12-95a5f58dd899",
+          "title": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 - Moomoo",
+          "titleZh": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 - Moomoo",
+          "summary": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 Moomoo",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQZWV0YW04eEU5SlJzd1NxTVBBcUhySTcxUVRiRzdXdW1IWWJsVWluRHp6UG1TV0RRdENHbXFDR0Q5VlhmY1lCVXA4a3RINVhuVmlSUkpmNE9QY29pS3pULVBFZHIydFRlRVJrRHo5cXJuOThQZndDalE4WGRUazBoQ242c0w0eDAzQ0loMno2Vk0wZzhmam5QN3Iwd0FnOXUwVXhWOTljWmg?oc=5",
+          "source": "Moomoo",
+          "publishedAt": "2026-11-12",
+          "lede": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 Moomoo",
+          "articleExcerpt": "RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 - Moomoo. RBC Capital Maintains Blue Owl Capital(OBDC.US) With Buy Rating, Maintains Target Price $13 Moomoo",
+          "contentFingerprint": "5fa38902c8192f57",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Moomoo"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.42,
+            "finalScore": 20.42,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-eb0b45558e05",
+          "title": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance",
+          "titleZh": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance",
+          "summary": "Progress Residential Pays $49.7M to Settle FTC Rental Case Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQZzdCdlU5Y1RzX2kzVnRKM2JCNWZpeG1lRXBZbmVTM08tWGloVndXVHJaS3hJOE9mV1hFcURfanRLZFp0Uk9OV0djV1B1OWRmWDlmVDdaMHZMNUh6cmJRQ01iNHVRbkhkallTc2JPajV3cWtPUVYxWjJHang1VThYa2U0cE5vbTVkdU9JMVRZY0RJUjRnOTFUNw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-12",
+          "lede": "Progress Residential Pays $49.7M to Settle FTC Rental Case Yahoo Finance",
+          "articleExcerpt": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance. Progress Residential Pays $49.7M to Settle FTC Rental Case Yahoo Finance",
+          "contentFingerprint": "4ad1f9999005f823",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.33
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 59,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 3.97,
+            "finalScore": 14.97,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-8f57368623ab",
           "title": "Guggenheim Floating Rate Strategies Fund Q3 2026 Commentary - Seeking Alpha",
           "titleZh": "Guggenheim Floating Rate Strategies Fund Q3 2026 Commentary - Seeking Alpha",
@@ -192899,6 +193666,109 @@
           }
         },
         {
+          "id": "2026-11-12-9db6d05b1b0d",
+          "title": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny - www.pei-privaterealestate.com",
+          "titleZh": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny - www.pei-privaterealestate.com",
+          "summary": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny www.pei-privaterealestate.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOSUdEWm9tMU5fendQc2tsTWdiTmV2RDVvdnRWamFrNjExdVpXQ191ZS01SHhYZUMwVVBOMmVwWTVIVmxEbXJhSkgzNXpsVGNoRk9NWE53VEdLTnE3NlhaTDAxd202YVU2QUVBcENhQnlBek9LZlh3bUhiUm1Ka1VucTFIZTZVdGNGR1FObXd1MjRLb25mNFdOQWRkZFY1MVlRdnBzY3ZHTFZUUFVzVjEwd2VRNGJHZVFmU1RpUmFjVHJpY2c5UjNpdHlrbXNIeTdzbmZWVEhCUlloT2gzY0YyWA?oc=5",
+          "source": "www.pei-privaterealestate.com",
+          "publishedAt": "2026-11-12",
+          "lede": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny www.pei-privaterealestate.com",
+          "articleExcerpt": "Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny - www.pei-privaterealestate.com. Term Sheet: Deutsche AM’s fundraise; Blackstone’s Nashville deployment; Australia’s private credit scrutiny www.pei-privaterealestate.com",
+          "contentFingerprint": "14a6d951b04724ff",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.8,
+                "code": "fundraising",
+                "ruleValue": 0.8,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "www.pei-privaterealestate.com"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.9,
+            "finalScore": 19.9,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-271c6fb35d05",
           "title": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - Yahoo Finance",
           "titleZh": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - Yahoo Finance",
@@ -193097,6 +193967,99 @@
             "keywordScore": 14,
             "semanticScore": 5.23,
             "finalScore": 19.23,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-6c57ee485bab",
+          "title": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+          "titleZh": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+          "summary": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVkxqc1RQYnVvNER1YzBDRTNGeHljY05zZ1lIMHE1U3ZEUmhaY1ByaXZiMnN3SGg2QWtsTUFoSHB3VlMyci1ocGxEeWRHeFp4MVRqSVR3M1R4NGxGM1hkRV9BWm12VFBtdnRNR0tuTEhFUVpXQ0hDRnVlRFVUTkxVcTdpUHVRLWtBeEROY1pyQjliZw?oc=5",
+          "source": "Briefs Finance",
+          "publishedAt": "2026-11-12",
+          "lede": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+          "articleExcerpt": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance. Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+          "contentFingerprint": "5a945f5599ee8522",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Briefs Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.88,
+            "finalScore": 16.88,
             "semanticEnabled": true
           }
         },
@@ -194192,14 +195155,407 @@
               "finalScore": 16.86,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-8f1f8facb25c",
+            "title": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? - MarketBeat",
+            "titleZh": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? - MarketBeat",
+            "summary": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOakhEcW1nRWVMbUpKWWpxUUMyQmc5WEkxbTE1RFVDZG9jNlk2ZDRZcDZNeERmQ3ZfZTktZHRVUWZjSWVrZjNGTi15Y3JLN29OcFl5X2JpOEhJdUZ2MVNHUDFEVk1maVpIcFdkLWplRDFnNDA5d3RGWGo2dmIwMTBvUjFsZGdFdVZ3TGs1NGdpRjhmRTB1OHlIbkRGRmMxYUFjdDhnM3R2OWl0V01sM1lCRzE3eXlIYXRUY2x2dGtIRXc0bjRKQkRrVURNT045aXAwZndvSlRZSzBLNE00cXpMOQ?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-13",
+            "lede": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? MarketBeat",
+            "articleExcerpt": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? - MarketBeat. Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? MarketBeat",
+            "contentFingerprint": "00a8e8e8d48f9d3c",
+            "region": "US",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 54,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 5.94,
+              "finalScore": 21.94,
+              "semanticEnabled": true
+            }
           }
         ],
-        "KKR": [],
+        "KKR": [
+          {
+            "id": "2026-11-13-38f5200fcaa3",
+            "title": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai",
+            "titleZh": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai",
+            "summary": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front MLQ.ai",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPY1hpb2pxN29pZC1KMWF3MTFnVHROSU9aTThVTnRFWFRfRHR2cHVvYUY4YTNpVGlpcU5yV01EUTBCSXJQeHVmWXd6UVBLeWxKNmhVYkdyUGxCU0M3Y0dCUmJqWkU3N2hxdWZKT01vaHF5Z1p2a0xDWllDUWg2NTNqYW1BQnRWZUt6RTJseTB6cHZoMDd1TWtMQzV2NDBTRXptZzBkNDM4RFF3X3dJMmd3OUtJMA?oc=5",
+            "source": "MLQ.ai",
+            "publishedAt": "2026-11-13",
+            "lede": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front MLQ.ai",
+            "articleExcerpt": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai. Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front MLQ.ai",
+            "contentFingerprint": "4527f969db907987",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.7,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "MLQ.ai"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 79,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 4.75,
+              "finalScore": 18.75,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CIFC": [],
         "PAG": [],
-        "Pretium": [],
+        "Pretium": [
+          {
+            "id": "2026-11-13-68f83b55f7bd",
+            "title": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down",
+            "titleZh": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down",
+            "summary": "Progress Residential must disclose full rental costs under $48.5 million settlement The Cool Down",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUEpwdGlwS0dVei1ybjRjUkJGZEFfcjljY2RsdWhLclM4WHpoR1VRUEJFdi1uV2R6UDU4T0dZNThCUC0yQ2NGcE1EcTN6ellMcmdXWDVyOS1aMTJERDNiRE5pdlIzbTNxVnpOOXRmOUpZd0ZPX3NqUVBRaFpQSS14SmswbkVWOHdtbjZMdHAwcjJKcGRMWm5J?oc=5",
+            "source": "The Cool Down",
+            "publishedAt": "2026-11-13",
+            "lede": "Progress Residential must disclose full rental costs under $48.5 million settlement The Cool Down",
+            "articleExcerpt": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down. Progress Residential must disclose full rental costs under $48.5 million settlement The Cool Down",
+            "contentFingerprint": "6116f99702bf791c",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "lawsuit"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.1,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.2
+                },
+                "event": {
+                  "value": 1.0,
+                  "code": "lawsuit",
+                  "ruleValue": 1.0,
+                  "events": [
+                    "lawsuit"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "The Cool Down"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 73,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 2.45,
+              "finalScore": 13.45,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Guggenheim": [],
-        "Neuberger": [],
+        "Neuberger": [
+          {
+            "id": "2026-11-13-eded4b60a6c2",
+            "title": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+            "titleZh": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+            "summary": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZWpDb1V2TE5zZENjNHQtNzdsYjJNbzJBR1NyY2ktWmxOXzVWcU9MbVpjOFYwN2s3UXJqdG8tQlN4azQ2UmVtRDNOOHZqX1o4a0FvT2VLSWZYd0wzV0huV2NXSmVDNmFPdVg2Q0pLUjlvNUROb084YmpPR1N1alFuZ0I2N0xMdEJtMkgycVVUQ1hvbnY5WHdVaTVoU0w0bGdvODluRU1ZUkRLVzd5THBBR1VUUGFfdUtUTElF?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-13",
+            "lede": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+            "articleExcerpt": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman. Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+            "contentFingerprint": "85773ccd7b0b0efa",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.69,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 4.53,
+              "finalScore": 10.530000000000001,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "BasePoint": [],
         "Bain Capital": [
           {
@@ -194403,8 +195759,198 @@
           }
         ],
         "TPG": [],
-        "Golub": [],
-        "CVC": [],
+        "Golub": [
+          {
+            "id": "2026-11-13-6393e5c2e410",
+            "title": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
+            "titleZh": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
+            "summary": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October Investing.com Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNa3lsUFRkZnJhYVpzbkJPX2l6NV9qMUJ2SER1eWhnYmZTSGItNUd4VThPQjhvM0xrUkl2bjJkY0FUb0RKeHJiX3pIaWt4WmlQQzJhaElIN05KMXNUZ2Y0MDg5OWEtNkIxSjg2V2g0M0U5MEZRZlpVTURxNlBYdXRTWENjVVFRVlJ0Ynlma2VBN2xHUkZHbVZrbU9QNkZpbDhDUUF0ZHlxanlMTWk3YVpBNmZxZTFnYVhGaEtZbjRxbmp0Z0RUMzJoY0ctakdMdXRPZTUzVmg2S0JWakhfaWtOZXM3QjBFYWs?oc=5",
+            "source": "Investing.com Canada",
+            "publishedAt": "2026-11-13",
+            "lede": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October Investing.com Canada",
+            "articleExcerpt": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada. Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October Investing.com Canada",
+            "contentFingerprint": "1c356a3d3013fae7",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.55
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 54,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.6,
+              "finalScore": 20.6,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "CVC": [
+          {
+            "id": "2026-11-13-6362bca9ebc5",
+            "title": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com",
+            "titleZh": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com",
+            "summary": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale Moneycontrol.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWmJXUVRjWXJxRHpwNVN3bUxDVmVQZ2tYaGg4YUtpV25ZU3VHMUNJSnF6azUwNHRnYTBNTTE5WndjcTUyYnhDQ2VmNEtmZG5lRWVveTJkSnRVdDhodHc1N0RzN0sxTGJFUkNtWEhTcVBja2ZyNEZRS0RsSUVUcWxnU0d2Tl9iTXBYZk1pOHlFTFliM3JpNTUtNXEzbGRFUnhoSl91SUR2bUU2ek9qSUdINURtc2J2WDRndkRiRFdCckQ1YmZDT0xfRkNnbC1GVS01UWg3aUgtN2lUOW5zWkhhUE5BbzltOUt4VEJz0gHrAUFVX3lxTFBaYldRVGNZcnFEenA1U3dtTENWZVBna1hoaDhhS2lXbllTdUcxQ0lKcXprNTA0dGdhME1NMTlad2NxNTJieENDZWY0S2ZkbmVFZW95MmRKdFV0OGh0dzU3RHM3SzFMYkVSQ21YSFNxUGNrZnI0RlFLRGxJRVRxbGdTR3ZOX2JNcFhmTWk4eUVMWWIzcmk1NS01cTNsZEVSeGhKX3VJRHZtRTZ6T2pJR0g1RG1zYnZYNGd2RGJEV0JyRDViZkNPTF9GQ2dsLUZVLTVRaDdpSC03aVQ5bnNaSGFQTkFvOW05S3hUQnM?oc=5",
+            "source": "Moneycontrol.com",
+            "publishedAt": "2026-11-13",
+            "lede": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale Moneycontrol.com",
+            "articleExcerpt": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com. CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale Moneycontrol.com",
+            "contentFingerprint": "7ef7fcf8f4132be4",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Moneycontrol.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.85,
+              "finalScore": 7.85,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Canyon": []
       },
       "items": [
@@ -194591,6 +196137,396 @@
             "keywordScore": 11,
             "semanticScore": 5.86,
             "finalScore": 16.86,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-8f1f8facb25c",
+          "title": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? - MarketBeat",
+          "titleZh": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? - MarketBeat",
+          "summary": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxOakhEcW1nRWVMbUpKWWpxUUMyQmc5WEkxbTE1RFVDZG9jNlk2ZDRZcDZNeERmQ3ZfZTktZHRVUWZjSWVrZjNGTi15Y3JLN29OcFl5X2JpOEhJdUZ2MVNHUDFEVk1maVpIcFdkLWplRDFnNDA5d3RGWGo2dmIwMTBvUjFsZGdFdVZ3TGs1NGdpRjhmRTB1OHlIbkRGRmMxYUFjdDhnM3R2OWl0V01sM1lCRzE3eXlIYXRUY2x2dGtIRXc0bjRKQkRrVURNT045aXAwZndvSlRZSzBLNE00cXpMOQ?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-13",
+          "lede": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? MarketBeat",
+          "articleExcerpt": "Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? - MarketBeat. Blue Owl Capital (NYSE:OBDC) Share Price Breaks Below 200 Day Moving Average - Time to Sell? MarketBeat",
+          "contentFingerprint": "00a8e8e8d48f9d3c",
+          "region": "US",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 54,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 5.94,
+            "finalScore": 21.94,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-38f5200fcaa3",
+          "title": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai",
+          "titleZh": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai",
+          "summary": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front MLQ.ai",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPY1hpb2pxN29pZC1KMWF3MTFnVHROSU9aTThVTnRFWFRfRHR2cHVvYUY4YTNpVGlpcU5yV01EUTBCSXJQeHVmWXd6UVBLeWxKNmhVYkdyUGxCU0M3Y0dCUmJqWkU3N2hxdWZKT01vaHF5Z1p2a0xDWllDUWg2NTNqYW1BQnRWZUt6RTJseTB6cHZoMDd1TWtMQzV2NDBTRXptZzBkNDM4RFF3X3dJMmd3OUtJMA?oc=5",
+          "source": "MLQ.ai",
+          "publishedAt": "2026-11-13",
+          "lede": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front MLQ.ai",
+          "articleExcerpt": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai. Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front MLQ.ai",
+          "contentFingerprint": "4527f969db907987",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.7,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "MLQ.ai"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 79,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 4.75,
+            "finalScore": 18.75,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-68f83b55f7bd",
+          "title": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down",
+          "titleZh": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down",
+          "summary": "Progress Residential must disclose full rental costs under $48.5 million settlement The Cool Down",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOUEpwdGlwS0dVei1ybjRjUkJGZEFfcjljY2RsdWhLclM4WHpoR1VRUEJFdi1uV2R6UDU4T0dZNThCUC0yQ2NGcE1EcTN6ellMcmdXWDVyOS1aMTJERDNiRE5pdlIzbTNxVnpOOXRmOUpZd0ZPX3NqUVBRaFpQSS14SmswbkVWOHdtbjZMdHAwcjJKcGRMWm5J?oc=5",
+          "source": "The Cool Down",
+          "publishedAt": "2026-11-13",
+          "lede": "Progress Residential must disclose full rental costs under $48.5 million settlement The Cool Down",
+          "articleExcerpt": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down. Progress Residential must disclose full rental costs under $48.5 million settlement The Cool Down",
+          "contentFingerprint": "6116f99702bf791c",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "lawsuit"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.1,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.2
+              },
+              "event": {
+                "value": 1.0,
+                "code": "lawsuit",
+                "ruleValue": 1.0,
+                "events": [
+                  "lawsuit"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "The Cool Down"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 73,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 2.45,
+            "finalScore": 13.45,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-eded4b60a6c2",
+          "title": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+          "titleZh": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+          "summary": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZWpDb1V2TE5zZENjNHQtNzdsYjJNbzJBR1NyY2ktWmxOXzVWcU9MbVpjOFYwN2s3UXJqdG8tQlN4azQ2UmVtRDNOOHZqX1o4a0FvT2VLSWZYd0wzV0huV2NXSmVDNmFPdVg2Q0pLUjlvNUROb084YmpPR1N1alFuZ0I2N0xMdEJtMkgycVVUQ1hvbnY5WHdVaTVoU0w0bGdvODluRU1ZUkRLVzd5THBBR1VUUGFfdUtUTElF?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-13",
+          "lede": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+          "articleExcerpt": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman. Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+          "contentFingerprint": "85773ccd7b0b0efa",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.69,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 4.53,
+            "finalScore": 10.530000000000001,
             "semanticEnabled": true
           }
         },
@@ -194789,6 +196725,194 @@
             "finalScore": 16.88,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-13-6393e5c2e410",
+          "title": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
+          "titleZh": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
+          "summary": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October Investing.com Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNa3lsUFRkZnJhYVpzbkJPX2l6NV9qMUJ2SER1eWhnYmZTSGItNUd4VThPQjhvM0xrUkl2bjJkY0FUb0RKeHJiX3pIaWt4WmlQQzJhaElIN05KMXNUZ2Y0MDg5OWEtNkIxSjg2V2g0M0U5MEZRZlpVTURxNlBYdXRTWENjVVFRVlJ0Ynlma2VBN2xHUkZHbVZrbU9QNkZpbDhDUUF0ZHlxanlMTWk3YVpBNmZxZTFnYVhGaEtZbjRxbmp0Z0RUMzJoY0ctakdMdXRPZTUzVmg2S0JWakhfaWtOZXM3QjBFYWs?oc=5",
+          "source": "Investing.com Canada",
+          "publishedAt": "2026-11-13",
+          "lede": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October Investing.com Canada",
+          "articleExcerpt": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada. Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October Investing.com Canada",
+          "contentFingerprint": "1c356a3d3013fae7",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.55
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 54,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.6,
+            "finalScore": 20.6,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-6362bca9ebc5",
+          "title": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com",
+          "titleZh": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com",
+          "summary": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale Moneycontrol.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxQWmJXUVRjWXJxRHpwNVN3bUxDVmVQZ2tYaGg4YUtpV25ZU3VHMUNJSnF6azUwNHRnYTBNTTE5WndjcTUyYnhDQ2VmNEtmZG5lRWVveTJkSnRVdDhodHc1N0RzN0sxTGJFUkNtWEhTcVBja2ZyNEZRS0RsSUVUcWxnU0d2Tl9iTXBYZk1pOHlFTFliM3JpNTUtNXEzbGRFUnhoSl91SUR2bUU2ek9qSUdINURtc2J2WDRndkRiRFdCckQ1YmZDT0xfRkNnbC1GVS01UWg3aUgtN2lUOW5zWkhhUE5BbzltOUt4VEJz0gHrAUFVX3lxTFBaYldRVGNZcnFEenA1U3dtTENWZVBna1hoaDhhS2lXbllTdUcxQ0lKcXprNTA0dGdhME1NMTlad2NxNTJieENDZWY0S2ZkbmVFZW95MmRKdFV0OGh0dzU3RHM3SzFMYkVSQ21YSFNxUGNrZnI0RlFLRGxJRVRxbGdTR3ZOX2JNcFhmTWk4eUVMWWIzcmk1NS01cTNsZEVSeGhKX3VJRHZtRTZ6T2pJR0g1RG1zYnZYNGd2RGJEV0JyRDViZkNPTF9GQ2dsLUZVLTVRaDdpSC03aVQ5bnNaSGFQTkFvOW05S3hUQnM?oc=5",
+          "source": "Moneycontrol.com",
+          "publishedAt": "2026-11-13",
+          "lede": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale Moneycontrol.com",
+          "articleExcerpt": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com. CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale Moneycontrol.com",
+          "contentFingerprint": "7ef7fcf8f4132be4",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Moneycontrol.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-13T12:51:44.788449+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.85,
+            "finalScore": 7.85,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -194796,7 +196920,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 17,
+      "count": 14,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -194804,7 +196928,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
@@ -194817,7 +196941,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
@@ -194830,12 +196954,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 17,
+      "count": 15,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -194843,38 +196967,38 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 6,
-      "selected": 1,
+      "count": 8,
+      "selected": 3,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 6,
-      "selected": 4,
+      "count": 7,
+      "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 11,
+      "count": 12,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -194882,7 +197006,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
@@ -194895,12 +197019,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 32,
+      "count": 29,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -194908,7 +197032,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
@@ -194921,12 +197045,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 32,
+      "count": 36,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -194934,7 +197058,7 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
@@ -194947,25 +197071,25 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
       "count": 4,
-      "selected": 0,
+      "selected": 1,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
       "queries": [
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 18,
+      "count": 17,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -194973,12 +197097,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 26,
+      "count": 25,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -194986,12 +197110,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 657,
+      "count": 639,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -195008,9 +197132,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-13T04:51:48.734535+00:00",
+      "asOf": "2026-11-13T12:51:44.788449+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-13T04:51:48.734535+00:00"
+  "checkedAt": "2026-11-13T12:51:44.788449+00:00"
 }
