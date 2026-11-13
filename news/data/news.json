@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-12T23:21:39.209100+00:00",
+  "updatedAt": "2026-11-13T04:57:17.688190+00:00",
   "scope": {
     "regions": [
       "US",
@@ -181578,7 +181578,97 @@
     },
     "2026-11-11": {
       "byGp": {
-        "Blue Owl": [],
+        "Blue Owl": [
+          {
+            "id": "2026-11-11-7e3119fc0ed2",
+            "title": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? - Simply Wall St",
+            "titleZh": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? - Simply Wall St",
+            "summary": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? Simply Wall St",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdkVGZ0xidjJyZUU3SjItWDVyOXhELThhMFowLVR6Yk02V3A4MjFMMW92Um1XWGR0Nm1lWEtidlZfT0dONGh5T0lCeDdVMGowOWtacjlsd3hhR1haUkR5emNVekJBdlIySTBNQ3Q2VzYwNHp6aUVXc2xQVHF3b3dGdk1JMXFLU3ptUEkzakVyYXJaak1ucl9SRF94ekdNR0NmRzlyM1lFZExWNHV5VkYtQ0k1Z3NIMlFVUUNkc3ZJaE5UeXpuM1FuYTVodWRjakx3NXh3Wm1wbXBkdlczaGJB0gHkAUFVX3lxTE9faGI4Skk3SFgwTHJJU0hyejFjUS1DWm51bi1rUDQ3a2VGOTZ0bVpERG1hSFdObzVxMy0ybWZSbEhPNHRudUFrNEh0emd6OXFYNFhHRnU2X2lmcXNUeHBjdmxhUFBpaHRDZjUxZExUVFFZVTNhcEMtNlUxd1hEWmphMlpVSGtsbWVRamluY2dMRWF1ZlMzckVGTWxxdjFyZ3pVdmZVVHNyUngwY2lqMWZXNHNCdGNnU2trbVAxeDE0TDFheElfOVluY0YwdmlNWGdpWXdEdm9SR1NhejNEMWVFTmtkZw?oc=5",
+            "source": "Simply Wall St",
+            "publishedAt": "2026-11-11",
+            "lede": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? Simply Wall St",
+            "articleExcerpt": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? - Simply Wall St. Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? Simply Wall St",
+            "contentFingerprint": "d184449e40b455b8",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.51
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Simply Wall St"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 44,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 6.16,
+              "finalScore": 9.16,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "KKR": [
           {
             "id": "2026-11-11-b487dde7c813",
@@ -183573,9 +183663,295 @@
               "finalScore": 22.18,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-11-e0b909cf156c",
+            "title": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target - Investing.com",
+            "titleZh": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target - Investing.com",
+            "summary": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target Investing.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQVh3VGRPTGJ4ZFhySUJPYUVoVXhMRzdqdlFzMW5NSjlXOFhWd2h3WGtOSVo2TzIzbFNRekdMemFPTV9tX2FENUluSmNuU1BpOTBEU3hHZkFzM0t6d1VueEVNZDZCNlJPcXJCWEJ3dXl2TnBabUF2VDJZWDhTRUxEeXFIdGp3em9PTXdVWHZjZFlPU1lMbjFZZjgyVEhuR0Z6d1RzX245OXNCS2t6Y2JiRktMd2M2cFA5YXFrM0lqUWJESENpdjhtdkdR?oc=5",
+            "source": "Investing.com",
+            "publishedAt": "2026-11-11",
+            "lede": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target Investing.com",
+            "articleExcerpt": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target - Investing.com. Lucid Capital Markets cuts Bain Capital Specialty Finance price target Investing.com",
+            "contentFingerprint": "a3d85d5cad291f70",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.74,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.66,
+              "finalScore": 19.66,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-11-a087e04efdeb",
+            "title": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets - PEI Secondaries Investor",
+            "titleZh": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets - PEI Secondaries Investor",
+            "summary": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets PEI Secondaries Investor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVERmLWpmckQ5dWdodmV5clBpRmp6R1pLVFpDUVdfSV84SzhXTjdEd1lsR2hWWW5DOFMtWm14blp1bW54ZWNJTmZVdU5ra2hJN2RXZXJScDBFQUZrUXctOWRMdll4QWxrN2VJMTVmdkNBbE9yUFBvQnVSZHpjVVRzaVkyLXUyVEVBclR0Y3FVc0pyUXdLQVZEalo2d19DZ0NjNUhISg?oc=5",
+            "source": "PEI Secondaries Investor",
+            "publishedAt": "2026-11-11",
+            "lede": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets PEI Secondaries Investor",
+            "articleExcerpt": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets - PEI Secondaries Investor. Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets PEI Secondaries Investor",
+            "contentFingerprint": "ece19b38db17245f",
+            "region": "US",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "PEI Secondaries Investor"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 59,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 8,
+              "semanticScore": 5.16,
+              "finalScore": 13.16,
+              "semanticEnabled": true
+            }
           }
         ],
-        "Blackstone": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-11-c023c1eeb173",
+            "title": "Blackstone eyes $3B real estate secondaries fund - Briefs Finance",
+            "titleZh": "Blackstone eyes $3B real estate secondaries fund - Briefs Finance",
+            "summary": "Blackstone eyes $3B real estate secondaries fund Briefs Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdW05c1Fxa1AyTmpFRXd4RVV2X2h5ZnRwOWZXNFNGNTgwRE5KU2REbmJaLVJHcmg5c2ZkOEthQU1heFdHTDVPT1RpZHZTX3JKQllJYjhyNEhSUlZ1ZHlFemxXMzJveUJ5elNobzBJaXhDNjkzTlU2RkNBMV9NbWVHNzhYeHFfQ1lldVlUVlptLUh0QQ?oc=5",
+            "source": "Briefs Finance",
+            "publishedAt": "2026-11-11",
+            "lede": "Blackstone eyes $3B real estate secondaries fund Briefs Finance",
+            "articleExcerpt": "Blackstone eyes $3B real estate secondaries fund - Briefs Finance. Blackstone eyes $3B real estate secondaries fund Briefs Finance",
+            "contentFingerprint": "3816a219710d2a49",
+            "region": "US",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Briefs Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 4.99,
+              "finalScore": 17.990000000000002,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Apollo": [
           {
             "id": "2026-11-11-02c2886e2e05",
@@ -184225,6 +184601,99 @@
               "finalScore": 16.84,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-11-aeef64e34870",
+            "title": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences - Yahoo Finance",
+            "titleZh": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences - Yahoo Finance",
+            "summary": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVlBkUVNUUmpKVG81WVJkb2x6czI3c21SdHltVFpQa1VYTTFqbHNvelFxZmQtWDVoV1VxWE5VMTVpN2hzXzRQNmtYY0p4MW0xZjZLUVNkV2ZfaDEtUmFfeUQ1TE9lcTVfSFc0cU9PVzl4VUM3ckcxOGM1MVM1YjRtY204MHU2WGY2eXY1RUdPU3VGb3hlV2h2MEhtbHVBVGNoeVE1eE8xYw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-11",
+            "lede": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences Yahoo Finance",
+            "articleExcerpt": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences - Yahoo Finance. Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences Yahoo Finance",
+            "contentFingerprint": "cfb75bec5a7bdf82",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.61,
+              "finalScore": 16.61,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [
@@ -184781,6 +185250,95 @@
         "Canyon": []
       },
       "items": [
+        {
+          "id": "2026-11-11-7e3119fc0ed2",
+          "title": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? - Simply Wall St",
+          "titleZh": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? - Simply Wall St",
+          "summary": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? Simply Wall St",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxNdkVGZ0xidjJyZUU3SjItWDVyOXhELThhMFowLVR6Yk02V3A4MjFMMW92Um1XWGR0Nm1lWEtidlZfT0dONGh5T0lCeDdVMGowOWtacjlsd3hhR1haUkR5emNVekJBdlIySTBNQ3Q2VzYwNHp6aUVXc2xQVHF3b3dGdk1JMXFLU3ptUEkzakVyYXJaak1ucl9SRF94ekdNR0NmRzlyM1lFZExWNHV5VkYtQ0k1Z3NIMlFVUUNkc3ZJaE5UeXpuM1FuYTVodWRjakx3NXh3Wm1wbXBkdlczaGJB0gHkAUFVX3lxTE9faGI4Skk3SFgwTHJJU0hyejFjUS1DWm51bi1rUDQ3a2VGOTZ0bVpERG1hSFdObzVxMy0ybWZSbEhPNHRudUFrNEh0emd6OXFYNFhHRnU2X2lmcXNUeHBjdmxhUFBpaHRDZjUxZExUVFFZVTNhcEMtNlUxd1hEWmphMlpVSGtsbWVRamluY2dMRWF1ZlMzckVGTWxxdjFyZ3pVdmZVVHNyUngwY2lqMWZXNHNCdGNnU2trbVAxeDE0TDFheElfOVluY0YwdmlNWGdpWXdEdm9SR1NhejNEMWVFTmtkZw?oc=5",
+          "source": "Simply Wall St",
+          "publishedAt": "2026-11-11",
+          "lede": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? Simply Wall St",
+          "articleExcerpt": "Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? - Simply Wall St. Blue Owl Capital (OWL) Reports Higher Earnings And Steady Dividend, Is It 21% Undervalued? Simply Wall St",
+          "contentFingerprint": "d184449e40b455b8",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.51
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Simply Wall St"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 44,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 6.16,
+            "finalScore": 9.16,
+            "semanticEnabled": true
+          }
+        },
         {
           "id": "2026-11-11-b487dde7c813",
           "title": "RWE and KKR secure £12 billion offshore wind financing - grafa.com",
@@ -186765,6 +187323,291 @@
           }
         },
         {
+          "id": "2026-11-11-e0b909cf156c",
+          "title": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target - Investing.com",
+          "titleZh": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target - Investing.com",
+          "summary": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target Investing.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOQVh3VGRPTGJ4ZFhySUJPYUVoVXhMRzdqdlFzMW5NSjlXOFhWd2h3WGtOSVo2TzIzbFNRekdMemFPTV9tX2FENUluSmNuU1BpOTBEU3hHZkFzM0t6d1VueEVNZDZCNlJPcXJCWEJ3dXl2TnBabUF2VDJZWDhTRUxEeXFIdGp3em9PTXdVWHZjZFlPU1lMbjFZZjgyVEhuR0Z6d1RzX245OXNCS2t6Y2JiRktMd2M2cFA5YXFrM0lqUWJESENpdjhtdkdR?oc=5",
+          "source": "Investing.com",
+          "publishedAt": "2026-11-11",
+          "lede": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target Investing.com",
+          "articleExcerpt": "Lucid Capital Markets cuts Bain Capital Specialty Finance price target - Investing.com. Lucid Capital Markets cuts Bain Capital Specialty Finance price target Investing.com",
+          "contentFingerprint": "a3d85d5cad291f70",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.74,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.66,
+            "finalScore": 19.66,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-11-a087e04efdeb",
+          "title": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets - PEI Secondaries Investor",
+          "titleZh": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets - PEI Secondaries Investor",
+          "summary": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets PEI Secondaries Investor",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOVERmLWpmckQ5dWdodmV5clBpRmp6R1pLVFpDUVdfSV84SzhXTjdEd1lsR2hWWW5DOFMtWm14blp1bW54ZWNJTmZVdU5ra2hJN2RXZXJScDBFQUZrUXctOWRMdll4QWxrN2VJMTVmdkNBbE9yUFBvQnVSZHpjVVRzaVkyLXUyVEVBclR0Y3FVc0pyUXdLQVZEalo2d19DZ0NjNUhISg?oc=5",
+          "source": "PEI Secondaries Investor",
+          "publishedAt": "2026-11-11",
+          "lede": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets PEI Secondaries Investor",
+          "articleExcerpt": "Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets - PEI Secondaries Investor. Bain Capital’s Gordon: CVs are ‘valid long-term tools’ in private markets PEI Secondaries Investor",
+          "contentFingerprint": "ece19b38db17245f",
+          "region": "US",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.8,
+                "code": "tier_trade",
+                "source": "PEI Secondaries Investor"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 59,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 8,
+            "semanticScore": 5.16,
+            "finalScore": 13.16,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-11-c023c1eeb173",
+          "title": "Blackstone eyes $3B real estate secondaries fund - Briefs Finance",
+          "titleZh": "Blackstone eyes $3B real estate secondaries fund - Briefs Finance",
+          "summary": "Blackstone eyes $3B real estate secondaries fund Briefs Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPdW05c1Fxa1AyTmpFRXd4RVV2X2h5ZnRwOWZXNFNGNTgwRE5KU2REbmJaLVJHcmg5c2ZkOEthQU1heFdHTDVPT1RpZHZTX3JKQllJYjhyNEhSUlZ1ZHlFemxXMzJveUJ5elNobzBJaXhDNjkzTlU2RkNBMV9NbWVHNzhYeHFfQ1lldVlUVlptLUh0QQ?oc=5",
+          "source": "Briefs Finance",
+          "publishedAt": "2026-11-11",
+          "lede": "Blackstone eyes $3B real estate secondaries fund Briefs Finance",
+          "articleExcerpt": "Blackstone eyes $3B real estate secondaries fund - Briefs Finance. Blackstone eyes $3B real estate secondaries fund Briefs Finance",
+          "contentFingerprint": "3816a219710d2a49",
+          "region": "US",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Briefs Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 4.99,
+            "finalScore": 17.990000000000002,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-11-02c2886e2e05",
           "title": "ONEOK: Inside The $4.4B Brazos Acquisition, Apollo Deal, And Barnett Upside (NYSE:OKE) - Seeking Alpha",
           "titleZh": "ONEOK: Inside The $4.4B Brazos Acquisition, Apollo Deal, And Barnett Upside (NYSE:OKE) - Seeking Alpha",
@@ -187410,6 +188253,99 @@
             "keywordScore": 11,
             "semanticScore": 5.84,
             "finalScore": 16.84,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-11-aeef64e34870",
+          "title": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences - Yahoo Finance",
+          "titleZh": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences - Yahoo Finance",
+          "summary": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNVlBkUVNUUmpKVG81WVJkb2x6czI3c21SdHltVFpQa1VYTTFqbHNvelFxZmQtWDVoV1VxWE5VMTVpN2hzXzRQNmtYY0p4MW0xZjZLUVNkV2ZfaDEtUmFfeUQ1TE9lcTVfSFc0cU9PVzl4VUM3ckcxOGM1MVM1YjRtY204MHU2WGY2eXY1RUdPU3VGb3hlV2h2MEhtbHVBVGNoeVE1eE8xYw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-11",
+          "lede": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences Yahoo Finance",
+          "articleExcerpt": "Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences - Yahoo Finance. Woxsen University and Apollo Healthcare Academy Sign MoU to Launch a Department of Allied Health Sciences Yahoo Finance",
+          "contentFingerprint": "cfb75bec5a7bdf82",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.61,
+            "finalScore": 16.61,
             "semanticEnabled": true
           }
         },
@@ -188624,10 +189560,306 @@
               "finalScore": 7.7,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-1c587bc72ad5",
+            "title": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart - Yahoo Finance UK",
+            "titleZh": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart - Yahoo Finance UK",
+            "summary": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1TY0l0cVdoMktxUWx1M2hKUGRxV1l5TWx2RWkxQ0I4M0F6X2NtWVZEa3NOejVtdWtRd1V2aTB1cnp0akI1YUF3cDRpYzFKQVh2NXRScnd3VmlIbTlQLXFIY0lhOA?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-12",
+            "lede": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart Yahoo Finance UK",
+            "articleExcerpt": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart - Yahoo Finance UK. Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart Yahoo Finance UK",
+            "contentFingerprint": "293ce7c1099d576d",
+            "region": "Europe",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 4.72,
+              "finalScore": 16.72,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-507397824444",
+            "title": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+            "titleZh": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+            "summary": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMkNOV0k0NUR3dldIZkg5MnVhaF9BeTJPTzJQMkY2YWFSZEo4MTRiR3RRa1BFQTJ5VHBtemJEZDNkNkJyVVdHdGNfd0RvUUJBQl9takItb0pMWXdOTTJiWFQ2dUtxNjg4SHluSFlzbnlHYVdLTzhMa1hqWmZNaUtiWkR6TGhwbVA5NDJ6UW5pNXF1MXJWMkZlUlBNRTNDbFZocDVZZ1Q0YzgyTVlPd1MtakNScEtJaFF0YnFKdWkzUQ?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-12",
+            "lede": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+            "articleExcerpt": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman. Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+            "contentFingerprint": "e519406e4f82d31a",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.69,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 4.53,
+              "finalScore": 10.530000000000001,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
-        "Bain Capital": [],
+        "Bain Capital": [
+          {
+            "id": "2026-11-12-9a24783742e7",
+            "title": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) - The Globe and Mail",
+            "titleZh": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) - The Globe and Mail",
+            "summary": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) The Globe and Mail",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOMGwyT2Q2YXRTamFLTkxxWmdQMjVnYWhfQjdJbVFSYUFBdkVwQllLdUQ3VXQycF9iS0cxVVJvTkVOanZOd3FYT3g3cHJMSkk5bzJ5d093Z0RTT1Z0WEswYWxySmFaMDFsbm96bWhxeFc3Q09HdmtDUUhBaUlNLVdzc0FUQm9VMzhZS1JlVWU1OHB1WUNMdzdyQkJqbTRSd0k0UmdmSGlvbHdxMGhXRktlcmx0dEk1SVIxekpSYkN6WUNNVXc3UEdvY0swby13VWcyOGdqMDgxZ3F2NTctZGxCaF94N3B1TE9oNnF5bm1MZU1OQUhvOHA2OWtXWGVzdWM3ZjRfejhVSHRrYTNHNFpxbWNUWXRBVXBJSHdpc0V3YzNtUVJZQmU0STRYR2s?oc=5",
+            "source": "The Globe and Mail",
+            "publishedAt": "2026-11-12",
+            "lede": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) The Globe and Mail",
+            "articleExcerpt": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) - The Globe and Mail. Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) The Globe and Mail",
+            "contentFingerprint": "90e4658ebf18664e",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "The Globe and Mail"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.43,
+              "finalScore": 19.43,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Blackstone": [
           {
             "id": "2026-11-12-5c007591a546",
@@ -188828,6 +190060,291 @@
               "keywordScore": 16,
               "semanticScore": 5.28,
               "finalScore": 21.28,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-ea282b8419da",
+            "title": "Data center campuses developer backed by Blackstone bags over $1.5B in financing - TradingView",
+            "titleZh": "Data center campuses developer backed by Blackstone bags over $1.5B in financing - TradingView",
+            "summary": "Data center campuses developer backed by Blackstone bags over $1.5B in financing TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbU5DSVp0akoyakJ2V0VtQTZ5U1BrcXptZ2N2c1N0RWZYUkpRQ3NQRzFHZTAyTXBra1BDOEJySmZ0cVFPdHNvQjNQV1V4aXZwWHdsYnkwS1U5WWdKLUtFVU9GakoyMWhqaHppMDBIc3BMZW9jdkllNTd4eEg4UzNZRmtIbHNScW55dk1VWGpONTJMc2MxeHNQNHNfWjFxb2Rnb2I4M1M4c3hPdU9USjgyZWU0YkpqMWtFZkNLaE9mRjg5YlVUc1E0ZkF1eXpQanpta0VQcTdrUEhlZw?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-12",
+            "lede": "Data center campuses developer backed by Blackstone bags over $1.5B in financing TradingView",
+            "articleExcerpt": "Data center campuses developer backed by Blackstone bags over $1.5B in financing - TradingView. Data center campuses developer backed by Blackstone bags over $1.5B in financing TradingView",
+            "contentFingerprint": "44eaccb1c46e62da",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.69,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 71,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 4.62,
+              "finalScore": 18.62,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-a54a029a0e6c",
+            "title": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program - Yahoo Finance",
+            "titleZh": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program - Yahoo Finance",
+            "summary": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSC1tT0cxZFFLcFM5TzZvaDNyMGRSZHlEV3RHTk54WmJNcEZXQTVSLTdfNFViWDRTaEVZV2tza2JsNnRGRXJLR2tsS1FfLTAwRU1CeXh6cVFyX25PUHdVRk16T1BEVkRDUEc2OXl1TU83ZmEwWWxIeFZtT2NuUG14X3VHYXdFX25pZW5KU0pNVi1zZw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-12",
+            "lede": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program Yahoo Finance",
+            "articleExcerpt": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program - Yahoo Finance. Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program Yahoo Finance",
+            "contentFingerprint": "3f3a540126cd25e2",
+            "region": "US",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 4.7,
+              "finalScore": 17.7,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-d3a7ff42c975",
+            "title": "Blackstone opens Dubai office in push for Gulf wealth - Alternative Credit Investor",
+            "titleZh": "Blackstone opens Dubai office in push for Gulf wealth - Alternative Credit Investor",
+            "summary": "Blackstone opens Dubai office in push for Gulf wealth Alternative Credit Investor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFFRWEFYRktNNmhHNG1WeWxiN2xrMkk5ZXpmdjlfOWYtVkVDdUswNmhaaC1qakd3WUo0bmp3aXN4MlZpVXhnQVZQNEdRemZjZTNHTlZHN0s1WmlBMnlZZGl5cVp2SVN0M2wtbUgwLUdWSDQwVkc0NkpBUUpFMkJjOFZEMTVHVkxFMkJxTkVOT3F6UmhaRXpoY2ZPTG1aLXdyUE9MR2VB?oc=5",
+            "source": "Alternative Credit Investor",
+            "publishedAt": "2026-11-12",
+            "lede": "Blackstone opens Dubai office in push for Gulf wealth Alternative Credit Investor",
+            "articleExcerpt": "Blackstone opens Dubai office in push for Gulf wealth - Alternative Credit Investor. Blackstone opens Dubai office in push for Gulf wealth Alternative Credit Investor",
+            "contentFingerprint": "b31cbb68185df817",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "Alternative Credit Investor"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.38,
+              "finalScore": 16.38,
               "semanticEnabled": true
             }
           }
@@ -189848,6 +191365,99 @@
               "finalScore": 8.27,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-ba29a37c9655",
+            "title": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5JNHBSZHJRaEZPenlNOHR0cDJUakxsWWt3NmJncG5WbS1MYkp6QjB3blBEbGU1S3Zjb3YwQkI4aWVhNDBqN2Qya1NfV1BnT2NGNXN0eQ?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-12",
+            "lede": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History - Yahoo! Finance Canada. CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "b10cd6aafc4fd6ed",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.83,
+              "finalScore": 16.83,
+              "semanticEnabled": true
+            }
           }
         ],
         "Canyon": []
@@ -190507,6 +192117,301 @@
           }
         },
         {
+          "id": "2026-11-12-1c587bc72ad5",
+          "title": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart - Yahoo Finance UK",
+          "titleZh": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart - Yahoo Finance UK",
+          "summary": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE1TY0l0cVdoMktxUWx1M2hKUGRxV1l5TWx2RWkxQ0I4M0F6X2NtWVZEa3NOejVtdWtRd1V2aTB1cnp0akI1YUF3cDRpYzFKQVh2NXRScnd3VmlIbTlQLXFIY0lhOA?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-12",
+          "lede": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart Yahoo Finance UK",
+          "articleExcerpt": "Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart - Yahoo Finance UK. Neuberger Berman Real Estate R6 (NRREX) Seasonal returns chart Yahoo Finance UK",
+          "contentFingerprint": "293ce7c1099d576d",
+          "region": "Europe",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 4.72,
+            "finalScore": 16.72,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-507397824444",
+          "title": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+          "titleZh": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
+          "summary": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOMkNOV0k0NUR3dldIZkg5MnVhaF9BeTJPTzJQMkY2YWFSZEo4MTRiR3RRa1BFQTJ5VHBtemJEZDNkNkJyVVdHdGNfd0RvUUJBQl9takItb0pMWXdOTTJiWFQ2dUtxNjg4SHluSFlzbnlHYVdLTzhMa1hqWmZNaUtiWkR6TGhwbVA5NDJ6UW5pNXF1MXJWMkZlUlBNRTNDbFZocDVZZ1Q0YzgyTVlPd1MtakNScEtJaFF0YnFKdWkzUQ?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-12",
+          "lede": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+          "articleExcerpt": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman. Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI Neuberger Berman",
+          "contentFingerprint": "e519406e4f82d31a",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.69,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 4.53,
+            "finalScore": 10.530000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-9a24783742e7",
+          "title": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) - The Globe and Mail",
+          "titleZh": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) - The Globe and Mail",
+          "summary": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) The Globe and Mail",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirAJBVV95cUxOMGwyT2Q2YXRTamFLTkxxWmdQMjVnYWhfQjdJbVFSYUFBdkVwQllLdUQ3VXQycF9iS0cxVVJvTkVOanZOd3FYT3g3cHJMSkk5bzJ5d093Z0RTT1Z0WEswYWxySmFaMDFsbm96bWhxeFc3Q09HdmtDUUhBaUlNLVdzc0FUQm9VMzhZS1JlVWU1OHB1WUNMdzdyQkJqbTRSd0k0UmdmSGlvbHdxMGhXRktlcmx0dEk1SVIxekpSYkN6WUNNVXc3UEdvY0swby13VWcyOGdqMDgxZ3F2NTctZGxCaF94N3B1TE9oNnF5bm1MZU1OQUhvOHA2OWtXWGVzdWM3ZjRfejhVSHRrYTNHNFpxbWNUWXRBVXBJSHdpc0V3YzNtUVJZQmU0STRYR2s?oc=5",
+          "source": "The Globe and Mail",
+          "publishedAt": "2026-11-12",
+          "lede": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) The Globe and Mail",
+          "articleExcerpt": "Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) - The Globe and Mail. Analysts Conflicted on These Financial Names: Factset Research (FDS), Allstate (ALL) and Bain Capital Specialty Finance (BCSF) The Globe and Mail",
+          "contentFingerprint": "90e4658ebf18664e",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "The Globe and Mail"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.43,
+            "finalScore": 19.43,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-5c007591a546",
           "title": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
           "titleZh": "Blackstone-Backed Data Center Firm Adds $1.5 Billion Financing - Bloomberg.com",
@@ -190705,6 +192610,291 @@
             "keywordScore": 16,
             "semanticScore": 5.28,
             "finalScore": 21.28,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-ea282b8419da",
+          "title": "Data center campuses developer backed by Blackstone bags over $1.5B in financing - TradingView",
+          "titleZh": "Data center campuses developer backed by Blackstone bags over $1.5B in financing - TradingView",
+          "summary": "Data center campuses developer backed by Blackstone bags over $1.5B in financing TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbU5DSVp0akoyakJ2V0VtQTZ5U1BrcXptZ2N2c1N0RWZYUkpRQ3NQRzFHZTAyTXBra1BDOEJySmZ0cVFPdHNvQjNQV1V4aXZwWHdsYnkwS1U5WWdKLUtFVU9GakoyMWhqaHppMDBIc3BMZW9jdkllNTd4eEg4UzNZRmtIbHNScW55dk1VWGpONTJMc2MxeHNQNHNfWjFxb2Rnb2I4M1M4c3hPdU9USjgyZWU0YkpqMWtFZkNLaE9mRjg5YlVUc1E0ZkF1eXpQanpta0VQcTdrUEhlZw?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-12",
+          "lede": "Data center campuses developer backed by Blackstone bags over $1.5B in financing TradingView",
+          "articleExcerpt": "Data center campuses developer backed by Blackstone bags over $1.5B in financing - TradingView. Data center campuses developer backed by Blackstone bags over $1.5B in financing TradingView",
+          "contentFingerprint": "44eaccb1c46e62da",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.69,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 71,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 4.62,
+            "finalScore": 18.62,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-a54a029a0e6c",
+          "title": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program - Yahoo Finance",
+          "titleZh": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program - Yahoo Finance",
+          "summary": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQSC1tT0cxZFFLcFM5TzZvaDNyMGRSZHlEV3RHTk54WmJNcEZXQTVSLTdfNFViWDRTaEVZV2tza2JsNnRGRXJLR2tsS1FfLTAwRU1CeXh6cVFyX25PUHdVRk16T1BEVkRDUEc2OXl1TU83ZmEwWWxIeFZtT2NuUG14X3VHYXdFX25pZW5KU0pNVi1zZw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-12",
+          "lede": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program Yahoo Finance",
+          "articleExcerpt": "Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program - Yahoo Finance. Pfizer Secures Up to $1.5B Funding From Blackstone for Obesity Program Yahoo Finance",
+          "contentFingerprint": "3f3a540126cd25e2",
+          "region": "US",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 4.7,
+            "finalScore": 17.7,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-d3a7ff42c975",
+          "title": "Blackstone opens Dubai office in push for Gulf wealth - Alternative Credit Investor",
+          "titleZh": "Blackstone opens Dubai office in push for Gulf wealth - Alternative Credit Investor",
+          "summary": "Blackstone opens Dubai office in push for Gulf wealth Alternative Credit Investor",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQeFFRWEFYRktNNmhHNG1WeWxiN2xrMkk5ZXpmdjlfOWYtVkVDdUswNmhaaC1qakd3WUo0bmp3aXN4MlZpVXhnQVZQNEdRemZjZTNHTlZHN0s1WmlBMnlZZGl5cVp2SVN0M2wtbUgwLUdWSDQwVkc0NkpBUUpFMkJjOFZEMTVHVkxFMkJxTkVOT3F6UmhaRXpoY2ZPTG1aLXdyUE9MR2VB?oc=5",
+          "source": "Alternative Credit Investor",
+          "publishedAt": "2026-11-12",
+          "lede": "Blackstone opens Dubai office in push for Gulf wealth Alternative Credit Investor",
+          "articleExcerpt": "Blackstone opens Dubai office in push for Gulf wealth - Alternative Credit Investor. Blackstone opens Dubai office in push for Gulf wealth Alternative Credit Investor",
+          "contentFingerprint": "b31cbb68185df817",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.8,
+                "code": "tier_trade",
+                "source": "Alternative Credit Investor"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.38,
+            "finalScore": 16.38,
             "semanticEnabled": true
           }
         },
@@ -191718,6 +193908,887 @@
             "finalScore": 8.27,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-12-ba29a37c9655",
+          "title": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE5JNHBSZHJRaEZPenlNOHR0cDJUakxsWWt3NmJncG5WbS1MYkp6QjB3blBEbGU1S3Zjb3YwQkI4aWVhNDBqN2Qya1NfV1BnT2NGNXN0eQ?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-12",
+          "lede": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History - Yahoo! Finance Canada. CVC Capital Partners plc (CVC.AS) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "b10cd6aafc4fd6ed",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.83,
+            "finalScore": 16.83,
+            "semanticEnabled": true
+          }
+        }
+      ]
+    },
+    "2026-11-13": {
+      "byGp": {
+        "Blue Owl": [
+          {
+            "id": "2026-11-13-369f636ccb7b",
+            "title": "Blue Owl Technology Finance: Dividend Cut More Than Priced In - Seeking Alpha",
+            "titleZh": "Blue Owl Technology Finance: Dividend Cut More Than Priced In - Seeking Alpha",
+            "summary": "Blue Owl Technology Finance: Dividend Cut More Than Priced In Seeking Alpha",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOTR4clpMR2VNN3FWRVBKQWozN2VLandFOGlvX1dsV2VxdkRMYWYtVUJUTzE3N25EZEpLYzRfUkxYb09NTldGRkZZSTN6SzB2aXdDb0MxYktOWl9HeFd6M1VxMjJtRS1OOFFhX1lrOFh6RzloZGpnMGhPbVczSkJBZkJJRHR3TkdQWkg0aGhiNkFyOThOSVRyUXl0emhxSzA2WDFn?oc=5",
+            "source": "Seeking Alpha",
+            "publishedAt": "2026-11-13",
+            "lede": "Blue Owl Technology Finance: Dividend Cut More Than Priced In Seeking Alpha",
+            "articleExcerpt": "Blue Owl Technology Finance: Dividend Cut More Than Priced In - Seeking Alpha. Blue Owl Technology Finance: Dividend Cut More Than Priced In Seeking Alpha",
+            "contentFingerprint": "ee64f26aaa9c5ccf",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Seeking Alpha"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.22,
+              "finalScore": 17.22,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-1011c73a75c6",
+            "title": "Blue Owl Technology Finance trades at 42% disco... - Pluang",
+            "titleZh": "Blue Owl Technology Finance trades at 42% disco... - Pluang",
+            "summary": "Blue Owl Technology Finance trades at 42% disco... Pluang",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObHB1NWtYbmFheXNiRGR4dC12ZnhOVUdCVE5VQXQ1VzhjaXRSQWhWeWFMamhoWGNFa0tySUVPbERHbzRNOEhfWTRuV0RXS2NXMWF0d01nakVTdnBGNHJKYTk0MkQxRV9KQ3M2MFR6VWNycDQyMUhSN01wRUtlaG0tLUh5aUFGMk9vMFFuQmFyOVZXUENUYjR6NHRRWkt4NkJxUGpJbGtrZmV0THc?oc=5",
+            "source": "Pluang",
+            "publishedAt": "2026-11-13",
+            "lede": "Blue Owl Technology Finance trades at 42% disco... Pluang",
+            "articleExcerpt": "Blue Owl Technology Finance trades at 42% disco... - Pluang. Blue Owl Technology Finance trades at 42% disco... Pluang",
+            "contentFingerprint": "e560932dc0108e49",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Pluang"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.86,
+              "finalScore": 16.86,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "KKR": [],
+        "CIFC": [],
+        "PAG": [],
+        "Pretium": [],
+        "Guggenheim": [],
+        "Neuberger": [],
+        "BasePoint": [],
+        "Bain Capital": [
+          {
+            "id": "2026-11-13-ebad748dc1b6",
+            "title": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
+            "titleZh": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
+            "summary": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) Seeking Alpha",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeTRpNHduODEydXdxM1Q0WUp2MXFXRmdkcXJoNExfYVpDTW5kQ0t3aFpXRlFKYjFEV1FmMzF6dExSZk1Pcmx6ZGV1dXRsTDFIWXhHU1VKQ3dMektOVkhZaGkzbHN1UUdtbUZZU0lDM05ONzc1cC11Y0VaN1Z0R3pVU3ZvbWYyNU52M1lZR2RHa25JR0ZtWnRmS0lmb1h4eFV4MHRfZW1VQWNpcG9OQmc?oc=5",
+            "source": "Seeking Alpha",
+            "publishedAt": "2026-11-13",
+            "lede": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) Seeking Alpha",
+            "articleExcerpt": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha. Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) Seeking Alpha",
+            "contentFingerprint": "a3575f8126f28680",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.74,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Seeking Alpha"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.87,
+              "finalScore": 19.87,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Blackstone": [],
+        "Apollo": [
+          {
+            "id": "2026-11-13-6c57ee485bab",
+            "title": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+            "titleZh": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+            "summary": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVkxqc1RQYnVvNER1YzBDRTNGeHljY05zZ1lIMHE1U3ZEUmhaY1ByaXZiMnN3SGg2QWtsTUFoSHB3VlMyci1ocGxEeWRHeFp4MVRqSVR3M1R4NGxGM1hkRV9BWm12VFBtdnRNR0tuTEhFUVpXQ0hDRnVlRFVUTkxVcTdpUHVRLWtBeEROY1pyQjliZw?oc=5",
+            "source": "Briefs Finance",
+            "publishedAt": "2026-11-13",
+            "lede": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+            "articleExcerpt": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance. Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+            "contentFingerprint": "b100f5fb6eb80a13",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Briefs Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.88,
+              "finalScore": 16.88,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "TPG": [],
+        "Golub": [],
+        "CVC": [],
+        "Canyon": []
+      },
+      "items": [
+        {
+          "id": "2026-11-13-369f636ccb7b",
+          "title": "Blue Owl Technology Finance: Dividend Cut More Than Priced In - Seeking Alpha",
+          "titleZh": "Blue Owl Technology Finance: Dividend Cut More Than Priced In - Seeking Alpha",
+          "summary": "Blue Owl Technology Finance: Dividend Cut More Than Priced In Seeking Alpha",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOOTR4clpMR2VNN3FWRVBKQWozN2VLandFOGlvX1dsV2VxdkRMYWYtVUJUTzE3N25EZEpLYzRfUkxYb09NTldGRkZZSTN6SzB2aXdDb0MxYktOWl9HeFd6M1VxMjJtRS1OOFFhX1lrOFh6RzloZGpnMGhPbVczSkJBZkJJRHR3TkdQWkg0aGhiNkFyOThOSVRyUXl0emhxSzA2WDFn?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-11-13",
+          "lede": "Blue Owl Technology Finance: Dividend Cut More Than Priced In Seeking Alpha",
+          "articleExcerpt": "Blue Owl Technology Finance: Dividend Cut More Than Priced In - Seeking Alpha. Blue Owl Technology Finance: Dividend Cut More Than Priced In Seeking Alpha",
+          "contentFingerprint": "ee64f26aaa9c5ccf",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Seeking Alpha"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.22,
+            "finalScore": 17.22,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-1011c73a75c6",
+          "title": "Blue Owl Technology Finance trades at 42% disco... - Pluang",
+          "titleZh": "Blue Owl Technology Finance trades at 42% disco... - Pluang",
+          "summary": "Blue Owl Technology Finance trades at 42% disco... Pluang",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxObHB1NWtYbmFheXNiRGR4dC12ZnhOVUdCVE5VQXQ1VzhjaXRSQWhWeWFMamhoWGNFa0tySUVPbERHbzRNOEhfWTRuV0RXS2NXMWF0d01nakVTdnBGNHJKYTk0MkQxRV9KQ3M2MFR6VWNycDQyMUhSN01wRUtlaG0tLUh5aUFGMk9vMFFuQmFyOVZXUENUYjR6NHRRWkt4NkJxUGpJbGtrZmV0THc?oc=5",
+          "source": "Pluang",
+          "publishedAt": "2026-11-13",
+          "lede": "Blue Owl Technology Finance trades at 42% disco... Pluang",
+          "articleExcerpt": "Blue Owl Technology Finance trades at 42% disco... - Pluang. Blue Owl Technology Finance trades at 42% disco... Pluang",
+          "contentFingerprint": "e560932dc0108e49",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Pluang"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.86,
+            "finalScore": 16.86,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-ebad748dc1b6",
+          "title": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
+          "titleZh": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
+          "summary": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) Seeking Alpha",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQeTRpNHduODEydXdxM1Q0WUp2MXFXRmdkcXJoNExfYVpDTW5kQ0t3aFpXRlFKYjFEV1FmMzF6dExSZk1Pcmx6ZGV1dXRsTDFIWXhHU1VKQ3dMektOVkhZaGkzbHN1UUdtbUZZU0lDM05ONzc1cC11Y0VaN1Z0R3pVU3ZvbWYyNU52M1lZR2RHa25JR0ZtWnRmS0lmb1h4eFV4MHRfZW1VQWNpcG9OQmc?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-11-13",
+          "lede": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) Seeking Alpha",
+          "articleExcerpt": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha. Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) Seeking Alpha",
+          "contentFingerprint": "a3575f8126f28680",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.74,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Seeking Alpha"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.87,
+            "finalScore": 19.87,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-6c57ee485bab",
+          "title": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+          "titleZh": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance",
+          "summary": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOVkxqc1RQYnVvNER1YzBDRTNGeHljY05zZ1lIMHE1U3ZEUmhaY1ByaXZiMnN3SGg2QWtsTUFoSHB3VlMyci1ocGxEeWRHeFp4MVRqSVR3M1R4NGxGM1hkRV9BWm12VFBtdnRNR0tuTEhFUVpXQ0hDRnVlRFVUTkxVcTdpUHVRLWtBeEROY1pyQjliZw?oc=5",
+          "source": "Briefs Finance",
+          "publishedAt": "2026-11-13",
+          "lede": "Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+          "articleExcerpt": "Apollo Fuels SoftBank's $65B OpenAI Bet - Briefs Finance. Apollo Fuels SoftBank's $65B OpenAI Bet Briefs Finance",
+          "contentFingerprint": "b100f5fb6eb80a13",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Briefs Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-13T04:51:48.734535+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.88,
+            "finalScore": 16.88,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -191733,7 +194804,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191746,7 +194817,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191759,7 +194830,7 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191772,38 +194843,38 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 8,
-      "selected": 3,
+      "count": 6,
+      "selected": 1,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 7,
-      "selected": 5,
+      "count": 6,
+      "selected": 4,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 10,
+      "count": 11,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -191811,7 +194882,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191824,12 +194895,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 36,
+      "count": 32,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -191837,7 +194908,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191850,7 +194921,7 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191863,20 +194934,20 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
       "count": 8,
-      "selected": 5,
+      "selected": 4,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
@@ -191889,12 +194960,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 17,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -191902,12 +194973,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 27,
+      "count": 26,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -191915,12 +194986,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 660,
+      "count": 657,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -191937,9 +195008,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-12T23:10:51.654206+00:00",
+      "asOf": "2026-11-13T04:51:48.734535+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-12T23:10:51.654206+00:00"
+  "checkedAt": "2026-11-13T04:51:48.734535+00:00"
 }
