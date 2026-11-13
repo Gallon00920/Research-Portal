@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-13T12:58:23.245981+00:00",
+  "updatedAt": "2026-11-13T20:23:15.341110+00:00",
   "scope": {
     "regions": [
       "US",
@@ -182606,6 +182606,99 @@
               "finalScore": 17.29,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-11-96c9d07932a0",
+            "title": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms - Utility Week",
+            "titleZh": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms - Utility Week",
+            "summary": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms Utility Week",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ0ZxMzc3T0V6Y2NRVlVhRUc0UU5VbmZ3ekxiYjltSHJpR3cwMUpXVmRvZUZ4cDVxSTZwM0ZVTzQ0dkR0OWg0cGJFWFZmdk4zNzlEWk1pTGdudWVtMXNTNHl1UndleEVmeldrUThmbU53dEFlUU5wMVZ1TXhMOE1JNXpWUERZMEdQZ180T1B2Ykw1X2d3OUlrdndBSzc2Skgy0gGsAUFVX3lxTE01TV80Ny10SXVqN05UZDBCVmIzajFxdWJzRkVOSWJDSlcybFNvU3dPM3NOQ3VKWldQUDRRYjhWVlJqOW1BZUstcnBiejVFczFQMFBCTkVKYnlwd3YwRkhRa2M0UFhuMnR0SlBPU1lfSm1KZUNqdExWUFJCbV9ZVnp5dHRZbTJBTHpJOUdUZlptVUJlNnFiOEtHRTFvbzRueXdyQlhocktwOUZOV1E?oc=5",
+            "source": "Utility Week",
+            "publishedAt": "2026-11-11",
+            "lede": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms Utility Week",
+            "articleExcerpt": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms - Utility Week. RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms Utility Week",
+            "contentFingerprint": "e0a0f09f2522e816",
+            "region": "US",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Utility Week"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 5.35,
+              "finalScore": 18.35,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -186362,6 +186455,99 @@
             "keywordScore": 12,
             "semanticScore": 5.29,
             "finalScore": 17.29,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-11-96c9d07932a0",
+          "title": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms - Utility Week",
+          "titleZh": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms - Utility Week",
+          "summary": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms Utility Week",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOQ0ZxMzc3T0V6Y2NRVlVhRUc0UU5VbmZ3ekxiYjltSHJpR3cwMUpXVmRvZUZ4cDVxSTZwM0ZVTzQ0dkR0OWg0cGJFWFZmdk4zNzlEWk1pTGdudWVtMXNTNHl1UndleEVmeldrUThmbU53dEFlUU5wMVZ1TXhMOE1JNXpWUERZMEdQZ180T1B2Ykw1X2d3OUlrdndBSzc2Skgy0gGsAUFVX3lxTE01TV80Ny10SXVqN05UZDBCVmIzajFxdWJzRkVOSWJDSlcybFNvU3dPM3NOQ3VKWldQUDRRYjhWVlJqOW1BZUstcnBiejVFczFQMFBCTkVKYnlwd3YwRkhRa2M0UFhuMnR0SlBPU1lfSm1KZUNqdExWUFJCbV9ZVnp5dHRZbTJBTHpJOUdUZlptVUJlNnFiOEtHRTFvbzRueXdyQlhocktwOUZOV1E?oc=5",
+          "source": "Utility Week",
+          "publishedAt": "2026-11-11",
+          "lede": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms Utility Week",
+          "articleExcerpt": "RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms - Utility Week. RWE and KKR secure £12.8bn of loans to build Vanguard offshore wind farms Utility Week",
+          "contentFingerprint": "e0a0f09f2522e816",
+          "region": "US",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Utility Week"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 5.35,
+            "finalScore": 18.35,
             "semanticEnabled": true
           }
         },
@@ -195454,7 +195640,186 @@
             }
           }
         ],
-        "Guggenheim": [],
+        "Guggenheim": [
+          {
+            "id": "2026-11-13-a9709e98b4d8",
+            "title": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 - Secret Singapore",
+            "titleZh": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 - Secret Singapore",
+            "summary": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 Secret Singapore",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ0dSR004Vmp0TWM0SFFQdldfWDgxN1I2VUl5Uk1uS09LbXFKRWgtdEw0VUFBbnlxejRJZjNyb2x6cmR3TlRBQTJWZnZyZ19VblpITS14a3FGT0NBQnh2NE9EbncxT3VNVmZ4ZTVqTHE5SnBIU0JKVG1uZlZ0aG1qM1ZtNzFRQQ?oc=5",
+            "source": "Secret Singapore",
+            "publishedAt": "2026-11-13",
+            "lede": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 Secret Singapore",
+            "articleExcerpt": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 - Secret Singapore. Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 Secret Singapore",
+            "contentFingerprint": "179ef633daa2b0c4",
+            "region": "US",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.13,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.26
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Secret Singapore"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 49,
+              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 8,
+              "semanticScore": 3.14,
+              "finalScore": 11.14,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-12ba3e178d0f",
+            "title": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 - ETF Database",
+            "titleZh": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 - ETF Database",
+            "summary": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 ETF Database",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZmdVV01TY0dFRm9kNDkwVllQcTl1OTJtUS1BVlJaOXpubElwNVJCSXMwUjJRQ1NkODlIZjRyLUxWSHJmTy1JbDEyMGkzSEw2SGZnRkdIdDNvZFQ3M0N3RHlhSjd4OE1lM25oSTFJZGcwVTNTWnZ1Qnk0SHRNZzdUSzRTV3FYZXJYOE1IM1JGYWFyV0pVcWJvbFJ3UzJuQQ?oc=5",
+            "source": "ETF Database",
+            "publishedAt": "2026-11-13",
+            "lede": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 ETF Database",
+            "articleExcerpt": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 - ETF Database. PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 ETF Database",
+            "contentFingerprint": "439807af2c858815",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ETF Database"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.6,
+              "finalScore": 7.6,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Neuberger": [
           {
             "id": "2026-11-13-eded4b60a6c2",
@@ -195552,6 +195917,99 @@
               "keywordScore": 6,
               "semanticScore": 4.53,
               "finalScore": 10.530000000000001,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-f18a3b2abf20",
+            "title": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor",
+            "titleZh": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor",
+            "summary": "Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRDlVRW9yTE9aSmFmWWpNLXhhSjNGcWNIbVpKTERBd1N0cktUbmJQTkh0TWFfa0VBblUzTUhNejItcWtVVmJhVU12eDVoeTFhT3BEMnpaaFU4UVg4WjJzaVUzejJXcHhIWkRRZG5zY0xRek5kWkxYaUFncE9xdE9ocXZGQTYtQ0lRM3FIckI0X1R2VmFiZjQtWA?oc=5",
+            "source": "PEI Secondaries Investor",
+            "publishedAt": "2026-11-13",
+            "lede": "Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+            "articleExcerpt": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor. Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+            "contentFingerprint": "040f76602e7155b6",
+            "region": "US",
+            "gps": [
+              "Neuberger",
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger",
+                "CVC"
+              ],
+              "titleGps": [
+                "Neuberger",
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger",
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "PEI Secondaries Investor"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.13,
+              "finalScore": 17.13,
               "semanticEnabled": true
             }
           }
@@ -195662,7 +196120,101 @@
             }
           }
         ],
-        "Blackstone": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-13-2bb1263d0cfa",
+            "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
+            "titleZh": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
+            "summary": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN05ocDd6eDZCZmRZZF95T0hKQTF4cDVJWnJqX25DMUJIbzdqY1drYkhFdS1mTmdnOEswcDA5YUxCTWJUc2FJSkxVNWU3a1VJRWRqODlBa3BrMWV4TFZTMU9TMi1HWlU0c0dGbG9HS0xrZGtZSFlKRS1TMmd4bWh1Mml4OWE0S0ZrNi1nekFR?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-13",
+            "lede": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+            "articleExcerpt": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada. What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+            "contentFingerprint": "ea786cc63a0d8dff",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 71,
+              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.69,
+              "finalScore": 16.69,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Apollo": [
           {
             "id": "2026-11-13-6c57ee485bab",
@@ -195861,6 +196413,99 @@
           }
         ],
         "CVC": [
+          {
+            "id": "2026-11-13-f18a3b2abf20",
+            "title": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor",
+            "titleZh": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor",
+            "summary": "Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRDlVRW9yTE9aSmFmWWpNLXhhSjNGcWNIbVpKTERBd1N0cktUbmJQTkh0TWFfa0VBblUzTUhNejItcWtVVmJhVU12eDVoeTFhT3BEMnpaaFU4UVg4WjJzaVUzejJXcHhIWkRRZG5zY0xRek5kWkxYaUFncE9xdE9ocXZGQTYtQ0lRM3FIckI0X1R2VmFiZjQtWA?oc=5",
+            "source": "PEI Secondaries Investor",
+            "publishedAt": "2026-11-13",
+            "lede": "Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+            "articleExcerpt": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor. Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+            "contentFingerprint": "040f76602e7155b6",
+            "region": "US",
+            "gps": [
+              "Neuberger",
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger",
+                "CVC"
+              ],
+              "titleGps": [
+                "Neuberger",
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger",
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "PEI Secondaries Investor"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.13,
+              "finalScore": 17.13,
+              "semanticEnabled": true
+            }
+          },
           {
             "id": "2026-11-13-6362bca9ebc5",
             "title": "CVC Capital's India bets under pressure as Aavas loses value, Cohizon struggles to regain scale - Moneycontrol.com",
@@ -196432,6 +197077,184 @@
           }
         },
         {
+          "id": "2026-11-13-a9709e98b4d8",
+          "title": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 - Secret Singapore",
+          "titleZh": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 - Secret Singapore",
+          "summary": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 Secret Singapore",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ0dSR004Vmp0TWM0SFFQdldfWDgxN1I2VUl5Uk1uS09LbXFKRWgtdEw0VUFBbnlxejRJZjNyb2x6cmR3TlRBQTJWZnZyZ19VblpITS14a3FGT0NBQnh2NE9EbncxT3VNVmZ4ZTVqTHE5SnBIU0JKVG1uZlZ0aG1qM1ZtNzFRQQ?oc=5",
+          "source": "Secret Singapore",
+          "publishedAt": "2026-11-13",
+          "lede": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 Secret Singapore",
+          "articleExcerpt": "Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 - Secret Singapore. Warhol, Lichtenstein & BTS Art Trail: 200+ Guggenheim Pop Art Masterpieces land in Singapore on Dec 11 Secret Singapore",
+          "contentFingerprint": "179ef633daa2b0c4",
+          "region": "US",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.13,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.26
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Secret Singapore"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 49,
+            "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 8,
+            "semanticScore": 3.14,
+            "finalScore": 11.14,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-12ba3e178d0f",
+          "title": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 - ETF Database",
+          "titleZh": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 - ETF Database",
+          "summary": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 ETF Database",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNZmdVV01TY0dFRm9kNDkwVllQcTl1OTJtUS1BVlJaOXpubElwNVJCSXMwUjJRQ1NkODlIZjRyLUxWSHJmTy1JbDEyMGkzSEw2SGZnRkdIdDNvZFQ3M0N3RHlhSjd4OE1lM25oSTFJZGcwVTNTWnZ1Qnk0SHRNZzdUSzRTV3FYZXJYOE1IM1JGYWFyV0pVcWJvbFJ3UzJuQQ?oc=5",
+          "source": "ETF Database",
+          "publishedAt": "2026-11-13",
+          "lede": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 ETF Database",
+          "articleExcerpt": "PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 - ETF Database. PIMCO & Guggenheim Talk Fixed Income Opportunities for 2027 ETF Database",
+          "contentFingerprint": "439807af2c858815",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ETF Database"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.6,
+            "finalScore": 7.6,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-eded4b60a6c2",
           "title": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
           "titleZh": "Private Markets Perspectives 2H 2026: Capitalizing on Concentration, Liquidity and AI - Neuberger Berman",
@@ -196527,6 +197350,99 @@
             "keywordScore": 6,
             "semanticScore": 4.53,
             "finalScore": 10.530000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-f18a3b2abf20",
+          "title": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor",
+          "titleZh": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor",
+          "summary": "Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNRDlVRW9yTE9aSmFmWWpNLXhhSjNGcWNIbVpKTERBd1N0cktUbmJQTkh0TWFfa0VBblUzTUhNejItcWtVVmJhVU12eDVoeTFhT3BEMnpaaFU4UVg4WjJzaVUzejJXcHhIWkRRZG5zY0xRek5kWkxYaUFncE9xdE9ocXZGQTYtQ0lRM3FIckI0X1R2VmFiZjQtWA?oc=5",
+          "source": "PEI Secondaries Investor",
+          "publishedAt": "2026-11-13",
+          "lede": "Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+          "articleExcerpt": "Neuberger and CVC back PAI’s €1.6bn CV for two assets - PEI Secondaries Investor. Neuberger and CVC back PAI’s €1.6bn CV for two assets PEI Secondaries Investor",
+          "contentFingerprint": "040f76602e7155b6",
+          "region": "US",
+          "gps": [
+            "Neuberger",
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger",
+              "CVC"
+            ],
+            "titleGps": [
+              "Neuberger",
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger",
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.8,
+                "code": "tier_trade",
+                "source": "PEI Secondaries Investor"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.13,
+            "finalScore": 17.13,
             "semanticEnabled": true
           }
         },
@@ -196630,6 +197546,99 @@
             "keywordScore": 14,
             "semanticScore": 5.87,
             "finalScore": 19.87,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-2bb1263d0cfa",
+          "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
+          "titleZh": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
+          "summary": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN05ocDd6eDZCZmRZZF95T0hKQTF4cDVJWnJqX25DMUJIbzdqY1drYkhFdS1mTmdnOEswcDA5YUxCTWJUc2FJSkxVNWU3a1VJRWRqODlBa3BrMWV4TFZTMU9TMi1HWlU0c0dGbG9HS0xrZGtZSFlKRS1TMmd4bWh1Mml4OWE0S0ZrNi1nekFR?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-13",
+          "lede": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+          "articleExcerpt": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada. What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+          "contentFingerprint": "ea786cc63a0d8dff",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 71,
+            "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.69,
+            "finalScore": 16.69,
             "semanticEnabled": true
           }
         },
@@ -196920,7 +197929,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 14,
+      "count": 17,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -196928,7 +197937,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
@@ -196941,7 +197950,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
@@ -196954,12 +197963,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 15,
+      "count": 17,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -196967,38 +197976,38 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 8,
-      "selected": 3,
+      "count": 5,
+      "selected": 2,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 7,
-      "selected": 5,
+      "count": 10,
+      "selected": 6,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 12,
+      "count": 16,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -197006,7 +198015,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
@@ -197019,12 +198028,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 29,
+      "count": 21,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -197032,7 +198041,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
@@ -197045,12 +198054,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 36,
+      "count": 34,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -197058,7 +198067,7 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
@@ -197071,12 +198080,12 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 4,
+      "count": 3,
       "selected": 1,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -197084,12 +198093,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 17,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -197097,12 +198106,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 25,
+      "count": 26,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -197110,12 +198119,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 639,
+      "count": 547,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -197132,9 +198141,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-13T12:51:44.788449+00:00",
+      "asOf": "2026-11-13T20:18:07.792832+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-13T12:51:44.788449+00:00"
+  "checkedAt": "2026-11-13T20:18:07.792832+00:00"
 }
