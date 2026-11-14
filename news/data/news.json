@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-14T15:36:40.775337+00:00",
+  "updatedAt": "2026-11-14T20:28:08.301108+00:00",
   "scope": {
     "regions": [
       "US",
@@ -190868,6 +190868,95 @@
               "finalScore": 10.530000000000001,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-4f7a8d910709",
+            "title": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis - Kalkine",
+            "titleZh": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis - Kalkine",
+            "summary": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis Kalkine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vckpwWTlvSUpxc1VmNWZzTWV3NTI1UkxEQjFiSmY1dk5BNTAzRF9ZbEN2YjVGLTRfQmNvRUFuSjR4TjdmWDJiajhoWTR2LW1pMlFZ?oc=5",
+            "source": "Kalkine",
+            "publishedAt": "2026-11-12",
+            "lede": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis Kalkine",
+            "articleExcerpt": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis - Kalkine. Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis Kalkine",
+            "contentFingerprint": "3edca2573440dd5b",
+            "region": "US",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 46,
+              "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 4.89,
+              "finalScore": 9.89,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -195004,6 +195093,95 @@
             "keywordScore": 6,
             "semanticScore": 4.53,
             "finalScore": 10.530000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-4f7a8d910709",
+          "title": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis - Kalkine",
+          "titleZh": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis - Kalkine",
+          "summary": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis Kalkine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9vckpwWTlvSUpxc1VmNWZzTWV3NTI1UkxEQjFiSmY1dk5BNTAzRF9ZbEN2YjVGLTRfQmNvRUFuSjR4TjdmWDJiajhoWTR2LW1pMlFZ?oc=5",
+          "source": "Kalkine",
+          "publishedAt": "2026-11-12",
+          "lede": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis Kalkine",
+          "articleExcerpt": "Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis - Kalkine. Neuberger Berman Next Generation Connectivity Fund Inc (NYSE: NBXG) Stock Price, News & Analysis Kalkine",
+          "contentFingerprint": "3edca2573440dd5b",
+          "region": "US",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 46,
+            "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 4.89,
+            "finalScore": 9.89,
             "semanticEnabled": true
           }
         },
@@ -199700,6 +199878,188 @@
               "finalScore": 7.61,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-ac86340113e3",
+            "title": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia - Yahoo Finance",
+            "titleZh": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia - Yahoo Finance",
+            "summary": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd3V1clh6aTZDNnJ4QURoX3k1ZHRiYmNJUDhDZHNRbGpYd0duQ2kwS2xRT3ZrdW1LYndMVzVLX3Z2dDFUM0t4b1hHMGxxbTRLLTlHOWxKd1d6VjIta2VUbWUzZ2JWbEVHNlpEd3diU1JoTXJIdUg1TElKVGhaWm56cFFGbVFtVHR2S1N2c1NrYlQ5d3FONmgtZmhJOUh6OW1kbmRMNWUwMW5xSG9p?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-13",
+            "lede": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia Yahoo Finance",
+            "articleExcerpt": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia - Yahoo Finance. Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia Yahoo Finance",
+            "contentFingerprint": "0cd8de1c22686614",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.85,
+              "finalScore": 15.85,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-be808da04e26",
+            "title": "Europe’s Defense Boom Is Reaching Beyond Defense Companies - Apollo Global Management",
+            "titleZh": "Europe’s Defense Boom Is Reaching Beyond Defense Companies - Apollo Global Management",
+            "summary": "Europe’s Defense Boom Is Reaching Beyond Defense Companies Apollo Global Management",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPclhUWGtkYldHY3FWMnhaLW5VREgzbGlzczhMdE5UUi1jMXp5REZIWGJKMUM1Z213MHZwNGJZem1rSFJqOHBKY3U5YVlQN1pCb3JsdzU3ZkU2dm9oQlNtemk4QUNvaDBPa1RQUk16OXNoNjc5V1huRUVPd0lCZkRpS3dPbHFrdkhnUWpNVGM0cDdIUklRMVZObjFUZVVQXzYtOXl4M1pUNWFiOENQZDJ3dTAxSlRBeVlKZkdfUDY4Zw?oc=5",
+            "source": "Apollo Global Management",
+            "publishedAt": "2026-11-13",
+            "lede": "Europe’s Defense Boom Is Reaching Beyond Defense Companies Apollo Global Management",
+            "articleExcerpt": "Europe’s Defense Boom Is Reaching Beyond Defense Companies - Apollo Global Management. Europe’s Defense Boom Is Reaching Beyond Defense Companies Apollo Global Management",
+            "contentFingerprint": "5b6f3a8757b696d9",
+            "region": "Europe",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Apollo Global Management"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 4.37,
+              "finalScore": 11.370000000000001,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [
@@ -202409,6 +202769,188 @@
           }
         },
         {
+          "id": "2026-11-13-ac86340113e3",
+          "title": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia - Yahoo Finance",
+          "titleZh": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia - Yahoo Finance",
+          "summary": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOd3V1clh6aTZDNnJ4QURoX3k1ZHRiYmNJUDhDZHNRbGpYd0duQ2kwS2xRT3ZrdW1LYndMVzVLX3Z2dDFUM0t4b1hHMGxxbTRLLTlHOWxKd1d6VjIta2VUbWUzZ2JWbEVHNlpEd3diU1JoTXJIdUg1TElKVGhaWm56cFFGbVFtVHR2S1N2c1NrYlQ5d3FONmgtZmhJOUh6OW1kbmRMNWUwMW5xSG9p?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-13",
+          "lede": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia Yahoo Finance",
+          "articleExcerpt": "Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia - Yahoo Finance. Apollo Art Auctions: Ancient Masterpieces Spanning Eight Millennia Yahoo Finance",
+          "contentFingerprint": "0cd8de1c22686614",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.85,
+            "finalScore": 15.85,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-be808da04e26",
+          "title": "Europe’s Defense Boom Is Reaching Beyond Defense Companies - Apollo Global Management",
+          "titleZh": "Europe’s Defense Boom Is Reaching Beyond Defense Companies - Apollo Global Management",
+          "summary": "Europe’s Defense Boom Is Reaching Beyond Defense Companies Apollo Global Management",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPclhUWGtkYldHY3FWMnhaLW5VREgzbGlzczhMdE5UUi1jMXp5REZIWGJKMUM1Z213MHZwNGJZem1rSFJqOHBKY3U5YVlQN1pCb3JsdzU3ZkU2dm9oQlNtemk4QUNvaDBPa1RQUk16OXNoNjc5V1huRUVPd0lCZkRpS3dPbHFrdkhnUWpNVGM0cDdIUklRMVZObjFUZVVQXzYtOXl4M1pUNWFiOENQZDJ3dTAxSlRBeVlKZkdfUDY4Zw?oc=5",
+          "source": "Apollo Global Management",
+          "publishedAt": "2026-11-13",
+          "lede": "Europe’s Defense Boom Is Reaching Beyond Defense Companies Apollo Global Management",
+          "articleExcerpt": "Europe’s Defense Boom Is Reaching Beyond Defense Companies - Apollo Global Management. Europe’s Defense Boom Is Reaching Beyond Defense Companies Apollo Global Management",
+          "contentFingerprint": "5b6f3a8757b696d9",
+          "region": "Europe",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.36
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Apollo Global Management"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 7,
+            "semanticScore": 4.37,
+            "finalScore": 11.370000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-4691a74a5842",
           "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
           "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
@@ -203548,6 +204090,105 @@
               "finalScore": 20.08,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-57e5066f9ba6",
+            "title": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - 24/7 Wall St.",
+            "titleZh": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - 24/7 Wall St.",
+            "summary": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA 24/7 Wall St.",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcE9WRDVCSzJnM1FfcENTVVVDM3hUcjg4ZF84VmtOdGFPVW1DVVA4VHI5c3VCc0tTRC1pYWl1b3NCSklWRjBaTzd3dl80R3hOZjQwaUlCRjhaNS1OajlGb0pLR0tsdFQzc2R3YkdERVNZRUFYemZTeUNldi1VSUlHbVV2a1NsLUE2RzZlOUphVXYtSkFmbjRWeEZrUkctYzE4TUg4OW5DR3RGVlUydmpPUndkeEZOOTNNNHFjZE1mU0ROWTg?oc=5",
+            "source": "24/7 Wall St.",
+            "publishedAt": "2026-11-14",
+            "lede": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA 24/7 Wall St.",
+            "articleExcerpt": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - 24/7 Wall St.. $250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA 24/7 Wall St.",
+            "contentFingerprint": "6cc5e8d9c6e42da4",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.74,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "24/7 Wall St."
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.3
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 57,
+              "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.8,
+              "finalScore": 19.8,
+              "semanticEnabled": true
+            }
           }
         ],
         "CVC": [],
@@ -204212,6 +204853,105 @@
             "finalScore": 20.08,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-14-57e5066f9ba6",
+          "title": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - 24/7 Wall St.",
+          "titleZh": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - 24/7 Wall St.",
+          "summary": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA 24/7 Wall St.",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPcE9WRDVCSzJnM1FfcENTVVVDM3hUcjg4ZF84VmtOdGFPVW1DVVA4VHI5c3VCc0tTRC1pYWl1b3NCSklWRjBaTzd3dl80R3hOZjQwaUlCRjhaNS1OajlGb0pLR0tsdFQzc2R3YkdERVNZRUFYemZTeUNldi1VSUlHbVV2a1NsLUE2RzZlOUphVXYtSkFmbjRWeEZrUkctYzE4TUg4OW5DR3RGVlUydmpPUndkeEZOOTNNNHFjZE1mU0ROWTg?oc=5",
+          "source": "24/7 Wall St.",
+          "publishedAt": "2026-11-14",
+          "lede": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA 24/7 Wall St.",
+          "articleExcerpt": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - 24/7 Wall St.. $250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA 24/7 Wall St.",
+          "contentFingerprint": "6cc5e8d9c6e42da4",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.74,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "24/7 Wall St."
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.3
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 57,
+            "retrievedAt": "2026-11-14T20:23:02.011068+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.8,
+            "finalScore": 19.8,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -204219,7 +204959,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 18,
+      "count": 19,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -204227,12 +204967,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 88,
+      "count": 81,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -204240,7 +204980,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204253,12 +204993,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 13,
+      "count": 12,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -204266,12 +205006,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 8,
+      "count": 7,
       "selected": 3,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -204279,12 +205019,12 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 8,
+      "count": 7,
       "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
@@ -204292,12 +205032,12 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 12,
+      "count": 13,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -204305,7 +205045,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204318,7 +205058,7 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204331,12 +205071,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 100,
+      "count": 94,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -204344,7 +205084,7 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204357,20 +205097,20 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 8,
-      "selected": 5,
+      "count": 7,
+      "selected": 4,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204383,7 +205123,7 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204396,7 +205136,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
@@ -204409,12 +205149,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 509,
+      "count": 497,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -204431,9 +205171,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-14T15:31:31.286678+00:00",
+      "asOf": "2026-11-14T20:23:02.011068+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-14T15:31:31.286678+00:00"
+  "checkedAt": "2026-11-14T20:23:02.011068+00:00"
 }
