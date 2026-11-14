@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-14T01:20:31.665090+00:00",
+  "updatedAt": "2026-11-14T08:36:05.869976+00:00",
   "scope": {
     "regions": [
       "US",
@@ -190025,6 +190025,99 @@
               "finalScore": 15.89,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-e4f9d1aabcc5",
+            "title": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo!",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwSkl1Sy1FR0FpQ056MDZqSHgxVy12X0V2R0d5TGE2M19LVWdzd3p1dVo1WWZCczE0aEZCWTdZaWh1anZXa0JnTFpITVRYZGlV?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-12",
+            "lede": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada. KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "56be3dbcba4524c6",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.9
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 43,
+              "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.26,
+              "finalScore": 16.259999999999998,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -193795,6 +193888,99 @@
             "keywordScore": 11,
             "semanticScore": 4.89,
             "finalScore": 15.89,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-e4f9d1aabcc5",
+          "title": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo!",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwSkl1Sy1FR0FpQ056MDZqSHgxVy12X0V2R0d5TGE2M19LVWdzd3p1dVo1WWZCczE0aEZCWTdZaWh1anZXa0JnTFpITVRYZGlV?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-12",
+          "lede": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada. KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "56be3dbcba4524c6",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.9
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 43,
+            "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.26,
+            "finalScore": 16.259999999999998,
             "semanticEnabled": true
           }
         },
@@ -197740,6 +197926,95 @@
               "finalScore": 17.13,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-b8cb9fa0f4d4",
+            "title": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike - Neuberger Berman",
+            "titleZh": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike - Neuberger Berman",
+            "summary": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYkF0dXNrdEVZa1piTTFtQ3N1Z3BCckFXNXZjRGtIdndicTdYeEI5b1hVaTZ2emZhclFNTFVOaWVMMl93VnhwcmlRNHFJc3FqRVZ5RHNJdklNYk80YnNCYTVmSXVvUklBcGF6WGRfMXBfVDliOVdoS1dJRXlDSzVucXZIc1czNGUyNzhuM1haelo2NF85V3p0SHoyMkU4YkVSZmx5eXNR?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-13",
+            "lede": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike Neuberger Berman",
+            "articleExcerpt": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike - Neuberger Berman. CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike Neuberger Berman",
+            "contentFingerprint": "1026abd8faa9f196",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.35
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.9
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.16,
+              "finalScore": 7.16,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -197939,6 +198214,192 @@
               "keywordScore": 11,
               "semanticScore": 5.69,
               "finalScore": 16.69,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-6971fc97befb",
+            "title": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide - Yahoo Finance",
+            "titleZh": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide - Yahoo Finance",
+            "summary": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTlYxM25oTzhYV0NqTGlER3BaU010ZjJSemg2ZkdwYjhXNkJpc09TODQtVW5aY3ZmZWR5ZXR4RkZEdThZNWplZ0NUS3NBTGxjZGNSS3NkWWJIWTdqMmpZZkJhazBMRFZaZjJwbWo0Uk11RlllY2pfcS04eC13SDJTXy1FdXl2WjdxZG90bG9JTDQ3dTVtajFqVm0ydTJ5Zw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-13",
+            "lede": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide Yahoo Finance",
+            "articleExcerpt": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide - Yahoo Finance. Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide Yahoo Finance",
+            "contentFingerprint": "a7eb3de33d1d321a",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.9
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.58,
+              "finalScore": 16.58,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-a49c5adc8832",
+            "title": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line - Venture Intelligence News",
+            "titleZh": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line - Venture Intelligence News",
+            "summary": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line Venture Intelligence News",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVDhua29BbUFLWk8talJxcGdna2NUZnZENVRHaFp1Vm9zZklpZ1NyRm5SaHgyUmdtU1Z1bVNWSzN0ai00SVU2RklLbUpxQmg0QTMwb1lpVjh3UDAzVEVOblB1N2p0Q2d1RTVaUzB4c0xwd0lGTXlGbTdtUHRZaDh2cXUxTHI3djNjMWdMRTFyUVVmSG1WbGtFaExaVGV1RlJ2SGVBUm1fQU5sMFRGUGJrZDJpbWdQZmdKZmdROVZNY2ZFZw?oc=5",
+            "source": "Venture Intelligence News",
+            "publishedAt": "2026-11-13",
+            "lede": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line Venture Intelligence News",
+            "articleExcerpt": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line - Venture Intelligence News. Blackstone arranges $200-M loan to refinance ASK acquisition credit line Venture Intelligence News",
+            "contentFingerprint": "ed4f5cd2c9a03b17",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Venture Intelligence News"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.9
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 73,
+              "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.46,
+              "finalScore": 16.46,
               "semanticEnabled": true
             }
           }
@@ -198309,7 +198770,101 @@
             }
           }
         ],
-        "TPG": [],
+        "TPG": [
+          {
+            "id": "2026-11-13-4691a74a5842",
+            "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-13",
+            "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "ac62ac93f50a821a",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.9
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.47,
+              "finalScore": 16.47,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Golub": [
           {
             "id": "2026-11-13-6393e5c2e410",
@@ -199628,6 +200183,95 @@
           }
         },
         {
+          "id": "2026-11-13-b8cb9fa0f4d4",
+          "title": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike - Neuberger Berman",
+          "titleZh": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike - Neuberger Berman",
+          "summary": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOYkF0dXNrdEVZa1piTTFtQ3N1Z3BCckFXNXZjRGtIdndicTdYeEI5b1hVaTZ2emZhclFNTFVOaWVMMl93VnhwcmlRNHFJc3FqRVZ5RHNJdklNYk80YnNCYTVmSXVvUklBcGF6WGRfMXBfVDliOVdoS1dJRXlDSzVucXZIc1czNGUyNzhuM1haelo2NF85V3p0SHoyMkU4YkVSZmx5eXNR?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-13",
+          "lede": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike Neuberger Berman",
+          "articleExcerpt": "CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike - Neuberger Berman. CIO Notebook | Hot CPI and Strong Jobs Likely Seal the Deal for December Hike Neuberger Berman",
+          "contentFingerprint": "1026abd8faa9f196",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.35
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.9
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.16,
+            "finalScore": 7.16,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-ebad748dc1b6",
           "title": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
           "titleZh": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
@@ -199820,6 +200464,192 @@
             "keywordScore": 11,
             "semanticScore": 5.69,
             "finalScore": 16.69,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-6971fc97befb",
+          "title": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide - Yahoo Finance",
+          "titleZh": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide - Yahoo Finance",
+          "summary": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPTlYxM25oTzhYV0NqTGlER3BaU010ZjJSemg2ZkdwYjhXNkJpc09TODQtVW5aY3ZmZWR5ZXR4RkZEdThZNWplZ0NUS3NBTGxjZGNSS3NkWWJIWTdqMmpZZkJhazBMRFZaZjJwbWo0Uk11RlllY2pfcS04eC13SDJTXy1FdXl2WjdxZG90bG9JTDQ3dTVtajFqVm0ydTJ5Zw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-13",
+          "lede": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide Yahoo Finance",
+          "articleExcerpt": "Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide - Yahoo Finance. Blackstone (BX) Stock Looks Fairly Valued Following Its 25% Slide Yahoo Finance",
+          "contentFingerprint": "a7eb3de33d1d321a",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.9
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.58,
+            "finalScore": 16.58,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-a49c5adc8832",
+          "title": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line - Venture Intelligence News",
+          "titleZh": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line - Venture Intelligence News",
+          "summary": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line Venture Intelligence News",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOVDhua29BbUFLWk8talJxcGdna2NUZnZENVRHaFp1Vm9zZklpZ1NyRm5SaHgyUmdtU1Z1bVNWSzN0ai00SVU2RklLbUpxQmg0QTMwb1lpVjh3UDAzVEVOblB1N2p0Q2d1RTVaUzB4c0xwd0lGTXlGbTdtUHRZaDh2cXUxTHI3djNjMWdMRTFyUVVmSG1WbGtFaExaVGV1RlJ2SGVBUm1fQU5sMFRGUGJrZDJpbWdQZmdKZmdROVZNY2ZFZw?oc=5",
+          "source": "Venture Intelligence News",
+          "publishedAt": "2026-11-13",
+          "lede": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line Venture Intelligence News",
+          "articleExcerpt": "Blackstone arranges $200-M loan to refinance ASK acquisition credit line - Venture Intelligence News. Blackstone arranges $200-M loan to refinance ASK acquisition credit line Venture Intelligence News",
+          "contentFingerprint": "ed4f5cd2c9a03b17",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Venture Intelligence News"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.9
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 73,
+            "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.46,
+            "finalScore": 16.46,
             "semanticEnabled": true
           }
         },
@@ -200184,6 +201014,99 @@
             "keywordScore": 3,
             "semanticScore": 4.61,
             "finalScore": 7.61,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-4691a74a5842",
+          "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-13",
+          "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "ac62ac93f50a821a",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.9
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T08:31:55.175941+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.47,
+            "finalScore": 16.47,
             "semanticEnabled": true
           }
         },
@@ -200690,7 +201613,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 16,
+      "count": 14,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -200698,7 +201621,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
@@ -200711,7 +201634,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
@@ -200724,12 +201647,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 16,
+      "count": 14,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -200737,12 +201660,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 10,
+      "count": 8,
       "selected": 2,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -200750,12 +201673,12 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 10,
+      "count": 8,
       "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
@@ -200763,20 +201686,20 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 14,
-      "selected": 4,
+      "count": 11,
+      "selected": 5,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
@@ -200789,12 +201712,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 24,
+      "count": 20,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -200802,12 +201725,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 101,
+      "count": 100,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -200815,7 +201738,7 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
@@ -200828,7 +201751,7 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
@@ -200841,7 +201764,7 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
@@ -200854,12 +201777,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 16,
+      "count": 15,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -200867,12 +201790,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 26,
+      "count": 27,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -200880,12 +201803,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 537,
+      "count": 409,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -200902,9 +201825,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-14T01:16:06.440960+00:00",
+      "asOf": "2026-11-14T08:31:55.175941+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-14T01:16:06.440960+00:00"
+  "checkedAt": "2026-11-14T08:31:55.175941+00:00"
 }
