@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-14T08:36:05.869976+00:00",
+  "updatedAt": "2026-11-14T15:36:40.775337+00:00",
   "scope": {
     "regions": [
       "US",
@@ -190215,6 +190215,99 @@
               "finalScore": 14.97,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-53fa6bd63e84",
+            "title": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+            "titleZh": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+            "summary": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GOTBEb1RWRFJHQmljUzltOWYxQTltOUctellnblQzWGJ4T1E4TGppWlVVQUNVQmFKamVMSHl5a0NDcHVWNjIyajdzS1I1dC1JUEF1RHRucW52ZGpFVnRHaTR0WXJyWUcxRE5kRGhB?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-12",
+            "lede": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance Yahoo! Finance Canada",
+            "articleExcerpt": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada. PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance Yahoo! Finance Canada",
+            "contentFingerprint": "3c75e57c2733bfe6",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.7,
+              "finalScore": 15.7,
+              "semanticEnabled": true
+            }
           }
         ],
         "Guggenheim": [
@@ -192219,6 +192312,105 @@
               "finalScore": 8.9,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-12-0075398b7bd2",
+            "title": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - TradingView",
+            "titleZh": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - TradingView",
+            "summary": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdEdMV0ZOZUUwRkRfUWJwRFk2b1Y4V05RNzhwbVRiTGs4M01BeHVFQ3BtVGZwcFJ4dWE0OGNxSnJLQmQ0dTY5d0x0UWo1bFBNeXZSR3VOQjBnUzMyQ0swVkd4akJtOXhEbHQtS0VuTzBtYXpkdFlXS0o0WTZiZTFpREJUQ1ZRam1yaUhXUzFibzFnME5QcGhQRmNXd2JIckh5ZEVQeV9idnhPVjZ5d2lyelVLVVdfUlBvdDNEUldrYUIzSUY2VEFfZVNxbTczektVa1hIak5nclU0N1FqYW1xemxqSVA?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-12",
+            "lede": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines TradingView",
+            "articleExcerpt": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - TradingView. Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines TradingView",
+            "contentFingerprint": "d1689b345567d25a",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.71,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.1,
+              "finalScore": 19.1,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [
@@ -192579,6 +192771,95 @@
               "keywordScore": 11,
               "semanticScore": 5.47,
               "finalScore": 16.47,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-bc1da84a6c85",
+            "title": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus - Kalkine",
+            "titleZh": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus - Kalkine",
+            "summary": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus Kalkine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUUc2NkxKem93djBMMXl4R2NQSmpDMk5GNi10WHhzX1VPdFQyLVF4a3Z4eEN3UUNvdDdtZHhiMjM3bE5rTVlDX0l0clhpVVdpZWhHUXM4ZzZScmsweTBERE92ZkZscTQxMkpfamJydXdfLU1VTkZXdFJMZzdmSFYyTS0xOWZNYkpWUktZWTVKcFpxeE9rbkxyVURyeTl3N0dQcS1iV1FTX2NQZ0VNclE?oc=5",
+            "source": "Kalkine",
+            "publishedAt": "2026-11-12",
+            "lede": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus Kalkine",
+            "articleExcerpt": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus - Kalkine. TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus Kalkine",
+            "contentFingerprint": "adc73c82552a59e7",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.08,
+              "finalScore": 8.08,
               "semanticEnabled": true
             }
           }
@@ -194074,6 +194355,99 @@
             "keywordScore": 11,
             "semanticScore": 3.97,
             "finalScore": 14.97,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-53fa6bd63e84",
+          "title": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+          "titleZh": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada",
+          "summary": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE5GOTBEb1RWRFJHQmljUzltOWYxQTltOUctellnblQzWGJ4T1E4TGppWlVVQUNVQmFKamVMSHl5a0NDcHVWNjIyajdzS1I1dC1JUEF1RHRucW52ZGpFVnRHaTR0WXJyWUcxRE5kRGhB?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-12",
+          "lede": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance Yahoo! Finance Canada",
+          "articleExcerpt": "PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance - Yahoo! Finance Canada. PRETIUM KINEA INFRA INCENT FIF RF CP RL (0P0001SR0E.SA) Seasonal Returns Chart - Yahoo Finance Yahoo! Finance Canada",
+          "contentFingerprint": "3c75e57c2733bfe6",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.7,
+            "finalScore": 15.7,
             "semanticEnabled": true
           }
         },
@@ -196071,6 +196445,105 @@
           }
         },
         {
+          "id": "2026-11-12-0075398b7bd2",
+          "title": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - TradingView",
+          "titleZh": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - TradingView",
+          "summary": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxPdEdMV0ZOZUUwRkRfUWJwRFk2b1Y4V05RNzhwbVRiTGs4M01BeHVFQ3BtVGZwcFJ4dWE0OGNxSnJLQmQ0dTY5d0x0UWo1bFBNeXZSR3VOQjBnUzMyQ0swVkd4akJtOXhEbHQtS0VuTzBtYXpkdFlXS0o0WTZiZTFpREJUQ1ZRam1yaUhXUzFibzFnME5QcGhQRmNXd2JIckh5ZEVQeV9idnhPVjZ5d2lyelVLVVdfUlBvdDNEUldrYUIzSUY2VEFfZVNxbTczektVa1hIak5nclU0N1FqYW1xemxqSVA?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-12",
+          "lede": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines TradingView",
+          "articleExcerpt": "Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines - TradingView. Apollo Global Management Sees Private Credit Demand Holding Up Despite Negative Headlines TradingView",
+          "contentFingerprint": "d1689b345567d25a",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.71,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.1,
+            "finalScore": 19.1,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-487eb87a4252",
           "title": "TPG Inc. (NASDAQ:TPG) Stock Has Consensus Target Price of $61.00 - MarketBeat",
           "titleZh": "TPG Inc. (NASDAQ:TPG) Stock Has Consensus Target Price of $61.00 - MarketBeat",
@@ -196427,6 +196900,95 @@
             "keywordScore": 11,
             "semanticScore": 5.47,
             "finalScore": 16.47,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-bc1da84a6c85",
+          "title": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus - Kalkine",
+          "titleZh": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus - Kalkine",
+          "summary": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus Kalkine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPUUc2NkxKem93djBMMXl4R2NQSmpDMk5GNi10WHhzX1VPdFQyLVF4a3Z4eEN3UUNvdDdtZHhiMjM3bE5rTVlDX0l0clhpVVdpZWhHUXM4ZzZScmsweTBERE92ZkZscTQxMkpfamJydXdfLU1VTkZXdFJMZzdmSFYyTS0xOWZNYkpWUktZWTVKcFpxeE9rbkxyVURyeTl3N0dQcS1iV1FTX2NQZ0VNclE?oc=5",
+          "source": "Kalkine",
+          "publishedAt": "2026-11-12",
+          "lede": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus Kalkine",
+          "articleExcerpt": "TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus - Kalkine. TPG Telecom (ASX:TPG): Mobile Subscriber Growth and HY26 Earnings in Focus Kalkine",
+          "contentFingerprint": "adc73c82552a59e7",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.08,
+            "finalScore": 8.08,
             "semanticEnabled": true
           }
         },
@@ -197455,6 +198017,184 @@
               "finalScore": 17.06,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-93f911950755",
+            "title": "KKR stock enters UK offshore wind JV after GBP 12 billion close - ad-hoc-news.de",
+            "titleZh": "KKR stock enters UK offshore wind JV after GBP 12 billion close - ad-hoc-news.de",
+            "summary": "KKR stock enters UK offshore wind JV after GBP 12 billion close ad-hoc-news.de",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc3NCYlNDbzJWc3RwT1p1enctZXRtR0RWSmVYaEc1R1E1bmZ6NE82eks4TzhCdzlCUVAzQkpYNXo5V1NadTZMRU51eWp3TzZsVy0yRlF2TVVWU0pmLVViNkZSeXVrVlhJaHN4a0ZrTUZfaWp1R0hkWFkzZ0hZdHk4dHZWNV90OXo5RUhjVGFLTU44aWdESnU5NU1pbnhSWmtPWTZ2aDdnNEpld0tQQ0RUWUVXZl9qamhNdVBrZUJqYXZDVHdE?oc=5",
+            "source": "ad-hoc-news.de",
+            "publishedAt": "2026-11-13",
+            "lede": "KKR stock enters UK offshore wind JV after GBP 12 billion close ad-hoc-news.de",
+            "articleExcerpt": "KKR stock enters UK offshore wind JV after GBP 12 billion close - ad-hoc-news.de. KKR stock enters UK offshore wind JV after GBP 12 billion close ad-hoc-news.de",
+            "contentFingerprint": "b07df1ef7737386d",
+            "region": "Europe",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ad-hoc-news.de"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 4.96,
+              "finalScore": 16.96,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-2d9fe13cede8",
+            "title": "RWE stock: KKR closes GBP 12bn UK offshore wind venture - ad-hoc-news.de",
+            "titleZh": "RWE stock: KKR closes GBP 12bn UK offshore wind venture - ad-hoc-news.de",
+            "summary": "RWE stock: KKR closes GBP 12bn UK offshore wind venture ad-hoc-news.de",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTlVhX2E1aGxSZXpDUHNfVnN2VE5mUXNTTHYwRVFORWFGRDVfWUlNRUt0RVo3TXAxWE9nclNGMzNHcDBuejB4OXB6dTJFZ2EyQUxUc0VmWDJETzEtWEVSb3AxRW91cEhzOWdlU0RrMEZmeVJtZzNnY3NFa1dGRFFmMXVpN3IwOUR1dnhsVEtoazhYRTRsOVRxdG1JZDZZeFF4TGNaQnE3dng0OFdULXlwRmQ5el8tYjlC?oc=5",
+            "source": "ad-hoc-news.de",
+            "publishedAt": "2026-11-13",
+            "lede": "RWE stock: KKR closes GBP 12bn UK offshore wind venture ad-hoc-news.de",
+            "articleExcerpt": "RWE stock: KKR closes GBP 12bn UK offshore wind venture - ad-hoc-news.de. RWE stock: KKR closes GBP 12bn UK offshore wind venture ad-hoc-news.de",
+            "contentFingerprint": "7281cbf86642695c",
+            "region": "Europe",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ad-hoc-news.de"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 4.76,
+              "finalScore": 16.759999999999998,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -198015,6 +198755,95 @@
               "finalScore": 7.16,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-e14cc354897d",
+            "title": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment - Neuberger Berman",
+            "titleZh": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment - Neuberger Berman",
+            "summary": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xT1ZJd3NneXR1QU5oaENQQ3o3dTNCRllRaWpsaTNaU1NTcUt3ZFdpTFBWN0x0X1lEOEpvR1d4NzFOeW9OT3JpODZPQng2OUVMejNodTR6V0Fsd2pjTmJvd05Cb1k?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-13",
+            "lede": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment Neuberger Berman",
+            "articleExcerpt": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment - Neuberger Berman. Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment Neuberger Berman",
+            "contentFingerprint": "1af71cef1fac8b93",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.36,
+              "finalScore": 7.36,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -198119,6 +198948,109 @@
               "keywordScore": 14,
               "semanticScore": 5.87,
               "finalScore": 19.87,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-2a140a195885",
+            "title": "Bain Capital Specialty Finance trades at 32% di... - Pluang",
+            "titleZh": "Bain Capital Specialty Finance trades at 32% di... - Pluang",
+            "summary": "Bain Capital Specialty Finance trades at 32% di... Pluang",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZkFmb1RMSUtIXzZnb0p2TDR5eWtfTUx3SW43TkFKaFVPYlk1SXJiaFNGZi12UVVucUVnQzZ6bm1EbHNnaVpmVXpVNlIzb1pjLVdTZHR4cVhScnpELW9IOUg1cXM3MVpldzY2bTBndnRLVzZ1ZDEzQXJIazB0bUN3cVBKS0N1MnRDeG0yc043ZVVPWXBpWUZxM25LZWRGUUpWMnc?oc=5",
+            "source": "Pluang",
+            "publishedAt": "2026-11-13",
+            "lede": "Bain Capital Specialty Finance trades at 32% di... Pluang",
+            "articleExcerpt": "Bain Capital Specialty Finance trades at 32% di... - Pluang. Bain Capital Specialty Finance trades at 32% di... Pluang",
+            "contentFingerprint": "5599a1d9857e3c50",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Pluang"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.48,
+              "finalScore": 19.48,
               "semanticEnabled": true
             }
           }
@@ -198861,6 +199793,95 @@
               "keywordScore": 11,
               "semanticScore": 5.47,
               "finalScore": 16.47,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-eab830a30308",
+            "title": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? - Kalkine",
+            "titleZh": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? - Kalkine",
+            "summary": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? Kalkine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbTlaNmo4X0NtZFE2cFIySUlGSjh2cWZUS3o2RzRWdnFZMlpIZ2RySnYxaHd4bTlRVk9SbGtBQ241R05FbmlqTFRhek42ZVBqQzJiNG1OWnIycWNHU3NHRHRRNG9YRGxnWTF5OXZJUkU5RUl1Y0REa2toUGllZnhXM3JZTVBRcHUyWWtIZkhuM0Q3czdXQXBjWHpvT2RieEdyb3MxYUtn?oc=5",
+            "source": "Kalkine",
+            "publishedAt": "2026-11-13",
+            "lede": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? Kalkine",
+            "articleExcerpt": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? - Kalkine. How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? Kalkine",
+            "contentFingerprint": "0e41e08911fc40b4",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.0,
+              "finalScore": 8.0,
               "semanticEnabled": true
             }
           }
@@ -199720,6 +200741,184 @@
           }
         },
         {
+          "id": "2026-11-13-93f911950755",
+          "title": "KKR stock enters UK offshore wind JV after GBP 12 billion close - ad-hoc-news.de",
+          "titleZh": "KKR stock enters UK offshore wind JV after GBP 12 billion close - ad-hoc-news.de",
+          "summary": "KKR stock enters UK offshore wind JV after GBP 12 billion close ad-hoc-news.de",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNc3NCYlNDbzJWc3RwT1p1enctZXRtR0RWSmVYaEc1R1E1bmZ6NE82eks4TzhCdzlCUVAzQkpYNXo5V1NadTZMRU51eWp3TzZsVy0yRlF2TVVWU0pmLVViNkZSeXVrVlhJaHN4a0ZrTUZfaWp1R0hkWFkzZ0hZdHk4dHZWNV90OXo5RUhjVGFLTU44aWdESnU5NU1pbnhSWmtPWTZ2aDdnNEpld0tQQ0RUWUVXZl9qamhNdVBrZUJqYXZDVHdE?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-13",
+          "lede": "KKR stock enters UK offshore wind JV after GBP 12 billion close ad-hoc-news.de",
+          "articleExcerpt": "KKR stock enters UK offshore wind JV after GBP 12 billion close - ad-hoc-news.de. KKR stock enters UK offshore wind JV after GBP 12 billion close ad-hoc-news.de",
+          "contentFingerprint": "b07df1ef7737386d",
+          "region": "Europe",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ad-hoc-news.de"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 4.96,
+            "finalScore": 16.96,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-2d9fe13cede8",
+          "title": "RWE stock: KKR closes GBP 12bn UK offshore wind venture - ad-hoc-news.de",
+          "titleZh": "RWE stock: KKR closes GBP 12bn UK offshore wind venture - ad-hoc-news.de",
+          "summary": "RWE stock: KKR closes GBP 12bn UK offshore wind venture ad-hoc-news.de",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOTlVhX2E1aGxSZXpDUHNfVnN2VE5mUXNTTHYwRVFORWFGRDVfWUlNRUt0RVo3TXAxWE9nclNGMzNHcDBuejB4OXB6dTJFZ2EyQUxUc0VmWDJETzEtWEVSb3AxRW91cEhzOWdlU0RrMEZmeVJtZzNnY3NFa1dGRFFmMXVpN3IwOUR1dnhsVEtoazhYRTRsOVRxdG1JZDZZeFF4TGNaQnE3dng0OFdULXlwRmQ5el8tYjlC?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-13",
+          "lede": "RWE stock: KKR closes GBP 12bn UK offshore wind venture ad-hoc-news.de",
+          "articleExcerpt": "RWE stock: KKR closes GBP 12bn UK offshore wind venture - ad-hoc-news.de. RWE stock: KKR closes GBP 12bn UK offshore wind venture ad-hoc-news.de",
+          "contentFingerprint": "7281cbf86642695c",
+          "region": "Europe",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ad-hoc-news.de"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 4.76,
+            "finalScore": 16.759999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-68f83b55f7bd",
           "title": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down",
           "titleZh": "Progress Residential must disclose full rental costs under $48.5 million settlement - The Cool Down",
@@ -200272,6 +201471,95 @@
           }
         },
         {
+          "id": "2026-11-13-e14cc354897d",
+          "title": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment - Neuberger Berman",
+          "titleZh": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment - Neuberger Berman",
+          "summary": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE0xT1ZJd3NneXR1QU5oaENQQ3o3dTNCRllRaWpsaTNaU1NTcUt3ZFdpTFBWN0x0X1lEOEpvR1d4NzFOeW9OT3JpODZPQng2OUVMejNodTR6V0Fsd2pjTmJvd05Cb1k?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-13",
+          "lede": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment Neuberger Berman",
+          "articleExcerpt": "Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment - Neuberger Berman. Diversification Plus Alpha: The Potential Benefits of Value Investing in the Current Environment Neuberger Berman",
+          "contentFingerprint": "1af71cef1fac8b93",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.36
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.36,
+            "finalScore": 7.36,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-ebad748dc1b6",
           "title": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
           "titleZh": "Bain Capital Specialty Finance Is Trading For 68 Cents On The Dollar (Upgrade) - Seeking Alpha",
@@ -200371,6 +201659,109 @@
             "keywordScore": 14,
             "semanticScore": 5.87,
             "finalScore": 19.87,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-2a140a195885",
+          "title": "Bain Capital Specialty Finance trades at 32% di... - Pluang",
+          "titleZh": "Bain Capital Specialty Finance trades at 32% di... - Pluang",
+          "summary": "Bain Capital Specialty Finance trades at 32% di... Pluang",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZkFmb1RMSUtIXzZnb0p2TDR5eWtfTUx3SW43TkFKaFVPYlk1SXJiaFNGZi12UVVucUVnQzZ6bm1EbHNnaVpmVXpVNlIzb1pjLVdTZHR4cVhScnpELW9IOUg1cXM3MVpldzY2bTBndnRLVzZ1ZDEzQXJIazB0bUN3cVBKS0N1MnRDeG0yc043ZVVPWXBpWUZxM25LZWRGUUpWMnc?oc=5",
+          "source": "Pluang",
+          "publishedAt": "2026-11-13",
+          "lede": "Bain Capital Specialty Finance trades at 32% di... Pluang",
+          "articleExcerpt": "Bain Capital Specialty Finance trades at 32% di... - Pluang. Bain Capital Specialty Finance trades at 32% di... Pluang",
+          "contentFingerprint": "5599a1d9857e3c50",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Pluang"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.48,
+            "finalScore": 19.48,
             "semanticEnabled": true
           }
         },
@@ -201111,6 +202502,95 @@
           }
         },
         {
+          "id": "2026-11-13-eab830a30308",
+          "title": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? - Kalkine",
+          "titleZh": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? - Kalkine",
+          "summary": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? Kalkine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbTlaNmo4X0NtZFE2cFIySUlGSjh2cWZUS3o2RzRWdnFZMlpIZ2RySnYxaHd4bTlRVk9SbGtBQ241R05FbmlqTFRhek42ZVBqQzJiNG1OWnIycWNHU3NHRHRRNG9YRGxnWTF5OXZJUkU5RUl1Y0REa2toUGllZnhXM3JZTVBRcHUyWWtIZkhuM0Q3czdXQXBjWHpvT2RieEdyb3MxYUtn?oc=5",
+          "source": "Kalkine",
+          "publishedAt": "2026-11-13",
+          "lede": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? Kalkine",
+          "articleExcerpt": "How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? - Kalkine. How Did TPG Telecom (ASX:TPG) Earnings and Cash Flow Change in HY26? Kalkine",
+          "contentFingerprint": "0e41e08911fc40b4",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.0,
+            "finalScore": 8.0,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-6393e5c2e410",
           "title": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
           "titleZh": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
@@ -201392,12 +202872,290 @@
     "2026-11-14": {
       "byGp": {
         "Blue Owl": [],
-        "KKR": [],
+        "KKR": [
+          {
+            "id": "2026-11-14-bb92c72dd572",
+            "title": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
+            "titleZh": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
+            "summary": "KKR stock: RWE joint venture reaches financial close in UK wind ad-hoc-news.de",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbVJPLVQxMHpOZU9YT0xoa3dIZlVGQ29rbzR4R21WRWN3WUQwU1JuTUpOc0QweTVwUjF6dFZ0Z0VlYlVKS3lGRVJtanc2QnhCVmtCaE9NeUgycHFtRGR2d1VweGM5SDZLRmprZDlCRW5YZHlLOUtkVnN5SEYxWC05b1pVcE9xSUdlZkFaOXlCSUVxNTBjWWtJMDg5U3RXQ1piWG1yN0JqSDlYbVZ1TTJHWGRKeDBZSS1xam5sV0VqMEMxczQ?oc=5",
+            "source": "ad-hoc-news.de",
+            "publishedAt": "2026-11-14",
+            "lede": "KKR stock: RWE joint venture reaches financial close in UK wind ad-hoc-news.de",
+            "articleExcerpt": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de. KKR stock: RWE joint venture reaches financial close in UK wind ad-hoc-news.de",
+            "contentFingerprint": "4fcba3116d1ca3e9",
+            "region": "Europe",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ad-hoc-news.de"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 65,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.25,
+              "finalScore": 17.25,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CIFC": [],
         "PAG": [],
         "Pretium": [],
-        "Guggenheim": [],
-        "Neuberger": [],
+        "Guggenheim": [
+          {
+            "id": "2026-11-14-69829715789b",
+            "title": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life",
+            "titleZh": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life",
+            "summary": "How London made Peggy Guggenheim one of the world's great artistic patrons Country Life",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ2JqNG9zclZWVnhLUk5fMFBSdEp6ZndGdFhNZm9nbk1pRm4xX3Zza0lVZWVLeEQ4OXJmdzNBbmlPSGtnM1V0MVl1UWNsS2lRVXhwOWR4Z3RoVmJSNmYyYmFWVm9kc0d4QmkxZjhwVEdaTXVseHBwNFRRLURleHpBRlRmNkcxZS1GX3NGZC02UktGLW1pZEJKaFJ3N1dkT1lObWhIN3ktNWhuTFBuTnNOOFJDUUtnUGwtc21Id3lndk9IVjBnYnc?oc=5",
+            "source": "Country Life",
+            "publishedAt": "2026-11-14",
+            "lede": "How London made Peggy Guggenheim one of the world's great artistic patrons Country Life",
+            "articleExcerpt": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life. How London made Peggy Guggenheim one of the world's great artistic patrons Country Life",
+            "contentFingerprint": "09e1f520d03ddac7",
+            "region": "Europe",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.14,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.29
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Country Life"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 49,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 4,
+              "semanticScore": 3.46,
+              "finalScore": 7.46,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Neuberger": [
+          {
+            "id": "2026-11-14-184062f37cb4",
+            "title": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada",
+            "titleZh": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada",
+            "summary": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhYl9CNm5tUE5BZFpMSWpwbnF1UFNLc1JDcXp2MEVqakdENGhRRWVzUUVxd0FWYWxER1RGUFJOTy1RMFZFY3VfQjFZUWZ5dEdBUHBtVmp6d3dZbG1ZWkltbTdEQXpXczBpQ2NKZnVn?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-14",
+            "lede": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance Yahoo! Finance Canada",
+            "articleExcerpt": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada. Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance Yahoo! Finance Canada",
+            "contentFingerprint": "85e2b242d5c6680e",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.85,
+              "finalScore": 15.85,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "BasePoint": [],
         "Bain Capital": [],
         "Blackstone": [
@@ -201501,13 +203259,576 @@
             }
           }
         ],
-        "Apollo": [],
-        "TPG": [],
-        "Golub": [],
+        "Apollo": [
+          {
+            "id": "2026-11-14-4bddcf5c3b08",
+            "title": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
+            "titleZh": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
+            "summary": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend Kalkine Media",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVGVzTVhhZGt4TlFOWlNnSFVBTkpISFg3ZWlQaGFLNHE5cUtJQmlGOHNtTHA4Z2s1WF9ESkhNV1BSdEM1RFk1Y2V6SGJ5c1owYnYyZFVXNnNwcnB6SEcwZ0l4WXd2aUZVcFk2OUlmOGFPbmtHa0RDSWNlZkFFaE1tUkRQa0tXcGh6MENpSHRfQllTVGxtSXVIQXBvbG95d28wRXJXY2ZTUHM?oc=5",
+            "source": "Kalkine Media",
+            "publishedAt": "2026-11-14",
+            "lede": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend Kalkine Media",
+            "articleExcerpt": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media. Apollo Global Management (NYSE:APO) Declares Quarterly Dividend Kalkine Media",
+            "contentFingerprint": "da7ff7468e518eb7",
+            "region": "US",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine Media"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 49,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 5.25,
+              "finalScore": 10.25,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "TPG": [
+          {
+            "id": "2026-11-14-4691a74a5842",
+            "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-14",
+            "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "f03863d246a84386",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.47,
+              "finalScore": 16.47,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Golub": [
+          {
+            "id": "2026-11-14-e78d03df3b77",
+            "title": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance",
+            "titleZh": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance",
+            "summary": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUzFzcnpBSmotNXJIbDY4NkJwX2dnZHhqLVp2QzFuYzU1LVl2UklCRXR1aUtjMDRLZktNdmNnR3hoQ3g5Wkp0ZzEzZ0Q4NS1rRTlaOHlnQWoyRkRZZWZDc0dBOXlVZGRsNEdidXdrektjRnc1R21Fc25nd1Q5Tl81M01Oemo1c3FocFNjVjZCZnZaaXB4QXN5ZzY3UQ?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-14",
+            "lede": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA Yahoo Finance",
+            "articleExcerpt": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance. $250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA Yahoo Finance",
+            "contentFingerprint": "4867ec0fa54b4e99",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.51
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.08,
+              "finalScore": 20.08,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CVC": [],
         "Canyon": []
       },
       "items": [
+        {
+          "id": "2026-11-14-bb92c72dd572",
+          "title": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
+          "titleZh": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
+          "summary": "KKR stock: RWE joint venture reaches financial close in UK wind ad-hoc-news.de",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNbVJPLVQxMHpOZU9YT0xoa3dIZlVGQ29rbzR4R21WRWN3WUQwU1JuTUpOc0QweTVwUjF6dFZ0Z0VlYlVKS3lGRVJtanc2QnhCVmtCaE9NeUgycHFtRGR2d1VweGM5SDZLRmprZDlCRW5YZHlLOUtkVnN5SEYxWC05b1pVcE9xSUdlZkFaOXlCSUVxNTBjWWtJMDg5U3RXQ1piWG1yN0JqSDlYbVZ1TTJHWGRKeDBZSS1xam5sV0VqMEMxczQ?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-14",
+          "lede": "KKR stock: RWE joint venture reaches financial close in UK wind ad-hoc-news.de",
+          "articleExcerpt": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de. KKR stock: RWE joint venture reaches financial close in UK wind ad-hoc-news.de",
+          "contentFingerprint": "4fcba3116d1ca3e9",
+          "region": "Europe",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ad-hoc-news.de"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 65,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.25,
+            "finalScore": 17.25,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-69829715789b",
+          "title": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life",
+          "titleZh": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life",
+          "summary": "How London made Peggy Guggenheim one of the world's great artistic patrons Country Life",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNQ2JqNG9zclZWVnhLUk5fMFBSdEp6ZndGdFhNZm9nbk1pRm4xX3Zza0lVZWVLeEQ4OXJmdzNBbmlPSGtnM1V0MVl1UWNsS2lRVXhwOWR4Z3RoVmJSNmYyYmFWVm9kc0d4QmkxZjhwVEdaTXVseHBwNFRRLURleHpBRlRmNkcxZS1GX3NGZC02UktGLW1pZEJKaFJ3N1dkT1lObWhIN3ktNWhuTFBuTnNOOFJDUUtnUGwtc21Id3lndk9IVjBnYnc?oc=5",
+          "source": "Country Life",
+          "publishedAt": "2026-11-14",
+          "lede": "How London made Peggy Guggenheim one of the world's great artistic patrons Country Life",
+          "articleExcerpt": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life. How London made Peggy Guggenheim one of the world's great artistic patrons Country Life",
+          "contentFingerprint": "09e1f520d03ddac7",
+          "region": "Europe",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.14,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.29
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Country Life"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 49,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 4,
+            "semanticScore": 3.46,
+            "finalScore": 7.46,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-184062f37cb4",
+          "title": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada",
+          "titleZh": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada",
+          "summary": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBhYl9CNm5tUE5BZFpMSWpwbnF1UFNLc1JDcXp2MEVqakdENGhRRWVzUUVxd0FWYWxER1RGUFJOTy1RMFZFY3VfQjFZUWZ5dEdBUHBtVmp6d3dZbG1ZWkltbTdEQXpXczBpQ2NKZnVn?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-14",
+          "lede": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance Yahoo! Finance Canada",
+          "articleExcerpt": "Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance - Yahoo! Finance Canada. Neuberger Berman AbsRetMltStrt (IE00BLMQ7C38.IR) Stock Forum & Discussion - Yahoo Finance Yahoo! Finance Canada",
+          "contentFingerprint": "85e2b242d5c6680e",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.85,
+            "finalScore": 15.85,
+            "semanticEnabled": true
+          }
+        },
         {
           "id": "2026-11-14-aab149d4dd01",
           "title": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times",
@@ -201606,6 +203927,291 @@
             "finalScore": 19.31,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-14-4bddcf5c3b08",
+          "title": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
+          "titleZh": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
+          "summary": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend Kalkine Media",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQVGVzTVhhZGt4TlFOWlNnSFVBTkpISFg3ZWlQaGFLNHE5cUtJQmlGOHNtTHA4Z2s1WF9ESkhNV1BSdEM1RFk1Y2V6SGJ5c1owYnYyZFVXNnNwcnB6SEcwZ0l4WXd2aUZVcFk2OUlmOGFPbmtHa0RDSWNlZkFFaE1tUkRQa0tXcGh6MENpSHRfQllTVGxtSXVIQXBvbG95d28wRXJXY2ZTUHM?oc=5",
+          "source": "Kalkine Media",
+          "publishedAt": "2026-11-14",
+          "lede": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend Kalkine Media",
+          "articleExcerpt": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media. Apollo Global Management (NYSE:APO) Declares Quarterly Dividend Kalkine Media",
+          "contentFingerprint": "da7ff7468e518eb7",
+          "region": "US",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine Media"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 49,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 5.25,
+            "finalScore": 10.25,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-4691a74a5842",
+          "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-14",
+          "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "f03863d246a84386",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.47,
+            "finalScore": 16.47,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-e78d03df3b77",
+          "title": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance",
+          "titleZh": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance",
+          "summary": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOUzFzcnpBSmotNXJIbDY4NkJwX2dnZHhqLVp2QzFuYzU1LVl2UklCRXR1aUtjMDRLZktNdmNnR3hoQ3g5Wkp0ZzEzZ0Q4NS1rRTlaOHlnQWoyRkRZZWZDc0dBOXlVZGRsNEdidXdrektjRnc1R21Fc25nd1Q5Tl81M01Oemo1c3FocFNjVjZCZnZaaXB4QXN5ZzY3UQ?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-14",
+          "lede": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA Yahoo Finance",
+          "articleExcerpt": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance. $250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA Yahoo Finance",
+          "contentFingerprint": "4867ec0fa54b4e99",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.51
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-14T15:31:31.286678+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.08,
+            "finalScore": 20.08,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -201613,7 +204219,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 14,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -201621,12 +204227,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 101,
+      "count": 88,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -201634,7 +204240,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
@@ -201647,12 +204253,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 14,
+      "count": 13,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -201660,20 +204266,20 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
       "count": 8,
-      "selected": 2,
+      "selected": 3,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
@@ -201686,20 +204292,20 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 11,
-      "selected": 5,
+      "count": 12,
+      "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
@@ -201712,12 +204318,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 20,
+      "count": 17,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -201725,7 +204331,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
@@ -201738,12 +204344,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 32,
+      "count": 30,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -201751,38 +204357,38 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 7,
-      "selected": 3,
+      "count": 8,
+      "selected": 5,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
       "count": 3,
-      "selected": 1,
+      "selected": 2,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
       "queries": [
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 15,
+      "count": 13,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -201790,12 +204396,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 27,
+      "count": 28,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -201803,12 +204409,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 409,
+      "count": 509,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -201825,9 +204431,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-14T08:31:55.175941+00:00",
+      "asOf": "2026-11-14T15:31:31.286678+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-14T08:31:55.175941+00:00"
+  "checkedAt": "2026-11-14T15:31:31.286678+00:00"
 }
