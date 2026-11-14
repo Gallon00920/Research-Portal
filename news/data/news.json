@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-13T20:23:15.341110+00:00",
+  "updatedAt": "2026-11-14T01:20:31.665090+00:00",
   "scope": {
     "regions": [
       "US",
@@ -189657,7 +189657,376 @@
             }
           }
         ],
-        "KKR": [],
+        "KKR": [
+          {
+            "id": "2026-11-12-c56f7bbd4ce0",
+            "title": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push - Foreign Policy Journal",
+            "titleZh": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push - Foreign Policy Journal",
+            "summary": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push Foreign Policy Journal",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQ1FZOXBkZUZoQmZRN3B1N1RHcGNscXkwd0JVc21lcGtwTkk0S3hIU2thaHJRYy1KczhBTHZXWkJrSjM0aDkxb0Y0NFg0Q1BhdHIxd01JYmhLbVdxN29oa1ZfNnY4Y3RzN1pYYXZuNjZVT2E1UktxdkVOZkwtWlRBbXptY0dCcWxvTmQyaEZpR21DX25UMkxoYU9YdDJSQ2gtdXpUYUhtejdRWmk4VG8tU0J4VmNXVEE0UWJLbXJrcXpmX09Ebk9oZkRlelp5QQ?oc=5",
+            "source": "Foreign Policy Journal",
+            "publishedAt": "2026-11-12",
+            "lede": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push Foreign Policy Journal",
+            "articleExcerpt": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push - Foreign Policy Journal. Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push Foreign Policy Journal",
+            "contentFingerprint": "41a1de48e210d295",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Foreign Policy Journal"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.58,
+              "finalScore": 16.58,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-0c75604ec368",
+            "title": "RWE and KKR reach financial close on 2.8GW wind projects - The Engineer",
+            "titleZh": "RWE and KKR reach financial close on 2.8GW wind projects - The Engineer",
+            "summary": "RWE and KKR reach financial close on 2.8GW wind projects The Engineer",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORGN3OU50MlpoZDJYeU9kV0UxMXRFb2VIcldtZC1lYjVaS21lNjVyTU5zMzBRNWdZS0c0d2tFM2U2WFRWZml5RmRCU3dVRFIzM1hWVXhLWGJHWWFvTk90d05fWEhjaTRXbVR3UnhxOXRRUU5UcXlLbjY3QldTaExBd0laVjZIbVdkXzhZNE5odl9qTDdIRjllLTVSdw?oc=5",
+            "source": "The Engineer",
+            "publishedAt": "2026-11-12",
+            "lede": "RWE and KKR reach financial close on 2.8GW wind projects The Engineer",
+            "articleExcerpt": "RWE and KKR reach financial close on 2.8GW wind projects - The Engineer. RWE and KKR reach financial close on 2.8GW wind projects The Engineer",
+            "contentFingerprint": "88fccc38ea538dfd",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "The Engineer"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.16,
+              "finalScore": 16.16,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-e22f80463bae",
+            "title": "RWE and KKR win record £12.8bn financing for offshore wind - Maritime Journal",
+            "titleZh": "RWE and KKR win record £12.8bn financing for offshore wind - Maritime Journal",
+            "summary": "RWE and KKR win record £12.8bn financing for offshore wind Maritime Journal",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ2lXNjBCcUhwaEZjenljbm9ZcG9mVVlXNFFMSnFOUHJhanpwMF9jUXUtZnZPVFlCb2RTekVUV0MwRHlaX0hvLTRjUlA3M2gyMWtlc3p0d296N0tzckt3R3NrOUtBdHdNM0ZkQzQ2WXhKVzdqWGZLclRSTWRTMlNMYl9SeDRTbEZqWVRWUnhueGRWUFdaTldRWTBnX3o0UDdNSGtsNGJwam5kdWRMbkRYNmhlUGI5aHFBUGM5UEZ2Yw?oc=5",
+            "source": "Maritime Journal",
+            "publishedAt": "2026-11-12",
+            "lede": "RWE and KKR win record £12.8bn financing for offshore wind Maritime Journal",
+            "articleExcerpt": "RWE and KKR win record £12.8bn financing for offshore wind - Maritime Journal. RWE and KKR win record £12.8bn financing for offshore wind Maritime Journal",
+            "contentFingerprint": "eaa40e8a7af8cf51",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Maritime Journal"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.05,
+              "finalScore": 16.05,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-aeffdac836f5",
+            "title": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics - IndexBox",
+            "titleZh": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics - IndexBox",
+            "summary": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics IndexBox",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOenNUQnRMSWh6enZGbUExNTRvc3QwUzNqZGVwd3R2ZlNIWlZEZVhzQWVsVjI5bndLQXBpSUNHbloyU1B1LTFyNThpaVpqQkpKeldNbldMeDA5TlB1NThfQ2JmUWtLd21PQ0NMTEJsNVJuRjVKYzNPNENwZWJQSmtZTjc1cDFUVkxBMlROWjRMNVo3bW9PRERPb3J1ZklJT0ljdXFzd1F5bXU0QUk?oc=5",
+            "source": "IndexBox",
+            "publishedAt": "2026-11-12",
+            "lede": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics IndexBox",
+            "articleExcerpt": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics - IndexBox. Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics IndexBox",
+            "contentFingerprint": "459ed570a9c3747b",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "IndexBox"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.89,
+              "finalScore": 15.89,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CIFC": [],
         "PAG": [],
         "Pretium": [
@@ -190417,6 +190786,366 @@
               "keywordScore": 14,
               "semanticScore": 5.43,
               "finalScore": 19.43,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-8836f948d104",
+            "title": "Bain Capital real estate chief sees capital shifting to alternative property sectors - Traders Union",
+            "titleZh": "Bain Capital real estate chief sees capital shifting to alternative property sectors - Traders Union",
+            "summary": "Bain Capital real estate chief sees capital shifting to alternative property sectors Traders Union",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZGhsTkc5bHRRdzRqa1VzOG40TUFNTElldE8wWEc0SDBQNU1QUjlRTFVTampjRGhyX1lXaHZpQnZBS3VjSnkzQXZ5TU51djNmck04NEdLNGRka1hRd1B0dm43T1R4bFZwODVpYlVRbjYtTFA2Y05iU3ZGRENuWXNHMkZHSGJZWWNRQjN0R2ZRQ2ctRG5Ba0ZKN1BhcFVBNmlveUI4?oc=5",
+            "source": "Traders Union",
+            "publishedAt": "2026-11-12",
+            "lede": "Bain Capital real estate chief sees capital shifting to alternative property sectors Traders Union",
+            "articleExcerpt": "Bain Capital real estate chief sees capital shifting to alternative property sectors - Traders Union. Bain Capital real estate chief sees capital shifting to alternative property sectors Traders Union",
+            "contentFingerprint": "28565310cfe3ecc4",
+            "region": "US",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Traders Union"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 4.94,
+              "finalScore": 9.940000000000001,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-687eda812f3a",
+            "title": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' - CNBC",
+            "titleZh": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' - CNBC",
+            "summary": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' CNBC",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNi1hYktyWmFhWXcyMktXNHJKNjFfTDIzOUI1dlUyMmd6Sy1nRURjWDVyMWl5NHhsZmRJTkw4dFpQUks2aW8wZnVNblhHdHdJcFNadWZNLWNOZWJEV0Y0Nk43N1lpbGY1YVJKOEZ2cFdWc05RZ3l6QVBwRmlKQ2ZGM3ZnMXdQaFF4dU9ObnU4aU5VTFQ4RVF5UUtYYzN0QUtmclHSAacBQVVfeXFMUGVXVGxSaFhqUFRjbGozVnBBTHBDRThCZUJLd2JPZ1R2bzRtWXBja1FzbXZXRjV0ZWF5T1FWa2hJSWV1UmhRR1l1cU9UOC1iakFaNWlOeFY5c2JpbzVJd1BRSnVVdmgzUlBLSzEzMzRZUnBjTmozTjZoSWN6ZmJuWU4zampUOWRuS2w3RUN3WjdYNlJsNENrOXpwZHBkV1NNTkJUb0hheDA?oc=5",
+            "source": "CNBC",
+            "publishedAt": "2026-11-12",
+            "lede": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' CNBC",
+            "articleExcerpt": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' - CNBC. Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' CNBC",
+            "contentFingerprint": "3f3207b6260798d3",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "CNBC"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.05,
+              "finalScore": 8.05,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-259a87c80bbd",
+            "title": "Bain Capital Completes 900 Billion Won Gong Cha Buyout - Seoul Economic Daily",
+            "titleZh": "Bain Capital Completes 900 Billion Won Gong Cha Buyout - Seoul Economic Daily",
+            "summary": "Bain Capital Completes 900 Billion Won Gong Cha Buyout Seoul Economic Daily",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVXlKNnRYc0JkdlBaeGdjQXRRZ0YyQWtLMFNzVktwSURKQTdiNEY0YUhwZlp2UkQ2aURwcnJvME1tdW5BazNOZnBOWjMwdkRyU21BbFJnMzUybGNsblFYcnp3ZU5DaXY3VTNFUFNKSU9DTFgyNlVNV3RKYjhqNk9zOXcwQWxGZDF0LVFRbFlCU0JkazZWb0M0eQ?oc=5",
+            "source": "Seoul Economic Daily",
+            "publishedAt": "2026-11-12",
+            "lede": "Bain Capital Completes 900 Billion Won Gong Cha Buyout Seoul Economic Daily",
+            "articleExcerpt": "Bain Capital Completes 900 Billion Won Gong Cha Buyout - Seoul Economic Daily. Bain Capital Completes 900 Billion Won Gong Cha Buyout Seoul Economic Daily",
+            "contentFingerprint": "de1ac6821708fb25",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Seoul Economic Daily"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.65,
+              "finalScore": 7.65,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-9a8a569c11e2",
+            "title": "BCSF Financials: Revenue $256.61M, Net Income $61.94M - Quantisnow",
+            "titleZh": "BCSF Financials: Revenue $256.61M, Net Income $61.94M - Quantisnow",
+            "summary": "BCSF Financials: Revenue $256.61M, Net Income $61.94M Quantisnow",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1sbF9pM3VpZG9EN1V5ME1weS1TMnZFaW01MEpiVzFWRUNXVVgxS0lzMWRkWFVGM0hFcE5xTnZMalpRTHJPMTJZNGJhTXdIa3lCZFlqeg?oc=5",
+            "source": "Quantisnow",
+            "publishedAt": "2026-11-12",
+            "lede": "BCSF Financials: Revenue $256.61M, Net Income $61.94M Quantisnow",
+            "articleExcerpt": "BCSF Financials: Revenue $256.61M, Net Income $61.94M - Quantisnow. BCSF Financials: Revenue $256.61M, Net Income $61.94M Quantisnow",
+            "contentFingerprint": "d5f04d74f019b053",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Quantisnow"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.5,
+              "finalScore": 7.5,
               "semanticEnabled": true
             }
           }
@@ -191306,6 +192035,95 @@
               "keywordScore": 11,
               "semanticScore": 5.88,
               "finalScore": 16.88,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-12-5b2be17fc268",
+            "title": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail - PEI Private Equity",
+            "titleZh": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail - PEI Private Equity",
+            "summary": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail PEI Private Equity",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNRDdHci1BOXp3Z3hBRmQwcjN0TFgxdWJOOGlzZjYxdUY4UDJ0aEE1R0dKTFdXTVdrX0s4SEpQSjBkN2staDhJa2RhaUxzOGVSbkxreFlVb3RtREgzTnNzdnBHX2NPRndBN29vMEZadmRiZWlVbU1RaWdRTFlrc1FSeFJiWHE2X3hWYTFnOFhIbkoyT2dJOFFSWXdjLVB6YldiQVVTRFg3Tk9NQnJzZXF3QWZZMEZnS1lrNXBVMkZiU3B0S09uMjdHMko3Y0VZcWpZVWNDV05rMmJJS3Ezc3ZCNnFkQ3pBSVdZY2ViUW9vVzFvOXR4ZEpPa2J4V1ppQ1NKM05DeUhPSC1wcUxUOHFmX0hrNVNBNVVXS1djMHRB?oc=5",
+            "source": "PEI Private Equity",
+            "publishedAt": "2026-11-12",
+            "lede": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail PEI Private Equity",
+            "articleExcerpt": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail - PEI Private Equity. Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail PEI Private Equity",
+            "contentFingerprint": "d351823d0e7ae83c",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "PEI Private Equity"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 48,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.9,
+              "finalScore": 8.9,
               "semanticEnabled": true
             }
           }
@@ -192613,6 +193431,374 @@
           }
         },
         {
+          "id": "2026-11-12-c56f7bbd4ce0",
+          "title": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push - Foreign Policy Journal",
+          "titleZh": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push - Foreign Policy Journal",
+          "summary": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push Foreign Policy Journal",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPQ1FZOXBkZUZoQmZRN3B1N1RHcGNscXkwd0JVc21lcGtwTkk0S3hIU2thaHJRYy1KczhBTHZXWkJrSjM0aDkxb0Y0NFg0Q1BhdHIxd01JYmhLbVdxN29oa1ZfNnY4Y3RzN1pYYXZuNjZVT2E1UktxdkVOZkwtWlRBbXptY0dCcWxvTmQyaEZpR21DX25UMkxoYU9YdDJSQ2gtdXpUYUhtejdRWmk4VG8tU0J4VmNXVEE0UWJLbXJrcXpmX09Ebk9oZkRlelp5QQ?oc=5",
+          "source": "Foreign Policy Journal",
+          "publishedAt": "2026-11-12",
+          "lede": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push Foreign Policy Journal",
+          "articleExcerpt": "Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push - Foreign Policy Journal. Record £12.8 Billion Project Financing Backs RWE And KKR's Massive North Sea Wind Push Foreign Policy Journal",
+          "contentFingerprint": "41a1de48e210d295",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Foreign Policy Journal"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.58,
+            "finalScore": 16.58,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-0c75604ec368",
+          "title": "RWE and KKR reach financial close on 2.8GW wind projects - The Engineer",
+          "titleZh": "RWE and KKR reach financial close on 2.8GW wind projects - The Engineer",
+          "summary": "RWE and KKR reach financial close on 2.8GW wind projects The Engineer",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxORGN3OU50MlpoZDJYeU9kV0UxMXRFb2VIcldtZC1lYjVaS21lNjVyTU5zMzBRNWdZS0c0d2tFM2U2WFRWZml5RmRCU3dVRFIzM1hWVXhLWGJHWWFvTk90d05fWEhjaTRXbVR3UnhxOXRRUU5UcXlLbjY3QldTaExBd0laVjZIbVdkXzhZNE5odl9qTDdIRjllLTVSdw?oc=5",
+          "source": "The Engineer",
+          "publishedAt": "2026-11-12",
+          "lede": "RWE and KKR reach financial close on 2.8GW wind projects The Engineer",
+          "articleExcerpt": "RWE and KKR reach financial close on 2.8GW wind projects - The Engineer. RWE and KKR reach financial close on 2.8GW wind projects The Engineer",
+          "contentFingerprint": "88fccc38ea538dfd",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "The Engineer"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.16,
+            "finalScore": 16.16,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-e22f80463bae",
+          "title": "RWE and KKR win record £12.8bn financing for offshore wind - Maritime Journal",
+          "titleZh": "RWE and KKR win record £12.8bn financing for offshore wind - Maritime Journal",
+          "summary": "RWE and KKR win record £12.8bn financing for offshore wind Maritime Journal",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQ2lXNjBCcUhwaEZjenljbm9ZcG9mVVlXNFFMSnFOUHJhanpwMF9jUXUtZnZPVFlCb2RTekVUV0MwRHlaX0hvLTRjUlA3M2gyMWtlc3p0d296N0tzckt3R3NrOUtBdHdNM0ZkQzQ2WXhKVzdqWGZLclRSTWRTMlNMYl9SeDRTbEZqWVRWUnhueGRWUFdaTldRWTBnX3o0UDdNSGtsNGJwam5kdWRMbkRYNmhlUGI5aHFBUGM5UEZ2Yw?oc=5",
+          "source": "Maritime Journal",
+          "publishedAt": "2026-11-12",
+          "lede": "RWE and KKR win record £12.8bn financing for offshore wind Maritime Journal",
+          "articleExcerpt": "RWE and KKR win record £12.8bn financing for offshore wind - Maritime Journal. RWE and KKR win record £12.8bn financing for offshore wind Maritime Journal",
+          "contentFingerprint": "eaa40e8a7af8cf51",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Maritime Journal"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.05,
+            "finalScore": 16.05,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-aeffdac836f5",
+          "title": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics - IndexBox",
+          "titleZh": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics - IndexBox",
+          "summary": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics IndexBox",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOenNUQnRMSWh6enZGbUExNTRvc3QwUzNqZGVwd3R2ZlNIWlZEZVhzQWVsVjI5bndLQXBpSUNHbloyU1B1LTFyNThpaVpqQkpKeldNbldMeDA5TlB1NThfQ2JmUWtLd21PQ0NMTEJsNVJuRjVKYzNPNENwZWJQSmtZTjc1cDFUVkxBMlROWjRMNVo3bW9PRERPb3J1ZklJT0ljdXFzd1F5bXU0QUk?oc=5",
+          "source": "IndexBox",
+          "publishedAt": "2026-11-12",
+          "lede": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics IndexBox",
+          "articleExcerpt": "Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics - IndexBox. Sempra Closes 45% SI Partners Stake Sale to KKR-Led Consortium - News and Statistics IndexBox",
+          "contentFingerprint": "459ed570a9c3747b",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "IndexBox"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.89,
+            "finalScore": 15.89,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-12-eb0b45558e05",
           "title": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance",
           "titleZh": "Progress Residential Pays $49.7M to Settle FTC Rental Case - Yahoo Finance",
@@ -193361,6 +194547,366 @@
             "keywordScore": 14,
             "semanticScore": 5.43,
             "finalScore": 19.43,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-8836f948d104",
+          "title": "Bain Capital real estate chief sees capital shifting to alternative property sectors - Traders Union",
+          "titleZh": "Bain Capital real estate chief sees capital shifting to alternative property sectors - Traders Union",
+          "summary": "Bain Capital real estate chief sees capital shifting to alternative property sectors Traders Union",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZGhsTkc5bHRRdzRqa1VzOG40TUFNTElldE8wWEc0SDBQNU1QUjlRTFVTampjRGhyX1lXaHZpQnZBS3VjSnkzQXZ5TU51djNmck04NEdLNGRka1hRd1B0dm43T1R4bFZwODVpYlVRbjYtTFA2Y05iU3ZGRENuWXNHMkZHSGJZWWNRQjN0R2ZRQ2ctRG5Ba0ZKN1BhcFVBNmlveUI4?oc=5",
+          "source": "Traders Union",
+          "publishedAt": "2026-11-12",
+          "lede": "Bain Capital real estate chief sees capital shifting to alternative property sectors Traders Union",
+          "articleExcerpt": "Bain Capital real estate chief sees capital shifting to alternative property sectors - Traders Union. Bain Capital real estate chief sees capital shifting to alternative property sectors Traders Union",
+          "contentFingerprint": "28565310cfe3ecc4",
+          "region": "US",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Traders Union"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 4.94,
+            "finalScore": 9.940000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-687eda812f3a",
+          "title": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' - CNBC",
+          "titleZh": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' - CNBC",
+          "summary": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' CNBC",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPNi1hYktyWmFhWXcyMktXNHJKNjFfTDIzOUI1dlUyMmd6Sy1nRURjWDVyMWl5NHhsZmRJTkw4dFpQUks2aW8wZnVNblhHdHdJcFNadWZNLWNOZWJEV0Y0Nk43N1lpbGY1YVJKOEZ2cFdWc05RZ3l6QVBwRmlKQ2ZGM3ZnMXdQaFF4dU9ObnU4aU5VTFQ4RVF5UUtYYzN0QUtmclHSAacBQVVfeXFMUGVXVGxSaFhqUFRjbGozVnBBTHBDRThCZUJLd2JPZ1R2bzRtWXBja1FzbXZXRjV0ZWF5T1FWa2hJSWV1UmhRR1l1cU9UOC1iakFaNWlOeFY5c2JpbzVJd1BRSnVVdmgzUlBLSzEzMzRZUnBjTmozTjZoSWN6ZmJuWU4zampUOWRuS2w3RUN3WjdYNlJsNENrOXpwZHBkV1NNTkJUb0hheDA?oc=5",
+          "source": "CNBC",
+          "publishedAt": "2026-11-12",
+          "lede": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' CNBC",
+          "articleExcerpt": "Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' - CNBC. Bain Capital’s head of real estate uses this strategy to counter the economy’s ‘cocktail of disruption' CNBC",
+          "contentFingerprint": "3f3207b6260798d3",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "CNBC"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.05,
+            "finalScore": 8.05,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-259a87c80bbd",
+          "title": "Bain Capital Completes 900 Billion Won Gong Cha Buyout - Seoul Economic Daily",
+          "titleZh": "Bain Capital Completes 900 Billion Won Gong Cha Buyout - Seoul Economic Daily",
+          "summary": "Bain Capital Completes 900 Billion Won Gong Cha Buyout Seoul Economic Daily",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNVXlKNnRYc0JkdlBaeGdjQXRRZ0YyQWtLMFNzVktwSURKQTdiNEY0YUhwZlp2UkQ2aURwcnJvME1tdW5BazNOZnBOWjMwdkRyU21BbFJnMzUybGNsblFYcnp3ZU5DaXY3VTNFUFNKSU9DTFgyNlVNV3RKYjhqNk9zOXcwQWxGZDF0LVFRbFlCU0JkazZWb0M0eQ?oc=5",
+          "source": "Seoul Economic Daily",
+          "publishedAt": "2026-11-12",
+          "lede": "Bain Capital Completes 900 Billion Won Gong Cha Buyout Seoul Economic Daily",
+          "articleExcerpt": "Bain Capital Completes 900 Billion Won Gong Cha Buyout - Seoul Economic Daily. Bain Capital Completes 900 Billion Won Gong Cha Buyout Seoul Economic Daily",
+          "contentFingerprint": "de1ac6821708fb25",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Seoul Economic Daily"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.65,
+            "finalScore": 7.65,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-9a8a569c11e2",
+          "title": "BCSF Financials: Revenue $256.61M, Net Income $61.94M - Quantisnow",
+          "titleZh": "BCSF Financials: Revenue $256.61M, Net Income $61.94M - Quantisnow",
+          "summary": "BCSF Financials: Revenue $256.61M, Net Income $61.94M Quantisnow",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1sbF9pM3VpZG9EN1V5ME1weS1TMnZFaW01MEpiVzFWRUNXVVgxS0lzMWRkWFVGM0hFcE5xTnZMalpRTHJPMTJZNGJhTXdIa3lCZFlqeg?oc=5",
+          "source": "Quantisnow",
+          "publishedAt": "2026-11-12",
+          "lede": "BCSF Financials: Revenue $256.61M, Net Income $61.94M Quantisnow",
+          "articleExcerpt": "BCSF Financials: Revenue $256.61M, Net Income $61.94M - Quantisnow. BCSF Financials: Revenue $256.61M, Net Income $61.94M Quantisnow",
+          "contentFingerprint": "d5f04d74f019b053",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Quantisnow"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.5,
+            "finalScore": 7.5,
             "semanticEnabled": true
           }
         },
@@ -194246,6 +195792,95 @@
             "keywordScore": 11,
             "semanticScore": 5.88,
             "finalScore": 16.88,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-12-5b2be17fc268",
+          "title": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail - PEI Private Equity",
+          "titleZh": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail - PEI Private Equity",
+          "summary": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail PEI Private Equity",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNRDdHci1BOXp3Z3hBRmQwcjN0TFgxdWJOOGlzZjYxdUY4UDJ0aEE1R0dKTFdXTVdrX0s4SEpQSjBkN2staDhJa2RhaUxzOGVSbkxreFlVb3RtREgzTnNzdnBHX2NPRndBN29vMEZadmRiZWlVbU1RaWdRTFlrc1FSeFJiWHE2X3hWYTFnOFhIbkoyT2dJOFFSWXdjLVB6YldiQVVTRFg3Tk9NQnJzZXF3QWZZMEZnS1lrNXBVMkZiU3B0S09uMjdHMko3Y0VZcWpZVWNDV05rMmJJS3Ezc3ZCNnFkQ3pBSVdZY2ViUW9vVzFvOXR4ZEpPa2J4V1ppQ1NKM05DeUhPSC1wcUxUOHFmX0hrNVNBNVVXS1djMHRB?oc=5",
+          "source": "PEI Private Equity",
+          "publishedAt": "2026-11-12",
+          "lede": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail PEI Private Equity",
+          "articleExcerpt": "Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail - PEI Private Equity. Ardian co-CEO Mark Benedetti details mispricing opportunities; Apollo Sports Capital invests in Yankee Global Enterprises; New Heritage backs PowerRail PEI Private Equity",
+          "contentFingerprint": "d351823d0e7ae83c",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.25,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "PEI Private Equity"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 48,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.9,
+            "finalScore": 8.9,
             "semanticEnabled": true
           }
         },
@@ -195541,6 +197176,99 @@
               "finalScore": 18.75,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-591215f65f39",
+            "title": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) - Enerdata",
+            "titleZh": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) - Enerdata",
+            "summary": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) Enerdata",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQzNZZklVM1pYajdIOFMwaFd2N1k3Z05KYTNDQ05pMkdKMjFUMS1XYjZwR1d3R1F0eUdwbkRHT0xvQjZCWDRnMjBSOTdNUnN5ZEtMWGZIUWNITE9OdzBJaXh6Y2pTLXJ6cDRMVVF2c3pERHNac3VBQkFLa3Nkcy1tT25XZXd5eWNqSURrUEp1NXFPQUNRTlRRdUlGMExFSkxxNHdKZVdNWVBiWVlXR3I5dDZqRGF4ckJVS3pHVnZVcGRuSlAzVmxr?oc=5",
+            "source": "Enerdata",
+            "publishedAt": "2026-11-13",
+            "lede": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) Enerdata",
+            "articleExcerpt": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) - Enerdata. RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) Enerdata",
+            "contentFingerprint": "e8c588f4ca0587c1",
+            "region": "Europe",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Enerdata"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 65,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.06,
+              "finalScore": 17.06,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -196308,6 +198036,277 @@
               "finalScore": 16.88,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-758fcc9cedb7",
+            "title": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection - Yahoo Finance",
+            "titleZh": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection - Yahoo Finance",
+            "summary": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcGhrcTlseGMzMXpZS2o4RnlZSWZYNXZoUkZkTFJpZDVJQklaOVJQbTFEZGpKcVlzbGpWZF8xYUpCQUZYc0lNZWI2ajJwVGhEMXRWQXlBRUJxc2xwVGN0ak81cjV0cjBqaUVDZnhfMVQ5RTlDOVRxbXpsTUNpWUZXcVlVejFjX3JuWGpaNHFQdHBWaDN3MmRJQXQtUVFYLVVLS2ZF?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-13",
+            "lede": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection Yahoo Finance",
+            "articleExcerpt": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection - Yahoo Finance. Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection Yahoo Finance",
+            "contentFingerprint": "21e513c8610d5798",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.09,
+              "finalScore": 16.09,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-5aaf3d7c7028",
+            "title": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? - The Daily Jagran",
+            "titleZh": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? - The Daily Jagran",
+            "summary": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? The Daily Jagran",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeHlGVmd5SXo0eUVqZVBmWjgyejZlVzNQT21GakxhMlZBcUtHcmtLRFphdGE5VkdyRHFweERoVnBxMFkwU09PZGFwYmVRdzdub3VCOHJCYlB1d1pfR3VJZDlsNDZsZnE3TGRneDN4WVJ6OGNWamgxdUhzVmExSmRERlBqRktZYmZ3WllfTi0xRnd2UjlEYWxYTkJLcUNwS3VOTXVWVEtvd3BraTE4eG5lZVJqa0p2Yzc2WWs1eXpuOXZLWGs4dEF4Wkh30gHQAUFVX3lxTE4ycTRuem1kaTI0QVBzbk42a1hxSC05OC1CQUJOcDRoMjBxRHZyM0xSV0d4OXQ4dkVRTS1WX3ljWUNWbmNQSU4yWGpyczY5ZEpPVW9WTmJaNGVSRHpEMU1vemw4ZFBpcUtEVWJ4YXUza1lUS3NQbVZVdzd2X3cxX0NtLXQxWnBjaUNaZV9IazRYWlZfaVBwTU5DS3FzSGROVDJ4cGlrbi1NcnJjMnpjbGtZS0FvdEl3OWd5dlhWem91dzNVRWphektwY3owdE1KdGM?oc=5",
+            "source": "The Daily Jagran",
+            "publishedAt": "2026-11-13",
+            "lede": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? The Daily Jagran",
+            "articleExcerpt": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? - The Daily Jagran. Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? The Daily Jagran",
+            "contentFingerprint": "71dc21d9b689f99c",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "The Daily Jagran"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 49,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.63,
+              "finalScore": 7.63,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-7ddf5c623c59",
+            "title": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment - Supply Chain Digital Magazine",
+            "titleZh": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment - Supply Chain Digital Magazine",
+            "summary": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment Supply Chain Digital Magazine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSXIxa3NMX3htWUNaYkJyXzhlMm5DYVVsaXZHM2ZkTFVVUUFPRWRMN0lpejRtRjlXTklWU0xoRXZQb0o0cklDb1FPaEhEaXBEblBOdVVjcDJzallRM09XZVd1Wno1OW9FRllEOFFiQnBKbjBiN2hxMnhLOUJFaU4wVS1Qb19JXzc4T1VXNVU5QUtIZEVvYnV0LWRn?oc=5",
+            "source": "Supply Chain Digital Magazine",
+            "publishedAt": "2026-11-13",
+            "lede": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment Supply Chain Digital Magazine",
+            "articleExcerpt": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment - Supply Chain Digital Magazine. GXO Inks Apptronik Deal to Scale Apollo Robot Deployment Supply Chain Digital Magazine",
+            "contentFingerprint": "83b74c949d179c2a",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Supply Chain Digital Magazine"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.61,
+              "finalScore": 7.61,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [],
@@ -196592,6 +198591,95 @@
               "keywordScore": 3,
               "semanticScore": 4.85,
               "finalScore": 7.85,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-71f844c5aac1",
+            "title": "People moves: McKnight Foundation names first CIO, CVC appoints CTO - Alternatives Watch",
+            "titleZh": "People moves: McKnight Foundation names first CIO, CVC appoints CTO - Alternatives Watch",
+            "summary": "People moves: McKnight Foundation names first CIO, CVC appoints CTO Alternatives Watch",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLWlBaVBRMGZlN1FIQVgzbzVpUk9DdUZIOGRvQzBnQnJUZVlQdVdLWlplRnFZM3hfTEFZQ2NQeGJPYnNyc2o0Tkx5Z2VoTkdYanpvVE5JYnlLTFlKZ3JLcGZrSXY5NzUwQ0g5N1NQVmlUeUZ5aWVoWVVHYmZrRGlCT3pmNjhIcWM1R0lBbFpUTk1SczBuZER5U1dHUDdvcjBRUUpMNUk1OENNOGFqVzc3SEFqNA?oc=5",
+            "source": "Alternatives Watch",
+            "publishedAt": "2026-11-13",
+            "lede": "People moves: McKnight Foundation names first CIO, CVC appoints CTO Alternatives Watch",
+            "articleExcerpt": "People moves: McKnight Foundation names first CIO, CVC appoints CTO - Alternatives Watch. People moves: McKnight Foundation names first CIO, CVC appoints CTO Alternatives Watch",
+            "contentFingerprint": "1ce031d8b72675ab",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Alternatives Watch"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.11,
+              "finalScore": 8.11,
               "semanticEnabled": true
             }
           }
@@ -196980,6 +199068,99 @@
             "keywordScore": 14,
             "semanticScore": 4.75,
             "finalScore": 18.75,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-591215f65f39",
+          "title": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) - Enerdata",
+          "titleZh": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) - Enerdata",
+          "summary": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) Enerdata",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPQzNZZklVM1pYajdIOFMwaFd2N1k3Z05KYTNDQ05pMkdKMjFUMS1XYjZwR1d3R1F0eUdwbkRHT0xvQjZCWDRnMjBSOTdNUnN5ZEtMWGZIUWNITE9OdzBJaXh6Y2pTLXJ6cDRMVVF2c3pERHNac3VBQkFLa3Nkcy1tT25XZXd5eWNqSURrUEp1NXFPQUNRTlRRdUlGMExFSkxxNHdKZVdNWVBiWVlXR3I5dDZqRGF4ckJVS3pHVnZVcGRuSlAzVmxr?oc=5",
+          "source": "Enerdata",
+          "publishedAt": "2026-11-13",
+          "lede": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) Enerdata",
+          "articleExcerpt": "RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) - Enerdata. RWE and KKR reach financial close on 2 offshore wind projects in the UK (2.8 GW) Enerdata",
+          "contentFingerprint": "e8c588f4ca0587c1",
+          "region": "Europe",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Enerdata"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 65,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.06,
+            "finalScore": 17.06,
             "semanticEnabled": true
           }
         },
@@ -197736,6 +199917,277 @@
           }
         },
         {
+          "id": "2026-11-13-758fcc9cedb7",
+          "title": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection - Yahoo Finance",
+          "titleZh": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection - Yahoo Finance",
+          "summary": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOcGhrcTlseGMzMXpZS2o4RnlZSWZYNXZoUkZkTFJpZDVJQklaOVJQbTFEZGpKcVlzbGpWZF8xYUpCQUZYc0lNZWI2ajJwVGhEMXRWQXlBRUJxc2xwVGN0ak81cjV0cjBqaUVDZnhfMVQ5RTlDOVRxbXpsTUNpWUZXcVlVejFjX3JuWGpaNHFQdHBWaDN3MmRJQXQtUVFYLVVLS2ZF?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-13",
+          "lede": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection Yahoo Finance",
+          "articleExcerpt": "Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection - Yahoo Finance. Apollo Art Auctions Presents Fine Asian, Tribal, Pre-Columbian Art and Antiques: The Prince Collection Yahoo Finance",
+          "contentFingerprint": "21e513c8610d5798",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.09,
+            "finalScore": 16.09,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-5aaf3d7c7028",
+          "title": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? - The Daily Jagran",
+          "titleZh": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? - The Daily Jagran",
+          "summary": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? The Daily Jagran",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQeHlGVmd5SXo0eUVqZVBmWjgyejZlVzNQT21GakxhMlZBcUtHcmtLRFphdGE5VkdyRHFweERoVnBxMFkwU09PZGFwYmVRdzdub3VCOHJCYlB1d1pfR3VJZDlsNDZsZnE3TGRneDN4WVJ6OGNWamgxdUhzVmExSmRERlBqRktZYmZ3WllfTi0xRnd2UjlEYWxYTkJLcUNwS3VOTXVWVEtvd3BraTE4eG5lZVJqa0p2Yzc2WWs1eXpuOXZLWGs4dEF4Wkh30gHQAUFVX3lxTE4ycTRuem1kaTI0QVBzbk42a1hxSC05OC1CQUJOcDRoMjBxRHZyM0xSV0d4OXQ4dkVRTS1WX3ljWUNWbmNQSU4yWGpyczY5ZEpPVW9WTmJaNGVSRHpEMU1vemw4ZFBpcUtEVWJ4YXUza1lUS3NQbVZVdzd2X3cxX0NtLXQxWnBjaUNaZV9IazRYWlZfaVBwTU5DS3FzSGROVDJ4cGlrbi1NcnJjMnpjbGtZS0FvdEl3OWd5dlhWem91dzNVRWphektwY3owdE1KdGM?oc=5",
+          "source": "The Daily Jagran",
+          "publishedAt": "2026-11-13",
+          "lede": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? The Daily Jagran",
+          "articleExcerpt": "Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? - The Daily Jagran. Apollo Micro Systems Shares Rise 8%, Hit 52-Week High: What's Driving the Rally? The Daily Jagran",
+          "contentFingerprint": "71dc21d9b689f99c",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "The Daily Jagran"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 49,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.63,
+            "finalScore": 7.63,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-7ddf5c623c59",
+          "title": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment - Supply Chain Digital Magazine",
+          "titleZh": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment - Supply Chain Digital Magazine",
+          "summary": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment Supply Chain Digital Magazine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSXIxa3NMX3htWUNaYkJyXzhlMm5DYVVsaXZHM2ZkTFVVUUFPRWRMN0lpejRtRjlXTklWU0xoRXZQb0o0cklDb1FPaEhEaXBEblBOdVVjcDJzallRM09XZVd1Wno1OW9FRllEOFFiQnBKbjBiN2hxMnhLOUJFaU4wVS1Qb19JXzc4T1VXNVU5QUtIZEVvYnV0LWRn?oc=5",
+          "source": "Supply Chain Digital Magazine",
+          "publishedAt": "2026-11-13",
+          "lede": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment Supply Chain Digital Magazine",
+          "articleExcerpt": "GXO Inks Apptronik Deal to Scale Apollo Robot Deployment - Supply Chain Digital Magazine. GXO Inks Apptronik Deal to Scale Apollo Robot Deployment Supply Chain Digital Magazine",
+          "contentFingerprint": "83b74c949d179c2a",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Supply Chain Digital Magazine"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.61,
+            "finalScore": 7.61,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-6393e5c2e410",
           "title": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
           "titleZh": "Form 4 Golub Capital Private Credit Fund: David Golub (Director, CEO and Trustee) For: 1 October - Investing.com Canada",
@@ -197922,6 +200374,315 @@
             "finalScore": 7.85,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-13-71f844c5aac1",
+          "title": "People moves: McKnight Foundation names first CIO, CVC appoints CTO - Alternatives Watch",
+          "titleZh": "People moves: McKnight Foundation names first CIO, CVC appoints CTO - Alternatives Watch",
+          "summary": "People moves: McKnight Foundation names first CIO, CVC appoints CTO Alternatives Watch",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOLWlBaVBRMGZlN1FIQVgzbzVpUk9DdUZIOGRvQzBnQnJUZVlQdVdLWlplRnFZM3hfTEFZQ2NQeGJPYnNyc2o0Tkx5Z2VoTkdYanpvVE5JYnlLTFlKZ3JLcGZrSXY5NzUwQ0g5N1NQVmlUeUZ5aWVoWVVHYmZrRGlCT3pmNjhIcWM1R0lBbFpUTk1SczBuZER5U1dHUDdvcjBRUUpMNUk1OENNOGFqVzc3SEFqNA?oc=5",
+          "source": "Alternatives Watch",
+          "publishedAt": "2026-11-13",
+          "lede": "People moves: McKnight Foundation names first CIO, CVC appoints CTO Alternatives Watch",
+          "articleExcerpt": "People moves: McKnight Foundation names first CIO, CVC appoints CTO - Alternatives Watch. People moves: McKnight Foundation names first CIO, CVC appoints CTO Alternatives Watch",
+          "contentFingerprint": "1ce031d8b72675ab",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Alternatives Watch"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.11,
+            "finalScore": 8.11,
+            "semanticEnabled": true
+          }
+        }
+      ]
+    },
+    "2026-11-14": {
+      "byGp": {
+        "Blue Owl": [],
+        "KKR": [],
+        "CIFC": [],
+        "PAG": [],
+        "Pretium": [],
+        "Guggenheim": [],
+        "Neuberger": [],
+        "BasePoint": [],
+        "Bain Capital": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-14-aab149d4dd01",
+            "title": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times",
+            "titleZh": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times",
+            "summary": "Blackstone’s QTS is cutting AI debt sale by more than half The Business Times",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcG1fc1pwTFR0RkNDTkoyOGlBcG5RSGgxNWY5dnlNMnY3VFpRVEU1RHlXRkU0WnQ1Y2JGcFZMTFBZRFNqYlpoYkJGWWo0Z09JZTgwWURwTm9GaGg3NTQ1X3hQRmhrVUlHaldxdmpsNU9BeTRJc2xqMEtiLWtIZ2VDOV9wRUFsaGpCY0c5aW8tWHJUdw?oc=5",
+            "source": "The Business Times",
+            "publishedAt": "2026-11-14",
+            "lede": "Blackstone’s QTS is cutting AI debt sale by more than half The Business Times",
+            "articleExcerpt": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times. Blackstone’s QTS is cutting AI debt sale by more than half The Business Times",
+            "contentFingerprint": "5a90731873d10e67",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "The Business Times"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.31,
+              "finalScore": 19.31,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Apollo": [],
+        "TPG": [],
+        "Golub": [],
+        "CVC": [],
+        "Canyon": []
+      },
+      "items": [
+        {
+          "id": "2026-11-14-aab149d4dd01",
+          "title": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times",
+          "titleZh": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times",
+          "summary": "Blackstone’s QTS is cutting AI debt sale by more than half The Business Times",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPcG1fc1pwTFR0RkNDTkoyOGlBcG5RSGgxNWY5dnlNMnY3VFpRVEU1RHlXRkU0WnQ1Y2JGcFZMTFBZRFNqYlpoYkJGWWo0Z09JZTgwWURwTm9GaGg3NTQ1X3hQRmhrVUlHaldxdmpsNU9BeTRJc2xqMEtiLWtIZ2VDOV9wRUFsaGpCY0c5aW8tWHJUdw?oc=5",
+          "source": "The Business Times",
+          "publishedAt": "2026-11-14",
+          "lede": "Blackstone’s QTS is cutting AI debt sale by more than half The Business Times",
+          "articleExcerpt": "Blackstone’s QTS is cutting AI debt sale by more than half - The Business Times. Blackstone’s QTS is cutting AI debt sale by more than half The Business Times",
+          "contentFingerprint": "5a90731873d10e67",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "The Business Times"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-14T01:16:06.440960+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.31,
+            "finalScore": 19.31,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -197929,7 +200690,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 17,
+      "count": 16,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -197937,7 +200698,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
@@ -197950,7 +200711,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
@@ -197963,12 +200724,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 17,
+      "count": 16,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -197976,12 +200737,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 5,
+      "count": 10,
       "selected": 2,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -197989,33 +200750,33 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
       "count": 10,
-      "selected": 6,
+      "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 16,
-      "selected": 6,
+      "count": 14,
+      "selected": 4,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
@@ -198028,12 +200789,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 21,
+      "count": 24,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -198041,7 +200802,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
@@ -198054,12 +200815,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 34,
+      "count": 32,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -198067,20 +200828,20 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 8,
-      "selected": 4,
+      "count": 7,
+      "selected": 3,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
@@ -198093,12 +200854,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 18,
+      "count": 16,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -198106,7 +200867,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
@@ -198119,12 +200880,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 547,
+      "count": 537,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -198141,9 +200902,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-13T20:18:07.792832+00:00",
+      "asOf": "2026-11-14T01:16:06.440960+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-13T20:18:07.792832+00:00"
+  "checkedAt": "2026-11-14T01:16:06.440960+00:00"
 }
