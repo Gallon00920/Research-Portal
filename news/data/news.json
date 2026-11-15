@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-15T00:46:35.217228+00:00",
+  "updatedAt": "2026-11-15T07:34:45.617578+00:00",
   "scope": {
     "regions": [
       "US",
@@ -200705,6 +200705,192 @@
               "finalScore": 16.35,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-b569d55d85a0",
+            "title": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World - Yahoo Finance",
+            "titleZh": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World - Yahoo Finance",
+            "summary": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaUs2a21NRmQ2dVpxbFlrcDJlOUJ4VUgwNUl1eXJTZ1dPM29KUnc3MUZNZXhRRy1PYk5LSUlKUXFlUEF3MFZOMEZmcjlKc2ZaZmxTX3liTFBYVXVwS29yNHNVNy1YME80UDlDVVFfZ0dsTi13aEVkOXEtRkhtMGJ1amN1MzZ1dkEwNDNBSllMek13c1dVVDJkak9FQ2k2R2pmdlYzSXV3?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-13",
+            "lede": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World Yahoo Finance",
+            "articleExcerpt": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World - Yahoo Finance. Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World Yahoo Finance",
+            "contentFingerprint": "beb0e3eeadb6062f",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.96,
+              "finalScore": 15.96,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-ffb22e9351ff",
+            "title": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery - Yahoo Finance",
+            "titleZh": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery - Yahoo Finance",
+            "summary": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTElZb3RETFFmYVl6T2ZlSUs1cWRhaDBJX05rUUQ1NTYwd1E2eW5uVXQzOGRaaXFKUU5LWGJxNC1HSEF5Nzhwd01vaHF1X0FHR0N6d2U0WWpyMFRUbzNONGp2ck5UaUVEZ1h3REpiMG5WQ1MxV05mV2Rtbk5oMk9VaVAyTmFBZkpDMnVyQnBzOVhmU3ppdXg4TlBaSFhzM3o0RExz?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-13",
+            "lede": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery Yahoo Finance",
+            "articleExcerpt": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery - Yahoo Finance. Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery Yahoo Finance",
+            "contentFingerprint": "08a8f604b2090678",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.91,
+              "finalScore": 15.91,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [
@@ -200887,6 +201073,192 @@
               "keywordScore": 3,
               "semanticScore": 5.0,
               "finalScore": 8.0,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-1cee5414c563",
+            "title": "TPG RE Finance Trust director buys $16,250 in company stock - Investing.com",
+            "titleZh": "TPG RE Finance Trust director buys $16,250 in company stock - Investing.com",
+            "summary": "TPG RE Finance Trust director buys $16,250 in company stock Investing.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORHRCa1lQM1pXMUo1TEwxZ2hmeTNyaC1xZDcyc3dhTVlZZFVqUDZPdzZOLXFPSFRmQ2FMWTBlVkkxQkFBQ0JKbXlxd20wVE9KSGFQNUVBNWhqQm5RSW85RUdDSWxUa3ZranE1dUZxR3R6LUN1XzNPazl6SDJnX3g4SHZoRGFXT2dvTzBJTWhwdkJOakRqaWMzNFdOUEVka2JRNXZjUzhvZERkcnpOOVEyQTRrUzhiYTZXMGFOdTBxYw?oc=5",
+            "source": "Investing.com",
+            "publishedAt": "2026-11-13",
+            "lede": "TPG RE Finance Trust director buys $16,250 in company stock Investing.com",
+            "articleExcerpt": "TPG RE Finance Trust director buys $16,250 in company stock - Investing.com. TPG RE Finance Trust director buys $16,250 in company stock Investing.com",
+            "contentFingerprint": "ebd0d5e1997d3318",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.36,
+              "finalScore": 16.36,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-57489fc7f749",
+            "title": "Tpg re finance trust director Michael Smith buys $64,600 in stock - Investing.com",
+            "titleZh": "Tpg re finance trust director Michael Smith buys $64,600 in stock - Investing.com",
+            "summary": "Tpg re finance trust director Michael Smith buys $64,600 in stock Investing.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcXBwejhwVkFQS2ZndDU4d2JwLXV0RlJTdWwxd05kSzhucHk1R1F3cURPVEFDenNMczV4MUJUTFJsQUlfYnB4OE9aQlFzc2NxZjNTOEF4MURHRF8xWWVSeVBnWHJUZXdPQVhUZ1JIMGNfdjVIc1RvY2NpTVVGYjJxTVpSNVFkMEpYWmdoRzVZaE5QZzd4S1l0Qmdqa2lUVlIwcnJVaTF2UmQwZjVYR2tWRkVWa016cG5PVl9xZkpBbGRrdElRSndn?oc=5",
+            "source": "Investing.com",
+            "publishedAt": "2026-11-13",
+            "lede": "Tpg re finance trust director Michael Smith buys $64,600 in stock Investing.com",
+            "articleExcerpt": "Tpg re finance trust director Michael Smith buys $64,600 in stock - Investing.com. Tpg re finance trust director Michael Smith buys $64,600 in stock Investing.com",
+            "contentFingerprint": "643d007a97af55b7",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.23,
+              "finalScore": 16.23,
               "semanticEnabled": true
             }
           }
@@ -204609,6 +204981,192 @@
           }
         },
         {
+          "id": "2026-11-13-b569d55d85a0",
+          "title": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World - Yahoo Finance",
+          "titleZh": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World - Yahoo Finance",
+          "summary": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPaUs2a21NRmQ2dVpxbFlrcDJlOUJ4VUgwNUl1eXJTZ1dPM29KUnc3MUZNZXhRRy1PYk5LSUlKUXFlUEF3MFZOMEZmcjlKc2ZaZmxTX3liTFBYVXVwS29yNHNVNy1YME80UDlDVVFfZ0dsTi13aEVkOXEtRkhtMGJ1amN1MzZ1dkEwNDNBSllMek13c1dVVDJkak9FQ2k2R2pmdlYzSXV3?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-13",
+          "lede": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World Yahoo Finance",
+          "articleExcerpt": "Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World - Yahoo Finance. Apollo Art Auctions Presents The Prince Collection: Ancient Jewellery and Beads Across the Ancient World Yahoo Finance",
+          "contentFingerprint": "beb0e3eeadb6062f",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.96,
+            "finalScore": 15.96,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-ffb22e9351ff",
+          "title": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery - Yahoo Finance",
+          "titleZh": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery - Yahoo Finance",
+          "summary": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOTElZb3RETFFmYVl6T2ZlSUs1cWRhaDBJX05rUUQ1NTYwd1E2eW5uVXQzOGRaaXFKUU5LWGJxNC1HSEF5Nzhwd01vaHF1X0FHR0N6d2U0WWpyMFRUbzNONGp2ck5UaUVEZ1h3REpiMG5WQ1MxV05mV2Rtbk5oMk9VaVAyTmFBZkpDMnVyQnBzOVhmU3ppdXg4TlBaSFhzM3o0RExz?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-13",
+          "lede": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery Yahoo Finance",
+          "articleExcerpt": "Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery - Yahoo Finance. Apollo Art Auctions Presents Fine Islamic and Indian Art: Masterpieces of Metalwork, Arms and Mughal Jewellery Yahoo Finance",
+          "contentFingerprint": "08a8f604b2090678",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.91,
+            "finalScore": 15.91,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-4691a74a5842",
           "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
           "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
@@ -204787,6 +205345,192 @@
             "keywordScore": 3,
             "semanticScore": 5.0,
             "finalScore": 8.0,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-1cee5414c563",
+          "title": "TPG RE Finance Trust director buys $16,250 in company stock - Investing.com",
+          "titleZh": "TPG RE Finance Trust director buys $16,250 in company stock - Investing.com",
+          "summary": "TPG RE Finance Trust director buys $16,250 in company stock Investing.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxORHRCa1lQM1pXMUo1TEwxZ2hmeTNyaC1xZDcyc3dhTVlZZFVqUDZPdzZOLXFPSFRmQ2FMWTBlVkkxQkFBQ0JKbXlxd20wVE9KSGFQNUVBNWhqQm5RSW85RUdDSWxUa3ZranE1dUZxR3R6LUN1XzNPazl6SDJnX3g4SHZoRGFXT2dvTzBJTWhwdkJOakRqaWMzNFdOUEVka2JRNXZjUzhvZERkcnpOOVEyQTRrUzhiYTZXMGFOdTBxYw?oc=5",
+          "source": "Investing.com",
+          "publishedAt": "2026-11-13",
+          "lede": "TPG RE Finance Trust director buys $16,250 in company stock Investing.com",
+          "articleExcerpt": "TPG RE Finance Trust director buys $16,250 in company stock - Investing.com. TPG RE Finance Trust director buys $16,250 in company stock Investing.com",
+          "contentFingerprint": "ebd0d5e1997d3318",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.36,
+            "finalScore": 16.36,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-57489fc7f749",
+          "title": "Tpg re finance trust director Michael Smith buys $64,600 in stock - Investing.com",
+          "titleZh": "Tpg re finance trust director Michael Smith buys $64,600 in stock - Investing.com",
+          "summary": "Tpg re finance trust director Michael Smith buys $64,600 in stock Investing.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPcXBwejhwVkFQS2ZndDU4d2JwLXV0RlJTdWwxd05kSzhucHk1R1F3cURPVEFDenNMczV4MUJUTFJsQUlfYnB4OE9aQlFzc2NxZjNTOEF4MURHRF8xWWVSeVBnWHJUZXdPQVhUZ1JIMGNfdjVIc1RvY2NpTVVGYjJxTVpSNVFkMEpYWmdoRzVZaE5QZzd4S1l0Qmdqa2lUVlIwcnJVaTF2UmQwZjVYR2tWRkVWa016cG5PVl9xZkpBbGRrdElRSndn?oc=5",
+          "source": "Investing.com",
+          "publishedAt": "2026-11-13",
+          "lede": "Tpg re finance trust director Michael Smith buys $64,600 in stock Investing.com",
+          "articleExcerpt": "Tpg re finance trust director Michael Smith buys $64,600 in stock - Investing.com. Tpg re finance trust director Michael Smith buys $64,600 in stock Investing.com",
+          "contentFingerprint": "643d007a97af55b7",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.23,
+            "finalScore": 16.23,
             "semanticEnabled": true
           }
         },
@@ -205259,6 +206003,105 @@
               "finalScore": 10.48,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-8de764132b0b",
+            "title": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares - Stocktwits",
+            "titleZh": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares - Stocktwits",
+            "summary": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares Stocktwits",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcG5xcVBJcXBKLVpsT1BXTEUtV3c4T0JqYWtqcXpnaC1Ray11bTA4WDVLVHdQa0hmWEhjSll1eVFJRHo3N3dwcEpJM1FfYnNKY1dEQ1JDZ3NlTVdFbDlOZEdGX0dlak0zOGdtNUhfUnZLQVdRbGI1dzk0d2h3RVBxWnd4bjFPWGtiN3Ixd1lHN1R5c2NiVG8yNXRLVWRDd050akNjaXVzX25pZXpvZndYVHVmVzRrcHV4a1pFMGFBNU5ZZlRnbXRHVjZMbENaS0tNSU1KaTdJdU1ic3I5LTQxMw?oc=5",
+            "source": "Stocktwits",
+            "publishedAt": "2026-11-14",
+            "lede": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares Stocktwits",
+            "articleExcerpt": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares - Stocktwits. Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares Stocktwits",
+            "contentFingerprint": "306d89530ba6f8cd",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.78,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.56
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Stocktwits"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 55,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.77,
+              "finalScore": 20.77,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -205543,6 +206386,99 @@
               "finalScore": 15.85,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-d30e081b288b",
+            "title": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart - Yahoo Finance UK",
+            "titleZh": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart - Yahoo Finance UK",
+            "summary": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sRzRvcWxURjJpczZveWcyMS1fbmpPcTZhNERMMXk5ZEhscVdCWmpjcjNiMnZNckxaVmdISXN6VVpEZlBEZ0V1dFdwRWxfVW9naEgtRXJYalk0cm1DZ2hRYzc3QQ?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-14",
+            "lede": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart Yahoo Finance UK",
+            "articleExcerpt": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart - Yahoo Finance UK. Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart Yahoo Finance UK",
+            "contentFingerprint": "5987395e7a225039",
+            "region": "Europe",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 4.91,
+              "finalScore": 16.91,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -205746,6 +206682,105 @@
               "finalScore": 19.31,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-c1244b13a906",
+            "title": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet - Bloomberg.com",
+            "titleZh": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet - Bloomberg.com",
+            "summary": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet Bloomberg.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRjZGdmhabDdHUW1DbVY4OU85NW5jSW0wY21GTEVvNk1GZUdLZWtYaUw5NkZGVm1xcjk1aTN4Q1hrcUI5S1NoNkUzX09STTZFUEFKRVJveXJ2Y1haVHlGVmxlcUxJUjFWLTJkbmV5QkVOYlN0X01LTElJN09RRkhHMkw1Tk53c2xfZTAzUGtYQ0FCVkI1Uk5BLWtTSmNhOEJaQklXUU5HRmJFbjA2WVE4ZnBUZ3g?oc=5",
+            "source": "Bloomberg.com",
+            "publishedAt": "2026-11-14",
+            "lede": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet Bloomberg.com",
+            "articleExcerpt": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet - Bloomberg.com. Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet Bloomberg.com",
+            "contentFingerprint": "0a1552a1756a51c9",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.67,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.34
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 1.0,
+                  "code": "tier_top",
+                  "source": "Bloomberg.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 95,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 9,
+              "semanticScore": 4.13,
+              "finalScore": 13.129999999999999,
+              "semanticEnabled": true
+            }
           }
         ],
         "Apollo": [
@@ -205924,6 +206959,95 @@
               "keywordScore": 3,
               "semanticScore": 4.52,
               "finalScore": 7.52,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-14-93b36321b31e",
+            "title": "Strong Growth, Rising Prices and a Fed Behind the Curve - Apollo Global Management",
+            "titleZh": "Strong Growth, Rising Prices and a Fed Behind the Curve - Apollo Global Management",
+            "summary": "Strong Growth, Rising Prices and a Fed Behind the Curve Apollo Global Management",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd3R3ZjFhZnJrd1pJUUxuYk1kSFhETDVkX3JqQlRVUlRLeWlhOU81a1hFZHdhOUxBaEdsZXpNWUltWU1kMUY5T0VCU040X0tnclFBNjAwa0tfYTRnc0VoWEJqRFVha3ZYdVZFUENJMUtSN2xyTWlRZ29pa1RpNndSTDJ1T0J3emxaTjEtNlV2WlpWTUhfOTgwcUJlb3JQOTFwbXM5cUhrTTI3Ukd4eldpM3V4OHRaV3diQjJr?oc=5",
+            "source": "Apollo Global Management",
+            "publishedAt": "2026-11-14",
+            "lede": "Strong Growth, Rising Prices and a Fed Behind the Curve Apollo Global Management",
+            "articleExcerpt": "Strong Growth, Rising Prices and a Fed Behind the Curve - Apollo Global Management. Strong Growth, Rising Prices and a Fed Behind the Curve Apollo Global Management",
+            "contentFingerprint": "8fbf7fed11a42ac6",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Apollo Global Management"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 5.46,
+              "finalScore": 11.46,
               "semanticEnabled": true
             }
           }
@@ -206321,6 +207445,105 @@
           }
         },
         {
+          "id": "2026-11-14-8de764132b0b",
+          "title": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares - Stocktwits",
+          "titleZh": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares - Stocktwits",
+          "summary": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares Stocktwits",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi4AFBVV95cUxQcG5xcVBJcXBKLVpsT1BXTEUtV3c4T0JqYWtqcXpnaC1Ray11bTA4WDVLVHdQa0hmWEhjSll1eVFJRHo3N3dwcEpJM1FfYnNKY1dEQ1JDZ3NlTVdFbDlOZEdGX0dlak0zOGdtNUhfUnZLQVdRbGI1dzk0d2h3RVBxWnd4bjFPWGtiN3Ixd1lHN1R5c2NiVG8yNXRLVWRDd050akNjaXVzX25pZXpvZndYVHVmVzRrcHV4a1pFMGFBNU5ZZlRnbXRHVjZMbENaS0tNSU1KaTdJdU1ic3I5LTQxMw?oc=5",
+          "source": "Stocktwits",
+          "publishedAt": "2026-11-14",
+          "lede": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares Stocktwits",
+          "articleExcerpt": "Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares - Stocktwits. Blue Owl Stock Rises After Saba Capital And Cox Capital’s Tender Offers For BDC Shares Stocktwits",
+          "contentFingerprint": "306d89530ba6f8cd",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.78,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.56
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Stocktwits"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 55,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.77,
+            "finalScore": 20.77,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-bb92c72dd572",
           "title": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
           "titleZh": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
@@ -206596,6 +207819,99 @@
           }
         },
         {
+          "id": "2026-11-14-d30e081b288b",
+          "title": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart - Yahoo Finance UK",
+          "titleZh": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart - Yahoo Finance UK",
+          "summary": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE9sRzRvcWxURjJpczZveWcyMS1fbmpPcTZhNERMMXk5ZEhscVdCWmpjcjNiMnZNckxaVmdISXN6VVpEZlBEZ0V1dFdwRWxfVW9naEgtRXJYalk0cm1DZ2hRYzc3QQ?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-14",
+          "lede": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart Yahoo Finance UK",
+          "articleExcerpt": "Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart - Yahoo Finance UK. Neuberger Berman Global Allocation A (NGLAX) Seasonal returns chart Yahoo Finance UK",
+          "contentFingerprint": "5987395e7a225039",
+          "region": "Europe",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 4.91,
+            "finalScore": 16.91,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-ff077d535c78",
           "title": "Bain Capital's Ryan Cotton on the impact of AI on office real estate - CNBC",
           "titleZh": "Bain Capital's Ryan Cotton on the impact of AI on office real estate - CNBC",
@@ -206794,6 +208110,105 @@
           }
         },
         {
+          "id": "2026-11-14-c1244b13a906",
+          "title": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet - Bloomberg.com",
+          "titleZh": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet - Bloomberg.com",
+          "summary": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet Bloomberg.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNRjZGdmhabDdHUW1DbVY4OU85NW5jSW0wY21GTEVvNk1GZUdLZWtYaUw5NkZGVm1xcjk1aTN4Q1hrcUI5S1NoNkUzX09STTZFUEFKRVJveXJ2Y1haVHlGVmxlcUxJUjFWLTJkbmV5QkVOYlN0X01LTElJN09RRkhHMkw1Tk53c2xfZTAzUGtYQ0FCVkI1Uk5BLWtTSmNhOEJaQklXUU5HRmJFbjA2WVE4ZnBUZ3g?oc=5",
+          "source": "Bloomberg.com",
+          "publishedAt": "2026-11-14",
+          "lede": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet Bloomberg.com",
+          "articleExcerpt": "Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet - Bloomberg.com. Blackstone’s AirTrunk Advances $11 Billion India Data Center Bet Bloomberg.com",
+          "contentFingerprint": "0a1552a1756a51c9",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.67,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.34
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 1.0,
+                "code": "tier_top",
+                "source": "Bloomberg.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 95,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 9,
+            "semanticScore": 4.13,
+            "finalScore": 13.129999999999999,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-4bddcf5c3b08",
           "title": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
           "titleZh": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
@@ -206968,6 +208383,95 @@
             "keywordScore": 3,
             "semanticScore": 4.52,
             "finalScore": 7.52,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-93b36321b31e",
+          "title": "Strong Growth, Rising Prices and a Fed Behind the Curve - Apollo Global Management",
+          "titleZh": "Strong Growth, Rising Prices and a Fed Behind the Curve - Apollo Global Management",
+          "summary": "Strong Growth, Rising Prices and a Fed Behind the Curve Apollo Global Management",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNd3R3ZjFhZnJrd1pJUUxuYk1kSFhETDVkX3JqQlRVUlRLeWlhOU81a1hFZHdhOUxBaEdsZXpNWUltWU1kMUY5T0VCU040X0tnclFBNjAwa0tfYTRnc0VoWEJqRFVha3ZYdVZFUENJMUtSN2xyTWlRZ29pa1RpNndSTDJ1T0J3emxaTjEtNlV2WlpWTUhfOTgwcUJlb3JQOTFwbXM5cUhrTTI3Ukd4eldpM3V4OHRaV3diQjJr?oc=5",
+          "source": "Apollo Global Management",
+          "publishedAt": "2026-11-14",
+          "lede": "Strong Growth, Rising Prices and a Fed Behind the Curve Apollo Global Management",
+          "articleExcerpt": "Strong Growth, Rising Prices and a Fed Behind the Curve - Apollo Global Management. Strong Growth, Rising Prices and a Fed Behind the Curve Apollo Global Management",
+          "contentFingerprint": "8fbf7fed11a42ac6",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Apollo Global Management"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 5.46,
+            "finalScore": 11.46,
             "semanticEnabled": true
           }
         },
@@ -207278,7 +208782,111 @@
         "Guggenheim": [],
         "Neuberger": [],
         "BasePoint": [],
-        "Bain Capital": [],
+        "Bain Capital": [
+          {
+            "id": "2026-11-15-65ec3e6fee45",
+            "title": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
+            "titleZh": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
+            "summary": "Bain Capital Specialty Finance Earnings Call Signals Resilience TipRanks",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbVJkQWFCdFdvZTVldi1SRlN2T3pFUTcwNXp0WG1mUlg1bTVSdHJhdDBuN1h0NWV6d3E5S0NGb1JaalFIUy1vMDREMUJLT0VMZU5NQlpxNjNLd0dIQXI5aFV1ZS1scGtnWnYyMTJvNi1TQW5jN3dqbi14Ykg4Sms2YnBLOTBMaURqLTdMc2hfZ1B6QmRVdkN5Sm5Md09RdXZydHBKcVhDUHY0R0U3TGstMVpnSUZKQQ?oc=5",
+            "source": "TipRanks",
+            "publishedAt": "2026-11-15",
+            "lede": "Bain Capital Specialty Finance Earnings Call Signals Resilience TipRanks",
+            "articleExcerpt": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks. Bain Capital Specialty Finance Earnings Call Signals Resilience TipRanks",
+            "contentFingerprint": "aac4e3e123e022d4",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "TipRanks"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.3,
+              "finalScore": 19.3,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Blackstone": [],
         "Apollo": [],
         "TPG": [],
@@ -207286,13 +208894,117 @@
         "CVC": [],
         "Canyon": []
       },
-      "items": []
+      "items": [
+        {
+          "id": "2026-11-15-65ec3e6fee45",
+          "title": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
+          "titleZh": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
+          "summary": "Bain Capital Specialty Finance Earnings Call Signals Resilience TipRanks",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPbVJkQWFCdFdvZTVldi1SRlN2T3pFUTcwNXp0WG1mUlg1bTVSdHJhdDBuN1h0NWV6d3E5S0NGb1JaalFIUy1vMDREMUJLT0VMZU5NQlpxNjNLd0dIQXI5aFV1ZS1scGtnWnYyMTJvNi1TQW5jN3dqbi14Ykg4Sms2YnBLOTBMaURqLTdMc2hfZ1B6QmRVdkN5Sm5Md09RdXZydHBKcVhDUHY0R0U3TGstMVpnSUZKQQ?oc=5",
+          "source": "TipRanks",
+          "publishedAt": "2026-11-15",
+          "lede": "Bain Capital Specialty Finance Earnings Call Signals Resilience TipRanks",
+          "articleExcerpt": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks. Bain Capital Specialty Finance Earnings Call Signals Resilience TipRanks",
+          "contentFingerprint": "aac4e3e123e022d4",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "TipRanks"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-15T07:31:02.932271+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.3,
+            "finalScore": 19.3,
+            "semanticEnabled": true
+          }
+        }
+      ]
     }
   },
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 19,
+      "count": 21,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -207300,12 +209012,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 76,
+      "count": 75,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -207313,7 +209025,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
@@ -207326,12 +209038,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 11,
+      "count": 9,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -207339,25 +209051,25 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 4,
-      "selected": 0,
+      "count": 6,
+      "selected": 1,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 8,
+      "count": 7,
       "selected": 3,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
@@ -207365,20 +209077,20 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 10,
-      "selected": 3,
+      "count": 12,
+      "selected": 5,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
@@ -207391,25 +209103,25 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 16,
-      "selected": 6,
+      "count": 12,
+      "selected": 5,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
       "queries": [
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 88,
+      "count": 74,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -207417,12 +209129,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 28,
+      "count": 31,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -207430,25 +209142,25 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
       "count": 8,
-      "selected": 2,
+      "selected": 4,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 3,
+      "count": 4,
       "selected": 2,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -207456,12 +209168,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 11,
+      "count": 9,
       "selected": 3,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -207469,12 +209181,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 27,
+      "count": 30,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -207482,12 +209194,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 374,
+      "count": 379,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -207504,9 +209216,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-15T00:43:31.645799+00:00",
+      "asOf": "2026-11-15T07:31:02.932271+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-15T00:43:31.645799+00:00"
+  "checkedAt": "2026-11-15T07:31:02.932271+00:00"
 }
