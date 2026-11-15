@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-15T15:20:49.165707+00:00",
+  "updatedAt": "2026-11-15T20:51:18.637099+00:00",
   "scope": {
     "regions": [
       "US",
@@ -197914,6 +197914,99 @@
               "finalScore": 8.42,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-28dbf69d7782",
+            "title": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF - MarketBeat",
+            "titleZh": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF - MarketBeat",
+            "summary": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBHcllwVGVwNkxrZEhkMmRmWFo0X3hqM2hPTnRQaVZHYmlvSlBsNXFEQzVVazlvR1FVcmJDV2QtdEp1anA0QnVPbUtXRFI3XzFVaGlmT1VqMnM4WmRyRGN0Zm5n?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-13",
+            "lede": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF MarketBeat",
+            "articleExcerpt": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF - MarketBeat. Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF MarketBeat",
+            "contentFingerprint": "f01ba445ddb2b09a",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.51
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.4
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 44,
+              "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.06,
+              "finalScore": 17.06,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -199026,6 +199119,95 @@
               "keywordScore": 3,
               "semanticScore": 4.36,
               "finalScore": 7.36,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-13-7cb1c5d9d333",
+            "title": "Neuberger: Private equity can be ‘critical anchor’ in portfolios - Corporate Adviser",
+            "titleZh": "Neuberger: Private equity can be ‘critical anchor’ in portfolios - Corporate Adviser",
+            "summary": "Neuberger: Private equity can be ‘critical anchor’ in portfolios Corporate Adviser",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPX3V2SzgxaTI4ZlZmMjhBZFJJVHdualJJTVJ0UW15V0IyMk9KWUFlaDhlOUhPcXY3Rks1X1BsckhMZjllQlVGbmNDOGtkWVJWakZYX0NXeUdyZUxUOFprRXJQakNkT2RQSGZleUg4ZTU3dXNNc2plZFcwdHJqSkhGS0JmcW9HWlVZQWM4ZEswclBPOGNwNWsw0gGcAUFVX3lxTFB1d0oyR1BFZ2lad3ppbW5keENSM2x4dndpbzVESmJBaVgwVGt5bXJIZ0FiZHYtRkxlMXJZUGJONkNzRnQ2VHdpN21rQ2djY2ZERmRGOHJfMjhqVUJmYnp4cDFCM0ctcDc5N1ltd1pZd1h0TVJjSUdiZWZBLUNSc0VTWXBFMDhYbjhpYndTWkVmLUxnQkRaVlZBVmhlXw?oc=5",
+            "source": "Corporate Adviser",
+            "publishedAt": "2026-11-13",
+            "lede": "Neuberger: Private equity can be ‘critical anchor’ in portfolios Corporate Adviser",
+            "articleExcerpt": "Neuberger: Private equity can be ‘critical anchor’ in portfolios - Corporate Adviser. Neuberger: Private equity can be ‘critical anchor’ in portfolios Corporate Adviser",
+            "contentFingerprint": "5660348b789dd03c",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.37
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Corporate Adviser"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.4
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.41,
+              "finalScore": 7.41,
               "semanticEnabled": true
             }
           }
@@ -202303,6 +202485,99 @@
           }
         },
         {
+          "id": "2026-11-13-28dbf69d7782",
+          "title": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF - MarketBeat",
+          "titleZh": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF - MarketBeat",
+          "summary": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBHcllwVGVwNkxrZEhkMmRmWFo0X3hqM2hPTnRQaVZHYmlvSlBsNXFEQzVVazlvR1FVcmJDV2QtdEp1anA0QnVPbUtXRFI3XzFVaGlmT1VqMnM4WmRyRGN0Zm5n?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-13",
+          "lede": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF MarketBeat",
+          "articleExcerpt": "Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF - MarketBeat. Blue Owl Technology Finance (OTF) Stock Forecast and Price Target 2026 $OTF MarketBeat",
+          "contentFingerprint": "f01ba445ddb2b09a",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.25,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.51
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.4
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 44,
+            "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.06,
+            "finalScore": 17.06,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-13-38f5200fcaa3",
           "title": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai",
           "titleZh": "Sempra closes sale of 45% of Sempra Infrastructure to KKR, taking $4.56 billion in cash up front - MLQ.ai",
@@ -203403,6 +203678,95 @@
             "keywordScore": 3,
             "semanticScore": 4.36,
             "finalScore": 7.36,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-7cb1c5d9d333",
+          "title": "Neuberger: Private equity can be ‘critical anchor’ in portfolios - Corporate Adviser",
+          "titleZh": "Neuberger: Private equity can be ‘critical anchor’ in portfolios - Corporate Adviser",
+          "summary": "Neuberger: Private equity can be ‘critical anchor’ in portfolios Corporate Adviser",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPX3V2SzgxaTI4ZlZmMjhBZFJJVHdualJJTVJ0UW15V0IyMk9KWUFlaDhlOUhPcXY3Rks1X1BsckhMZjllQlVGbmNDOGtkWVJWakZYX0NXeUdyZUxUOFprRXJQakNkT2RQSGZleUg4ZTU3dXNNc2plZFcwdHJqSkhGS0JmcW9HWlVZQWM4ZEswclBPOGNwNWsw0gGcAUFVX3lxTFB1d0oyR1BFZ2lad3ppbW5keENSM2x4dndpbzVESmJBaVgwVGt5bXJIZ0FiZHYtRkxlMXJZUGJONkNzRnQ2VHdpN21rQ2djY2ZERmRGOHJfMjhqVUJmYnp4cDFCM0ctcDc5N1ltd1pZd1h0TVJjSUdiZWZBLUNSc0VTWXBFMDhYbjhpYndTWkVmLUxnQkRaVlZBVmhlXw?oc=5",
+          "source": "Corporate Adviser",
+          "publishedAt": "2026-11-13",
+          "lede": "Neuberger: Private equity can be ‘critical anchor’ in portfolios Corporate Adviser",
+          "articleExcerpt": "Neuberger: Private equity can be ‘critical anchor’ in portfolios - Corporate Adviser. Neuberger: Private equity can be ‘critical anchor’ in portfolios Corporate Adviser",
+          "contentFingerprint": "5660348b789dd03c",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.37
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Corporate Adviser"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.4
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.41,
+            "finalScore": 7.41,
             "semanticEnabled": true
           }
         },
@@ -209449,6 +209813,99 @@
               "finalScore": 20.98,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-15-90a51f9e4654",
+            "title": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qWDdoZkQ2NE9hUDlrQ3ZTSWlmaXM5U3pjeXNhMkRhcF9GWmlNZFZqX2JIYmRDaGJtcVEycVhuNnM1Y0tyVkl0ZEJRZ25zSElN?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-15",
+            "lede": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada. Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "babbb17bee3c3100",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.4
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.32,
+              "finalScore": 17.32,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -209851,6 +210308,95 @@
               "finalScore": 19.5,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-15-6d77762d8923",
+            "title": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments - CNBC",
+            "titleZh": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments - CNBC",
+            "summary": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments CNBC",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUXZhWUoxcUpka0JfbHU4UWRzQ25BVzNtQ1RpNXhCTExqX3N4bXgtNExpbHdZSHVrYlg1VHh2X1hxUTlkRTlzUDNaTnhkdHRIeHd1TDhQQ05SNnMyanVGbWUxVXBucmNsX1VYeVhyMTlGMmR4Ry1vdmdUdGpBV3NSS0hsb1Z3dmh0Y3Y1Q0thRjdCZGg0LVJybkpVMnZhT0NDTUduNmFicU5yUnZ6d2xWc0RnR2NxUHNFajRITQ?oc=5",
+            "source": "CNBC",
+            "publishedAt": "2026-11-15",
+            "lede": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments CNBC",
+            "articleExcerpt": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments - CNBC. Bain Capital's Ryan Cotton on the 'structural change' in real estate investments CNBC",
+            "contentFingerprint": "022d40239c882ffa",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "CNBC"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.4
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.43,
+              "finalScore": 8.43,
+              "semanticEnabled": true
+            }
           }
         ],
         "Blackstone": [],
@@ -210055,6 +210601,99 @@
             "keywordScore": 15,
             "semanticScore": 5.98,
             "finalScore": 20.98,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-90a51f9e4654",
+          "title": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qWDdoZkQ2NE9hUDlrQ3ZTSWlmaXM5U3pjeXNhMkRhcF9GWmlNZFZqX2JIYmRDaGJtcVEycVhuNnM1Y0tyVkl0ZEJRZ25zSElN?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-15",
+          "lede": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada. Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "babbb17bee3c3100",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.4
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.32,
+            "finalScore": 17.32,
             "semanticEnabled": true
           }
         },
@@ -210354,6 +210993,95 @@
           }
         },
         {
+          "id": "2026-11-15-6d77762d8923",
+          "title": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments - CNBC",
+          "titleZh": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments - CNBC",
+          "summary": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments CNBC",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQUXZhWUoxcUpka0JfbHU4UWRzQ25BVzNtQ1RpNXhCTExqX3N4bXgtNExpbHdZSHVrYlg1VHh2X1hxUTlkRTlzUDNaTnhkdHRIeHd1TDhQQ05SNnMyanVGbWUxVXBucmNsX1VYeVhyMTlGMmR4Ry1vdmdUdGpBV3NSS0hsb1Z3dmh0Y3Y1Q0thRjdCZGg0LVJybkpVMnZhT0NDTUduNmFicU5yUnZ6d2xWc0RnR2NxUHNFajRITQ?oc=5",
+          "source": "CNBC",
+          "publishedAt": "2026-11-15",
+          "lede": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments CNBC",
+          "articleExcerpt": "Bain Capital's Ryan Cotton on the 'structural change' in real estate investments - CNBC. Bain Capital's Ryan Cotton on the 'structural change' in real estate investments CNBC",
+          "contentFingerprint": "022d40239c882ffa",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "CNBC"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.4
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-15T20:47:09.649266+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.43,
+            "finalScore": 8.43,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-15-68508d1b869d",
           "title": "The AI Entrepreneurship Boom - Apollo Global Management",
           "titleZh": "The AI Entrepreneurship Boom - Apollo Global Management",
@@ -210466,12 +211194,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 65,
+      "count": 64,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -210479,7 +211207,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
@@ -210492,12 +211220,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 8,
+      "count": 6,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -210505,12 +211233,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 5,
+      "count": 3,
       "selected": 1,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -210518,12 +211246,12 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 8,
+      "count": 6,
       "selected": 3,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
@@ -210531,20 +211259,20 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 14,
-      "selected": 4,
+      "count": 10,
+      "selected": 5,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
@@ -210557,7 +211285,7 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
@@ -210570,12 +211298,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 52,
+      "count": 38,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -210583,12 +211311,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 31,
+      "count": 25,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -210596,7 +211324,7 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
@@ -210609,7 +211337,7 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
@@ -210622,12 +211350,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 8,
+      "count": 7,
       "selected": 3,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -210635,7 +211363,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
@@ -210648,12 +211376,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 410,
+      "count": 395,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -210670,9 +211398,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-15T15:17:05.788241+00:00",
+      "asOf": "2026-11-15T20:47:09.649266+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-15T15:17:05.788241+00:00"
+  "checkedAt": "2026-11-15T20:47:09.649266+00:00"
 }
