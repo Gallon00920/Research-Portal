@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-15T07:34:45.617578+00:00",
+  "updatedAt": "2026-11-15T15:20:49.165707+00:00",
   "scope": {
     "regions": [
       "US",
@@ -199504,23 +199504,112 @@
               "finalScore": 7.41,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-13-7e6c90481cd4",
+            "title": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary - TradingView",
+            "titleZh": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary - TradingView",
+            "summary": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZFJiaUhrSHpka2tnMnJfel9jdDFrTjBkMHpLdUkzRjlja29ESXhpcFRONUlsTFl1TEwzRWxwOFFJNG1MNGRGMGZjV1JNSzRXS3N3ZkVlSkVLY3VuOFNmT3E4SHFkS1IyMDBIMEw1TzNYUjR4UjBjVGxWREJ6bTcwMWoweXRGWXlqLVZoWERmcjZ1NmFQbjBsMG1fM1RadjM5bEZDYWl4VXpuVTVUY2tjbjd0Zk50ZzRCWElaOXNhblRFNU9PQmc?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-13",
+            "lede": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary TradingView",
+            "articleExcerpt": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary - TradingView. Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary TradingView",
+            "contentFingerprint": "68149720b5d47ab8",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.35,
+              "finalScore": 8.35,
+              "semanticEnabled": true
+            }
           }
         ],
         "Blackstone": [
           {
-            "id": "2026-11-13-2bb1263d0cfa",
-            "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
-            "titleZh": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
-            "summary": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+            "id": "2026-11-13-0cb69f9ff94f",
+            "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo Finance UK",
+            "titleZh": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo Finance UK",
+            "summary": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo Finance UK",
             "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
             "summaryZhLanguage": "",
-            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN05ocDd6eDZCZmRZZF95T0hKQTF4cDVJWnJqX25DMUJIbzdqY1drYkhFdS1mTmdnOEswcDA5YUxCTWJUc2FJSkxVNWU3a1VJRWRqODlBa3BrMWV4TFZTMU9TMi1HWlU0c0dGbG9HS0xrZGtZSFlKRS1TMmd4bWh1Mml4OWE0S0ZrNi1nekFR?oc=5",
-            "source": "Yahoo! Finance Canada",
+            "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZmVlb0o0MDRsR3FXcUFjdnhyMzJfZkxKOGVuVFplTmNPcmttYVVBNlVwa1pYRlVPYUJqU2o0b1NhV3ZrcUtrUnQ5cDdSWUxZOVVWdVBaZ280TU01V1FRS3ZablNBRmtKZlFzeV9FTVdONmYxdFdvaFhkcmppelVEWGpucE1pel80UmtLRm13?oc=5",
+            "source": "Yahoo Finance UK",
             "publishedAt": "2026-11-13",
-            "lede": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
-            "articleExcerpt": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada. What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
-            "contentFingerprint": "ea786cc63a0d8dff",
-            "region": "Global",
+            "lede": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo Finance UK",
+            "articleExcerpt": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo Finance UK. What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo Finance UK",
+            "contentFingerprint": "5cc660c8b25a8ac6",
+            "region": "Europe",
             "gps": [
               "Blackstone"
             ],
@@ -199575,12 +199664,12 @@
                 "source": {
                   "value": 0.25,
                   "code": "tier_aggregator",
-                  "source": "Yahoo! Finance Canada"
+                  "source": "Yahoo Finance UK"
                 },
                 "freshness": {
-                  "value": 1.0,
-                  "code": "within_24h",
-                  "days": 0.3
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
                 }
               },
               "weights": {
@@ -199590,15 +199679,22 @@
                 "source": 25,
                 "freshness": 15
               },
-              "score": 71,
-              "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+              "score": 68,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
             },
             "scoreBreakdown": {
-              "keywordScore": 11,
-              "semanticScore": 5.69,
-              "finalScore": 16.69,
+              "keywordScore": 12,
+              "semanticScore": 5.66,
+              "finalScore": 17.66,
               "semanticEnabled": true
-            }
+            },
+            "alternateSources": [
+              {
+                "source": "Yahoo! Finance Canada",
+                "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN05ocDd6eDZCZmRZZF95T0hKQTF4cDVJWnJqX25DMUJIbzdqY1drYkhFdS1mTmdnOEswcDA5YUxCTWJUc2FJSkxVNWU3a1VJRWRqODlBa3BrMWV4TFZTMU9TMi1HWlU0c0dGbG9HS0xrZGtZSFlKRS1TMmd4bWh1Mml4OWE0S0ZrNi1nekFR?oc=5",
+                "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada"
+              }
+            ]
           },
           {
             "id": "2026-11-13-6971fc97befb",
@@ -203784,19 +203880,108 @@
           }
         },
         {
-          "id": "2026-11-13-2bb1263d0cfa",
-          "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
-          "titleZh": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada",
-          "summary": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
+          "id": "2026-11-13-7e6c90481cd4",
+          "title": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary - TradingView",
+          "titleZh": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary - TradingView",
+          "summary": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary TradingView",
           "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
           "summaryZhLanguage": "",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN05ocDd6eDZCZmRZZF95T0hKQTF4cDVJWnJqX25DMUJIbzdqY1drYkhFdS1mTmdnOEswcDA5YUxCTWJUc2FJSkxVNWU3a1VJRWRqODlBa3BrMWV4TFZTMU9TMi1HWlU0c0dGbG9HS0xrZGtZSFlKRS1TMmd4bWh1Mml4OWE0S0ZrNi1nekFR?oc=5",
-          "source": "Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQZFJiaUhrSHpka2tnMnJfel9jdDFrTjBkMHpLdUkzRjlja29ESXhpcFRONUlsTFl1TEwzRWxwOFFJNG1MNGRGMGZjV1JNSzRXS3N3ZkVlSkVLY3VuOFNmT3E4SHFkS1IyMDBIMEw1TzNYUjR4UjBjVGxWREJ6bTcwMWoweXRGWXlqLVZoWERmcjZ1NmFQbjBsMG1fM1RadjM5bEZDYWl4VXpuVTVUY2tjbjd0Zk50ZzRCWElaOXNhblRFNU9PQmc?oc=5",
+          "source": "TradingView",
           "publishedAt": "2026-11-13",
-          "lede": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
-          "articleExcerpt": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada. What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo! Finance Canada",
-          "contentFingerprint": "ea786cc63a0d8dff",
+          "lede": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary TradingView",
+          "articleExcerpt": "Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary - TradingView. Bain Capital GSS Investment 3Q 2026: Net income $4.21M — 10-Q Summary TradingView",
+          "contentFingerprint": "68149720b5d47ab8",
           "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.35,
+            "finalScore": 8.35,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-13-0cb69f9ff94f",
+          "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo Finance UK",
+          "titleZh": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo Finance UK",
+          "summary": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZmVlb0o0MDRsR3FXcUFjdnhyMzJfZkxKOGVuVFplTmNPcmttYVVBNlVwa1pYRlVPYUJqU2o0b1NhV3ZrcUtrUnQ5cDdSWUxZOVVWdVBaZ280TU01V1FRS3ZablNBRmtKZlFzeV9FTVdONmYxdFdvaFhkcmppelVEWGpucE1pel80UmtLRm13?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-13",
+          "lede": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo Finance UK",
+          "articleExcerpt": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo Finance UK. What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? Yahoo Finance UK",
+          "contentFingerprint": "5cc660c8b25a8ac6",
+          "region": "Europe",
           "gps": [
             "Blackstone"
           ],
@@ -203851,12 +204036,12 @@
               "source": {
                 "value": 0.25,
                 "code": "tier_aggregator",
-                "source": "Yahoo! Finance Canada"
+                "source": "Yahoo Finance UK"
               },
               "freshness": {
-                "value": 1.0,
-                "code": "within_24h",
-                "days": 0.3
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
               }
             },
             "weights": {
@@ -203866,15 +204051,22 @@
               "source": 25,
               "freshness": 15
             },
-            "score": 71,
-            "retrievedAt": "2026-11-13T20:18:07.792832+00:00"
+            "score": 68,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
           },
           "scoreBreakdown": {
-            "keywordScore": 11,
-            "semanticScore": 5.69,
-            "finalScore": 16.69,
+            "keywordScore": 12,
+            "semanticScore": 5.66,
+            "finalScore": 17.66,
             "semanticEnabled": true
-          }
+          },
+          "alternateSources": [
+            {
+              "source": "Yahoo! Finance Canada",
+              "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQN05ocDd6eDZCZmRZZF95T0hKQTF4cDVJWnJqX25DMUJIbzdqY1drYkhFdS1mTmdnOEswcDA5YUxCTWJUc2FJSkxVNWU3a1VJRWRqODlBa3BrMWV4TFZTMU9TMi1HWlU0c0dGbG9HS0xrZGtZSFlKRS1TMmd4bWh1Mml4OWE0S0ZrNi1nekFR?oc=5",
+              "title": "What Is Blackstone (BX) Signaling With Its Dubai Wealth Office And $3 Billion Fund? - Yahoo! Finance Canada"
+            }
+          ]
         },
         {
           "id": "2026-11-13-6971fc97befb",
@@ -206781,6 +206973,110 @@
               "finalScore": 13.129999999999999,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-23d64840557c",
+            "title": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. - ET Enterprise AI",
+            "titleZh": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. - ET Enterprise AI",
+            "summary": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. ET Enterprise AI",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQYllXUkhkNXVSM29KNXhuSkQ0a2VDYWpvUzFGMjQ2V1U5Z1BoZ3VOQ2hXTmpJZDlnQkRiZEJOQmdhOElmNzFQWURaNEtGSVVsVWRzdEM4V1NGeGVLbGJnR05VQi1uTlV5NDBIYmVaUmx4ZWktRG5PSkVJZ0NBQW0ycVNERDc5bGV3bVVLMVFkLUhtVjBRVThBVHZwLWRCU19yVzdZaWJuQWNIS0hWcEdZajczNHZFNEc4bGtVanI0dUFWOXdmcUs5Tjh3b3pBeFl2RVluUTRQX3o0Z1hZaDZ0cXo0WWhDS0xxTy1Sc0xxQnNLUGlXanIyTU12dE1jeFJSVGM4VUJxRdIBjAJBVV95cUxPZlQ2UjN4ZGZkT1VjSEpscnNidmtXNmZkVmUtdDRYZFVUOU5VRzYzU1pjUDV0SWtBWW52V1VfVFFBUmZkUGY1MUd2N2tzZkFybTRVTVliWHZpbDVodHVhT29Lc0ZFZVhURWl4RUd2S3hTaHh6c1prclR2WlBUdUc3a2I0S1dYS0FCNjdtN3gyT2JxTXR0ZkxwX0dXZkpETjNkVUt5VlowV3M4ME9IMlluRlo2VHVvaUpBVURCbGVSdnlsUV9GSHJUVXRyc2NvSEJOaFltZnp2Wkk2elZzTEVFNDA0aExnZnZ6QzR4SHllRGg3WElUcDN5azl3SjA3Y3F6SXVIN0JocFR2RnlE?oc=5",
+            "source": "ET Enterprise AI",
+            "publishedAt": "2026-11-14",
+            "lede": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. ET Enterprise AI",
+            "articleExcerpt": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. - ET Enterprise AI. Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. ET Enterprise AI",
+            "contentFingerprint": "d869d2d8f45ac398",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center",
+              "ai"
+            ],
+            "sectors": [
+              "data-center",
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center",
+                "ai"
+              ],
+              "titleStrategies": [
+                "data-center",
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.7,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center",
+                    "ai"
+                  ],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ET Enterprise AI"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 9,
+              "semanticScore": 4.84,
+              "finalScore": 13.84,
+              "semanticEnabled": true
+            }
           }
         ],
         "Apollo": [
@@ -207143,6 +207439,95 @@
               "keywordScore": 11,
               "semanticScore": 5.47,
               "finalScore": 16.47,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-14-0084261a54de",
+            "title": "Form 13D/A TPG Inc. For: 13 November By Investing.com - Investing.com South Africa",
+            "titleZh": "Form 13D/A TPG Inc. For: 13 November By Investing.com - Investing.com South Africa",
+            "summary": "Form 13D/A TPG Inc. For: 13 November By Investing.com Investing.com South Africa",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZVNFWEFwSUh5bDVidWdYcUFMekJ2WUs0ekFZc0VnWnVFdHBsSFVyMzI1eTNrX2pncDV6OVB4UGQ2NlZuNENwb0FQRFN2R0F5V1d2UGU5VWo1VURkX29EYkJydmdkSjJUbEJwSG9JbEExRjg2c09GMXRWaXM3cndIbExhaUt2MFlTbEZ5RmZYRnczZjF1V3AtUlBB?oc=5",
+            "source": "Investing.com South Africa",
+            "publishedAt": "2026-11-14",
+            "lede": "Form 13D/A TPG Inc. For: 13 November By Investing.com Investing.com South Africa",
+            "articleExcerpt": "Form 13D/A TPG Inc. For: 13 November By Investing.com - Investing.com South Africa. Form 13D/A TPG Inc. For: 13 November By Investing.com Investing.com South Africa",
+            "contentFingerprint": "bcfa1372982d5dbb",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com South Africa"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 45,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.01,
+              "finalScore": 8.01,
               "semanticEnabled": true
             }
           }
@@ -208209,6 +208594,110 @@
           }
         },
         {
+          "id": "2026-11-14-23d64840557c",
+          "title": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. - ET Enterprise AI",
+          "titleZh": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. - ET Enterprise AI",
+          "summary": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. ET Enterprise AI",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxQYllXUkhkNXVSM29KNXhuSkQ0a2VDYWpvUzFGMjQ2V1U5Z1BoZ3VOQ2hXTmpJZDlnQkRiZEJOQmdhOElmNzFQWURaNEtGSVVsVWRzdEM4V1NGeGVLbGJnR05VQi1uTlV5NDBIYmVaUmx4ZWktRG5PSkVJZ0NBQW0ycVNERDc5bGV3bVVLMVFkLUhtVjBRVThBVHZwLWRCU19yVzdZaWJuQWNIS0hWcEdZajczNHZFNEc4bGtVanI0dUFWOXdmcUs5Tjh3b3pBeFl2RVluUTRQX3o0Z1hZaDZ0cXo0WWhDS0xxTy1Sc0xxQnNLUGlXanIyTU12dE1jeFJSVGM4VUJxRdIBjAJBVV95cUxPZlQ2UjN4ZGZkT1VjSEpscnNidmtXNmZkVmUtdDRYZFVUOU5VRzYzU1pjUDV0SWtBWW52V1VfVFFBUmZkUGY1MUd2N2tzZkFybTRVTVliWHZpbDVodHVhT29Lc0ZFZVhURWl4RUd2S3hTaHh6c1prclR2WlBUdUc3a2I0S1dYS0FCNjdtN3gyT2JxTXR0ZkxwX0dXZkpETjNkVUt5VlowV3M4ME9IMlluRlo2VHVvaUpBVURCbGVSdnlsUV9GSHJUVXRyc2NvSEJOaFltZnp2Wkk2elZzTEVFNDA0aExnZnZ6QzR4SHllRGg3WElUcDN5azl3SjA3Y3F6SXVIN0JocFR2RnlE?oc=5",
+          "source": "ET Enterprise AI",
+          "publishedAt": "2026-11-14",
+          "lede": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. ET Enterprise AI",
+          "articleExcerpt": "Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. - ET Enterprise AI. Blackstone’s AirTrunk proposes ₹1.03 lakh crore investment in Andhra Pradesh data centre projects: Repor.. ET Enterprise AI",
+          "contentFingerprint": "d869d2d8f45ac398",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center",
+            "ai"
+          ],
+          "sectors": [
+            "data-center",
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center",
+              "ai"
+            ],
+            "titleStrategies": [
+              "data-center",
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.7,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center",
+                  "ai"
+                ],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ET Enterprise AI"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 9,
+            "semanticScore": 4.84,
+            "finalScore": 13.84,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-4bddcf5c3b08",
           "title": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
           "titleZh": "Apollo Global Management (NYSE:APO) Declares Quarterly Dividend - Kalkine Media",
@@ -208569,6 +209058,95 @@
           }
         },
         {
+          "id": "2026-11-14-0084261a54de",
+          "title": "Form 13D/A TPG Inc. For: 13 November By Investing.com - Investing.com South Africa",
+          "titleZh": "Form 13D/A TPG Inc. For: 13 November By Investing.com - Investing.com South Africa",
+          "summary": "Form 13D/A TPG Inc. For: 13 November By Investing.com Investing.com South Africa",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZVNFWEFwSUh5bDVidWdYcUFMekJ2WUs0ekFZc0VnWnVFdHBsSFVyMzI1eTNrX2pncDV6OVB4UGQ2NlZuNENwb0FQRFN2R0F5V1d2UGU5VWo1VURkX29EYkJydmdkSjJUbEJwSG9JbEExRjg2c09GMXRWaXM3cndIbExhaUt2MFlTbEZ5RmZYRnczZjF1V3AtUlBB?oc=5",
+          "source": "Investing.com South Africa",
+          "publishedAt": "2026-11-14",
+          "lede": "Form 13D/A TPG Inc. For: 13 November By Investing.com Investing.com South Africa",
+          "articleExcerpt": "Form 13D/A TPG Inc. For: 13 November By Investing.com - Investing.com South Africa. Form 13D/A TPG Inc. For: 13 November By Investing.com Investing.com South Africa",
+          "contentFingerprint": "bcfa1372982d5dbb",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com South Africa"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 45,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.01,
+            "finalScore": 8.01,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-e78d03df3b77",
           "title": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance",
           "titleZh": "$250,000 in Golub Capital and Hercules Capital: Why BDC Income Belongs in a Roth IRA - Yahoo Finance",
@@ -208774,8 +209352,293 @@
     },
     "2026-11-15": {
       "byGp": {
-        "Blue Owl": [],
-        "KKR": [],
+        "Blue Owl": [
+          {
+            "id": "2026-11-15-8118c6be59e3",
+            "title": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance",
+            "titleZh": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance",
+            "summary": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQlNXTTlPUTVmVVZ1aWgtYUVSUzduN2FVWUs0eThqODRtV0RjRHV5eE5iQmh6SHJnS0laX1JiU29Vd1M5ZS1WYTNoV1VhM1gzTzY1eFlRN0JWT2JjcXJiZm5JXy1vQzlsUW5YRFp3bmZjQ1p6WUNuV0NlZXBnR3RHLXczcVdFNjNPRmdGa3VyRnhPdXdN?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-15",
+            "lede": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+            "articleExcerpt": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance. KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+            "contentFingerprint": "95d51575fa4b1166",
+            "region": "Global",
+            "gps": [
+              "Blue Owl",
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl",
+                "KKR"
+              ],
+              "titleGps": [
+                "Blue Owl",
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl",
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 15,
+              "semanticScore": 5.98,
+              "finalScore": 20.98,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "KKR": [
+          {
+            "id": "2026-11-15-8118c6be59e3",
+            "title": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance",
+            "titleZh": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance",
+            "summary": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQlNXTTlPUTVmVVZ1aWgtYUVSUzduN2FVWUs0eThqODRtV0RjRHV5eE5iQmh6SHJnS0laX1JiU29Vd1M5ZS1WYTNoV1VhM1gzTzY1eFlRN0JWT2JjcXJiZm5JXy1vQzlsUW5YRFp3bmZjQ1p6WUNuV0NlZXBnR3RHLXczcVdFNjNPRmdGa3VyRnhPdXdN?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-15",
+            "lede": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+            "articleExcerpt": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance. KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+            "contentFingerprint": "95d51575fa4b1166",
+            "region": "Global",
+            "gps": [
+              "Blue Owl",
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl",
+                "KKR"
+              ],
+              "titleGps": [
+                "Blue Owl",
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl",
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 15,
+              "semanticScore": 5.98,
+              "finalScore": 20.98,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-8409a696da61",
+            "title": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de",
+            "titleZh": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de",
+            "summary": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat ad-hoc-news.de",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUlhXUC1sQnhWWU9yRUIzQ2cwTlBKSEJhYW5iM2p0UmZ5OVdpVXZRODZBaVhMX25QVnN0eG9ka0FiQXpNOXQtTEVTY19NRUZvLTNibUViaXVGMVgzSEs0WHA5QjBXa1FwNkJzRzB1eWRXaDhTNXB5UDNzOXE5d2c1Sml5N1dSNEdDM3RFRVhxaFNmY3BEOU02T1FNYVdHMHdJbDJwTDc0Y3hSMEhRYTc3dlZ0cmNfbHNvdnZ0RHBfTFhJSUJSQjBHWnpicjdJMGVoOUZYUUFIVWY4N3JxNU5hb0dwNWp2VWxIZzVld2RlVUE0V1RmZ2tTbw?oc=5",
+            "source": "ad-hoc-news.de",
+            "publishedAt": "2026-11-15",
+            "lede": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat ad-hoc-news.de",
+            "articleExcerpt": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de. RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat ad-hoc-news.de",
+            "contentFingerprint": "b495ab79c962bb9e",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ad-hoc-news.de"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.84,
+              "finalScore": 15.84,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CIFC": [],
         "PAG": [],
         "Pretium": [],
@@ -208885,16 +209748,405 @@
               "finalScore": 19.3,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-15-3d8f6088514d",
+            "title": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA - TipRanks",
+            "titleZh": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA - TipRanks",
+            "summary": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA TipRanks",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZGVDMjRFQUhZd2x4WVU4QzJwUWdHVmRmMVpxaW5yQjZoTVIzTnRlUUcydzVUTV9oZklIT1c5bEVHSjloNHl3dWJ3aklFS19iVFhEOF9RR2tuOFNyYVAxY3dwOFdzYy1lbUdRTDdpMGRSWDQxY3dRMS1mMnN0bXNNczZ2XzktNFppRnNSQnAzVXozZ2ZhdlZ6WS02Z2lHNG90UGlTTi1HR2lxM1VoY3M3XzdJUXloOWREUXZ6QVRKbWRBVVFQ?oc=5",
+            "source": "TipRanks",
+            "publishedAt": "2026-11-15",
+            "lede": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA TipRanks",
+            "articleExcerpt": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA - TipRanks. Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA TipRanks",
+            "contentFingerprint": "43a9bffa4c26a406",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "TipRanks"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.5,
+              "finalScore": 19.5,
+              "semanticEnabled": true
+            }
           }
         ],
         "Blackstone": [],
-        "Apollo": [],
+        "Apollo": [
+          {
+            "id": "2026-11-15-68508d1b869d",
+            "title": "The AI Entrepreneurship Boom - Apollo Global Management",
+            "titleZh": "The AI Entrepreneurship Boom - Apollo Global Management",
+            "summary": "The AI Entrepreneurship Boom Apollo Global Management",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdW8taDA2LVdUMUtUd1JnNjFnaHpPdV9qZGxQZ3hTM3NwRFh1NVR3QXlPcklZT3dPN0dtcFpLMkxtN2Qwc3I1RzlFcGdVbGIyTW1kRUxlTWVVLXhZdzFsSGFrc2F4MG9NV3RBa0lKb01RYV9sMWhpZE5YQllPcXRTTVlMck83NGhEZDEyZUhzVHo1cElTejI4aQ?oc=5",
+            "source": "Apollo Global Management",
+            "publishedAt": "2026-11-15",
+            "lede": "The AI Entrepreneurship Boom Apollo Global Management",
+            "articleExcerpt": "The AI Entrepreneurship Boom - Apollo Global Management. The AI Entrepreneurship Boom Apollo Global Management",
+            "contentFingerprint": "a06fc45d2abb9140",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Apollo Global Management"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 9,
+              "semanticScore": 5.2,
+              "finalScore": 14.2,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "TPG": [],
         "Golub": [],
         "CVC": [],
         "Canyon": []
       },
       "items": [
+        {
+          "id": "2026-11-15-8118c6be59e3",
+          "title": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance",
+          "titleZh": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance",
+          "summary": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOQlNXTTlPUTVmVVZ1aWgtYUVSUzduN2FVWUs0eThqODRtV0RjRHV5eE5iQmh6SHJnS0laX1JiU29Vd1M5ZS1WYTNoV1VhM1gzTzY1eFlRN0JWT2JjcXJiZm5JXy1vQzlsUW5YRFp3bmZjQ1p6WUNuV0NlZXBnR3RHLXczcVdFNjNPRmdGa3VyRnhPdXdN?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-15",
+          "lede": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+          "articleExcerpt": "KKR Stock And Blue Owl Shares In Focus As Credit Tightens - Yahoo Finance. KKR Stock And Blue Owl Shares In Focus As Credit Tightens Yahoo Finance",
+          "contentFingerprint": "95d51575fa4b1166",
+          "region": "Global",
+          "gps": [
+            "Blue Owl",
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl",
+              "KKR"
+            ],
+            "titleGps": [
+              "Blue Owl",
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl",
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.25,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 15,
+            "semanticScore": 5.98,
+            "finalScore": 20.98,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-8409a696da61",
+          "title": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de",
+          "titleZh": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de",
+          "summary": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat ad-hoc-news.de",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxOUlhXUC1sQnhWWU9yRUIzQ2cwTlBKSEJhYW5iM2p0UmZ5OVdpVXZRODZBaVhMX25QVnN0eG9ka0FiQXpNOXQtTEVTY19NRUZvLTNibUViaXVGMVgzSEs0WHA5QjBXa1FwNkJzRzB1eWRXaDhTNXB5UDNzOXE5d2c1Sml5N1dSNEdDM3RFRVhxaFNmY3BEOU02T1FNYVdHMHdJbDJwTDc0Y3hSMEhRYTc3dlZ0cmNfbHNvdnZ0RHBfTFhJSUJSQjBHWnpicjdJMGVoOUZYUUFIVWY4N3JxNU5hb0dwNWp2VWxIZzVld2RlVUE0V1RmZ2tTbw?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-15",
+          "lede": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat ad-hoc-news.de",
+          "articleExcerpt": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de. RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat ad-hoc-news.de",
+          "contentFingerprint": "b495ab79c962bb9e",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ad-hoc-news.de"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.84,
+            "finalScore": 15.84,
+            "semanticEnabled": true
+          }
+        },
         {
           "id": "2026-11-15-65ec3e6fee45",
           "title": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
@@ -208997,6 +210249,208 @@
             "finalScore": 19.3,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-15-3d8f6088514d",
+          "title": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA - TipRanks",
+          "titleZh": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA - TipRanks",
+          "summary": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA TipRanks",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPZGVDMjRFQUhZd2x4WVU4QzJwUWdHVmRmMVpxaW5yQjZoTVIzTnRlUUcydzVUTV9oZklIT1c5bEVHSjloNHl3dWJ3aklFS19iVFhEOF9RR2tuOFNyYVAxY3dwOFdzYy1lbUdRTDdpMGRSWDQxY3dRMS1mMnN0bXNNczZ2XzktNFppRnNSQnAzVXozZ2ZhdlZ6WS02Z2lHNG90UGlTTi1HR2lxM1VoY3M3XzdJUXloOWREUXZ6QVRKbWRBVVFQ?oc=5",
+          "source": "TipRanks",
+          "publishedAt": "2026-11-15",
+          "lede": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA TipRanks",
+          "articleExcerpt": "Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA - TipRanks. Bain Capital Specialty Finance price target lowered to $11.50 from $13 at BofA TipRanks",
+          "contentFingerprint": "43a9bffa4c26a406",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "TipRanks"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.5,
+            "finalScore": 19.5,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-68508d1b869d",
+          "title": "The AI Entrepreneurship Boom - Apollo Global Management",
+          "titleZh": "The AI Entrepreneurship Boom - Apollo Global Management",
+          "summary": "The AI Entrepreneurship Boom Apollo Global Management",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNdW8taDA2LVdUMUtUd1JnNjFnaHpPdV9qZGxQZ3hTM3NwRFh1NVR3QXlPcklZT3dPN0dtcFpLMkxtN2Qwc3I1RzlFcGdVbGIyTW1kRUxlTWVVLXhZdzFsSGFrc2F4MG9NV3RBa0lKb01RYV9sMWhpZE5YQllPcXRTTVlMck83NGhEZDEyZUhzVHo1cElTejI4aQ?oc=5",
+          "source": "Apollo Global Management",
+          "publishedAt": "2026-11-15",
+          "lede": "The AI Entrepreneurship Boom Apollo Global Management",
+          "articleExcerpt": "The AI Entrepreneurship Boom - Apollo Global Management. The AI Entrepreneurship Boom Apollo Global Management",
+          "contentFingerprint": "a06fc45d2abb9140",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Apollo Global Management"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-15T15:17:05.788241+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 9,
+            "semanticScore": 5.2,
+            "finalScore": 14.2,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -209004,7 +210458,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 21,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -209012,12 +210466,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 75,
+      "count": 65,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -209025,12 +210479,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 0,
+      "count": 1,
       "selected": 0,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -209038,12 +210492,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 9,
+      "count": 8,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -209051,12 +210505,12 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 6,
+      "count": 5,
       "selected": 1,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
@@ -209064,12 +210518,12 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 7,
+      "count": 8,
       "selected": 3,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
@@ -209077,20 +210531,20 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 12,
-      "selected": 5,
+      "count": 14,
+      "selected": 4,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
@@ -209103,25 +210557,25 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 12,
-      "selected": 5,
+      "count": 10,
+      "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
       "queries": [
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 74,
+      "count": 52,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -209129,7 +210583,7 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
@@ -209142,25 +210596,25 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 8,
-      "selected": 4,
+      "count": 9,
+      "selected": 5,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 4,
+      "count": 3,
       "selected": 2,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -209168,12 +210622,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 9,
+      "count": 8,
       "selected": 3,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -209181,7 +210635,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
@@ -209194,12 +210648,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 379,
+      "count": 410,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -209216,9 +210670,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-15T07:31:02.932271+00:00",
+      "asOf": "2026-11-15T15:17:05.788241+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-15T07:31:02.932271+00:00"
+  "checkedAt": "2026-11-15T15:17:05.788241+00:00"
 }
