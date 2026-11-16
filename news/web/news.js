@@ -18,6 +18,8 @@ const REPORT_ISSUE_URL = `https://github.com/${GITHUB_REPO}/issues/new`;
 const MANUAL_REFRESH_WORKFLOW_URL = `https://github.com/${GITHUB_REPO}/actions/workflows/${WORKFLOW_FILE}`;
 const GITHUB_API = `https://api.github.com/repos/${GITHUB_REPO}/actions/workflows/${WORKFLOW_FILE}`;
 const RUN_POLL_MS = 20000;
+const SERVER_REFRESH_URL = "api/news/refresh"; // served by panel/backend/server.py; absent on the static site
+const SERVER_POLL_MS = 5000;
 const RUN_TIMEOUT_MS = 40 * 60 * 1000;
 const DEPLOY_POLL_MS = 15000;
 const DEPLOY_TIMEOUT_MS = 12 * 60 * 1000;
@@ -171,6 +173,8 @@ const UI = {
     refreshAuthError: "GitHub rejected the token (401/403). Check that it has Actions read and write on this repository.",
     refreshNotFound: "Workflow not found (404). Check the repository name and that the workflow file exists on the default branch.",
     refreshNetworkError: (detail) => `Could not reach GitHub: ${detail}`,
+    refreshFailedServer: (detail) => `The update on the server failed. ${detail}`.trim(),
+    refreshServerError: (detail) => `Could not start the update on the server: ${detail}`,
     topbarTitle: "AID fund investment tracker",
     navPanel: "Research Panel",
     sortLabel: "Sort",
@@ -374,6 +378,8 @@ const UI = {
     refreshAuthError: "GitHub 拒绝了该令牌（401/403）。请确认它对本仓库拥有 Actions 读写权限。",
     refreshNotFound: "未找到工作流（404）。请检查仓库名称以及默认分支上是否存在该工作流文件。",
     refreshNetworkError: (detail) => `无法连接 GitHub：${detail}`,
+    refreshFailedServer: (detail) => `服务器上的更新失败。${detail}`.trim(),
+    refreshServerError: (detail) => `无法在服务器上启动更新：${detail}`,
     topbarTitle: "AID 基金投资追踪",
     navPanel: "研究面板",
     sortLabel: "排序",
@@ -927,6 +933,7 @@ function applyUiText() {
   $("#coverageNoteA").innerHTML = t().coverageNoteA.split("\n").map(escapeHtml).join("<br>");
   $("#coverageNoteB").innerHTML = t().coverageNoteB.split("\n").map(escapeHtml).join("<br>");
   $("#githubSettingsButton").textContent = t().githubSettingsButton;
+  $("#githubSettingsButton").hidden = serverRefresh();
   $("#githubActionsLink").href = MANUAL_REFRESH_WORKFLOW_URL;
   renderRefreshButton();
 }
@@ -1824,9 +1831,17 @@ function uuid() {
   return `${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 10)}`;
 }
 
-/* ---------- Live refresh through GitHub Actions ---------- */
+/* ---------- Live refresh: on this server, or through GitHub Actions on the static site ---------- */
+function serverRefresh() {
+  // the FastAPI server runs the updater itself; the static site has no backend and goes through GitHub
+  return Boolean(window.DataLayer && window.DataLayer.mode === "api");
+}
 function handleRefreshClick() {
   if (state.loading || (state.refresh && !["done", "error"].includes(state.refresh.phase))) return;
+  if (serverRefresh()) {
+    startServerRefresh();
+    return;
+  }
   if (!state.githubToken) {
     openGithubDialog();
     return;
@@ -1901,6 +1916,50 @@ async function startRemoteRefresh() {
   } catch (error) {
     const known = Object.values(t()).includes(error.message);
     setRefresh({ phase: "error", message: known ? error.message : t().refreshNetworkError(error.message || String(error)) });
+  } finally {
+    clearInterval(ticker);
+    renderRefreshButton();
+  }
+}
+async function startServerRefresh() {
+  const startedAt = Date.now();
+  setRefresh({ phase: "dispatching", startedAt, message: "", runUrl: "" });
+  const ticker = setInterval(renderRefreshButton, 1000);
+  try {
+    const start = await fetch(SERVER_REFRESH_URL, { method: "POST" });
+    if (start.status === 401) { location.href = "/login.html?next=" + encodeURIComponent(location.hash); return; }
+    if (!start.ok) throw new Error(t().refreshServerError(`HTTP ${start.status}`));
+    setRefresh({ phase: "running" });
+    let job = await start.json();
+    const deadline = startedAt + RUN_TIMEOUT_MS;
+    while (job.state === "running" && Date.now() < deadline) {
+      await sleep(SERVER_POLL_MS);
+      try {
+        const poll = await fetch(`${SERVER_REFRESH_URL}?t=${Date.now()}`, { cache: "no-store" });
+        if (poll.ok) job = await poll.json();
+      } catch {
+        /* retry */
+      }
+    }
+    if (job.state === "running") {
+      setRefresh({ phase: "done", message: t().refreshTimeoutRun });
+      return;
+    }
+    if (job.state !== "done") {
+      const tail = (job.log || "").split("\n").filter(Boolean).slice(-2).join(" ");
+      setRefresh({ phase: "error", message: t().refreshFailedServer(tail) });
+      return;
+    }
+    const response = await fetch(`${DATA_URL}?t=${Date.now()}`, { cache: "no-store" });
+    if (!response.ok) throw new Error(t().refreshServerError(`HTTP ${response.status}`));
+    data = await response.json();
+    allItems = flattenItems(data);
+    state.summary = null;
+    setRefresh({ phase: "done", message: t().refreshDone(formatDateTime(data.updatedAt || new Date().toISOString())) });
+    renderAll();
+  } catch (error) {
+    const known = Object.values(t()).includes(error.message);
+    setRefresh({ phase: "error", message: known ? error.message : t().refreshServerError(error.message || String(error)) });
   } finally {
     clearInterval(ticker);
     renderRefreshButton();

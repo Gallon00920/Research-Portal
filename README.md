@@ -345,9 +345,15 @@ under `news/`:
   `news/web/news.css`).
 
 Run it locally with `python news/scripts/update_news.py --recent-days 3`
-(`--dry-run` to preview). The "Refresh news" button asks for a fine-grained
-token with *Actions: read and write* on this repository; it is kept in the
-browser only.
+(`--dry-run` to preview). The "Refresh news" button behaves differently by
+site: served by `panel/backend/server.py` it runs the updater on that
+server (`POST /api/news/refresh`, today's news, one run at a time, status
+at `GET /api/news/refresh`) and reloads the data when it finishes; on the
+static site it dispatches the workflow and asks for a fine-grained token
+with *Actions: read and write* on this repository, kept in the browser only.
+On a server, a cron line such as
+`7 * * * * cd /path/to/Research-Portal && .venv/bin/python news/scripts/update_news.py --recent-days 3`
+gives the hourly refresh that the workflow provides on GitHub.
 
 ## Investment performance
 

@@ -22,7 +22,9 @@ import os
 import re
 import secrets
 import shutil
+import subprocess
 import sys
+import threading
 import time
 import uuid
 from datetime import datetime, timezone
@@ -634,6 +636,55 @@ def news_data():
     if not NEWS_DATA.exists():
         raise HTTPException(404, "news data not found; run news/scripts/update_news.py")
     return FileResponse(NEWS_DATA, media_type="application/json")
+
+
+# -------------------------------------------------------------------- news refresh on this server
+# The "Refresh news" button runs news/scripts/update_news.py here (today's news) instead of
+# dispatching the GitHub workflow, which only the static site needs. One run at a time; the
+# script inherits this process's environment (ANTHROPIC_API_KEY, HF_TOKEN) and interpreter.
+NEWS_SCRIPT = REPO / "news" / "scripts" / "update_news.py"
+NEWS_REFRESH_TIMEOUT = 40 * 60
+_news_lock = threading.Lock()
+_news_job: dict[str, Any] = {"state": "idle"}
+
+
+def _news_job_view() -> dict[str, Any]:
+    with _news_lock:
+        return dict(_news_job)
+
+
+def _run_news_refresh() -> None:
+    cmd = [sys.executable, str(NEWS_SCRIPT), "--recent-days", "1"]
+    ok, log = False, ""
+    try:
+        proc = subprocess.run(cmd, cwd=str(REPO), capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=NEWS_REFRESH_TIMEOUT)
+        ok = proc.returncode == 0
+        log = (proc.stderr or "") + (proc.stdout or "")
+    except subprocess.TimeoutExpired:
+        log = f"update_news.py did not finish within {NEWS_REFRESH_TIMEOUT // 60} minutes"
+    except Exception as e:  # noqa: BLE001
+        log = f"could not run update_news.py: {e}"
+    with _news_lock:
+        _news_job.update({"state": "done" if ok else "error", "ok": ok, "finished_at": datetime.now(timezone.utc).isoformat(),
+                          "log": log.strip()[-3000:]})
+
+
+@app.post("/api/news/refresh")
+def news_refresh_start():
+    """Start today's news update on this server (no-op when one is already running)."""
+    if not NEWS_SCRIPT.exists():
+        raise HTTPException(404, "news updater not found")
+    with _news_lock:
+        if _news_job.get("state") != "running":
+            _news_job.clear()
+            _news_job.update({"state": "running", "ok": None, "started_at": datetime.now(timezone.utc).isoformat(), "finished_at": None, "log": ""})
+            threading.Thread(target=_run_news_refresh, daemon=True).start()
+        return dict(_news_job)
+
+
+@app.get("/api/news/refresh")
+def news_refresh_status():
+    return _news_job_view()
 
 
 # -------------------------------------------------------------------- fund key factors
