@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-16T07:39:08.480250+00:00",
+  "updatedAt": "2026-11-16T17:59:42.814375+00:00",
   "scope": {
     "regions": [
       "US",
@@ -213342,11 +213342,682 @@
     },
     "2026-11-16": {
       "byGp": {
-        "Blue Owl": [],
-        "KKR": [],
+        "Blue Owl": [
+          {
+            "id": "2026-11-16-0bb4c75e56ba",
+            "title": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price - MarketBeat",
+            "titleZh": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price - MarketBeat",
+            "summary": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWlltUHFpR283TnF2SHN3aU92d1hVcGFQVWQ0cm9PTlZPT1dxZWZZMkNTVWROcWNiWWdMdGcyMFRSWEk3elJPSXZRRFltdnNqbTBZTnRkLUhEa1NiVmJ3VTdzdjZjWDZMOTdGZjNYNXZ4dW96X1YwaWtiTFNkMEpJVzZ3ZmJvdXVaV3d2MmxDR09XazNXQ3d4aEJBbDZvMmZTQ1BUbjRBSGxaSzd2cXdqTG5wQ3dwYXFuR2xLamJURVdOVTJ4eXc2R05yR2o3Vy1qRWtXU2ZwcldCYzBoc01JdWN2ZTM1RGZoZVFxS2xpa19mQQ?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-16",
+            "lede": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price MarketBeat",
+            "articleExcerpt": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price - MarketBeat. Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price MarketBeat",
+            "contentFingerprint": "e4427678a510f3f9",
+            "region": "US",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.27,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 6.37,
+              "finalScore": 19.37,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-58e6bdf1fb89",
+            "title": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). - Stock Titan",
+            "titleZh": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). - Stock Titan",
+            "summary": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). Stock Titan",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNnBXNWNlSE1HQlFWbWZIUUVOeDFicEozNVg1U0txVWxOQXlLcmE5TlNjOGV3Z0VEbmw3QWpWX2FKWlMtM1dOejZXU1pYWURoR29Fdmg5YU1EbGhZMlFNekFZVFdBSlB3TnNBMUVxWG1Tbk9ONi1NTGE5QmdXQXd6QWpUbnNTd0FQdnViUnM2T1VxckJfeVcwcElyOW90NkVicXA0cVN0VnpMcWdDRVZGLTZhR0d2UkRIQnRnMXlyQlZTSGtpSzhKZG5R?oc=5",
+            "source": "Stock Titan",
+            "publishedAt": "2026-11-16",
+            "lede": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). Stock Titan",
+            "articleExcerpt": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). - Stock Titan. Seven entities report shared voting power in Blue Owl Technology Finance (OTF). Stock Titan",
+            "contentFingerprint": "e6a8aeff6d0bac7a",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.27,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Stock Titan"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.39,
+              "finalScore": 17.39,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-2d1666af3e48",
+            "title": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation - Investing.com India",
+            "titleZh": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation - Investing.com India",
+            "summary": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation Investing.com India",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR3dsNVhENmFlRVZocDJJVHZDU0pQUlZQaWFZWEVOVm9kTG5ERVdpZHYwUUtScnJpeHM4cDVfam1jcmRLN1lNMEVMN0FrUWgxSHhkdEFNdVdWUVlXcWJjLS1VNmdidmhIQ3Q4cUlmU0x4QW9pVFNGZHlqZ3ByU1pMclZJY24yYVlrY0t4NXhHV0JWWElPNDNYellEZ2g0d3FhVkxjaE5MWkhKNVI1TlBNV0d2aDFnVGl5UWJwYVBKQVo2aHlVY282bWFmcFVXanNmckFWR1hKYw?oc=5",
+            "source": "Investing.com India",
+            "publishedAt": "2026-11-16",
+            "lede": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation Investing.com India",
+            "articleExcerpt": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation - Investing.com India. Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation Investing.com India",
+            "contentFingerprint": "f25a20f516383145",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com India"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.81,
+              "finalScore": 16.81,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-d6aa78ca5b83",
+            "title": "Private Equity Wire® US Awards winners announced",
+            "titleZh": "Private Equity Wire® US Awards winners announced",
+            "summary": "The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period.",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://privateequitywire.com/news/private-equity-wire-us-awards-winners-announced",
+            "source": "Google News",
+            "publishedAt": "2026-11-16",
+            "lede": "The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period. The winners are: Managers Capital Raise of the Year: Buyout Kayne Energy Private Equity Capital Raise of the Year: Private Credit Monroe Capital Capital Raise of the Year: Real Assets & Infrastructure Blue Owl Capital Capital Raise of the Year: Secondaries Neuberger Capital Raise of the Year: Venture Capital Felicis Deal of the Year: Acquisition Kingswood Capital Management Deal of the Year: Exit MiddleGround Capital Emerging Capital Raise of the Year: Buyout BayHawk Capital Emerging Capital Raise of the Year: Growth Equity Sundance Growth Emerging Capital Raise of the Year: Private Credit Level Equity Management, LLC Emerging Capital Raise of the Year: Venture Capital Mercurius Media Capital Emerging Performance of the Year: Asset-based Financing Kerberos Capital Management Emerging Performance of the Year: Growth Equity Hughes & Company Emerging Performance of the Year: Venture Capital Fusion Fund Firm of the Year: Emerging Manager Kerberos Capital Management Firm of the Year: Established Manager Goldman Sachs Petershill Impact Story of the Year Hudson Valley Property Group, LLC Innovative Firm of the Year StepStone Group Performance of the Year: Asset-based Financing Castlelake Performance of the Year: Buyout Kayne Energy Private Equity Performance of the Year: Credit Secondaries Star Mountain Capital Performance of the Year: Direct Lending Metropolitan Partners Group Performance of the Year: Distressed Debt Balbec Capital LP Performance of the Year: Growth Equity Dragoneer Investment Group Performance of the Year: Infrastructure Energy Capital Partners Performance of the Year: Mezzanine Debt VSS Capital Partners Performance of the Year: Real Estate Debt VWH Capital Management, LP Value Creation Story of the Year Audax Private Equity Service Providers Accounting & Fund Reporting Software of the Year Workiva Accounting & Fund Reporting Solution of the Year CSC Advisory Firm of the Year: ESG Anthesis Group Advisory Firm of the Year: Overall Withum Advisory Firm of the Year: Tax CBIZ AI & Data Analytics Solution of the Year: Deal Sourcing Metal Audit Firm of the Year: Mid-Market Private Equity EisnerAmper Audit Firm of the Year: Overall Baker Tilly x Anchin Benchmarking & Performance Analytics Provider of the Year Hamilton Lane Capital Introductions Service of the Year Asante Capital Group Cloud Services Provider of the Year Thrive Co-Investment Platform of the Year Goldman Sachs Alternatives Compliance Service of the Year: Fund Domicile Vigilant Compliance, LLC Compliance Service of the Year: Overall IQ-EQ Cyber Security Solution of the Year S-RM Data Provider of the Year: Credit PitchBook Data Inc Data Provider of the Year: Overall Gain Deal Origination Solution of the Year: Buyouts Grata (Datasite) Deal Origination Solution of the Year: Credit Octus Deal Origination Solution of the Year: Overall Raylu Debt Advisory Firm of the Year Lincoln International Depositary Services of the Year Langham Hall Document Management & Automation Solution of the Yea CENTRL Due Diligence Service Provider of the Year VAULTINUM ESG Solution Provider of the Year: Client Services Weaver ESG Solution Provider of the Year: Overall Novata Executive Search Firm of the Year Jensen Partners Financial Modelling & Analytics Firm of the Year Quantium Forex Solution Provider of the Year Macquarie Fund Administrator of the Year: Client Services Aztec Group Fund Administrator of the Year: ESG Waystone Fund Administrator of the Year: GP's over $30 Billion Citco group of companies Fund Administrator of the Year: GP's under $30 Billion FTI Consulting Fund Administrator of the Year: Overall Alter Domus Fund Administrator of the Year: Private Credit Suntera Fund Services Fund Administrator of the Year: Real Assets & Infrastructure Formidium Fund Administrator of the Year: Technology UMB Bank Fund Finance Provider of the Year Fund Finance Partners Impact Measurement & Reporting Solution of the Year Novata Law Firm of the Year: Client Services Loeb Smith Attorneys Law Firm of the Year: Emerging Manager DLA Piper LLP Law Firm of the Year: Fund Domicile Maples Group Law Firm of the Year: Overall Reed Smith LLP Law Firm of the Year: Private Credit and Securities Hogan Lovells Cadwalader Law Firm of the Year: Transactions Proskauer Rose LLP LP Portal & Investor Reporting Technology of the Year Juniper Square M&A Advisory Firm of the Year Lincoln International, Inc. Managed Service Provider of the Year Abacus Middle Office Service of the Year SS&C GlobeOp Newcomer of the Year: Technology Provider Foresight Operational Due Diligence (ODD) Solution of the Year MSCI Portfolio AI Solutions Provider of the Year Codal Portfolio Digital Transformation Partner of the Year Equity Shift Portfolio Monitoring & Reporting Solution of the Year 73 Strings Portfolio Talent & Human Capital Solutions Provider of the Year Heidrick & Struggles PR & Communications Agency of the Year H/Advisors Ratings Provider of the Year KBRA Recruitment Company of the Year: Investor Relations & Asset Raising Risch Group Recruitment Company of the Year: Operations & Finance Park Capital Search Regulatory & Compliance Firm of the Year Kroll Regulatory & Compliance Technology of the Year Consero Global Research Solution of the Year Capstone LLC Risk Management Software Provider of the Year Validus Risk Management Secondaries Platform of the Year Setter Capital Inc Strategic Intelligence Provider of the Year Quinlan Partners Sustainability Reporting & Disclosure Adviser of the Year ERM Technology Innovation of the Year: AI Entrilia Technology Innovation of the Year: ESG & Impact Investing Persefoni Technology Innovation of the Year: Firm Operations Arcesium Technology Innovation of the Year: Origination Intapp Technology Innovation of the Year: Overall Align Transaction Services Firm of the Year Alvarez & Marsal Transfer Agency Service of the Year Vistra Fund Solutions Valuation Service of the Year Citrin Cooperman Value Creation Consulting Firm of the Year Cruxy",
+            "articleExcerpt": "Private Equity Wire® US Awards winners announced. Private Equity Wire | Private Equity Wire® US Awards winners announced News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory Contact About Privacy Policy Trademark Policy Terms & Conditions News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory Search Private Equity Wire Search News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory News Reports What's On Analysis News Private Equity Wire® US Awards winners announced November 16, 2026 at 8:55 am Share this article The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period. The winners are: Managers Capital Raise of the Year: Buyout Kayne Energy Private Equity Capital Raise of the Year: Private Credit Monroe Capital Capital Raise of the Year: Real",
+            "contentFingerprint": "d7257a7ea5f4e891",
+            "region": "US",
+            "gps": [
+              "Blue Owl",
+              "Neuberger"
+            ],
+            "strategies": [
+              "private-credit",
+              "abf",
+              "ai"
+            ],
+            "sectors": [
+              "private-credit",
+              "abf",
+              "ai"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl",
+                "Neuberger"
+              ],
+              "titleGps": [],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit",
+                "abf",
+                "ai"
+              ],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 0.5,
+                  "code": "body_mentions_gp",
+                  "gps": [
+                    "Blue Owl",
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.44,
+                  "code": "body_strategy",
+                  "tagValue": 0.6,
+                  "strategies": [
+                    "private-credit",
+                    "abf",
+                    "ai"
+                  ],
+                  "semanticValue": 0.28
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Google News"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 59,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 22,
+              "semanticScore": 3.38,
+              "finalScore": 25.38,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "KKR": [
+          {
+            "id": "2026-11-16-70e37f64614f",
+            "title": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor",
+            "titleZh": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor",
+            "summary": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund Infrastructure Investor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYl9QanpacHg3ZXBHTTJja0tyZ0tveXJkeE1xQlVKUmstSnNpNUszTXhCRnNlQXJjb2ZxcWR4U3NyXzNNSVI4dzYteEMxM29LR294blJuMDE3SkYwOGVIOURnTkR4eHprZ0tlR0F2VHhHb3RhTkQwTmxCTHJBc3Vta05lWkVBaU5nNjhNZ0E0VDIxX1lmM0ZjaHM3bE5uSWo1N1k4QWJNNHlqdDVWS2c?oc=5",
+            "source": "Infrastructure Investor",
+            "publishedAt": "2026-11-16",
+            "lede": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund Infrastructure Investor",
+            "articleExcerpt": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor. The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund Infrastructure Investor",
+            "contentFingerprint": "66a07af537f5e635",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Infrastructure Investor"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 73,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.67,
+              "finalScore": 16.67,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-12235fd1a19b",
+            "title": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis - www.debelegger.nl",
+            "titleZh": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis - www.debelegger.nl",
+            "summary": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis www.debelegger.nl",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4VVhfOFdmZVE4eGlXdnRtai1hOGVlNjMzTWgzak1RUEpOX1NraFVwTU03U29wVGQwUW9DM0h6TkJySXpmY05kNk9yUTJaYkpJM1RhSy1zRmg?oc=5",
+            "source": "www.debelegger.nl",
+            "publishedAt": "2026-11-16",
+            "lede": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis www.debelegger.nl",
+            "articleExcerpt": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis - www.debelegger.nl. KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis www.debelegger.nl",
+            "contentFingerprint": "38f4817d8f1e7a20",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "www.debelegger.nl"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 49,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.33,
+              "finalScore": 16.33,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CIFC": [],
         "PAG": [],
-        "Pretium": [],
+        "Pretium": [
+          {
+            "id": "2026-11-16-c8ac3e1f6ae0",
+            "title": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans - citybiz",
+            "titleZh": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans - citybiz",
+            "summary": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans citybiz",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRUFvMTRTMGhRRHY0eFUtV1p2ejZ3QllXWHdzWU1SSFNmM2kxOFNWX0Y0NzR4elktN1lwLUpRRElTWU1MZ04yZzhZOXczVUh3QWItVUFqc0FxSlh3UWd2cHVGVzVkMTZBZlo1aDRjalo3bmZiN0s2YTF5WWF3alBDVHdJLUpucU96ZGJKQ3ZFZHI1SWhXMU5RU20tNGlOUHdlRlNjdXV2LVhVbzkyZFE0X1p3?oc=5",
+            "source": "citybiz",
+            "publishedAt": "2026-11-16",
+            "lede": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans citybiz",
+            "articleExcerpt": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans - citybiz. Parkland Communities Secures $50 Million Credit Facility With Anchor Loans citybiz",
+            "contentFingerprint": "16fb013f13fc82a4",
+            "region": "US",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.35
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "citybiz"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 65,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 4.21,
+              "finalScore": 17.21,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Guggenheim": [
           {
             "id": "2026-11-16-9f96322ea7c8",
@@ -213436,19 +214107,2017 @@
               "finalScore": 7.08,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-16-f98694038cbf",
+            "title": "Guggenheim High Yield Fund Q3 2026 Commentary - Seeking Alpha",
+            "titleZh": "Guggenheim High Yield Fund Q3 2026 Commentary - Seeking Alpha",
+            "summary": "Guggenheim High Yield Fund Q3 2026 Commentary Seeking Alpha",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPS1J5WXBKaHBnOThvbjBwaFp3WEJjaVlLNGE2UFJ1YWVuUXlXX0pRMlBVdVJQZE1sYUNtajNKSnZUUXY2Q3haQTdEa2pZN05Na3Ryb1AyOUxzbFlWYlFzWVlmSndNU3RENDdDeTU1TndMWGhuZGVvZzZKOGxWR3FYbzBqRjB1WDY1XzBVWVZ6WQ?oc=5",
+            "source": "Seeking Alpha",
+            "publishedAt": "2026-11-16",
+            "lede": "Guggenheim High Yield Fund Q3 2026 Commentary Seeking Alpha",
+            "articleExcerpt": "Guggenheim High Yield Fund Q3 2026 Commentary - Seeking Alpha. Guggenheim High Yield Fund Q3 2026 Commentary Seeking Alpha",
+            "contentFingerprint": "74206208562d73f1",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.8,
+                  "code": "fundraising",
+                  "ruleValue": 0.8,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Seeking Alpha"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.83,
+              "finalScore": 7.83,
+              "semanticEnabled": true
+            }
           }
         ],
-        "Neuberger": [],
+        "Neuberger": [
+          {
+            "id": "2026-11-16-d6aa78ca5b83",
+            "title": "Private Equity Wire® US Awards winners announced",
+            "titleZh": "Private Equity Wire® US Awards winners announced",
+            "summary": "The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period.",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://privateequitywire.com/news/private-equity-wire-us-awards-winners-announced",
+            "source": "Google News",
+            "publishedAt": "2026-11-16",
+            "lede": "The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period. The winners are: Managers Capital Raise of the Year: Buyout Kayne Energy Private Equity Capital Raise of the Year: Private Credit Monroe Capital Capital Raise of the Year: Real Assets & Infrastructure Blue Owl Capital Capital Raise of the Year: Secondaries Neuberger Capital Raise of the Year: Venture Capital Felicis Deal of the Year: Acquisition Kingswood Capital Management Deal of the Year: Exit MiddleGround Capital Emerging Capital Raise of the Year: Buyout BayHawk Capital Emerging Capital Raise of the Year: Growth Equity Sundance Growth Emerging Capital Raise of the Year: Private Credit Level Equity Management, LLC Emerging Capital Raise of the Year: Venture Capital Mercurius Media Capital Emerging Performance of the Year: Asset-based Financing Kerberos Capital Management Emerging Performance of the Year: Growth Equity Hughes & Company Emerging Performance of the Year: Venture Capital Fusion Fund Firm of the Year: Emerging Manager Kerberos Capital Management Firm of the Year: Established Manager Goldman Sachs Petershill Impact Story of the Year Hudson Valley Property Group, LLC Innovative Firm of the Year StepStone Group Performance of the Year: Asset-based Financing Castlelake Performance of the Year: Buyout Kayne Energy Private Equity Performance of the Year: Credit Secondaries Star Mountain Capital Performance of the Year: Direct Lending Metropolitan Partners Group Performance of the Year: Distressed Debt Balbec Capital LP Performance of the Year: Growth Equity Dragoneer Investment Group Performance of the Year: Infrastructure Energy Capital Partners Performance of the Year: Mezzanine Debt VSS Capital Partners Performance of the Year: Real Estate Debt VWH Capital Management, LP Value Creation Story of the Year Audax Private Equity Service Providers Accounting & Fund Reporting Software of the Year Workiva Accounting & Fund Reporting Solution of the Year CSC Advisory Firm of the Year: ESG Anthesis Group Advisory Firm of the Year: Overall Withum Advisory Firm of the Year: Tax CBIZ AI & Data Analytics Solution of the Year: Deal Sourcing Metal Audit Firm of the Year: Mid-Market Private Equity EisnerAmper Audit Firm of the Year: Overall Baker Tilly x Anchin Benchmarking & Performance Analytics Provider of the Year Hamilton Lane Capital Introductions Service of the Year Asante Capital Group Cloud Services Provider of the Year Thrive Co-Investment Platform of the Year Goldman Sachs Alternatives Compliance Service of the Year: Fund Domicile Vigilant Compliance, LLC Compliance Service of the Year: Overall IQ-EQ Cyber Security Solution of the Year S-RM Data Provider of the Year: Credit PitchBook Data Inc Data Provider of the Year: Overall Gain Deal Origination Solution of the Year: Buyouts Grata (Datasite) Deal Origination Solution of the Year: Credit Octus Deal Origination Solution of the Year: Overall Raylu Debt Advisory Firm of the Year Lincoln International Depositary Services of the Year Langham Hall Document Management & Automation Solution of the Yea CENTRL Due Diligence Service Provider of the Year VAULTINUM ESG Solution Provider of the Year: Client Services Weaver ESG Solution Provider of the Year: Overall Novata Executive Search Firm of the Year Jensen Partners Financial Modelling & Analytics Firm of the Year Quantium Forex Solution Provider of the Year Macquarie Fund Administrator of the Year: Client Services Aztec Group Fund Administrator of the Year: ESG Waystone Fund Administrator of the Year: GP's over $30 Billion Citco group of companies Fund Administrator of the Year: GP's under $30 Billion FTI Consulting Fund Administrator of the Year: Overall Alter Domus Fund Administrator of the Year: Private Credit Suntera Fund Services Fund Administrator of the Year: Real Assets & Infrastructure Formidium Fund Administrator of the Year: Technology UMB Bank Fund Finance Provider of the Year Fund Finance Partners Impact Measurement & Reporting Solution of the Year Novata Law Firm of the Year: Client Services Loeb Smith Attorneys Law Firm of the Year: Emerging Manager DLA Piper LLP Law Firm of the Year: Fund Domicile Maples Group Law Firm of the Year: Overall Reed Smith LLP Law Firm of the Year: Private Credit and Securities Hogan Lovells Cadwalader Law Firm of the Year: Transactions Proskauer Rose LLP LP Portal & Investor Reporting Technology of the Year Juniper Square M&A Advisory Firm of the Year Lincoln International, Inc. Managed Service Provider of the Year Abacus Middle Office Service of the Year SS&C GlobeOp Newcomer of the Year: Technology Provider Foresight Operational Due Diligence (ODD) Solution of the Year MSCI Portfolio AI Solutions Provider of the Year Codal Portfolio Digital Transformation Partner of the Year Equity Shift Portfolio Monitoring & Reporting Solution of the Year 73 Strings Portfolio Talent & Human Capital Solutions Provider of the Year Heidrick & Struggles PR & Communications Agency of the Year H/Advisors Ratings Provider of the Year KBRA Recruitment Company of the Year: Investor Relations & Asset Raising Risch Group Recruitment Company of the Year: Operations & Finance Park Capital Search Regulatory & Compliance Firm of the Year Kroll Regulatory & Compliance Technology of the Year Consero Global Research Solution of the Year Capstone LLC Risk Management Software Provider of the Year Validus Risk Management Secondaries Platform of the Year Setter Capital Inc Strategic Intelligence Provider of the Year Quinlan Partners Sustainability Reporting & Disclosure Adviser of the Year ERM Technology Innovation of the Year: AI Entrilia Technology Innovation of the Year: ESG & Impact Investing Persefoni Technology Innovation of the Year: Firm Operations Arcesium Technology Innovation of the Year: Origination Intapp Technology Innovation of the Year: Overall Align Transaction Services Firm of the Year Alvarez & Marsal Transfer Agency Service of the Year Vistra Fund Solutions Valuation Service of the Year Citrin Cooperman Value Creation Consulting Firm of the Year Cruxy",
+            "articleExcerpt": "Private Equity Wire® US Awards winners announced. Private Equity Wire | Private Equity Wire® US Awards winners announced News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory Contact About Privacy Policy Trademark Policy Terms & Conditions News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory Search Private Equity Wire Search News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory News Reports What's On Analysis News Private Equity Wire® US Awards winners announced November 16, 2026 at 8:55 am Share this article The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period. The winners are: Managers Capital Raise of the Year: Buyout Kayne Energy Private Equity Capital Raise of the Year: Private Credit Monroe Capital Capital Raise of the Year: Real",
+            "contentFingerprint": "d7257a7ea5f4e891",
+            "region": "US",
+            "gps": [
+              "Blue Owl",
+              "Neuberger"
+            ],
+            "strategies": [
+              "private-credit",
+              "abf",
+              "ai"
+            ],
+            "sectors": [
+              "private-credit",
+              "abf",
+              "ai"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl",
+                "Neuberger"
+              ],
+              "titleGps": [],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit",
+                "abf",
+                "ai"
+              ],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 0.5,
+                  "code": "body_mentions_gp",
+                  "gps": [
+                    "Blue Owl",
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.44,
+                  "code": "body_strategy",
+                  "tagValue": 0.6,
+                  "strategies": [
+                    "private-credit",
+                    "abf",
+                    "ai"
+                  ],
+                  "semanticValue": 0.28
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Google News"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 59,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 22,
+              "semanticScore": 3.38,
+              "finalScore": 25.38,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "BasePoint": [],
-        "Bain Capital": [],
-        "Blackstone": [],
-        "Apollo": [],
-        "TPG": [],
+        "Bain Capital": [
+          {
+            "id": "2026-11-16-d87eb443b8db",
+            "title": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others - Moneycontrol.com",
+            "titleZh": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others - Moneycontrol.com",
+            "summary": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others Moneycontrol.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTGFMVGdneU95MU1xei1QSmRJRlF5STE0OUcxSEN4THMyRE5JQ3JDNERRQmdIUFAxLUNfdWhUZEVxY2tqeDBQVTdRbUxwXzdESzIzRDlyTklCUGhYOXduZWxBV003dEZndl8wZWNWOG1lc2FueDhVZFFlRlFaN0YwWlY5QzRvLXAyZmxhbFhoRjlPb3pLUUJCODkxLTBlMGZPcnRoT0tXMXlyNkJZd2t4S0QwUjdDOVdUQTUtbVJJeWpiV3hpeDFpS2NURjhFUDFOLUNFMUQ2Y2VEYkxIbWllWmRURGQzNnNM0gHuAUFVX3lxTE1vS2JvQUNNTVdhX01rTXFKV2FwbGY1ZGszTWI3TkRsWkpWYi05YTNxRFhDVzJNSXQwME1DUzc1MVNoZWFxWDRSeWdLbGZzUG9XSl9rQVNnMFA2ZDBrbWdWZkNZRnRRc0NVaG4zYWJKNU9BOXZvelNUUUFwWlhrbE1QbE5KRExmdXNqelhrcVBvWFJHR0xRRXRjUGVNMlNzaXpSWFhiYWJPVE51ZHl4dUV6Z2NsV014ZkkxRHJsZktFbXpCV0t5ajBnbHFvODJMTWNwQmFTUkVNcUp3RWhKS1Zza3h2Zl95U3BJcXk2R2c?oc=5",
+            "source": "Moneycontrol.com",
+            "publishedAt": "2026-11-16",
+            "lede": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others Moneycontrol.com",
+            "articleExcerpt": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others - Moneycontrol.com. Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others Moneycontrol.com",
+            "contentFingerprint": "bbbb06c99ca012fb",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.8,
+                  "code": "fundraising",
+                  "ruleValue": 0.8,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Moneycontrol.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.74,
+              "finalScore": 8.74,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-c446ae06fe8d",
+            "title": "Form 13F-NT Bain Capital Venture For: Sep 30 - StreetInsider",
+            "titleZh": "Form 13F-NT Bain Capital Venture For: Sep 30 - StreetInsider",
+            "summary": "Form 13F-NT Bain Capital Venture For: Sep 30 StreetInsider",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMHhna3p0SnAzWmJjOTJMQVhCZ1FLYWdHY3JBMW1nVU5vRGVnSnNfai04a0hGNi1NSEo5dVAtTWgtcDhnVGxSUlhyYXFUZjMtNVVoWm5JSmNKdldIQW5nYzJEb09GMTRNd2dGYmFQaEVjRG5xeVBBM0o0U0hHYXJsNHZjVmdNNVgwdkJ0NHRoTTh6N2FBME90cTN5R3NVX0ZYSllYeg?oc=5",
+            "source": "StreetInsider",
+            "publishedAt": "2026-11-16",
+            "lede": "Form 13F-NT Bain Capital Venture For: Sep 30 StreetInsider",
+            "articleExcerpt": "Form 13F-NT Bain Capital Venture For: Sep 30 - StreetInsider. Form 13F-NT Bain Capital Venture For: Sep 30 StreetInsider",
+            "contentFingerprint": "ac5448bd1270c51c",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "StreetInsider"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.04,
+              "finalScore": 8.04,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Blackstone": [
+          {
+            "id": "2026-11-16-cc2746afc0b0",
+            "title": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io",
+            "titleZh": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io",
+            "summary": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing Securities.io",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQXFOMVd4OVo3blY5NW5BTWZ3NEFLQnRkbVc2SnNqYk0tUmJhbVQwV0x3T09oS2kxNXBfN3IwSTdNOV95N3RveGEtQnpzVXFmd0RzN0ZLTlZ1TDJSZnBNQVYzSVdoYnlDeG9GZW1hSi1IVlNKbXl3ZnFjYVE5aDN5VFBNTlMyLTZ4M05KbGlKQnZsMzh1aVhzTWhsajBGOFRlUU5NWDFTRnhIQQ?oc=5",
+            "source": "Securities.io",
+            "publishedAt": "2026-11-16",
+            "lede": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing Securities.io",
+            "articleExcerpt": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io. J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing Securities.io",
+            "contentFingerprint": "f3c224d79e178731",
+            "region": "US",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.8,
+                  "code": "fundraising",
+                  "ruleValue": 0.8,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Securities.io"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 68,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 4.93,
+              "finalScore": 20.93,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-938f385984d5",
+            "title": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds - BigGo Finance",
+            "titleZh": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds - BigGo Finance",
+            "summary": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds BigGo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3X29QLTQ5RlNpenhtZGRJV05pRFoydnEyN3pXS1l2SXVVc0ZRQ0R0Y3loUVNyRW51RnhhZWpvNHdJdC1kZWpiMmpzME94Q1pSM0tadHZXTzhuZWpRU1E?oc=5",
+            "source": "BigGo Finance",
+            "publishedAt": "2026-11-16",
+            "lede": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds BigGo Finance",
+            "articleExcerpt": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds - BigGo Finance. [Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds BigGo Finance",
+            "contentFingerprint": "f964f7b8c3fea8da",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "BigGo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.51,
+              "finalScore": 19.509999999999998,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-2c905250e534",
+            "title": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS - Yahoo Finance",
+            "titleZh": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS - Yahoo Finance",
+            "summary": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOWVtdVR6ZDdMWXlUbHhNanFvTzlfOXU0ZDB4VTZpcEV3UHF6UGRYUWNtTHdmVWE3VndzZTdEUVBsWW0tOVVuaE4zaE5LYnhWOTBHT3lYMHROdnlBSy1WWURuV3VOS2dVbktIT3Fib3E2U1VyUVpPM1dKQ2xwcllNNGxUdHpmZVNKT1JHTXMzQ28xMHNoS3Rrd2RPZw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-16",
+            "lede": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS Yahoo Finance",
+            "articleExcerpt": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS - Yahoo Finance. Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS Yahoo Finance",
+            "contentFingerprint": "0683aff30032253f",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.29,
+              "finalScore": 19.29,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-4bc5bd829829",
+            "title": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk - Kalkine",
+            "titleZh": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk - Kalkine",
+            "summary": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk Kalkine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMldHT1Zkc1lIMkFQVWo1b1FJN3d3dDZuejVCZGRTcTZsTk0wZnlLTEozbURqLWRrZk40OVpqMlZ1VHF6MDZTVEFRNmw0V1BaRGtpQURHRVpjWGJMemFXLURWUC1PM3VvY3hPRlY1ZlJJY3RNNDFsZVhDZHdacHpudVRGcmlkbERYN0ZRbWthWFhDckk0b09DWEJaSi1iN1RoTnV0TXRtaFkzSmkwa1JHY3hlU215RzJrUnhfN3cxREZpQ01XbmYxQ0gyYVowU2JRRU5QZXBQaWZkQUpVSExtTlZxR1R6d3pZeFI4MHlmNGhsZzNm?oc=5",
+            "source": "Kalkine",
+            "publishedAt": "2026-11-16",
+            "lede": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk Kalkine",
+            "articleExcerpt": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk - Kalkine. State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk Kalkine",
+            "contentFingerprint": "f85d084d9780184f",
+            "region": "US",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 6.23,
+              "finalScore": 19.23,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Apollo": [
+          {
+            "id": "2026-11-16-2011f595d657",
+            "title": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet - BeBeez International",
+            "titleZh": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet - BeBeez International",
+            "summary": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet BeBeez International",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPajZBTmNCQzFOREtXMzA3NU1BandQVTJPX0xvWnF5d2FFQlNEdGFTcGtRckRpS1J0Y0d6VnoyUlM5MXNUaENVUnREN2MxNmoyM3otNGxYal8ycTlMcnJNTHBPYnhDVmktcnVtcDFjVDNwU1hCMUU1LWpCT0xhc1JKVGJzM2ZNQVB3T2V6YzVyYVRKZV9DeVRoRENtTTlxbXhaYVlXdm9GWWRRUzBrYXZ5QWZVdmJfRnZHckNxcG5hdmR4M00yX1lOQXlSc1M1SWR5QkhzM0Y5NXJpRUdaeXFuOVUwSFRQZ1FweXFGTWNXY3NVVHVL?oc=5",
+            "source": "BeBeez International",
+            "publishedAt": "2026-11-16",
+            "lede": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet BeBeez International",
+            "articleExcerpt": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet - BeBeez International. Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet BeBeez International",
+            "contentFingerprint": "ce0195cc8ea8cc22",
+            "region": "US",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "BeBeez International"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 5.36,
+              "finalScore": 21.36,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-055aabc504b7",
+            "title": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration - Yahoo Finance",
+            "titleZh": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration - Yahoo Finance",
+            "summary": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaGQ4QU5jTkt6TXVFSUlJeHNPT2J6ajZGNGdUdmpoVVM5RTlYNjd4S1pBbDJnUDZKaU5NRTNPTVBRRmJCWTlHbUJKZ0x5SGhYLUZJbjFJZzdwdWNRUGt4Rk1CN1I3QzRpYmxXRllia2FYSkRlbUhOVThMYnVhOWRneE5WckdzME5RMU8tQ2lLZV9jQTBGbVlBRnZaVWxmY1VTWUZKemhLSDN2QQ?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-16",
+            "lede": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration Yahoo Finance",
+            "articleExcerpt": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration - Yahoo Finance. Victory Capital and Apollo Announce Strategic Private Markets Collaboration Yahoo Finance",
+            "contentFingerprint": "ec440b3dc47b29d8",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.28,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.55
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 64,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.64,
+              "finalScore": 17.64,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-3de869fc2502",
+            "title": "Victory Capital and Apollo team up to broaden private markets access - Alternative Credit Investor",
+            "titleZh": "Victory Capital and Apollo team up to broaden private markets access - Alternative Credit Investor",
+            "summary": "Victory Capital and Apollo team up to broaden private markets access Alternative Credit Investor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVzlENWNfNS0tRlh1VDllQjhySXU4MDhNY0xlWHZzbGZZOWJEYnJnRU5LT2hoODNhbEtTeTFuSU80eXI4bWgyd0daUEsyazYxRVRjUnRmamxteVY1TnlzOVZHOXJWSFI0MlRRRzJJYUtsYWFjT2hBeUZIQTZ4QWlSY0FMUzBhb0stSzc4dWsxWHNNWHlTSW5aS0VGWUdUOFhBeXZndGxQTVJfbEhWcUVBVnYxYkNnUkpnNlE?oc=5",
+            "source": "Alternative Credit Investor",
+            "publishedAt": "2026-11-16",
+            "lede": "Victory Capital and Apollo team up to broaden private markets access Alternative Credit Investor",
+            "articleExcerpt": "Victory Capital and Apollo team up to broaden private markets access - Alternative Credit Investor. Victory Capital and Apollo team up to broaden private markets access Alternative Credit Investor",
+            "contentFingerprint": "004f094ec0e28bae",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "Alternative Credit Investor"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.32,
+              "finalScore": 17.32,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-23a6c86f3363",
+            "title": "Higher Rates Hit the Fiscal Side, Not the Private Sector - Apollo Global Management",
+            "titleZh": "Higher Rates Hit the Fiscal Side, Not the Private Sector - Apollo Global Management",
+            "summary": "Higher Rates Hit the Fiscal Side, Not the Private Sector Apollo Global Management",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPck56RkJOeEJOWS1qQTVXNFlIUTNrNmszdVdNenJhVUU1TFZ3ZHBERi1oMGd3X0xJaGQtNlVDRmZUbGtPZmMtNkhxaW1ndWhQbFlQSjhUWDkwMHprYW96bGpFNS1SZjZYLWEyTkJNUWpJVVJOeHNibTNZM2tHRVhCSDdSTVdYOUdmakdhQ0tIdGxzNEN3U004ckFZVmZSRHBFUnUyT01EVkVhSTZFUmZ0UTFidEt1LXh2TlJjOQ?oc=5",
+            "source": "Apollo Global Management",
+            "publishedAt": "2026-11-16",
+            "lede": "Higher Rates Hit the Fiscal Side, Not the Private Sector Apollo Global Management",
+            "articleExcerpt": "Higher Rates Hit the Fiscal Side, Not the Private Sector - Apollo Global Management. Higher Rates Hit the Fiscal Side, Not the Private Sector Apollo Global Management",
+            "contentFingerprint": "967c09b92772fb67",
+            "region": "US",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Apollo Global Management"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 8,
+              "semanticScore": 4.89,
+              "finalScore": 12.89,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "TPG": [
+          {
+            "id": "2026-11-16-ad34807b40de",
+            "title": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat",
+            "titleZh": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat",
+            "summary": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNV25TRmJaZW5zMC1DNkJCcHlVUXU1SmdUZUtmNzNFbzNYRHRIQ18tdVVGNXBHeEJpeG1CckFOSDFDbkdjbU1HX085RnkySkFkUjN0eTRaUlg2VVUzZ0Q5cXFJUmlFYXNEbmQwU21jMlJnajVTWDMwTEJLSDZLLXhoWnByanZ1MVd0NW03LURobU5aZ1NOR1oxaFEzeXhnSVdDQXNwZVZOQlJuZTVmQnQ3UlBqTWxPbHBxT2tSbDF6Ql9ZTUlnMkFoV2l3?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-16",
+            "lede": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC MarketBeat",
+            "articleExcerpt": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat. TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC MarketBeat",
+            "contentFingerprint": "427014fc5c57ddbd",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 71,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.52,
+              "finalScore": 8.52,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-271fe1472d98",
+            "title": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. - Stock Titan",
+            "titleZh": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. - Stock Titan",
+            "summary": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. Stock Titan",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSDBvd041bnpaMDJzWEE2aTduOVpqQTBnbmVjT1YtTDdBWk4tMk5oX205c2dDQkFCWWRCYldWendfczhyck85cGJ6WVlob0JBUEZYRDVpSW9KWG1QRXNYZ3QxUklKS2UwUnIzRElBNGpCWm9XR3ZFV1VhVmwzZzEweFo3U0V3OVJoeGZ1V0JxSFBDRTcta3VRdXhyeVZKMUpNVEVwSG9JcV8zNVNlT3haMThZWGs2eGpqU2U0QXZB?oc=5",
+            "source": "Stock Titan",
+            "publishedAt": "2026-11-16",
+            "lede": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. Stock Titan",
+            "articleExcerpt": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. - Stock Titan. Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. Stock Titan",
+            "contentFingerprint": "527f003452e03278",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Stock Titan"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 48,
+              "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.92,
+              "finalScore": 7.92,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Golub": [],
         "CVC": [],
         "Canyon": []
       },
       "items": [
+        {
+          "id": "2026-11-16-0bb4c75e56ba",
+          "title": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price - MarketBeat",
+          "titleZh": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price - MarketBeat",
+          "summary": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxOWlltUHFpR283TnF2SHN3aU92d1hVcGFQVWQ0cm9PTlZPT1dxZWZZMkNTVWROcWNiWWdMdGcyMFRSWEk3elJPSXZRRFltdnNqbTBZTnRkLUhEa1NiVmJ3VTdzdjZjWDZMOTdGZjNYNXZ4dW96X1YwaWtiTFNkMEpJVzZ3ZmJvdXVaV3d2MmxDR09XazNXQ3d4aEJBbDZvMmZTQ1BUbjRBSGxaSzd2cXdqTG5wQ3dwYXFuR2xLamJURVdOVTJ4eXc2R05yR2o3Vy1qRWtXU2ZwcldCYzBoc01JdWN2ZTM1RGZoZVFxS2xpa19mQQ?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-16",
+          "lede": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price MarketBeat",
+          "articleExcerpt": "Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price - MarketBeat. Keefe, Bruyette & Woods Has Lowered Expectations for Blue Owl Technology Finance (NYSE:OTF) Stock Price MarketBeat",
+          "contentFingerprint": "e4427678a510f3f9",
+          "region": "US",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.27,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 6.37,
+            "finalScore": 19.37,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-58e6bdf1fb89",
+          "title": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). - Stock Titan",
+          "titleZh": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). - Stock Titan",
+          "summary": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). Stock Titan",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxPNnBXNWNlSE1HQlFWbWZIUUVOeDFicEozNVg1U0txVWxOQXlLcmE5TlNjOGV3Z0VEbmw3QWpWX2FKWlMtM1dOejZXU1pYWURoR29Fdmg5YU1EbGhZMlFNekFZVFdBSlB3TnNBMUVxWG1Tbk9ONi1NTGE5QmdXQXd6QWpUbnNTd0FQdnViUnM2T1VxckJfeVcwcElyOW90NkVicXA0cVN0VnpMcWdDRVZGLTZhR0d2UkRIQnRnMXlyQlZTSGtpSzhKZG5R?oc=5",
+          "source": "Stock Titan",
+          "publishedAt": "2026-11-16",
+          "lede": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). Stock Titan",
+          "articleExcerpt": "Seven entities report shared voting power in Blue Owl Technology Finance (OTF). - Stock Titan. Seven entities report shared voting power in Blue Owl Technology Finance (OTF). Stock Titan",
+          "contentFingerprint": "e6a8aeff6d0bac7a",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.27,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Stock Titan"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.39,
+            "finalScore": 17.39,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-2d1666af3e48",
+          "title": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation - Investing.com India",
+          "titleZh": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation - Investing.com India",
+          "summary": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation Investing.com India",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQR3dsNVhENmFlRVZocDJJVHZDU0pQUlZQaWFZWEVOVm9kTG5ERVdpZHYwUUtScnJpeHM4cDVfam1jcmRLN1lNMEVMN0FrUWgxSHhkdEFNdVdWUVlXcWJjLS1VNmdidmhIQ3Q4cUlmU0x4QW9pVFNGZHlqZ3ByU1pMclZJY24yYVlrY0t4NXhHV0JWWElPNDNYellEZ2g0d3FhVkxjaE5MWkhKNVI1TlBNV0d2aDFnVGl5UWJwYVBKQVo2aHlVY282bWFmcFVXanNmckFWR1hKYw?oc=5",
+          "source": "Investing.com India",
+          "publishedAt": "2026-11-16",
+          "lede": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation Investing.com India",
+          "articleExcerpt": "Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation - Investing.com India. Keefe Bruyette cuts Blue Owl Technology Finance stock price target on valuation Investing.com India",
+          "contentFingerprint": "f25a20f516383145",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com India"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.81,
+            "finalScore": 16.81,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-d6aa78ca5b83",
+          "title": "Private Equity Wire® US Awards winners announced",
+          "titleZh": "Private Equity Wire® US Awards winners announced",
+          "summary": "The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period.",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://privateequitywire.com/news/private-equity-wire-us-awards-winners-announced",
+          "source": "Google News",
+          "publishedAt": "2026-11-16",
+          "lede": "The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period. The winners are: Managers Capital Raise of the Year: Buyout Kayne Energy Private Equity Capital Raise of the Year: Private Credit Monroe Capital Capital Raise of the Year: Real Assets & Infrastructure Blue Owl Capital Capital Raise of the Year: Secondaries Neuberger Capital Raise of the Year: Venture Capital Felicis Deal of the Year: Acquisition Kingswood Capital Management Deal of the Year: Exit MiddleGround Capital Emerging Capital Raise of the Year: Buyout BayHawk Capital Emerging Capital Raise of the Year: Growth Equity Sundance Growth Emerging Capital Raise of the Year: Private Credit Level Equity Management, LLC Emerging Capital Raise of the Year: Venture Capital Mercurius Media Capital Emerging Performance of the Year: Asset-based Financing Kerberos Capital Management Emerging Performance of the Year: Growth Equity Hughes & Company Emerging Performance of the Year: Venture Capital Fusion Fund Firm of the Year: Emerging Manager Kerberos Capital Management Firm of the Year: Established Manager Goldman Sachs Petershill Impact Story of the Year Hudson Valley Property Group, LLC Innovative Firm of the Year StepStone Group Performance of the Year: Asset-based Financing Castlelake Performance of the Year: Buyout Kayne Energy Private Equity Performance of the Year: Credit Secondaries Star Mountain Capital Performance of the Year: Direct Lending Metropolitan Partners Group Performance of the Year: Distressed Debt Balbec Capital LP Performance of the Year: Growth Equity Dragoneer Investment Group Performance of the Year: Infrastructure Energy Capital Partners Performance of the Year: Mezzanine Debt VSS Capital Partners Performance of the Year: Real Estate Debt VWH Capital Management, LP Value Creation Story of the Year Audax Private Equity Service Providers Accounting & Fund Reporting Software of the Year Workiva Accounting & Fund Reporting Solution of the Year CSC Advisory Firm of the Year: ESG Anthesis Group Advisory Firm of the Year: Overall Withum Advisory Firm of the Year: Tax CBIZ AI & Data Analytics Solution of the Year: Deal Sourcing Metal Audit Firm of the Year: Mid-Market Private Equity EisnerAmper Audit Firm of the Year: Overall Baker Tilly x Anchin Benchmarking & Performance Analytics Provider of the Year Hamilton Lane Capital Introductions Service of the Year Asante Capital Group Cloud Services Provider of the Year Thrive Co-Investment Platform of the Year Goldman Sachs Alternatives Compliance Service of the Year: Fund Domicile Vigilant Compliance, LLC Compliance Service of the Year: Overall IQ-EQ Cyber Security Solution of the Year S-RM Data Provider of the Year: Credit PitchBook Data Inc Data Provider of the Year: Overall Gain Deal Origination Solution of the Year: Buyouts Grata (Datasite) Deal Origination Solution of the Year: Credit Octus Deal Origination Solution of the Year: Overall Raylu Debt Advisory Firm of the Year Lincoln International Depositary Services of the Year Langham Hall Document Management & Automation Solution of the Yea CENTRL Due Diligence Service Provider of the Year VAULTINUM ESG Solution Provider of the Year: Client Services Weaver ESG Solution Provider of the Year: Overall Novata Executive Search Firm of the Year Jensen Partners Financial Modelling & Analytics Firm of the Year Quantium Forex Solution Provider of the Year Macquarie Fund Administrator of the Year: Client Services Aztec Group Fund Administrator of the Year: ESG Waystone Fund Administrator of the Year: GP's over $30 Billion Citco group of companies Fund Administrator of the Year: GP's under $30 Billion FTI Consulting Fund Administrator of the Year: Overall Alter Domus Fund Administrator of the Year: Private Credit Suntera Fund Services Fund Administrator of the Year: Real Assets & Infrastructure Formidium Fund Administrator of the Year: Technology UMB Bank Fund Finance Provider of the Year Fund Finance Partners Impact Measurement & Reporting Solution of the Year Novata Law Firm of the Year: Client Services Loeb Smith Attorneys Law Firm of the Year: Emerging Manager DLA Piper LLP Law Firm of the Year: Fund Domicile Maples Group Law Firm of the Year: Overall Reed Smith LLP Law Firm of the Year: Private Credit and Securities Hogan Lovells Cadwalader Law Firm of the Year: Transactions Proskauer Rose LLP LP Portal & Investor Reporting Technology of the Year Juniper Square M&A Advisory Firm of the Year Lincoln International, Inc. Managed Service Provider of the Year Abacus Middle Office Service of the Year SS&C GlobeOp Newcomer of the Year: Technology Provider Foresight Operational Due Diligence (ODD) Solution of the Year MSCI Portfolio AI Solutions Provider of the Year Codal Portfolio Digital Transformation Partner of the Year Equity Shift Portfolio Monitoring & Reporting Solution of the Year 73 Strings Portfolio Talent & Human Capital Solutions Provider of the Year Heidrick & Struggles PR & Communications Agency of the Year H/Advisors Ratings Provider of the Year KBRA Recruitment Company of the Year: Investor Relations & Asset Raising Risch Group Recruitment Company of the Year: Operations & Finance Park Capital Search Regulatory & Compliance Firm of the Year Kroll Regulatory & Compliance Technology of the Year Consero Global Research Solution of the Year Capstone LLC Risk Management Software Provider of the Year Validus Risk Management Secondaries Platform of the Year Setter Capital Inc Strategic Intelligence Provider of the Year Quinlan Partners Sustainability Reporting & Disclosure Adviser of the Year ERM Technology Innovation of the Year: AI Entrilia Technology Innovation of the Year: ESG & Impact Investing Persefoni Technology Innovation of the Year: Firm Operations Arcesium Technology Innovation of the Year: Origination Intapp Technology Innovation of the Year: Overall Align Transaction Services Firm of the Year Alvarez & Marsal Transfer Agency Service of the Year Vistra Fund Solutions Valuation Service of the Year Citrin Cooperman Value Creation Consulting Firm of the Year Cruxy",
+          "articleExcerpt": "Private Equity Wire® US Awards winners announced. Private Equity Wire | Private Equity Wire® US Awards winners announced News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory Contact About Privacy Policy Trademark Policy Terms & Conditions News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory Search Private Equity Wire Search News Reports What's On Awards Summits Webinars Analysis Interviews Features Directory News Reports What's On Analysis News Private Equity Wire® US Awards winners announced November 16, 2026 at 8:55 am Share this article The winners of the Private Equity Wire® US Awards 2026, which recognise fund performance and service provider excellence within the Private Equity landscape, were announced at an exclusive ceremony and networking event today (12th November), at Convene 237, New York. Voting for the awards was conducted via an online poll of the entire Private Equity Wire ® userbase, with participants asked to make their choice among the shortlisted firms in each category. Pre-selection data for the awards is provided by multiple data sources, based on annualised returns over a 12-month period. The winners are: Managers Capital Raise of the Year: Buyout Kayne Energy Private Equity Capital Raise of the Year: Private Credit Monroe Capital Capital Raise of the Year: Real",
+          "contentFingerprint": "d7257a7ea5f4e891",
+          "region": "US",
+          "gps": [
+            "Blue Owl",
+            "Neuberger"
+          ],
+          "strategies": [
+            "private-credit",
+            "abf",
+            "ai"
+          ],
+          "sectors": [
+            "private-credit",
+            "abf",
+            "ai"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl",
+              "Neuberger"
+            ],
+            "titleGps": [],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit",
+              "abf",
+              "ai"
+            ],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 0.5,
+                "code": "body_mentions_gp",
+                "gps": [
+                  "Blue Owl",
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.44,
+                "code": "body_strategy",
+                "tagValue": 0.6,
+                "strategies": [
+                  "private-credit",
+                  "abf",
+                  "ai"
+                ],
+                "semanticValue": 0.28
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Google News"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 59,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 22,
+            "semanticScore": 3.38,
+            "finalScore": 25.38,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-70e37f64614f",
+          "title": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor",
+          "titleZh": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor",
+          "summary": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund Infrastructure Investor",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNYl9QanpacHg3ZXBHTTJja0tyZ0tveXJkeE1xQlVKUmstSnNpNUszTXhCRnNlQXJjb2ZxcWR4U3NyXzNNSVI4dzYteEMxM29LR294blJuMDE3SkYwOGVIOURnTkR4eHprZ0tlR0F2VHhHb3RhTkQwTmxCTHJBc3Vta05lWkVBaU5nNjhNZ0E0VDIxX1lmM0ZjaHM3bE5uSWo1N1k4QWJNNHlqdDVWS2c?oc=5",
+          "source": "Infrastructure Investor",
+          "publishedAt": "2026-11-16",
+          "lede": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund Infrastructure Investor",
+          "articleExcerpt": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor. The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund Infrastructure Investor",
+          "contentFingerprint": "66a07af537f5e635",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Infrastructure Investor"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 73,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.67,
+            "finalScore": 16.67,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-12235fd1a19b",
+          "title": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis - www.debelegger.nl",
+          "titleZh": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis - www.debelegger.nl",
+          "summary": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis www.debelegger.nl",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB4VVhfOFdmZVE4eGlXdnRtai1hOGVlNjMzTWgzak1RUEpOX1NraFVwTU03U29wVGQwUW9DM0h6TkJySXpmY05kNk9yUTJaYkpJM1RhSy1zRmg?oc=5",
+          "source": "www.debelegger.nl",
+          "publishedAt": "2026-11-16",
+          "lede": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis www.debelegger.nl",
+          "articleExcerpt": "KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis - www.debelegger.nl. KKR Real Estate Finance Trust (KREF-PA) Stock Price, Chart & Analysis www.debelegger.nl",
+          "contentFingerprint": "38f4817d8f1e7a20",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "www.debelegger.nl"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 49,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.33,
+            "finalScore": 16.33,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-c8ac3e1f6ae0",
+          "title": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans - citybiz",
+          "titleZh": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans - citybiz",
+          "summary": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans citybiz",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRUFvMTRTMGhRRHY0eFUtV1p2ejZ3QllXWHdzWU1SSFNmM2kxOFNWX0Y0NzR4elktN1lwLUpRRElTWU1MZ04yZzhZOXczVUh3QWItVUFqc0FxSlh3UWd2cHVGVzVkMTZBZlo1aDRjalo3bmZiN0s2YTF5WWF3alBDVHdJLUpucU96ZGJKQ3ZFZHI1SWhXMU5RU20tNGlOUHdlRlNjdXV2LVhVbzkyZFE0X1p3?oc=5",
+          "source": "citybiz",
+          "publishedAt": "2026-11-16",
+          "lede": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans citybiz",
+          "articleExcerpt": "Parkland Communities Secures $50 Million Credit Facility With Anchor Loans - citybiz. Parkland Communities Secures $50 Million Credit Facility With Anchor Loans citybiz",
+          "contentFingerprint": "16fb013f13fc82a4",
+          "region": "US",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.35
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "citybiz"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 65,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 4.21,
+            "finalScore": 17.21,
+            "semanticEnabled": true
+          }
+        },
         {
           "id": "2026-11-16-9f96322ea7c8",
           "title": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts",
@@ -213537,6 +216206,1221 @@
             "finalScore": 7.08,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-16-f98694038cbf",
+          "title": "Guggenheim High Yield Fund Q3 2026 Commentary - Seeking Alpha",
+          "titleZh": "Guggenheim High Yield Fund Q3 2026 Commentary - Seeking Alpha",
+          "summary": "Guggenheim High Yield Fund Q3 2026 Commentary Seeking Alpha",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPS1J5WXBKaHBnOThvbjBwaFp3WEJjaVlLNGE2UFJ1YWVuUXlXX0pRMlBVdVJQZE1sYUNtajNKSnZUUXY2Q3haQTdEa2pZN05Na3Ryb1AyOUxzbFlWYlFzWVlmSndNU3RENDdDeTU1TndMWGhuZGVvZzZKOGxWR3FYbzBqRjB1WDY1XzBVWVZ6WQ?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-11-16",
+          "lede": "Guggenheim High Yield Fund Q3 2026 Commentary Seeking Alpha",
+          "articleExcerpt": "Guggenheim High Yield Fund Q3 2026 Commentary - Seeking Alpha. Guggenheim High Yield Fund Q3 2026 Commentary Seeking Alpha",
+          "contentFingerprint": "74206208562d73f1",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.8,
+                "code": "fundraising",
+                "ruleValue": 0.8,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Seeking Alpha"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.83,
+            "finalScore": 7.83,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-d87eb443b8db",
+          "title": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others - Moneycontrol.com",
+          "titleZh": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others - Moneycontrol.com",
+          "summary": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others Moneycontrol.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTGFMVGdneU95MU1xei1QSmRJRlF5STE0OUcxSEN4THMyRE5JQ3JDNERRQmdIUFAxLUNfdWhUZEVxY2tqeDBQVTdRbUxwXzdESzIzRDlyTklCUGhYOXduZWxBV003dEZndl8wZWNWOG1lc2FueDhVZFFlRlFaN0YwWlY5QzRvLXAyZmxhbFhoRjlPb3pLUUJCODkxLTBlMGZPcnRoT0tXMXlyNkJZd2t4S0QwUjdDOVdUQTUtbVJJeWpiV3hpeDFpS2NURjhFUDFOLUNFMUQ2Y2VEYkxIbWllWmRURGQzNnNM0gHuAUFVX3lxTE1vS2JvQUNNTVdhX01rTXFKV2FwbGY1ZGszTWI3TkRsWkpWYi05YTNxRFhDVzJNSXQwME1DUzc1MVNoZWFxWDRSeWdLbGZzUG9XSl9rQVNnMFA2ZDBrbWdWZkNZRnRRc0NVaG4zYWJKNU9BOXZvelNUUUFwWlhrbE1QbE5KRExmdXNqelhrcVBvWFJHR0xRRXRjUGVNMlNzaXpSWFhiYWJPVE51ZHl4dUV6Z2NsV014ZkkxRHJsZktFbXpCV0t5ajBnbHFvODJMTWNwQmFTUkVNcUp3RWhKS1Zza3h2Zl95U3BJcXk2R2c?oc=5",
+          "source": "Moneycontrol.com",
+          "publishedAt": "2026-11-16",
+          "lede": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others Moneycontrol.com",
+          "articleExcerpt": "Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others - Moneycontrol.com. Bain Capital-backed RSB Group raises funds from White Oak Capital, 360 ONE Asset, others Moneycontrol.com",
+          "contentFingerprint": "bbbb06c99ca012fb",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.8,
+                "code": "fundraising",
+                "ruleValue": 0.8,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Moneycontrol.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.74,
+            "finalScore": 8.74,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-c446ae06fe8d",
+          "title": "Form 13F-NT Bain Capital Venture For: Sep 30 - StreetInsider",
+          "titleZh": "Form 13F-NT Bain Capital Venture For: Sep 30 - StreetInsider",
+          "summary": "Form 13F-NT Bain Capital Venture For: Sep 30 StreetInsider",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMHhna3p0SnAzWmJjOTJMQVhCZ1FLYWdHY3JBMW1nVU5vRGVnSnNfai04a0hGNi1NSEo5dVAtTWgtcDhnVGxSUlhyYXFUZjMtNVVoWm5JSmNKdldIQW5nYzJEb09GMTRNd2dGYmFQaEVjRG5xeVBBM0o0U0hHYXJsNHZjVmdNNVgwdkJ0NHRoTTh6N2FBME90cTN5R3NVX0ZYSllYeg?oc=5",
+          "source": "StreetInsider",
+          "publishedAt": "2026-11-16",
+          "lede": "Form 13F-NT Bain Capital Venture For: Sep 30 StreetInsider",
+          "articleExcerpt": "Form 13F-NT Bain Capital Venture For: Sep 30 - StreetInsider. Form 13F-NT Bain Capital Venture For: Sep 30 StreetInsider",
+          "contentFingerprint": "ac5448bd1270c51c",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "StreetInsider"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.04,
+            "finalScore": 8.04,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-cc2746afc0b0",
+          "title": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io",
+          "titleZh": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io",
+          "summary": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing Securities.io",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQQXFOMVd4OVo3blY5NW5BTWZ3NEFLQnRkbVc2SnNqYk0tUmJhbVQwV0x3T09oS2kxNXBfN3IwSTdNOV95N3RveGEtQnpzVXFmd0RzN0ZLTlZ1TDJSZnBNQVYzSVdoYnlDeG9GZW1hSi1IVlNKbXl3ZnFjYVE5aDN5VFBNTlMyLTZ4M05KbGlKQnZsMzh1aVhzTWhsajBGOFRlUU5NWDFTRnhIQQ?oc=5",
+          "source": "Securities.io",
+          "publishedAt": "2026-11-16",
+          "lede": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing Securities.io",
+          "articleExcerpt": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io. J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing Securities.io",
+          "contentFingerprint": "f3c224d79e178731",
+          "region": "US",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.8,
+                "code": "fundraising",
+                "ruleValue": 0.8,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Securities.io"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 68,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 4.93,
+            "finalScore": 20.93,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-938f385984d5",
+          "title": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds - BigGo Finance",
+          "titleZh": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds - BigGo Finance",
+          "summary": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds BigGo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFB3X29QLTQ5RlNpenhtZGRJV05pRFoydnEyN3pXS1l2SXVVc0ZRQ0R0Y3loUVNyRW51RnhhZWpvNHdJdC1kZWpiMmpzME94Q1pSM0tadHZXTzhuZWpRU1E?oc=5",
+          "source": "BigGo Finance",
+          "publishedAt": "2026-11-16",
+          "lede": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds BigGo Finance",
+          "articleExcerpt": "[Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds - BigGo Finance. [Blackstone Digital Infrastructure Trust Q3 2026 Earnings Call] BXDC Unveils $5B Amazon Data Center JV at 7% Cap Rate, Deploying All IPO Proceeds BigGo Finance",
+          "contentFingerprint": "f964f7b8c3fea8da",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "BigGo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.51,
+            "finalScore": 19.509999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-2c905250e534",
+          "title": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS - Yahoo Finance",
+          "titleZh": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS - Yahoo Finance",
+          "summary": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOOWVtdVR6ZDdMWXlUbHhNanFvTzlfOXU0ZDB4VTZpcEV3UHF6UGRYUWNtTHdmVWE3VndzZTdEUVBsWW0tOVVuaE4zaE5LYnhWOTBHT3lYMHROdnlBSy1WWURuV3VOS2dVbktIT3Fib3E2U1VyUVpPM1dKQ2xwcllNNGxUdHpmZVNKT1JHTXMzQ28xMHNoS3Rrd2RPZw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-16",
+          "lede": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS Yahoo Finance",
+          "articleExcerpt": "Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS - Yahoo Finance. Blackstone’s Data Center REIT Makes First Investment With $5B Deal With AWS Yahoo Finance",
+          "contentFingerprint": "0683aff30032253f",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.29,
+            "finalScore": 19.29,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-4bc5bd829829",
+          "title": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk - Kalkine",
+          "titleZh": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk - Kalkine",
+          "summary": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk Kalkine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQMldHT1Zkc1lIMkFQVWo1b1FJN3d3dDZuejVCZGRTcTZsTk0wZnlLTEozbURqLWRrZk40OVpqMlZ1VHF6MDZTVEFRNmw0V1BaRGtpQURHRVpjWGJMemFXLURWUC1PM3VvY3hPRlY1ZlJJY3RNNDFsZVhDZHdacHpudVRGcmlkbERYN0ZRbWthWFhDckk0b09DWEJaSi1iN1RoTnV0TXRtaFkzSmkwa1JHY3hlU215RzJrUnhfN3cxREZpQ01XbmYxQ0gyYVowU2JRRU5QZXBQaWZkQUpVSExtTlZxR1R6d3pZeFI4MHlmNGhsZzNm?oc=5",
+          "source": "Kalkine",
+          "publishedAt": "2026-11-16",
+          "lede": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk Kalkine",
+          "articleExcerpt": "State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk - Kalkine. State Street Blackstone High Income (AUD Hedged) Active ETF (ASX:SBHI): How Its Active US Credit Strategy Balances Income and Risk Kalkine",
+          "contentFingerprint": "f85d084d9780184f",
+          "region": "US",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 6.23,
+            "finalScore": 19.23,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-2011f595d657",
+          "title": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet - BeBeez International",
+          "titleZh": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet - BeBeez International",
+          "summary": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet BeBeez International",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxPajZBTmNCQzFOREtXMzA3NU1BandQVTJPX0xvWnF5d2FFQlNEdGFTcGtRckRpS1J0Y0d6VnoyUlM5MXNUaENVUnREN2MxNmoyM3otNGxYal8ycTlMcnJNTHBPYnhDVmktcnVtcDFjVDNwU1hCMUU1LWpCT0xhc1JKVGJzM2ZNQVB3T2V6YzVyYVRKZV9DeVRoRENtTTlxbXhaYVlXdm9GWWRRUzBrYXZ5QWZVdmJfRnZHckNxcG5hdmR4M00yX1lOQXlSc1M1SWR5QkhzM0Y5NXJpRUdaeXFuOVUwSFRQZ1FweXFGTWNXY3NVVHVL?oc=5",
+          "source": "BeBeez International",
+          "publishedAt": "2026-11-16",
+          "lede": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet BeBeez International",
+          "articleExcerpt": "Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet - BeBeez International. Trading Floor: Crescent Capital (+8%), Apollo Global Management (+5.8%), Italmobiliare (+5.6%), Tikehau (-5.5%), NYSE-listed private credit firms plummet BeBeez International",
+          "contentFingerprint": "ce0195cc8ea8cc22",
+          "region": "US",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "BeBeez International"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 5.36,
+            "finalScore": 21.36,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-055aabc504b7",
+          "title": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration - Yahoo Finance",
+          "titleZh": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration - Yahoo Finance",
+          "summary": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOaGQ4QU5jTkt6TXVFSUlJeHNPT2J6ajZGNGdUdmpoVVM5RTlYNjd4S1pBbDJnUDZKaU5NRTNPTVBRRmJCWTlHbUJKZ0x5SGhYLUZJbjFJZzdwdWNRUGt4Rk1CN1I3QzRpYmxXRllia2FYSkRlbUhOVThMYnVhOWRneE5WckdzME5RMU8tQ2lLZV9jQTBGbVlBRnZaVWxmY1VTWUZKemhLSDN2QQ?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-16",
+          "lede": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration Yahoo Finance",
+          "articleExcerpt": "Victory Capital and Apollo Announce Strategic Private Markets Collaboration - Yahoo Finance. Victory Capital and Apollo Announce Strategic Private Markets Collaboration Yahoo Finance",
+          "contentFingerprint": "ec440b3dc47b29d8",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.28,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.55
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 64,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.64,
+            "finalScore": 17.64,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-3de869fc2502",
+          "title": "Victory Capital and Apollo team up to broaden private markets access - Alternative Credit Investor",
+          "titleZh": "Victory Capital and Apollo team up to broaden private markets access - Alternative Credit Investor",
+          "summary": "Victory Capital and Apollo team up to broaden private markets access Alternative Credit Investor",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxPVzlENWNfNS0tRlh1VDllQjhySXU4MDhNY0xlWHZzbGZZOWJEYnJnRU5LT2hoODNhbEtTeTFuSU80eXI4bWgyd0daUEsyazYxRVRjUnRmamxteVY1TnlzOVZHOXJWSFI0MlRRRzJJYUtsYWFjT2hBeUZIQTZ4QWlSY0FMUzBhb0stSzc4dWsxWHNNWHlTSW5aS0VGWUdUOFhBeXZndGxQTVJfbEhWcUVBVnYxYkNnUkpnNlE?oc=5",
+          "source": "Alternative Credit Investor",
+          "publishedAt": "2026-11-16",
+          "lede": "Victory Capital and Apollo team up to broaden private markets access Alternative Credit Investor",
+          "articleExcerpt": "Victory Capital and Apollo team up to broaden private markets access - Alternative Credit Investor. Victory Capital and Apollo team up to broaden private markets access Alternative Credit Investor",
+          "contentFingerprint": "004f094ec0e28bae",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.8,
+                "code": "tier_trade",
+                "source": "Alternative Credit Investor"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.32,
+            "finalScore": 17.32,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-23a6c86f3363",
+          "title": "Higher Rates Hit the Fiscal Side, Not the Private Sector - Apollo Global Management",
+          "titleZh": "Higher Rates Hit the Fiscal Side, Not the Private Sector - Apollo Global Management",
+          "summary": "Higher Rates Hit the Fiscal Side, Not the Private Sector Apollo Global Management",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPck56RkJOeEJOWS1qQTVXNFlIUTNrNmszdVdNenJhVUU1TFZ3ZHBERi1oMGd3X0xJaGQtNlVDRmZUbGtPZmMtNkhxaW1ndWhQbFlQSjhUWDkwMHprYW96bGpFNS1SZjZYLWEyTkJNUWpJVVJOeHNibTNZM2tHRVhCSDdSTVdYOUdmakdhQ0tIdGxzNEN3U004ckFZVmZSRHBFUnUyT01EVkVhSTZFUmZ0UTFidEt1LXh2TlJjOQ?oc=5",
+          "source": "Apollo Global Management",
+          "publishedAt": "2026-11-16",
+          "lede": "Higher Rates Hit the Fiscal Side, Not the Private Sector Apollo Global Management",
+          "articleExcerpt": "Higher Rates Hit the Fiscal Side, Not the Private Sector - Apollo Global Management. Higher Rates Hit the Fiscal Side, Not the Private Sector Apollo Global Management",
+          "contentFingerprint": "967c09b92772fb67",
+          "region": "US",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Apollo Global Management"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 8,
+            "semanticScore": 4.89,
+            "finalScore": 12.89,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-ad34807b40de",
+          "title": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat",
+          "titleZh": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat",
+          "summary": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNV25TRmJaZW5zMC1DNkJCcHlVUXU1SmdUZUtmNzNFbzNYRHRIQ18tdVVGNXBHeEJpeG1CckFOSDFDbkdjbU1HX085RnkySkFkUjN0eTRaUlg2VVUzZ0Q5cXFJUmlFYXNEbmQwU21jMlJnajVTWDMwTEJLSDZLLXhoWnByanZ1MVd0NW03LURobU5aZ1NOR1oxaFEzeXhnSVdDQXNwZVZOQlJuZTVmQnQ3UlBqTWxPbHBxT2tSbDF6Ql9ZTUlnMkFoV2l3?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-16",
+          "lede": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC MarketBeat",
+          "articleExcerpt": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat. TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC MarketBeat",
+          "contentFingerprint": "427014fc5c57ddbd",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 71,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.52,
+            "finalScore": 8.52,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-271fe1472d98",
+          "title": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. - Stock Titan",
+          "titleZh": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. - Stock Titan",
+          "summary": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. Stock Titan",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOSDBvd041bnpaMDJzWEE2aTduOVpqQTBnbmVjT1YtTDdBWk4tMk5oX205c2dDQkFCWWRCYldWendfczhyck85cGJ6WVlob0JBUEZYRDVpSW9KWG1QRXNYZ3QxUklKS2UwUnIzRElBNGpCWm9XR3ZFV1VhVmwzZzEweFo3U0V3OVJoeGZ1V0JxSFBDRTcta3VRdXhyeVZKMUpNVEVwSG9JcV8zNVNlT3haMThZWGs2eGpqU2U0QXZB?oc=5",
+          "source": "Stock Titan",
+          "publishedAt": "2026-11-16",
+          "lede": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. Stock Titan",
+          "articleExcerpt": "Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. - Stock Titan. Wellington entities report the same TPG (TPG) share count, but their ownership percentages differ. Stock Titan",
+          "contentFingerprint": "527f003452e03278",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Stock Titan"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 48,
+            "retrievedAt": "2026-11-16T17:53:34.696134+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.92,
+            "finalScore": 7.92,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -213552,12 +217436,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 51,
+      "count": 54,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -213565,12 +217449,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 4,
+      "count": 5,
       "selected": 0,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -213578,7 +217462,7 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
@@ -213591,38 +217475,38 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 3,
-      "selected": 0,
+      "count": 4,
+      "selected": 1,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
       "count": 5,
-      "selected": 2,
+      "selected": 3,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 9,
+      "count": 8,
       "selected": 2,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -213630,7 +217514,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
@@ -213643,25 +217527,25 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 10,
-      "selected": 4,
+      "count": 13,
+      "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
       "queries": [
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 36,
+      "count": 72,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -213669,38 +217553,38 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 20,
-      "selected": 3,
+      "count": 25,
+      "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
       "queries": [
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 9,
-      "selected": 2,
+      "count": 7,
+      "selected": 4,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 4,
+      "count": 3,
       "selected": 1,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -213708,12 +217592,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 8,
+      "count": 7,
       "selected": 0,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -213721,12 +217605,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 31,
+      "count": 30,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -213734,12 +217618,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 409,
+      "count": 461,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -213756,9 +217640,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-16T07:37:24.532392+00:00",
+      "asOf": "2026-11-16T17:53:34.696134+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-16T07:37:24.532392+00:00"
+  "checkedAt": "2026-11-16T17:53:34.696134+00:00"
 }
