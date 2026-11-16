@@ -6,9 +6,10 @@ each image into one generic shape (a title, then blocks: charts, tables, bullet 
 plain text, footnotes), this script parses the numbers, and the site redraws every slide as real
 charts and tables. A later upload for the same month replaces it. Output:
 
-  macro/data/<YYYY-MM>.json           the brief: title, pages (one per slide, in upload order)
-  macro/data/<YYYY-MM>/<nn>.<ext>     the uploaded images, kept for checking
-  macro/data/index.json               which months exist
+  macro/data/<topic>/<YYYY-MM>.json       the brief: title, pages (one per slide, in upload order)
+  macro/data/<topic>/<YYYY-MM>/<nn>.<ext> the uploaded images, kept for checking
+  macro/data/<topic>/index.json           which months the topic has; macro/data/index.json names the topics
+  (topics: "weekly" = weekly updates, "rates" = the market's rate expectations / 市场加息预期)
 
 Usage
   python macro/scripts/extract_macro.py --apply
@@ -48,8 +49,20 @@ import extract_factors as ff  # noqa: E402  (shared: the Claude call, number par
 DEFAULT_MODEL = "claude-opus-5-5"
 MEDIA_TYPES = ff.MEDIA_TYPES
 MAX_IMAGE_BYTES = ff.MAX_IMAGE_BYTES
-INCOMING_IMG_RE = re.compile(r"^(\d{4}-\d{2})-(\d{2})\.(png|jpe?g|webp|gif)$", re.I)
-INCOMING_META_RE = re.compile(r"^(\d{4}-\d{2})\.meta\.json$", re.I)
+# the briefs come in two fixed topics, each with its own months: weekly updates, and the market's
+# rate expectations (市场加息预期); each topic keeps its files in macro/data/<topic>/
+TOPICS = ("weekly", "rates")
+DEFAULT_TOPIC = "rates"
+# incoming names carry the topic as a prefix; names without one belong to the rates topic
+INCOMING_IMG_RE = re.compile(r"^(?:(weekly|rates)-)?(\d{4}-\d{2})-(\d{2})\.(png|jpe?g|webp|gif)$", re.I)
+INCOMING_META_RE = re.compile(r"^(?:(weekly|rates)-)?(\d{4}-\d{2})\.meta\.json$", re.I)
+DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def data_dir(topic: str = DEFAULT_TOPIC) -> Path:
+    if topic not in TOPICS:
+        raise ExtractionError(f"unknown topic {topic!r}; use one of {', '.join(TOPICS)}")
+    return DATA / topic
 TONES = ("none", "positive", "negative", "warning", "neutral")
 KINDS = ("line", "bar", "hbar")
 
@@ -313,8 +326,8 @@ def add_english(doc: dict[str, Any]) -> int:
     return added
 
 
-def translate_month(key: str, force: bool = False) -> dict[str, Any]:
-    path = DATA / (key + ".json")
+def translate_month(key: str, force: bool = False, topic: str = DEFAULT_TOPIC) -> dict[str, Any]:
+    path = data_dir(topic) / (key + ".json")
     if not re.fullmatch(r"\d{4}-\d{2}", str(key)) or not path.is_file():
         raise ExtractionError(f"there is no brief for {key}")
     doc = json.loads(path.read_text(encoding="utf-8"))
@@ -327,7 +340,7 @@ def translate_month(key: str, force: bool = False) -> dict[str, Any]:
 
 def translate_missing() -> int:
     done = 0
-    for path in sorted(DATA.glob("*.json")) if DATA.is_dir() else []:
+    for path in sorted(p for topic in TOPICS for p in (data_dir(topic).glob("*.json") if data_dir(topic).is_dir() else [])):
         if not re.fullmatch(r"\d{4}-\d{2}", path.stem):
             continue
         doc = json.loads(path.read_text(encoding="utf-8"))
@@ -349,8 +362,19 @@ def translate_missing() -> int:
 
 # ------------------------------------------------------------------ storage
 def rebuild_index() -> dict[str, Any]:
-    months = sorted(p.stem for p in DATA.glob("*.json") if re.fullmatch(r"\d{4}-\d{2}", p.stem)) if DATA.is_dir() else []
-    index = {"months": months}
+    """One index per topic (macro/data/<topic>/index.json) and a root index naming the topics.
+    A month-based topic lists "months" (YYYY-MM); the weekly updates list "entries" (dates)."""
+    topics: dict[str, Any] = {}
+    for topic in TOPICS:
+        folder = data_dir(topic)
+        stems = sorted(p.stem for p in folder.glob("*.json") if p.stem != "index") if folder.is_dir() else []
+        months = [s for s in stems if re.fullmatch(r"\d{4}-\d{2}", s)]
+        entries = [s for s in stems if DATE_RE.fullmatch(s)]
+        folder.mkdir(parents=True, exist_ok=True)
+        idx = {"months": months, "entries": entries} if entries else {"months": months}
+        (folder / "index.json").write_text(json.dumps(idx, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        topics[topic] = idx
+    index = {"topics": topics}
     DATA.mkdir(parents=True, exist_ok=True)
     (DATA / "index.json").write_text(json.dumps(index, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return index
@@ -360,20 +384,23 @@ def _write_doc(path: Path, doc: dict[str, Any]) -> None:
     path.write_text(json.dumps(doc, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
 
-def save(year: int, month: int, title: str, pages: list[dict[str, Any]], images: list[tuple[bytes, str]], *, model: str) -> dict[str, Any]:
-    """Write the month's brief and its images (replacing what the month had). images are (bytes, ext) in page order."""
+def save(year: int, month: int, title: str, pages: list[dict[str, Any]], images: list[tuple[bytes, str]], *, model: str,
+         topic: str = DEFAULT_TOPIC) -> dict[str, Any]:
+    """Write the month's brief and its images (replacing what the month had in the topic). images are
+    (bytes, ext) in page order."""
     key = month_key(year, month)
-    DATA.mkdir(parents=True, exist_ok=True)
-    folder = DATA / key
+    base = data_dir(topic)
+    base.mkdir(parents=True, exist_ok=True)
+    folder = base / key
     shutil.rmtree(folder, ignore_errors=True)
     folder.mkdir(parents=True, exist_ok=True)
     for page, (data, ext) in zip(pages, images):
         name = f"{page['n']:02d}{ext.lower()}"
         (folder / name).write_bytes(data)
         page["source_image"] = name
-    doc = {"year": int(year), "month": int(month), "title": clean_text(title), "extracted_at": now_iso(), "model": model,
+    doc = {"topic": topic, "year": int(year), "month": int(month), "title": clean_text(title), "extracted_at": now_iso(), "model": model,
            "pages": pages, "warnings": [w for p in pages for w in p.get("warnings") or []]}
-    _write_doc(DATA / (key + ".json"), doc)
+    _write_doc(base / (key + ".json"), doc)
     rebuild_index()
     return doc
 
@@ -389,9 +416,10 @@ def _check_image(image: bytes, ext: str) -> str:
     return ext
 
 
-def extract(year: int, month: int, title: str, images: list[tuple[bytes, str]], progress=None) -> dict[str, Any]:
-    """Images (bytes, ext) in order -> Claude, one call per slide -> the saved brief."""
+def extract(year: int, month: int, title: str, images: list[tuple[bytes, str]], progress=None, topic: str = DEFAULT_TOPIC) -> dict[str, Any]:
+    """Images (bytes, ext) in order -> Claude, one call per slide -> the saved brief of the topic."""
     month_key(year, month)
+    data_dir(topic)  # validates the topic before any Claude call
     if not images:
         raise ExtractionError("drop at least one slide image")
     checked = [(data, _check_image(data, ext)) for data, ext in images]
@@ -415,11 +443,11 @@ def extract(year: int, month: int, title: str, images: list[tuple[bytes, str]], 
         except ExtractionError as exc:
             en_error = str(exc)
             log(f"{month_key(year, month)}: English labels not created ({exc})")
-    doc = save(year, month, doc_title, pages, checked, model=model)
+    doc = save(year, month, doc_title, pages, checked, model=model, topic=topic)
     doc["en"] = body_en
     if en_error:
         doc["en_error"] = en_error
-    _write_doc(DATA / (month_key(year, month) + ".json"), doc)
+    _write_doc(data_dir(topic) / (month_key(year, month) + ".json"), doc)
     return doc
 
 
@@ -452,7 +480,8 @@ def _mock_page(n: int, title: str) -> dict[str, Any]:
 
 # ------------------------------------------------------------------ incoming (GitHub Pages)
 def process_incoming() -> int:
-    """macro/incoming/<YYYY-MM>.meta.json + <YYYY-MM>-<nn>.<ext> -> one brief per month. Returns months written."""
+    """macro/incoming/<topic>-<YYYY-MM>.meta.json + <topic>-<YYYY-MM>-<nn>.<ext> -> one brief per topic
+    and month (names without a topic prefix belong to the rates topic). Returns months written."""
     if not INCOMING.is_dir():
         return 0
     groups: dict[str, list[Path]] = {}
@@ -462,16 +491,17 @@ def process_incoming() -> int:
             continue
         m = INCOMING_IMG_RE.match(path.name)
         if m:
-            groups.setdefault(m.group(1), []).append(path)
+            groups.setdefault(f"{(m.group(1) or DEFAULT_TOPIC).lower()}-{m.group(2)}", []).append(path)
             continue
         m = INCOMING_META_RE.match(path.name)
         if m:
-            metas[m.group(1)] = path
+            metas[f"{(m.group(1) or DEFAULT_TOPIC).lower()}-{m.group(2)}"] = path
             continue
-        log("ignored (name is not <YYYY-MM>-<nn>.<ext> or <YYYY-MM>.meta.json):", path.name)
+        log("ignored (name is not <topic>-<YYYY-MM>-<nn>.<ext> or <topic>-<YYYY-MM>.meta.json):", path.name)
     done = 0
     for key, files in sorted(groups.items()):
-        year, month = int(key[:4]), int(key[5:])
+        topic, ym = key.split("-", 1)
+        year, month = int(ym[:4]), int(ym[5:])
         title = ""
         if key in metas:
             try:
@@ -480,7 +510,7 @@ def process_incoming() -> int:
                 title = ""
         images = [(p.read_bytes(), p.suffix) for p in sorted(files)]
         try:
-            doc = extract(year, month, title, images)
+            doc = extract(year, month, title, images, topic=topic)
         except MissingKeyError as exc:
             print(f"::warning::Macro / Market: {exc}. {key} stays in macro/incoming until the secret is added.")
             return done
@@ -508,6 +538,7 @@ def main() -> int:
     ap.add_argument("--images", type=Path, nargs="*", help="slide images, in order")
     ap.add_argument("--from-raw", type=Path, help="JSON list of pages (the shape Claude returns) instead of calling Claude")
     ap.add_argument("--title", default="")
+    ap.add_argument("--topic", default=DEFAULT_TOPIC, choices=TOPICS, help="which brief series the month belongs to")
     ap.add_argument("--year", type=int)
     ap.add_argument("--month", type=int)
     a = ap.parse_args()
@@ -519,13 +550,13 @@ def main() -> int:
             return 0
         if a.translate:
             if a.year and a.month:
-                doc = translate_month(month_key(a.year, a.month), a.force)
-                log(f"{month_key(a.year, a.month)}: {len(doc.get('en') or {})} English label(s)")
+                doc = translate_month(month_key(a.year, a.month), a.force, topic=a.topic)
+                log(f"{a.topic} {month_key(a.year, a.month)}: {len(doc.get('en') or {})} English label(s)")
             else:
                 log("months updated:", translate_missing())
             return 0
         if a.reindex:
-            log("index:", rebuild_index()["months"])
+            log("index:", rebuild_index()["topics"])
             return 0
         if not (a.year and a.month and (a.images or a.from_raw)):
             ap.error("give --apply, --reindex, --translate, or --year/--month with --images or --from-raw")
@@ -535,14 +566,15 @@ def main() -> int:
             images = [(p.read_bytes(), p.suffix) for p in (a.images or [])]
             images = (images + [(b"", ".png")] * len(pages))[:len(pages)]
             title = clean_text(a.title) or next((p["title"] for p in pages if p["title"]), "")
-            doc = save(a.year, a.month, title, pages, [(d, e) for d, e in images], model="manual transcription")
+            doc = save(a.year, a.month, title, pages, [(d, e) for d, e in images], model="manual transcription", topic=a.topic)
+            base = data_dir(a.topic)
             for page in doc["pages"]:  # pages without an image keep no source link
-                if not (DATA / month_key(a.year, a.month) / page.get("source_image", "")).stat().st_size:
-                    (DATA / month_key(a.year, a.month) / page["source_image"]).unlink()
+                if not (base / month_key(a.year, a.month) / page.get("source_image", "")).stat().st_size:
+                    (base / month_key(a.year, a.month) / page["source_image"]).unlink()
                     page["source_image"] = ""
-            _write_doc(DATA / (month_key(a.year, a.month) + ".json"), doc)
+            _write_doc(base / (month_key(a.year, a.month) + ".json"), doc)
         else:
-            doc = extract(a.year, a.month, a.title, [(p.read_bytes(), p.suffix) for p in a.images])
+            doc = extract(a.year, a.month, a.title, [(p.read_bytes(), p.suffix) for p in a.images], topic=a.topic)
     except ExtractionError as exc:
         log("error:", exc)
         return 1

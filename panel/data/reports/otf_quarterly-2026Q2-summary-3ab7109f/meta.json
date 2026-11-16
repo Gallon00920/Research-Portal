@@ -1,0 +1,274 @@
+{
+  "id": "otf_quarterly-2026Q2-summary-3ab7109f",
+  "title": "Blue Owl Technology Finance Corp. (NYSE: OTF)",
+  "sector": "otf_quarterly",
+  "year": 2026,
+  "quarter": 2,
+  "period": "2Q2026",
+  "period_key": 20262,
+  "nature": "summary",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "OTF",
+    "Blue Owl",
+    "June",
+    "Page",
+    "March",
+    "GAAP"
+  ],
+  "source_name": "OTF 2026Q2 Earnings Presentation.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:26:17+00:00",
+  "stats": {
+    "blocks": 278,
+    "images": 16,
+    "tables": 11,
+    "chars": 38170,
+    "pages": 32
+  },
+  "exhibit_count": 27,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Blue Owl Technology Finance Corp. (NYSE: OTF)"
+    },
+    {
+      "level": 1,
+      "text": "August 2026"
+    },
+    {
+      "level": 1,
+      "text": "Highly"
+    },
+    {
+      "level": 1,
+      "text": "Blue Owl Technology Finance Corp. (NYSE: OTF)"
+    },
+    {
+      "level": 2,
+      "text": "Focused investment approach"
+    },
+    {
+      "level": 2,
+      "text": "With a compelling track record since inception"
+    },
+    {
+      "level": 1,
+      "text": "27 bps"
+    },
+    {
+      "level": 3,
+      "text": "Annualized"
+    },
+    {
+      "level": 3,
+      "text": "NAV"
+    },
+    {
+      "level": 3,
+      "text": "Average Annual"
+    },
+    {
+      "level": 3,
+      "text": "Net Gain2"
+    },
+    {
+      "level": 1,
+      "text": "Managed by Blue Owl Capital"
+    },
+    {
+      "level": 1,
+      "text": "A leading global alternative asset manager"
+    },
+    {
+      "level": 1,
+      "text": "Blue Owl is a leading asset manager that is redefining alternatives"
+    },
+    {
+      "level": 1,
+      "text": "A solutions provider"
+    },
+    {
+      "level": 1,
+      "text": "Credit1"
+    },
+    {
+      "level": 2,
+      "text": "$115.1B Direct Lending"
+    },
+    {
+      "level": 2,
+      "text": "Our Credit platform serves as a financing partner of choice for private companies, leveraging the expertise across both our direct lending and alternative credit investing capabilities"
+    },
+    {
+      "level": 2,
+      "text": "$14.6B Alternative Credit"
+    },
+    {
+      "level": 2,
+      "text": "$18.4B Investment Grade Credit"
+    },
+    {
+      "level": 2,
+      "text": "$5.9B Liquid Credit"
+    },
+    {
+      "level": 1,
+      "text": "Real Assets"
+    },
+    {
+      "level": 2,
+      "text": "Our Real Assets platform is a leader in investing across asset"
+    },
+    {
+      "level": 2,
+      "text": "$53.4B Net Lease"
+    },
+    {
+      "level": 2,
+      "text": "$17.5B Real Estate Credit"
+    },
+    {
+      "level": 2,
+      "text": "offering flexible capital solutions to tenants, borrowers, and hyperscalers"
+    },
+    {
+      "level": 2,
+      "text": "$18.4B Digital Infrastructure"
+    },
+    {
+      "level": 1,
+      "text": "GP Strategic Capital"
+    },
+    {
+      "level": 2,
+      "text": "$67.5B GP Minority Stakes"
+    },
+    {
+      "level": 2,
+      "text": "Our GP Strategic Capital platform has been at the forefront of providing innovative long-term minority equity and financing solutions for more than a decade"
+    },
+    {
+      "level": 2,
+      "text": "$2.7B GP Debt Financing"
+    },
+    {
+      "level": 2,
+      "text": "$1.3B Professional Sports"
+    },
+    {
+      "level": 1,
+      "text": "$319B+ AUM"
+    },
+    {
+      "level": 1,
+      "text": "Blue Owl Credit offers complementary strategies"
+    },
+    {
+      "level": 2,
+      "text": "Our BDCs make up approximately 56% of Blue Owl Credit’s AUM"
+    },
+    {
+      "level": 1,
+      "text": "$158.1 billion AUM1"
+    },
+    {
+      "level": 1,
+      "text": "Our BDCs provide a growing permanent capital base, which allows us to benefit from significant scale and remain active in the market across all environments"
+    },
+    {
+      "level": 1,
+      "text": "Blue Owl has extensive multi-channel sourcing capabilities"
+    },
+    {
+      "level": 3,
+      "text": "ongoing borrower"
+    },
+    {
+      "level": 2,
+      "text": "Blue Owl Direct Lending by the numbers"
+    },
+    {
+      "level": 2,
+      "text": "Gross originations"
+    },
+    {
+      "level": 2,
+      "text": "Transactions"
+    },
+    {
+      "level": 2,
+      "text": "Deals closed2"
+    },
+    {
+      "level": 2,
+      "text": "Agent Lead or co-lead"
+    },
+    {
+      "level": 2,
+      "text": "reviewed"
+    },
+    {
+      "level": 2,
+      "text": "(selectivity)"
+    },
+    {
+      "level": 1,
+      "text": "Blue Owl’s Technology Lending Strategy"
+    },
+    {
+      "level": 1,
+      "text": "Blue Owl technology lending by the numbers"
+    },
+    {
+      "level": 2,
+      "text": "Experienced technology investors with deep domain expertise"
+    },
+    {
+      "level": 1,
+      "text": "What we look for in our technology investments"
+    },
+    {
+      "level": 2,
+      "text": "Defensively positioned"
+    },
+    {
+      "level": 2,
+      "text": "Market-leaders in their sectors"
+    },
+    {
+      "level": 2,
+      "text": "Attractive credit profiles"
+    },
+    {
+      "level": 1,
+      "text": "Our underwriting thesis remains focused on \"sticky,\" mission-critical businesses where"
+    },
+    {
+      "level": 1,
+      "text": "AI serves as an additive layer rather than a replacement"
+    },
+    {
+      "level": 1,
+      "text": "Where Blue Owl Technology Lending focuses"
+    },
+    {
+      "level": 1,
+      "text": "Large, established technology companies"
+    },
+    {
+      "level": 2,
+      "text": "Seed Stage Series A Series B Series C and"
+    },
+    {
+      "level": 2,
+      "text": "Beyond Pre-IPO Post-IPO or Acquisition"
+    },
+    {
+      "level": 2,
+      "text": "Very early-stage startups, typically"
+    }
+  ],
+  "summary": "FOR INSTITUTIONAL USE ONLY. NOT APPROVED FOR FURTHER DISTRIBUTION."
+}

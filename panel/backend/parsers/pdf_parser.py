@@ -42,7 +42,15 @@ try:
 except Exception:  # pragma: no cover
     import fitz  # type: ignore
 
-BULLET_RE = re.compile(r"^[•·▪◦●○■□➢➤►\-–—]\s*")
+# PyMuPDF 2.x runs the optional pymupdf_layout model inside text extraction when that package
+# is installed: seconds per page, and a different reading of the page from machines without
+# it. This parser does its own layout analysis, so the model stays off.
+if hasattr(fitz, "_layout_enabled"):
+    fitz._layout_enabled = False
+if hasattr(fitz, "no_recommend_layout"):
+    fitz.no_recommend_layout()
+
+BULLET_RE = re.compile(r"^(?:[•·▪◦●○■□➢➤►]\s*|[\-–—]\s+)")  # a dash is a bullet only with a space after it ("-end" is a hyphenation, "-2.5%" a figure)
 BULLET_ONLY_RE = re.compile(r"^[•·▪◦●○■□➢➤►\-–—]$")
 PAGE_NO_RE = re.compile(r"^(page\s*)?\d{1,3}(\s*(/|of)\s*\d{1,3})?$|^(confidential|strictly confidential)\s*[-–|]?\s*\d{0,3}$", re.I)
 NOTE_RE = re.compile(r"^(source|sources|资料来源|来源|note|notes|注)[:：]", re.I)
@@ -82,14 +90,10 @@ def _luma(color) -> float:
     return 0.299 * r + 0.587 * g + 0.114 * b
 
 
-def _fill_rects(page) -> list[tuple[Any, Any]]:
+def _fill_rects(drawings) -> list[tuple[Any, Any]]:
     """Every filled rectangle drawn on the page as (rect, fill colour): row shading, title
     bands, bars of a bar chart, legend swatches. A rectangle drawn again in the same colour
     inside another one (cell padding) is left out."""
-    try:
-        drawings = page.get_drawings()
-    except Exception:
-        return []
     raw = []
     for d in drawings:
         if not d.get("fill"):
@@ -112,15 +116,42 @@ class PdfParser:
         self.image_dir.mkdir(parents=True, exist_ok=True)
         self.blocks: list[dict[str, Any]] = []
         self._img_n = 0
+        self._drawings: list[Any] = []  # the current page's vector drawings
+        self._image_infos: list[list[dict[str, Any]]] = []  # the pasted images of every page
+        self._repeated_images: set[tuple[int, int, int, int]] = set()
+
+    @staticmethod
+    def _image_key(rect) -> tuple[int, int, int, int]:
+        return (round(rect.x0 / 4), round(rect.y0 / 4), round(rect.x1 / 4), round(rect.y1 / 4))
 
     # ------------------------------------------------------------------ document
     def parse(self) -> dict[str, Any]:
         doc = fitz.open(str(self.path))
         pages_data = [page.get_text("dict") for page in doc]
         lines_by_page = [self._lines(d) for d in pages_data]
-        sizes = [ln["size"] for lines in lines_by_page for ln in lines if ln["text"].strip()]
-        body_size = statistics.median(sizes) if sizes else 10.0
+        # the body size is the size of the median character (a median over lines is dragged
+        # down by pages of small table text)
+        sizes = sorted((ln["size"], len(ln["text"])) for lines in lines_by_page for ln in lines if ln["text"].strip())
+        half, acc, body_size = sum(n for _, n in sizes) / 2, 0, 10.0
+        for size, n in sizes:
+            acc += n
+            if acc >= half:
+                body_size = size
+                break
         repeated = self._repeated(lines_by_page)
+        # pasted images, read once per page; one at the same place on at least half of the
+        # pages (three or more) is a banner or a logo, not a figure
+        self._image_infos = []
+        for page in doc:
+            try:
+                self._image_infos.append(page.get_image_info(xrefs=True))
+            except Exception:
+                self._image_infos.append([])
+        count: dict[tuple[int, int, int, int], int] = {}
+        for infos in self._image_infos:
+            for key in {self._image_key(fitz.Rect(i["bbox"])) for i in infos}:
+                count[key] = count.get(key, 0) + 1
+        self._repeated_images = {k for k, c in count.items() if c >= max(3, math.ceil(len(doc) / 2))} if len(doc) >= 3 else set()
 
         for pno, page in enumerate(doc):
             self._parse_page(page, lines_by_page[pno], body_size, repeated)
@@ -148,9 +179,11 @@ class PdfParser:
             },
         }
 
-    @staticmethod
-    def _lines(d) -> list[dict[str, Any]]:
-        """Every text line of a page with its size, weight, bbox and the block it came from."""
+    @classmethod
+    def _lines(cls, d) -> list[dict[str, Any]]:
+        """Every text line of a page with its size, weight, bbox and the block it came from.
+        Some PDFs place every word on its own (each word a block of one line): their lines
+        and paragraphs are rebuilt from the word positions."""
         out = []
         for bi, b in enumerate(d["blocks"]):
             if b.get("type") != 0:
@@ -162,8 +195,114 @@ class PdfParser:
                 text = _clean("".join(s["text"] for s in line["spans"]))
                 bold = all(("bold" in (s.get("font") or "").lower()) or (s.get("flags", 0) & 16) for s in spans)
                 d0 = (line.get("dir") or (1, 0))[0]
-                out.append({"text": text, "size": max(s["size"] for s in spans), "bold": bold, "rot": abs(d0) < 0.9,
-                            "rect": fitz.Rect(line["bbox"]), "block": bi, "line": li, "block_rect": fitz.Rect(b["bbox"])})
+                out.append({"text": text, "raw": "".join(s["text"] for s in line["spans"]), "size": max(s["size"] for s in spans),
+                            "bold": bold, "rot": abs(d0) < 0.9, "rect": fitz.Rect(line["bbox"]), "block": bi, "line": li,
+                            "block_rect": fitz.Rect(b["bbox"]), "src": [(bi, li)], "nlines": len(b["lines"])})
+        # fragmented text: lines that have a neighbour on the same baseline right next to them
+        # (a word or part of a word each), or mostly single-word blocks
+        single = sum(1 for ln in out if " " not in ln["text"].strip() and ln["nlines"] == 1)
+        by_row = sorted(out, key=lambda ln: (round(ln["rect"].y1), ln["rect"].x0))
+        adjacent = 0
+        for a, b in zip(by_row, by_row[1:]):
+            if abs(a["rect"].y1 - b["rect"].y1) <= 2 and -2 <= b["rect"].x0 - a["rect"].x1 <= 0.7 * max(a["size"], b["size"]):
+                adjacent += 1
+        if len(out) >= 8 and (single >= 0.6 * len(out) or adjacent >= 0.2 * len(out)):
+            out = cls._rebuild_lines(out)
+        return out
+
+    @staticmethod
+    def _rebuild_lines(frags) -> list[dict[str, Any]]:
+        """Join word fragments into lines: fragments that overlap vertically form a row (a
+        superscript footnote marker sits in its line), the row is read left to right, and a
+        gap wider than 0.7 of the font size splits it (a column); fragments that touch (a
+        number and its % sign) are joined without a space. Lines that follow each other
+        closely then form blocks (paragraphs)."""
+        # rows: fragments whose vertical centres lie within half a font size of the row's
+        # (a superscript sits a little higher, the next text line a whole line lower)
+        rows: list[list[dict[str, Any]]] = []
+        centres: list[float] = []
+        for f in sorted(frags, key=lambda ln: ((ln["rect"].y0 + ln["rect"].y1) / 2, ln["rect"].x0)):
+            yc = (f["rect"].y0 + f["rect"].y1) / 2
+            for row, c in zip(rows, centres):
+                if abs(yc - c) <= 0.45 * min(f["size"], row[0]["size"]) and f["rot"] == row[0]["rot"]:
+                    row.append(f)
+                    break
+            else:
+                rows.append([f])
+                centres.append(yc)
+        lines: list[dict[str, Any]] = []
+        for row in rows:
+            row.sort(key=lambda x: x["rect"].x0)
+            big = max(x["size"] for x in row)
+            # the fragments' widths are often wrong (a font whose advance widths differ from
+            # the glyphs drawn): fragments overlap, or leave a gap where there is none. Only
+            # where the next fragment starts is exact, and that is scale * width + a space:
+            # the scale is fitted across the row (a robust slope, so a column gap or a wide
+            # justified space does not pull it) and the widths are corrected by it
+            pairs = [(a["rect"].width, b["rect"].x0 - a["rect"].x0, a["size"]) for a, b in zip(row, row[1:])
+                     if a["rect"].width > 2 and len(a["text"].strip()) >= 2 and not a["rot"] and 0.5 <= (b["rect"].x0 - a["rect"].x0) / a["rect"].width <= 2]
+            scale = 1.0
+            if len(pairs) >= 2:
+                slopes = [(d2 - d1) / (w2 - w1) for i, (w1, d1, _) in enumerate(pairs) for (w2, d2, _) in pairs[i + 1:] if abs(w2 - w1) >= 4]
+                if slopes:
+                    scale = statistics.median(slopes)
+            elif len(pairs) == 1:
+                w, delta, sz = pairs[0]
+                scale = (delta - 0.25 * sz) / w
+            if not (0.7 <= scale <= 1.4) or abs(scale - 1) <= 0.04:
+                scale = 1.0
+            if scale != 1.0:
+                for f in row:
+                    f["rect"] = fitz.Rect(f["rect"].x0, f["rect"].y0, f["rect"].x0 + f["rect"].width * scale, f["rect"].y1)
+            cur: dict[str, Any] | None = None
+            for f in row:
+                r = f["rect"]
+                if f["size"] < 0.7 * big and re.fullmatch(r"[\d,]+", f["text"]) and cur is not None:
+                    cur["src"].extend(f["src"])
+                    cur["rect"] = cur["rect"] | r  # a superscript footnote marker: the line goes on after it
+                    continue
+                if cur is not None:
+                    gap = r.x0 - cur["rect"].x1
+                    size = max(f["size"], cur["size"])
+                    numbered = re.fullmatch(r"\(?\d{1,2}[.)]?|[•·▪◦●○■□➢➤►\-–—]", cur["text"]) and gap <= 3 * size
+                    # an overlap is never a column boundary (columns do not overlap), only a width
+                    # the fit left too wide, so any gap up to a space-and-a-bit joins
+                    if (gap <= 0.7 * size or numbered) and not f["rot"]:
+                        hyphen = f["raw"].strip() == "-" or (cur["raw"].rstrip().endswith("-") and cur["raw"].rstrip()[-2:-1].isalpha())
+                        tight = gap <= 0.08 * size or hyphen or re.match(r"[.,;:)\]%’”'\"]", f["raw"].lstrip()) or re.search(r"[(\[“‘$]$", cur["raw"].rstrip())
+                        glue = "" if tight or cur["raw"].endswith(" ") or f["raw"].startswith(" ") else " "
+                        cur["raw"] += glue + f["raw"]
+                        cur["text"] = _clean(cur["raw"])
+                        cur["size"] = max(cur["size"], f["size"])
+                        cur["bold"] = cur["bold"] and f["bold"]
+                        cur["rect"] = cur["rect"] | r
+                        cur["src"].extend(f["src"])
+                        continue
+                cur = dict(f, src=list(f["src"]), rect=fitz.Rect(r))
+                lines.append(cur)
+        lines.sort(key=lambda ln: (ln["rect"].y0, ln["rect"].x0))
+        # blocks: a line joins a recent block when it follows its last line closely and
+        # overlaps it in x (the columns of a page interleave, so the last few blocks are tried)
+        blocks: list[list[dict[str, Any]]] = []
+        for ln in lines:
+            joined = False
+            for blk in blocks[-8:][::-1]:
+                prev = blk[-1]
+                gap = ln["rect"].y0 - prev["rect"].y1
+                overlap_x = min(ln["rect"].x1, prev["rect"].x1) - max(ln["rect"].x0, prev["rect"].x0)
+                if -2 <= gap <= 0.6 * max(ln["size"], prev["size"]) and overlap_x > 0 and abs(ln["size"] - prev["size"]) < 1.5:
+                    blk.append(ln)
+                    joined = True
+                    break
+            if not joined:
+                blocks.append([ln])
+        out = []
+        for bi, blk in enumerate(blocks):
+            rect = fitz.Rect(blk[0]["rect"])
+            for ln in blk[1:]:
+                rect |= ln["rect"]
+            for li, ln in enumerate(blk):
+                out.append(dict(ln, block=bi, line=li, block_rect=rect, nlines=len(blk)))
         return out
 
     @staticmethod
@@ -222,6 +361,10 @@ class PdfParser:
         items: list[tuple[float, float, dict[str, Any]]] = []  # (y, x, block)
         covered: list[Any] = []
         page_area = page.rect.width * page.rect.height
+        try:
+            self._drawings = page.get_drawings()  # read once per page: it is the slow call
+        except Exception:
+            self._drawings = []
 
         # tables: ruled-line detection. The finder also returns charts (bar edges and gridlines
         # read as cell borders) and, on a page with a chart, a "table" that runs across the
@@ -235,10 +378,10 @@ class PdfParser:
         cands = list(tabs.tables) if tabs else []
         # words of running headers and watermarks never belong to a cell (a bare figure does);
         # "words" and "dict" number blocks and lines the same way
-        junk = {(ln["block"], ln["line"]) for ln in lines if _norm(ln["text"]) in repeated}
+        junk = {pair for ln in lines if _norm(ln["text"]) in repeated for pair in ln["src"]}
         words = [w for w in page.get_text("words") if (w[5], w[6]) not in junk] if cands else []
-        shapes, rules = self._shapes(page)
-        fills = _fill_rects(page) if cands else []
+        shapes, rules, dividers = self._shapes(page, self._drawings)
+        fills = _fill_rects(self._drawings) if cands else []
         tables: list[tuple[Any, dict[str, Any], bool]] = []  # (rect, table, confirmed)
         seeds: list[Any] = []  # charts the finder mistook for tables
         pictures: list[Any] = []  # tables that could not be read: shown as pictures
@@ -263,6 +406,9 @@ class PdfParser:
             t = group[0]
             rect = fitz.Rect(t.bbox)
             table = self._clean_table(self._table_rows(page, t, words))
+            if table and len(table["rows"]) <= 2 and (max(c.count("\n") for r in table["rows"] for c in r) >= 2
+                                                      or any(c[:1].islower() or c.endswith(".") for c in table["rows"][0])):
+                continue  # a panel of label/value lines boxed by rules, or a box drawn over a sentence: not a table
             if not table:
                 # a lone shaded row with unshaded rows around it
                 rect, table = self._banded_table(page, group, words, lines, fills, body_size, min_bands=1, taken=taken)
@@ -278,7 +424,7 @@ class PdfParser:
         # charts drawn as vector paths. A "table" that is really the frame of a chart (a few
         # rows, inside a chart region many times its size) gives way to the chart
         strong = [r for r, _, ok in tables if ok]
-        chart_rects = self._chart_regions(page, lines, strong, repeated, shapes, rules, seeds)
+        chart_rects = self._chart_regions(page, lines, strong, repeated, shapes, rules, dividers, seeds)
         table_rects = []
         for rect, table, ok in tables:
             area = rect.width * rect.height
@@ -297,36 +443,71 @@ class PdfParser:
             covered.append(rect)
             items.append((rect.y0, rect.x0, {"type": "table", "rows": table["rows"], "header": True, "caption": table["caption"], "exhibit": None, "note": ""}))
         chart_rects = [c for c in chart_rects if not any(_overlap(c, t) > 0.5 or _overlap(t, c) > 0.5 for t in table_rects)]
+        # a drawing without any label and smaller than about 160pt square is an icon, not a chart
+        chart_rects = [c for c in chart_rects if c.width * c.height >= 25000 or sum(1 for ln in lines if _overlap(ln["rect"], c) > 0.8) >= 2]
+        # a table shown as a picture and the chart regions next to it are joined the same way
+        chart_rects = self._join_regions(chart_rects + pictures, lines)
+        pictures = []
         for rect in pictures:
             if not any(_overlap(rect, c) > 0.6 for c in covered):
                 self._add_image(page, rect, items, covered)
 
-        # pasted images (photos, charts saved as pictures)
-        seen = set()
-        try:
-            infos = page.get_image_info(xrefs=True)
-        except Exception:
-            infos = []
-        for info in infos:
-            rect = fitz.Rect(info["bbox"]) & page.rect
-            if rect.width < 40 or rect.height < 40 or rect.width * rect.height > 0.9 * page_area:
-                continue
-            key = (round(rect.x0), round(rect.y0), round(rect.x1), round(rect.y1))
-            if key in seen or any(_overlap(rect, c) > 0.6 for c in covered):
-                continue
-            seen.add(key)
-            # a tiny logo in a corner is decoration, a wide or tall picture is content
-            if rect.width < 90 and rect.height < 90 and (rect.y0 < page.rect.height * 0.12 or rect.y1 > page.rect.height * 0.9):
-                continue
-            self._add_image(page, rect, items, covered)
+        # a cover page (the first page, with hardly any text) shows a picture or a decoration,
+        # not a figure: nothing on it becomes an exhibit
+        cover = page.number == 0 and sum(len(ln["text"]) for ln in lines) < 400
+        if cover:
+            chart_rects, pictures = [], []
 
+        # vector charts first: the slices of a donut or the logos of a panel are often pasted
+        # bitmaps inside the chart's region, and must not come out again one by one
         for rect in chart_rects:
             if any(_overlap(rect, c) > 0.6 for c in covered):
                 continue
             self._add_image(page, rect, items, covered)
 
+        # pasted images (photos, charts saved as pictures). Bitmaps that touch each other are
+        # the pieces of one picture (a chart drawn slice by slice, a wall of logos)
+        infos = [] if cover else (self._image_infos[page.number] if page.number < len(self._image_infos) else [])
+        pasted: list[Any] = []
+        for info in infos:
+            rect = fitz.Rect(info["bbox"]) & page.rect
+            if rect.width < 12 or rect.height < 12 or rect.width * rect.height > 0.9 * page_area:
+                continue
+            if self._image_key(rect) in self._repeated_images:
+                continue  # the same picture at the same place on most pages: a banner or a logo
+            if rect.height >= 0.9 * page.rect.height and rect.width < 0.35 * page.rect.width:
+                continue  # a decorative side band
+            if any(_overlap(rect, c) > 0.6 for c in covered):
+                continue
+            pasted.append(rect)
+        merged = True
+        while merged:
+            merged = False
+            for i in range(len(pasted)):
+                for j in range(i + 1, len(pasted)):
+                    a, b = pasted[i], pasted[j]
+                    if a.x0 - 6 <= b.x1 and b.x0 - 6 <= a.x1 and a.y0 - 6 <= b.y1 and b.y0 - 6 <= a.y1:
+                        pasted[i] = a | b
+                        pasted.pop(j)
+                        merged = True
+                        break
+                if merged:
+                    break
+        for rect in pasted:
+            if rect.width < 40 or rect.height < 40:
+                continue
+            # a small bitmap (under about 120pt square) is an icon or a logo, not a figure
+            if rect.width * rect.height < 15000 and max(rect.width, rect.height) < 160:
+                continue
+            inside = [ln for ln in lines if _overlap(ln["rect"], rect) > 0.8]
+            if rect.width * rect.height > 0.5 * page_area and len(inside) >= 12:
+                continue  # a page background with the text set over it (a slide of bitmap only still counts)
+            if inside and sum(ln["rect"].height for ln in inside) >= 0.5 * rect.height:
+                continue  # text drawn as bitmaps, or a bitmap behind a paragraph: the text fills it, a chart's labels are sparse
+            self._add_image(page, rect, items, covered)
+
         # text, line by line
-        underlines = self._underlines(page)
+        underlines = self._underlines(page, self._drawings)
         for blk in self._text_blocks(lines, covered, repeated, body_size, underlines, page):
             items.append(blk)
 
@@ -363,8 +544,14 @@ class PdfParser:
                         continue
                     r = fitz.Rect(c)
                     inside = [w for w in words if r.x0 <= (w[0] + w[2]) / 2 <= r.x1 and r.y0 <= (w[1] + w[3]) / 2 <= r.y1]
-                    inside.sort(key=lambda w: (round(w[1] / 3), w[0]))
-                    cells.append(_clean(" ".join(w[4] for w in inside)))
+                    inside.sort(key=lambda w: ((w[1] + w[3]) / 2, w[0]))
+                    tls: list[list[Any]] = []
+                    for w in inside:  # the lines of the cell
+                        if tls and abs((w[1] + w[3]) / 2 - (tls[-1][0][1] + tls[-1][0][3]) / 2) <= 3:
+                            tls[-1].append(w)
+                        else:
+                            tls.append([w])
+                    cells.append("\n".join(_clean(" ".join(w[4] for w in sorted(tl, key=lambda w: w[0]))) for tl in tls))
                 rows.append(cells)
         except Exception:
             rows = [[_clean(c or "") for c in r] for r in t.extract()]
@@ -383,6 +570,26 @@ class PdfParser:
         # drop columns that are empty everywhere
         keep = [j for j in range(ncol) if any(r[j] for r in rows)]
         rows = [[r[j] for j in keep] for r in rows]
+        # a column holding nothing but currency signs belongs to the figures on its right, one
+        # of percent signs or closing brackets to the figures on its left (financial statements
+        # set "$", "1,234", "%" in cells of their own)
+        j = 0
+        while j < len(rows[0]) if rows else False:
+            col = [r[j] for r in rows]
+            filled = [c for c in col if c]
+            if filled and all(c in ("$", "€", "£", "¥", "US$") for c in filled) and j + 1 < len(rows[0]):
+                for r in rows:
+                    if r[j] and r[j + 1]:
+                        r[j + 1] = r[j] + r[j + 1]
+                    r.pop(j)
+                continue
+            if filled and all(c in ("%", ")", "%)") for c in filled) and j > 0:
+                for r in rows:
+                    if r[j] and r[j - 1]:
+                        r[j - 1] = r[j - 1] + r[j]
+                    r.pop(j)
+                continue
+            j += 1
         if not rows or len(rows[0]) < 2:
             return None
         caption = ""
@@ -404,16 +611,14 @@ class PdfParser:
         next to them. A candidate that runs across body paragraphs (the gridlines of a chart
         made a "table" of the page) is junk; the chart itself is found from its drawings."""
         cells = [fitz.Rect(c) for c in (t.cells or []) if c]
+        if rect.width * rect.height > 0.8 * page.rect.width * page.rect.height:
+            return "junk"  # the page itself (a sidebar or a frame split it into "cells")
         wide = [ln for ln in lines if ln["rect"].intersects(rect) and ln["rect"].width > 0.6 * page.rect.width
                 and not any(_overlap(ln["rect"], c) > 0.9 for c in cells)]
         if len(wide) >= 2:
             return "junk"
         diag = curves = 0
-        try:
-            drawings = page.get_drawings()
-        except Exception:
-            drawings = []
-        for d in drawings:
+        for d in self._drawings:
             if d["rect"].is_empty or _overlap(d["rect"], rect) < 0.5:
                 continue
             for it in d["items"]:
@@ -556,6 +761,9 @@ class PdfParser:
         caption = ""
         prev = box.y0
         for i, (r, luma) in enumerate(bands):
+            if i > 0 and luma < 0.5 and not cell_row(r.y0, r.y1):
+                box.y1 = r.y0  # the dark title band of the next section: the table ends above it
+                break
             if r.y0 - prev >= 6:
                 rows_y.append((prev, r.y0))
             if i == 0 and luma < 0.5 and r.y0 - box.y0 < 6 and not cell_row(r.y0, r.y1):
@@ -565,6 +773,42 @@ class PdfParser:
             prev = r.y1
         if box.y1 - prev >= 6:
             rows_y.append((prev, box.y1))
+        # a sentence inside a row (a note under the title band, running across the columns) is
+        # not cell text: it becomes the table's note
+        notes: list[str] = []
+        dropped: set[int] = set()
+        for y0, y1 in rows_y:
+            ws = sorted((w for w in words if in_x(w) and y0 <= (w[1] + w[3]) / 2 <= y1), key=lambda w: ((w[1] + w[3]) / 2, w[0]))
+            tls: list[list[Any]] = []
+            for w in ws:
+                if tls and abs((w[1] + w[3]) / 2 - (tls[-1][0][1] + tls[-1][0][3]) / 2) <= 3:
+                    tls[-1].append(w)
+                else:
+                    tls.append([w])
+            for tl in tls:
+                tl.sort(key=lambda w: w[0])
+                end, gap = tl[0][2], 0.0
+                for w in tl[1:]:
+                    gap = max(gap, w[0] - end)
+                    end = max(end, w[2])
+                if gap < 10 and tl[-1][2] - tl[0][0] >= 0.6 * box.width and len(tl) >= 6:
+                    notes.append(_clean(" ".join(w[4] for w in tl)))
+                    dropped.update(id(w) for w in tl)
+        words = [w for w in words if id(w) not in dropped]
+
+        def sentence_row(y0, y1) -> bool:
+            """A row whose words run on without a cell gap across most of the box: a note or a
+            sentence above or below the table, not a row of it."""
+            ws = sorted((w for w in words if in_x(w) and y0 <= (w[1] + w[3]) / 2 <= y1), key=lambda w: w[0])
+            return bool(ws) and not cell_row(y0, y1) and ws[-1][2] - ws[0][0] >= 0.6 * box.width
+
+        while rows_y and sentence_row(*rows_y[0]):
+            rows_y.pop(0)
+        while rows_y and sentence_row(*rows_y[-1]):
+            rows_y.pop()
+        if not rows_y:
+            return box, None
+        box = fitz.Rect(box.x0, min(box.y0, rows_y[0][0]) if caption else rows_y[0][0], box.x1, rows_y[-1][1])
         body = [w for w in words if in_x(w) and any(y0 <= (w[1] + w[3]) / 2 <= y1 for y0, y1 in rows_y)]
         # columns: the gaps in the text that run through every row (8pt and more; the space
         # between two words of a cell is about 3pt)
@@ -602,20 +846,18 @@ class PdfParser:
         table = self._clean_table(rows)
         if table:
             table["caption"] = table["caption"] or caption
+            table["note"] = " ".join(notes)
         return box, table
 
     # ------------------------------------------------------------------ charts
     @staticmethod
-    def _shapes(page) -> tuple[list[Any], list[Any]]:
+    def _shapes(page, drawings) -> tuple[list[Any], list[Any], list[Any]]:
         """The page's vector drawings split into filled shapes (bars, slices, markers, cell
-        shading) and thin rules (axes, borders, underlines); page backgrounds and title bands
-        are left out."""
-        try:
-            drawings = page.get_drawings()
-        except Exception:
-            return [], []
+        shading), thin rules (axes, borders, underlines) and dividers (bands and rules across
+        the page, which separate the sections of a slide); page backgrounds are left out."""
         page_area = page.rect.width * page.rect.height
         shapes, rules = [], []
+        dividers = []
         for d in drawings:
             r = d["rect"]
             if r.is_empty or r.width * r.height > 0.5 * page_area:
@@ -623,14 +865,21 @@ class PdfParser:
             if r.width <= 2.5 or r.height <= 2.5:
                 if max(r.width, r.height) >= 12:
                     rules.append(r)
+                    if r.width >= 0.8 * page.rect.width:
+                        dividers.append(r)
                 continue
             if r.width >= 0.8 * page.rect.width and r.height < 40:
+                dividers.append(r)
                 continue  # a title band or a divider, not a chart
+            if not d.get("color") and _luma(d.get("fill")) > 0.97:
+                continue  # an invisible panel background (white, no border) joins nothing
+            if r.width * r.height > 0.15 * page_area or (r.height >= 0.9 * page.rect.height and r.width < 0.35 * page.rect.width):
+                continue  # a slide panel or a side band: a backdrop for text, which would chain every chart on the page
             shapes.append(r)
-        return shapes, rules
+        return shapes, rules, dividers
 
     @staticmethod
-    def _grow(page, box, lines, rules, repeated):
+    def _grow(page, box, lines, rules, repeated, dividers=()):
         """Grow a chart's box to the axis lines and to the short labels (ticks, legend, axis
         titles) around it, never to its caption. A body paragraph never belongs to a chart:
         when a wide line of text crosses the box (a drawing's box ran past the chart), the
@@ -642,7 +891,11 @@ class PdfParser:
                 if near.intersects(r) and r.width < page.rect.width * 0.8:
                     box |= r
             for ln in lines:
-                if ln["rect"].width < page.rect.width * 0.4 and len(ln["text"]) < 70 and near.intersects(ln["rect"]) and _norm(ln["text"]) not in repeated and not is_caption(ln["text"]):
+                if ln["rect"].width < page.rect.width * 0.4 and len(ln["text"]) < 70 and near.intersects(ln["rect"]) and _norm(ln["text"]) not in repeated and not is_caption(ln["text"]) \
+                        and not (ln["bold"] and len(ln["text"]) > 12):  # a bold title belongs to the next chart or section, not to this one
+                    yc = (ln["rect"].y0 + ln["rect"].y1) / 2
+                    if any(min(box.y1, yc) <= (dv.y0 + dv.y1) / 2 <= max(box.y0, yc) for dv in dividers):
+                        continue  # a section divider lies between the chart and the line
                     box |= ln["rect"]
         for ln in sorted(lines, key=lambda ln: abs((ln["rect"].y0 + ln["rect"].y1) / 2 - centre), reverse=True):
             r = ln["rect"]
@@ -653,7 +906,7 @@ class PdfParser:
                     box.y0 = max(box.y0, r.y1 + 2)
         return box & page.rect
 
-    def _chart_regions(self, page, lines, table_rects, repeated, all_shapes, rules, seeds=()) -> list[Any]:
+    def _chart_regions(self, page, lines, table_rects, repeated, all_shapes, rules, dividers=(), seeds=()) -> list[Any]:
         """Regions of vector drawings that make a chart: filled shapes (bars, slices, markers)
         clustered together, grown to the axis lines and the labels around them. A seed is a
         chart the table finder mistook for a table; it becomes a region of its own when its
@@ -678,32 +931,64 @@ class PdfParser:
                 box |= s
             if len(c) < 3 and (box.width < 120 or box.height < 80):
                 continue  # a lone decoration
-            box = self._grow(page, box, lines, rules, repeated)
+            box = self._grow(page, box, lines, rules, repeated, dividers)
             if box.width < 100 or box.height < 60:
                 continue
             if any(_overlap(box, t) > 0.5 for t in table_rects):
                 continue
+            # a call-out: one or two filled panels with sentences on them (a chart's labels are short)
+            inside = [ln["text"] for ln in lines if _overlap(ln["rect"], box) > 0.8]
+            if len(c) <= 2 and inside and sum(len(x) for x in inside) >= 80 and sum(len(x) for x in inside) / len(inside) >= 40:
+                continue
             regions.append((fitz.Rect(box.x0 - 4, box.y0 - 4, box.x1 + 4, box.y1 + 4) & page.rect, len(c)))
-        # a region inside a bigger one is the same chart
+        # regions that overlap are one chart (its parts clustered apart, a region inside a
+        # bigger one): they are joined into their union until none overlap
         regions.sort(key=lambda rn: -(rn[0].width * rn[0].height))
-        out: list[Any] = []
-        for r, n in regions:
-            if not any(_overlap(r, o) > 0.7 for o in out):
-                out.append(r)
+        out = self._join_regions([fitz.Rect(r) for r, n in regions], lines)
         for seed in seeds:
             if any(_overlap(seed, o) > 0.5 or _overlap(o, seed) > 0.5 for o in out):
                 continue
-            box = self._grow(page, fitz.Rect(seed), lines, rules, repeated)
+            box = self._grow(page, fitz.Rect(seed), lines, rules, repeated, dividers)
             out.append(fitz.Rect(box.x0 - 4, box.y0 - 4, box.x1 + 4, box.y1 + 4) & page.rect)
+        return out
+
+    @staticmethod
+    def _join_regions(out: list[Any], lines) -> list[Any]:
+        """Join the rectangles that are parts of one figure into their union, until none are:
+        rectangles that overlap, and parts that sit stacked or side by side."""
+        joined = True
+        while joined:
+            joined = False
+            for i in range(len(out)):
+                for j in range(i + 1, len(out)):
+                    a, b = out[i], out[j]
+                    inter = a & b
+                    overlapping = not inter.is_empty and inter.get_area() > 0.3 * min(a.get_area(), b.get_area())
+                    # stacked or side-by-side parts of one figure: a small gap, aligned on the other axis
+                    x_share = min(a.x1, b.x1) - max(a.x0, b.x0)
+                    y_share = min(a.y1, b.y1) - max(a.y0, b.y0)
+                    v_gap, h_gap = max(a.y0, b.y0) - min(a.y1, b.y1), max(a.x0, b.x0) - min(a.x1, b.x1)
+                    stacked = (v_gap <= 8 and x_share >= 0.6 * min(a.width, b.width)) or (h_gap <= 8 and y_share >= 0.6 * min(a.height, b.height))
+                    # the same-width parts of one table or chart may sit further apart (an unshaded
+                    # row between the shaded ones), unless a title in between starts another figure
+                    if not stacked and v_gap <= 40 and x_share >= 0.9 * min(a.width, b.width):
+                        top, bottom = min(a.y1, b.y1), max(a.y0, b.y0)
+                        # a title runs across the figure; a bold row label of a table ("Core Expenses") does not
+                        titled = any(ln["bold"] and ln["rect"].width >= 0.5 * min(a.width, b.width) and top <= (ln["rect"].y0 + ln["rect"].y1) / 2 <= bottom
+                                     and ln["rect"].x1 > min(a.x0, b.x0) and ln["rect"].x0 < max(a.x1, b.x1) for ln in lines)
+                        stacked = not titled
+                    if overlapping or stacked:
+                        out[i] = a | b
+                        out.pop(j)
+                        joined = True
+                        break
+                if joined:
+                    break
         return out
 
     # ------------------------------------------------------------------ text
     @staticmethod
-    def _underlines(page) -> list[Any]:
-        try:
-            drawings = page.get_drawings()
-        except Exception:
-            return []
+    def _underlines(page, drawings) -> list[Any]:
         return [d["rect"] for d in drawings if d["rect"].height <= 2 and 15 <= d["rect"].width <= page.rect.width * 0.7]
 
     @staticmethod
@@ -784,7 +1069,8 @@ class PdfParser:
         text, size = ln["text"], ln["size"]
         if BULLET_RE.match(text) or DATE_RE.match(text) or len(re.sub(r"[^A-Za-z一-鿿]", "", text)) < 3:
             return "text"  # bullets, dates, footnote markers and bare figures are never headings
-        if size >= body_size * 1.35 and len(text) < 160:
+        para_like = len(blines) >= 3 and sum(len(b["text"]) for b in blines) > 200 and all(abs(b["size"] - size) < 1 for b in blines)
+        if size >= body_size * 1.35 and len(text) < 110 and not para_like and not re.search(r"[.。;；,，]$", text):
             return "heading"
         short = len(text) < 110 and not re.search(r"[.。;；,，:：]$", text)
         if short and ln["bold"] and size >= body_size * 1.02 and (len(blines) == 1 or not blines[min(i + 1, len(blines) - 1)]["bold"] or i == 0):
@@ -793,10 +1079,10 @@ class PdfParser:
             return "heading"
         # a letter's section title: a short first line, narrower than its block, followed by a
         # line that starts a sentence
-        if i == 0 and len(blines) >= 2 and len(text) < 60 and short and ln["rect"].width < 0.7 * ln["block_rect"].width:
+        if i == 0 and len(blines) >= 2 and len(text) < 60 and short and ln["rect"].width < 0.7 * ln["block_rect"].width and ln["rect"].x0 - ln["block_rect"].x0 < 12:
             nxt = blines[1]["text"]
             dangling = re.search(r"\b(of|and|or|the|a|an|to|for|in|on|with|by|at|from|as|is|are|&)$", text, re.I)
-            if nxt[:1].isupper() and not text[:1].islower() and not re.match(r"^\d", text) and not dangling:
+            if nxt[:1].isupper() and not text[:1].islower() and not re.match(r"^\d", text) and not dangling and not re.search(r"[,，/]", text):
                 return "heading"
         return "text"
 

@@ -99,8 +99,19 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
 
 ## Macro / Market
 
-The "Macro / Market" tab (`#/macro`) holds one brief per month, rebuilt
-slide by slide from screenshots, with the same logic as Investment performance.
+The "Macro / Market" tab (`#/macro/<topic>[/<key>]`) has two fixed topic
+tags under the title, Weekly Updates (每周更新) and then Rate Hike
+Expectations (市场加息预期); a click shows that topic's entries. **Weekly
+Updates** takes a document: "Upload file" accepts the week's `.docx` or
+`.pdf` with a date, and the file becomes an ordinary report of the sector
+`macro_weekly` (space `macro` in `data/sectors.json`), parsed and stored
+exactly like a research report, with the date in its metadata (`date`) and
+one edition per date. The tag lists the updates latest first, and each
+opens in the report reader: contents on the left, the index of tables and
+figures on the right. On GitHub Pages the file goes through
+`panel/incoming/` like any upload. **Rate Hike Expectations** holds one
+brief per month, rebuilt slide by slide from screenshots, with the same
+logic as Investment performance.
 You drop several slide images at once (PNG, JPEG or WebP; drag, choose or
 paste), put them in reading order (arrows in the list), give the brief a
 title and a month, and Claude reads each image in turn into one generic
@@ -118,13 +129,16 @@ already has a brief replaces it.
   what did not add up as warnings, translates the labels and sentences into
   English like the factors script (`en` map in the brief; "Create English
   labels" on the local server for a brief that still shows Chinese), and
-  writes `macro/data/<YYYY-MM>.json` with the images in
-  `macro/data/<YYYY-MM>/<nn>.<ext>` and `macro/data/index.json`.
+  writes `macro/data/<topic>/<YYYY-MM>.json` with the images in
+  `macro/data/<topic>/<YYYY-MM>/<nn>.<ext>` and `macro/data/<topic>/index.json`
+  (`topic` is `weekly` or `rates`; `macro/data/index.json` names the topics).
+  `--topic` picks the topic on the command line (`rates` by default);
   `--from-raw pages.json` saves a hand-written transcription instead of
   calling Claude; `AI_MOCK=1` writes placeholder slides.
 - **On GitHub Pages** the site commits the images to
-  `macro/incoming/<YYYY-MM>-<nn>.<ext>` plus `<YYYY-MM>.meta.json` (the
-  title); `build-deploy.yml` runs the script with the `ANTHROPIC_API_KEY`
+  `macro/incoming/<topic>-<YYYY-MM>-<nn>.<ext>` plus `<topic>-<YYYY-MM>.meta.json`
+  (the title; names without a topic prefix count as `rates`);
+  `build-deploy.yml` runs the script with the `ANTHROPIC_API_KEY`
   secret and redeploys. **Locally** `POST /api/macro/upload` reads the
   slides at once (about a minute per slide). The data is served at
   `data/macro/…` in both modes and, like the factors data, is left out of
@@ -211,7 +225,20 @@ the pipeline.
   tested first and a chart is cropped to a picture instead. Banded tables
   (shaded rows, no ruling lines) are read from their shading, with a dark
   title band as the caption; a table that cannot be read is shown as a
-  picture.
+  picture. Slide panels and side bands (large filled rectangles) never join
+  a chart, so a sidebar of key figures stays text. A figure comes out whole:
+  chart regions that overlap or sit stacked are joined, the bitmaps that
+  make up one picture (a donut drawn slice by slice, a wall of logos) are
+  merged, and a chart's box never takes in the bold title of the next
+  figure. Icons, logos, a banner repeated on most pages, text drawn as
+  bitmaps and the decoration of a cover page (the first page, with hardly
+  any text) are not exhibits. PDFs that place every
+  word, or part of a word, on its own (Basepoint, Pretium decks) get their
+  lines and paragraphs rebuilt from the fragment positions; a font whose
+  advance widths differ from the glyphs drawn is corrected by a scale fitted
+  across each row. The optional `pymupdf_layout` model is switched off: it
+  costs seconds per page and reads pages differently from machines without
+  it.
 - Every figure/table is numbered in document order; the list is returned as
   `exhibits` and drives the gallery, the side index and the index at the
   end of the article.

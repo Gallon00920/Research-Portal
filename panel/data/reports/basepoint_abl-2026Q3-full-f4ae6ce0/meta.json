@@ -1,0 +1,274 @@
+{
+  "id": "basepoint_abl-2026Q3-full-f4ae6ce0",
+  "title": "BasePoint Income Solutions Evergreen Offshore Fund: Tenk Investment Limited",
+  "sector": "basepoint_abl",
+  "year": 2026,
+  "quarter": 3,
+  "period": "3Q2026",
+  "period_key": 20263,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "Fund",
+    "BPA",
+    "The Company",
+    "September",
+    "BasePoint",
+    "October"
+  ],
+  "source_name": "Basepoint 2026Q3.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:11:11+00:00",
+  "stats": {
+    "blocks": 562,
+    "images": 54,
+    "tables": 2,
+    "chars": 76481,
+    "pages": 27
+  },
+  "exhibit_count": 56,
+  "toc": [
+    {
+      "level": 2,
+      "text": "Q U A R T E R L Y I N V E S T O R L E T T E R"
+    },
+    {
+      "level": 1,
+      "text": "BasePoint Income Solutions Evergreen"
+    },
+    {
+      "level": 1,
+      "text": "Offshore Fund: Tenk Investment Limited"
+    },
+    {
+      "level": 1,
+      "text": "Third Quarter 2026"
+    },
+    {
+      "level": 3,
+      "text": "B A S E P O I N T A D V I S O R S L L C"
+    },
+    {
+      "level": 1,
+      "text": "Market Update and Performance Summary"
+    },
+    {
+      "level": 3,
+      "text": "Performance Summary"
+    },
+    {
+      "level": 1,
+      "text": "Market Update and Performance Summary (continued)"
+    },
+    {
+      "level": 1,
+      "text": "Market Update and Performance Summary (continued)"
+    },
+    {
+      "level": 1,
+      "text": "Market Update and Performance Summary (continued)"
+    },
+    {
+      "level": 1,
+      "text": "Market Update and Performance Summary (continued)"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "LOC"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Home Credit 30-60 DLP"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Consumer Finance"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Other"
+    },
+    {
+      "level": 1,
+      "text": "CRA Funding I"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Small Business"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Small Business"
+    },
+    {
+      "level": 3,
+      "text": "Weekly"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Small Business"
+    },
+    {
+      "level": 3,
+      "text": "Weekly"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Small Business"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Small Business"
+    },
+    {
+      "level": 3,
+      "text": "Sector: Small Business"
+    },
+    {
+      "level": 1,
+      "text": "BasePoint Capital Pipeline"
+    },
+    {
+      "level": 2,
+      "text": "New closed commitments = BLACK Transactions in progress = GREEN"
+    },
+    {
+      "level": 1,
+      "text": "~$4.3B transactions in progress"
+    },
+    {
+      "level": 2,
+      "text": "Consumer ABL &"
+    },
+    {
+      "level": 2,
+      "text": "Consumer ABL"
+    },
+    {
+      "level": 2,
+      "text": "Commercial ABL"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Purchase"
+    },
+    {
+      "level": 2,
+      "text": "Middle-market ABL"
+    },
+    {
+      "level": 2,
+      "text": "Overadvance"
+    },
+    {
+      "level": 2,
+      "text": "& Term Loan"
+    },
+    {
+      "level": 2,
+      "text": "Life Settlement"
+    },
+    {
+      "level": 2,
+      "text": "platform (Portfolio Purchase)"
+    },
+    {
+      "level": 2,
+      "text": "Debt Settlement"
+    },
+    {
+      "level": 2,
+      "text": "(Renewal)"
+    },
+    {
+      "level": 2,
+      "text": "(Renewal)"
+    },
+    {
+      "level": 2,
+      "text": "Forward Flow"
+    },
+    {
+      "level": 2,
+      "text": "Direct Investment"
+    },
+    {
+      "level": 2,
+      "text": "Direct Investment"
+    },
+    {
+      "level": 2,
+      "text": "Joint Venture"
+    },
+    {
+      "level": 2,
+      "text": "Strategic M&A"
+    },
+    {
+      "level": 2,
+      "text": "ABL"
+    },
+    {
+      "level": 2,
+      "text": "Corporate TL"
+    },
+    {
+      "level": 2,
+      "text": "Consumer ABL"
+    },
+    {
+      "level": 2,
+      "text": "Commercial ABL"
+    },
+    {
+      "level": 2,
+      "text": "Commercial ABL"
+    },
+    {
+      "level": 2,
+      "text": "Consumer ABL (Renewal & Upsize)"
+    },
+    {
+      "level": 2,
+      "text": "Distressed Portfolio Purchasing Platform (new product launch)"
+    },
+    {
+      "level": 2,
+      "text": "Film finance platform (new product launch)"
+    },
+    {
+      "level": 2,
+      "text": "Consumer Term Note"
+    }
+  ],
+  "summary": "The ABL financings which Tenk Investment Limited participates in through the BasePoint Income Solutions Evergreen Offshore Fund L.P. (the “Fund”) portfolio generated a weighted average gross coupon of 13.2% as of Septemb"
+}

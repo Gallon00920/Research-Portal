@@ -1,0 +1,38 @@
+{
+  "id": "bayview_msr-2026Q1-full-6eb93da2",
+  "title": "source",
+  "sector": "bayview_msr",
+  "year": 2026,
+  "quarter": 1,
+  "period": "1Q2026",
+  "period_key": 20261,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "MSR Fund",
+    "GNMA",
+    "UPB",
+    "CPR",
+    "Manager",
+    "EBOs"
+  ],
+  "source_name": "Bayview MSR_2026Q1.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:11:19+00:00",
+  "stats": {
+    "blocks": 16,
+    "images": 4,
+    "tables": 0,
+    "chars": 10071,
+    "pages": 3
+  },
+  "exhibit_count": 4,
+  "toc": [
+    {
+      "level": 3,
+      "text": "Other Assets"
+    }
+  ],
+  "summary": "4425 Ponce de Leon Boulevard Coral Gables, FL 33146 305.854.8880 www.bayview.com"
+}

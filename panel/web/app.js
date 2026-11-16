@@ -3,7 +3,7 @@
             #/s/<sector>       opens the latest report of that sector in the current language
             #/portfolio        portfolio management dashboard (the same page for the portfolio funds)
             #/portfolio/s/<id> opens the latest report of that fund
-            #/macro[/YYYY-MM]  Macro / Market: slide briefs read from screenshots (macro/web/macro.js)
+            #/macro[/<topic>[/YYYY-MM]]  Macro / Market: slide briefs read from screenshots, per topic (macro/web/macro.js)
             #/r/<id>[/anchor]  report reader (any space; the space follows the report's sector)
    Only full reports in the current UI language are ever listed.
    Two "spaces" share this code (see SPACES): the research sectors (space "research", the
@@ -80,6 +80,9 @@ const SPACES = {
   research:  {hash: '#/',          sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
   // the portfolio space has two sub-sectors; every portfolio report carries one in meta.section
   portfolio: {hash: '#/portfolio', sectorHash: '#/portfolio/s/', title: 'pm_title',   sub: 'pm_sub',   sectors: 'pm_sectors', nav: 'nav_portfolio', sections: ['internal', 'quarterly']},
+  // the Macro / Market weekly updates are reports of the sector "macro_weekly"; the macro view
+  // lists them (#/macro/weekly) and the reader opens them like any report
+  macro:     {hash: '#/macro/weekly', sectorHash: '#/macro/weekly', title: 'mk_title', sub: 'mk_sub', sectors: 'nav_macro', nav: 'nav_macro'},
 };
 const SPACE_IDS = Object.keys(SPACES);
 function spaceOf(sectorId){ const s = sectorById(sectorId); return (s && SPACES[s.space]) ? s.space : 'research'; }
@@ -101,7 +104,14 @@ function nReports(n){ return n === 1 && state.lang === 'en' ? '1 report' : t('re
 /* full reports in the current report language (state.docLang follows the UI language unless switched in the reader) */
 function langReports(lang){ return state.reports.filter(r => inSection(r) && r.nature === 'full' && r.language === (lang || state.docLang)); }
 function findReport(sector, period, lang, nature){ return state.reports.find(r => inSection(r) && r.sector === sector && r.period === period && r.language === lang && r.nature === nature) || null; }
-function sectorReports(sectorId, lang){ return langReports(lang).filter(r => r.sector === sectorId); }
+/* a fund's reports come in one language (whatever the manager sends), so a portfolio fund whose
+   reports are not in the current report language falls back to the language it has; research
+   sectors keep the EN / 中文 editions apart */
+function sectorReports(sectorId, lang){
+  const mine = langReports(lang).filter(r => r.sector === sectorId);
+  if (mine.length || lang || spaceOf(sectorId) !== 'portfolio') return mine;
+  return state.reports.filter(r => inSection(r) && r.nature === 'full' && r.sector === sectorId);
+}
 function latestOf(list){ return list.slice().sort(byUploaded)[0] || null; }
 /* a sector's report count = number of quarters it covers; languages and full/summary editions of one quarter count once */
 function sectorQuarters(sectorId){ return new Set(state.reports.filter(r => inSection(r) && r.sector === sectorId).map(r => r.year + '-' + r.quarter)).size; }
@@ -184,8 +194,8 @@ function buildNav(){
   spaceBtn('portfolio');
   tab(t('nav_news'), state.view === 'news', '#/news');
   spaceBtn('research');
-  SPACE_IDS.filter(sp => sp !== 'research' && sp !== 'portfolio').forEach(spaceBtn);
-  tab(t('nav_macro'), state.view === 'macro', '#/macro');
+  SPACE_IDS.filter(sp => sp !== 'research' && sp !== 'portfolio' && sp !== 'macro').forEach(spaceBtn);
+  tab(t('nav_macro'), state.view === 'macro' || (isPanel && state.space === 'macro'), '#/macro');
   // "Upload report" sits on the dashboard beside the sector list and in a report page's crumb bar
 }
 
@@ -219,7 +229,20 @@ function renderDash(space){
   // "Upload the first report"); exited funds go below
   const shown = sectionSectors();
   const active = shown.filter(s => !isExited(s));
-  active.forEach(s => grid.appendChild(sectorCard(s, false)));
+  if (active.some(s => s.category)){
+    // funds grouped by strategy category, all on one page: one labelled band of cards per category
+    const groups = categoryGroups(active);
+    groups.forEach(g => {
+      const head = el('div', 'cat-head');
+      head.style.setProperty('--cat', g.color);
+      head.appendChild(el('b', null, g.label));
+      head.appendChild(el('span', 'cat-n', nFunds(g.sectors.length)));
+      grid.appendChild(head);
+      g.sectors.forEach(s => { const c = sectorCard(s, false); c.classList.add('cat'); c.style.setProperty('--cat', g.color); grid.appendChild(c); });
+    });
+  } else {
+    active.forEach(s => grid.appendChild(sectorCard(s, false)));
+  }
   if (secs && !active.length) grid.appendChild(el('div', 'empty-note', t('no_funds_section')));
   const ph = el('button', 'scard ph'); ph.type = 'button';
   ph.appendChild(el('div', 'plus', '+'));
@@ -232,6 +255,27 @@ function renderDash(space){
   renderRecent(langReports().filter(r => spaceOf(r.sector) === state.space).sort(byUploaded).slice(0, 6));
   document.title = spaceTitle() + ' | Junson Capital';
 }
+/* the strategy categories of portfolio funds, in display order (all bands in the site blue); a
+   category not listed here still gets a band, a fund without one goes under "Other" */
+const CATEGORIES = [
+  ['Private Credit', 'cat_private_credit', '#0C2B4E'],
+  ['ABF', 'cat_abf', '#0C2B4E'],
+  ['Structure Credit', 'cat_structure_credit', '#0C2B4E'],
+  ['Alternative Yield', 'cat_alt_yield', '#0C2B4E'],
+  ['Real Asset', 'cat_real_asset', '#0C2B4E'],
+  ['Real Estate', 'cat_real_estate', '#0C2B4E'],
+];
+function categoryLabel(name){ const c = CATEGORIES.find(x => x[0] === name); return c ? t(c[1]) : (name || t('cat_other')); }
+function categoryGroups(sectors){
+  const by = new Map();
+  sectors.forEach(s => { const k = s.category || ''; if (!by.has(k)) by.set(k, []); by.get(k).push(s); });
+  const order = CATEGORIES.map(c => c[0]).concat(Array.from(by.keys()).filter(k => k && !CATEGORIES.some(c => c[0] === k)), ['']);
+  return order.filter(k => by.has(k)).map(k => {
+    const c = CATEGORIES.find(x => x[0] === k);
+    return {key: k, label: categoryLabel(k), color: '#0C2B4E', sectors: by.get(k)};
+  });
+}
+function nFunds(n){ return n === 1 && state.lang === 'en' ? '1 fund' : t('n_funds', {n}); }
 /* one sector / fund card. In the portfolio space it carries a small action: mark the fund as
    exited (it moves to the grey section below) or, on a grey card, set it active again */
 function sectorCard(s, exited){
@@ -306,6 +350,7 @@ function renderEmpty(s, period){
   state.sectorId = s.id; state.reportId = null; state.report = null; state.exhibits = [];
   showView('art');
   buildNav();
+  $('pickers').hidden = false;
   $('crumbPath').textContent = (sections() ? sectionName(state.section) + ' | ' : '') + sectorName(s);
   buildPickers(s, null);
   buildSegs(null, s);
@@ -351,7 +396,9 @@ async function renderReport(id, anchor){
 
   // title / meta / tags
   $('docTitle').textContent = meta.title;
-  $('qBadge').textContent = meta.period;
+  // a dated report (a weekly update) is labelled by its date, and has no quarter pickers
+  $('qBadge').textContent = meta.date ? fmtDate(meta.date) : meta.period;
+  $('pickers').hidden = !!meta.date;
   const dm = $('docMeta'); dm.innerHTML = '';
   const add = (txt, bold) => { const sp = el('span'); if (bold) sp.appendChild(el('b', null, txt)); else sp.textContent = txt; dm.appendChild(sp); };
   const sep = () => dm.appendChild(el('span', 'sep', '|'));
@@ -375,7 +422,7 @@ async function renderReport(id, anchor){
   $('exBtnLabel').textContent = t('exhibits') + (state.exhibits.length ? ' (' + state.exhibits.length + ')' : '');
   startSpy();
   doSearch();
-  document.title = meta.title + ' ' + meta.period + ' — ' + spaceTitle() + ' | Junson Capital';
+  document.title = meta.title + ' ' + (meta.date ? fmtDate(meta.date) : meta.period) + ' — ' + spaceTitle() + ' | Junson Capital';
   if (anchor) requestAnimationFrame(() => { const n = document.getElementById(anchor); if (n) n.scrollIntoView(); });
 }
 function opt(v, label){ const o = el('option', null, label); o.value = v; return o; }
@@ -1048,7 +1095,7 @@ function wireUpload(){
 }
 
 /* ---------------------------------------------------------------- sector manager (add / edit / remove) */
-const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status', 'space', 'section'];
+const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status', 'space', 'section', 'category'];
 function cleanSector(s){ const o = {}; SECTOR_KEYS.forEach(k => { if (s[k] !== undefined) o[k] = s[k]; }); if (!o.status) o.status = 'active'; return o; }
 function slugId(name){ return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || ('sector_' + Date.now().toString(36)); }
 /* persist the sector list of the current space (static mode commits data/sectors.json; API mode
@@ -1086,6 +1133,14 @@ function fillSectorForm(s){
   $('sNameCn').value = s ? (s.name_cn || '') : '';
   $('sCode').value = s ? (s.code || '') : '';
   $('sRegion').value = s ? (s.region || '') : '';
+  // the strategy category (portfolio funds only): the known ones, plus the fund's own if it is not listed
+  const catRow = $('sCategoryRow'), cat = $('sCategory');
+  catRow.hidden = state.space !== 'portfolio';
+  cat.innerHTML = '';
+  cat.appendChild(opt('', '—'));
+  const known = CATEGORIES.map(c => c[0]);
+  known.concat(s && s.category && !known.includes(s.category) ? [s.category] : []).forEach(k => cat.appendChild(opt(k, categoryLabel(k))));
+  cat.value = s ? (s.category || '') : '';
   $('sCovEn').value = s ? (s.coverage_en || []).join(', ') : '';
   $('sCovCn').value = s ? (s.coverage_cn || []).join(', ') : '';
   $('secSubmit').textContent = s ? t('save') : t('add_sector');
@@ -1167,6 +1222,7 @@ function wireSectorManager(){
     const payload = {
       name_en: $('sNameEn').value.trim(), name_cn: $('sNameCn').value.trim(), code: $('sCode').value.trim().toUpperCase(),
       region: $('sRegion').value.trim(), coverage_en: covEn.length ? covEn : covCn, coverage_cn: covCn.length ? covCn : covEn,
+      category: state.space === 'portfolio' ? $('sCategory').value : undefined,
     };
     const id = $('sId').value;
     if (!payload.name_en){ $('secMsg').className = 'form-msg err'; $('secMsg').textContent = t('s_name_en'); return; }
@@ -1219,11 +1275,11 @@ function renderFactors(tab, ym){
   document.title = t('factors_title') + ' | Junson Capital';
 }
 /* macro / market: macro.js renders into #view-macro (the month comes from the address) */
-function renderMacro(ym){
+function renderMacro(topic, ym){
   showView('macro');
   state.sectorId = null; state.reportId = null; state.report = null;
   buildNav();
-  if (window.MacroMarket) window.MacroMarket.mount(state.lang, ym);
+  if (window.MacroMarket) window.MacroMarket.mount(state.lang, topic, ym);
   document.title = t('mk_title') + ' | Junson Capital';
 }
 function parseHash(){
@@ -1232,7 +1288,7 @@ function parseHash(){
   const p = h.split('/');
   if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
-  if (p[0] === 'macro') return {view: 'macro', ym: p[1] || null};
+  if (p[0] === 'macro') return {view: 'macro', topic: p[1] || null, ym: p[2] || null};  // #/macro/<topic>[/<YYYY-MM>]
   if (SPACES[p[0]] && p[0] !== 'research'){
     // #/portfolio[/<section>][/s/<id>]
     const secs = SPACES[p[0]].sections || [];
@@ -1251,7 +1307,7 @@ async function route(){
     if (h.view === 'dash') renderDash(h.space);
     else if (h.view === 'news') renderNews();
     else if (h.view === 'factors') renderFactors(h.tab, h.ym);
-    else if (h.view === 'macro') renderMacro(h.ym);
+    else if (h.view === 'macro') renderMacro(h.topic, h.ym);
     else if (h.view === 'sector') openSector(h.id);
     else if (h.view === 'art'){
       if (state.view === 'art' && state.reportId === h.id && h.anchor){ const n = document.getElementById(h.anchor); if (n) n.scrollIntoView(); return; }

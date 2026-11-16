@@ -1,0 +1,274 @@
+{
+  "id": "blueowl_gp_stakes-2026Q1-full-0f78e0cf",
+  "title": "Blue Owl GP Stakes V",
+  "sector": "blueowl_gp_stakes",
+  "year": 2026,
+  "quarter": 1,
+  "period": "1Q2026",
+  "period_key": 20261,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "Fund",
+    "Size",
+    "March",
+    "Net MOIC",
+    "Mar-",
+    "Net Performance"
+  ],
+  "source_name": "BlueOwl GP Stake 2026Q1.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:11:49+00:00",
+  "stats": {
+    "blocks": 231,
+    "images": 9,
+    "tables": 1,
+    "chars": 34114,
+    "pages": 15
+  },
+  "exhibit_count": 10,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Blue Owl GP Stakes V (Fund V)"
+    },
+    {
+      "level": 1,
+      "text": "Quarterly Investor Letter | 1Q 2026"
+    },
+    {
+      "level": 1,
+      "text": "Dow Jones"
+    },
+    {
+      "level": 2,
+      "text": "2025 Large Buyout Performance Ranking1"
+    },
+    {
+      "level": 2,
+      "text": "Executive Summary | 1Q 2026"
+    },
+    {
+      "level": 2,
+      "text": "We are pleased to provide you with the investor report for Blue Owl GP Stakes Fund V (“GP Stakes V”, “Fund V”"
+    },
+    {
+      "level": 1,
+      "text": "GPSC Platform Update"
+    },
+    {
+      "level": 2,
+      "text": "Lastly, we continue to make strong progress in raising capital for Blue Owl GP Stakes VI, having closed on"
+    },
+    {
+      "level": 1,
+      "text": "GPSC Content"
+    },
+    {
+      "level": 2,
+      "text": "second quarter:"
+    },
+    {
+      "level": 2,
+      "text": "In case you missed it, we released the following content in the first quarter:"
+    },
+    {
+      "level": 2,
+      "text": "Market Commentary | 1Q 2026"
+    },
+    {
+      "level": 2,
+      "text": "DPI Trends: Structural or Cyclical?"
+    },
+    {
+      "level": 2,
+      "text": "Fund Overview | 1Q 2026"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Partner Managers"
+    },
+    {
+      "level": 1,
+      "text": "$12.9 billion"
+    },
+    {
+      "level": 3,
+      "text": "Total Commitments"
+    },
+    {
+      "level": 1,
+      "text": "$12.0 billion"
+    },
+    {
+      "level": 3,
+      "text": "Committed to investments"
+    },
+    {
+      "level": 1,
+      "text": "$8.2 billion"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Gross Distributions by Type"
+    },
+    {
+      "level": 3,
+      "text": "Called Capital"
+    },
+    {
+      "level": 3,
+      "text": "Called"
+    },
+    {
+      "level": 1,
+      "text": "$3.1 billion"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Net TVPI progression¹"
+    },
+    {
+      "level": 3,
+      "text": "Distributions back to"
+    },
+    {
+      "level": 3,
+      "text": "Limited Partners"
+    },
+    {
+      "level": 3,
+      "text": "Final Close"
+    },
+    {
+      "level": 3,
+      "text": "Partner Managers"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Diversification | 1Q 2026"
+    },
+    {
+      "level": 2,
+      "text": "Partner Manager Underlying Portfolio Companies Partner Manager Asset Exposure"
+    },
+    {
+      "level": 2,
+      "text": "Select Partner Manager Highlights"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update | 1Q 2026"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update"
+    },
+    {
+      "level": 2,
+      "text": "GP Holding Value"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update | 1Q 2026"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update"
+    },
+    {
+      "level": 2,
+      "text": "CVC11,12"
+    },
+    {
+      "level": 2,
+      "text": "WarwickRe13"
+    },
+    {
+      "level": 2,
+      "text": "MBK14"
+    },
+    {
+      "level": 2,
+      "text": "Landmark15"
+    },
+    {
+      "level": 2,
+      "text": "I Squared"
+    },
+    {
+      "level": 2,
+      "text": "Dragoneer"
+    },
+    {
+      "level": 2,
+      "text": "DivCore"
+    },
+    {
+      "level": 2,
+      "text": "Lead Edge16"
+    },
+    {
+      "level": 2,
+      "text": "KPS"
+    },
+    {
+      "level": 2,
+      "text": "LBA Realty"
+    },
+    {
+      "level": 2,
+      "text": "Cerberus"
+    },
+    {
+      "level": 2,
+      "text": "PAI17"
+    },
+    {
+      "level": 2,
+      "text": "Stonepeak18"
+    },
+    {
+      "level": 2,
+      "text": "Linden"
+    },
+    {
+      "level": 2,
+      "text": "Bitkraft"
+    },
+    {
+      "level": 2,
+      "text": "Growth Curve"
+    },
+    {
+      "level": 2,
+      "text": "Total"
+    },
+    {
+      "level": 2,
+      "text": "LP Investments"
+    },
+    {
+      "level": 2,
+      "text": "Securities Received In-Kind19"
+    },
+    {
+      "level": 2,
+      "text": "Total"
+    },
+    {
+      "level": 2,
+      "text": "GPS V Securitization20"
+    },
+    {
+      "level": 2,
+      "text": "Credit Facility Drawings21"
+    },
+    {
+      "level": 2,
+      "text": "Total Fund"
+    }
+  ],
+  "summary": "1. #1 Large Buyout Firm per the 2025 HEC–Dow Jones Large Buyout Performance Rankings, composed by Professor Oliver Gottschalg based on aggregate performance for funds raised 2012–2021. Neither Blue Owl nor its employees "
+}

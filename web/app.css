@@ -422,3 +422,7 @@ table.data tr:nth-child(even) td{background:var(--chip)}
 .exited-funds{margin-top:26px; padding-top:18px; border-top:1px solid var(--line-soft)}
 .exited-funds h2{font-size:14px; font-weight:700; color:var(--muted); margin:0 0 12px; letter-spacing:.3px; text-transform:uppercase}
 .sector-cards .empty-note{grid-column:1 / -1; border:1px dashed var(--line); border-radius:5px; padding:22px; color:var(--muted); font-size:13px; text-align:center}
+/* portfolio funds grouped by strategy category: a labelled band per category */
+.cat-head{grid-column:1 / -1; display:flex; align-items:center; gap:9px; margin-top:10px; padding-bottom:6px; border-bottom:2px solid var(--line)}
+.cat-head b{font-size:14px; letter-spacing:.2px}
+.cat-head .cat-n{font-size:12px; color:var(--muted)}

@@ -197,7 +197,8 @@ def report_key(m: dict[str, Any]) -> tuple:
     """One edition per sector + sub-sector + quarter + type + language; a new upload with the same key
     replaces the old one. The sub-sector ("section": internal review / quarterly updates) exists for
     portfolio funds only and is empty elsewhere."""
-    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
+    # a dated report (a weekly update) is one edition per date
+    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "")
 
 
 def remove_duplicates(meta: dict[str, Any]) -> list[str]:
@@ -271,6 +272,8 @@ def api_add_sector(payload: dict[str, Any]):
     })
     if payload.get("section"):  # the portfolio sub-sector the fund belongs to
         sectors[-1]["section"] = str(payload["section"])
+    if payload.get("category"):  # the strategy group a fund is shown under (Private Credit, ABF, ...)
+        sectors[-1]["category"] = str(payload["category"])
     save_sectors(sectors)
     return sectors[-1]
 
@@ -295,7 +298,7 @@ def api_update_sector(sid: str, payload: dict[str, Any]):
         if s["id"] == sid:
             if "name_en" in payload and not (payload["name_en"] or "").strip():
                 raise HTTPException(400, "name_en required")
-            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space", "section"):
+            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space", "section", "category"):
                 if k in payload and payload[k] is not None:
                     s[k] = payload[k]
             save_sectors(sectors)
@@ -456,9 +459,11 @@ def _write_content(d: Path, meta: dict[str, Any], parsed: dict[str, Any], keep_t
 
 
 def ingest_report(src_path: Path, source_name: str, sector: str, year: int | None, quarter: int | None,
-                  nature: str = "full", language: str = "", title: str = "", keywords: str = "", section: str = "") -> dict[str, Any]:
+                  nature: str = "full", language: str = "", title: str = "", keywords: str = "", section: str = "",
+                  date: str = "") -> dict[str, Any]:
     """Store one .docx / .pdf as a report: copy it into a new report folder, parse it, write meta +
-    content, and replace any earlier edition with the same sector, quarter, type and language.
+    content, and replace any earlier edition with the same sector, quarter, type and language (and
+    date, for a dated report such as a weekly update).
     Used by the upload endpoint and by AI generation."""
     sectors = load_sectors()
     if not any(s["id"] == sector for s in sectors):
@@ -502,6 +507,8 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
         "source_ext": ext,
         "uploaded_at": now_iso(),
     }
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", (date or "").strip()):
+        meta["date"] = date.strip()
     _write_content(d, meta, parsed, keep_title=bool(meta["title"]))
     saved = read_meta(d) or meta
     # same sector + quarter + type + language already present: this upload replaces it
@@ -512,7 +519,7 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
 @app.post("/api/upload")
 async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year: int | None = Form(None),
                      quarter: int | None = Form(None), nature: str = Form("full"), language: str = Form(""),
-                     title: str = Form(""), keywords: str = Form(""), section: str = Form("")):
+                     title: str = Form(""), keywords: str = Form(""), section: str = Form(""), date: str = Form("")):
     ext = Path(file.filename or "").suffix.lower()
     if ext not in (".docx", ".pdf"):
         raise HTTPException(400, "Only .docx and .pdf reports are supported")
@@ -520,7 +527,7 @@ async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year
     try:
         with tmp.open("wb") as fh:
             shutil.copyfileobj(file.file, fh)
-        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords, section)
+        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords, section, date)
     finally:
         tmp.unlink(missing_ok=True)
 
@@ -717,30 +724,34 @@ def macro_data(path: str):
 
 
 @app.post("/api/macro/upload")
-def macro_upload(files: list[UploadFile] = File(...), year: int = Form(...), month: int = Form(...), title: str = Form("")):
+def macro_upload(files: list[UploadFile] = File(...), year: int = Form(...), month: int = Form(...), title: str = Form(""), topic: str = Form("rates")):
     """Read the dropped slide images with Claude, in the order given, and save them as the month's brief
-    (replacing any earlier upload for that month)."""
+    of the topic (weekly updates, rate expectations), replacing any earlier upload for that month."""
     em = _macro_module()
+    if topic not in em.TOPICS:
+        raise HTTPException(400, f"topic must be one of {', '.join(em.TOPICS)}")
     by_type = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp", "image/gif": ".gif"}
     images = []
     for up in files:
         ext = Path(up.filename or "").suffix.lower() or by_type.get(up.content_type or "", "")
         images.append((up.file.read(), ext))
     try:
-        doc = em.extract(year, month, title, images)
+        doc = em.extract(year, month, title, images, topic=topic)
     except em.MissingKeyError as exc:
         raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
     except em.ExtractionError as exc:
         raise HTTPException(422, str(exc))
-    return {"ok": True, "year": doc["year"], "month": doc["month"], "pages": len(doc["pages"]), "warnings": doc.get("warnings") or []}
+    return {"ok": True, "topic": topic, "year": doc["year"], "month": doc["month"], "pages": len(doc["pages"]), "warnings": doc.get("warnings") or []}
 
 
-@app.post("/api/macro/{ym}/translate")
-def macro_translate(ym: str):
+@app.post("/api/macro/{topic}/{ym}/translate")
+def macro_translate(topic: str, ym: str):
     """Create the English labels of a brief that still shows Chinese (Claude translates them)."""
     em = _macro_module()
+    if topic not in em.TOPICS:
+        raise HTTPException(400, f"topic must be one of {', '.join(em.TOPICS)}")
     try:
-        doc = em.translate_month(ym)
+        doc = em.translate_month(ym, topic=topic)
     except em.MissingKeyError as exc:
         raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
     except em.ExtractionError as exc:

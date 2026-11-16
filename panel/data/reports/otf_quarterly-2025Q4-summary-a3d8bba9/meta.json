@@ -1,0 +1,274 @@
+{
+  "id": "otf_quarterly-2025Q4-summary-a3d8bba9",
+  "title": "Blue Owl Technology Finance Corp.",
+  "sector": "otf_quarterly",
+  "year": 2025,
+  "quarter": 4,
+  "period": "4Q2025",
+  "period_key": 20254,
+  "nature": "summary",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "Regular Dividend",
+    "Blue Owl",
+    "December",
+    "OTF",
+    "GAAP",
+    "Interest"
+  ],
+  "source_name": "OTF 2025Q4 Earnings Presentation.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:18:15+00:00",
+  "stats": {
+    "blocks": 315,
+    "images": 9,
+    "tables": 10,
+    "chars": 23758,
+    "pages": 23
+  },
+  "exhibit_count": 19,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Blue Owl"
+    },
+    {
+      "level": 1,
+      "text": "Quarterly Earnings Presentation"
+    },
+    {
+      "level": 1,
+      "text": "Review of Q4'25"
+    },
+    {
+      "level": 2,
+      "text": "Earnings Summary"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Update"
+    },
+    {
+      "level": 2,
+      "text": "Balance Sheet Update"
+    },
+    {
+      "level": 2,
+      "text": "Dividends & Repurchase Program"
+    },
+    {
+      "level": 1,
+      "text": "Overview of Blue Owl Technology Finance Corp. (NYSE: OTF)"
+    },
+    {
+      "level": 2,
+      "text": "Publicly traded specialty financing company focused on lending to upper middle-market technology companies"
+    },
+    {
+      "level": 1,
+      "text": "#1 Technology-Focused Public Market Player7 Well-Positioned in Current Environment"
+    },
+    {
+      "level": 2,
+      "text": "Market Cap7 Annualized Current"
+    },
+    {
+      "level": 2,
+      "text": "Dividend Yield6 Leverage5 Liquidity4 Credit Ratings"
+    },
+    {
+      "level": 2,
+      "text": "Profile8"
+    },
+    {
+      "level": 2,
+      "text": "Cash & Undrawn"
+    },
+    {
+      "level": 2,
+      "text": "Investment Grade Ratings"
+    },
+    {
+      "level": 2,
+      "text": "Debt-to-Equity"
+    },
+    {
+      "level": 2,
+      "text": "Debt Capacity"
+    },
+    {
+      "level": 1,
+      "text": "Defensively Positioned, Diversified Software Portfolio Offering Compelling Combination of Excellent Credit Quality & Attractive Returns"
+    },
+    {
+      "level": 1,
+      "text": "81% senior secured, 77% first lien investments, 96% floating rate debt investments9"
+    },
+    {
+      "level": 2,
+      "text": "Debt Portfolio"
+    },
+    {
+      "level": 2,
+      "text": "Annual Net Gain Rate"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Size9 Portfolio Companies Portfolio Company EBITDA10"
+    },
+    {
+      "level": 2,
+      "text": "Yield11"
+    },
+    {
+      "level": 2,
+      "text": "Since Inception12"
+    },
+    {
+      "level": 1,
+      "text": "+23 bps"
+    },
+    {
+      "level": 1,
+      "text": "Portfolio Highlights – New Quarterly Portfolio Activity"
+    },
+    {
+      "level": 3,
+      "text": "For Three Months Ended"
+    },
+    {
+      "level": 3,
+      "text": "Average New Investment Commitment Amount in New Portfolio"
+    },
+    {
+      "level": 1,
+      "text": "Portfolio Highlights - Asset Mix"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Company"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Size9"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Companies"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Industries"
+    },
+    {
+      "level": 2,
+      "text": "Debt Portfolio"
+    },
+    {
+      "level": 2,
+      "text": "EBITDA10"
+    },
+    {
+      "level": 2,
+      "text": "Yield11"
+    },
+    {
+      "level": 1,
+      "text": "Weighted Average Borrower Statistics10:"
+    },
+    {
+      "level": 3,
+      "text": "First-Lien Debt Investments"
+    },
+    {
+      "level": 1,
+      "text": "Portfolio Highlights - Diversification"
+    },
+    {
+      "level": 1,
+      "text": "Borrower Diversification"
+    },
+    {
+      "level": 1,
+      "text": "Industry Diversification"
+    },
+    {
+      "level": 1,
+      "text": "Top 10 positions represent 16% of"
+    },
+    {
+      "level": 1,
+      "text": "the portfolio at"
+    },
+    {
+      "level": 1,
+      "text": "fair value"
+    },
+    {
+      "level": 1,
+      "text": "Quarterly Operating Results Detail"
+    },
+    {
+      "level": 3,
+      "text": "Investment Income"
+    },
+    {
+      "level": 3,
+      "text": "Total Interest From Investments"
+    },
+    {
+      "level": 3,
+      "text": "Total Investment Income"
+    },
+    {
+      "level": 3,
+      "text": "Expenses"
+    },
+    {
+      "level": 3,
+      "text": "Total Expenses"
+    },
+    {
+      "level": 3,
+      "text": "Net Investment Income before Taxes"
+    },
+    {
+      "level": 3,
+      "text": "Net Investment Income"
+    },
+    {
+      "level": 3,
+      "text": "Adjusted Net Investment Income1"
+    },
+    {
+      "level": 3,
+      "text": "Net Income"
+    },
+    {
+      "level": 3,
+      "text": "Adjusted Net Income1"
+    },
+    {
+      "level": 1,
+      "text": "Net Asset Value Per Share Bridge"
+    },
+    {
+      "level": 3,
+      "text": "GAAP Net Investment Income"
+    },
+    {
+      "level": 3,
+      "text": "Per Share: $0.26"
+    },
+    {
+      "level": 1,
+      "text": "Portfolio Highlights - Net Interest Margin"
+    },
+    {
+      "level": 1,
+      "text": "Portfolio Highlights - Internal Ratings"
+    }
+  ],
+  "summary": "New Investment Commitments (Net of Sell Downs) $572,021 $819,603 $1,473,047 $1,007,828 $2,290,503"
+}
