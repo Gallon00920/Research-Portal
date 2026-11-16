@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-15T20:51:18.637099+00:00",
+  "updatedAt": "2026-11-16T00:44:43.461634+00:00",
   "scope": {
     "regions": [
       "US",
@@ -172,180 +172,6 @@
     }
   },
   "dates": {
-    "2026-08-18": {
-      "byGp": {
-        "Blue Owl": [],
-        "KKR": [
-          {
-            "id": "2026-09-11-kkr-static-clo",
-            "title": "KKR reopens Lending Partners shelf with $624 million static CLO",
-            "titleZh": "KKR重启Lending Partners系列，发行6.24亿美元静态CLO",
-            "summary": "KKR priced a $624 million static private-credit CLO under its Lending Partners shelf, according to Private Credit Daily citing Creditflux. The vehicle uses an existing fixed pool of loans and pays down as assets mature, rather than relying on a reinvestment period. For credit investors, the structure is relevant because it converts seasoned direct-lending exposure into rated term funding during a thinner origination market.",
-            "summaryZh": "据Private Credit Daily援引Creditflux报道，KKR在其Lending Partners系列下完成一笔6.24亿美元静态私募信贷CLO的定价。该产品采用既有的固定贷款资产池，随资产到期逐步偿还，而非依赖再投资期。对信贷投资者而言，该结构值得关注，因为它在新增放贷较为清淡的市场环境下，将已有一定存续期的直接贷款敞口转化为具评级的定期融资。",
-            "url": "https://www.privatecreditdaily.com/story/kkr-reopens-lending-partners-shelf-with-624m-static-clo",
-            "source": "Private Credit Daily",
-            "publishedAt": "2026-08-18",
-            "region": "US",
-            "gps": [
-              "KKR"
-            ],
-            "sectors": [
-              "private-credit",
-              "clo"
-            ],
-            "curation": "manual_seed",
-            "classificationBreakdown": {
-              "llmReasonZh": "不适用"
-            },
-            "strategies": [
-              "private-credit",
-              "clo"
-            ],
-            "events": [
-              "financing"
-            ],
-            "rating": {
-              "parts": {
-                "institution": {
-                  "value": 1.0,
-                  "code": "title_names_gp",
-                  "gps": [
-                    "KKR"
-                  ]
-                },
-                "strategy": {
-                  "value": 1.0,
-                  "code": "title_hits_strategy",
-                  "tagValue": 1.0,
-                  "strategies": [
-                    "private-credit",
-                    "clo"
-                  ]
-                },
-                "event": {
-                  "value": 0.7,
-                  "code": "financing",
-                  "ruleValue": 0.7,
-                  "events": [
-                    "financing"
-                  ]
-                },
-                "source": {
-                  "value": 0.8,
-                  "code": "tier_trade",
-                  "source": "Private Credit Daily"
-                },
-                "freshness": {
-                  "value": 0.8,
-                  "code": "estimated"
-                }
-              },
-              "weights": {
-                "institution": 18,
-                "strategy": 12,
-                "event": 30,
-                "source": 25,
-                "freshness": 15
-              },
-              "score": 83,
-              "retrievedAt": "2026-10-29T09:02:01.310935+00:00"
-            },
-            "summaryZhLanguage": "Simplified Chinese"
-          }
-        ],
-        "CIFC": [],
-        "PAG": [],
-        "Pretium": [],
-        "Guggenheim": [],
-        "Neuberger": [],
-        "BasePoint": [],
-        "Bain Capital": [],
-        "Blackstone": [],
-        "Apollo": [],
-        "TPG": [],
-        "Golub": [],
-        "CVC": [],
-        "Canyon": []
-      },
-      "items": [
-        {
-          "id": "2026-09-11-kkr-static-clo",
-          "title": "KKR reopens Lending Partners shelf with $624 million static CLO",
-          "titleZh": "KKR重启Lending Partners系列，发行6.24亿美元静态CLO",
-          "summary": "KKR priced a $624 million static private-credit CLO under its Lending Partners shelf, according to Private Credit Daily citing Creditflux. The vehicle uses an existing fixed pool of loans and pays down as assets mature, rather than relying on a reinvestment period. For credit investors, the structure is relevant because it converts seasoned direct-lending exposure into rated term funding during a thinner origination market.",
-          "summaryZh": "据Private Credit Daily援引Creditflux报道，KKR在其Lending Partners系列下完成一笔6.24亿美元静态私募信贷CLO的定价。该产品采用既有的固定贷款资产池，随资产到期逐步偿还，而非依赖再投资期。对信贷投资者而言，该结构值得关注，因为它在新增放贷较为清淡的市场环境下，将已有一定存续期的直接贷款敞口转化为具评级的定期融资。",
-          "url": "https://www.privatecreditdaily.com/story/kkr-reopens-lending-partners-shelf-with-624m-static-clo",
-          "source": "Private Credit Daily",
-          "publishedAt": "2026-08-18",
-          "region": "US",
-          "gps": [
-            "KKR"
-          ],
-          "sectors": [
-            "private-credit",
-            "clo"
-          ],
-          "curation": "manual_seed",
-          "classificationBreakdown": {
-            "llmReasonZh": "不适用"
-          },
-          "strategies": [
-            "private-credit",
-            "clo"
-          ],
-          "events": [
-            "financing"
-          ],
-          "rating": {
-            "parts": {
-              "institution": {
-                "value": 1.0,
-                "code": "title_names_gp",
-                "gps": [
-                  "KKR"
-                ]
-              },
-              "strategy": {
-                "value": 1.0,
-                "code": "title_hits_strategy",
-                "tagValue": 1.0,
-                "strategies": [
-                  "private-credit",
-                  "clo"
-                ]
-              },
-              "event": {
-                "value": 0.7,
-                "code": "financing",
-                "ruleValue": 0.7,
-                "events": [
-                  "financing"
-                ]
-              },
-              "source": {
-                "value": 0.8,
-                "code": "tier_trade",
-                "source": "Private Credit Daily"
-              },
-              "freshness": {
-                "value": 0.8,
-                "code": "estimated"
-              }
-            },
-            "weights": {
-              "institution": 18,
-              "strategy": 12,
-              "event": 30,
-              "source": 25,
-              "freshness": 15
-            },
-            "score": 83,
-            "retrievedAt": "2026-10-29T09:02:01.310935+00:00"
-          },
-          "summaryZhLanguage": "Simplified Chinese"
-        }
-      ]
-    },
     "2026-08-19": {
       "byGp": {
         "Blue Owl": [
@@ -206658,6 +206484,184 @@
               "finalScore": 20.77,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-c9af23995eed",
+            "title": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report - Stocktwits",
+            "titleZh": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report - Stocktwits",
+            "summary": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report Stocktwits",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZU01REM5MExFeHFGTEhEb2VTaS1tVlc3bUV6S3pBQm1vUF91Y25WMXloTTQ0Mks3ZkZ6alFSMFItVFFNQ2pHOU5PMlZpSWtQMW0wWGJFeWQxUU1CTl80ZEV1UWlvSkttZ1c2bE8yejVNOFlhdGlpcTlaS2NoM2twYUlOUm9GMXhhN1owOGJBdDVUVWE2M1ZSUU80ekVJR0huV1Q1Vmw3UWFoY1N6SVpta2N6UjJwT3ZSY3lWUzhMdTQ1ejM1WS1GcXllMmVZUW5KV0w0?oc=5",
+            "source": "Stocktwits",
+            "publishedAt": "2026-11-14",
+            "lede": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report Stocktwits",
+            "articleExcerpt": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report - Stocktwits. Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report Stocktwits",
+            "contentFingerprint": "46bc462fe8ff3651",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Stocktwits"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 67,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.07,
+              "finalScore": 8.07,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-14-70375efea20a",
+            "title": "Blue Owl Inc. now fully covers its $0.23 divide... - Pluang",
+            "titleZh": "Blue Owl Inc. now fully covers its $0.23 divide... - Pluang",
+            "summary": "Blue Owl Inc. now fully covers its $0.23 divide... Pluang",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQmRxRXBHVUFRRm5jTjlhZFFLZ0VLTEVpRGZpMTFzSHBwNVNUdjlUNkpSWmxGM01HcVNhUmZrbmxKeG83MlhLS3JfWG5wUjA2LWlGNVJHRzZwZTctUHRadVRXQUdNcXNkaHZZS21UVll5Sy02bWNBTU1tdm9YNXJPaU82U0MwRUFvNmlrbk1IWXJXZU9lbnc?oc=5",
+            "source": "Pluang",
+            "publishedAt": "2026-11-14",
+            "lede": "Blue Owl Inc. now fully covers its $0.23 divide... Pluang",
+            "articleExcerpt": "Blue Owl Inc. now fully covers its $0.23 divide... - Pluang. Blue Owl Inc. now fully covers its $0.23 divide... Pluang",
+            "contentFingerprint": "7fb577efab8c45bb",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Pluang"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.83,
+              "finalScore": 7.83,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -207439,6 +207443,105 @@
               "keywordScore": 9,
               "semanticScore": 4.84,
               "finalScore": 13.84,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-14-e5381aeeb826",
+            "title": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses - Business Today",
+            "titleZh": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses - Business Today",
+            "summary": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses Business Today",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOdlg5d1huRERyNTVjalRFNWZ1QzUydmhFWmx0TE90UklwLXpZR2dxRjJBMXZGbFl5WVN1SERHVUhBNjdMNmFRd0tTalNRa1hMc0w5dUwtb0NBMGpSTXFUdmQ1MHcwNzZoNUFnYTl0UXJWQjVvQTRGTnB1LW5kOWtBMXJKS1pJb2gtZV9MT0lBMXQyb005eEhHTmZMQUJxdUlNLVYyb1BldkRqZHY4YnpmOWMySWhDa09vXzJNRGwxRk92bWRqX2Vmc2k5X0RkR0h4VGR2MTJ1eDhCd2ZBUUhTb2VvQlJZVFJjRGFMMV9UNmZTVjQ3OTNQWTF1VG1Cc0NtdnlnVWZwNG1QZ9IBjwJBVV95cUxOMC0tbG5KV1RmR2JfR3psQjZQZmxVRFJRTklzUE9JTHduRVo4RGphbkgtNnRZVW1NRFRJRUkyX2dMV21SN0FmSTBlc1AyWFozeDVEblE4a0FwdTZaT0dCVE53d0RHbXhFNXFBaFdDU3owbWpNSzBwcy1VMFRzWDZJZHlpMEJ3eHZNMHphSXN2OW1mNlVQTDdYamtVVmN0dFZFWlFJNjF4emU2U2V3bFBnUU1McktLaVpwRkYxcEtZNUswMC1wMkV6X2pIeTAxM1NMTlQ3MUFMSjczazY1OVNBeEh1UlNwQktsUVEyM0c3aHJlTVJsVXM0NE94WVZLc3pyM2FGUWYyR0NncjY3V1J3?oc=5",
+            "source": "Business Today",
+            "publishedAt": "2026-11-14",
+            "lede": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses Business Today",
+            "articleExcerpt": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses - Business Today. Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses Business Today",
+            "contentFingerprint": "a4fa3d33c40e8845",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.69,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Business Today"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 4.61,
+              "finalScore": 10.61,
               "semanticEnabled": true
             }
           }
@@ -208293,6 +208396,184 @@
           }
         },
         {
+          "id": "2026-11-14-c9af23995eed",
+          "title": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report - Stocktwits",
+          "titleZh": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report - Stocktwits",
+          "summary": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report Stocktwits",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNZU01REM5MExFeHFGTEhEb2VTaS1tVlc3bUV6S3pBQm1vUF91Y25WMXloTTQ0Mks3ZkZ6alFSMFItVFFNQ2pHOU5PMlZpSWtQMW0wWGJFeWQxUU1CTl80ZEV1UWlvSkttZ1c2bE8yejVNOFlhdGlpcTlaS2NoM2twYUlOUm9GMXhhN1owOGJBdDVUVWE2M1ZSUU80ekVJR0huV1Q1Vmw3UWFoY1N6SVpta2N6UjJwT3ZSY3lWUzhMdTQ1ejM1WS1GcXllMmVZUW5KV0w0?oc=5",
+          "source": "Stocktwits",
+          "publishedAt": "2026-11-14",
+          "lede": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report Stocktwits",
+          "articleExcerpt": "Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report - Stocktwits. Blue Owl Co-CEO Admits Fallout From Halting Redemptions Is Causing Headaches: Report Stocktwits",
+          "contentFingerprint": "46bc462fe8ff3651",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Stocktwits"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 67,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.07,
+            "finalScore": 8.07,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-70375efea20a",
+          "title": "Blue Owl Inc. now fully covers its $0.23 divide... - Pluang",
+          "titleZh": "Blue Owl Inc. now fully covers its $0.23 divide... - Pluang",
+          "summary": "Blue Owl Inc. now fully covers its $0.23 divide... Pluang",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNQmRxRXBHVUFRRm5jTjlhZFFLZ0VLTEVpRGZpMTFzSHBwNVNUdjlUNkpSWmxGM01HcVNhUmZrbmxKeG83MlhLS3JfWG5wUjA2LWlGNVJHRzZwZTctUHRadVRXQUdNcXNkaHZZS21UVll5Sy02bWNBTU1tdm9YNXJPaU82U0MwRUFvNmlrbk1IWXJXZU9lbnc?oc=5",
+          "source": "Pluang",
+          "publishedAt": "2026-11-14",
+          "lede": "Blue Owl Inc. now fully covers its $0.23 divide... Pluang",
+          "articleExcerpt": "Blue Owl Inc. now fully covers its $0.23 divide... - Pluang. Blue Owl Inc. now fully covers its $0.23 divide... Pluang",
+          "contentFingerprint": "7fb577efab8c45bb",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Pluang"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.83,
+            "finalScore": 7.83,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-bb92c72dd572",
           "title": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
           "titleZh": "KKR stock: RWE joint venture reaches financial close in UK wind - ad-hoc-news.de",
@@ -209058,6 +209339,105 @@
             "keywordScore": 9,
             "semanticScore": 4.84,
             "finalScore": 13.84,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-14-e5381aeeb826",
+          "title": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses - Business Today",
+          "titleZh": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses - Business Today",
+          "summary": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses Business Today",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxOdlg5d1huRERyNTVjalRFNWZ1QzUydmhFWmx0TE90UklwLXpZR2dxRjJBMXZGbFl5WVN1SERHVUhBNjdMNmFRd0tTalNRa1hMc0w5dUwtb0NBMGpSTXFUdmQ1MHcwNzZoNUFnYTl0UXJWQjVvQTRGTnB1LW5kOWtBMXJKS1pJb2gtZV9MT0lBMXQyb005eEhHTmZMQUJxdUlNLVYyb1BldkRqZHY4YnpmOWMySWhDa09vXzJNRGwxRk92bWRqX2Vmc2k5X0RkR0h4VGR2MTJ1eDhCd2ZBUUhTb2VvQlJZVFJjRGFMMV9UNmZTVjQ3OTNQWTF1VG1Cc0NtdnlnVWZwNG1QZ9IBjwJBVV95cUxOMC0tbG5KV1RmR2JfR3psQjZQZmxVRFJRTklzUE9JTHduRVo4RGphbkgtNnRZVW1NRFRJRUkyX2dMV21SN0FmSTBlc1AyWFozeDVEblE4a0FwdTZaT0dCVE53d0RHbXhFNXFBaFdDU3owbWpNSzBwcy1VMFRzWDZJZHlpMEJ3eHZNMHphSXN2OW1mNlVQTDdYamtVVmN0dFZFWlFJNjF4emU2U2V3bFBnUU1McktLaVpwRkYxcEtZNUswMC1wMkV6X2pIeTAxM1NMTlQ3MUFMSjczazY1OVNBeEh1UlNwQktsUVEyM0c3aHJlTVJsVXM0NE94WVZLc3pyM2FGUWYyR0NncjY3V1J3?oc=5",
+          "source": "Business Today",
+          "publishedAt": "2026-11-14",
+          "lede": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses Business Today",
+          "articleExcerpt": "Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses - Business Today. Blackstone-backed AirTrunk plans ₹1.03 lakh crore investment in Andhra Pradesh for two data centre campuses Business Today",
+          "contentFingerprint": "a4fa3d33c40e8845",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.69,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Business Today"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 4.61,
+            "finalScore": 10.61,
             "semanticEnabled": true
           }
         },
@@ -210094,6 +210474,370 @@
               "finalScore": 15.84,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-15-81bb2ae1a5f3",
+            "title": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit - TipRanks",
+            "titleZh": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit - TipRanks",
+            "summary": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit TipRanks",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNW51VW9UTy1QbWhSQ3ZKMWhlTmpDSG9ySTZEX0I4cGV2VjVDVllYdGx3OVR3QzJhUVBjX2hVNzA5Nk1Obm42OXRGV0lSaUVrYk5qa0NhTlF3TThuWjlnU3Fna1V3VnpSVlVfbXY3X0UyT0JYWFJfN3ZVQ0hkOEpEY1BRcTBUTXFmd2o4NzlkWUFSTTFpczY4aEVzM2t0WkRzcFlsaHQ1amNrN21aUmRGZnRsVk4xMDIx?oc=5",
+            "source": "TipRanks",
+            "publishedAt": "2026-11-15",
+            "lede": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit TipRanks",
+            "articleExcerpt": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit - TipRanks. KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit TipRanks",
+            "contentFingerprint": "d35b5f7eb615e7f3",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "TipRanks"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 48,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.25,
+              "finalScore": 16.25,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-1b5f28493b67",
+            "title": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "titleZh": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "summary": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWZ4bkRwdk81X2ROTE5ZRlFIcFM1Nm9ISENzOUtKc2FzYTZNeU9Ec2VqczZSUWRRMXdVekI4WVdNQVoyc0pYRkExMUpwS0M1d2NDSWFrSHpEVDdBZUhhSF9LdW90dFZtVVY5RkpkRHdDd083ZmpWcWxWOWhBbkpVcnlpU1liOVFBMUlkSUtodTB4cDJoNlZSa1JKSWFwaU1ob1JEQw?oc=5",
+            "source": "EnergyNow.com",
+            "publishedAt": "2026-11-15",
+            "lede": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "articleExcerpt": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com. Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "contentFingerprint": "6a1b3484b7e2e0bd",
+            "region": "Global",
+            "gps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "titleGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR",
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "EnergyNow.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 4.29,
+              "finalScore": 11.29,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-4ec2ec8bc088",
+            "title": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions - KKR: A Leading Global Investment Firm",
+            "titleZh": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions - KKR: A Leading Global Investment Firm",
+            "summary": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions KKR: A Leading Global Investment Firm",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBTNVRvclVad0VDREl1NDNKY2FrRVlITjNHcXZUUHBMR3l4VmQzSHNyY19EQ3NVM0dNNUR6REJEMktzMlRBTlhWbUtuYWZrcE9tMENLM1dHZ1p4aGRJaUl4czVpYzRkNzBEdWdld0d1dWJvUmVDUk1hOXhFZUY?oc=5",
+            "source": "KKR: A Leading Global Investment Firm",
+            "publishedAt": "2026-11-15",
+            "lede": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions KKR: A Leading Global Investment Firm",
+            "articleExcerpt": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions - KKR: A Leading Global Investment Firm. Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions KKR: A Leading Global Investment Firm",
+            "contentFingerprint": "918e7492d46b75b9",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "KKR: A Leading Global Investment Firm"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 5.13,
+              "finalScore": 11.129999999999999,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-94eb8abd1d76",
+            "title": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa - Financial Times",
+            "titleZh": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa - Financial Times",
+            "summary": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa Financial Times",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm45cDJUeFgxT1F6ZFN5aF9xQVViT3BBZk5vXzRxMnVPRkNYU3MwZ0t0T3pTMHItRFY5Q0tyMVI1VV9GbXVaZlRnQVRTcXJLQ2ZwZzBCbUhRdkhpdjJBWlNSYlF2VVc3cFMwUFdPVUZYMFNjdFZMcVY5eHhMRjZoS3JvMkY?oc=5",
+            "source": "Financial Times",
+            "publishedAt": "2026-11-15",
+            "lede": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa Financial Times",
+            "articleExcerpt": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa - Financial Times. Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa Financial Times",
+            "contentFingerprint": "d57aea74a93e2213",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 1.0,
+                  "code": "tier_top",
+                  "source": "Financial Times"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 81,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 4.89,
+              "finalScore": 10.89,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -210399,7 +211143,205 @@
             }
           }
         ],
-        "Blackstone": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-15-1b5f28493b67",
+            "title": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "titleZh": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "summary": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWZ4bkRwdk81X2ROTE5ZRlFIcFM1Nm9ISENzOUtKc2FzYTZNeU9Ec2VqczZSUWRRMXdVekI4WVdNQVoyc0pYRkExMUpwS0M1d2NDSWFrSHpEVDdBZUhhSF9LdW90dFZtVVY5RkpkRHdDd083ZmpWcWxWOWhBbkpVcnlpU1liOVFBMUlkSUtodTB4cDJoNlZSa1JKSWFwaU1ob1JEQw?oc=5",
+            "source": "EnergyNow.com",
+            "publishedAt": "2026-11-15",
+            "lede": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "articleExcerpt": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com. Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "contentFingerprint": "6a1b3484b7e2e0bd",
+            "region": "Global",
+            "gps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "titleGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR",
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "EnergyNow.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 4.29,
+              "finalScore": 11.29,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-54af7da49b32",
+            "title": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing - investingLive",
+            "titleZh": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing - investingLive",
+            "summary": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing investingLive",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ2tnOFg4MFNKSmFHLVEwT0ZCVzd6bGNsRDlMZnd3dXJCRS1zUlZmQ0xHY0FEcnhoN0w3eUdCOUtSNVNzOFFSWk1zYWRQVF9GSlhvbno3VDBiaWhxdlNGRjRueGo0M25HOC1zNkdKcU5GTUhqdERtMlgtVWh4VS1IT1F0ZW9lNjZ6Tl92ekJJaFNBbWVSbGFIVi0teTRXNlFzZ0dyTmFxQy1tLXJvcHZYSE15d0NtLUVwUU1yUEVHbXhUTkE?oc=5",
+            "source": "investingLive",
+            "publishedAt": "2026-11-15",
+            "lede": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing investingLive",
+            "articleExcerpt": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing - investingLive. Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing investingLive",
+            "contentFingerprint": "ed824fb387d765dc",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "data-center",
+              "ai"
+            ],
+            "sectors": [
+              "data-center",
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center",
+                "ai"
+              ],
+              "titleStrategies": [
+                "data-center",
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.71,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center",
+                    "ai"
+                  ],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "investingLive"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 17,
+              "semanticScore": 5.08,
+              "finalScore": 22.08,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Apollo": [
           {
             "id": "2026-11-15-68508d1b869d",
@@ -210787,6 +211729,370 @@
           }
         },
         {
+          "id": "2026-11-15-81bb2ae1a5f3",
+          "title": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit - TipRanks",
+          "titleZh": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit - TipRanks",
+          "summary": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit TipRanks",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPNW51VW9UTy1QbWhSQ3ZKMWhlTmpDSG9ySTZEX0I4cGV2VjVDVllYdGx3OVR3QzJhUVBjX2hVNzA5Nk1Obm42OXRGV0lSaUVrYk5qa0NhTlF3TThuWjlnU3Fna1V3VnpSVlVfbXY3X0UyT0JYWFJfN3ZVQ0hkOEpEY1BRcTBUTXFmd2o4NzlkWUFSTTFpczY4aEVzM2t0WkRzcFlsaHQ1amNrN21aUmRGZnRsVk4xMDIx?oc=5",
+          "source": "TipRanks",
+          "publishedAt": "2026-11-15",
+          "lede": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit TipRanks",
+          "articleExcerpt": "KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit - TipRanks. KKR Credit Income Fund Reports NTA Estimate of AUD2.2960 Per Unit TipRanks",
+          "contentFingerprint": "d35b5f7eb615e7f3",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "TipRanks"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 48,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.25,
+            "finalScore": 16.25,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-1b5f28493b67",
+          "title": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+          "titleZh": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+          "summary": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWZ4bkRwdk81X2ROTE5ZRlFIcFM1Nm9ISENzOUtKc2FzYTZNeU9Ec2VqczZSUWRRMXdVekI4WVdNQVoyc0pYRkExMUpwS0M1d2NDSWFrSHpEVDdBZUhhSF9LdW90dFZtVVY5RkpkRHdDd083ZmpWcWxWOWhBbkpVcnlpU1liOVFBMUlkSUtodTB4cDJoNlZSa1JKSWFwaU1ob1JEQw?oc=5",
+          "source": "EnergyNow.com",
+          "publishedAt": "2026-11-15",
+          "lede": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+          "articleExcerpt": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com. Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+          "contentFingerprint": "6a1b3484b7e2e0bd",
+          "region": "Global",
+          "gps": [
+            "KKR",
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "titleGps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR",
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.36
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "EnergyNow.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 7,
+            "semanticScore": 4.29,
+            "finalScore": 11.29,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-4ec2ec8bc088",
+          "title": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions - KKR: A Leading Global Investment Firm",
+          "titleZh": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions - KKR: A Leading Global Investment Firm",
+          "summary": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions KKR: A Leading Global Investment Firm",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBTNVRvclVad0VDREl1NDNKY2FrRVlITjNHcXZUUHBMR3l4VmQzSHNyY19EQ3NVM0dNNUR6REJEMktzMlRBTlhWbUtuYWZrcE9tMENLM1dHZ1p4aGRJaUl4czVpYzRkNzBEdWdld0d1dWJvUmVDUk1hOXhFZUY?oc=5",
+          "source": "KKR: A Leading Global Investment Firm",
+          "publishedAt": "2026-11-15",
+          "lede": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions KKR: A Leading Global Investment Firm",
+          "articleExcerpt": "Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions - KKR: A Leading Global Investment Firm. Investing in Asia Pacific Infrastructure: Debunking Common Misconceptions KKR: A Leading Global Investment Firm",
+          "contentFingerprint": "918e7492d46b75b9",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "KKR: A Leading Global Investment Firm"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 5.13,
+            "finalScore": 11.129999999999999,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-94eb8abd1d76",
+          "title": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa - Financial Times",
+          "titleZh": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa - Financial Times",
+          "summary": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa Financial Times",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNZm45cDJUeFgxT1F6ZFN5aF9xQVViT3BBZk5vXzRxMnVPRkNYU3MwZ0t0T3pTMHItRFY5Q0tyMVI1VV9GbXVaZlRnQVRTcXJLQ2ZwZzBCbUhRdkhpdjJBWlNSYlF2VVc3cFMwUFdPVUZYMFNjdFZMcVY5eHhMRjZoS3JvMkY?oc=5",
+          "source": "Financial Times",
+          "publishedAt": "2026-11-15",
+          "lede": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa Financial Times",
+          "articleExcerpt": "Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa - Financial Times. Brookfield and KKR vie over $700mn deal for Gulf retailer Eyewa Financial Times",
+          "contentFingerprint": "d57aea74a93e2213",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 1.0,
+                "code": "tier_top",
+                "source": "Financial Times"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 81,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 4.89,
+            "finalScore": 10.89,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-15-65ec3e6fee45",
           "title": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
           "titleZh": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
@@ -211082,6 +212388,110 @@
           }
         },
         {
+          "id": "2026-11-15-54af7da49b32",
+          "title": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing - investingLive",
+          "titleZh": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing - investingLive",
+          "summary": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing investingLive",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPZ2tnOFg4MFNKSmFHLVEwT0ZCVzd6bGNsRDlMZnd3dXJCRS1zUlZmQ0xHY0FEcnhoN0w3eUdCOUtSNVNzOFFSWk1zYWRQVF9GSlhvbno3VDBiaWhxdlNGRjRueGo0M25HOC1zNkdKcU5GTUhqdERtMlgtVWh4VS1IT1F0ZW9lNjZ6Tl92ekJJaFNBbWVSbGFIVi0teTRXNlFzZ0dyTmFxQy1tLXJvcHZYSE15d0NtLUVwUU1yUEVHbXhUTkE?oc=5",
+          "source": "investingLive",
+          "publishedAt": "2026-11-15",
+          "lede": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing investingLive",
+          "articleExcerpt": "Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing - investingLive. Weekend - Blackstone’s QTS cuts AI data center debt sale 60% as investors push back on pricing investingLive",
+          "contentFingerprint": "ed824fb387d765dc",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "data-center",
+            "ai"
+          ],
+          "sectors": [
+            "data-center",
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center",
+              "ai"
+            ],
+            "titleStrategies": [
+              "data-center",
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.71,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center",
+                  "ai"
+                ],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "investingLive"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-16T00:42:46.799855+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 17,
+            "semanticScore": 5.08,
+            "finalScore": 22.08,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-15-68508d1b869d",
           "title": "The AI Entrepreneurship Boom - Apollo Global Management",
           "titleZh": "The AI Entrepreneurship Boom - Apollo Global Management",
@@ -211181,12 +212591,32 @@
           }
         }
       ]
+    },
+    "2026-11-16": {
+      "byGp": {
+        "Blue Owl": [],
+        "KKR": [],
+        "CIFC": [],
+        "PAG": [],
+        "Pretium": [],
+        "Guggenheim": [],
+        "Neuberger": [],
+        "BasePoint": [],
+        "Bain Capital": [],
+        "Blackstone": [],
+        "Apollo": [],
+        "TPG": [],
+        "Golub": [],
+        "CVC": [],
+        "Canyon": []
+      },
+      "items": []
     }
   },
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 18,
+      "count": 20,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -211194,12 +212624,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 64,
+      "count": 60,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -211207,7 +212637,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
@@ -211220,12 +212650,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 6,
+      "count": 7,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -211233,46 +212663,46 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
       "count": 3,
-      "selected": 1,
+      "selected": 0,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 6,
-      "selected": 3,
+      "count": 5,
+      "selected": 1,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
       "count": 10,
-      "selected": 5,
+      "selected": 2,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
@@ -211285,25 +212715,25 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
       "count": 10,
-      "selected": 6,
+      "selected": 4,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
       "queries": [
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 38,
+      "count": 33,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -211311,64 +212741,64 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 25,
-      "selected": 6,
+      "count": 26,
+      "selected": 3,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
       "queries": [
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 9,
-      "selected": 5,
+      "count": 10,
+      "selected": 2,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
       "count": 3,
-      "selected": 2,
+      "selected": 1,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
       "queries": [
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
       "count": 7,
-      "selected": 3,
+      "selected": 0,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
       "queries": [
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 30,
+      "count": 31,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -211376,12 +212806,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 395,
+      "count": 405,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -211398,9 +212828,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-15T20:47:09.649266+00:00",
+      "asOf": "2026-11-16T00:42:46.799855+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-15T20:47:09.649266+00:00"
+  "checkedAt": "2026-11-16T00:42:46.799855+00:00"
 }
