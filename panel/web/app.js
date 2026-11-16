@@ -15,7 +15,7 @@
 
 const $ = (id) => document.getElementById(id);
 const state = {
-  lang: 'cn', docLang: 'cn',  // Chinese unless the visitor switched (aid_lang in localStorage)
+  lang: 'cn', docLang: 'cn',  // Chinese unless the visitor switched (aid_lang2 in localStorage; the old aid_lang key is ignored so the default applies once)
   sectors: [], reports: [],
   meta: {current_year: new Date().getFullYear(), current_quarter: Math.floor(new Date().getMonth()/3)+1},
   view: 'dash', space: 'research', section: 'internal', sectorId: null, reportId: null, report: null,
@@ -144,7 +144,7 @@ function setToggle(id, right, disabled){
 function setLang(l){
   if (l === state.lang) return;
   state.lang = l;
-  try { localStorage.setItem('aid_lang', l); } catch (e) {}
+  try { localStorage.setItem('aid_lang2', l); } catch (e) {}
   applyI18n();
   if (window.NewsTracker) window.NewsTracker.setLanguage(l);
   if (window.FundFactors) window.FundFactors.setLanguage(l);
@@ -1473,7 +1473,7 @@ function showLogin(){
   setTimeout(() => $('loginPw').focus(), 50);
 }
 async function init(){
-  try { const l = localStorage.getItem('aid_lang'); if (l === 'en' || l === 'cn') state.lang = l; } catch (e) {}
+  try { const l = localStorage.getItem('aid_lang2'); if (l === 'en' || l === 'cn') state.lang = l; } catch (e) {}
   state.docLang = state.lang;
   try { const d = localStorage.getItem('aid_doclang'); if (d === 'en' || d === 'cn') state.docLang = d; } catch (e) {}
   applyI18n();
