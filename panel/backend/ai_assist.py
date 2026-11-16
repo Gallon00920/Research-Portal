@@ -161,11 +161,15 @@ def start_generation(job_id: str, params: dict[str, Any], files: list[Path], ing
             raise AIError("the date must be YYYY-MM-DD")
         year, quarter = int(date[:4]), (int(date[5:7]) - 1) // 3 + 1
         language = "en"
+        week = str(params.get("week") or "").strip()  # "YYYYMM WeekN": the week the update covers
+        if week and not re.fullmatch(r"\d{6} Week[1-6]", week):
+            raise AIError("the week must look like 202611 Week3")
     else:
         year, quarter = int(params.get("year") or 0), int(params.get("quarter") or 0)
         if not (2000 <= year <= 2100 and 1 <= quarter <= 4):
             raise AIError("year and quarter are required")
         language = params.get("language") if params.get("language") in ("en", "cn") else "en"
+        week = ""
     files = [p for p in files if p.is_file()]
     if not files:
         raise AIError("drop at least one source file")
@@ -179,7 +183,7 @@ def start_generation(job_id: str, params: dict[str, Any], files: list[Path], ing
     out_dir.mkdir(parents=True, exist_ok=True)
     job = {
         "id": job_id, "state": "queued", "step": "", "log": [], "reports": [], "outputs": [], "error": None,
-        "sector": sector, "sector_name": sector_name, "year": year, "quarter": quarter, "language": language, "date": date,
+        "sector": sector, "sector_name": sector_name, "year": year, "quarter": quarter, "language": language, "date": date, "week": week,
         "files": [p.name for p in files], "output_dir": str(out_dir),
         "title": str(params.get("title") or "").strip(), "started_at": now_iso(), "finished_at": None, "model": model_name(),
     }
@@ -322,15 +326,18 @@ def _generate_with_skill(job: dict[str, Any], files: list[Path], skill: dict[str
     if job.get("date"):
         # the weekly update: one English Word document from the week's broker reports, in the
         # Skill's own structure (Macro / Credit / Private Credit, one bullet per broker)
+        which = (f"for the week \"{job['week']}\" (the document is titled \"Weekly Market Update {job['week']}\")" if job.get("week")
+                 else f"for the week that contains {job['date']}")
         prompt1 = (
-            f"Produce Junson Capital's Weekly Market Update for the week that contains {job['date']} with the "
+            f"Produce Junson Capital's Weekly Market Update {which} with the "
             f"\"{skill.get('name') or 'weekly-market-update'}\" Skill, end to end, on the attached files: they are this week's "
             f"uploaded broker reports ({', '.join(p.name for p in files)}). Process only the reports that were uploaded; a "
             "broker in the Skill's registry that is not among them is simply left out. There is no human in this run: when the "
             "Skill would ask the user something (an unmatched file, an ambiguous week), decide sensibly, carry on, and list the "
             "point in a short \"Notes for the reviewer\" list at the very end of the document.\n"
-            "Write the document in English as a Word file with the Skill's title (\"Weekly Market Update YYYYMM WeekN\", the "
-            f"week number by the Skill's Monday-Sunday rule for {job['date']}) as its top title, and save it as "
+            "Write the document in English as a Word file with the Skill's title (\"Weekly Market Update YYYYMM WeekN\""
+            + (", exactly as given above" if job.get("week") else f", the week number by the Skill's Monday-Sunday rule for {job['date']}")
+            + ") as its top title, and save it as "
             f"/tmp/outputs/full_en.docx. {title_line} Produce nothing else."
         )
         content0: list[dict[str, Any]] = [{"type": "text", "text": prompt1}] + [{"type": "container_upload", "file_id": fid} for fid in uploads]
@@ -421,7 +428,7 @@ def _mock_documents(job: dict[str, Any], out_dir: Path) -> dict[Path, tuple[str,
         d.add_paragraph("JUNSON Capital Research")
         if job.get("date"):
             y, m, dd = (int(x) for x in job["date"].split("-"))
-            title = job["title"] or f"Weekly Market Update {y}{m:02d} Week{(dd + 6) // 7} (mock)"
+            title = job["title"] or f"Weekly Market Update {job.get('week') or f'{y}{m:02d} Week{(dd + 6) // 7}'} (mock)"
         else:
             title = job["title"] or (f"{period} {job['sector_name']} Quarterly Report" if language == "en" else f"{period} {job['sector_name']} 季度报告")
         d.add_paragraph(title if nature == "full" else title + (" — Summary" if language == "en" else " — 摘要"))

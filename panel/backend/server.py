@@ -552,7 +552,7 @@ def ai_config():
 
 @app.post("/api/ai/generate")
 async def ai_generate(files: list[UploadFile] = File(...), sector: str = Form(...), year: int = Form(0), quarter: int = Form(0),
-                      language: str = Form("en"), title: str = Form(""), date: str = Form("")):
+                      language: str = Form("en"), title: str = Form(""), date: str = Form(""), week: str = Form("")):
     """Start a generation job from the dropped source files (multipart, like a manual upload). A dated
     job (the Macro / Market weekly update) gives a date instead of a year and quarter."""
     s = next((x for x in load_sectors() if x["id"] == sector), None)
@@ -573,7 +573,7 @@ async def ai_generate(files: list[UploadFile] = File(...), sector: str = Form(..
         return ingest_report(Path(path), source_name, sector_id, y, q, nature, lang, ttl, keywords, "", date_)
 
     try:
-        job = ai_assist.start_generation(job_id, {"sector": sector, "year": year, "quarter": quarter, "language": language, "title": title, "date": date},
+        job = ai_assist.start_generation(job_id, {"sector": sector, "year": year, "quarter": quarter, "language": language, "title": title, "date": date, "week": week},
                                          saved, ingest, s.get("name_en") or sector)
     except ai_assist.AIError as exc:
         shutil.rmtree(d, ignore_errors=True)

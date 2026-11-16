@@ -897,6 +897,7 @@ function openUpload(sectorId, editMeta){
   $('upModes').hidden = !canAi;
   AI.space = upSpace;
   $('upDate').value = isEdit && editMeta.date ? editMeta.date : todayIso();
+  $('aiWeekYear').value = '';  // the week pickers follow the date until changed
   setUploadMode('file', sectorId);
   $('upOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
@@ -910,6 +911,30 @@ function applyDated(){
   if (dated){ const d = $('upDate').value || todayIso(); $('upDate').value = d; $('upYear').value = d.slice(0, 4); $('upQuarter').value = String(Math.floor((+d.slice(5, 7) - 1) / 3) + 1); }
   if (AI.mode === 'ai'){ $('upLangLbl').parentElement.hidden = dated; $('aiNote').textContent = t(dated ? 'ai_note_weekly' : 'ai_note'); }
   else $('upLangLbl').parentElement.hidden = false;
+  $('aiWeekRow').hidden = !(dated && AI.mode === 'ai');
+  if (dated && AI.mode === 'ai' && !$('aiWeekYear').value) setAiWeekFromDate($('upDate').value);
+  if (dated && AI.mode === 'ai') paintAiWeek();
+}
+/* the week of the update that Claude writes ("Weekly Market Update YYYYMM WeekN"): weeks run
+   Monday to Sunday and week 1 is the week that contains the 1st, the weekly-market-update
+   Skill's own rule; the pickers start from the date given and can be changed */
+function mondayWeekOfMonth(y, m, d){ const first = new Date(y, m - 1, 1).getDay(); const offset = (first + 6) % 7; return Math.floor((d - 1 + offset) / 7) + 1; }
+function weeksInMonth(y, m){ const days = new Date(y, m, 0).getDate(); return mondayWeekOfMonth(y, m, days); }
+function setAiWeekFromDate(iso){
+  const y = +iso.slice(0, 4), m = +iso.slice(5, 7), d = +iso.slice(8, 10);
+  $('aiWeekYear').value = y;
+  fillSelect($('aiWeekMonth'), Array.from({length: 12}, (_, i) => [String(i + 1), monthName(y, i + 1)]), String(m));
+  fillSelect($('aiWeekWeek'), Array.from({length: weeksInMonth(y, m)}, (_, i) => [String(i + 1), t('week_n', {n: i + 1})]), String(mondayWeekOfMonth(y, m, d)));
+}
+function aiWeekKey(){ const y = $('aiWeekYear').value, m = String($('aiWeekMonth').value).padStart(2, '0'), w = $('aiWeekWeek').value; return y && m && w ? y + m + ' Week' + w : ''; }
+function paintAiWeek(){
+  const y = +$('aiWeekYear').value, m = +$('aiWeekMonth').value;
+  if (y && m){
+    const cur = $('aiWeekWeek').value;
+    fillSelect($('aiWeekWeek'), Array.from({length: weeksInMonth(y, m)}, (_, i) => [String(i + 1), t('week_n', {n: i + 1})]), cur);
+    if (!$('aiWeekWeek').value) $('aiWeekWeek').value = '1';
+  }
+  $('aiWeekLabel').textContent = aiWeekKey() ? 'Weekly Market Update ' + aiWeekKey() + ' · ' + t('ai_week_hint') : '';
 }
 /* for the other views (the Macro / Market page): open the upload dialog on a sector */
 window.AIDPanel = {
@@ -1017,7 +1042,7 @@ async function aiGenerateSubmit(){
   if (datedUpload()) applyDated();
   fd.append('sector', $('upSector').value); fd.append('year', $('upYear').value); fd.append('quarter', $('upQuarter').value);
   fd.append('language', $('upLang').value); fd.append('title', $('upTitleIn').value.trim());
-  if (datedUpload()) fd.append('date', $('upDate').value);
+  if (datedUpload()){ fd.append('date', $('upDate').value); fd.append('week', aiWeekKey()); }
   btn.disabled = true; msg.className = 'form-msg'; msg.textContent = '…';
   try {
     const res = await DL.aiGenerate(fd);
@@ -1148,7 +1173,8 @@ function wireUpload(){
   $('upOverlay').addEventListener('click', e => { if (e.target === $('upOverlay')) closeUpload(); });
   $('uploadBtn').addEventListener('click', () => openUpload(state.sectorId));
   $('upSector').addEventListener('change', applyDated);
-  $('upDate').addEventListener('change', applyDated);
+  $('upDate').addEventListener('change', () => { if (datedUpload()) setAiWeekFromDate($('upDate').value); applyDated(); });
+  ['aiWeekYear', 'aiWeekMonth', 'aiWeekWeek'].forEach(id => $(id).addEventListener('change', paintAiWeek));
   // the dashboard's upload button: the sector picker lists the current space's sectors
   $('dashUploadBtn').addEventListener('click', () => openUpload(null));
   // choosing the other sub-sector switches the fund list to that sub-sector's funds
