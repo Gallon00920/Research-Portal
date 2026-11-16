@@ -165,10 +165,11 @@ the pipeline.
   otf-quarterly-report and `macro_weekly` → weekly-market-update; add a line
   to cover another sector, and upload a Skill folder with
   `panel/backend/upload_skill.py`). The Macro / Market **Weekly Updates**
-  tag has the same feature as "Generate by AI": the dialog asks for the date
-  of the update instead of a quarter, Claude runs the weekly-market-update
-  Skill on the week's broker reports and writes one English Word document,
-  which is added under that date and saved to your folder. You choose the
+  tag uses this same dialog ("Upload file" opens it with its two modes): it
+  asks for the date of the update instead of a quarter, and in "Generate
+  with AI" Claude runs the weekly-market-update Skill on the week's broker
+  reports and writes one English Word document, which is added under that
+  date and saved to your folder. You choose the
   sector, quarter and the language of the full report, **drop the source
   files** (broker reports, fund materials, trackers) into the dialog or
   click to choose them, as for a manual upload, and pick the **folder on

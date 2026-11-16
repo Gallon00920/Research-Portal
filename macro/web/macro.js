@@ -35,12 +35,8 @@ const STR = {
     up_done: '{n} slides read for {month}', cancel: 'Cancel', submit: 'Read the slides', close: 'Close ✕', remove: 'Remove', up: 'Up', down: 'Down',
     // the weekly updates: a document per date, not slides
     date: 'Date', upload_file: 'Upload file', empty_file_title: 'No weekly update yet',
-    empty_file_text: 'Upload the weekly update as a Word or PDF file: it is read into text, tables and figures.',
-    file_title: 'Upload the weekly update', file_drop: 'Drop the file here or click to choose', file_types: '.docx or .pdf · one file · a date that already has one is replaced',
-    file_date: 'Date of the update', file_need: 'Choose a .docx or .pdf file', file_bad: 'Only .docx or .pdf files', file_too_big: 'The file is larger than 40 MB',
-    file_working: 'Reading the file…', file_done: 'Weekly update saved for {date}', file_replace: 'This date already has an update: uploading replaces it.',
-    file_hint: 'One update per date; the file is kept with the entry.', open: 'Open', tables: 'tables', figures: 'figures',
-    week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week', gen_ai: 'Generate by AI',
+    empty_file_text: 'Upload the weekly update as a Word or PDF file, or have Claude write it from the week\'s broker reports.', open: 'Open', tables: 'tables', figures: 'figures',
+    week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week',
   },
   cn: {
     year: '年份', month: '月份', upload: '上传幻灯片', empty_title: '暂无简报',
@@ -57,12 +53,8 @@ const STR = {
     up_pending: '已保存到 GitHub。网站将在几分钟内读取幻灯片并重新构建，之后请刷新。', view_actions: '查看构建进度',
     up_done: '{month} 已读取 {n} 页', cancel: '取消', submit: '读取幻灯片', close: '关闭 ✕', remove: '移除', up: '上移', down: '下移',
     date: '日期', upload_file: '上传文件', empty_file_title: '暂无每周更新',
-    empty_file_text: '上传每周更新的 Word 或 PDF 文件：系统将其读取为正文、表格和图表。',
-    file_title: '上传每周更新', file_drop: '拖入文件或点击选择', file_types: '.docx 或 .pdf · 单个文件 · 同一日期已有更新时会被替换',
-    file_date: '更新日期', file_need: '请选择 .docx 或 .pdf 文件', file_bad: '只支持 .docx 或 .pdf 文件', file_too_big: '文件超过 40 MB',
-    file_working: '正在读取文件…', file_done: '{date} 的每周更新已保存', file_replace: '该日期已有更新：上传将替换它。',
-    file_hint: '每个日期一份更新；文件与条目一起保存。', open: '打开', tables: '张表', figures: '张图',
-    week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新', gen_ai: 'AI 生成',
+    empty_file_text: '上传每周更新的 Word 或 PDF 文件，或让 Claude 根据本周券商研报生成。', open: '打开', tables: '张表', figures: '张图',
+    week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新',
   },
 };
 
@@ -73,16 +65,14 @@ const TOPICS = [
   {id: 'rates', en: 'Rate Hike Expectations', cn: '市场加息预期', kind: 'slides'},  // a deck per month
 ];
 const DEFAULT_TOPIC = 'rates';
-const FILE_EXT = {'.docx': 'application/vnd.openxmlformats-officedocument.wordprocessingml.document', '.pdf': 'application/pdf'};
 const WEEKLY_SECTOR = 'macro_weekly';  // the panel sector that holds the weekly updates
-const MAX_FILE_BYTES = 40 * 1024 * 1024;
 function topicById(id) { return TOPICS.find((x) => x.id === id) || null; }
 function fileTopic() { const tp = topicById(state.topic); return !!(tp && tp.kind === 'file'); }
 function keyLabel(key) { return /^\d{4}-\d{2}-\d{2}$/.test(key || '') ? dateLabel(key) : monthLabel(key); }
 function dateLabel(d) { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString(locale(), {year: 'numeric', month: 'long', day: 'numeric'}); }
 function topicLabel(tp) { const x = typeof tp === 'string' ? topicById(tp) : tp; return x ? (state.lang === 'cn' ? x.cn : x.en) : ''; }
 
-const state = {lang: 'en', topic: DEFAULT_TOPIC, ym: null, index: null, indexTopic: null, doc: null, built: false, seq: 0, files: [], weeklyFile: null,
+const state = {lang: 'en', topic: DEFAULT_TOPIC, ym: null, index: null, indexTopic: null, doc: null, built: false, seq: 0, files: [],
                yearFilter: '', monthFilter: '', weekFilter: ''};  // the weekly list's filters
 const $ = (id) => document.getElementById(id);
 function t(key, vars) {
@@ -196,9 +186,7 @@ function build() {
   const lm = h('label'); lm.appendChild(h('span')).id = 'mkMonthLbl'; const ms = h('select'); ms.id = 'mkMonth'; lm.appendChild(ms);
   const lw = h('label'); lw.id = 'mkWeekRow'; lw.appendChild(h('span')).id = 'mkWeekLbl'; const ws = h('select'); ws.id = 'mkWeek'; lw.appendChild(ws);
   const up = h('button', 'btn primary small'); up.type = 'button'; up.id = 'mkUpload';
-  const gen = h('button', 'btn ghost small'); gen.type = 'button'; gen.id = 'mkGen'; gen.hidden = true;
-  gen.addEventListener('click', () => { if (window.AIDPanel) window.AIDPanel.openAiUpload(WEEKLY_SECTOR); });
-  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(lw); ctl.appendChild(gen); ctl.appendChild(up);
+  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(lw); ctl.appendChild(up);
   ws.addEventListener('change', () => { state.weekFilter = ws.value; renderWeeklyList($('mkBody')); });
   bar.appendChild(ctl);
   card.appendChild(bar);
@@ -223,11 +211,6 @@ function paintShell() {
   $('mkWeekLbl').textContent = t('week');
   $('mkWeekRow').hidden = !fileTopic();
   $('mkUpload').textContent = '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'));
-  // the weekly update can be written by Claude from the week's broker reports (the panel's AI
-  // generation with the weekly-market-update skill), when the server can call the API
-  const gen = $('mkGen');
-  gen.hidden = !(fileTopic() && window.AIDPanel && window.AIDPanel.aiFor(WEEKLY_SECTOR));
-  gen.textContent = '✦ ' + t('gen_ai');
   const all = months();
   const years = Array.from(new Set(all.map((m) => m.slice(0, 4)))).sort().reverse();
   const ys = $('mkYear'), ms = $('mkMonth'), ws = $('mkWeek');
@@ -332,11 +315,6 @@ function renderEmpty(body, message) {
   const b = h('button', 'btn primary', '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'))); b.type = 'button';
   b.addEventListener('click', () => openUpload());
   box.appendChild(b);
-  if (fileTopic() && window.AIDPanel && window.AIDPanel.aiFor(WEEKLY_SECTOR)) {
-    const g = h('button', 'btn ghost', '✦ ' + t('gen_ai')); g.type = 'button'; g.style.marginLeft = '8px';
-    g.addEventListener('click', () => window.AIDPanel.openAiUpload(WEEKLY_SECTOR));
-    box.appendChild(g);
-  }
   body.appendChild(box);
 }
 function renderDoc(body, doc) {
@@ -632,7 +610,9 @@ function paintReplaceHint() {
 }
 function setMsg(text, cls) { const m = $('mkUpMsg'); m.className = 'form-msg' + (cls ? ' ' + cls : ''); m.textContent = text || ''; }
 function openUpload() {
-  if (fileTopic()) { openFileUpload(); return; }
+  // the weekly updates are reports of the panel: its upload dialog (a file, or "Generate with AI"
+  // on the week's broker reports) asks for the date of the update
+  if (fileTopic()) { if (window.AIDPanel) window.AIDPanel.openUpload(WEEKLY_SECTOR); return; }
   const now = new Date();
   $('mkUpYear').value = now.getFullYear(); $('mkUpMonth').value = String(now.getMonth() + 1);
   $('mkUpBrief').value = ''; state.files = []; renderFiles(); setMsg('');
@@ -679,105 +659,6 @@ async function submitUpload(ev) {
       if (location.hash === '#/macro/' + state.topic + '/' + tg.ym) show(state.topic, tg.ym); else go(tg.ym);
     }
   } catch (e) { setMsg(e.message || String(e), 'err'); }
-  finally { btn.disabled = false; }
-}
-
-/* ---------------------------------------------------------------- the weekly update: one file per date */
-function buildFileDialog() {
-  const ov = h('div', 'overlay'); ov.id = 'mkFileOverlay'; ov.setAttribute('role', 'dialog'); ov.setAttribute('aria-modal', 'true');
-  const panel = h('div', 'ov-panel narrow');
-  const head = h('div', 'ov-head'); head.appendChild(h('b')).id = 'mkFileTitle';
-  const close = h('button'); close.type = 'button'; close.id = 'mkFileClose'; head.appendChild(close);
-  panel.appendChild(head);
-  const form = h('form', 'form'); form.id = 'mkFileForm';
-  const drop = h('div', 'drop'); drop.id = 'mkFileDrop';
-  const file = h('input'); file.type = 'file'; file.id = 'mkFileInput'; file.accept = '.docx,.pdf';
-  const dt = h('div', 'drop-txt'); dt.appendChild(h('b')).id = 'mkFileDropTxt'; dt.appendChild(h('span')).id = 'mkFileTypes';
-  drop.appendChild(file); drop.appendChild(dt);
-  form.appendChild(drop);
-  const chosen = h('div', 'file-list mk-files'); chosen.id = 'mkFileChosen'; chosen.hidden = true; form.appendChild(chosen);
-  const grid = h('div', 'grid2');
-  const mk = (id, lblId, control, span) => { const l = h('label', span ? 'span2' : null); l.appendChild(h('span')).id = lblId; control.id = id; l.appendChild(control); grid.appendChild(l); return control; };
-  const inTitle = mk('mkFileBrief', 'mkFileBriefLbl', h('input'), true); inTitle.type = 'text';
-  const inDate = mk('mkFileDate', 'mkFileDateLbl', h('input'), true); inDate.type = 'date'; inDate.required = true;
-  form.appendChild(grid);
-  form.appendChild(h('p', 'hint')).id = 'mkFileHint';
-  const foot = h('div', 'form-foot');
-  foot.appendChild(h('span', 'form-msg')).id = 'mkFileMsg';
-  const cancel = h('button', 'btn ghost'); cancel.type = 'button'; cancel.id = 'mkFileCancel';
-  const submit = h('button', 'btn primary'); submit.type = 'submit'; submit.id = 'mkFileSubmit';
-  foot.appendChild(cancel); foot.appendChild(submit);
-  form.appendChild(foot);
-  panel.appendChild(form); ov.appendChild(panel);
-  $('view-macro').appendChild(ov);
-  file.addEventListener('change', () => { state.weeklyFile = file.files[0] || null; paintFileDialog(); });
-  ['dragenter', 'dragover'].forEach((e) => drop.addEventListener(e, (ev) => { ev.preventDefault(); drop.classList.add('over'); }));
-  ['dragleave', 'drop'].forEach((e) => drop.addEventListener(e, () => drop.classList.remove('over')));
-  drop.addEventListener('drop', (ev) => { ev.preventDefault(); state.weeklyFile = (ev.dataTransfer.files && ev.dataTransfer.files[0]) || null; paintFileDialog(); });
-  inDate.addEventListener('change', paintFileDialog);
-  cancel.addEventListener('click', closeFileUpload); close.addEventListener('click', closeFileUpload);
-  ov.addEventListener('click', (ev) => { if (ev.target === ov) closeFileUpload(); });
-  form.addEventListener('submit', submitFileUpload);
-}
-function paintFileDialog() {
-  if (!$('mkFileOverlay')) return;
-  $('mkFileTitle').textContent = t('file_title'); $('mkFileClose').textContent = t('close');
-  $('mkFileDropTxt').textContent = t('file_drop'); $('mkFileTypes').textContent = t('file_types');
-  $('mkFileBriefLbl').textContent = t('up_brief'); $('mkFileBrief').placeholder = t('up_brief_ph');
-  $('mkFileDateLbl').textContent = t('file_date');
-  $('mkFileCancel').textContent = t('cancel'); $('mkFileSubmit').textContent = t('upload_file');
-  const box = $('mkFileChosen'); box.textContent = '';
-  const f = state.weeklyFile;
-  box.hidden = !f;
-  if (f) { const row = h('label'); row.appendChild(h('span', 'mk-fname', f.name)); row.appendChild(h('span', 'sz', Math.max(1, Math.round(f.size / 1024)) + ' KB')); box.appendChild(row); }
-  const date = $('mkFileDate').value;
-  $('mkFileHint').textContent = date && months().includes(date) ? t('file_replace') : t('file_hint');
-}
-function openFileUpload() {
-  if (!$('mkFileOverlay')) buildFileDialog();
-  const now = new Date();
-  $('mkFileDate').value = now.getFullYear() + '-' + String(now.getMonth() + 1).padStart(2, '0') + '-' + String(now.getDate()).padStart(2, '0');
-  $('mkFileBrief').value = ''; state.weeklyFile = null;
-  const m = $('mkFileMsg'); m.className = 'form-msg'; m.textContent = '';
-  $('mkFileSubmit').disabled = false;
-  paintFileDialog();
-  $('mkFileOverlay').classList.add('open');
-  document.body.style.overflow = 'hidden';
-}
-function closeFileUpload() {
-  $('mkFileOverlay').classList.remove('open');
-  if (!document.querySelector('.overlay.open')) document.body.style.overflow = '';
-}
-async function submitFileUpload(ev) {
-  ev.preventDefault();
-  const f = state.weeklyFile, date = $('mkFileDate').value, title = $('mkFileBrief').value.trim();
-  const msg = (text, cls) => { const m = $('mkFileMsg'); m.className = 'form-msg' + (cls ? ' ' + cls : ''); m.textContent = text || ''; };
-  if (!f) { msg(t('file_need'), 'err'); return; }
-  const ext = '.' + (f.name.split('.').pop() || '').toLowerCase();
-  if (!FILE_EXT[ext]) { msg(t('file_bad'), 'err'); return; }
-  if (f.size > MAX_FILE_BYTES) { msg(t('file_too_big'), 'err'); return; }
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) { msg(t('file_date'), 'err'); return; }
-  const DL = window.DataLayer, btn = $('mkFileSubmit');
-  btn.disabled = true;
-  try {
-    // the file becomes a report of the panel (sector "macro_weekly", dated), read with the
-    // panel's parser; the static site commits it to panel/incoming and the build reads it
-    msg(t(DL && DL.mode === 'static' ? 'up_saving' : 'file_working'));
-    const [y, m] = date.split('-').map(Number);
-    const res = await DL.upload({sector: WEEKLY_SECTOR, year: y, quarter: Math.floor((m - 1) / 3) + 1, nature: 'full', language: '', title, keywords: '', section: '', date}, f);
-    if (res && res.pending) {
-      msg(t('up_pending'), 'ok');
-      toast(t('up_pending'), DL.actionsUrl ? {text: t('view_actions'), href: DL.actionsUrl()} : null);
-      return;
-    }
-    await loadIndex(true);
-    closeFileUpload();
-    toast(t('file_done', {date: dateLabel(date)}));
-    if (res && res.id) location.hash = '#/r/' + res.id; else show('weekly', null);
-  } catch (e) {
-    if (e && e.needLogin) { location.href = '/login.html?next=' + encodeURIComponent(location.hash); return; }
-    msg(e.message || String(e), 'err');
-  }
   finally { btn.disabled = false; }
 }
 

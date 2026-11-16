@@ -911,10 +911,8 @@ function applyDated(){
   if (AI.mode === 'ai'){ $('upLangLbl').parentElement.hidden = dated; $('aiNote').textContent = t(dated ? 'ai_note_weekly' : 'ai_note'); }
   else $('upLangLbl').parentElement.hidden = false;
 }
-/* for the other views (the Macro / Market page): open the dialog in AI mode on a sector */
+/* for the other views (the Macro / Market page): open the upload dialog on a sector */
 window.AIDPanel = {
-  aiFor(sectorId){ return aiOn() && !!((AI.config && AI.config.sectors) || {})[sectorId]; },
-  openAiUpload(sectorId){ openUpload(sectorId); if (!$('upModes').hidden) setUploadMode('ai', sectorId); },
   openUpload(sectorId){ openUpload(sectorId); },
 };
 /* the sector list of the upload dialog: the space's sectors, or, with sub-sectors, the funds of
