@@ -5,7 +5,8 @@
       "name": "research-panel",
       "runtimeExecutable": "python",
       "runtimeArgs": ["panel/backend/server.py"],
-      "port": 8765
+      "env": {"PORT": "8768"},
+      "port": 8768
     },
     {
       "name": "research-panel-mock",
