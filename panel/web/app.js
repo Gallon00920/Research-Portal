@@ -15,7 +15,7 @@
 
 const $ = (id) => document.getElementById(id);
 const state = {
-  lang: 'en', docLang: 'en',
+  lang: 'cn', docLang: 'cn',  // Chinese unless the visitor switched (aid_lang in localStorage)
   sectors: [], reports: [],
   meta: {current_year: new Date().getFullYear(), current_quarter: Math.floor(new Date().getMonth()/3)+1},
   view: 'dash', space: 'research', section: 'internal', sectorId: null, reportId: null, report: null,
@@ -77,7 +77,7 @@ function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : '
 /* spaces: which dashboard a sector belongs to. Each has its own routes and strings; the order
    here is the order of the parts of data/sectors.json (the tab order is set in buildNav) */
 const SPACES = {
-  research:  {hash: '#/',          sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
+  research:  {hash: '#/research',  sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
   // the portfolio space has two sub-sectors; every portfolio report carries one in meta.section
   portfolio: {hash: '#/portfolio', sectorHash: '#/portfolio/s/', title: 'pm_title',   sub: 'pm_sub',   sectors: 'pm_sectors', nav: 'nav_portfolio', sections: ['internal', 'quarterly']},
   // the Macro / Market weekly updates are reports of the sector "macro_weekly"; the macro view
@@ -1371,8 +1371,9 @@ function renderMacro(topic, ym){
 }
 function parseHash(){
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
-  if (!h) return {view: 'dash', space: 'research'};
+  if (!h) return {view: 'factors', tab: null, ym: null};  // home: the latest Investment performance
   const p = h.split('/');
+  if (p[0] === 'research') return {view: 'dash', space: 'research'};
   if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
   if (p[0] === 'macro') return {view: 'macro', topic: p[1] || null, ym: p[2] || null};  // #/macro/<topic>[/<YYYY-MM>]

@@ -351,8 +351,9 @@ browser only.
 
 ## Investment performance
 
-The "Investment performance" tab (`#/factors`, folder `factors/`, formerly "Fund key factors") shows two monthly sub-tabs, one month
-on screen at a time:
+The "Investment performance" tab (`#/factors`, folder `factors/`, formerly "Fund key factors") is the home page: opening the
+site shows the latest month, in Chinese unless the visitor switched the language (the Research Panel dashboard lives at
+`#/research`). It shows two monthly sub-tabs, one month on screen at a time:
 
 - **Fund performance**: the fund performance table, drawn as a real table
   (sticky header, completion shading, IRR column).
