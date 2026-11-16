@@ -63,9 +63,13 @@ DEFAULT_SECTORS = [
 app = FastAPI(title="AID Research Panel")
 
 # ------------------------------------------------------------------- login
-# Set PANEL_PASSWORD to require a shared password (recommended for any public URL).
-# Without it the site is open, which is fine on a laptop at http://127.0.0.1.
-PANEL_PASSWORD = os.environ.get("PANEL_PASSWORD", "").strip()
+# The site asks for a shared password. DEFAULT_PASSWORD is used unless the
+# PANEL_PASSWORD environment variable overrides it; PANEL_PASSWORD=open turns
+# the sign-in off (fine on a laptop at http://127.0.0.1).
+DEFAULT_PASSWORD = "JunsonAID!"
+PANEL_PASSWORD = os.environ.get("PANEL_PASSWORD", "").strip() or DEFAULT_PASSWORD
+if PANEL_PASSWORD.lower() == "open":
+    PANEL_PASSWORD = ""
 SECRET_KEY = os.environ.get("SECRET_KEY", "").strip() or hashlib.sha256(("aid-panel:" + PANEL_PASSWORD).encode()).hexdigest()
 SESSION_COOKIE = "aid_session"
 SESSION_DAYS = 30
@@ -791,5 +795,7 @@ if __name__ == "__main__":
     import uvicorn
 
     if not auth_enabled():
-        print("PANEL_PASSWORD is not set: the panel is open to anyone who can reach it (fine for local use).")
+        print("PANEL_PASSWORD=open: the panel is open to anyone who can reach it (fine for local use).")
+    elif PANEL_PASSWORD == DEFAULT_PASSWORD:
+        print("Sign-in uses the built-in password; set PANEL_PASSWORD to change it.")
     uvicorn.run("server:app", host=os.environ.get("HOST", "127.0.0.1"), port=int(os.environ.get("PORT", "8765")), reload=False, app_dir=str(ROOT / "backend"))

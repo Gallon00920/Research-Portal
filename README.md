@@ -303,12 +303,18 @@ is committed to the repository in plain form under `panel/data/reports/`.
 - `.\panel\publish.ps1` pushes reports that were parsed on a laptop with
   the local server.
 
-### Optional password
+### Password
 
-Setting a `PANEL_PASSWORD` repository secret switches the whole pipeline
-to encrypted files (AES-256-GCM, PBKDF2 key): the site then asks for the
-password and decrypts in the browser, and nothing readable is committed.
-Run `.\panel\publish.ps1` with the same password afterwards.
+The local server (`panel/backend/server.py`) asks for a shared password
+on every visit: the built-in one is `JunsonAID!`, the `PANEL_PASSWORD`
+environment variable replaces it, and `PANEL_PASSWORD=open` turns the
+sign-in off for a laptop. The session cookie lasts 30 days.
+
+For the GitHub Pages site, setting a `PANEL_PASSWORD` repository secret
+switches the whole pipeline to encrypted files (AES-256-GCM, PBKDF2 key):
+the site then asks for the password and decrypts in the browser, and
+nothing readable is committed. Run `.\panel\publish.ps1` with the same
+password afterwards.
 
 ### Local use
 

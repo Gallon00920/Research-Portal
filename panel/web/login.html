@@ -41,7 +41,7 @@ button:disabled{opacity:.6; cursor:default}
 <script>
 (function(){
   var f = document.getElementById('f'), pw = document.getElementById('pw'), err = document.getElementById('err'), btn = document.getElementById('btn');
-  var next = new URLSearchParams(location.search).get('next') || '';
+  var next = new URLSearchParams(location.search).get('next') || location.hash || '';
   f.addEventListener('submit', function(e){
     e.preventDefault(); err.textContent = ''; btn.disabled = true;
     fetch('/api/login', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({password: pw.value})})
