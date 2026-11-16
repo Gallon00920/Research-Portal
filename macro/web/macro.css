@@ -7,6 +7,20 @@
 #view-macro p{margin:0}
 #view-macro ul{margin:0; padding:0; list-style:none}
 
+/* ───────── the weekly updates: a list of dated reports, opened in the report reader ───────── */
+#view-macro .mk-weekly{display:flex; flex-direction:column; gap:10px; padding:18px 22px 22px}
+#view-macro .mk-week{display:flex; align-items:center; gap:18px; border:1px solid var(--line); border-radius:5px; padding:14px 18px; background:var(--card); color:var(--ink); text-decoration:none}
+#view-macro .mk-week:hover{border-color:var(--blue-500); box-shadow:0 4px 14px rgba(10,30,60,.1); text-decoration:none}
+#view-macro .mk-week-date{flex:0 0 150px; font-size:12.5px; font-weight:700; color:var(--blue-600)}
+#view-macro .mk-week-main{flex:1; min-width:0; display:flex; flex-direction:column; gap:3px}
+#view-macro .mk-week-main b{font-size:15px; line-height:1.35}
+#view-macro .mk-week-sub{font-size:12px; color:var(--muted)}
+#view-macro .mk-week-open{font-size:12.5px; font-weight:600; color:var(--blue-600); white-space:nowrap}
+@media (max-width: 720px){ #view-macro .mk-week{flex-wrap:wrap} #view-macro .mk-week-date{flex-basis:100%} }
+
+/* ───────── topic tags (weekly updates, rate expectations) ───────── */
+#view-macro .mk-tags{border-radius:4px 4px 0 0; background:var(--card)}
+
 /* ───────── sticky strip: brief title, month picker, upload ───────── */
 #view-macro .mk-bar{display:flex; align-items:center; gap:12px; padding:0 22px; min-height:var(--mk-bar-h); border-bottom:1px solid var(--line-soft); border-radius:4px 4px 0 0;
   position:sticky; top:var(--tb-top); z-index:30; background:var(--card); transition:top .28s ease; box-shadow:0 6px 14px -10px rgba(10,30,60,.25)}

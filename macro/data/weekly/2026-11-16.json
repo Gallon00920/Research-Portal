@@ -1,0 +1,369 @@
+{
+  "topic": "weekly",
+  "date": "2026-11-16",
+  "title": "202611 Week2",
+  "source_name": "Weekly Market Update 202611 Week2.docx",
+  "source_file": "source.docx",
+  "extracted_at": "2026-11-16T02:16:27+00:00",
+  "model": "document",
+  "language": "cn",
+  "blocks": [
+    {
+      "type": "paragraph",
+      "html": "202611 Week 2 — Macro · Credit · Private Credit，中文分析版",
+      "text": "202611 Week 2 — Macro · Credit · Private Credit，中文分析版",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>输入：GS / MS / Barclays / JPM 宏观与信用共 8 份报告（2026/11/5–11/13）+ AID Research Portal 新闻（11/6–11/13）。本期不做原文摘录：以下为基于上述材料的综合判断，broker 仅作为数字出处出现；1 为摘要，论证与完整出处见 2–4 节。</em>",
+      "text": "输入：GS / MS / Barclays / JPM 宏观与信用共 8 份报告（2026/11/5–11/13）+ AID Research Portal 新闻（11/6–11/13）。本期不做原文摘录：以下为基于上述材料的综合判断，broker 仅作为数字出处出现；1 为摘要，论证与完整出处见 2–4 节。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "1. Things We Should Know"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "<strong>加息节奏的重定价是未来一个月信用市场的首要外生风险。</strong>Barclays 与 MS 的分歧在节奏不在方向（12月+1月 vs 12月+3月、terminal 上看 4.5–4.75%），而 JPM 信用团队的 constructive 恰恰以&quot;benign OIS 曲线&quot;为支柱之一——若前两家是对的，利率重定价本身就足以削弱该立场，无需基本面恶化。盯 12 月 FOMC 前最后一个关键数据：11 月非农（详见 2.3）。",
+        "<strong>AI 信用要拆成两类问题：</strong>hyperscaler 是供给/技术面问题，neocloud 与数据中心开发商是信用/基本面问题——同向走阔、性质不同，工具不应混用。蓝潮的真正作用是经由州监管&quot;成本前移+monetization 后移&quot;，放大而非削弱供给主题（详见 2.4、3.2）。",
+        "<strong>&quot;违约极低&quot;与&quot;distressed 激增&quot;不矛盾：</strong>市场在违约兑现前 12–18 个月定价违约，且 distressed 的 30% 集中在 Technology——这不是广义信用周期，是 AI/软件单一主题的提前定价。现在是定价窗口期，alpha 在窗口期里做（详见 3.4）。",
+        "<strong>估值主线一句话：避开&quot;被 AI 重估的旧软件 × 浮息&quot;。</strong>GS OW HY bonds vs loans 的真实理由不是 loan 里 AI 发行人多，而是会被 AI 伤害的 2021 年份老软件多——风险标签不是 AI，是 vintage；CLO BB 的&quot;便宜&quot;是 subordination 套利而非底层看多（详见 3.5）。",
+        "<strong>私募信贷在承接公开市场&quot;要价太高或结构通不过&quot;的 AI 融资——</strong>既是定价权也是 adverse selection。筛 deal 先问&quot;这笔为什么没走公开市场&quot;：答案是结构就压结构、是速度与规模才可以做；GPU 残值是全新承保变量（详见 4.1、4.2）。",
+        "<strong>监控名单事件两起，含义都大于金额：</strong>OTF 遭证券集体诉讼——真正的风险不是赔付是 discovery；Pretium 旗下 Progress 以 $49.75m 与 FTC 和解——触碰的是 SFR 商业模式的租金假设。两项均进季度监控清单（详见 4.3）。"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "2. Macro：这周真正改变的是什么"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.1 就业的\"统计重估\"，比 CPI 更重要"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>10 月 payrolls +165k 本身不算爆表，关键在修正：</strong>9 月上修 +31k、8 月上修 +53k，3 个月均值从 51k 跳到 137k<em>（GS Wrap-Up, 11/6）</em>——过去两个月市场与 Fed 是在用一个被低估近 2/3 的就业增速做决策，&quot;劳动力市场走弱、政策可以温和&quot;的叙事基础被数据本身抽掉了。且失业率降至 4.1% 是&quot;好的下降&quot;：就业 +463k 与劳动力 +421k 同步扩张、参与率升至 61.9%<em>（GS, 11/6）</em>。这解释了为何 10 月 CPI<em>（11/12 公布）</em>超预期后市场反应如此之快——不是单月 core +0.3% 有多可怕，而是它落在就业被上修的底色上；Barclays 甚至在 CPI 之前就凭就业与 JOLTS 维持连续加息 call<em>（Barclays US Outlook, 11/6）</em>，说明通胀数据只是确认、不是起因。",
+      "text": "10 月 payrolls +165k 本身不算爆表，关键在修正：9 月上修 +31k、8 月上修 +53k，3 个月均值从 51k 跳到 137k（GS Wrap-Up, 11/6）——过去两个月市场与 Fed 是在用一个被低估近 2/3 的就业增速做决策，\"劳动力市场走弱、政策可以温和\"的叙事基础被数据本身抽掉了。且失业率降至 4.1% 是\"好的下降\"：就业 +463k 与劳动力 +421k 同步扩张、参与率升至 61.9%（GS, 11/6）。这解释了为何 10 月 CPI（11/12 公布）超预期后市场反应如此之快——不是单月 core +0.3% 有多可怕，而是它落在就业被上修的底色上；Barclays 甚至在 CPI 之前就凭就业与 JOLTS 维持连续加息 call（Barclays US Outlook, 11/6），说明通胀数据只是确认、不是起因。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.2 通胀的性质：成本传导型，不是需求过热型"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>把 MS 与 Barclays 的解读拼起来是互补的。</strong>MS 认为服务端的超预期&quot;找不到好解释&quot;、且 OER 与车险的领先指标都指向回落<em>（有效租金低于疫情前、保险费率备案走软；MS US Economics Weekly, 11/13）</em>，即服务是噪音；真正的信号在商品——能源成本 pass-through 正在扩散（运输成本、进口价格、PMI output price），并将在 1Q27 企业集中调价时放大<em>（MS, 11/13）</em>。Barclays 在 CPI 前预期 core 仅 0.22%、逻辑是 shelter 与 core goods 降温<em>（Barclays, 11/6）</em>——被证伪的恰恰是商品端。",
+      "text": "把 MS 与 Barclays 的解读拼起来是互补的。MS 认为服务端的超预期\"找不到好解释\"、且 OER 与车险的领先指标都指向回落（有效租金低于疫情前、保险费率备案走软；MS US Economics Weekly, 11/13），即服务是噪音；真正的信号在商品——能源成本 pass-through 正在扩散（运输成本、进口价格、PMI output price），并将在 1Q27 企业集中调价时放大（MS, 11/13）。Barclays 在 CPI 前预期 core 仅 0.22%、逻辑是 shelter 与 core goods 降温（Barclays, 11/6）——被证伪的恰恰是商品端。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>这决定了通胀伤害信用的路径。</strong>需求端并无过热证据——MS 自己承认低失业与减速的工资并存、过热迹象稀少<em>（MS, 11/13）</em>——Fed 加息针对的是二轮效应与预期管理。因此这种通胀的传导路径不是&quot;盈利衰退→违约&quot;，而是&quot;利率与利率波动→估值与再融资成本&quot;：伤技术面先于伤基本面。",
+      "text": "这决定了通胀伤害信用的路径。需求端并无过热证据——MS 自己承认低失业与减速的工资并存、过热迹象稀少（MS, 11/13）——Fed 加息针对的是二轮效应与预期管理。因此这种通胀的传导路径不是\"盈利衰退→违约\"，而是\"利率与利率波动→估值与再融资成本\"：伤技术面先于伤基本面。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.3 Fed 路径：50bp 进入了\"官员公开讨论\"的区间"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>尾部已经打开，即便基准仍是 25bp。</strong>Waller 把 50bp 的触发条件说成 core CPI&quot;约 0.3% 或更高&quot;<em>（MS 转述, 11/13）</em>——而 10 月正好是 0.3%。MS 列出的 50bp 条件依然苛刻（油价重新走高+11 月非农 150k 以上+失业率跌破 4.0%+工资走强），且本周无任何官员自认 behind the curve、11 月 CPI 要到 12 月 FOMC 之后才发布<em>（MS, 11/13）</em>——但&quot;不可想象&quot;变成&quot;公开讨论&quot;本身就会抬高利率 vol。另一个几乎没人讨论的结构性变化来自 Barclays<em>（11/6）</em>：参院易手后民主党掌握 FOMC 人事 confirmations，白宫施压的&quot;chilling effect&quot;下降——蓝潮在边际上&quot;解放&quot;了委员会的紧缩意愿。合并结论：利率路径的不确定性区间（25bp×2 到 25bp×3+50bp 讨论）比利率水平本身更宽，这是年末流动性收缩窗口里信用最直接的外生风险源，也是 1 节第一条的全部依据。",
+      "text": "尾部已经打开，即便基准仍是 25bp。Waller 把 50bp 的触发条件说成 core CPI\"约 0.3% 或更高\"（MS 转述, 11/13）——而 10 月正好是 0.3%。MS 列出的 50bp 条件依然苛刻（油价重新走高+11 月非农 150k 以上+失业率跌破 4.0%+工资走强），且本周无任何官员自认 behind the curve、11 月 CPI 要到 12 月 FOMC 之后才发布（MS, 11/13）——但\"不可想象\"变成\"公开讨论\"本身就会抬高利率 vol。另一个几乎没人讨论的结构性变化来自 Barclays（11/6）：参院易手后民主党掌握 FOMC 人事 confirmations，白宫施压的\"chilling effect\"下降——蓝潮在边际上\"解放\"了委员会的紧缩意愿。合并结论：利率路径的不确定性区间（25bp×2 到 25bp×3+50bp 讨论）比利率水平本身更宽，这是年末流动性收缩窗口里信用最直接的外生风险源，也是 1 节第一条的全部依据。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.4 蓝潮的落点：州层面的数据中心监管，而非联邦财政"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>联邦层面没有故事，</strong>gridlock 维持、veto override 不可能、12 月 shutdown 概率反而下降<em>（Barclays, 11/6；GS, 11/6 同向）</em>。真正的变量在州：TX/GA/OH 三个前五大 pipeline 州易主，仅 Texas 占全国规划扩容 34.9%<em>（Barclays Fig 2, 11/6）</em>；GS 口径短期 moratorium 可能波及约 45% 的规划扩容<em>（GS Credit Trader, 11/5）</em>。但各家都给了缓和条款：GS 认为数据中心非选民优先议题、moratoria 不会长命；Barclays 认为审查本来就是两党的、开发商可以让利推进。",
+      "text": "联邦层面没有故事，gridlock 维持、veto override 不可能、12 月 shutdown 概率反而下降（Barclays, 11/6；GS, 11/6 同向）。真正的变量在州：TX/GA/OH 三个前五大 pipeline 州易主，仅 Texas 占全国规划扩容 34.9%（Barclays Fig 2, 11/6）；GS 口径短期 moratorium 可能波及约 45% 的规划扩容（GS Credit Trader, 11/5）。但各家都给了缓和条款：GS 认为数据中心非选民优先议题、moratoria 不会长命；Barclays 认为审查本来就是两党的、开发商可以让利推进。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>我们的综合判断：监管不改变 AI capex 总量，但同时做两件事——</strong>成本前移（让利、自担基建、工会用工）+ 收入后移（工期延迟 monetization）。对信用这是最糟的组合之一：融资缺口 = 支出前移 − 收入后移，缺口只能靠发债填。即蓝潮经由监管渠道放大了第 3 节的供给主题——这是本周宏观与信用之间最重要的一条传导线。",
+      "text": "我们的综合判断：监管不改变 AI capex 总量，但同时做两件事——成本前移（让利、自担基建、工会用工）+ 收入后移（工期延迟 monetization）。对信用这是最糟的组合之一：融资缺口 = 支出前移 − 收入后移，缺口只能靠发债填。即蓝潮经由监管渠道放大了第 3 节的供给主题——这是本周宏观与信用之间最重要的一条传导线。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2.5 全球框架：政策在给收入端已经偏弱的经济加压"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>JPM 回答了&quot;为什么现在脆弱&quot;。</strong>增长有韧性<em>（前三季全球 GDP 均增 2.9%ar、10 月 PMI tracking 约 3%ar；JPM Global Economics, 11/5）</em>，但 broadening 没有带来 balance：扩张仍靠美国需求脉冲+科技资本开支，需求扩散并未转化为招聘与劳动收入（全球 composite PMI 10 月 -1.1pt 至 53.2），JPM 预计本季出现美国主导的全球消费显著放缓。把这与上文连起来：一边是家庭部门劳动收入疲弱、暴露于能源与 core 通胀，另一边是 Fed 因成本型通胀被迫继续加息——紧缩落在收入端已经偏弱的经济上。这是 2027 年尾部情景的种子，与 JPM 信用团队&quot;2027 违约活动上升&quot;的预测<em>（JPM Credit Strategy, 11/6）</em>构成同一条逻辑链；JPM 自己的措辞也值得注意：constructive 的预测&quot;requires&quot;更强的招聘与非美需求——有条件的乐观。",
+      "text": "JPM 回答了\"为什么现在脆弱\"。增长有韧性（前三季全球 GDP 均增 2.9%ar、10 月 PMI tracking 约 3%ar；JPM Global Economics, 11/5），但 broadening 没有带来 balance：扩张仍靠美国需求脉冲+科技资本开支，需求扩散并未转化为招聘与劳动收入（全球 composite PMI 10 月 -1.1pt 至 53.2），JPM 预计本季出现美国主导的全球消费显著放缓。把这与上文连起来：一边是家庭部门劳动收入疲弱、暴露于能源与 core 通胀，另一边是 Fed 因成本型通胀被迫继续加息——紧缩落在收入端已经偏弱的经济上。这是 2027 年尾部情景的种子，与 JPM 信用团队\"2027 违约活动上升\"的预测（JPM Credit Strategy, 11/6）构成同一条逻辑链；JPM 自己的措辞也值得注意：constructive 的预测\"requires\"更强的招聘与非美需求——有条件的乐观。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "3. Credit：供给、分化与\"定价窗口期\""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.1 供给是元变量，预测正在被现实追着上修"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>hyperscaler 在 5 个交易日发行 5 笔合计 $67bn</strong><em>（GS Credit Trader, 11/5；MS State of AI Financing, 11/10 口径一致）</em>，YTD 全球发行 $296bn——超出 GS 自己的全年预测 $250bn，占 2026 年 capex 的 36%、高于其 33% 的原假设，在全球 IG 总供给中的占比升至历史最高<em>（GS, 11/5）</em>。当策略师的全年预测在 11 月初就被突破，说明主导变量是发行人行为（前置）而非任何自上而下的假设。往前看的量级：GS 预计 2027 年直接发行约 $440bn（35% of capex）+ 项目融资约 $300bn——合计约 $740bn 的 AI 相关供给。背后的刚性在 3Q 财报里：hyperscaler 整体自由现金流转负、capex 超过经营现金流，且 purchase commitments 是 capex 之外的额外现金流出<em>（GS, 11/5）</em>——融资需求是刚性的，发行时点才是变量。",
+      "text": "hyperscaler 在 5 个交易日发行 5 笔合计 $67bn（GS Credit Trader, 11/5；MS State of AI Financing, 11/10 口径一致），YTD 全球发行 $296bn——超出 GS 自己的全年预测 $250bn，占 2026 年 capex 的 36%、高于其 33% 的原假设，在全球 IG 总供给中的占比升至历史最高（GS, 11/5）。当策略师的全年预测在 11 月初就被突破，说明主导变量是发行人行为（前置）而非任何自上而下的假设。往前看的量级：GS 预计 2027 年直接发行约 $440bn（35% of capex）+ 项目融资约 $300bn——合计约 $740bn 的 AI 相关供给。背后的刚性在 3Q 财报里：hyperscaler 整体自由现金流转负、capex 超过经营现金流，且 purchase commitments 是 capex 之外的额外现金流出（GS, 11/5）——融资需求是刚性的，发行时点才是变量。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.2 价格机制已变：concession 成为边际定价器"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>本月 META/ORCL 的新发溢价估计高达 ~30bp、AAPL 10–15bp，远超大市</strong><em>（Barclays US Credit Alpha, 11/6）</em>——对照 IG 指数本身只有 89–90bp（Barclays Fig 1），头部发行人要为规模付出相当于整个指数利差三分之一的额外补偿。正确读法：市场容量没有问题<em>（MS 11/10：5 天 $67bn 被消化，&quot;容量得到验证&quot;）</em>，但资金价格在快速抬升。GS 说债务融资渠道是 AI 竞赛的&quot;战略竞争优势&quot;<em>（GS, 11/5）</em>，反过来读就是：当融资成本成为竞争变量，资产负债表就成了商业模式的一部分——这正是 Barclays &quot;war of attrition&quot;<em>（11/6）</em>的含义：强者可以等（且已通电资产获得稀缺溢价），neocloud 与开发商被挤出。",
+      "text": "本月 META/ORCL 的新发溢价估计高达 ~30bp、AAPL 10–15bp，远超大市（Barclays US Credit Alpha, 11/6）——对照 IG 指数本身只有 89–90bp（Barclays Fig 1），头部发行人要为规模付出相当于整个指数利差三分之一的额外补偿。正确读法：市场容量没有问题（MS 11/10：5 天 $67bn 被消化，\"容量得到验证\"），但资金价格在快速抬升。GS 说债务融资渠道是 AI 竞赛的\"战略竞争优势\"（GS, 11/5），反过来读就是：当融资成本成为竞争变量，资产负债表就成了商业模式的一部分——这正是 Barclays \"war of attrition\"（11/6）的含义：强者可以等（且已通电资产获得稀缺溢价），neocloud 与开发商被挤出。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>由此得出本节第一个操作结论：</strong>hyperscaler 利差走阔是久期/供给技术面问题，neocloud 与开发商利差走阔是信用基本面问题——同向、不同质，对冲和抄底的工具都不应混用。",
+      "text": "由此得出本节第一个操作结论：hyperscaler 利差走阔是久期/供给技术面问题，neocloud 与开发商利差走阔是信用基本面问题——同向、不同质，对冲和抄底的工具都不应混用。",
+      "style": null
+    },
+    {
+      "type": "image",
+      "src": "img_001.png",
+      "caption": "",
+      "exhibit": 1,
+      "width": 662.0,
+      "height": 299.0,
+      "note": "",
+      "unsupported": false,
+      "anchor": "ex-1"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>指数几乎没动、concession 在陡升——供给压力显示在一级而非二级。资料来源：Barclays US Credit Alpha, 2026/11/6, Figures 1–2</em>",
+      "text": "指数几乎没动、concession 在陡升——供给压力显示在一级而非二级。资料来源：Barclays US Credit Alpha, 2026/11/6, Figures 1–2",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.3 GS 与 MS 的供给节奏分歧，是本周最有交易含义的分歧"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>GS：前置还会继续、&quot;至 12 月初风险坚定偏向走阔&quot;，</strong>USD IG 或温和突破 2026 年 3 月峰值 93bp / HY 突破 335bp<em>（GS, 11/5）</em>；MS：年内剩余供给转静、HQ hyperscaler 风险回报改善<em>（MS, 11/10）</em>。谁对取决于一个变量——发行人是否认为明年 1 月的窗口比今天更差：若是，就继续前置（自我实现 GS 的走阔）；若周四的 risk-off<em>（VIX 收 28、S&amp;P -4.4% 为 2025 年 4 月以来最差单日、NASDAQ 100 -6.4% 为 2020 年 3 月以来最差；Barclays, 11/6）</em>让发行人却步，供给暂停、技术面修复（MS 对）。我们倾向 GS 的方向、认可 MS 的节奏：3Q FCF 转负决定了&quot;转静&quot;至多是暂停而非拐点，但 12 月中旬后的季节性窗口真实存在（GS 自己也以此解释年末目标为何略紧）。操作上：未来四周每一笔 hyperscaler 一级都应当作市场容量的实时压力测试来读——concession 继续走高而订单簿变薄，就是 GS 情景兑现的信号。",
+      "text": "GS：前置还会继续、\"至 12 月初风险坚定偏向走阔\"，USD IG 或温和突破 2026 年 3 月峰值 93bp / HY 突破 335bp（GS, 11/5）；MS：年内剩余供给转静、HQ hyperscaler 风险回报改善（MS, 11/10）。谁对取决于一个变量——发行人是否认为明年 1 月的窗口比今天更差：若是，就继续前置（自我实现 GS 的走阔）；若周四的 risk-off（VIX 收 28、S&P -4.4% 为 2025 年 4 月以来最差单日、NASDAQ 100 -6.4% 为 2020 年 3 月以来最差；Barclays, 11/6）让发行人却步，供给暂停、技术面修复（MS 对）。我们倾向 GS 的方向、认可 MS 的节奏：3Q FCF 转负决定了\"转静\"至多是暂停而非拐点，但 12 月中旬后的季节性窗口真实存在（GS 自己也以此解释年末目标为何略紧）。操作上：未来四周每一笔 hyperscaler 一级都应当作市场容量的实时压力测试来读——concession 继续走高而订单簿变薄，就是 GS 情景兑现的信号。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.4 定价窗口期：调和\"违约极低\"与\"distressed 激增\""
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>一边：</strong>10 月违约/LME 量为 2023 年以来第二低，par-weighted HY 违约率降至 2.63%（ex-DISH 1.95%）、loans 1.96% 为 2023 年 1 月以来低点<em>（JPM Default Monitor, 11/6）</em>。另一边：distressed 债券（1000bp+）达 2.5 年高点 $98bn（+$25bn m/m）、deeply distressed loans（&lt;$60）2H26 扩张 54% 至 $75.8bn、合并 distressed universe $246bn 占杠杆信用 8.3% 的 3.5 年新高<em>（JPM, 11/6）</em>；CCC 债 YTD 利差 +501bp、总回报 -4.12%<em>（GS performance 表, 11/5）</em>。",
+      "text": "一边：10 月违约/LME 量为 2023 年以来第二低，par-weighted HY 违约率降至 2.63%（ex-DISH 1.95%）、loans 1.96% 为 2023 年 1 月以来低点（JPM Default Monitor, 11/6）。另一边：distressed 债券（1000bp+）达 2.5 年高点 $98bn（+$25bn m/m）、deeply distressed loans（<$60）2H26 扩张 54% 至 $75.8bn、合并 distressed universe $246bn 占杠杆信用 8.3% 的 3.5 年新高（JPM, 11/6）；CCC 债 YTD 利差 +501bp、总回报 -4.12%（GS performance 表, 11/5）。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>两者并存只有一个解释：市场在违约兑现前定价违约。</strong>distressed 领先、违约率滞后，传导通常 12–18 个月；且分布高度集中——Technology 占 distressed 的 30%（$74bn）<em>（JPM, 11/6）</em>，这不是广义信用周期，是 AI/软件单一主题的提前定价。最硬的佐证是 JPM 的拆分：HY performing 部分利差 289bp、只比 9 月 tights 宽 55bp<em>（JPM, 11/6）</em>——把 AI 与 distressed 拿掉，信用其实还趴在 tights 附近。在此框架下，Barclays 的 2027 违约预测<em>（HY 3–4%、loans 4–5%，均低于 LTM 的 3.7%/5.8%；Barclays, 11/6）</em>与 JPM&quot;2027 违约活动上升&quot;<em>（11/6）</em>可以同时成立：前者说存量旧 vintage 违约在消化、基数回落，后者说新 distressed 池将在 2027 年转化。方向共识：现在到兑现之间有一个可观的定价窗口期——alpha 在窗口期里做，不是等违约名单出来再做。",
+      "text": "两者并存只有一个解释：市场在违约兑现前定价违约。distressed 领先、违约率滞后，传导通常 12–18 个月；且分布高度集中——Technology 占 distressed 的 30%（$74bn）（JPM, 11/6），这不是广义信用周期，是 AI/软件单一主题的提前定价。最硬的佐证是 JPM 的拆分：HY performing 部分利差 289bp、只比 9 月 tights 宽 55bp（JPM, 11/6）——把 AI 与 distressed 拿掉，信用其实还趴在 tights 附近。在此框架下，Barclays 的 2027 违约预测（HY 3–4%、loans 4–5%，均低于 LTM 的 3.7%/5.8%；Barclays, 11/6）与 JPM\"2027 违约活动上升\"（11/6）可以同时成立：前者说存量旧 vintage 违约在消化、基数回落，后者说新 distressed 池将在 2027 年转化。方向共识：现在到兑现之间有一个可观的定价窗口期——alpha 在窗口期里做，不是等违约名单出来再做。",
+      "style": null
+    },
+    {
+      "type": "image",
+      "src": "img_002.png",
+      "caption": "",
+      "exhibit": 2,
+      "width": 605.0,
+      "height": 363.0,
+      "note": "",
+      "unsupported": false,
+      "anchor": "ex-2"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>指数与尾部的裂口：IG/HY 温和走阔 vs CCC 债 +501bp、loan CCC +804bp（YTD）。资料来源：GS Global Credit Trader, 2026/11/5, Exhibit 17（USD 部分）</em>",
+      "text": "指数与尾部的裂口：IG/HY 温和走阔 vs CCC 债 +501bp、loan CCC +804bp（YTD）。资料来源：GS Global Credit Trader, 2026/11/5, Exhibit 17（USD 部分）",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3.5 估值与 RV：避开\"被 AI 重估的旧软件 × 浮息\""
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>GS 本周把 IG vs HY 转为 Neutral、维持 OW BBBs、UW CCCs，并 OW HY bonds vs loans</strong>——理由是 loan 市场软件敞口过重 + 2028 loan maturity wall 再融资不明<em>（GS RV views, 11/5）</em>。表面上这与 JPM 的数据矛盾<em>（HPC(AI) 在 Loan 指数仅贡献 61bp vs HY 指数 337bp；JPM, 11/6）</em>，实际是口径不同：JPM 测的是 AI/算力发行人的直接权重，GS 担心的是会被 AI 伤害的 2021 年份传统软件借款人——loan 市场的问题不是&quot;AI 贷款太多&quot;，而是&quot;被 AI 重估的老软件太多&quot;。这个区分对直贷组合是本周最重要的一句话：风险标签不是 AI，是 vintage。",
+      "text": "GS 本周把 IG vs HY 转为 Neutral、维持 OW BBBs、UW CCCs，并 OW HY bonds vs loans——理由是 loan 市场软件敞口过重 + 2028 loan maturity wall 再融资不明（GS RV views, 11/5）。表面上这与 JPM 的数据矛盾（HPC(AI) 在 Loan 指数仅贡献 61bp vs HY 指数 337bp；JPM, 11/6），实际是口径不同：JPM 测的是 AI/算力发行人的直接权重，GS 担心的是会被 AI 伤害的 2021 年份传统软件借款人——loan 市场的问题不是\"AI 贷款太多\"，而是\"被 AI 重估的老软件太多\"。这个区分对直贷组合是本周最重要的一句话：风险标签不是 AI，是 vintage。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>CLO mezz 的&quot;便宜&quot;要看清买的是什么。</strong>BB 794bp、处 3 年 86th percentile，是 GS 眼中全场少数便宜资产<em>（GS, 11/5）</em>——但便宜的原因正是底层是 loans（即上述软件敞口），所以 GS 的 OW CLO mezz vs loans 本质是 subordination 套利：用结构保护换取同一底层的 carry，买的是结构不是资产类别。对我们看 structured credit 管线：BB tranche 的吸引力评估必须附带底层软件占比的穿透，而不是只看利差 percentile。",
+      "text": "CLO mezz 的\"便宜\"要看清买的是什么。BB 794bp、处 3 年 86th percentile，是 GS 眼中全场少数便宜资产（GS, 11/5）——但便宜的原因正是底层是 loans（即上述软件敞口），所以 GS 的 OW CLO mezz vs loans 本质是 subordination 套利：用结构保护换取同一底层的 carry，买的是结构不是资产类别。对我们看 structured credit 管线：BB tranche 的吸引力评估必须附带底层软件占比的穿透，而不是只看利差 percentile。",
+      "style": null
+    },
+    {
+      "type": "image",
+      "src": "img_003.png",
+      "caption": "",
+      "exhibit": 3,
+      "width": 662.0,
+      "height": 311.0,
+      "note": "",
+      "unsupported": false,
+      "anchor": "ex-3"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>GS RV views（Regional 与 USD market）：Neutral IG vs HY、OW HY bonds vs loans、OW CLO mezz——软件敞口是贯穿的理由。资料来源：GS Global Credit Trader, 2026/11/5, Exhibit 12</em>",
+      "text": "GS RV views（Regional 与 USD market）：Neutral IG vs HY、OW HY bonds vs loans、OW CLO mezz——软件敞口是贯穿的理由。资料来源：GS Global Credit Trader, 2026/11/5, Exhibit 12",
+      "style": null
+    },
+    {
+      "type": "image",
+      "src": "img_004.png",
+      "caption": "",
+      "exhibit": 4,
+      "width": 662.0,
+      "height": 382.0,
+      "note": "",
+      "unsupported": false,
+      "anchor": "ex-4"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em>CLO 利差 percentile 与新发 arbitrage spread：BB 86th percentile 的&quot;便宜&quot;集中在 mezz。资料来源：GS Global Credit Trader, 2026/11/5, Exhibits 26–27</em>",
+      "text": "CLO 利差 percentile 与新发 arbitrage spread：BB 86th percentile 的\"便宜\"集中在 mezz。资料来源：GS Global Credit Trader, 2026/11/5, Exhibits 26–27",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "text": "4. Private Credit：AI 融资的第三战场与监控事件"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.1 三个市场的接力：私募承接公开市场的溢出"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>新闻与 broker 报告拼出同一张图。</strong>顺序是：公开 IG<em>（YTD $296bn、concession 升至 ~30bp；GS 11/5、Barclays 11/6）</em>→ 结构化<em>（10 月 data center ABS 利差大幅走阔、买家开始要求低 LTV/短久期/delever；MS, 11/10）</em>→ 私募信贷与 ABF：Apollo 单季 originations 创纪录 $114bn 且点名 AI 机会<em>（WSJ, 11/8）</em>、$75bn 芯片租赁布局&quot;超过所有 neocloud&quot;<em>（BigGo/Dealroom, 11/7）</em>、与 GS 共同为 $40bn SpaceX AI 芯片融资寻找投资者<em>（Bloomberg 经 Tekedia 转引, 11/6）</em>；BofA/Blackstone/Citi/MS 安排 $63bn AI 融资<em>（Beinsure, 11/9）</em>；Blackstone-backed 数据中心开发商新增 $1.5bn<em>（Bloomberg, 11/12）</em>。私募承接的是&quot;公开市场要价太高或结构通不过&quot;的那部分——定价权与结构话语权是真的，adverse selection 的风险也是真的。由此得出管线筛选问题：这笔 deal 为什么没走公开市场？答案是&quot;结构&quot;（高 LTV、不摊还）→ 按 MS 的 ABS 标准反向压结构；答案是&quot;速度与规模&quot;→ 可以做。",
+      "text": "新闻与 broker 报告拼出同一张图。顺序是：公开 IG（YTD $296bn、concession 升至 ~30bp；GS 11/5、Barclays 11/6）→ 结构化（10 月 data center ABS 利差大幅走阔、买家开始要求低 LTV/短久期/delever；MS, 11/10）→ 私募信贷与 ABF：Apollo 单季 originations 创纪录 $114bn 且点名 AI 机会（WSJ, 11/8）、$75bn 芯片租赁布局\"超过所有 neocloud\"（BigGo/Dealroom, 11/7）、与 GS 共同为 $40bn SpaceX AI 芯片融资寻找投资者（Bloomberg 经 Tekedia 转引, 11/6）；BofA/Blackstone/Citi/MS 安排 $63bn AI 融资（Beinsure, 11/9）；Blackstone-backed 数据中心开发商新增 $1.5bn（Bloomberg, 11/12）。私募承接的是\"公开市场要价太高或结构通不过\"的那部分——定价权与结构话语权是真的，adverse selection 的风险也是真的。由此得出管线筛选问题：这笔 deal 为什么没走公开市场？答案是\"结构\"（高 LTV、不摊还）→ 按 MS 的 ABS 标准反向压结构；答案是\"速度与规模\"→ 可以做。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.2 GPU/芯片 ABF：承保核心从信用迁移到残值"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>这是一个新资产类别的诞生时刻。</strong>Apollo 的 $75bn 芯片租赁与 $40bn SpaceX 芯片融资<em>（11/6–11/7）</em>把 AI 硬件正式金融化为 asset-based finance。与航空、集装箱等传统设备租赁的根本区别：后者的残值曲线有数十年数据支撑，GPU 的残值由技术迭代速度决定、且迭代周期可能短于租赁期限——残值假设几乎就是整笔交易。这是当前定价最宽、也最容易犯错的地方。对我们：aviation 残值框架（租约覆盖、再营销、资产年龄分层）在方法论上可迁移，但折旧斜率与技术过时风险完全不同——若 ABF 管线出现 GPU 类 deal，残值假设的敏感性分析是第一道关。",
+      "text": "这是一个新资产类别的诞生时刻。Apollo 的 $75bn 芯片租赁与 $40bn SpaceX 芯片融资（11/6–11/7）把 AI 硬件正式金融化为 asset-based finance。与航空、集装箱等传统设备租赁的根本区别：后者的残值曲线有数十年数据支撑，GPU 的残值由技术迭代速度决定、且迭代周期可能短于租赁期限——残值假设几乎就是整笔交易。这是当前定价最宽、也最容易犯错的地方。对我们：aviation 残值框架（租约覆盖、再营销、资产年龄分层）在方法论上可迁移，但折旧斜率与技术过时风险完全不同——若 ABF 管线出现 GPU 类 deal，残值假设的敏感性分析是第一道关。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.3 监控名单事件：OTF 证券诉讼与 Pretium 和解"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>OTF：真正的风险不是赔付，是 discovery。</strong>11/6–7 立案、代表前 OTF II 股东、诉称合并后股价累计下跌近 44%<em>（The National Law Review, 11/6；PR Newswire, 11/7）</em>，发起方为律所 Kahn Swick &amp; Foti 的 investor alert——此类诉讼胜诉率低，且与 2Q 的 Section 36(b) 费用诉讼不同（那次攻击管理人收费，这次攻击合并与估值披露）。但要点在于：诉讼一旦挺过 motion to dismiss 进入 discovery，估值过程文件可能被强制披露——在&quot;软件估值是否虚高&quot;的卖方叙事仍在延续的背景下（参见我们 OTF 2026Q3 季报 1.1 节 UBS 约 15% 违约率的说法），任何 discovery 材料都可能成为新的 headline 压力，与基本面无关地压制股价。监控动作：季报诉讼清单新增此项，跟踪 lead plaintiff 指定与 MTD 时间表。",
+      "text": "OTF：真正的风险不是赔付，是 discovery。11/6–7 立案、代表前 OTF II 股东、诉称合并后股价累计下跌近 44%（The National Law Review, 11/6；PR Newswire, 11/7），发起方为律所 Kahn Swick & Foti 的 investor alert——此类诉讼胜诉率低，且与 2Q 的 Section 36(b) 费用诉讼不同（那次攻击管理人收费，这次攻击合并与估值披露）。但要点在于：诉讼一旦挺过 motion to dismiss 进入 discovery，估值过程文件可能被强制披露——在\"软件估值是否虚高\"的卖方叙事仍在延续的背景下（参见我们 OTF 2026Q3 季报 1.1 节 UBS 约 15% 违约率的说法），任何 discovery 材料都可能成为新的 headline 压力，与基本面无关地压制股价。监控动作：季报诉讼清单新增此项，跟踪 lead plaintiff 指定与 MTD 时间表。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Pretium/Progress：金额可控，商业模式含义更大。</strong>$49.75m 与 FTC 及多州就 deceptive pricing 和解<em>（HousingWire, 11/6；The Atlanta Journal-Constitution, 11/10）</em>。Progress 是 SFR 证券化的主要发行人——和解触碰的是 SFR 平台 alpha 的一部分：租金优化与收费行为。值得跟踪的不是罚金，而是定价行为整改对租金增长假设的下修幅度、以及是否引发其他州跟进或私人诉讼。residential credit 监控中列为观察项，涉及 Pretium 敞口的现金流假设宜做保守侧校验。",
+      "text": "Pretium/Progress：金额可控，商业模式含义更大。$49.75m 与 FTC 及多州就 deceptive pricing 和解（HousingWire, 11/6；The Atlanta Journal-Constitution, 11/10）。Progress 是 SFR 证券化的主要发行人——和解触碰的是 SFR 平台 alpha 的一部分：租金优化与收费行为。值得跟踪的不是罚金，而是定价行为整改对租金增长假设的下修幅度、以及是否引发其他州跟进或私人诉讼。residential credit 监控中列为观察项，涉及 Pretium 敞口的现金流假设宜做保守侧校验。",
+      "style": null
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4.4 GP 分化、LP 二级定价与 BDC 财报季"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>头部 GP 在逆势扩表，&quot;flight to platform&quot;正在发生。</strong>Apollo originations $114bn 创纪录<em>（WSJ, 11/8）</em>、KKR Q3 募资 $25bn 且 credit 领跑<em>（Alternative Credit Investor, 11/9）</em>、Blackstone 同周完成 LNG Canada $3.1bn 结构性投资与 IIFL Finance 约 16% 股权收购<em>（WSJ, 11/10；Reuters, 11/10）</em>、RWE+KKR 落地 £12bn（约 $17bn）英国海上风电融资<em>（ESG Today 等, 11/11）</em>。同时负面清单也在加长：OTF 诉讼、Pretium 和解、&quot;BX 私募信贷担忧 vs 创纪录 AUM&quot;的卖方争论<em>（Yahoo Finance, 11/10）</em>。两边合起来的含义：市场给 GP 定价的分化（对照我们 OTF 季报里 BDC 折价 0.70x vs 1.16x 的分化逻辑）正在延伸到 fund 层面——凡涉及 LP 份额二级交易，买方会把 GP 的 headline 风险直接计入出价，GP 选择与入场折扣的权重应高于策略 beta。",
+      "text": "头部 GP 在逆势扩表，\"flight to platform\"正在发生。Apollo originations $114bn 创纪录（WSJ, 11/8）、KKR Q3 募资 $25bn 且 credit 领跑（Alternative Credit Investor, 11/9）、Blackstone 同周完成 LNG Canada $3.1bn 结构性投资与 IIFL Finance 约 16% 股权收购（WSJ, 11/10；Reuters, 11/10）、RWE+KKR 落地 £12bn（约 $17bn）英国海上风电融资（ESG Today 等, 11/11）。同时负面清单也在加长：OTF 诉讼、Pretium 和解、\"BX 私募信贷担忧 vs 创纪录 AUM\"的卖方争论（Yahoo Finance, 11/10）。两边合起来的含义：市场给 GP 定价的分化（对照我们 OTF 季报里 BDC 折价 0.70x vs 1.16x 的分化逻辑）正在延伸到 fund 层面——凡涉及 LP 份额二级交易，买方会把 GP 的 headline 风险直接计入出价，GP 选择与入场折扣的权重应高于策略 beta。",
+      "style": null
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>BDC 财报季&quot;企稳而非解除警报&quot;的叙事延续。</strong>Bain Capital Specialty Finance (BCSF) 发布 Q3 业绩并宣派季度股息，电话会定调&quot;steady Q3&quot;<em>（GuruFocus/Seeking Alpha/Investing.com, 11/10）</em>——与我们 OTF 2026Q3 季报 2.6 节对板块的结论一致（NAV 回撤是估值重置、信用分化在加宽但未断裂）。Bain 体系内信用载体的表现可作为 BCGAF 季度跟踪的辅助参照；下一个验证点是 11 月下旬起的 BDC Q3 披露密集期。",
+      "text": "BDC 财报季\"企稳而非解除警报\"的叙事延续。Bain Capital Specialty Finance (BCSF) 发布 Q3 业绩并宣派季度股息，电话会定调\"steady Q3\"（GuruFocus/Seeking Alpha/Investing.com, 11/10）——与我们 OTF 2026Q3 季报 2.6 节对板块的结论一致（NAV 回撤是估值重置、信用分化在加宽但未断裂）。Bain 体系内信用载体的表现可作为 BCGAF 季度跟踪的辅助参照；下一个验证点是 11 月下旬起的 BDC Q3 披露密集期。",
+      "style": null
+    }
+  ],
+  "exhibits": [
+    {
+      "n": 1,
+      "kind": "figure",
+      "type": "image",
+      "caption": "3.2 价格机制已变：concession 成为边际定价器",
+      "derived": true,
+      "label": "",
+      "anchor": "ex-1",
+      "src": "img_001.png"
+    },
+    {
+      "n": 2,
+      "kind": "figure",
+      "type": "image",
+      "caption": "3.4 定价窗口期：调和\"违约极低\"与\"distressed 激增\"",
+      "derived": true,
+      "label": "",
+      "anchor": "ex-2",
+      "src": "img_002.png"
+    },
+    {
+      "n": 3,
+      "kind": "figure",
+      "type": "image",
+      "caption": "3.5 估值与 RV：避开\"被 AI 重估的旧软件 × 浮息\"",
+      "derived": true,
+      "label": "",
+      "anchor": "ex-3",
+      "src": "img_003.png"
+    },
+    {
+      "n": 4,
+      "kind": "figure",
+      "type": "image",
+      "caption": "3.5 估值与 RV：避开\"被 AI 重估的旧软件 × 浮息\"",
+      "derived": true,
+      "label": "",
+      "anchor": "ex-4",
+      "src": "img_004.png"
+    }
+  ],
+  "stats": {
+    "blocks": 50,
+    "images": 4,
+    "tables": 0,
+    "chars": 9603
+  },
+  "warnings": []
+}

@@ -1,0 +1,78 @@
+{
+  "id": "pag_brs-2025Q4-full-e48e907a",
+  "title": "CONFIDENTIAL Aid.list Aid.list PAG BRS Fund III L.P.",
+  "sector": "pag_brs",
+  "year": 2025,
+  "quarter": 4,
+  "period": "4Q2025",
+  "period_key": 20254,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "SRT",
+    "PAG",
+    "BRS Fund III",
+    "December",
+    "Europe",
+    "Basel IV"
+  ],
+  "source_name": "PAG BRS 2025Q4 Quarterly Newsletter.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:30:48+00:00",
+  "stats": {
+    "blocks": 90,
+    "images": 6,
+    "tables": 0,
+    "chars": 6584,
+    "pages": 11
+  },
+  "exhibit_count": 6,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Q U A R T E R L Y R E P O R T"
+    },
+    {
+      "level": 1,
+      "text": "C O N T E N T S"
+    },
+    {
+      "level": 1,
+      "text": "F U N D O V E R V I E W"
+    },
+    {
+      "level": 1,
+      "text": "Management Letter"
+    },
+    {
+      "level": 1,
+      "text": "Management Letter (cont.)"
+    },
+    {
+      "level": 1,
+      "text": "Fund Overview"
+    },
+    {
+      "level": 1,
+      "text": "I N V E S T M E N T S U M M A R Y"
+    },
+    {
+      "level": 1,
+      "text": "Investment Overview"
+    },
+    {
+      "level": 1,
+      "text": "Current Investments"
+    },
+    {
+      "level": 1,
+      "text": "Exited Investments"
+    },
+    {
+      "level": 1,
+      "text": "Disclaimer"
+    }
+  ],
+  "summary": "1 investment was exited in the quarter, totaling USD170M of realized value over the life of the investment:"
+}

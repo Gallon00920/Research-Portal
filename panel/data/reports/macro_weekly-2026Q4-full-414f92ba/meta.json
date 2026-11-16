@@ -1,0 +1,106 @@
+{
+  "id": "macro_weekly-2026Q4-full-414f92ba",
+  "title": "202611 Week2",
+  "sector": "macro_weekly",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "cn",
+  "section": "",
+  "keywords": [
+    "信用",
+    "市场",
+    "违约",
+    "不是",
+    "融资",
+    "定价"
+  ],
+  "source_name": "Weekly Market Update 202611 Week2.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-16T02:26:15+00:00",
+  "date": "2026-11-16",
+  "stats": {
+    "blocks": 50,
+    "images": 4,
+    "tables": 0,
+    "chars": 9603
+  },
+  "exhibit_count": 4,
+  "toc": [
+    {
+      "level": 1,
+      "text": "1. Things We Should Know"
+    },
+    {
+      "level": 1,
+      "text": "2. Macro：这周真正改变的是什么"
+    },
+    {
+      "level": 2,
+      "text": "2.1 就业的\"统计重估\"，比 CPI 更重要"
+    },
+    {
+      "level": 2,
+      "text": "2.2 通胀的性质：成本传导型，不是需求过热型"
+    },
+    {
+      "level": 2,
+      "text": "2.3 Fed 路径：50bp 进入了\"官员公开讨论\"的区间"
+    },
+    {
+      "level": 2,
+      "text": "2.4 蓝潮的落点：州层面的数据中心监管，而非联邦财政"
+    },
+    {
+      "level": 2,
+      "text": "2.5 全球框架：政策在给收入端已经偏弱的经济加压"
+    },
+    {
+      "level": 1,
+      "text": "3. Credit：供给、分化与\"定价窗口期\""
+    },
+    {
+      "level": 2,
+      "text": "3.1 供给是元变量，预测正在被现实追着上修"
+    },
+    {
+      "level": 2,
+      "text": "3.2 价格机制已变：concession 成为边际定价器"
+    },
+    {
+      "level": 2,
+      "text": "3.3 GS 与 MS 的供给节奏分歧，是本周最有交易含义的分歧"
+    },
+    {
+      "level": 2,
+      "text": "3.4 定价窗口期：调和\"违约极低\"与\"distressed 激增\""
+    },
+    {
+      "level": 2,
+      "text": "3.5 估值与 RV：避开\"被 AI 重估的旧软件 × 浮息\""
+    },
+    {
+      "level": 1,
+      "text": "4. Private Credit：AI 融资的第三战场与监控事件"
+    },
+    {
+      "level": 2,
+      "text": "4.1 三个市场的接力：私募承接公开市场的溢出"
+    },
+    {
+      "level": 2,
+      "text": "4.2 GPU/芯片 ABF：承保核心从信用迁移到残值"
+    },
+    {
+      "level": 2,
+      "text": "4.3 监控名单事件：OTF 证券诉讼与 Pretium 和解"
+    },
+    {
+      "level": 2,
+      "text": "4.4 GP 分化、LP 二级定价与 BDC 财报季"
+    }
+  ],
+  "summary": "输入：GS / MS / Barclays / JPM 宏观与信用共 8 份报告（2026/11/5–11/13）+ AID Research Portal 新闻（11/6–11/13）。本期不做原文摘录：以下为基于上述材料的综合判断，broker 仅作为数字出处出现；1 为摘要，论证与完整出处见 2–4 节。"
+}

@@ -1,0 +1,274 @@
+{
+  "id": "blueowl_gp_stakes-2025Q4-full-a74106b6",
+  "title": "Blue Owl GP Stakes V",
+  "sector": "blueowl_gp_stakes",
+  "year": 2025,
+  "quarter": 4,
+  "period": "4Q2025",
+  "period_key": 20254,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "Fund",
+    "Dec-",
+    "Size",
+    "Blue Owl",
+    "MOIC",
+    "Net Performance"
+  ],
+  "source_name": "BlueOwl_2025Q4.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:11:39+00:00",
+  "stats": {
+    "blocks": 267,
+    "images": 8,
+    "tables": 2,
+    "chars": 37746,
+    "pages": 15
+  },
+  "exhibit_count": 10,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Blue Owl GP Stakes V (Fund V)"
+    },
+    {
+      "level": 1,
+      "text": "Quarterly Investor Letter | 4Q 2025"
+    },
+    {
+      "level": 1,
+      "text": "Dow Jones"
+    },
+    {
+      "level": 2,
+      "text": "2025 Large Buyout Performance Ranking1"
+    },
+    {
+      "level": 2,
+      "text": "Executive Summary | 4Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "We are pleased to provide you with the investor report for Blue Owl GP Stakes Fund V (“GP Stakes V”, “Fund"
+    },
+    {
+      "level": 2,
+      "text": "We believe this distinction underscores the consistency"
+    },
+    {
+      "level": 2,
+      "text": "high-quality portfolios that compound value across"
+    },
+    {
+      "level": 1,
+      "text": "GPSC Platform Update"
+    },
+    {
+      "level": 2,
+      "text": "In March, we announced our fifth partnership in GP Stakes VI with the acquisition of a minority equity stake in Atlas Holdings (“Atlas”). Blackstone’s GP Stakes"
+    },
+    {
+      "level": 2,
+      "text": "Lastly, we continue to make strong progress in raising capital for Blue Owl GP Stakes VI, having closed on"
+    },
+    {
+      "level": 1,
+      "text": "GPSC Content"
+    },
+    {
+      "level": 2,
+      "text": "The GP Strategic Capital Team is pleased to share the following investor content expected to be released in the second quarter:"
+    },
+    {
+      "level": 2,
+      "text": "Additionally, GPSC is proud to announce we have been recognized as:1"
+    },
+    {
+      "level": 2,
+      "text": "In case you missed it:"
+    },
+    {
+      "level": 2,
+      "text": "Market Commentary | 4Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "2025 Private Equity Exit Activity"
+    },
+    {
+      "level": 2,
+      "text": "Figure 1: Global PE Exit Activity by Channel (in $ billions, by value)"
+    },
+    {
+      "level": 2,
+      "text": "Fund Overview | 4Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Partner Managers"
+    },
+    {
+      "level": 1,
+      "text": "$12.9 billion"
+    },
+    {
+      "level": 3,
+      "text": "Total Commitments"
+    },
+    {
+      "level": 1,
+      "text": "$11.7 billion"
+    },
+    {
+      "level": 3,
+      "text": "Committed to investments"
+    },
+    {
+      "level": 1,
+      "text": "$8.2 billion"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Gross Distributions by Type"
+    },
+    {
+      "level": 3,
+      "text": "Called Capital²"
+    },
+    {
+      "level": 3,
+      "text": "Called²"
+    },
+    {
+      "level": 1,
+      "text": "$2.9 billion"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Net TVPI progression¹"
+    },
+    {
+      "level": 3,
+      "text": "Distributions back to"
+    },
+    {
+      "level": 3,
+      "text": "Limited Partners"
+    },
+    {
+      "level": 3,
+      "text": "Final Close"
+    },
+    {
+      "level": 3,
+      "text": "Partner Managers"
+    },
+    {
+      "level": 2,
+      "text": "Select Partner Manager Highlights"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update | 4Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update"
+    },
+    {
+      "level": 2,
+      "text": "GP Holding Value"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update | 4Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update"
+    },
+    {
+      "level": 2,
+      "text": "CVC14"
+    },
+    {
+      "level": 2,
+      "text": "WarwickRe"
+    },
+    {
+      "level": 2,
+      "text": "MBK15"
+    },
+    {
+      "level": 2,
+      "text": "Landmark16"
+    },
+    {
+      "level": 2,
+      "text": "I Squared"
+    },
+    {
+      "level": 2,
+      "text": "Dragoneer"
+    },
+    {
+      "level": 2,
+      "text": "DivCore"
+    },
+    {
+      "level": 2,
+      "text": "Lead Edge"
+    },
+    {
+      "level": 2,
+      "text": "KPS"
+    },
+    {
+      "level": 2,
+      "text": "LBA Realty"
+    },
+    {
+      "level": 2,
+      "text": "Cerberus"
+    },
+    {
+      "level": 2,
+      "text": "PAI17"
+    },
+    {
+      "level": 2,
+      "text": "Stonepeak18"
+    },
+    {
+      "level": 2,
+      "text": "Linden"
+    },
+    {
+      "level": 2,
+      "text": "Bitkraft"
+    },
+    {
+      "level": 2,
+      "text": "GrowthCurve"
+    },
+    {
+      "level": 2,
+      "text": "Total"
+    },
+    {
+      "level": 2,
+      "text": "LP Investments"
+    },
+    {
+      "level": 2,
+      "text": "Securities Received In-Kind19"
+    },
+    {
+      "level": 2,
+      "text": "Total"
+    }
+  ],
+  "summary": "1. #1 Large Buyout Firm per the 2025 HEC–Dow Jones Large Buyout Performance Rankings, composed by Professor Oliver Gottschalg based on aggregate performance for funds raised 2012–2021. Neither Blue Owl nor its employees "
+}

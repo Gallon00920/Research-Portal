@@ -432,7 +432,9 @@ class DocxParser:
 
     def _handle_table(self, t: Table, target: list[dict[str, Any]]):
         self._in_masthead = False
-        has_img = t._tbl.find(".//" + qn("a:blip")) is not None
+        # a table holding pictures or Word's own charts lays figures side by side; it is never
+        # read as a data table (a chart is not rewritten as its numbers)
+        has_img = t._tbl.find(".//" + qn("a:blip")) is not None or t._tbl.find(".//" + qn("c:chart")) is not None
         nrows, ncols = len(t.rows), len(t.columns)
         if has_img or (nrows == 1 and ncols <= 3 and ncols > 1):
             # side-by-side figures: parse every cell as its own block list

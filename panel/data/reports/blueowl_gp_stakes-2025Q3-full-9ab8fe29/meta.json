@@ -1,0 +1,274 @@
+{
+  "id": "blueowl_gp_stakes-2025Q3-full-9ab8fe29",
+  "title": "Blue Owl GP Stakes V",
+  "sector": "blueowl_gp_stakes",
+  "year": 2025,
+  "quarter": 3,
+  "period": "3Q2025",
+  "period_key": 20253,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "Fund",
+    "Size",
+    "Sep-",
+    "Blue Owl",
+    "PROPRIETARY AND CONFIDENTIAL",
+    "LPs"
+  ],
+  "source_name": "BlueOwl_2025Q3.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:11:30+00:00",
+  "stats": {
+    "blocks": 266,
+    "images": 7,
+    "tables": 3,
+    "chars": 34836,
+    "pages": 16
+  },
+  "exhibit_count": 10,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Blue Owl GP Stakes V (Fund V)"
+    },
+    {
+      "level": 1,
+      "text": "Quarterly Investor Letter | 3Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "Executive Summary | 3Q 2025"
+    },
+    {
+      "level": 1,
+      "text": "GPSC Platform Update"
+    },
+    {
+      "level": 2,
+      "text": "Lastly, we continue to make strong progress in raising capital for Blue Owl GP Stakes VI, having closed"
+    },
+    {
+      "level": 1,
+      "text": "GPSC Content"
+    },
+    {
+      "level": 2,
+      "text": "The GP Strategic Capital Team is pleased to share the following investor content expected to be released in the first quarter:"
+    },
+    {
+      "level": 2,
+      "text": "For more information, please contact gpstrategiccapital-ir@blueowl.com or servicedesk@blueowl.com"
+    },
+    {
+      "level": 2,
+      "text": "Market Outlook | 3Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "The Rise of the Specialist¹ Firm"
+    },
+    {
+      "level": 2,
+      "text": "Specialist strategies are growing from a strong base that aims to include:"
+    },
+    {
+      "level": 2,
+      "text": "excluding publicly listed managers"
+    },
+    {
+      "level": 1,
+      "text": "Specialist: $548B"
+    },
+    {
+      "level": 1,
+      "text": "Generalist: $872B"
+    },
+    {
+      "level": 2,
+      "text": "Nearly 40 of the top 100 PE firms are specialists"
+    },
+    {
+      "level": 2,
+      "text": "Nearly 50 of the top 100 PE firms are specialists"
+    },
+    {
+      "level": 2,
+      "text": "Market Outlook | 3Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "Of the Top 10 Largest Buyout Funds Closed in 2025, Eight Were Specialists"
+    },
+    {
+      "level": 2,
+      "text": "Figure 2: Top 10 Largest Buyout Funds of 2025"
+    },
+    {
+      "level": 2,
+      "text": "Fund Overview | 3Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Partner Managers"
+    },
+    {
+      "level": 1,
+      "text": "$12.9 billion"
+    },
+    {
+      "level": 3,
+      "text": "Total Commitments"
+    },
+    {
+      "level": 1,
+      "text": "$11.6 billion"
+    },
+    {
+      "level": 3,
+      "text": "Committed to investments"
+    },
+    {
+      "level": 1,
+      "text": "$7.4 billion"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Gross Distributions by Type"
+    },
+    {
+      "level": 3,
+      "text": "Called Capital"
+    },
+    {
+      "level": 2,
+      "text": "Management Fees"
+    },
+    {
+      "level": 2,
+      "text": "GP Proceeds"
+    },
+    {
+      "level": 2,
+      "text": "Carried Interest"
+    },
+    {
+      "level": 3,
+      "text": "Called"
+    },
+    {
+      "level": 2,
+      "text": "LP Investments"
+    },
+    {
+      "level": 2,
+      "text": "Securitization"
+    },
+    {
+      "level": 2,
+      "text": "Sale Proceeds"
+    },
+    {
+      "level": 1,
+      "text": "$2.9 billion"
+    },
+    {
+      "level": 2,
+      "text": "GP Stakes V Net TVPI progression¹"
+    },
+    {
+      "level": 3,
+      "text": "Distributions back to"
+    },
+    {
+      "level": 3,
+      "text": "Limited Partners"
+    },
+    {
+      "level": 3,
+      "text": "Final Close"
+    },
+    {
+      "level": 3,
+      "text": "Partner Managers"
+    },
+    {
+      "level": 2,
+      "text": "Select Partner Manager Highlights"
+    },
+    {
+      "level": 2,
+      "text": "Select Partner Highlights | 3Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "Select Partner Highlights"
+    },
+    {
+      "level": 2,
+      "text": "GP Holding Value"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update | 3Q 2025"
+    },
+    {
+      "level": 2,
+      "text": "GP Valuation Update"
+    },
+    {
+      "level": 3,
+      "text": "CVC14"
+    },
+    {
+      "level": 3,
+      "text": "WarwickRe"
+    },
+    {
+      "level": 3,
+      "text": "MBK15"
+    },
+    {
+      "level": 3,
+      "text": "Landmark16"
+    },
+    {
+      "level": 3,
+      "text": "I Squared"
+    },
+    {
+      "level": 3,
+      "text": "Dragoneer"
+    },
+    {
+      "level": 3,
+      "text": "DivCore"
+    },
+    {
+      "level": 3,
+      "text": "Lead Edge"
+    },
+    {
+      "level": 3,
+      "text": "KPS"
+    },
+    {
+      "level": 3,
+      "text": "LBA Realty"
+    },
+    {
+      "level": 3,
+      "text": "Cerberus"
+    },
+    {
+      "level": 3,
+      "text": "PAI17"
+    },
+    {
+      "level": 3,
+      "text": "Stonepeak18"
+    }
+  ],
+  "summary": "FOR EXISTING INVESTOR USE ONLY. NOT FOR FURTHER DISTRIBUTION. PROPRIETARY AND CONFIDENTIAL."
+}

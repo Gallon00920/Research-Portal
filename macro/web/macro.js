@@ -1,5 +1,6 @@
-/* Macro / Market — a view of the AID Research Panel (#/macro/<YYYY-MM>).
-   One brief per month: a title and the slides of a deck, in upload order. Each slide was read by
+/* Macro / Market — a view of the AID Research Panel (#/macro/<topic>/<YYYY-MM>).
+   Two fixed topics (tags): the weekly updates and the market's rate expectations (市场加息预期); each
+   has one brief per month: a title and the slides of a deck, in upload order. Each slide was read by
    Claude (macro/scripts/extract_macro.py) into blocks: charts (line, vertical bars, horizontal
    bars with parts), tables with coloured cells, bullet lists, call-outs, text and footnotes; this
    file draws them. The data comes from data/macro/<YYYY-MM>.json. Uploading several screenshots
@@ -32,6 +33,10 @@ const STR = {
     up_working: 'Reading {n} slide(s) with Claude… about a minute per slide', up_saving: 'Saving the images to GitHub…',
     up_pending: 'Saved to GitHub. The site reads the slides and rebuilds in a few minutes; refresh after that.', view_actions: 'View build progress',
     up_done: '{n} slides read for {month}', cancel: 'Cancel', submit: 'Read the slides', close: 'Close ✕', remove: 'Remove', up: 'Up', down: 'Down',
+    // the weekly updates: a document per date, not slides
+    date: 'Date', upload_file: 'Upload file', empty_file_title: 'No weekly update yet',
+    empty_file_text: 'Upload the weekly update as a Word or PDF file, or have Claude write it from the week\'s broker reports.', open: 'Open', tables: 'tables', figures: 'figures',
+    week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week',
   },
   cn: {
     year: '年份', month: '月份', upload: '上传幻灯片', empty_title: '暂无简报',
@@ -47,10 +52,28 @@ const STR = {
     up_working: '正在用 Claude 读取 {n} 页… 每页约一分钟', up_saving: '正在保存图片到 GitHub…',
     up_pending: '已保存到 GitHub。网站将在几分钟内读取幻灯片并重新构建，之后请刷新。', view_actions: '查看构建进度',
     up_done: '{month} 已读取 {n} 页', cancel: '取消', submit: '读取幻灯片', close: '关闭 ✕', remove: '移除', up: '上移', down: '下移',
+    date: '日期', upload_file: '上传文件', empty_file_title: '暂无每周更新',
+    empty_file_text: '上传每周更新的 Word 或 PDF 文件，或让 Claude 根据本周券商研报生成。', open: '打开', tables: '张表', figures: '张图',
+    week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新',
   },
 };
 
-const state = {lang: 'en', ym: null, index: null, doc: null, built: false, seq: 0, files: []};
+/* the two fixed topics (tags) of the view, in display order; each has its own months under
+   data/macro/<topic>/ and its own upload */
+const TOPICS = [
+  {id: 'weekly', en: 'Weekly Updates', cn: '每周更新', kind: 'file'},  // a document per date
+  {id: 'rates', en: 'Rate Hike Expectations', cn: '市场加息预期', kind: 'slides'},  // a deck per month
+];
+const DEFAULT_TOPIC = 'rates';
+const WEEKLY_SECTOR = 'macro_weekly';  // the panel sector that holds the weekly updates
+function topicById(id) { return TOPICS.find((x) => x.id === id) || null; }
+function fileTopic() { const tp = topicById(state.topic); return !!(tp && tp.kind === 'file'); }
+function keyLabel(key) { return /^\d{4}-\d{2}-\d{2}$/.test(key || '') ? dateLabel(key) : monthLabel(key); }
+function dateLabel(d) { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString(locale(), {year: 'numeric', month: 'long', day: 'numeric'}); }
+function topicLabel(tp) { const x = typeof tp === 'string' ? topicById(tp) : tp; return x ? (state.lang === 'cn' ? x.cn : x.en) : ''; }
+
+const state = {lang: 'en', topic: DEFAULT_TOPIC, ym: null, index: null, indexTopic: null, doc: null, built: false, seq: 0, files: [],
+               yearFilter: '', monthFilter: '', weekFilter: ''};  // the weekly list's filters
 const $ = (id) => document.getElementById(id);
 function t(key, vars) {
   let s = (STR[state.lang] || STR.en)[key];
@@ -105,12 +128,12 @@ async function makeEnglish() {
   const ym = state.ym;
   toast(t('en_working'));
   try {
-    const r = await fetch('/api/macro/' + ym + '/translate', {method: 'POST'});
+    const r = await fetch('/api/macro/' + state.topic + '/' + ym + '/translate', {method: 'POST'});
     let data = null; try { data = await r.json(); } catch (e) {}
     if (r.status === 401) { location.href = '/login.html?next=' + encodeURIComponent(location.hash); return; }
     if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
     toast(t('en_done'));
-    if (state.ym === ym) show(ym);
+    if (state.ym === ym) show(state.topic, ym);
   } catch (e) { toast(e.message || String(e)); }
 }
 
@@ -122,46 +145,98 @@ async function getJson(path) {
   return r.json();
 }
 async function loadIndex(force) {
-  if (state.index && !force) return state.index;
-  const idx = await getJson('data/macro/index.json');
-  state.index = (idx && idx.months) || [];
+  if (state.index && state.indexTopic === state.topic && !force) return state.index;
+  if (fileTopic()) {
+    // the weekly updates are reports of the panel (sector "macro_weekly", one per date), shown
+    // by the report reader; the list here comes from the panel's data layer
+    const data = await window.DataLayer.load();
+    const reps = (data.reports || []).filter((r) => r.sector === WEEKLY_SECTOR && r.date);
+    reps.sort((a, b) => (b.date + (b.uploaded_at || '')).localeCompare(a.date + (a.uploaded_at || '')));
+    state.weekly = reps;
+    state.index = reps.map((r) => r.date);
+  } else {
+    const idx = await getJson('data/macro/' + state.topic + '/index.json');
+    state.index = (idx && idx.months) || [];
+  }
+  state.indexTopic = state.topic;
   return state.index;
 }
+function weeklyByDate(date) { return (state.weekly || []).find((r) => r.date === date) || null; }
 function months() { return (state.index || []).slice().sort(); }
-function go(ym) { location.hash = '#/macro' + (ym ? '/' + ym : ''); }
+function go(ym, topic) { location.hash = '#/macro/' + (topic || state.topic) + (ym ? '/' + ym : ''); }
 
 /* ---------------------------------------------------------------- shell */
 function build() {
   if (state.built) return;
   const card = $('macroCard');
   card.textContent = '';
+  // the topic tags: fixed, one click switches the view to that topic's months
+  const tags = h('nav', 'sub-tabs mk-tags'); tags.id = 'mkTags'; tags.setAttribute('aria-label', 'topics');
+  TOPICS.forEach((tp) => {
+    const b = h('button'); b.type = 'button'; b.dataset.topic = tp.id;
+    b.addEventListener('click', () => { if (state.topic !== tp.id) go(null, tp.id); });
+    tags.appendChild(b);
+  });
+  card.appendChild(tags);
   const bar = h('div', 'mk-bar');
   const left = h('div', 'mk-bar-title'); left.id = 'mkBarTitle';
   bar.appendChild(left);
   const ctl = h('div', 'mk-controls');
   const ly = h('label'); ly.appendChild(h('span')).id = 'mkYearLbl'; const ys = h('select'); ys.id = 'mkYear'; ly.appendChild(ys);
   const lm = h('label'); lm.appendChild(h('span')).id = 'mkMonthLbl'; const ms = h('select'); ms.id = 'mkMonth'; lm.appendChild(ms);
+  const lw = h('label'); lw.id = 'mkWeekRow'; lw.appendChild(h('span')).id = 'mkWeekLbl'; const ws = h('select'); ws.id = 'mkWeek'; lw.appendChild(ws);
   const up = h('button', 'btn primary small'); up.type = 'button'; up.id = 'mkUpload';
-  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(up);
+  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(lw); ctl.appendChild(up);
+  ws.addEventListener('change', () => { state.weekFilter = ws.value; renderWeeklyList($('mkBody')); });
   bar.appendChild(ctl);
   card.appendChild(bar);
   const body = h('div', 'mk-body'); body.id = 'mkBody';
   card.appendChild(body);
-  ys.addEventListener('change', () => { const inYear = months().filter((m) => m.startsWith(ys.value + '-')); go(inYear[inYear.length - 1] || null); });
-  ms.addEventListener('change', () => go(ms.value));
+  ys.addEventListener('change', () => {
+    if (fileTopic()) { state.yearFilter = ys.value; state.monthFilter = ''; state.weekFilter = ''; paintShell(); renderWeeklyList($('mkBody')); return; }
+    const inYear = months().filter((m) => m.startsWith(ys.value + '-')); go(inYear[inYear.length - 1] || null);
+  });
+  ms.addEventListener('change', () => {
+    if (fileTopic()) { state.monthFilter = ms.value; state.weekFilter = ''; paintShell(); renderWeeklyList($('mkBody')); return; }
+    go(ms.value);
+  });
   up.addEventListener('click', () => openUpload());
   buildUploadDialog();
   state.built = true;
 }
 function paintShell() {
+  Array.from($('mkTags').children).forEach((b) => { b.textContent = topicLabel(b.dataset.topic); b.className = b.dataset.topic === state.topic ? 'on' : ''; });
   $('mkYearLbl').textContent = t('year');
   $('mkMonthLbl').textContent = t('month');
-  $('mkUpload').textContent = '⬆ ' + t('upload');
+  $('mkWeekLbl').textContent = t('week');
+  $('mkWeekRow').hidden = !fileTopic();
+  $('mkUpload').textContent = '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'));
   const all = months();
   const years = Array.from(new Set(all.map((m) => m.slice(0, 4)))).sort().reverse();
-  const ys = $('mkYear'), ms = $('mkMonth');
-  ys.textContent = ''; ms.textContent = '';
+  const ys = $('mkYear'), ms = $('mkMonth'), ws = $('mkWeek');
+  ys.textContent = ''; ms.textContent = ''; ws.textContent = '';
   years.forEach((y) => { const o = h('option', null, y); o.value = y; ys.appendChild(o); });
+  if (fileTopic()) {
+    // the weekly updates: year, then month and week of the month to narrow the list ("All" keeps it whole)
+    if (!years.includes(state.yearFilter)) state.yearFilter = years[0] || '';
+    ys.value = state.yearFilter;
+    const inYear = all.filter((d) => d.startsWith(state.yearFilter + '-'));
+    const monthsIn = Array.from(new Set(inYear.map((d) => d.slice(0, 7)))).sort().reverse();
+    const oAll = h('option', null, t('all')); oAll.value = ''; ms.appendChild(oAll);
+    monthsIn.forEach((m) => { const o = h('option', null, monthName(Number(m.slice(5, 7)))); o.value = m; ms.appendChild(o); });
+    if (!monthsIn.includes(state.monthFilter)) state.monthFilter = '';
+    ms.value = state.monthFilter;
+    const wAll = h('option', null, t('all')); wAll.value = ''; ws.appendChild(wAll);
+    if (state.monthFilter) {
+      const weeks = Array.from(new Set(inYear.filter((d) => d.startsWith(state.monthFilter)).map(weekOfMonth))).sort((a, b) => b - a);
+      weeks.forEach((w) => { const o = h('option', null, t('week_n', {n: w})); o.value = String(w); ws.appendChild(o); });
+      if (!weeks.map(String).includes(state.weekFilter)) state.weekFilter = '';
+    } else state.weekFilter = '';
+    ws.value = state.weekFilter;
+    ys.disabled = years.length === 0; ms.disabled = inYear.length === 0; ws.disabled = !state.monthFilter;
+    paintUploadDialog();
+    return;
+  }
   const year = state.ym ? state.ym.slice(0, 4) : years[0];
   if (year) ys.value = year;
   all.filter((m) => m.startsWith(year + '-')).forEach((m) => { const o = h('option', null, monthName(Number(m.slice(5)))); o.value = m; ms.appendChild(o); });
@@ -171,34 +246,73 @@ function paintShell() {
 }
 
 /* ---------------------------------------------------------------- render */
-async function show(ym) {
+async function show(topic, ym) {
   const seq = ++state.seq;
   build();
+  // an address from before the topics (#/macro/2026-10) means the rates topic
+  if (topic && /^\d{4}-\d{2}$/.test(topic)) { ym = topic; topic = DEFAULT_TOPIC; }
+  state.topic = topicById(topic) ? topic : DEFAULT_TOPIC;
   const body = $('mkBody');
   body.classList.add('is-loading');
-  try { await loadIndex(false); } catch (e) { state.index = []; }
+  try { await loadIndex(false); } catch (e) { state.index = []; state.indexTopic = state.topic; }
   if (seq !== state.seq) return;
   const all = months();
+  if (fileTopic()) {
+    // the weekly updates: a list of the dated reports, each opening in the report reader
+    state.ym = all[all.length - 1] || null;
+    const want = '#/macro/' + state.topic;
+    if (location.hash !== want && location.hash.indexOf('#/macro') === 0) history.replaceState(null, '', want);
+    paintShell();
+    state.doc = null; $('mkBarTitle').textContent = '';
+    body.classList.remove('is-loading');
+    if (!state.ym) renderEmpty(body); else renderWeeklyList(body);
+    return;
+  }
   state.ym = all.includes(ym) ? ym : (all[all.length - 1] || null);
-  const want = '#/macro' + (state.ym ? '/' + state.ym : '');
+  const want = '#/macro/' + state.topic + (state.ym ? '/' + state.ym : '');
   if (location.hash !== want && location.hash.indexOf('#/macro') === 0) history.replaceState(null, '', want);
   paintShell();
   if (!state.ym) { state.doc = null; $('mkBarTitle').textContent = ''; body.classList.remove('is-loading'); renderEmpty(body); return; }
   let doc = null, err = null;
-  try { doc = await getJson('data/macro/' + state.ym + '.json'); } catch (e) { err = e; }
+  try { doc = await getJson('data/macro/' + state.topic + '/' + state.ym + '.json'); } catch (e) { err = e; }
   if (seq !== state.seq) return;
   body.classList.remove('is-loading');
   state.doc = doc;
   if (!doc) { renderEmpty(body, err ? (t('load_error') + ': ' + err.message) : t('load_error')); return; }
   renderDoc(body, doc);
 }
+/* the weekly updates, latest first; each row opens the report reader (contents on the left, the
+   index of tables and figures on the right) */
+function weekOfMonth(date) { return Math.ceil(Number(date.slice(8, 10)) / 7); }  // days 1-7 are week 1
+function renderWeeklyList(body) {
+  body.textContent = '';
+  const list = h('div', 'mk-weekly');
+  const shown = (state.weekly || []).filter((r) => (!state.yearFilter || r.date.startsWith(state.yearFilter + '-'))
+    && (!state.monthFilter || r.date.startsWith(state.monthFilter)) && (!state.weekFilter || String(weekOfMonth(r.date)) === state.weekFilter));
+  if (!shown.length) { body.appendChild(h('div', 'mk-empty', t('no_match'))); return; }
+  shown.forEach((r) => {
+    const row = h('a', 'mk-week'); row.href = '#/r/' + r.id;
+    row.appendChild(h('span', 'mk-week-date', dateLabel(r.date)));
+    const main = h('span', 'mk-week-main');
+    main.appendChild(h('b', null, r.title || r.source_name || r.date));
+    const bits = [];
+    if (r.stats && r.stats.tables) bits.push(r.stats.tables + ' ' + t('tables'));
+    if (r.stats && r.stats.images) bits.push(r.stats.images + ' ' + t('figures'));
+    if (r.source_name) bits.push(r.source_name);
+    main.appendChild(h('span', 'mk-week-sub', bits.join(' · ')));
+    row.appendChild(main);
+    row.appendChild(h('span', 'mk-week-open', t('open') + ' ›'));
+    list.appendChild(row);
+  });
+  body.appendChild(list);
+}
 function renderEmpty(body, message) {
   body.textContent = '';
   const box = h('div', 'mk-empty');
-  box.appendChild(h('b', null, message || t('empty_title')));
-  if (!message) box.appendChild(document.createTextNode(t('empty_text')));
+  box.appendChild(h('b', null, message || t(fileTopic() ? 'empty_file_title' : 'empty_title')));
+  if (!message) box.appendChild(document.createTextNode(t(fileTopic() ? 'empty_file_text' : 'empty_text')));
   box.appendChild(document.createElement('br'));
-  const b = h('button', 'btn primary', '⬆ ' + t('upload')); b.type = 'button';
+  const b = h('button', 'btn primary', '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'))); b.type = 'button';
   b.addEventListener('click', () => openUpload());
   box.appendChild(b);
   body.appendChild(box);
@@ -247,7 +361,7 @@ function renderPage(p) {
   head.appendChild(h('h3', null, L(p.title) || t('slide', {n: p.n})));
   if (p.source_image) {
     const a = h('a', 'mk-src', t('source')); a.target = '_blank'; a.rel = 'noopener';
-    a.href = 'data/macro/' + state.ym + '/' + encodeURIComponent(p.source_image);
+    a.href = 'data/macro/' + state.topic + '/' + state.ym + '/' + encodeURIComponent(p.source_image);
     a.addEventListener('click', (ev) => {
       if (!window.AIDLightbox || ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.button !== 0) return;
       ev.preventDefault(); window.AIDLightbox.open(a.href, (L(p.title) || '') + ' · ' + monthLabel(state.ym));
@@ -496,6 +610,9 @@ function paintReplaceHint() {
 }
 function setMsg(text, cls) { const m = $('mkUpMsg'); m.className = 'form-msg' + (cls ? ' ' + cls : ''); m.textContent = text || ''; }
 function openUpload() {
+  // the weekly updates are reports of the panel: its upload dialog (a file, or "Generate with AI"
+  // on the week's broker reports) asks for the date of the update
+  if (fileTopic()) { if (window.AIDPanel) window.AIDPanel.openUpload(WEEKLY_SECTOR); return; }
   const now = new Date();
   $('mkUpYear').value = now.getFullYear(); $('mkUpMonth').value = String(now.getMonth() + 1);
   $('mkUpBrief').value = ''; state.files = []; renderFiles(); setMsg('');
@@ -521,17 +638,17 @@ async function submitUpload(ev) {
     if (DL && DL.mode === 'static') {
       setMsg(t('up_saving'));
       for (let i = 0; i < files.length; i++) {
-        const name = tg.ym + '-' + String(i + 1).padStart(2, '0') + '.' + MIME_EXT[files[i].type];
+        const name = state.topic + '-' + tg.ym + '-' + String(i + 1).padStart(2, '0') + '.' + MIME_EXT[files[i].type];
         await DL.commitFile('macro/incoming/' + name, new Uint8Array(await files[i].arrayBuffer()), 'macro: upload ' + name);
       }
-      await DL.commitFile('macro/incoming/' + tg.ym + '.meta.json', new TextEncoder().encode(JSON.stringify({title}, null, 2) + '\n'), 'macro: upload ' + tg.ym);
+      await DL.commitFile('macro/incoming/' + state.topic + '-' + tg.ym + '.meta.json', new TextEncoder().encode(JSON.stringify({title}, null, 2) + '\n'), 'macro: upload ' + state.topic + ' ' + tg.ym);
       setMsg(t('up_pending'), 'ok');
       toast(t('up_pending'), DL.actionsUrl ? {text: t('view_actions'), href: DL.actionsUrl()} : null);
     } else {
       setMsg(t('up_working', {n: files.length}));
       const fd = new FormData();
       files.forEach((f) => fd.append('files', f, f.name));
-      fd.append('year', String(tg.year)); fd.append('month', String(tg.month)); fd.append('title', title);
+      fd.append('year', String(tg.year)); fd.append('month', String(tg.month)); fd.append('title', title); fd.append('topic', state.topic);
       const r = await fetch('/api/macro/upload', {method: 'POST', body: fd});
       let data = null; try { data = await r.json(); } catch (e) {}
       if (r.status === 401) { location.href = '/login.html?next=' + encodeURIComponent(location.hash); return; }
@@ -539,7 +656,7 @@ async function submitUpload(ev) {
       await loadIndex(true);
       closeUpload();
       toast(t('up_done', {n: data.pages, month: monthLabel(tg.ym)}));
-      if (location.hash === '#/macro/' + tg.ym) show(tg.ym); else go(tg.ym);
+      if (location.hash === '#/macro/' + state.topic + '/' + tg.ym) show(state.topic, tg.ym); else go(tg.ym);
     }
   } catch (e) { setMsg(e.message || String(e), 'err'); }
   finally { btn.disabled = false; }
@@ -548,12 +665,12 @@ async function submitUpload(ev) {
 /* ---------------------------------------------------------------- panel integration */
 function toLang(lang) { return lang === 'cn' || lang === 'zh' ? 'cn' : 'en'; }
 window.MacroMarket = {
-  mount(lang, ym) { state.lang = toLang(lang); return show(ym || state.ym); },
+  mount(lang, topic, ym) { state.lang = toLang(lang); return show(topic || state.topic, ym || (topic ? null : state.ym)); },
   setLanguage(lang) {
     const next = toLang(lang);
     if (next === state.lang) return;
     state.lang = next;
-    if (state.built && !$('view-macro').hidden) show(state.ym);
+    if (state.built && !$('view-macro').hidden) show(state.topic, state.ym);
   },
 };
 })();

@@ -186,7 +186,9 @@ def period_label(y: int, q: int) -> str:
 
 
 def report_key(m: dict[str, Any]) -> tuple:
-    return (m.get("sector"), m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
+    # the sub-sector ("section": internal review / quarterly updates) exists for portfolio funds only;
+    # a dated report (a weekly update) is one edition per date
+    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "")
 
 
 def dedupe_all(c: Crypto) -> int:
@@ -258,6 +260,9 @@ def process_incoming(c: Crypto) -> int:
             "id": rid, "title": (meta_in.get("title") or "").strip(), "sector": sector, "year": year, "quarter": quarter,
             "period": period_label(year, quarter), "period_key": year * 10 + quarter, "nature": nature,
             "language": meta_in.get("language") if meta_in.get("language") in ("en", "cn") else "",
+            "section": str(meta_in.get("section") or "").strip(),
+            # a dated report (a weekly update): one edition per date
+            **({"date": str(meta_in["date"]).strip()} if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(meta_in.get("date") or "").strip()) else {}),
             "keywords": [k.strip() for k in re.split(r"[,，;；]", meta_in.get("keywords") or "") if k.strip()],
             "source_name": meta_in.get("source_name") or p.name.replace(".enc", ""), "source_ext": ext,
             "uploaded_at": meta_in.get("uploaded_at") or now_iso(),
@@ -298,6 +303,8 @@ def apply_ops(c: Crypto) -> int:
                     for k in ("title", "nature", "language", "sector"):
                         if op.get(k):
                             meta[k] = op[k]
+                    if "section" in op:
+                        meta["section"] = str(op.get("section") or "")
                     if "keywords" in op:
                         kws = op["keywords"]
                         meta["keywords"] = [k.strip() for k in re.split(r"[,，;；]", kws) if k.strip()] if isinstance(kws, str) else kws

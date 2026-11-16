@@ -1,0 +1,274 @@
+{
+  "id": "oak_street-2025Q4-full-2aef1fc7",
+  "title": "Blue Owl Real Estate Fund VI",
+  "sector": "oak_street",
+  "year": 2025,
+  "quarter": 4,
+  "period": "4Q2025",
+  "period_key": 20254,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "Fund",
+    "Blue Owl Real Assets",
+    "Past",
+    "Represents",
+    "Blue Owl Real Estate",
+    "NRSRO"
+  ],
+  "source_name": "BlueOwl_2025Q4.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:12:10+00:00",
+  "stats": {
+    "blocks": 282,
+    "images": 14,
+    "tables": 13,
+    "chars": 33332,
+    "pages": 21
+  },
+  "exhibit_count": 27,
+  "toc": [
+    {
+      "level": 1,
+      "text": "Blue Owl Real Estate Fund VI"
+    },
+    {
+      "level": 1,
+      "text": "Quarterly Investor Letter | 4Q 2025"
+    },
+    {
+      "level": 3,
+      "text": "Blue Owl Real Assets Platform Update"
+    },
+    {
+      "level": 3,
+      "text": "Market Update"
+    },
+    {
+      "level": 1,
+      "text": "Quick Facts"
+    },
+    {
+      "level": 1,
+      "text": "$5.2 billion"
+    },
+    {
+      "level": 3,
+      "text": "Committed capital"
+    },
+    {
+      "level": 3,
+      "text": "Recent Investment Activity"
+    },
+    {
+      "level": 1,
+      "text": "34 Months"
+    },
+    {
+      "level": 3,
+      "text": "of consecutive distributions1"
+    },
+    {
+      "level": 1,
+      "text": "$7.2 billion"
+    },
+    {
+      "level": 3,
+      "text": "Total assets acquired2"
+    },
+    {
+      "level": 3,
+      "text": "Total portfolio size3"
+    },
+    {
+      "level": 3,
+      "text": "Realized Net IRR4"
+    },
+    {
+      "level": 3,
+      "text": "Properties5"
+    },
+    {
+      "level": 3,
+      "text": "Investments"
+    },
+    {
+      "level": 1,
+      "text": "Quick Facts"
+    },
+    {
+      "level": 1,
+      "text": "$5.2 billion"
+    },
+    {
+      "level": 3,
+      "text": "Committed capital"
+    },
+    {
+      "level": 1,
+      "text": "34 Months"
+    },
+    {
+      "level": 3,
+      "text": "of consecutive distributions2"
+    },
+    {
+      "level": 1,
+      "text": "$7.2 billion"
+    },
+    {
+      "level": 3,
+      "text": "Total assets acquired3"
+    },
+    {
+      "level": 3,
+      "text": "No. of"
+    },
+    {
+      "level": 3,
+      "text": "Est. Sale"
+    },
+    {
+      "level": 3,
+      "text": "Hold"
+    },
+    {
+      "level": 3,
+      "text": "Est. Net"
+    },
+    {
+      "level": 3,
+      "text": "Tenant"
+    },
+    {
+      "level": 3,
+      "text": "Date"
+    },
+    {
+      "level": 3,
+      "text": "IRR1"
+    },
+    {
+      "level": 3,
+      "text": "Total portfolio size4"
+    },
+    {
+      "level": 3,
+      "text": "Realized Net IRR5"
+    },
+    {
+      "level": 3,
+      "text": "Properties6"
+    },
+    {
+      "level": 3,
+      "text": "Investments"
+    },
+    {
+      "level": 3,
+      "text": "Fund VI Portfolio | Unrealized1"
+    },
+    {
+      "level": 3,
+      "text": "Atlantic Union Bank"
+    },
+    {
+      "level": 3,
+      "text": "C-Store Operator"
+    },
+    {
+      "level": 3,
+      "text": "Syngenta"
+    },
+    {
+      "level": 3,
+      "text": "Bank of the Sierra"
+    },
+    {
+      "level": 3,
+      "text": "Gallup"
+    },
+    {
+      "level": 3,
+      "text": "CommonSpirit"
+    },
+    {
+      "level": 3,
+      "text": "US Foods4"
+    },
+    {
+      "level": 3,
+      "text": "Fulton Bank5"
+    },
+    {
+      "level": 3,
+      "text": "Dollar General"
+    },
+    {
+      "level": 3,
+      "text": "Sysco Corporation"
+    },
+    {
+      "level": 3,
+      "text": "Walgreens"
+    },
+    {
+      "level": 3,
+      "text": "CTP-02 (Meta SPV)10"
+    },
+    {
+      "level": 3,
+      "text": "GXO Logistics"
+    },
+    {
+      "level": 3,
+      "text": "Old National Bank9"
+    },
+    {
+      "level": 3,
+      "text": "Oracle7"
+    },
+    {
+      "level": 3,
+      "text": "Starbucks"
+    },
+    {
+      "level": 3,
+      "text": "SouthState Bank"
+    },
+    {
+      "level": 3,
+      "text": "Fund Demographics"
+    },
+    {
+      "level": 3,
+      "text": "Property Map"
+    },
+    {
+      "level": 3,
+      "text": "Portfolio Characteristics"
+    },
+    {
+      "level": 1,
+      "text": "Property Level Secured Debt"
+    },
+    {
+      "level": 3,
+      "text": "Tenant"
+    },
+    {
+      "level": 3,
+      "text": "US Foods"
+    },
+    {
+      "level": 3,
+      "text": "Atlantic Union Bank"
+    },
+    {
+      "level": 3,
+      "text": "Sandisk Corporation1"
+    }
+  ],
+  "summary": "FOR EXISTING INVESTOR USE ONLY. NOT FOR USE WITH THE GENERAL PUBLIC. PROPRIETARY AND CONFIDENTIAL"
+}

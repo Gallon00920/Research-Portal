@@ -1,0 +1,274 @@
+{
+  "id": "hsbc_rcf-2026Q2-full-aa206183",
+  "title": "HSBC RCF Partnership Fund",
+  "sector": "hsbc_rcf",
+  "year": 2026,
+  "quarter": 2,
+  "period": "2Q2026",
+  "period_key": 20262,
+  "nature": "full",
+  "language": "en",
+  "section": "quarterly",
+  "keywords": [
+    "June",
+    "The Company",
+    "ESG",
+    "EBITDA",
+    "HSBC Asset Management",
+    "Data"
+  ],
+  "source_name": "HSBC RCF 2026Q2.pdf",
+  "source_ext": ".pdf",
+  "uploaded_at": "2026-11-13T07:13:54+00:00",
+  "stats": {
+    "blocks": 495,
+    "images": 0,
+    "tables": 14,
+    "chars": 62336,
+    "pages": 28
+  },
+  "exhibit_count": 14,
+  "toc": [
+    {
+      "level": 1,
+      "text": "HSBC RCF Partnership Fund"
+    },
+    {
+      "level": 2,
+      "text": "Quarterly report for period ended 30 June 2026"
+    },
+    {
+      "level": 3,
+      "text": "Contents"
+    },
+    {
+      "level": 3,
+      "text": "Investment Manager’s Update"
+    },
+    {
+      "level": 3,
+      "text": "Fund Performance"
+    },
+    {
+      "level": 3,
+      "text": "Portfolio Overview"
+    },
+    {
+      "level": 3,
+      "text": "Asset Profiles and Quarterly Updates"
+    },
+    {
+      "level": 1,
+      "text": "Investment Manager’s Update"
+    },
+    {
+      "level": 2,
+      "text": "Investment Manager’s Update"
+    },
+    {
+      "level": 1,
+      "text": "Fund Overview"
+    },
+    {
+      "level": 3,
+      "text": "Introduction"
+    },
+    {
+      "level": 3,
+      "text": "Fund Summary"
+    },
+    {
+      "level": 3,
+      "text": "Fund Key Data"
+    },
+    {
+      "level": 3,
+      "text": "Market Overview"
+    },
+    {
+      "level": 3,
+      "text": "Fund Status"
+    },
+    {
+      "level": 3,
+      "text": "Watchlist"
+    },
+    {
+      "level": 3,
+      "text": "Fund Performance"
+    },
+    {
+      "level": 1,
+      "text": "Fund Performance"
+    },
+    {
+      "level": 2,
+      "text": "Fund Performance"
+    },
+    {
+      "level": 3,
+      "text": "Portfolio Statistics (at Settled status and excluding realised)"
+    },
+    {
+      "level": 3,
+      "text": "Weighted average RCF commitment fees (bps)"
+    },
+    {
+      "level": 3,
+      "text": "Events after reporting"
+    },
+    {
+      "level": 3,
+      "text": "Pipeline"
+    },
+    {
+      "level": 3,
+      "text": "Fund IRR & other KPIs"
+    },
+    {
+      "level": 3,
+      "text": "Capital Account Summary"
+    },
+    {
+      "level": 3,
+      "text": "Since Inception"
+    },
+    {
+      "level": 3,
+      "text": "Outstanding Commitment"
+    },
+    {
+      "level": 2,
+      "text": "Drawdowns and Distributions"
+    },
+    {
+      "level": 3,
+      "text": "Drawdowns"
+    },
+    {
+      "level": 3,
+      "text": "Distributions"
+    },
+    {
+      "level": 3,
+      "text": "Credit Facility"
+    },
+    {
+      "level": 1,
+      "text": "Portfolio Overview"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Overview"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Returns Summary"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Overview (Continued)"
+    },
+    {
+      "level": 2,
+      "text": "Portfolio Risk Summary"
+    },
+    {
+      "level": 1,
+      "text": "Asset Profiles and Quarterly Updates"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Emerald"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Connect"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Media"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Alpha"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Pique / Pique II"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Ink"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Service"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Freeze"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Tooth"
+    },
+    {
+      "level": 2,
+      "text": "Asset Profile – Project Oliver"
+    },
+    {
+      "level": 3,
+      "text": "Revenue (EUR m)"
+    },
+    {
+      "level": 3,
+      "text": "EBITDA (EUR m)"
+    },
+    {
+      "level": 3,
+      "text": "EBITDA Margin (%)"
+    },
+    {
+      "level": 3,
+      "text": "Revenue (EUR m)"
+    },
+    {
+      "level": 3,
+      "text": "Adj. EBITDA (EUR m)1"
+    },
+    {
+      "level": 3,
+      "text": "Adj. EBITDA Margin (%)"
+    },
+    {
+      "level": 3,
+      "text": "Net Total Leverage2"
+    },
+    {
+      "level": 2,
+      "text": "Contact"
+    },
+    {
+      "level": 2,
+      "text": "General Risks"
+    },
+    {
+      "level": 2,
+      "text": "Specific Risks / Key Risks"
+    },
+    {
+      "level": 3,
+      "text": "www.assetmanagement.hsbc.com"
+    },
+    {
+      "level": 2,
+      "text": "Important Information"
+    },
+    {
+      "level": 3,
+      "text": "United Kingdom"
+    }
+  ],
+  "summary": "To provide attractive risk adjusted returns by investing in a diversified portfolio of RCFs. Borrowers will be backed by a financial largely in the leveraged buyout market, have EBITDA greater than USD20m and RCF used fo"
+}

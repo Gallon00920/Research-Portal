@@ -63,9 +63,13 @@ DEFAULT_SECTORS = [
 app = FastAPI(title="AID Research Panel")
 
 # ------------------------------------------------------------------- login
-# Set PANEL_PASSWORD to require a shared password (recommended for any public URL).
-# Without it the site is open, which is fine on a laptop at http://127.0.0.1.
-PANEL_PASSWORD = os.environ.get("PANEL_PASSWORD", "").strip()
+# The site asks for a shared password. DEFAULT_PASSWORD is used unless the
+# PANEL_PASSWORD environment variable overrides it; PANEL_PASSWORD=open turns
+# the sign-in off (fine on a laptop at http://127.0.0.1).
+DEFAULT_PASSWORD = "JunsonAID!"
+PANEL_PASSWORD = os.environ.get("PANEL_PASSWORD", "").strip() or DEFAULT_PASSWORD
+if PANEL_PASSWORD.lower() == "open":
+    PANEL_PASSWORD = ""
 SECRET_KEY = os.environ.get("SECRET_KEY", "").strip() or hashlib.sha256(("aid-panel:" + PANEL_PASSWORD).encode()).hexdigest()
 SESSION_COOKIE = "aid_session"
 SESSION_DAYS = 30
@@ -194,8 +198,11 @@ def report_dir(rid: str) -> Path:
 
 
 def report_key(m: dict[str, Any]) -> tuple:
-    """One edition per sector + quarter + type + language; a new upload with the same key replaces the old one."""
-    return (m.get("sector"), m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"))
+    """One edition per sector + sub-sector + quarter + type + language; a new upload with the same key
+    replaces the old one. The sub-sector ("section": internal review / quarterly updates) exists for
+    portfolio funds only and is empty elsewhere."""
+    # a dated report (a weekly update) is one edition per date
+    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "")
 
 
 def remove_duplicates(meta: dict[str, Any]) -> list[str]:
@@ -251,7 +258,10 @@ def api_add_sector(payload: dict[str, Any]):
     name_en = (payload.get("name_en") or "").strip()
     if not name_en:
         raise HTTPException(400, "name_en required")
-    sid = re.sub(r"[^a-z0-9]+", "_", name_en.lower()).strip("_") or f"sector_{uuid.uuid4().hex[:6]}"
+    # the site may send the id it chose (a fund of the other portfolio sub-sector with the same
+    # name gets a suffix); otherwise the id is the name's slug
+    given = str(payload.get("id") or "").strip()
+    sid = given if re.fullmatch(r"[a-z0-9_]{1,80}", given) else (re.sub(r"[^a-z0-9]+", "_", name_en.lower()).strip("_") or f"sector_{uuid.uuid4().hex[:6]}")
     if any(s["id"] == sid for s in sectors):
         raise HTTPException(409, "sector exists")
     code = (payload.get("code") or "".join(w[0] for w in name_en.split()[:3])).upper()[:4]
@@ -264,6 +274,10 @@ def api_add_sector(payload: dict[str, Any]):
         # which dashboard lists it: "research" (the default) or "portfolio" (Portfolio management)
         "space": payload.get("space") or "research",
     })
+    if payload.get("section"):  # the portfolio sub-sector the fund belongs to
+        sectors[-1]["section"] = str(payload["section"])
+    if payload.get("category"):  # the strategy group a fund is shown under (Private Credit, ABF, ...)
+        sectors[-1]["category"] = str(payload["category"])
     save_sectors(sectors)
     return sectors[-1]
 
@@ -288,7 +302,7 @@ def api_update_sector(sid: str, payload: dict[str, Any]):
         if s["id"] == sid:
             if "name_en" in payload and not (payload["name_en"] or "").strip():
                 raise HTTPException(400, "name_en required")
-            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space"):
+            for k in ("code", "name_en", "name_cn", "region", "coverage_en", "coverage_cn", "status", "space", "section", "category"):
                 if k in payload and payload[k] is not None:
                     s[k] = payload[k]
             save_sectors(sectors)
@@ -368,6 +382,8 @@ def api_update_report(rid: str, payload: dict[str, Any]):
     for k in ("title", "nature", "language", "sector"):
         if k in payload and payload[k]:
             meta[k] = payload[k]
+    if "section" in payload:  # the portfolio sub-sector; empty for research reports
+        meta["section"] = str(payload.get("section") or "")
     if "keywords" in payload:
         kws = payload["keywords"]
         if isinstance(kws, str):
@@ -447,9 +463,11 @@ def _write_content(d: Path, meta: dict[str, Any], parsed: dict[str, Any], keep_t
 
 
 def ingest_report(src_path: Path, source_name: str, sector: str, year: int | None, quarter: int | None,
-                  nature: str = "full", language: str = "", title: str = "", keywords: str = "") -> dict[str, Any]:
+                  nature: str = "full", language: str = "", title: str = "", keywords: str = "", section: str = "",
+                  date: str = "") -> dict[str, Any]:
     """Store one .docx / .pdf as a report: copy it into a new report folder, parse it, write meta +
-    content, and replace any earlier edition with the same sector, quarter, type and language.
+    content, and replace any earlier edition with the same sector, quarter, type and language (and
+    date, for a dated report such as a weekly update).
     Used by the upload endpoint and by AI generation."""
     sectors = load_sectors()
     if not any(s["id"] == sector for s in sectors):
@@ -487,11 +505,14 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
         "period_key": period_key(year, quarter),
         "nature": nature,
         "language": language if language in ("en", "cn") else "",
+        "section": (section or "").strip(),
         "keywords": kws,
         "source_name": source_name,
         "source_ext": ext,
         "uploaded_at": now_iso(),
     }
+    if re.fullmatch(r"\d{4}-\d{2}-\d{2}", (date or "").strip()):
+        meta["date"] = date.strip()
     _write_content(d, meta, parsed, keep_title=bool(meta["title"]))
     saved = read_meta(d) or meta
     # same sector + quarter + type + language already present: this upload replaces it
@@ -502,7 +523,7 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
 @app.post("/api/upload")
 async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year: int | None = Form(None),
                      quarter: int | None = Form(None), nature: str = Form("full"), language: str = Form(""),
-                     title: str = Form(""), keywords: str = Form("")):
+                     title: str = Form(""), keywords: str = Form(""), section: str = Form(""), date: str = Form("")):
     ext = Path(file.filename or "").suffix.lower()
     if ext not in (".docx", ".pdf"):
         raise HTTPException(400, "Only .docx and .pdf reports are supported")
@@ -510,7 +531,7 @@ async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year
     try:
         with tmp.open("wb") as fh:
             shutil.copyfileobj(file.file, fh)
-        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords)
+        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords, section, date)
     finally:
         tmp.unlink(missing_ok=True)
 
@@ -534,9 +555,10 @@ def ai_config():
 
 
 @app.post("/api/ai/generate")
-async def ai_generate(files: list[UploadFile] = File(...), sector: str = Form(...), year: int = Form(...), quarter: int = Form(...),
-                      language: str = Form("en"), title: str = Form("")):
-    """Start a generation job from the dropped source files (multipart, like a manual upload)."""
+async def ai_generate(files: list[UploadFile] = File(...), sector: str = Form(...), year: int = Form(0), quarter: int = Form(0),
+                      language: str = Form("en"), title: str = Form(""), date: str = Form(""), week: str = Form("")):
+    """Start a generation job from the dropped source files (multipart, like a manual upload). A dated
+    job (the Macro / Market weekly update) gives a date instead of a year and quarter."""
     s = next((x for x in load_sectors() if x["id"] == sector), None)
     if not s:
         raise HTTPException(400, "unknown sector")
@@ -551,11 +573,11 @@ async def ai_generate(files: list[UploadFile] = File(...), sector: str = Form(..
             shutil.copyfileobj(up.file, fh)
         saved.append(dest)
 
-    def ingest(path, source_name, sector_id, y, q, nature, lang, ttl, keywords):
-        return ingest_report(Path(path), source_name, sector_id, y, q, nature, lang, ttl, keywords)
+    def ingest(path, source_name, sector_id, y, q, nature, lang, ttl, keywords, date_=""):
+        return ingest_report(Path(path), source_name, sector_id, y, q, nature, lang, ttl, keywords, "", date_)
 
     try:
-        job = ai_assist.start_generation(job_id, {"sector": sector, "year": year, "quarter": quarter, "language": language, "title": title},
+        job = ai_assist.start_generation(job_id, {"sector": sector, "year": year, "quarter": quarter, "language": language, "title": title, "date": date, "week": week},
                                          saved, ingest, s.get("name_en") or sector)
     except ai_assist.AIError as exc:
         shutil.rmtree(d, ignore_errors=True)
@@ -707,30 +729,34 @@ def macro_data(path: str):
 
 
 @app.post("/api/macro/upload")
-def macro_upload(files: list[UploadFile] = File(...), year: int = Form(...), month: int = Form(...), title: str = Form("")):
+def macro_upload(files: list[UploadFile] = File(...), year: int = Form(...), month: int = Form(...), title: str = Form(""), topic: str = Form("rates")):
     """Read the dropped slide images with Claude, in the order given, and save them as the month's brief
-    (replacing any earlier upload for that month)."""
+    of the topic (weekly updates, rate expectations), replacing any earlier upload for that month."""
     em = _macro_module()
+    if topic not in em.TOPICS:
+        raise HTTPException(400, f"topic must be one of {', '.join(em.TOPICS)}")
     by_type = {"image/png": ".png", "image/jpeg": ".jpg", "image/webp": ".webp", "image/gif": ".gif"}
     images = []
     for up in files:
         ext = Path(up.filename or "").suffix.lower() or by_type.get(up.content_type or "", "")
         images.append((up.file.read(), ext))
     try:
-        doc = em.extract(year, month, title, images)
+        doc = em.extract(year, month, title, images, topic=topic)
     except em.MissingKeyError as exc:
         raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
     except em.ExtractionError as exc:
         raise HTTPException(422, str(exc))
-    return {"ok": True, "year": doc["year"], "month": doc["month"], "pages": len(doc["pages"]), "warnings": doc.get("warnings") or []}
+    return {"ok": True, "topic": topic, "year": doc["year"], "month": doc["month"], "pages": len(doc["pages"]), "warnings": doc.get("warnings") or []}
 
 
-@app.post("/api/macro/{ym}/translate")
-def macro_translate(ym: str):
+@app.post("/api/macro/{topic}/{ym}/translate")
+def macro_translate(topic: str, ym: str):
     """Create the English labels of a brief that still shows Chinese (Claude translates them)."""
     em = _macro_module()
+    if topic not in em.TOPICS:
+        raise HTTPException(400, f"topic must be one of {', '.join(em.TOPICS)}")
     try:
-        doc = em.translate_month(ym)
+        doc = em.translate_month(ym, topic=topic)
     except em.MissingKeyError as exc:
         raise HTTPException(503, f"{exc}. Set ANTHROPIC_API_KEY before starting the server.")
     except em.ExtractionError as exc:
@@ -769,5 +795,7 @@ if __name__ == "__main__":
     import uvicorn
 
     if not auth_enabled():
-        print("PANEL_PASSWORD is not set: the panel is open to anyone who can reach it (fine for local use).")
+        print("PANEL_PASSWORD=open: the panel is open to anyone who can reach it (fine for local use).")
+    elif PANEL_PASSWORD == DEFAULT_PASSWORD:
+        print("Sign-in uses the built-in password; set PANEL_PASSWORD to change it.")
     uvicorn.run("server:app", host=os.environ.get("HOST", "127.0.0.1"), port=int(os.environ.get("PORT", "8765")), reload=False, app_dir=str(ROOT / "backend"))

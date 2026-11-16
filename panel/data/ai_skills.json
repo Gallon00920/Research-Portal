@@ -6,5 +6,9 @@
   "software_otf": {
     "skill_id": "skill_01EVAM8VHFZhgXwVUvpuWkdb",
     "name": "otf-quarterly-report"
+  },
+  "macro_weekly": {
+    "skill_id": "skill_01T571epSFw6VwPneeVVpSwP",
+    "name": "weekly-market-update"
   }
 }

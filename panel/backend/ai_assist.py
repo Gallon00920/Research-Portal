@@ -42,6 +42,8 @@ FALLBACK_BETA = "server-side-fallback-2026-07-01"
 SOURCE_EXTS = {".docx", ".pdf", ".xlsx", ".xlsm", ".csv", ".pptx", ".md", ".txt", ".json"}
 # the four documents one generation produces: file name Claude must use -> (nature, language)
 OUTPUTS = {"full_en.docx": ("full", "en"), "full_cn.docx": ("full", "cn"), "summary_en.docx": ("summary", "en"), "summary_cn.docx": ("summary", "cn")}
+# a dated job (the Macro / Market weekly update): the Skill writes one English document and nothing else
+WEEKLY_OUTPUTS = {"full_en.docx": ("full", "en")}
 LANG_NAME = {"en": "English", "cn": "Chinese (Simplified)"}
 
 
@@ -153,10 +155,21 @@ def start_generation(job_id: str, params: dict[str, Any], files: list[Path], ing
     sector = str(params.get("sector") or "")
     if sector not in skills:
         raise AIError(f"no AI skill is configured for sector '{sector}' (see panel/data/ai_skills.json)")
-    year, quarter = int(params.get("year") or 0), int(params.get("quarter") or 0)
-    if not (2000 <= year <= 2100 and 1 <= quarter <= 4):
-        raise AIError("year and quarter are required")
-    language = params.get("language") if params.get("language") in ("en", "cn") else "en"
+    date = str(params.get("date") or "").strip()
+    if date:  # a dated report (a weekly update): the year and quarter follow the date, the output is English
+        if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", date):
+            raise AIError("the date must be YYYY-MM-DD")
+        year, quarter = int(date[:4]), (int(date[5:7]) - 1) // 3 + 1
+        language = "en"
+        week = str(params.get("week") or "").strip()  # "YYYYMM WeekN": the week the update covers
+        if week and not re.fullmatch(r"\d{6} Week[1-6]", week):
+            raise AIError("the week must look like 202611 Week3")
+    else:
+        year, quarter = int(params.get("year") or 0), int(params.get("quarter") or 0)
+        if not (2000 <= year <= 2100 and 1 <= quarter <= 4):
+            raise AIError("year and quarter are required")
+        language = params.get("language") if params.get("language") in ("en", "cn") else "en"
+        week = ""
     files = [p for p in files if p.is_file()]
     if not files:
         raise AIError("drop at least one source file")
@@ -170,7 +183,7 @@ def start_generation(job_id: str, params: dict[str, Any], files: list[Path], ing
     out_dir.mkdir(parents=True, exist_ok=True)
     job = {
         "id": job_id, "state": "queued", "step": "", "log": [], "reports": [], "outputs": [], "error": None,
-        "sector": sector, "sector_name": sector_name, "year": year, "quarter": quarter, "language": language,
+        "sector": sector, "sector_name": sector_name, "year": year, "quarter": quarter, "language": language, "date": date, "week": week,
         "files": [p.name for p in files], "output_dir": str(out_dir),
         "title": str(params.get("title") or "").strip(), "started_at": now_iso(), "finished_at": None, "model": model_name(),
     }
@@ -210,7 +223,7 @@ def _log(job: dict[str, Any], text: str, step: str | None = None):
 def _run_generation(job: dict[str, Any], files: list[Path], skill: dict[str, str], ingest: Callable[..., dict[str, Any]]):
     job["state"] = "running"
     out_dir = Path(job["output_dir"])
-    period = f"{job['quarter']}Q{job['year']}"
+    period = job.get("date") or f"{job['quarter']}Q{job['year']}"
     try:
         if mock():
             produced = _mock_documents(job, out_dir)
@@ -223,7 +236,7 @@ def _run_generation(job: dict[str, Any], files: list[Path], skill: dict[str, str
                 job["outputs"].append({"name": path.name, "nature": nature, "language": language, "size": path.stat().st_size})
             _log(job, f"adding to the panel: {path.name} ({nature}, {language})", "ingest")
             meta = ingest(path, path.name, job["sector"], job["year"], job["quarter"], nature, language,
-                          job["title"] if nature == "full" else "", "")
+                          job["title"] if nature == "full" else "", "", job.get("date") or "")
             with _JOBS_LOCK:
                 job["reports"].append({"id": meta["id"], "nature": nature, "language": language, "title": meta.get("title", "")})
         _log(job, f"done: {len(job['reports'])} documents for {period} are on the site", "done")
@@ -310,6 +323,27 @@ def _generate_with_skill(job: dict[str, Any], files: list[Path], skill: dict[str
         _log(job, f"uploaded {p.name}")
 
     title_line = f'Use "{job["title"]}" as the document title.' if job["title"] else ""
+    if job.get("date"):
+        # the weekly update: one English Word document from the week's broker reports, in the
+        # Skill's own structure (Macro / Credit / Private Credit, one bullet per broker)
+        which = (f"for the week \"{job['week']}\" (the document is titled \"Weekly Market Update {job['week']}\")" if job.get("week")
+                 else f"for the week that contains {job['date']}")
+        prompt1 = (
+            f"Produce Junson Capital's Weekly Market Update {which} with the "
+            f"\"{skill.get('name') or 'weekly-market-update'}\" Skill, end to end, on the attached files: they are this week's "
+            f"uploaded broker reports ({', '.join(p.name for p in files)}). Process only the reports that were uploaded; a "
+            "broker in the Skill's registry that is not among them is simply left out. There is no human in this run: when the "
+            "Skill would ask the user something (an unmatched file, an ambiguous week), decide sensibly, carry on, and list the "
+            "point in a short \"Notes for the reviewer\" list at the very end of the document.\n"
+            "Write the document in English as a Word file with the Skill's title (\"Weekly Market Update YYYYMM WeekN\""
+            + (", exactly as given above" if job.get("week") else f", the week number by the Skill's Monday-Sunday rule for {job['date']}")
+            + ") as its top title, and save it as "
+            f"/tmp/outputs/full_en.docx. {title_line} Produce nothing else."
+        )
+        content0: list[dict[str, Any]] = [{"type": "text", "text": prompt1}] + [{"type": "container_upload", "file_id": fid} for fid in uploads]
+        _log(job, f"running the {skill.get('name') or 'weekly-market-update'} Skill ({job['model']}); the update takes a few minutes", "report")
+        _, _, ids_w = _turn(client, job, [{"role": "user", "content": content0}], _skill_container(skill["skill_id"], None), "report")
+        return _download_outputs(client, job, uploads, ids_w, WEEKLY_OUTPUTS, out_dir, f"{job['sector']}_{job['date']}")
     prompt1 = (
         f"You are producing the {period} {job['sector_name']} quarterly report for Junson Capital's AID research panel.\n"
         f"Use the \"{skill.get('name') or 'report'}\" Skill end to end on the attached source files: they are this quarter's "
@@ -343,25 +377,30 @@ def _generate_with_skill(job: dict[str, Any], files: list[Path], skill: dict[str
     _log(job, f"writing the {LANG_NAME[other]} edition and the two summaries", "editions")
     _, container, ids2 = _turn(client, job, messages, container, "editions")
 
-    # download: the newest file of each expected name wins
+    return _download_outputs(client, job, uploads, ids1 + ids2, OUTPUTS, out_dir, f"{job['sector']}_{period}", lang)
+
+
+def _download_outputs(client, job: dict[str, Any], uploads: list[str], file_ids: list[str], expected: dict[str, tuple[str, str]],
+                      out_dir: Path, stem: str, lang: str = "en") -> dict[Path, tuple[str, str]]:
+    """Fetch the documents the Skill wrote (the newest file of each expected name wins), delete the
+    uploaded sources on Anthropic's side, and return {local path: (nature, language)}."""
     produced: dict[Path, tuple[str, str]] = {}
     found: dict[str, str] = {}
-    for fid in ids1 + ids2:
+    for fid in file_ids:
         try:
             meta = client.files.retrieve_metadata(fid)
         except Exception as exc:
             raise _api_error(exc)
         name = Path(meta.filename or "").name.lower()
-        if name in OUTPUTS:
+        if name in expected:
             found[name] = fid
-    missing = [n for n in OUTPUTS if n not in found]
+    missing = [n for n in expected if n not in found]
     if f"full_{lang}.docx" not in found:
         raise AIError("the Skill run finished without writing the full report (/tmp/outputs/full_%s.docx)" % lang)
     if missing:
         _log(job, "not produced: " + ", ".join(missing) + " (the others are kept)")
-    stem = f"{job['sector']}_{period}"
     for name, fid in found.items():
-        nature, language = OUTPUTS[name]
+        nature, language = expected[name]
         dest = out_dir / f"{stem}_{nature}_{language}.docx"
         try:
             client.files.download(fid).write_to_file(str(dest))
@@ -381,13 +420,17 @@ def _mock_documents(job: dict[str, Any], out_dir: Path) -> dict[Path, tuple[str,
     """AI_MOCK=1: four placeholder documents in the panel's masthead format, so the pipeline runs without the API."""
     import docx  # python-docx, in panel/requirements.txt
 
-    period = f"{job['quarter']}Q{job['year']}"
+    period = job.get("date") or f"{job['quarter']}Q{job['year']}"
     _log(job, "AI_MOCK is set: writing placeholder documents instead of calling Claude", "report")
     produced: dict[Path, tuple[str, str]] = {}
-    for name, (nature, language) in OUTPUTS.items():
+    for name, (nature, language) in (WEEKLY_OUTPUTS if job.get("date") else OUTPUTS).items():
         d = docx.Document()
         d.add_paragraph("JUNSON Capital Research")
-        title = job["title"] or (f"{period} {job['sector_name']} Quarterly Report" if language == "en" else f"{period} {job['sector_name']} 季度报告")
+        if job.get("date"):
+            y, m, dd = (int(x) for x in job["date"].split("-"))
+            title = job["title"] or f"Weekly Market Update {job.get('week') or f'{y}{m:02d} Week{(dd + 6) // 7}'} (mock)"
+        else:
+            title = job["title"] or (f"{period} {job['sector_name']} Quarterly Report" if language == "en" else f"{period} {job['sector_name']} 季度报告")
         d.add_paragraph(title if nature == "full" else title + (" — Summary" if language == "en" else " — 摘要"))
         d.add_paragraph(f"Coverage: {job['sector_name']} / mock\t{datetime.now():%d %b, %Y}")
         d.add_heading("Market Size" if language == "en" else "市场规模", level=1)

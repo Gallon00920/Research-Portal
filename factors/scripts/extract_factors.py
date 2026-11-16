@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Fund key factors: turn an uploaded image (a slide or a table screenshot) into data.
+"""Investment performance (fund key factors): turn an uploaded image (a slide or a table screenshot) into data.
 
 Two tabs, one month per file:
   performance   the fund performance table            -> a real HTML table on the site
