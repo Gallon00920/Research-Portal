@@ -40,7 +40,7 @@ const STR = {
     file_date: 'Date of the update', file_need: 'Choose a .docx or .pdf file', file_bad: 'Only .docx or .pdf files', file_too_big: 'The file is larger than 40 MB',
     file_working: 'Reading the file…', file_done: 'Weekly update saved for {date}', file_replace: 'This date already has an update: uploading replaces it.',
     file_hint: 'One update per date; the file is kept with the entry.', open: 'Open', tables: 'tables', figures: 'figures',
-    week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week',
+    week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week', gen_ai: 'Generate by AI',
   },
   cn: {
     year: '年份', month: '月份', upload: '上传幻灯片', empty_title: '暂无简报',
@@ -62,7 +62,7 @@ const STR = {
     file_date: '更新日期', file_need: '请选择 .docx 或 .pdf 文件', file_bad: '只支持 .docx 或 .pdf 文件', file_too_big: '文件超过 40 MB',
     file_working: '正在读取文件…', file_done: '{date} 的每周更新已保存', file_replace: '该日期已有更新：上传将替换它。',
     file_hint: '每个日期一份更新；文件与条目一起保存。', open: '打开', tables: '张表', figures: '张图',
-    week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新',
+    week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新', gen_ai: 'AI 生成',
   },
 };
 
@@ -196,7 +196,9 @@ function build() {
   const lm = h('label'); lm.appendChild(h('span')).id = 'mkMonthLbl'; const ms = h('select'); ms.id = 'mkMonth'; lm.appendChild(ms);
   const lw = h('label'); lw.id = 'mkWeekRow'; lw.appendChild(h('span')).id = 'mkWeekLbl'; const ws = h('select'); ws.id = 'mkWeek'; lw.appendChild(ws);
   const up = h('button', 'btn primary small'); up.type = 'button'; up.id = 'mkUpload';
-  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(lw); ctl.appendChild(up);
+  const gen = h('button', 'btn ghost small'); gen.type = 'button'; gen.id = 'mkGen'; gen.hidden = true;
+  gen.addEventListener('click', () => { if (window.AIDPanel) window.AIDPanel.openAiUpload(WEEKLY_SECTOR); });
+  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(lw); ctl.appendChild(gen); ctl.appendChild(up);
   ws.addEventListener('change', () => { state.weekFilter = ws.value; renderWeeklyList($('mkBody')); });
   bar.appendChild(ctl);
   card.appendChild(bar);
@@ -221,6 +223,11 @@ function paintShell() {
   $('mkWeekLbl').textContent = t('week');
   $('mkWeekRow').hidden = !fileTopic();
   $('mkUpload').textContent = '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'));
+  // the weekly update can be written by Claude from the week's broker reports (the panel's AI
+  // generation with the weekly-market-update skill), when the server can call the API
+  const gen = $('mkGen');
+  gen.hidden = !(fileTopic() && window.AIDPanel && window.AIDPanel.aiFor(WEEKLY_SECTOR));
+  gen.textContent = '✦ ' + t('gen_ai');
   const all = months();
   const years = Array.from(new Set(all.map((m) => m.slice(0, 4)))).sort().reverse();
   const ys = $('mkYear'), ms = $('mkMonth'), ws = $('mkWeek');
@@ -325,6 +332,11 @@ function renderEmpty(body, message) {
   const b = h('button', 'btn primary', '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'))); b.type = 'button';
   b.addEventListener('click', () => openUpload());
   box.appendChild(b);
+  if (fileTopic() && window.AIDPanel && window.AIDPanel.aiFor(WEEKLY_SECTOR)) {
+    const g = h('button', 'btn ghost', '✦ ' + t('gen_ai')); g.type = 'button'; g.style.marginLeft = '8px';
+    g.addEventListener('click', () => window.AIDPanel.openAiUpload(WEEKLY_SECTOR));
+    box.appendChild(g);
+  }
   body.appendChild(box);
 }
 function renderDoc(body, doc) {

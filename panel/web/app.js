@@ -44,7 +44,7 @@ function toast(msg){
 const DL = window.DataLayer;
 /* AI (local server only): config from /api/ai/config, the upload dialog's mode, the running
    generation job, and one chat thread per report */
-const AI = {config: null, mode: 'file', files: [], dir: null, job: null, timer: null, threads: {}};
+const AI = {config: null, mode: 'file', space: null, files: [], dir: null, job: null, timer: null, threads: {}};
 function aiOn(){ return DL.mode === 'api' && !!(AI.config && AI.config.enabled); }
 /* a write in static mode lands as a commit; the site shows it after the workflow rebuilds */
 function afterWrite(res){
@@ -891,14 +891,32 @@ function openUpload(sectorId, editMeta){
   $('upSubmit').textContent = isEdit ? t('save') : t('upload');
   $('upSubmit').disabled = false;
   const msg = $('upMsg'); msg.textContent = ''; msg.className = 'form-msg';
-  // "Generate with AI" is offered on the research panel when the server can call Claude and at
-  // least one sector has a skill (a new report only; editing keeps the file mode)
-  const canAi = aiOn() && !isEdit && state.space === 'research' && Object.keys((AI.config && AI.config.sectors) || {}).length > 0;
+  // "Generate with AI" is offered when the server can call Claude and a sector of the space has a
+  // skill (the research panel, the Macro / Market weekly updates); a new report only
+  const canAi = aiOn() && !isEdit && spaceSectors(upSpace).some(s => (AI.config.sectors || {})[s.id]);
   $('upModes').hidden = !canAi;
+  AI.space = upSpace;
+  $('upDate').value = isEdit && editMeta.date ? editMeta.date : todayIso();
   setUploadMode('file', sectorId);
   $('upOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
 }
+function todayIso(){ const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
+/* a dated sector (the weekly updates): the dialog asks for the date of the update, not a year and quarter */
+function datedUpload(){ return spaceOf($('upSector').value) === 'macro'; }
+function applyDated(){
+  const dated = datedUpload();
+  $('upDateLbl').hidden = !dated; $('upYearLbl').hidden = dated; $('upQuarterLbl').hidden = dated;
+  if (dated){ const d = $('upDate').value || todayIso(); $('upDate').value = d; $('upYear').value = d.slice(0, 4); $('upQuarter').value = String(Math.floor((+d.slice(5, 7) - 1) / 3) + 1); }
+  if (AI.mode === 'ai'){ $('upLangLbl').parentElement.hidden = dated; $('aiNote').textContent = t(dated ? 'ai_note_weekly' : 'ai_note'); }
+  else $('upLangLbl').parentElement.hidden = false;
+}
+/* for the other views (the Macro / Market page): open the dialog in AI mode on a sector */
+window.AIDPanel = {
+  aiFor(sectorId){ return aiOn() && !!((AI.config && AI.config.sectors) || {})[sectorId]; },
+  openAiUpload(sectorId){ openUpload(sectorId); if (!$('upModes').hidden) setUploadMode('ai', sectorId); },
+  openUpload(sectorId){ openUpload(sectorId); },
+};
 /* the sector list of the upload dialog: the space's sectors, or, with sub-sectors, the funds of
    the sub-sector chosen in the dialog */
 function fillUploadSectors(space, want){
@@ -922,15 +940,16 @@ function setUploadMode(mode, sectorId){
   $('upSubmit').textContent = ai ? t('ai_generate') : (isEdit ? t('save') : t('upload'));
   const cur = $('upSector').value || sectorId;
   if (ai){
-    const able = spaceSectors('research').filter(s => AI.config.sectors[s.id]);
+    const able = spaceSectors(AI.space || state.space).filter(s => AI.config.sectors[s.id]);
     fillSelect($('upSector'), able.map(s => [s.id, sectorName(s)]), able.some(s => s.id === cur) ? cur : (able[0] && able[0].id));
     fillSelect($('upLang'), [['en', t('en')], ['cn', t('cn')]], state.docLang === 'cn' ? 'cn' : 'en');
     renderAiFiles(); renderAiDir();
     $('aiProgress').hidden = !AI.job; if (AI.job) renderAiJob(AI.job);
   } else {
-    fillUploadSectors(state.space, cur);
+    fillUploadSectors(AI.space || state.space, cur);
     fillSelect($('upLang'), [['en', t('en')], ['cn', t('cn')], ['', t('auto_detect')]], isEdit ? state.editing.language : state.docLang);
   }
+  applyDated();
 }
 /* the source files dropped or chosen so far (File objects); dropping more adds to the list */
 function addAiFiles(list){
@@ -997,8 +1016,10 @@ async function aiGenerateSubmit(){
   if (!AI.files.length){ msg.className = 'form-msg err'; msg.textContent = t('ai_no_files'); return; }
   const fd = new FormData();
   AI.files.forEach(f => fd.append('files', f, f.name));
+  if (datedUpload()) applyDated();
   fd.append('sector', $('upSector').value); fd.append('year', $('upYear').value); fd.append('quarter', $('upQuarter').value);
   fd.append('language', $('upLang').value); fd.append('title', $('upTitleIn').value.trim());
+  if (datedUpload()) fd.append('date', $('upDate').value);
   btn.disabled = true; msg.className = 'form-msg'; msg.textContent = '…';
   try {
     const res = await DL.aiGenerate(fd);
@@ -1103,7 +1124,10 @@ async function submitUpload(ev){
     const f = $('upFile').files[0];
     if (!f){ msg.className = 'form-msg err'; msg.textContent = t('choose_file'); btn.disabled = false; return; }
     msg.className = 'form-msg'; msg.textContent = t('uploading');
-    const m = await DL.upload({sector, year, quarter, nature, language, title, keywords, section}, f);
+    if (datedUpload()) applyDated();
+    const fields = {sector, year: $('upYear').value, quarter: $('upQuarter').value, nature, language, title, keywords, section};
+    if (datedUpload()) fields.date = $('upDate').value;
+    const m = await DL.upload(fields, f);
     closeUpload();
     if (afterWrite(m)) return;
     toast(m.replaced && m.replaced.length ? t('upload_replaced') : t('upload_ok'));
@@ -1125,6 +1149,8 @@ function wireUpload(){
   $('upCancel').addEventListener('click', closeUpload);
   $('upOverlay').addEventListener('click', e => { if (e.target === $('upOverlay')) closeUpload(); });
   $('uploadBtn').addEventListener('click', () => openUpload(state.sectorId));
+  $('upSector').addEventListener('change', applyDated);
+  $('upDate').addEventListener('change', applyDated);
   // the dashboard's upload button: the sector picker lists the current space's sectors
   $('dashUploadBtn').addEventListener('click', () => openUpload(null));
   // choosing the other sub-sector switches the fund list to that sub-sector's funds

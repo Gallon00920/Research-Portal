@@ -161,8 +161,14 @@ the pipeline.
 - **Generate with AI** is the second mode of the Research Panel's upload
   dialog, offered for sectors that have a Skill uploaded to the Claude API.
   `panel/data/ai_skills.json` maps a sector to its skill id (today
-  `private_credit` → private-credit-quarterly-report and `software_otf` →
-  otf-quarterly-report; add a line to cover another sector). You choose the
+  `private_credit` → private-credit-quarterly-report, `software_otf` →
+  otf-quarterly-report and `macro_weekly` → weekly-market-update; add a line
+  to cover another sector, and upload a Skill folder with
+  `panel/backend/upload_skill.py`). The Macro / Market **Weekly Updates**
+  tag has the same feature as "Generate by AI": the dialog asks for the date
+  of the update instead of a quarter, Claude runs the weekly-market-update
+  Skill on the week's broker reports and writes one English Word document,
+  which is added under that date and saved to your folder. You choose the
   sector, quarter and the language of the full report, **drop the source
   files** (broker reports, fund materials, trackers) into the dialog or
   click to choose them, as for a manual upload, and pick the **folder on
