@@ -350,7 +350,6 @@ function renderEmpty(s, period){
   state.sectorId = s.id; state.reportId = null; state.report = null; state.exhibits = [];
   showView('art');
   buildNav();
-  $('pickers').hidden = false;
   $('crumbPath').textContent = (sections() ? sectionName(state.section) + ' | ' : '') + sectorName(s);
   buildPickers(s, null);
   buildSegs(null, s);
@@ -396,9 +395,8 @@ async function renderReport(id, anchor){
 
   // title / meta / tags
   $('docTitle').textContent = meta.title;
-  // a dated report (a weekly update) is labelled by its date, and has no quarter pickers
+  // a dated report (a weekly update) is labelled by the date it was uploaded for
   $('qBadge').textContent = meta.date ? fmtDate(meta.date) : meta.period;
-  $('pickers').hidden = !!meta.date;
   const dm = $('docMeta'); dm.innerHTML = '';
   const add = (txt, bold) => { const sp = el('span'); if (bold) sp.appendChild(el('b', null, txt)); else sp.textContent = txt; dm.appendChild(sp); };
   const sep = () => dm.appendChild(el('span', 'sep', '|'));
@@ -456,9 +454,16 @@ function bestEdition(list, meta){
   for (const ok of prefs){ const hit = latestOf(list.filter(ok)); if (hit) return hit; }
   return latestOf(list);
 }
+/* a dated report (a weekly update): the week of its month, 1 to 5 (days 1-7 are week 1) */
+function weekOfMonth(date){ return Math.ceil(Number(date.slice(8, 10)) / 7); }
+function monthName(y, m){ return new Date(y, m - 1, 1).toLocaleDateString(state.lang === 'cn' ? 'zh-CN' : 'en-US', {month: 'long'}); }
 function buildPickers(s, meta){
   // every quarter the sector has (in this sub-sector), in any language and of either type
   const all = state.reports.filter(r => inSection(r) && r.sector === s.id);
+  const dated = all.length > 0 && all.every(r => r.date);
+  $('pQuarterLbl').textContent = t(dated ? 'f_month' : 'f_quarter');
+  $('pWeekRow').hidden = !dated;
+  if (dated){ buildDatedPickers(all, meta); return; }
   const years = Array.from(new Set(all.map(r => r.year))).sort((a, b) => b - a);
   const py = $('pYear'), pq = $('pQuarter');
   py.innerHTML = ''; pq.innerHTML = '';
@@ -479,6 +484,38 @@ function buildPickers(s, meta){
   const open = (y, q) => { const r = bestEdition(all.filter(x => x.year === y && x.quarter === q), meta); if (r) nav(hashReport(r.id)); };
   py.onchange = () => { const y = +py.value; const q2 = fillQ(y); pq.value = String(q2[0]); open(y, q2[0]); };
   pq.onchange = () => open(+py.value, +pq.value);
+}
+/* the pickers of a dated sector (the weekly updates): year, month and week of the month, each
+   listing only what exists; a choice opens the update of that week */
+function buildDatedPickers(all, meta){
+  const py = $('pYear'), pm = $('pQuarter'), pw = $('pWeek');
+  const ym = (r) => r.date.slice(0, 7);
+  const years = Array.from(new Set(all.map(r => r.date.slice(0, 4)))).sort().reverse();
+  py.innerHTML = ''; pm.innerHTML = ''; pw.innerHTML = '';
+  py.disabled = pm.disabled = pw.disabled = false;
+  years.forEach(y => py.appendChild(opt(y, y)));
+  const cur = meta && meta.date ? meta.date : all.slice().sort((a, b) => b.date.localeCompare(a.date))[0].date;
+  const fillM = (y) => {
+    pm.innerHTML = '';
+    const months = Array.from(new Set(all.filter(r => r.date.startsWith(y + '-')).map(ym))).sort().reverse();
+    months.forEach(m => pm.appendChild(opt(m, monthName(+m.slice(0, 4), +m.slice(5, 7)))));
+    return months;
+  };
+  const fillW = (m) => {
+    pw.innerHTML = '';
+    const weeks = Array.from(new Set(all.filter(r => ym(r) === m).map(r => weekOfMonth(r.date)))).sort((a, b) => b - a);
+    weeks.forEach(w => {
+      const dates = all.filter(r => ym(r) === m && weekOfMonth(r.date) === w).map(r => r.date).sort();
+      pw.appendChild(opt(String(w), t('week_n', {n: w}) + ' · ' + fmtDate(dates[dates.length - 1])));
+    });
+    return weeks;
+  };
+  py.value = cur.slice(0, 4); fillM(cur.slice(0, 4)); pm.value = cur.slice(0, 7); fillW(cur.slice(0, 7)); pw.value = String(weekOfMonth(cur));
+  $('pickCount').textContent = nReports(all.length);
+  const open = (m, w) => { const hits = all.filter(r => ym(r) === m && weekOfMonth(r.date) === w); const r = bestEdition(hits, meta); if (r) nav(hashReport(r.id)); };
+  py.onchange = () => { const ms = fillM(py.value); pm.value = ms[0]; const ws = fillW(ms[0]); pw.value = String(ws[0]); open(ms[0], ws[0]); };
+  pm.onchange = () => { const ws = fillW(pm.value); pw.value = String(ws[0]); open(pm.value, ws[0]); };
+  pw.onchange = () => open(pm.value, +pw.value);
 }
 function imgUrl(name){ return DL.imageUrl(state.reportId, name); }
 const CAPTION_LABEL_RE = /^\s*((?:exhibit|figure|fig\.?|chart|table|graph)\s*\d+[A-Za-z]?|(?:图表|图|表|附图|附表)\s*\d+)/i;

@@ -40,6 +40,7 @@ const STR = {
     file_date: 'Date of the update', file_need: 'Choose a .docx or .pdf file', file_bad: 'Only .docx or .pdf files', file_too_big: 'The file is larger than 40 MB',
     file_working: 'Reading the file…', file_done: 'Weekly update saved for {date}', file_replace: 'This date already has an update: uploading replaces it.',
     file_hint: 'One update per date; the file is kept with the entry.', open: 'Open', tables: 'tables', figures: 'figures',
+    week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week',
   },
   cn: {
     year: '年份', month: '月份', upload: '上传幻灯片', empty_title: '暂无简报',
@@ -61,6 +62,7 @@ const STR = {
     file_date: '更新日期', file_need: '请选择 .docx 或 .pdf 文件', file_bad: '只支持 .docx 或 .pdf 文件', file_too_big: '文件超过 40 MB',
     file_working: '正在读取文件…', file_done: '{date} 的每周更新已保存', file_replace: '该日期已有更新：上传将替换它。',
     file_hint: '每个日期一份更新；文件与条目一起保存。', open: '打开', tables: '张表', figures: '张图',
+    week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新',
   },
 };
 
@@ -80,7 +82,8 @@ function keyLabel(key) { return /^\d{4}-\d{2}-\d{2}$/.test(key || '') ? dateLabe
 function dateLabel(d) { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString(locale(), {year: 'numeric', month: 'long', day: 'numeric'}); }
 function topicLabel(tp) { const x = typeof tp === 'string' ? topicById(tp) : tp; return x ? (state.lang === 'cn' ? x.cn : x.en) : ''; }
 
-const state = {lang: 'en', topic: DEFAULT_TOPIC, ym: null, index: null, indexTopic: null, doc: null, built: false, seq: 0, files: [], weeklyFile: null};
+const state = {lang: 'en', topic: DEFAULT_TOPIC, ym: null, index: null, indexTopic: null, doc: null, built: false, seq: 0, files: [], weeklyFile: null,
+               yearFilter: '', monthFilter: '', weekFilter: ''};  // the weekly list's filters
 const $ = (id) => document.getElementById(id);
 function t(key, vars) {
   let s = (STR[state.lang] || STR.en)[key];
@@ -191,14 +194,22 @@ function build() {
   const ctl = h('div', 'mk-controls');
   const ly = h('label'); ly.appendChild(h('span')).id = 'mkYearLbl'; const ys = h('select'); ys.id = 'mkYear'; ly.appendChild(ys);
   const lm = h('label'); lm.appendChild(h('span')).id = 'mkMonthLbl'; const ms = h('select'); ms.id = 'mkMonth'; lm.appendChild(ms);
+  const lw = h('label'); lw.id = 'mkWeekRow'; lw.appendChild(h('span')).id = 'mkWeekLbl'; const ws = h('select'); ws.id = 'mkWeek'; lw.appendChild(ws);
   const up = h('button', 'btn primary small'); up.type = 'button'; up.id = 'mkUpload';
-  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(up);
+  ctl.appendChild(ly); ctl.appendChild(lm); ctl.appendChild(lw); ctl.appendChild(up);
+  ws.addEventListener('change', () => { state.weekFilter = ws.value; renderWeeklyList($('mkBody')); });
   bar.appendChild(ctl);
   card.appendChild(bar);
   const body = h('div', 'mk-body'); body.id = 'mkBody';
   card.appendChild(body);
-  ys.addEventListener('change', () => { const inYear = months().filter((m) => m.startsWith(ys.value + '-')); go(inYear[inYear.length - 1] || null); });
-  ms.addEventListener('change', () => { if (fileTopic()) { const r = weeklyByDate(ms.value); if (r) location.hash = '#/r/' + r.id; } else go(ms.value); });
+  ys.addEventListener('change', () => {
+    if (fileTopic()) { state.yearFilter = ys.value; state.monthFilter = ''; state.weekFilter = ''; paintShell(); renderWeeklyList($('mkBody')); return; }
+    const inYear = months().filter((m) => m.startsWith(ys.value + '-')); go(inYear[inYear.length - 1] || null);
+  });
+  ms.addEventListener('change', () => {
+    if (fileTopic()) { state.monthFilter = ms.value; state.weekFilter = ''; paintShell(); renderWeeklyList($('mkBody')); return; }
+    go(ms.value);
+  });
   up.addEventListener('click', () => openUpload());
   buildUploadDialog();
   state.built = true;
@@ -206,16 +217,39 @@ function build() {
 function paintShell() {
   Array.from($('mkTags').children).forEach((b) => { b.textContent = topicLabel(b.dataset.topic); b.className = b.dataset.topic === state.topic ? 'on' : ''; });
   $('mkYearLbl').textContent = t('year');
-  $('mkMonthLbl').textContent = fileTopic() ? t('date') : t('month');
+  $('mkMonthLbl').textContent = t('month');
+  $('mkWeekLbl').textContent = t('week');
+  $('mkWeekRow').hidden = !fileTopic();
   $('mkUpload').textContent = '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'));
   const all = months();
   const years = Array.from(new Set(all.map((m) => m.slice(0, 4)))).sort().reverse();
-  const ys = $('mkYear'), ms = $('mkMonth');
-  ys.textContent = ''; ms.textContent = '';
+  const ys = $('mkYear'), ms = $('mkMonth'), ws = $('mkWeek');
+  ys.textContent = ''; ms.textContent = ''; ws.textContent = '';
   years.forEach((y) => { const o = h('option', null, y); o.value = y; ys.appendChild(o); });
+  if (fileTopic()) {
+    // the weekly updates: year, then month and week of the month to narrow the list ("All" keeps it whole)
+    if (!years.includes(state.yearFilter)) state.yearFilter = years[0] || '';
+    ys.value = state.yearFilter;
+    const inYear = all.filter((d) => d.startsWith(state.yearFilter + '-'));
+    const monthsIn = Array.from(new Set(inYear.map((d) => d.slice(0, 7)))).sort().reverse();
+    const oAll = h('option', null, t('all')); oAll.value = ''; ms.appendChild(oAll);
+    monthsIn.forEach((m) => { const o = h('option', null, monthName(Number(m.slice(5, 7)))); o.value = m; ms.appendChild(o); });
+    if (!monthsIn.includes(state.monthFilter)) state.monthFilter = '';
+    ms.value = state.monthFilter;
+    const wAll = h('option', null, t('all')); wAll.value = ''; ws.appendChild(wAll);
+    if (state.monthFilter) {
+      const weeks = Array.from(new Set(inYear.filter((d) => d.startsWith(state.monthFilter)).map(weekOfMonth))).sort((a, b) => b - a);
+      weeks.forEach((w) => { const o = h('option', null, t('week_n', {n: w})); o.value = String(w); ws.appendChild(o); });
+      if (!weeks.map(String).includes(state.weekFilter)) state.weekFilter = '';
+    } else state.weekFilter = '';
+    ws.value = state.weekFilter;
+    ys.disabled = years.length === 0; ms.disabled = inYear.length === 0; ws.disabled = !state.monthFilter;
+    paintUploadDialog();
+    return;
+  }
   const year = state.ym ? state.ym.slice(0, 4) : years[0];
   if (year) ys.value = year;
-  all.filter((m) => m.startsWith(year + '-')).forEach((m) => { const o = h('option', null, fileTopic() ? dateLabel(m) : monthName(Number(m.slice(5)))); o.value = m; ms.appendChild(o); });
+  all.filter((m) => m.startsWith(year + '-')).forEach((m) => { const o = h('option', null, monthName(Number(m.slice(5)))); o.value = m; ms.appendChild(o); });
   if (state.ym) ms.value = state.ym;
   ys.disabled = years.length === 0; ms.disabled = all.length === 0;
   paintUploadDialog();
@@ -259,10 +293,14 @@ async function show(topic, ym) {
 }
 /* the weekly updates, latest first; each row opens the report reader (contents on the left, the
    index of tables and figures on the right) */
+function weekOfMonth(date) { return Math.ceil(Number(date.slice(8, 10)) / 7); }  // days 1-7 are week 1
 function renderWeeklyList(body) {
   body.textContent = '';
   const list = h('div', 'mk-weekly');
-  (state.weekly || []).forEach((r) => {
+  const shown = (state.weekly || []).filter((r) => (!state.yearFilter || r.date.startsWith(state.yearFilter + '-'))
+    && (!state.monthFilter || r.date.startsWith(state.monthFilter)) && (!state.weekFilter || String(weekOfMonth(r.date)) === state.weekFilter));
+  if (!shown.length) { body.appendChild(h('div', 'mk-empty', t('no_match'))); return; }
+  shown.forEach((r) => {
     const row = h('a', 'mk-week'); row.href = '#/r/' + r.id;
     row.appendChild(h('span', 'mk-week-date', dateLabel(r.date)));
     const main = h('span', 'mk-week-main');

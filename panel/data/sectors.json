@@ -101,6 +101,18 @@
     "space": "research"
   },
   {
+    "id": "otf",
+    "code": "OTF",
+    "name_en": "OTF",
+    "name_cn": "OTF",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "portfolio",
+    "section": "internal"
+  },
+  {
     "id": "apollo_abl",
     "code": "APO",
     "name_en": "Apollo ABL",
@@ -294,31 +306,6 @@
     "space": "portfolio",
     "section": "quarterly",
     "category": "Alternative Yield"
-  },
-  {
-    "id": "otf",
-    "code": "OTF",
-    "name_en": "OTF",
-    "name_cn": "OTF",
-    "region": "",
-    "coverage_en": [],
-    "coverage_cn": [],
-    "status": "active",
-    "space": "portfolio",
-    "section": "internal"
-  },
-  {
-    "id": "otf_seed",
-    "code": "OTFS",
-    "name_en": "OTF seed",
-    "name_cn": "OTF seed",
-    "region": "",
-    "coverage_en": [],
-    "coverage_cn": [],
-    "status": "active",
-    "space": "portfolio",
-    "section": "quarterly",
-    "category": "Private Credit"
   },
   {
     "id": "macro_weekly",
