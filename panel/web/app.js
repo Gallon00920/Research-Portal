@@ -1373,12 +1373,11 @@ function parseHash(){
   const h = decodeURIComponent(location.hash.replace(/^#\/?/, ''));
   if (!h) return {view: 'factors', tab: null, ym: null};  // home: the latest Investment performance
   const p = h.split('/');
-  if (p[0] === 'research') return {view: 'dash', space: 'research'};
   if (p[0] === 'news') return {view: 'news'};
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
   if (p[0] === 'macro') return {view: 'macro', topic: p[1] || null, ym: p[2] || null};  // #/macro/<topic>[/<YYYY-MM>]
-  if (SPACES[p[0]] && p[0] !== 'research'){
-    // #/portfolio[/<section>][/s/<id>]
+  if (SPACES[p[0]]){
+    // #/research[/s/<id>], #/portfolio[/<section>][/s/<id>]
     const secs = SPACES[p[0]].sections || [];
     let i = 1;
     if (secs.includes(p[i])){ state.section = p[i]; i++; }
