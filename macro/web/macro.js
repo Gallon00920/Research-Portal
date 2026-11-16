@@ -275,7 +275,12 @@ async function show(topic, ym) {
     paintShell();
     state.doc = null; $('mkBarTitle').textContent = '';
     body.classList.remove('is-loading');
-    if (!state.ym) renderEmpty(body); else renderWeeklyList(body);
+    if (!state.ym) { renderEmpty(body); return; }
+    // like a sector of the research panel: the tag opens the latest update in the reader at once
+    // (its month / week pickers move between the updates); the list stays for an empty topic only
+    const latest = state.weekly[0];
+    if (latest) { location.replace('#/r/' + latest.id); return; }
+    renderWeeklyList(body);
     return;
   }
   state.ym = all.includes(ym) ? ym : (all[all.length - 1] || null);
@@ -772,7 +777,9 @@ async function submitFileUpload(ev) {
 /* ---------------------------------------------------------------- panel integration */
 function toLang(lang) { return lang === 'cn' || lang === 'zh' ? 'cn' : 'en'; }
 window.MacroMarket = {
-  mount(lang, topic, ym) { state.lang = toLang(lang); return show(topic || state.topic, ym || (topic ? null : state.ym)); },
+  // the tab itself (#/macro, no topic) opens the default topic, so that the topic tags are always
+  // reachable from a weekly update's reader page
+  mount(lang, topic, ym) { state.lang = toLang(lang); return show(topic || DEFAULT_TOPIC, ym); },
   setLanguage(lang) {
     const next = toLang(lang);
     if (next === state.lang) return;
