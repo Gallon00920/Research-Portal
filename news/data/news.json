@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-16T00:44:43.461634+00:00",
+  "updatedAt": "2026-11-16T07:39:08.480250+00:00",
   "scope": {
     "regions": [
       "US",
@@ -206757,6 +206757,95 @@
               "finalScore": 17.25,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-14-aa1e748fd2f6",
+            "title": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes - Oil & Gas Middle East",
+            "titleZh": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes - Oil & Gas Middle East",
+            "summary": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes Oil & Gas Middle East",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBNVEFuSVc0MEU5TzV2T2FXZl9lLVFEaUx5MHhRbVYyYldTbUZsVVkyNFVIWlhmTmRvajIwN24wcWE4emRzanNzU21YZWp2SGhRS2M3bVZpUkhfUjdEOTFTRFBnWWF0cERFZGtMa2pfLWhaTTRIWTdVUWsxTQ?oc=5",
+            "source": "Oil & Gas Middle East",
+            "publishedAt": "2026-11-14",
+            "lede": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes Oil & Gas Middle East",
+            "articleExcerpt": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes - Oil & Gas Middle East. Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes Oil & Gas Middle East",
+            "contentFingerprint": "c6f3ee2a9a5c6347",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Oil & Gas Middle East"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.61,
+              "finalScore": 15.61,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -208667,6 +208756,95 @@
           }
         },
         {
+          "id": "2026-11-14-aa1e748fd2f6",
+          "title": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes - Oil & Gas Middle East",
+          "titleZh": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes - Oil & Gas Middle East",
+          "summary": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes Oil & Gas Middle East",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBNVEFuSVc0MEU5TzV2T2FXZl9lLVFEaUx5MHhRbVYyYldTbUZsVVkyNFVIWlhmTmRvajIwN24wcWE4emRzanNzU21YZWp2SGhRS2M3bVZpUkhfUjdEOTFTRFBnWWF0cERFZGtMa2pfLWhaTTRIWTdVUWsxTQ?oc=5",
+          "source": "Oil & Gas Middle East",
+          "publishedAt": "2026-11-14",
+          "lede": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes Oil & Gas Middle East",
+          "articleExcerpt": "Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes - Oil & Gas Middle East. Sempra Infrastructure: ADIA keeps 10% as KKR group holds 65% after sale closes Oil & Gas Middle East",
+          "contentFingerprint": "c6f3ee2a9a5c6347",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Oil & Gas Middle East"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.61,
+            "finalScore": 15.61,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-14-69829715789b",
           "title": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life",
           "titleZh": "How London made Peggy Guggenheim one of the world's great artistic patrons - Country Life",
@@ -210286,6 +210464,198 @@
               "finalScore": 17.32,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-15-68115eedecb7",
+            "title": "Blue Owl Capital Corporation (OBDC) options chain - Yahoo Finance UK",
+            "titleZh": "Blue Owl Capital Corporation (OBDC) options chain - Yahoo Finance UK",
+            "summary": "Blue Owl Capital Corporation (OBDC) options chain Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcmpZMzVpcFIwMWZUb3o5SnNSM2dtNVJkdk1SWTAyaEI4SFF6TFd1NGF0eFhxdTZXbFBMUE5taHF5eDdOMlVQZ1pkMG8xekNCVWUtU2Y1bWVOUEdwdEFKNHF0dXdOalJrOWlpTmNiN0VzaUFrdm1HYWdNY2tlcGtGT3BXbmR3MEJoemF5Z0RLVnVKQQ?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-15",
+            "lede": "Blue Owl Capital Corporation (OBDC) options chain Yahoo Finance UK",
+            "articleExcerpt": "Blue Owl Capital Corporation (OBDC) options chain - Yahoo Finance UK. Blue Owl Capital Corporation (OBDC) options chain Yahoo Finance UK",
+            "contentFingerprint": "299e7da1e06149fd",
+            "region": "Europe",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.8,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.6
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 15,
+              "semanticScore": 7.18,
+              "finalScore": 22.18,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-0a512d759a04",
+            "title": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods - Moomoo",
+            "titleZh": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods - Moomoo",
+            "summary": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods Moomoo",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaDhocnpPTVZ1Mm1vNW5YdndnMFlBOW01SG9zdGZycW0xYmNxZmZjUHdscFNuNmZDaTZYQjhqQlZvVm1hanhqTDJHQ3c0WkdCdVB3OGpENjN0N0pwYUxNQmlla0hLdFJiY1lFdkZfMUE5RWRCeXplUjYtQkNOT1pZeVl3X2hmWC13LVRQdHNwMWJ3WEZubnI1MTQ5VDNhUlpWMlp4emhoRV92VFVyOGR4UExNQm9KYndUdGNjUm95ZmZPX2lVRmlJbg?oc=5",
+            "source": "Moomoo",
+            "publishedAt": "2026-11-15",
+            "lede": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods Moomoo",
+            "articleExcerpt": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods - Moomoo. Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods Moomoo",
+            "contentFingerprint": "6ad3aa6e154b46cd",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Moomoo"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.56,
+              "finalScore": 8.559999999999999,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -210836,6 +211206,99 @@
               "keywordScore": 6,
               "semanticScore": 4.89,
               "finalScore": 10.89,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-15-e4f9d1aabcc5",
+            "title": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo!",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwSkl1Sy1FR0FpQ056MDZqSHgxVy12X0V2R0d5TGE2M19LVWdzd3p1dVo1WWZCczE0aEZCWTdZaWh1anZXa0JnTFpITVRYZGlV?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-15",
+            "lede": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada. KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "0b9f936534123e64",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.8
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 46,
+              "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.26,
+              "finalScore": 16.259999999999998,
               "semanticEnabled": true
             }
           }
@@ -211640,6 +212103,198 @@
           }
         },
         {
+          "id": "2026-11-15-68115eedecb7",
+          "title": "Blue Owl Capital Corporation (OBDC) options chain - Yahoo Finance UK",
+          "titleZh": "Blue Owl Capital Corporation (OBDC) options chain - Yahoo Finance UK",
+          "summary": "Blue Owl Capital Corporation (OBDC) options chain Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQcmpZMzVpcFIwMWZUb3o5SnNSM2dtNVJkdk1SWTAyaEI4SFF6TFd1NGF0eFhxdTZXbFBMUE5taHF5eDdOMlVQZ1pkMG8xekNCVWUtU2Y1bWVOUEdwdEFKNHF0dXdOalJrOWlpTmNiN0VzaUFrdm1HYWdNY2tlcGtGT3BXbmR3MEJoemF5Z0RLVnVKQQ?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-15",
+          "lede": "Blue Owl Capital Corporation (OBDC) options chain Yahoo Finance UK",
+          "articleExcerpt": "Blue Owl Capital Corporation (OBDC) options chain - Yahoo Finance UK. Blue Owl Capital Corporation (OBDC) options chain Yahoo Finance UK",
+          "contentFingerprint": "299e7da1e06149fd",
+          "region": "Europe",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.8,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.6
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 15,
+            "semanticScore": 7.18,
+            "finalScore": 22.18,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-0a512d759a04",
+          "title": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods - Moomoo",
+          "titleZh": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods - Moomoo",
+          "summary": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods Moomoo",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOaDhocnpPTVZ1Mm1vNW5YdndnMFlBOW01SG9zdGZycW0xYmNxZmZjUHdscFNuNmZDaTZYQjhqQlZvVm1hanhqTDJHQ3c0WkdCdVB3OGpENjN0N0pwYUxNQmlla0hLdFJiY1lFdkZfMUE5RWRCeXplUjYtQkNOT1pZeVl3X2hmWC13LVRQdHNwMWJ3WEZubnI1MTQ5VDNhUlpWMlp4emhoRV92VFVyOGR4UExNQm9KYndUdGNjUm95ZmZPX2lVRmlJbg?oc=5",
+          "source": "Moomoo",
+          "publishedAt": "2026-11-15",
+          "lede": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods Moomoo",
+          "articleExcerpt": "Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods - Moomoo. Blue Owl Tech Fin Is Maintained at Market Perform by Keefe, Bruyette & Woods Moomoo",
+          "contentFingerprint": "6ad3aa6e154b46cd",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Moomoo"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.56,
+            "finalScore": 8.559999999999999,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-15-8409a696da61",
           "title": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de",
           "titleZh": "RWE's Vanguard Wind Tie-Up With KKR Closes as Broker Targets Climb on Stellar Nine-Month Beat - ad-hoc-news.de",
@@ -212089,6 +212744,99 @@
             "keywordScore": 6,
             "semanticScore": 4.89,
             "finalScore": 10.89,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-15-e4f9d1aabcc5",
+          "title": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo!",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwSkl1Sy1FR0FpQ056MDZqSHgxVy12X0V2R0d5TGE2M19LVWdzd3p1dVo1WWZCczE0aEZCWTdZaWh1anZXa0JnTFpITVRYZGlV?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-15",
+          "lede": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada. KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "0b9f936534123e64",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.8
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 46,
+            "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.26,
+            "finalScore": 16.259999999999998,
             "semanticEnabled": true
           }
         },
@@ -212599,7 +213347,97 @@
         "CIFC": [],
         "PAG": [],
         "Pretium": [],
-        "Guggenheim": [],
+        "Guggenheim": [
+          {
+            "id": "2026-11-16-9f96322ea7c8",
+            "title": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts",
+            "titleZh": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts",
+            "summary": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea Archiproducts",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa2kza296U3VoRVJNbnZpd3ItZlFXQVkzaE12YUlWamRMT1pnYUM0SVV5QkxVX2xJb2VqTmdHSzlPbzRBYkFseHdOekVQWTNNOW45amMwM2dCeER1ZVEtNllhajRXNlBDNS1qNlJ3NWhBUGxGa0RuSEFyVEpfYUNkVUtBbGE4SzNIRHlIamt1V1ktTEs5bEMtZTFZNjgzSmg1Si1wUGlTd2RGZFQ3LXc?oc=5",
+            "source": "Archiproducts",
+            "publishedAt": "2026-11-16",
+            "lede": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea Archiproducts",
+            "articleExcerpt": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts. Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea Archiproducts",
+            "contentFingerprint": "fc7a79bd7bf4418f",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.34
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Archiproducts"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.08,
+              "finalScore": 7.08,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Neuberger": [],
         "BasePoint": [],
         "Bain Capital": [],
@@ -212610,13 +213448,103 @@
         "CVC": [],
         "Canyon": []
       },
-      "items": []
+      "items": [
+        {
+          "id": "2026-11-16-9f96322ea7c8",
+          "title": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts",
+          "titleZh": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts",
+          "summary": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea Archiproducts",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQa2kza296U3VoRVJNbnZpd3ItZlFXQVkzaE12YUlWamRMT1pnYUM0SVV5QkxVX2xJb2VqTmdHSzlPbzRBYkFseHdOekVQWTNNOW45amMwM2dCeER1ZVEtNllhajRXNlBDNS1qNlJ3NWhBUGxGa0RuSEFyVEpfYUNkVUtBbGE4SzNIRHlIamt1V1ktTEs5bEMtZTFZNjgzSmg1Si1wUGlTd2RGZFQ3LXc?oc=5",
+          "source": "Archiproducts",
+          "publishedAt": "2026-11-16",
+          "lede": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea Archiproducts",
+          "articleExcerpt": "Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea - Archiproducts. Guggenheim Abu Dhabi, Frank Gehry’s Museum Opens Between Land and Sea Archiproducts",
+          "contentFingerprint": "fc7a79bd7bf4418f",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.34
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Archiproducts"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-16T07:37:24.532392+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.08,
+            "finalScore": 7.08,
+            "semanticEnabled": true
+          }
+        }
+      ]
     }
   },
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 20,
+      "count": 18,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -212624,12 +213552,12 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 60,
+      "count": 51,
       "selected": 6,
       "status": "ok",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
@@ -212637,12 +213565,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 1,
+      "count": 4,
       "selected": 0,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -212650,7 +213578,7 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
@@ -212663,7 +213591,7 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
@@ -212676,25 +213604,25 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
       "count": 5,
-      "selected": 1,
+      "selected": 2,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 10,
+      "count": 9,
       "selected": 2,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -212702,7 +213630,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
@@ -212715,7 +213643,7 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
@@ -212728,12 +213656,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 33,
+      "count": 36,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -212741,12 +213669,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 26,
+      "count": 20,
       "selected": 3,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -212754,12 +213682,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 10,
+      "count": 9,
       "selected": 2,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -212767,12 +213695,12 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 3,
+      "count": 4,
       "selected": 1,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -212780,12 +213708,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 7,
+      "count": 8,
       "selected": 0,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -212793,7 +213721,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
@@ -212806,12 +213734,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 405,
+      "count": 409,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -212828,9 +213756,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-16T00:42:46.799855+00:00",
+      "asOf": "2026-11-16T07:37:24.532392+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-16T00:42:46.799855+00:00"
+  "checkedAt": "2026-11-16T07:37:24.532392+00:00"
 }
