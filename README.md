@@ -80,20 +80,20 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   "Upload report" offers only them; the manage dialog adds new entries to
   the space it was opened from and leaves the other space's part of the
   file untouched. Reports are stored, parsed and built exactly as research
-  reports. The portfolio space has two **sub-sectors**, AID analysis and
-  Quarterly updates, as a tab strip under the title (`#/portfolio/internal`,
-  `#/portfolio/quarterly`). Each sub-sector has its own list of funds: a
-  fund belongs to one of them (`section` on its entry in
-  `data/sectors.json`), its "Manage sectors" shows and edits only that
-  sub-sector's funds, and the upload dialog lists the funds of the
-  sub-sector chosen in it (the same fund name in both sub-sectors gets two
-  entries, the second with the sub-sector as an id suffix). Every portfolio
-  report also carries the sub-sector in its metadata (`section`), and one
-  edition per fund, sub-sector, quarter, type and language is kept. "Mark as exited" on a card moves the fund to
-  the grey **Exited funds** section below the grid (`status: exited` in
-  `data/sectors.json`); "Set active" on a grey card brings it back. Fund
-  pages open at `#/portfolio/<section>/s/<id>`; report pages keep
-  `#/r/<id>` in both spaces.
+  reports. The dashboard lists every fund, grouped by strategy category,
+  and each fund's page has two **sub-sector** tabs, AID analysis and
+  Quarterly updates, above the reader: a tab opens the fund's newest report
+  in that sub-sector (with the number of quarters it holds), or an empty
+  reader with an upload button. A fund belongs to the space as a whole;
+  it is the report that carries the sub-sector in its metadata
+  (`section`, chosen in the upload dialog, which defaults to the tab on
+  screen), and one edition per fund, sub-sector, quarter, type and
+  language is kept. "Mark as exited" on a card moves the fund to the grey
+  **Exited funds** section below the grid (`status: exited` in
+  `data/sectors.json`); "Set active" on a grey card brings it back. A
+  fund card opens the tab of the fund's newest report
+  (`#/portfolio/s/<id>`); a tab is `#/portfolio/<section>/s/<id>`; report
+  pages keep `#/r/<id>` in both spaces.
 - **Macro / Market** (`#/macro`) works like Investment performance, for slide
   decks: see below.
 

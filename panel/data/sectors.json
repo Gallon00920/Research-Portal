@@ -110,7 +110,7 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "internal"
+    "category": "Private Credit"
   },
   {
     "id": "apollo_abl",
@@ -122,7 +122,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "ABF"
   },
   {
@@ -135,7 +134,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Real Asset"
   },
   {
@@ -148,7 +146,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "ABF"
   },
   {
@@ -161,7 +158,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Alternative Yield"
   },
   {
@@ -174,7 +170,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Alternative Yield"
   },
   {
@@ -187,7 +182,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Real Asset"
   },
   {
@@ -200,7 +194,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Structure Credit"
   },
   {
@@ -213,7 +206,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Structure Credit"
   },
   {
@@ -226,7 +218,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Private Credit"
   },
   {
@@ -239,7 +230,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Private Credit"
   },
   {
@@ -252,21 +242,7 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "ABF"
-  },
-  {
-    "id": "otf_quarterly",
-    "code": "OTF",
-    "name_en": "OTF",
-    "name_cn": "OTF",
-    "region": "",
-    "coverage_en": [],
-    "coverage_cn": [],
-    "status": "active",
-    "space": "portfolio",
-    "section": "quarterly",
-    "category": "Private Credit"
   },
   {
     "id": "pag_brs",
@@ -278,7 +254,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Private Credit"
   },
   {
@@ -291,7 +266,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Real Estate"
   },
   {
@@ -304,7 +278,6 @@
     "coverage_cn": [],
     "status": "active",
     "space": "portfolio",
-    "section": "quarterly",
     "category": "Alternative Yield"
   },
   {

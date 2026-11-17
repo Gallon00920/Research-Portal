@@ -78,7 +78,7 @@ function hashReport(id, anchor){ return '#/r/' + id + (anchor ? '/' + anchor : '
    here is the order of the parts of data/sectors.json (the tab order is set in buildNav) */
 const SPACES = {
   research:  {hash: '#/research',  sectorHash: '#/s/',           title: 'dash_title', sub: 'dash_sub', sectors: 'sectors',    nav: 'nav_panel'},
-  // the portfolio space has two sub-sectors; every portfolio report carries one in meta.section
+  // the portfolio space has two sub-sectors (the tabs of every fund's page); every portfolio report carries one in meta.section
   portfolio: {hash: '#/portfolio', sectorHash: '#/portfolio/s/', title: 'pm_title',   sub: 'pm_sub',   sectors: 'pm_sectors', nav: 'nav_portfolio', sections: ['internal', 'quarterly']},
   // the Macro / Market weekly updates are reports of the sector "macro_weekly"; the macro view
   // lists them (#/macro/weekly) and the reader opens them like any report
@@ -90,31 +90,35 @@ function spaceSectors(space){ const sp = space || state.space; return state.sect
 function spaceTitle(space){ return t(SPACES[space || state.space].title); }
 function sections(space){ return SPACES[space || state.space].sections || null; }
 function sectionName(sec){ return t('sec_' + sec); }
-function hashDash(space){ const sp = space || state.space; return SPACES[sp].hash + (sections(sp) ? '/' + state.section : ''); }
-function hashSector(id){ const sp = spaceOf(id); return SPACES[sp].hash.replace(/\/$/, '') + (sections(sp) ? '/' + state.section : '') + '/s/' + id; }
-/* in a space with sub-sectors every fund belongs to one sub-sector (its `section`; funds saved
-   before sub-sectors existed count as the first one), and so do its reports */
-function sectionOf(s){ const secs = sections(spaceOf(s.id)); return secs ? (secs.includes(s.section) ? s.section : secs[0]) : ''; }
-function sectionSectors(){ return spaceSectors().filter(s => !sections() || sectionOf(s) === state.section); }
-function inSection(r){ if (!sections()) return true; const s = sectorById(r.sector); return s ? sectionOf(s) === state.section : (r.section || '') === state.section; }
+function hashDash(space){ return SPACES[space || state.space].hash; }
+/* a fund's page: #/portfolio[/<section>]/s/<id>. Without a section the fund opens on the tab of its newest report */
+function hashSector(id, section){ const sp = spaceOf(id); return SPACES[sp].hash.replace(/\/$/, '') + (sections(sp) && section ? '/' + section : '') + '/s/' + id; }
+/* in a space with sub-sectors (portfolio management) every report belongs to one: its `section`
+   (AID analysis or quarterly updates; reports saved without one count as the first). The funds
+   themselves belong to the space as a whole, and a fund's page has one tab per sub-sector. */
+function sectionOfReport(r){ const secs = sections(spaceOf(r.sector)); return secs ? (secs.includes(r.section) ? r.section : secs[0]) : ''; }
+function inSection(r){ return !sections() || sectionOfReport(r) === state.section; }
+/* a fund's full reports in every sub-sector: the dashboard card, and which tab the fund opens on */
+function fundReports(sectorId){ return state.reports.filter(r => r.sector === sectorId && r.nature === 'full'); }
 function escapeHtml(s){ return String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
 function byUploaded(a, b){ return (b.uploaded_at || '').localeCompare(a.uploaded_at || ''); }
 function nReports(n){ return n === 1 && state.lang === 'en' ? '1 report' : t('reports_in_lang', {n}); }
 
-/* full reports in the current report language (state.docLang follows the UI language unless switched in the reader) */
-function langReports(lang){ return state.reports.filter(r => inSection(r) && r.nature === 'full' && r.language === (lang || state.docLang)); }
+/* full reports in the current report language (state.docLang follows the UI language unless switched
+   in the reader); in the current sub-sector, or, with all, in every sub-sector (the dashboard) */
+function langReports(lang, all){ return state.reports.filter(r => (all || inSection(r)) && r.nature === 'full' && r.language === (lang || state.docLang)); }
 function findReport(sector, period, lang, nature){ return state.reports.find(r => inSection(r) && r.sector === sector && r.period === period && r.language === lang && r.nature === nature) || null; }
 /* a fund's reports come in one language (whatever the manager sends), so a portfolio fund whose
    reports are not in the current report language falls back to the language it has; research
    sectors keep the EN / 中文 editions apart */
-function sectorReports(sectorId, lang){
-  const mine = langReports(lang).filter(r => r.sector === sectorId);
+function sectorReports(sectorId, lang, all){
+  const mine = langReports(lang, all).filter(r => r.sector === sectorId);
   if (mine.length || lang || spaceOf(sectorId) !== 'portfolio') return mine;
-  return state.reports.filter(r => inSection(r) && r.nature === 'full' && r.sector === sectorId);
+  return state.reports.filter(r => (all || inSection(r)) && r.nature === 'full' && r.sector === sectorId);
 }
 function latestOf(list){ return list.slice().sort(byUploaded)[0] || null; }
 /* a sector's report count = number of quarters it covers; languages and full/summary editions of one quarter count once */
-function sectorQuarters(sectorId){ return new Set(state.reports.filter(r => inSection(r) && r.sector === sectorId).map(r => r.year + '-' + r.quarter)).size; }
+function sectorQuarters(sectorId, all){ return new Set(state.reports.filter(r => (all || inSection(r)) && r.sector === sectorId).map(r => r.year + '-' + r.quarter)).size; }
 /* a fund marked as exited sits in the grey section below the grid */
 function isExited(s){ return s.status === 'exited'; }
 
@@ -158,7 +162,7 @@ function setDocLang(l){
   if (state.view === 'art' && state.sectorId){
     const cur = state.report && state.report.meta;
     const twin = cur ? (findReport(cur.sector, cur.period, l, cur.nature) || findReport(cur.sector, cur.period, l, 'full')) : null;
-    if (twin) nav(hashReport(twin.id)); else nav(hashSector(state.sectorId));
+    if (twin) nav(hashReport(twin.id)); else nav(hashSector(state.sectorId, state.section));
     return;
   }
   route();
@@ -210,24 +214,15 @@ function renderDash(space){
   $('dashTitle').textContent = spaceTitle();
   $('dashSub').textContent = t(sp.sub);
   $('dashSectorsH').textContent = t(sp.sectors);
-  // sub-sectors (portfolio management): a tab strip under the title, like investment performance
+  // the sub-sectors (portfolio management) are the tabs of each fund's page, not of the dashboard
   const secs = sections();
-  const tabs = $('dashTabs'); tabs.innerHTML = ''; tabs.hidden = !secs;
-  if (secs){
-    if (!secs.includes(state.section)) state.section = secs[0];
-    secs.forEach(sec => {
-      const b = el('button', sec === state.section ? 'on' : '', sectionName(sec)); b.type = 'button';
-      b.addEventListener('click', () => { state.section = sec; nav(hashDash()); });
-      tabs.appendChild(b);
-    });
-  }
+  $('dashTabs').hidden = true;
   const grid = $('sectorCards');
   grid.innerHTML = '';
   const exitedBox = $('exitedFunds'), exitedGrid = $('exitedCards');
   exitedGrid.innerHTML = '';
-  // in a space with sub-sectors the sub-tab lists its own funds (a new fund shows at once, with
-  // "Upload the first report"); exited funds go below
-  const shown = sectionSectors();
+  // every fund of the space (a new fund shows at once, with "Upload the first report"); exited funds go below
+  const shown = spaceSectors();
   const active = shown.filter(s => !isExited(s));
   if (active.some(s => s.category)){
     // funds grouped by strategy category, all on one page: one labelled band of cards per category
@@ -252,7 +247,7 @@ function renderDash(space){
   const exited = secs ? shown.filter(isExited) : [];
   exitedBox.hidden = !exited.length;
   exited.forEach(s => exitedGrid.appendChild(sectorCard(s, true)));
-  renderRecent(langReports().filter(r => spaceOf(r.sector) === state.space).sort(byUploaded).slice(0, 6));
+  renderRecent(langReports(null, true).filter(r => spaceOf(r.sector) === state.space).sort(byUploaded).slice(0, 6));
   document.title = spaceTitle() + ' | Junson Capital';
 }
 /* the strategy categories of portfolio funds, in display order (all bands in the site blue); a
@@ -279,7 +274,7 @@ function nFunds(n){ return n === 1 && state.lang === 'en' ? '1 fund' : t('n_fund
 /* one sector / fund card. In the portfolio space it carries a small action: mark the fund as
    exited (it moves to the grey section below) or, on a grey card, set it active again */
 function sectorCard(s, exited){
-  const mine = sectorReports(s.id);
+  const mine = sectorReports(s.id, null, true);
   const latest = mine.slice().sort((a, b) => b.period_key - a.period_key)[0];
   const periods = new Set(mine.map(r => r.period));
   const card = el('button', 'scard' + (exited ? ' exited' : '')); card.type = 'button';
@@ -297,7 +292,7 @@ function sectorCard(s, exited){
     Array.from(periods).sort((a, b) => periodKey(b) - periodKey(a)).slice(0, 4).forEach(p => bd.appendChild(el('span', 'bdg', p)));
   } else bd.appendChild(el('span', 'bdg', t('coming_soon')));
   card.appendChild(bd);
-  const nq = sectorQuarters(s.id);
+  const nq = sectorQuarters(s.id, true);
   const foot = el('div', 'sc-foot');
   foot.appendChild(el('span', 'sc-go', (nq ? (t('enter') + ' · ' + nReports(nq)) : t('upload_first')) + ' ›'));
   if (sections()){
@@ -314,7 +309,7 @@ function sectorCard(s, exited){
 }
 async function setFundStatus(s, status){
   try {
-    await commitSectors(sectionSectors().map(x => x.id === s.id ? Object.assign({}, x, {status}) : x));
+    await commitSectors(spaceSectors().map(x => x.id === s.id ? Object.assign({}, x, {status}) : x));
     toast(t(status === 'exited' ? 'fund_exited' : 'fund_active'));
     if (state.view === 'dash') renderDash();
   } catch (e) { handleErr(e); }
@@ -338,25 +333,49 @@ function renderRecent(list){
 }
 
 /* ---------------------------------------------------------------- sector → latest report */
-function openSector(id){
+function openSector(id, section){
   const s = sectorById(id);
   if (!s){ nav(hashDash()); return; }
   state.space = spaceOf(id);
+  const secs = sections();
+  if (secs){
+    // the tab asked for, else the sub-sector of the fund's newest report (its first tab when it has none)
+    const newest = latestOf(fundReports(id));
+    state.section = secs.includes(section) ? section : (newest ? sectionOfReport(newest) : secs[0]);
+  }
   const latest = latestOf(sectorReports(id));
   if (latest){ history.replaceState(null, '', hashReport(latest.id)); renderReport(latest.id, null); return; }
   renderEmpty(s, null);
+}
+/* a fund's page (portfolio management): one tab per sub-sector, with the number of quarters it
+   holds; a tab opens the fund's newest report there, or the empty reader with its upload button */
+function buildFundTabs(s){
+  const secs = sections(), tabs = $('fundTabs');
+  tabs.innerHTML = ''; tabs.hidden = !secs;
+  if (!secs) return;
+  secs.forEach(sec => {
+    const n = new Set(state.reports.filter(r => r.sector === s.id && sectionOfReport(r) === sec).map(r => r.year + '-' + r.quarter)).size;
+    const b = el('button', sec === state.section ? 'on' : '', sectionName(sec)); b.type = 'button';
+    if (n) b.appendChild(el('span', 'cnt', String(n)));
+    b.addEventListener('click', () => { if (sec !== state.section) nav(hashSector(s.id, sec)); });
+    tabs.appendChild(b);
+  });
 }
 function renderEmpty(s, period){
   state.sectorId = s.id; state.reportId = null; state.report = null; state.exhibits = [];
   showView('art');
   buildNav();
-  $('crumbPath').textContent = (sections() ? sectionName(state.section) + ' | ' : '') + sectorName(s);
+  buildFundTabs(s);
+  $('crumbPath').textContent = sectorName(s);
   buildPickers(s, null);
   buildSegs(null, s);
   $('titleRow').hidden = true; $('toolbar').hidden = true; $('docGrid').hidden = true;
   $('emptyReader').hidden = false;
   const n = $('emptyNotice'); n.innerHTML = '';
-  n.appendChild(el('b', null, period ? t('no_report_period', {sector: sectorName(s), period}) : t('no_report_lang', {sector: sectorName(s)})));
+  // a sub-sector with nothing for this fund yet, else the quarter or the language that is missing
+  const noneHere = sections() && !state.reports.some(r => r.sector === s.id && inSection(r));
+  n.appendChild(el('b', null, period ? t('no_report_period', {sector: sectorName(s), period})
+    : (noneHere ? t('no_report_section', {sector: sectorName(s), section: sectionName(state.section)}) : t('no_report_lang', {sector: sectorName(s)}))));
   const alt = $('emptyAlt');
   const other = latestOf(sectorReports(s.id, otherLang()).filter(r => !period || r.period === period));
   const latestMine = period ? latestOf(sectorReports(s.id)) : null;
@@ -377,15 +396,15 @@ async function renderReport(id, anchor){
   try { localStorage.setItem('aid_doclang', state.docLang); } catch (e) {}
   state.report = data; state.reportId = id; state.sectorId = meta.sector; state.exhibits = [];
   state.space = spaceOf(meta.sector);
-  if (sections() && sections().includes(meta.section)) state.section = meta.section;
+  if (sections()) state.section = sectionOfReport(meta);
   showView('art');
   buildNav();
   const s = sectorById(meta.sector) || {id: meta.sector, name_en: meta.sector};
+  buildFundTabs(s);
   $('titleRow').hidden = false; $('toolbar').hidden = false; $('docGrid').hidden = false; $('emptyReader').hidden = true;
 
   // crumbs + pickers
   const cp = $('crumbPath'); cp.innerHTML = '';
-  if (sections()){ cp.appendChild(document.createTextNode(sectionName(state.section))); cp.appendChild(el('i', null, '|')); }
   cp.appendChild(document.createTextNode(sectorName(s)));
   if (s.region){ cp.appendChild(el('i', null, '|')); cp.appendChild(document.createTextNode(s.region)); }
   buildPickers(s, meta);
@@ -872,15 +891,11 @@ function openUpload(sectorId, editMeta){
   $('upTitle').textContent = isEdit ? t('edit_report') : t('upload_report');
   $('drop').hidden = isEdit;
   $('upFile').value = ''; $('dropFile').textContent = '';
-  // the sub-sector (portfolio management only): the report's fund's own, else the sub-tab on screen;
-  // the fund list then holds that sub-sector's funds
+  // the sub-sector (portfolio management only): the report's own, else the tab on screen
   const upSpace = isEdit ? spaceOf(editMeta.sector) : (sectorId ? spaceOf(sectorId) : state.space);
   const secs = sections(upSpace);
   $('upSectionLbl').hidden = !secs;
-  if (secs){
-    const own = sectorById(isEdit ? editMeta.sector : sectorId);
-    fillSelect($('upSection'), secs.map(sec => [sec, sectionName(sec)]), own ? sectionOf(own) : state.section);
-  }
+  if (secs) fillSelect($('upSection'), secs.map(sec => [sec, sectionName(sec)]), isEdit ? sectionOfReport(editMeta) : (secs.includes(state.section) ? state.section : secs[0]));
   fillUploadSectors(upSpace, isEdit ? editMeta.sector : sectorId);
   fillSelect($('upQuarter'), [1,2,3,4].map(q => [String(q), 'Q' + q]), String(isEdit ? editMeta.quarter : state.meta.current_quarter));
   fillSelect($('upNature'), [['full', t('full')], ['summary', t('summary')]], isEdit ? editMeta.nature : 'full');
@@ -940,12 +955,9 @@ function paintAiWeek(){
 window.AIDPanel = {
   openUpload(sectorId){ openUpload(sectorId); },
 };
-/* the sector list of the upload dialog: the space's sectors, or, with sub-sectors, the funds of
-   the sub-sector chosen in the dialog */
+/* the sector list of the upload dialog: the space's sectors (every fund, whichever sub-sector is chosen) */
 function fillUploadSectors(space, want){
-  const secs = sections(space);
-  const sec = secs ? $('upSection').value : null;
-  const choices = spaceSectors(space).filter(s => !secs || sectionOf(s) === sec);
+  const choices = spaceSectors(space);
   const cur = want || $('upSector').value;
   fillSelect($('upSector'), choices.map(s => [s.id, sectorName(s)]), choices.some(s => s.id === cur) ? cur : (choices[0] && choices[0].id));
 }
@@ -1182,19 +1194,14 @@ function wireUpload(){
 }
 
 /* ---------------------------------------------------------------- sector manager (add / edit / remove) */
-const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status', 'space', 'section', 'category'];
+const SECTOR_KEYS = ['id', 'code', 'name_en', 'name_cn', 'region', 'coverage_en', 'coverage_cn', 'status', 'space', 'category'];
 function cleanSector(s){ const o = {}; SECTOR_KEYS.forEach(k => { if (s[k] !== undefined) o[k] = s[k]; }); if (!o.status) o.status = 'active'; return o; }
 function slugId(name){ return name.toLowerCase().replace(/[^a-z0-9]+/g, '_').replace(/^_+|_+$/g, '') || ('sector_' + Date.now().toString(36)); }
 /* persist the sector list of the current space (static mode commits data/sectors.json; API mode
    diffs) and refresh state. The file holds every space, in SPACES order (research sectors
-   first); only the current space's part is replaced, and in a space with sub-sectors only the
-   current sub-sector's funds (the other sub-sector's funds stay as they are). */
+   first); only the current space's part is replaced. */
 async function commitSectors(spaceList){
-  const part = (sp) => {
-    if (sp !== state.space) return spaceSectors(sp);
-    if (!sections(sp)) return spaceList;
-    return spaceSectors(sp).filter(s => sectionOf(s) !== state.section).concat(spaceList);
-  };
+  const part = (sp) => sp !== state.space ? spaceSectors(sp) : spaceList;
   const clean = SPACE_IDS.map(part).flat().map(cleanSector);
   const res = await DL.saveSectors(clean);
   if (res && res.pending){
@@ -1246,7 +1253,7 @@ function renderSectorList(){
   };
   let dragging = null;
   const clearMarks = () => list.querySelectorAll('.sec-row').forEach(r => r.classList.remove('drop-before', 'drop-after'));
-  sectionSectors().forEach((s, idx) => {
+  spaceSectors().forEach((s, idx) => {
     const row = el('div', 'sec-row');
     row.dataset.id = s.id; row.draggable = true;
     const grip = el('span', 'grip', '⋮⋮'); grip.title = t('drag_hint');
@@ -1290,7 +1297,7 @@ function renderSectorList(){
     rm.disabled = nq > 0; if (nq > 0) rm.title = t('sector_has_reports');
     rm.addEventListener('click', async () => {
       if (!confirm(t('confirm_remove_sector'))) return;
-      try { await commitSectors(sectionSectors().filter(x => x.id !== s.id)); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav(); }
+      try { await commitSectors(spaceSectors().filter(x => x.id !== s.id)); renderSectorList(); if (state.view === 'dash') renderDash(); else buildNav(); }
       catch (e) { handleErr(e); }
     });
     row.appendChild(rm);
@@ -1315,16 +1322,12 @@ function wireSectorManager(){
     if (!payload.name_en){ $('secMsg').className = 'form-msg err'; $('secMsg').textContent = t('s_name_en'); return; }
     try {
       let list;
-      if (id) list = sectionSectors().map(s => s.id === id ? Object.assign({}, s, payload) : s);
+      if (id) list = spaceSectors().map(s => s.id === id ? Object.assign({}, s, payload) : s);
       else {
-        // ids are unique across the whole file: the same fund name in the other sub-sector gets
-        // the sub-sector as a suffix
-        let nid = slugId(payload.name_en);
-        if (sectorById(nid) && sections()) nid = nid + '_' + state.section;
+        const nid = slugId(payload.name_en);
         if (sectorById(nid)) throw new Error('sector exists');
         const extra = {id: nid, status: 'active', space: state.space};
-        if (sections()) extra.section = state.section;
-        list = sectionSectors().concat([Object.assign(extra, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || (state.space === 'research' ? 'Global' : '')})]);
+        list = spaceSectors().concat([Object.assign(extra, payload, {code: payload.code || payload.name_en.split(/\s+/).map(w => w[0]).join('').toUpperCase().slice(0, 4), name_cn: payload.name_cn || payload.name_en, region: payload.region || (state.space === 'research' ? 'Global' : '')})]);
       }
       await commitSectors(list);
       $('secMsg').className = 'form-msg ok'; $('secMsg').textContent = t('sector_saved');
@@ -1377,11 +1380,11 @@ function parseHash(){
   if (p[0] === 'factors') return {view: 'factors', tab: p[1] || null, ym: p[2] || null};
   if (p[0] === 'macro') return {view: 'macro', topic: p[1] || null, ym: p[2] || null};  // #/macro/<topic>[/<YYYY-MM>]
   if (SPACES[p[0]]){
-    // #/research[/s/<id>], #/portfolio[/<section>][/s/<id>]
+    // #/research[/s/<id>], #/portfolio[/<section>][/s/<id>] (the section is a tab of the fund's page)
     const secs = SPACES[p[0]].sections || [];
-    let i = 1;
-    if (secs.includes(p[i])){ state.section = p[i]; i++; }
-    if (p[i] === 's' && p[i + 1]) return {view: 'sector', id: p[i + 1]};
+    let i = 1, section = null;
+    if (secs.includes(p[i])){ section = p[i]; i++; }
+    if (p[i] === 's' && p[i + 1]) return {view: 'sector', id: p[i + 1], section};
     return {view: 'dash', space: p[0]};
   }
   if (p[0] === 's' && p[1]) return {view: 'sector', id: p[1]};
@@ -1395,7 +1398,7 @@ async function route(){
     else if (h.view === 'news') renderNews();
     else if (h.view === 'factors') renderFactors(h.tab, h.ym);
     else if (h.view === 'macro') renderMacro(h.topic, h.ym);
-    else if (h.view === 'sector') openSector(h.id);
+    else if (h.view === 'sector') openSector(h.id, h.section || null);
     else if (h.view === 'art'){
       if (state.view === 'art' && state.reportId === h.id && h.anchor){ const n = document.getElementById(h.anchor); if (n) n.scrollIntoView(); return; }
       await renderReport(h.id, h.anchor);
@@ -1429,7 +1432,7 @@ function wire(){
     try {
       const res = await DL.deleteReport(state.reportId);
       if (afterWrite(res)) return;
-      toast(t('deleted')); await loadAll(); nav(hashSector(state.sectorId)); route();
+      toast(t('deleted')); await loadAll(); nav(hashSector(state.sectorId, state.section)); route();
     } catch (e) { handleErr(e); }
   });
   // password prompt (static encrypted mode)
