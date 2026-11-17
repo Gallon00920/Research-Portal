@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-16T17:59:42.814375+00:00",
+  "updatedAt": "2026-11-17T01:34:27.484262+00:00",
   "scope": {
     "regions": [
       "US",
@@ -172,432 +172,6 @@
     }
   },
   "dates": {
-    "2026-08-19": {
-      "byGp": {
-        "Blue Owl": [
-          {
-            "id": "2026-08-19-4890ecfced6e",
-            "title": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) - Seeking Alpha",
-            "titleZh": "Blue Owl Technology Finance：第二季度表现优异，更高收益催化因素显现 (NYSE:OTF) - Seeking Alpha",
-            "summary": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) Seeking Alpha",
-            "summaryZh": "Blue Owl Technology Finance：第二季度表现优异，更高收益催化因素显现 (NYSE:OTF) Seeking Alpha",
-            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdDVldmZ6VWZGbTJiQWU2bkpmb1gyV3EwajlEQVdDQ1ROTWE0M0JjODJZUVlRWEVETEgwaFNVV2tyMHBldzBjSk9rYUZBbkZsdDlnMTUtOG5zaE5OdFotYWItX1ZJempMUUtKdkZ5NnFsendSc2VfdmYwak9OZm85TTVnaWpxc2lVbDQ1NE9ZMEVTUWFGZmphZnRqMjliQ3RxSFI0ZFFpelRtZTRCeGh6czAxOHo?oc=5",
-            "source": "Seeking Alpha",
-            "publishedAt": "2026-08-19",
-            "lede": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) Seeking Alpha",
-            "articleExcerpt": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) - Seeking Alpha. Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) Seeking Alpha",
-            "contentFingerprint": "4cb9aa2c38c45579",
-            "region": "US",
-            "gps": [
-              "Blue Owl"
-            ],
-            "sectors": [
-              "private-credit"
-            ],
-            "curation": "rss_filter",
-            "excludedByClassifier": false,
-            "classificationBreakdown": {
-              "keywordGps": [
-                "Blue Owl",
-                "Blue Owl"
-              ],
-              "llmGps": [
-                "Blue Owl",
-                "Blue Owl"
-              ],
-              "keywordSectors": [
-                "software"
-              ],
-              "llmSectors": [
-                "software",
-                "private credit / direct lending"
-              ],
-              "llmExclude": false,
-              "llmReason": "The article title references 'Blue Owl Technology Finance' and ticker NYSE:OTF — OTF is a publicly traded vehicle sponsored by Blue Owl focused on technology-focused direct lending (i.e., private credit), consistent with Blue Owl’s credit platform. 'Technology Finance' implies software sector exposure via direct lending to software companies.",
-              "llmReasonZh": "文章标题提及“Blue Owl Technology Finance”及股票代码NYSE:OTF——OTF是由Blue Owl发起的公开交易投资工具，专注于科技领域直接贷款（即私募信贷），与Blue Owl的信贷平台定位一致。“Technology Finance”意味着通过向软件公司提供直接贷款而形成对软件行业的敞口。"
-            },
-            "scoreBreakdown": {
-              "keywordScore": 23,
-              "semanticScore": 6.27,
-              "finalScore": 29.27,
-              "semanticEnabled": true
-            },
-            "strategies": [
-              "private-credit"
-            ],
-            "events": [
-              "financing"
-            ],
-            "rating": {
-              "parts": {
-                "institution": {
-                  "value": 1.0,
-                  "code": "title_names_gp",
-                  "gps": [
-                    "Blue Owl"
-                  ]
-                },
-                "strategy": {
-                  "value": 0.56,
-                  "code": "body_strategy",
-                  "tagValue": 0.6,
-                  "strategies": [
-                    "private-credit"
-                  ],
-                  "semanticValue": 0.52
-                },
-                "event": {
-                  "value": 0.7,
-                  "code": "financing",
-                  "ruleValue": 0.7,
-                  "events": [
-                    "financing"
-                  ]
-                },
-                "source": {
-                  "value": 0.25,
-                  "code": "tier_aggregator",
-                  "source": "Seeking Alpha"
-                },
-                "freshness": {
-                  "value": 0.8,
-                  "code": "estimated"
-                }
-              },
-              "weights": {
-                "institution": 18,
-                "strategy": 12,
-                "event": 30,
-                "source": 25,
-                "freshness": 15
-              },
-              "score": 64,
-              "retrievedAt": "2026-10-29T09:02:01.311528+00:00"
-            },
-            "summaryZhLanguage": "Simplified Chinese"
-          },
-          {
-            "id": "2026-08-19-4e5be34f2b1f",
-            "title": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) - Seeking Alpha",
-            "titleZh": "Blue Owl Technology Finance：业绩拐点即将到来 (NYSE:OTF) - Seeking Alpha",
-            "summary": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) Seeking Alpha",
-            "summaryZh": "Blue Owl Technology Finance：业绩拐点即将到来 (NYSE:OTF) Seeking Alpha",
-            "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNHUzV3pGMlZQTWRRMkkwT3hKTGJPSDg3MW9icG1FQVEtc1NWRlhJQ1p6elgxTmlLa3JwYWE2TS0xRkJJUDRRd3VlZkRGekxSa3VRclBfOE9MMWJNTGROQzFoVWNDaXo1ZXM2RnNzdkYzN01BV0ljdVRleGVfWUx3ZVhmOWxIUHRyc013WHFINTdWZFd3cTYzaQ?oc=5",
-            "source": "Seeking Alpha",
-            "publishedAt": "2026-08-19",
-            "lede": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) Seeking Alpha",
-            "articleExcerpt": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) - Seeking Alpha. Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) Seeking Alpha",
-            "contentFingerprint": "e986ea1ff608a400",
-            "region": "US",
-            "gps": [
-              "Blue Owl"
-            ],
-            "sectors": [
-              "private-credit"
-            ],
-            "curation": "rss_filter",
-            "excludedByClassifier": false,
-            "classificationBreakdown": {
-              "keywordGps": [
-                "Blue Owl",
-                "Blue Owl"
-              ],
-              "llmGps": [
-                "Blue Owl",
-                "Blue Owl"
-              ],
-              "keywordSectors": [
-                "software"
-              ],
-              "llmSectors": [
-                "software",
-                "private credit / direct lending"
-              ],
-              "llmExclude": false,
-              "llmReason": "The article title references 'Blue Owl Technology Finance' and ticker NYSE:OTF, indicating coverage of Blue Owl’s technology-focused credit vehicle (OTF is Blue Owl Technology Finance Corp, a publicly traded BDC focused on direct lending to software companies). This falls squarely within tracked credit activity — private credit/direct lending with a software sub-sector focus.",
-              "llmReasonZh": "文章标题提及“Blue Owl Technology Finance”及股票代码NYSE:OTF，表明其报道对象为Blue Owl旗下专注于科技领域的信贷投资工具（OTF即Blue Owl Technology Finance Corp，是一家公开上市的BDC，专注于向软件公司提供直接贷款）。该内容完全属于所跟踪的信贷活动范畴，即聚焦软件细分领域的私募信贷/直接贷款。"
-            },
-            "scoreBreakdown": {
-              "keywordScore": 23,
-              "semanticScore": 5.96,
-              "finalScore": 28.96,
-              "semanticEnabled": true
-            },
-            "strategies": [
-              "private-credit"
-            ],
-            "events": [
-              "financing"
-            ],
-            "rating": {
-              "parts": {
-                "institution": {
-                  "value": 1.0,
-                  "code": "title_names_gp",
-                  "gps": [
-                    "Blue Owl"
-                  ]
-                },
-                "strategy": {
-                  "value": 0.55,
-                  "code": "body_strategy",
-                  "tagValue": 0.6,
-                  "strategies": [
-                    "private-credit"
-                  ],
-                  "semanticValue": 0.5
-                },
-                "event": {
-                  "value": 0.7,
-                  "code": "financing",
-                  "ruleValue": 0.7,
-                  "events": [
-                    "financing"
-                  ]
-                },
-                "source": {
-                  "value": 0.25,
-                  "code": "tier_aggregator",
-                  "source": "Seeking Alpha"
-                },
-                "freshness": {
-                  "value": 0.8,
-                  "code": "estimated"
-                }
-              },
-              "weights": {
-                "institution": 18,
-                "strategy": 12,
-                "event": 30,
-                "source": 25,
-                "freshness": 15
-              },
-              "score": 64,
-              "retrievedAt": "2026-10-29T09:02:01.311969+00:00"
-            },
-            "summaryZhLanguage": "Simplified Chinese"
-          }
-        ],
-        "KKR": [],
-        "CIFC": [],
-        "PAG": [],
-        "Pretium": [],
-        "Guggenheim": [],
-        "Neuberger": [],
-        "BasePoint": [],
-        "Bain Capital": [],
-        "Blackstone": [],
-        "Apollo": [],
-        "TPG": [],
-        "Golub": [],
-        "CVC": [],
-        "Canyon": []
-      },
-      "items": [
-        {
-          "id": "2026-08-19-4890ecfced6e",
-          "title": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) - Seeking Alpha",
-          "titleZh": "Blue Owl Technology Finance：第二季度表现优异，更高收益催化因素显现 (NYSE:OTF) - Seeking Alpha",
-          "summary": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) Seeking Alpha",
-          "summaryZh": "Blue Owl Technology Finance：第二季度表现优异，更高收益催化因素显现 (NYSE:OTF) Seeking Alpha",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQdDVldmZ6VWZGbTJiQWU2bkpmb1gyV3EwajlEQVdDQ1ROTWE0M0JjODJZUVlRWEVETEgwaFNVV2tyMHBldzBjSk9rYUZBbkZsdDlnMTUtOG5zaE5OdFotYWItX1ZJempMUUtKdkZ5NnFsendSc2VfdmYwak9OZm85TTVnaWpxc2lVbDQ1NE9ZMEVTUWFGZmphZnRqMjliQ3RxSFI0ZFFpelRtZTRCeGh6czAxOHo?oc=5",
-          "source": "Seeking Alpha",
-          "publishedAt": "2026-08-19",
-          "lede": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) Seeking Alpha",
-          "articleExcerpt": "Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) - Seeking Alpha. Blue Owl Technology Finance: Q2 Outperformance And Higher Income Catalysts (NYSE:OTF) Seeking Alpha",
-          "contentFingerprint": "4cb9aa2c38c45579",
-          "region": "US",
-          "gps": [
-            "Blue Owl"
-          ],
-          "sectors": [
-            "private-credit"
-          ],
-          "curation": "rss_filter",
-          "excludedByClassifier": false,
-          "classificationBreakdown": {
-            "keywordGps": [
-              "Blue Owl",
-              "Blue Owl"
-            ],
-            "llmGps": [
-              "Blue Owl",
-              "Blue Owl"
-            ],
-            "keywordSectors": [
-              "software"
-            ],
-            "llmSectors": [
-              "software",
-              "private credit / direct lending"
-            ],
-            "llmExclude": false,
-            "llmReason": "The article title references 'Blue Owl Technology Finance' and ticker NYSE:OTF — OTF is a publicly traded vehicle sponsored by Blue Owl focused on technology-focused direct lending (i.e., private credit), consistent with Blue Owl’s credit platform. 'Technology Finance' implies software sector exposure via direct lending to software companies.",
-            "llmReasonZh": "文章标题提及“Blue Owl Technology Finance”及股票代码NYSE:OTF——OTF是由Blue Owl发起的公开交易投资工具，专注于科技领域直接贷款（即私募信贷），与Blue Owl的信贷平台定位一致。“Technology Finance”意味着通过向软件公司提供直接贷款而形成对软件行业的敞口。"
-          },
-          "scoreBreakdown": {
-            "keywordScore": 23,
-            "semanticScore": 6.27,
-            "finalScore": 29.27,
-            "semanticEnabled": true
-          },
-          "strategies": [
-            "private-credit"
-          ],
-          "events": [
-            "financing"
-          ],
-          "rating": {
-            "parts": {
-              "institution": {
-                "value": 1.0,
-                "code": "title_names_gp",
-                "gps": [
-                  "Blue Owl"
-                ]
-              },
-              "strategy": {
-                "value": 0.56,
-                "code": "body_strategy",
-                "tagValue": 0.6,
-                "strategies": [
-                  "private-credit"
-                ],
-                "semanticValue": 0.52
-              },
-              "event": {
-                "value": 0.7,
-                "code": "financing",
-                "ruleValue": 0.7,
-                "events": [
-                  "financing"
-                ]
-              },
-              "source": {
-                "value": 0.25,
-                "code": "tier_aggregator",
-                "source": "Seeking Alpha"
-              },
-              "freshness": {
-                "value": 0.8,
-                "code": "estimated"
-              }
-            },
-            "weights": {
-              "institution": 18,
-              "strategy": 12,
-              "event": 30,
-              "source": 25,
-              "freshness": 15
-            },
-            "score": 64,
-            "retrievedAt": "2026-10-29T09:02:01.311528+00:00"
-          },
-          "summaryZhLanguage": "Simplified Chinese"
-        },
-        {
-          "id": "2026-08-19-4e5be34f2b1f",
-          "title": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) - Seeking Alpha",
-          "titleZh": "Blue Owl Technology Finance：业绩拐点即将到来 (NYSE:OTF) - Seeking Alpha",
-          "summary": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) Seeking Alpha",
-          "summaryZh": "Blue Owl Technology Finance：业绩拐点即将到来 (NYSE:OTF) Seeking Alpha",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQNHUzV3pGMlZQTWRRMkkwT3hKTGJPSDg3MW9icG1FQVEtc1NWRlhJQ1p6elgxTmlLa3JwYWE2TS0xRkJJUDRRd3VlZkRGekxSa3VRclBfOE9MMWJNTGROQzFoVWNDaXo1ZXM2RnNzdkYzN01BV0ljdVRleGVfWUx3ZVhmOWxIUHRyc013WHFINTdWZFd3cTYzaQ?oc=5",
-          "source": "Seeking Alpha",
-          "publishedAt": "2026-08-19",
-          "lede": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) Seeking Alpha",
-          "articleExcerpt": "Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) - Seeking Alpha. Blue Owl Technology Finance: The Turnaround Is Coming (NYSE:OTF) Seeking Alpha",
-          "contentFingerprint": "e986ea1ff608a400",
-          "region": "US",
-          "gps": [
-            "Blue Owl"
-          ],
-          "sectors": [
-            "private-credit"
-          ],
-          "curation": "rss_filter",
-          "excludedByClassifier": false,
-          "classificationBreakdown": {
-            "keywordGps": [
-              "Blue Owl",
-              "Blue Owl"
-            ],
-            "llmGps": [
-              "Blue Owl",
-              "Blue Owl"
-            ],
-            "keywordSectors": [
-              "software"
-            ],
-            "llmSectors": [
-              "software",
-              "private credit / direct lending"
-            ],
-            "llmExclude": false,
-            "llmReason": "The article title references 'Blue Owl Technology Finance' and ticker NYSE:OTF, indicating coverage of Blue Owl’s technology-focused credit vehicle (OTF is Blue Owl Technology Finance Corp, a publicly traded BDC focused on direct lending to software companies). This falls squarely within tracked credit activity — private credit/direct lending with a software sub-sector focus.",
-            "llmReasonZh": "文章标题提及“Blue Owl Technology Finance”及股票代码NYSE:OTF，表明其报道对象为Blue Owl旗下专注于科技领域的信贷投资工具（OTF即Blue Owl Technology Finance Corp，是一家公开上市的BDC，专注于向软件公司提供直接贷款）。该内容完全属于所跟踪的信贷活动范畴，即聚焦软件细分领域的私募信贷/直接贷款。"
-          },
-          "scoreBreakdown": {
-            "keywordScore": 23,
-            "semanticScore": 5.96,
-            "finalScore": 28.96,
-            "semanticEnabled": true
-          },
-          "strategies": [
-            "private-credit"
-          ],
-          "events": [
-            "financing"
-          ],
-          "rating": {
-            "parts": {
-              "institution": {
-                "value": 1.0,
-                "code": "title_names_gp",
-                "gps": [
-                  "Blue Owl"
-                ]
-              },
-              "strategy": {
-                "value": 0.55,
-                "code": "body_strategy",
-                "tagValue": 0.6,
-                "strategies": [
-                  "private-credit"
-                ],
-                "semanticValue": 0.5
-              },
-              "event": {
-                "value": 0.7,
-                "code": "financing",
-                "ruleValue": 0.7,
-                "events": [
-                  "financing"
-                ]
-              },
-              "source": {
-                "value": 0.25,
-                "code": "tier_aggregator",
-                "source": "Seeking Alpha"
-              },
-              "freshness": {
-                "value": 0.8,
-                "code": "estimated"
-              }
-            },
-            "weights": {
-              "institution": 18,
-              "strategy": 12,
-              "event": 30,
-              "source": 25,
-              "freshness": 15
-            },
-            "score": 64,
-            "retrievedAt": "2026-10-29T09:02:01.311969+00:00"
-          },
-          "summaryZhLanguage": "Simplified Chinese"
-        }
-      ]
-    },
     "2026-08-20": {
       "byGp": {
         "Blue Owl": [],
@@ -211301,6 +210875,105 @@
               "finalScore": 16.259999999999998,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-15-3f4877833930",
+            "title": "KKR CLO 69: Fund Performance - PitchBook",
+            "titleZh": "KKR CLO 69: Fund Performance - PitchBook",
+            "summary": "KKR CLO 69: Fund Performance PitchBook",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CRjhha1hFS3FkSHV1bEtDMEdOX3B3RFFKdUQzQzBnYk15Q1VwVUY2X1RGbEdUX3ZPTUFNdGFVUXpqWkVmZ1h1UC02NlhZdHFnWEdKa2dlQTg?oc=5",
+            "source": "PitchBook",
+            "publishedAt": "2026-11-15",
+            "lede": "KKR CLO 69: Fund Performance PitchBook",
+            "articleExcerpt": "KKR CLO 69: Fund Performance - PitchBook. KKR CLO 69: Fund Performance PitchBook",
+            "contentFingerprint": "e3936ae4a2945e7f",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [
+              "clo"
+            ],
+            "sectors": [
+              "clo"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "clo"
+              ],
+              "titleStrategies": [
+                "clo"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "clo"
+                  ],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.8,
+                  "code": "tier_trade",
+                  "source": "PitchBook"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 65,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 5.36,
+              "finalScore": 18.36,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -212841,6 +212514,105 @@
           }
         },
         {
+          "id": "2026-11-15-3f4877833930",
+          "title": "KKR CLO 69: Fund Performance - PitchBook",
+          "titleZh": "KKR CLO 69: Fund Performance - PitchBook",
+          "summary": "KKR CLO 69: Fund Performance PitchBook",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5CRjhha1hFS3FkSHV1bEtDMEdOX3B3RFFKdUQzQzBnYk15Q1VwVUY2X1RGbEdUX3ZPTUFNdGFVUXpqWkVmZ1h1UC02NlhZdHFnWEdKa2dlQTg?oc=5",
+          "source": "PitchBook",
+          "publishedAt": "2026-11-15",
+          "lede": "KKR CLO 69: Fund Performance PitchBook",
+          "articleExcerpt": "KKR CLO 69: Fund Performance - PitchBook. KKR CLO 69: Fund Performance PitchBook",
+          "contentFingerprint": "e3936ae4a2945e7f",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [
+            "clo"
+          ],
+          "sectors": [
+            "clo"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "clo"
+            ],
+            "titleStrategies": [
+              "clo"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "clo"
+                ],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.8,
+                "code": "tier_trade",
+                "source": "PitchBook"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 65,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 5.36,
+            "finalScore": 18.36,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-15-65ec3e6fee45",
           "title": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
           "titleZh": "Bain Capital Specialty Finance Earnings Call Signals Resilience - TipRanks",
@@ -213731,6 +213503,105 @@
               "finalScore": 25.38,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-16-4c9a9eaad418",
+            "title": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock - MarketBeat",
+            "titleZh": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock - MarketBeat",
+            "summary": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTFE5LWsxY3RuWlJTakgtNmdVMUZGNGs2cHlaZkdvTTUzSTBNMkVKbTlOYXlyV2o4YjIwMkl2T0I4TWk2aU55NjYwOGF6Z0hCUTFCNWpWTlVEdnk4bUx3VXFMbFFzTE14T085RzNnUjdvaWhkX3d4SnZIMFVKMTVFemlxZWlyYjZDeHRna2JQN0FtZ0dIcFRnUTE3REpyeEV3LVQ4ZjM0c0xCTGQ0MG5QbHQzd2NVMUpaR05maWdFbUhBYnRYVTh4SjRuOA?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-16",
+            "lede": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock MarketBeat",
+            "articleExcerpt": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock - MarketBeat. Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock MarketBeat",
+            "contentFingerprint": "d40f433086765572",
+            "region": "US",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.79,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.58
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 6.92,
+              "finalScore": 22.92,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -214310,6 +214181,184 @@
               "keywordScore": 22,
               "semanticScore": 3.38,
               "finalScore": 25.38,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-7dad792da8f6",
+            "title": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders - Stock Titan",
+            "titleZh": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders - Stock Titan",
+            "summary": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders Stock Titan",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeS1tbjFKcm16Tm5IdGVYazlWZGwxdGNtSDZJMV9TQkJmN0J5SHZBN1EwWUVMc2x1MUp5ZVRfRng3X3lvTTQ0MkhSU1VCOGstbG50LVE3RFNRM3RlZ2NoREwzS3FWOU9FdGVvR085R29iZndDSm5nYUhab3UxWExRXzdyM05pOUJiaTluMVpnMldpajdCU0I3bGtkTTU?oc=5",
+            "source": "Stock Titan",
+            "publishedAt": "2026-11-16",
+            "lede": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders Stock Titan",
+            "articleExcerpt": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders - Stock Titan. A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders Stock Titan",
+            "contentFingerprint": "bbea2cd83fab3570",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Stock Titan"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 48,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.13,
+              "finalScore": 8.129999999999999,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-6832206b47f1",
+            "title": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones - Stock Traders Daily",
+            "titleZh": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones - Stock Traders Daily",
+            "summary": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones Stock Traders Daily",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPbDVhTktYVU9tYjh2WldiSVNTVDNlanBaOWRZaDlzdGtOQjA1ams0ZWlaYzZxM0lqY1A3S0NNeW1JR1FhckF6bFlURHA3Zm5xcGt5QTJsclBwM0dwSzhsRjZEckN1NUUzSElKNUdKdF9xeGJkRW1ZOS0td2hEazkxWGJDVUZyRUZXb1h1TTRmbkVtRDZQNXl5eGdlMUczaHZEc0RxbS11S2h6MWtQQ0NpdHRJckhLdUJZcFRZUV9pVTEtUkZkYkQyckdDUjFYT3VfZm14ZjI1SkFLODFGOG9pX2xUeHAzc3dGQTJqTk1zbkhjTlU?oc=5",
+            "source": "Stock Traders Daily",
+            "publishedAt": "2026-11-16",
+            "lede": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones Stock Traders Daily",
+            "articleExcerpt": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones - Stock Traders Daily. Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones Stock Traders Daily",
+            "contentFingerprint": "464fb8e8de04efb6",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Stock Traders Daily"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.37,
+              "finalScore": 7.37,
               "semanticEnabled": true
             }
           }
@@ -215259,6 +215308,291 @@
               "finalScore": 12.89,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-16-340e6d898288",
+            "title": "Apollo Makes Minority Investment in Focus Financial - Yahoo Finance",
+            "titleZh": "Apollo Makes Minority Investment in Focus Financial - Yahoo Finance",
+            "summary": "Apollo Makes Minority Investment in Focus Financial Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdkYzNEpyUnJUX0s4WHFZVkk1ZGx0ajFjcmJETVdrVlA2WmEyZ0RtMG1mUm1LMldkNGhpcWZVaXFZZjZlb0N2c3FZZFBWOGg2ZXBxV3otcER3YkQ2b0JXLU9xSGRwam5tMUxKMmFGSW9PaTVsTGZIU2pOVEJVYVNpdEhJcmtJY2VYcXhSVHR5eG1McWhDeU40WEJDMnNfRjFiX2dwNFpB?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-16",
+            "lede": "Apollo Makes Minority Investment in Focus Financial Yahoo Finance",
+            "articleExcerpt": "Apollo Makes Minority Investment in Focus Financial - Yahoo Finance. Apollo Makes Minority Investment in Focus Financial Yahoo Finance",
+            "contentFingerprint": "414d99c997480788",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.3,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.59
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 64,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 7.13,
+              "finalScore": 18.13,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-955297cf2065",
+            "title": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring - Startup Fortune",
+            "titleZh": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring - Startup Fortune",
+            "summary": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring Startup Fortune",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUm9uU2E0WWpGUDNVYlRHZVQyMXpKcVdlTFZPV0Rjd2xyRnBFcFQyZFk0QnlHNTE0aGx2UWZpcDY3TXVGS0wzMVJVRXZzMHVpLVFkRnprMlU5YThzT19rSXEySVFDcHRuZWRKTGp2U3lxWkpQUnRyNFRLOWkwS2J5Mk12aTc0NXJxUXhVZ0xNWTVmMEtVUHhuNmJGOUxFd1gwdi1zLVBWemtvTnNPVDd0c0JjVTVZUQ?oc=5",
+            "source": "Startup Fortune",
+            "publishedAt": "2026-11-16",
+            "lede": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring Startup Fortune",
+            "articleExcerpt": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring - Startup Fortune. Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring Startup Fortune",
+            "contentFingerprint": "d6e2faa11bad69e0",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.7,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Startup Fortune"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 4.83,
+              "finalScore": 10.83,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-7eae58d574ed",
+            "title": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial - AdvisorHub",
+            "titleZh": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial - AdvisorHub",
+            "summary": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial AdvisorHub",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNEM5MzY3U2dXM1JqWndyQnUzczQ0b1l3SnFVYTBUYzRaaGJXZEc2YXdVZTJoaDdmY2hTd0M5Mm1NSWpGYk5iQ0FXSm90aHlKajZXdW5lWUhsVE1tdlFnV3hQOUNfc2NBSTh3ZUxGUjhBeVRzWXowdkVJSnFMVVVTa0F0ZDJfal9HNW1HMTRjbDdfcTZF?oc=5",
+            "source": "AdvisorHub",
+            "publishedAt": "2026-11-16",
+            "lede": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial AdvisorHub",
+            "articleExcerpt": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial - AdvisorHub. Apollo Agrees Deal to Invest in Wealth Network Focus Financial AdvisorHub",
+            "contentFingerprint": "b51a44560241c9b1",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.28,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.56
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "AdvisorHub"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 6.72,
+              "finalScore": 9.719999999999999,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [
@@ -215441,6 +215775,194 @@
               "keywordScore": 3,
               "semanticScore": 4.92,
               "finalScore": 7.92,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-7fc747f94df7",
+            "title": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) - Seeking Alpha",
+            "titleZh": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) - Seeking Alpha",
+            "summary": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) Seeking Alpha",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQlhFREdXeGxIdVgtZFJvSzRJbEEwSGlnV09xb3IxTDV5SlAwX2djbDk1Y3k4UzZTT2hwaDFEVmFKTVFQMlcydVFIRWZ0UV9XRjY4UmNmVjlNeDcyQ3JSM3o2WXkxcXgtckpFOEs0OXBtTWhfOXBrU1VpU2txdkRVQmgzVUluenlsMU5ITmZCWEVOcGZzRUM4dTh6VUFlZ25IVEk4U3Ffdm5NQQ?oc=5",
+            "source": "Seeking Alpha",
+            "publishedAt": "2026-11-16",
+            "lede": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) Seeking Alpha",
+            "articleExcerpt": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) - Seeking Alpha. A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) Seeking Alpha",
+            "contentFingerprint": "5af66e577a521bfe",
+            "region": "US",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [
+              "resi"
+            ],
+            "sectors": [
+              "resi"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "resi"
+              ],
+              "titleStrategies": [
+                "resi"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.71,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "resi"
+                  ],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Seeking Alpha"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 52,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 5.06,
+              "finalScore": 21.06,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-95e26fccace5",
+            "title": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns - Investing.com",
+            "titleZh": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns - Investing.com",
+            "summary": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns Investing.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUFVkY0ZvUmpEYjFHbGVTMmN6ZzVxRHR4M3pJYWxleFVQeEIzQ0p4NFh4aWs3NFAyb2hHN05MbUs3cktPMktDcDJVV3l1M0hpUnhFNHN5dEI3QThqSldrSHl1alRZSFk5Uy1hMGQ0TDJvZTFNajJ4bDIxc1laYjQyNkk0Ujc5X01uaUtDaFFkMTJyS3RKaFVsSnlfSWlCcWY5VkFZY2dXRjdaeWFvZTFyMFQ5eU84SUNSQTU4TmY1N2RQckVNWVNuVGRkYw?oc=5",
+            "source": "Investing.com",
+            "publishedAt": "2026-11-16",
+            "lede": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns Investing.com",
+            "articleExcerpt": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns - Investing.com. Mizuho initiates TPG stock coverage with neutral rating on mix concerns Investing.com",
+            "contentFingerprint": "8ff64b76b42f2dd5",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Investing.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 48,
+              "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.95,
+              "finalScore": 8.95,
               "semanticEnabled": true
             }
           }
@@ -215836,6 +216358,105 @@
             "keywordScore": 22,
             "semanticScore": 3.38,
             "finalScore": 25.38,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-4c9a9eaad418",
+          "title": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock - MarketBeat",
+          "titleZh": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock - MarketBeat",
+          "summary": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQTFE5LWsxY3RuWlJTakgtNmdVMUZGNGs2cHlaZkdvTTUzSTBNMkVKbTlOYXlyV2o4YjIwMkl2T0I4TWk2aU55NjYwOGF6Z0hCUTFCNWpWTlVEdnk4bUx3VXFMbFFzTE14T085RzNnUjdvaWhkX3d4SnZIMFVKMTVFemlxZWlyYjZDeHRna2JQN0FtZ0dIcFRnUTE3REpyeEV3LVQ4ZjM0c0xCTGQ0MG5QbHQzd2NVMUpaR05maWdFbUhBYnRYVTh4SjRuOA?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-16",
+          "lede": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock MarketBeat",
+          "articleExcerpt": "Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock - MarketBeat. Blue Owl Capital (NYSE:OBDC) Director Buys 1,000 Shares of Company Stock MarketBeat",
+          "contentFingerprint": "d40f433086765572",
+          "region": "US",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.79,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.58
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 6.92,
+            "finalScore": 22.92,
             "semanticEnabled": true
           }
         },
@@ -216297,6 +216918,184 @@
             "keywordScore": 3,
             "semanticScore": 4.83,
             "finalScore": 7.83,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-7dad792da8f6",
+          "title": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders - Stock Titan",
+          "titleZh": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders - Stock Titan",
+          "summary": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders Stock Titan",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNeS1tbjFKcm16Tm5IdGVYazlWZGwxdGNtSDZJMV9TQkJmN0J5SHZBN1EwWUVMc2x1MUp5ZVRfRng3X3lvTTQ0MkhSU1VCOGstbG50LVE3RFNRM3RlZ2NoREwzS3FWOU9FdGVvR085R29iZndDSm5nYUhab3UxWExRXzdyM05pOUJiaTluMVpnMldpajdCU0I3bGtkTTU?oc=5",
+          "source": "Stock Titan",
+          "publishedAt": "2026-11-16",
+          "lede": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders Stock Titan",
+          "articleExcerpt": "A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders - Stock Titan. A $0.05417-per-share payout is due Dec. 15 to Neuberger Municipal Fund holders Stock Titan",
+          "contentFingerprint": "bbea2cd83fab3570",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Stock Titan"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 48,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.13,
+            "finalScore": 8.129999999999999,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-6832206b47f1",
+          "title": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones - Stock Traders Daily",
+          "titleZh": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones - Stock Traders Daily",
+          "summary": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones Stock Traders Daily",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxPbDVhTktYVU9tYjh2WldiSVNTVDNlanBaOWRZaDlzdGtOQjA1ams0ZWlaYzZxM0lqY1A3S0NNeW1JR1FhckF6bFlURHA3Zm5xcGt5QTJsclBwM0dwSzhsRjZEckN1NUUzSElKNUdKdF9xeGJkRW1ZOS0td2hEazkxWGJDVUZyRUZXb1h1TTRmbkVtRDZQNXl5eGdlMUczaHZEc0RxbS11S2h6MWtQQ0NpdHRJckhLdUJZcFRZUV9pVTEtUkZkYkQyckdDUjFYT3VfZm14ZjI1SkFLODFGOG9pX2xUeHAzc3dGQTJqTk1zbkhjTlU?oc=5",
+          "source": "Stock Traders Daily",
+          "publishedAt": "2026-11-16",
+          "lede": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones Stock Traders Daily",
+          "articleExcerpt": "Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones - Stock Traders Daily. Precision Trading with Neuberger Berman Short Duration Income Etf (NBSD) Risk Zones Stock Traders Daily",
+          "contentFingerprint": "464fb8e8de04efb6",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.36
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Stock Traders Daily"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.37,
+            "finalScore": 7.37,
             "semanticEnabled": true
           }
         },
@@ -217241,6 +218040,291 @@
           }
         },
         {
+          "id": "2026-11-16-340e6d898288",
+          "title": "Apollo Makes Minority Investment in Focus Financial - Yahoo Finance",
+          "titleZh": "Apollo Makes Minority Investment in Focus Financial - Yahoo Finance",
+          "summary": "Apollo Makes Minority Investment in Focus Financial Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdkYzNEpyUnJUX0s4WHFZVkk1ZGx0ajFjcmJETVdrVlA2WmEyZ0RtMG1mUm1LMldkNGhpcWZVaXFZZjZlb0N2c3FZZFBWOGg2ZXBxV3otcER3YkQ2b0JXLU9xSGRwam5tMUxKMmFGSW9PaTVsTGZIU2pOVEJVYVNpdEhJcmtJY2VYcXhSVHR5eG1McWhDeU40WEJDMnNfRjFiX2dwNFpB?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-16",
+          "lede": "Apollo Makes Minority Investment in Focus Financial Yahoo Finance",
+          "articleExcerpt": "Apollo Makes Minority Investment in Focus Financial - Yahoo Finance. Apollo Makes Minority Investment in Focus Financial Yahoo Finance",
+          "contentFingerprint": "414d99c997480788",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.3,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.59
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 64,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 7.13,
+            "finalScore": 18.13,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-955297cf2065",
+          "title": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring - Startup Fortune",
+          "titleZh": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring - Startup Fortune",
+          "summary": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring Startup Fortune",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPUm9uU2E0WWpGUDNVYlRHZVQyMXpKcVdlTFZPV0Rjd2xyRnBFcFQyZFk0QnlHNTE0aGx2UWZpcDY3TXVGS0wzMVJVRXZzMHVpLVFkRnprMlU5YThzT19rSXEySVFDcHRuZWRKTGp2U3lxWkpQUnRyNFRLOWkwS2J5Mk12aTc0NXJxUXhVZ0xNWTVmMEtVUHhuNmJGOUxFd1gwdi1zLVBWemtvTnNPVDd0c0JjVTVZUQ?oc=5",
+          "source": "Startup Fortune",
+          "publishedAt": "2026-11-16",
+          "lede": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring Startup Fortune",
+          "articleExcerpt": "Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring - Startup Fortune. Goldman Sachs says the AI layoff wave is postponed, not cancelled, as Apollo slows hiring Startup Fortune",
+          "contentFingerprint": "d6e2faa11bad69e0",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.7,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Startup Fortune"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 4.83,
+            "finalScore": 10.83,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-7eae58d574ed",
+          "title": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial - AdvisorHub",
+          "titleZh": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial - AdvisorHub",
+          "summary": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial AdvisorHub",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNNEM5MzY3U2dXM1JqWndyQnUzczQ0b1l3SnFVYTBUYzRaaGJXZEc2YXdVZTJoaDdmY2hTd0M5Mm1NSWpGYk5iQ0FXSm90aHlKajZXdW5lWUhsVE1tdlFnV3hQOUNfc2NBSTh3ZUxGUjhBeVRzWXowdkVJSnFMVVVTa0F0ZDJfal9HNW1HMTRjbDdfcTZF?oc=5",
+          "source": "AdvisorHub",
+          "publishedAt": "2026-11-16",
+          "lede": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial AdvisorHub",
+          "articleExcerpt": "Apollo Agrees Deal to Invest in Wealth Network Focus Financial - AdvisorHub. Apollo Agrees Deal to Invest in Wealth Network Focus Financial AdvisorHub",
+          "contentFingerprint": "b51a44560241c9b1",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.28,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.56
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "AdvisorHub"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 6.72,
+            "finalScore": 9.719999999999999,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-16-ad34807b40de",
           "title": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat",
           "titleZh": "TPG Inc. $TPG Stock Acquired by William Blair Investment Management LLC - MarketBeat",
@@ -217421,14 +218505,222 @@
             "finalScore": 7.92,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-16-7fc747f94df7",
+          "title": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) - Seeking Alpha",
+          "titleZh": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) - Seeking Alpha",
+          "summary": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) Seeking Alpha",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOQlhFREdXeGxIdVgtZFJvSzRJbEEwSGlnV09xb3IxTDV5SlAwX2djbDk1Y3k4UzZTT2hwaDFEVmFKTVFQMlcydVFIRWZ0UV9XRjY4UmNmVjlNeDcyQ3JSM3o2WXkxcXgtckpFOEs0OXBtTWhfOXBrU1VpU2txdkRVQmgzVUluenlsMU5ITmZCWEVOcGZzRUM4dTh6VUFlZ25IVEk4U3Ffdm5NQQ?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-11-16",
+          "lede": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) Seeking Alpha",
+          "articleExcerpt": "A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) - Seeking Alpha. A 12% Dividend Yield Worth A Look From TPG Mortgage Comes With Risk (NYSE:MITT.PR.B) Seeking Alpha",
+          "contentFingerprint": "5af66e577a521bfe",
+          "region": "US",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [
+            "resi"
+          ],
+          "sectors": [
+            "resi"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "resi"
+            ],
+            "titleStrategies": [
+              "resi"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.71,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "resi"
+                ],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Seeking Alpha"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 52,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 5.06,
+            "finalScore": 21.06,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-95e26fccace5",
+          "title": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns - Investing.com",
+          "titleZh": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns - Investing.com",
+          "summary": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns Investing.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxPUFVkY0ZvUmpEYjFHbGVTMmN6ZzVxRHR4M3pJYWxleFVQeEIzQ0p4NFh4aWs3NFAyb2hHN05MbUs3cktPMktDcDJVV3l1M0hpUnhFNHN5dEI3QThqSldrSHl1alRZSFk5Uy1hMGQ0TDJvZTFNajJ4bDIxc1laYjQyNkk0Ujc5X01uaUtDaFFkMTJyS3RKaFVsSnlfSWlCcWY5VkFZY2dXRjdaeWFvZTFyMFQ5eU84SUNSQTU4TmY1N2RQckVNWVNuVGRkYw?oc=5",
+          "source": "Investing.com",
+          "publishedAt": "2026-11-16",
+          "lede": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns Investing.com",
+          "articleExcerpt": "Mizuho initiates TPG stock coverage with neutral rating on mix concerns - Investing.com. Mizuho initiates TPG stock coverage with neutral rating on mix concerns Investing.com",
+          "contentFingerprint": "8ff64b76b42f2dd5",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.25,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Investing.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 48,
+            "retrievedAt": "2026-11-17T01:31:15.495660+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.95,
+            "finalScore": 8.95,
+            "semanticEnabled": true
+          }
         }
       ]
+    },
+    "2026-11-17": {
+      "byGp": {
+        "Blue Owl": [],
+        "KKR": [],
+        "CIFC": [],
+        "PAG": [],
+        "Pretium": [],
+        "Guggenheim": [],
+        "Neuberger": [],
+        "BasePoint": [],
+        "Bain Capital": [],
+        "Blackstone": [],
+        "Apollo": [],
+        "TPG": [],
+        "Golub": [],
+        "CVC": [],
+        "Canyon": []
+      },
+      "items": []
     }
   },
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 18,
+      "count": 21,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -217436,25 +218728,25 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "KKR",
-      "count": 54,
-      "selected": 6,
-      "status": "ok",
+      "count": 0,
+      "selected": 0,
+      "status": "error",
       "query": "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
       "queries": [
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
-      "errorReason": ""
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
+      "errorReason": "HTTP Error 429: Too Many Requests"
     },
     {
       "firm": "CIFC",
-      "count": 5,
+      "count": 0,
       "selected": 0,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -217462,12 +218754,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 7,
+      "count": 8,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -217475,38 +218767,38 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
-      "count": 4,
-      "selected": 1,
-      "status": "ok",
+      "count": 0,
+      "selected": 0,
+      "status": "error",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
-      "errorReason": ""
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
+      "errorReason": "HTTP Error 429: Too Many Requests"
     },
     {
       "firm": "Guggenheim",
-      "count": 5,
-      "selected": 3,
+      "count": 6,
+      "selected": 2,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 8,
+      "count": 7,
       "selected": 2,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -217514,7 +218806,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
@@ -217527,38 +218819,38 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 13,
-      "selected": 6,
+      "count": 1,
+      "selected": 0,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
       "queries": [
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 72,
-      "selected": 6,
+      "count": 1,
+      "selected": 0,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
       "queries": [
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 25,
+      "count": 24,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -217566,12 +218858,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 7,
+      "count": 4,
       "selected": 4,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -217579,51 +218871,51 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 3,
-      "selected": 1,
-      "status": "ok",
+      "count": 0,
+      "selected": 0,
+      "status": "error",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
       "queries": [
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
-      "errorReason": ""
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
+      "errorReason": "HTTP Error 429: Too Many Requests"
     },
     {
       "firm": "CVC",
-      "count": 7,
+      "count": 0,
       "selected": 0,
-      "status": "ok",
+      "status": "error",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
       "queries": [
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
-      "errorReason": ""
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
+      "errorReason": "HTTP Error 429: Too Many Requests"
     },
     {
       "firm": "Canyon",
-      "count": 30,
+      "count": 0,
       "selected": 0,
-      "status": "ok",
+      "status": "error",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
       "queries": [
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
-      "errorReason": ""
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
+      "errorReason": "HTTP Error 429: Too Many Requests"
     },
     {
       "firm": "Portfolio",
-      "count": 461,
+      "count": 578,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -217640,9 +218932,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-16T17:53:34.696134+00:00",
+      "asOf": "2026-11-17T01:31:15.495660+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-16T17:53:34.696134+00:00"
+  "checkedAt": "2026-11-17T01:31:15.495660+00:00"
 }
