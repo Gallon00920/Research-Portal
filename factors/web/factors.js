@@ -1,7 +1,7 @@
 /* Investment performance (folder: factors) — third view of the AID Research Panel (#/factors/<tab>/<YYYY-MM>).
    Two sub-tabs, one month on screen at a time:
      performance  three tables of the month, one under the other, each drawn as a real table:
-                  performance (cash income vs budget), calls (calls & distributions), returns (total return)
+                  performance (cash income), calls (calls & distributions), returns (total return)
      budget       the budget completion slide, drawn as real charts
    Each table or slide is a "kind" with its own monthly file, data/factors/<kind>/<YYYY-MM>.json, produced from an uploaded image by
    factors/scripts/extract_factors.py (Claude reads the image). Uploading:
@@ -26,7 +26,7 @@ const MAX_BYTES = 5 * 1024 * 1024;
 const STR = {
   en: {
     tab_performance: 'Fund performance', tab_budget: 'Budget completion',
-    kind_performance: 'Cash income vs budget', kind_calls: 'Calls & distributions', kind_returns: 'Total return', kind_budget: 'Budget completion',
+    kind_performance: 'Cash income', kind_calls: 'Calls & distributions', kind_returns: 'Total return', kind_budget: 'Budget completion',
     up_kind: 'Table', empty_kind: 'No "{kind}" table for this month yet',
     key_yield: 'Distribution yield', key_yhi: '8% or more on calls', key_ylo: 'quarter below 2%',
     year: 'Year', month: 'Month', upload: 'Upload image',
@@ -68,7 +68,7 @@ const STR = {
   },
   cn: {
     tab_performance: '基金表现', tab_budget: '预算完成度',
-    kind_performance: '现金收息 vs 预算', kind_calls: 'Call款与派息', kind_returns: '总体收益率', kind_budget: '预算完成度',
+    kind_performance: '现金收息', kind_calls: 'Call款与派息', kind_returns: '总体收益率', kind_budget: '预算完成度',
     up_kind: '表格', empty_kind: '本月尚无“{kind}”表格',
     key_yield: '派息率', key_yhi: '按Call款 8% 及以上', key_ylo: '季度低于 2%',
     year: '年份', month: '月份', upload: '上传图片',

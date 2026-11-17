@@ -364,7 +364,7 @@ site shows the latest month, in Chinese unless the visitor switched the language
 - **Fund performance**: three tables of the month, one under the other, each
   drawn as a real table (sticky header, completion shading, IRR column, the
   slide's yield highlights), with links at the top to jump between them:
-  *Cash income vs budget* (现金收息 vs 预算, kind `performance`), *Calls &
+  *Cash income* (现金收息, kind `performance`), *Calls &
   distributions* (Call款与派息, kind `calls`) and *Total return* (总体收益率,
   kind `returns`). A month shows whichever of the three it has; a missing
   one is an upload box.
