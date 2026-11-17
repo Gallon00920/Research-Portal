@@ -2,7 +2,7 @@
 window.I18N = {
   en: {
     search: "Search", search_ph: "Search reports, sections, exhibits…",
-    dashboard: "Dashboard", dash_title: "AID Market Research Panel",
+    dashboard: "Dashboard", back: "Return", dash_title: "AID Market Research Panel",
     nav_panel: "Research Panel", nav_news: "News tracker", news_title: "AID Credit News Radar",
     nav_factors: "Investment performance", factors_title: "Investment Performance",
     sec_internal: "AID analysis", sec_quarterly: "Quarterly updates", u_section: "Sub-sector",
@@ -77,7 +77,7 @@ window.I18N = {
   },
   cn: {
     search: "搜索", search_ph: "搜索报告、章节、图表…",
-    dashboard: "总览", dash_title: "AID 市场研究面板",
+    dashboard: "总览", back: "返回", dash_title: "AID 市场研究面板",
     nav_panel: "研究面板", nav_news: "新闻追踪", news_title: "AID 信用新闻雷达",
     nav_factors: "投资表现", factors_title: "投资表现",
     sec_internal: "AID分析", sec_quarterly: "基金季报", u_section: "子板块",
