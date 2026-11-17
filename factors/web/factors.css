@@ -47,15 +47,11 @@
 #view-factors .ff-note b{display:block; color:var(--ink); font-size:13px}
 #view-factors .ff-note p + p{margin-top:4px}
 #view-factors .ff-empty{border:1px dashed var(--line); border-radius:5px; padding:44px 20px; text-align:center; color:var(--muted); font-size:13.5px}
-#view-factors .ff-empty.compact{padding:22px 16px}
-#view-factors .ff-empty.compact b{font-size:13.5px}
-#view-factors .ff-empty.compact .btn{margin-top:10px}
-/* the Fund performance sub-tab: its tables one under the other, with links to jump between them */
+/* the Fund performance sub-tab: a pill per table, the one on screen filled in */
 #view-factors .ff-jump{display:flex; flex-wrap:wrap; gap:6px; margin-bottom:18px}
 #view-factors .ff-jump a{font-size:12px; font-weight:600; color:var(--navy-800); background:#fff; border:1px solid var(--line); border-radius:99px; padding:4px 12px; text-decoration:none}
 #view-factors .ff-jump a:hover{border-color:var(--blue-500); color:var(--blue-600)}
-#view-factors .ff-jump a.off{color:var(--muted)}
-#view-factors .ff-kind + .ff-kind{margin-top:34px; padding-top:28px; border-top:1px solid var(--line)}
+#view-factors .ff-jump a.on{background:var(--navy-800); border-color:var(--navy-800); color:#fff}
 #view-factors .ff-sub{font-size:12.5px; color:var(--muted)}
 #view-factors .ff-empty b{display:block; color:var(--ink); font-size:15px; margin-bottom:6px}
 #view-factors .ff-empty .btn{margin-top:16px}
