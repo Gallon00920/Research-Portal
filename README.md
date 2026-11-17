@@ -91,8 +91,9 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
   language is kept. "Mark as exited" on a card moves the fund to the grey
   **Exited funds** section below the grid (`status: exited` in
   `data/sectors.json`); "Set active" on a grey card brings it back. A
-  fund card opens the tab of the fund's newest report
-  (`#/portfolio/s/<id>`); a tab is `#/portfolio/<section>/s/<id>`; report
+  fund card opens the fund's AID analysis tab when it has a report there,
+  else its Quarterly updates tab (`#/portfolio/s/<id>`); a tab is
+  `#/portfolio/<section>/s/<id>`; report
   pages keep `#/r/<id>` in both spaces.
 - **Macro / Market** (`#/macro`) works like Investment performance, for slide
   decks: see below.

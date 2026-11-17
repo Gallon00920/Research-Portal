@@ -91,7 +91,7 @@ function spaceTitle(space){ return t(SPACES[space || state.space].title); }
 function sections(space){ return SPACES[space || state.space].sections || null; }
 function sectionName(sec){ return t('sec_' + sec); }
 function hashDash(space){ return SPACES[space || state.space].hash; }
-/* a fund's page: #/portfolio[/<section>]/s/<id>. Without a section the fund opens on the tab of its newest report */
+/* a fund's page: #/portfolio[/<section>]/s/<id>. Without a section the fund opens on its first tab that has a report */
 function hashSector(id, section){ const sp = spaceOf(id); return SPACES[sp].hash.replace(/\/$/, '') + (sections(sp) && section ? '/' + section : '') + '/s/' + id; }
 /* in a space with sub-sectors (portfolio management) every report belongs to one: its `section`
    (AID analysis or quarterly updates; reports saved without one count as the first). The funds
@@ -339,9 +339,10 @@ function openSector(id, section){
   state.space = spaceOf(id);
   const secs = sections();
   if (secs){
-    // the tab asked for, else the sub-sector of the fund's newest report (its first tab when it has none)
-    const newest = latestOf(fundReports(id));
-    state.section = secs.includes(section) ? section : (newest ? sectionOfReport(newest) : secs[0]);
+    // the tab asked for, else the first sub-sector the fund has a report in (AID analysis before
+    // quarterly updates), or the first tab when it has none
+    const has = secs.filter(sec => fundReports(id).some(r => sectionOfReport(r) === sec));
+    state.section = secs.includes(section) ? section : (has[0] || secs[0]);
   }
   const latest = latestOf(sectorReports(id));
   if (latest){ history.replaceState(null, '', hashReport(latest.id)); renderReport(latest.id, null); return; }
