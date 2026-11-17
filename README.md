@@ -227,7 +227,13 @@ the pipeline.
   short title line right above it), finds vector charts by clustering the
   drawings itself (donuts, stacked bars) and renders them with their labels
   to PNG, as it does for pasted images, and takes the title from the largest
-  text on the first page. A chart is never rewritten as a table: the
+  text on the first page. A slide deck (landscape pages, such as an
+  earnings presentation) is kept as slides: each slide's title becomes a
+  heading, and a slide that carries tables, charts or tiles of figures is
+  kept as one picture of its body between the title and the footer, so
+  nothing drawn is lost or rewritten as text; a slide of prose (a review,
+  endnotes, disclosures) is read as text, and the cover gives the title
+  only. A chart is never rewritten as a table: the
   ruled-line detection also returns bar charts (bar edges read as cell
   borders) and line charts (gridlines read as rules), so every candidate is
   tested first and a chart is cropped to a picture instead. Banded tables

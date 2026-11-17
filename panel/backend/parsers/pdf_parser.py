@@ -61,6 +61,8 @@ GLYPHS = {"": "•", "": "•", "": "•", "": "✓", "": "✗", 
 
 # a value label of a chart: 149, $149, 12.5%, (3.2), 2.1x, -39
 VALUE_RE = re.compile(r"^[-+−(]?[$€£¥]?\d[\d,.]*%?[)xX]?$")
+# a figure on a slide: an amount, a percentage, a multiple, a date
+SLIDE_NUM_RE = re.compile(r"^\(?[-–−]?[$€£¥]?\d[\d,]*(\.\d+)?%?(bn|mm|m|k|x)?\)?$|^\d{1,2}/\d{1,2}/\d{2,4}$", re.I)
 
 
 def _clean(text: str) -> str:
@@ -153,9 +155,15 @@ class PdfParser:
                 count[key] = count.get(key, 0) + 1
         self._repeated_images = {k for k, c in count.items() if c >= max(3, math.ceil(len(doc) / 2))} if len(doc) >= 3 else set()
 
+        # a slide deck (landscape pages) is read slide by slide, see _parse_slide
+        deck = len(doc) >= 2 and sum(1 for page in doc if page.rect.width > page.rect.height) >= 0.8 * len(doc)
         for pno, page in enumerate(doc):
-            self._parse_page(page, lines_by_page[pno], body_size, repeated)
-            if pno < len(doc) - 1:
+            before = len(self.blocks)
+            if deck:
+                self._parse_slide(page, pno, lines_by_page[pno], body_size, repeated)
+            else:
+                self._parse_page(page, lines_by_page[pno], body_size, repeated)
+            if pno < len(doc) - 1 and len(self.blocks) > before:
                 self.blocks.append({"type": "pagebreak"})
 
         blocks = attach_captions(self.blocks)
@@ -516,6 +524,63 @@ class PdfParser:
             if blk["type"] == "list" and self.blocks and self.blocks[-1]["type"] == "list" and self.blocks[-1]["ordered"] == blk["ordered"]:
                 self.blocks[-1]["items"].extend(blk["items"])
                 continue
+            self.blocks.append(blk)
+
+    # ------------------------------------------------------------------ slide decks
+    # A deck is kept as slides: the slide's title becomes a heading, and a slide that carries
+    # tables, charts or tiles of figures is kept as one picture of its body (everything between
+    # the title and the footer), so nothing drawn is lost or rewritten as text. A slide of prose
+    # (a review, endnotes, disclosures) is read as text like a report page. The cover is the
+    # document's title only.
+    def _parse_slide(self, page, pno: int, lines, body_size: float, repeated: set[str]):
+        w, h = page.rect.width, page.rect.height
+        if pno == 0 and len(page.get_text("text")) < 400:
+            return
+        try:
+            self._drawings = page.get_drawings()
+        except Exception:
+            self._drawings = []
+        kept = [ln for ln in lines if not self._skip_line(ln, repeated)]
+        # the title: the largest text in the top part of the slide (one or two lines of it)
+        top = [ln for ln in kept if ln["rect"].y1 <= 0.24 * h]
+        title, title_bottom = "", 0.0
+        if top:
+            big = max(ln["size"] for ln in top)
+            tl = sorted((ln for ln in top if ln["size"] >= big - 0.5), key=lambda ln: (round(ln["rect"].y0), ln["rect"].x0))
+            title = _clean(" ".join(ln["text"] for ln in tl))
+            title_bottom = max(ln["rect"].y1 for ln in tl)
+        # the footer: the disclaimer, the ticker and the page number along the bottom edge
+        footer = [ln for ln in lines if ln["rect"].y0 >= 0.9 * h and ln["text"].strip()]
+        footer_top = min((ln["rect"].y0 for ln in footer), default=h)
+        # a slide of figures: filled shapes below the title (table bands, bars, tiles), a share of
+        # numeric words, or a pasted picture that is not the deck's logo
+        fills = [d for d in self._drawings if d.get("fill") and d["rect"].width > 3 and d["rect"].height > 3 and d["rect"].y0 >= title_bottom]
+        words = [t[4].strip(",;:") for t in page.get_text("words") if t[1] >= title_bottom and t[3] <= footer_top]
+        numeric = sum(1 for t in words if SLIDE_NUM_RE.match(t)) / len(words) if words else 0.0
+        pictures = [i for i in self._image_infos[pno] if self._image_key(fitz.Rect(i["bbox"])) not in self._repeated_images
+                    and fitz.Rect(i["bbox"]).width * fitz.Rect(i["bbox"]).height > 0.02 * w * h]
+        # a chart with few bars has few fills: its text is all short labels (a slide of prose is not)
+        kept_body = [ln for ln in kept if ln["rect"].y0 >= title_bottom - 1 and ln["rect"].y0 < footer_top]
+        short = sum(1 for ln in kept_body if len(ln["text"].split()) <= 4) / len(kept_body) if kept_body else 0.0
+        graphic = len(fills) >= 6 or numeric >= 0.25 or bool(pictures) or (len(fills) >= 3 and short >= 0.85)
+        if not graphic:
+            self._parse_page(page, lines, body_size, repeated)
+            return
+        if title:
+            self.blocks.append({"type": "heading", "level": 1, "text": title})
+        # the body: everything drawn or written between the title and the footer
+        boxes = [ln["rect"] for ln in kept if ln["rect"].y0 >= title_bottom - 1 and ln["rect"].y1 <= footer_top + 1]
+        boxes += [d["rect"] for d in self._drawings if d["rect"].y0 >= title_bottom - 1 and d["rect"].y1 <= footer_top + 1 and d["rect"].width < 0.98 * w]
+        boxes += [fitz.Rect(i["bbox"]) for i in pictures]
+        if not boxes:
+            return
+        body = fitz.Rect(min(b.x0 for b in boxes), min(b.y0 for b in boxes), max(b.x1 for b in boxes), max(b.y1 for b in boxes))
+        body = fitz.Rect(max(0, body.x0 - 8), max(title_bottom + 2, body.y0 - 8), min(w, body.x1 + 8), min(footer_top - 2, body.y1 + 8))
+        if body.width < 40 or body.height < 40:
+            return
+        items: list[tuple[float, float, dict[str, Any]]] = []
+        self._add_image(page, body, items, [])
+        for _, _, blk in items:
             self.blocks.append(blk)
 
     def _add_image(self, page, rect, items, covered):
