@@ -1,9 +1,9 @@
 /* Investment performance (folder: factors) — third view of the AID Research Panel (#/factors/<tab>/<YYYY-MM>).
    Three sub-tabs, one month on screen at a time:
      performance  the cash income table (kind performance), drawn as a real table
+     budget       the budget completion slide (kind budget), drawn as real charts
      annual       the year's tables, one under the other: total return (kind returns) above
                   calls & distributions (kind calls), both real tables
-     budget       the budget completion slide (kind budget), drawn as real charts
    Each kind has its own monthly files, data/factors/<kind>/<YYYY-MM>.json, produced from an uploaded image by
    factors/scripts/extract_factors.py (Claude reads the image). Uploading:
      local server   POST /api/factors/upload, extracted at once
@@ -13,7 +13,7 @@
 (function () {
 'use strict';
 
-const TABS = ['performance', 'annual', 'budget'];
+const TABS = ['performance', 'budget', 'annual'];
 // the kinds of each sub-tab, in page order; every kind has its own months, uploads, notes and dates.
 // The address names the sub-tab: #/factors/<tab>[/<YYYY-MM>] (a kind's name is taken as its sub-tab)
 const KINDS = {performance: ['performance'], annual: ['returns', 'calls'], budget: ['budget']};

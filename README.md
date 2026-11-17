@@ -364,14 +364,14 @@ site shows the latest month, in Chinese unless the visitor switched the language
 
 - **Fund performance**: the cash income table (现金收息, kind
   `performance`), drawn as a real table (sticky header, completion shading).
+- **Budget completion**: the budget completion slide, drawn as real charts
+  (budget against actual, stacked monthly parts, the slide's commentary).
 - **Annual performance** (全年表现): the year's two tables for the month, one
   under the other: *Total return* (总体收益率, kind `returns`: years invested,
   cost, NAV, IRR, DPI) above *Calls & distributions* (Call款与派息, kind
   `calls`: amounts called, distributions, yields, with the slide's yield
   highlights). Each is its own monthly upload; a month shows the tables it
   has and an upload box for the other.
-- **Budget completion**: the budget completion slide, drawn as real charts
-  (budget against actual, stacked monthly parts, the slide's commentary).
 
 The address names the sub-tab: `#/factors/<tab>/<YYYY-MM>`.
 
