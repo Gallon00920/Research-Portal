@@ -360,23 +360,26 @@ gives the hourly refresh that the workflow provides on GitHub.
 
 The "Investment performance" tab (`#/factors`, folder `factors/`, formerly "Fund key factors") is the home page: opening the
 site shows the latest month, in Chinese unless the visitor switched the language (the Research Panel dashboard lives at
-`#/research`). It shows two monthly sub-tabs, one month on screen at a time:
+`#/research`). It shows three monthly sub-tabs, one month on screen at a time:
 
-- **Fund performance**: a row of pills picks one of three tables, each drawn
-  as a real table (sticky header, completion shading, IRR column, the slide's
-  yield highlights): *Cash income* (现金收息, kind `performance`), *Calls &
-  distributions* (Call款与派息, kind `calls`) and *Total return* (总体收益率,
-  kind `returns`). A pill opens its table on the newest month it has; the
-  year and month pickers then list that table's months only, and the upload
-  button uploads that table. The address names the table:
-  `#/factors/<kind>/<YYYY-MM>`.
+- **Fund performance**: the cash income table (现金收息, kind
+  `performance`), drawn as a real table (sticky header, completion shading).
+- **Annual performance** (全年表现): the year's two tables for the month, one
+  under the other: *Total return* (总体收益率, kind `returns`: years invested,
+  cost, NAV, IRR, DPI) above *Calls & distributions* (Call款与派息, kind
+  `calls`: amounts called, distributions, yields, with the slide's yield
+  highlights). Each is its own monthly upload; a month shows the tables it
+  has and an upload box for the other.
 - **Budget completion**: the budget completion slide, drawn as real charts
   (budget against actual, stacked monthly parts, the slide's commentary).
 
+The address names the sub-tab: `#/factors/<tab>/<YYYY-MM>`.
+
 Nothing is typed in by hand. You upload an **image** of the month's slide or
 table (PNG, JPEG or WebP; drop, choose or paste a screenshot), pick the
-sub-tab, the table (for Fund performance), year and month it belongs to, and
-Claude reads the image into data. The page then draws it. The year and month
+sub-tab, the table (for Annual performance: total return or calls &
+distributions), year and month it belongs to, and Claude reads the image
+into data. The page then draws it. The year and month
 pickers at the top choose which month of the table on screen is shown; an
 upload for a month that already has that table replaces it. Each table keeps its own notes, source
 image and date, stored under `factors/data/<kind>/<YYYY-MM>.json`.
