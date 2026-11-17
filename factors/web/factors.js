@@ -1,8 +1,9 @@
 /* Investment performance (folder: factors) — third view of the AID Research Panel (#/factors/<tab>/<YYYY-MM>).
    Two sub-tabs, one month on screen at a time:
-     performance  the fund performance table, drawn as a real table
+     performance  three tables of the month, one under the other, each drawn as a real table:
+                  performance (cash income vs budget), calls (calls & distributions), returns (total return)
      budget       the budget completion slide, drawn as real charts
-   The data comes from data/factors/<tab>/<YYYY-MM>.json, produced from an uploaded image by
+   Each table or slide is a "kind" with its own monthly file, data/factors/<kind>/<YYYY-MM>.json, produced from an uploaded image by
    factors/scripts/extract_factors.py (Claude reads the image). Uploading:
      local server   POST /api/factors/upload, extracted at once
      GitHub Pages   the image is committed to factors/incoming/ and the build workflow extracts it
@@ -12,6 +13,9 @@
 'use strict';
 
 const TABS = ['performance', 'budget'];
+// the kinds shown on each sub-tab, in page order; every kind is uploaded, annotated and dated on its own
+const KINDS = {performance: ['performance', 'calls', 'returns'], budget: ['budget']};
+function kindTab(kind) { return TABS.find((tab) => KINDS[tab].includes(kind)) || null; }
 const SVG_NS = 'http://www.w3.org/2000/svg';
 // one blue ramp for the parts of an actual bar: dark (earliest) -> light (latest)
 const RAMP = ['#104281', '#184f95', '#1c5cab', '#256abf', '#2a78d6', '#3987e5', '#5598e7', '#6da7ec', '#86b6ef'];
@@ -22,6 +26,9 @@ const MAX_BYTES = 5 * 1024 * 1024;
 const STR = {
   en: {
     tab_performance: 'Fund performance', tab_budget: 'Budget completion',
+    kind_performance: 'Cash income vs budget', kind_calls: 'Calls & distributions', kind_returns: 'Total return', kind_budget: 'Budget completion',
+    up_kind: 'Table', empty_kind: 'No "{kind}" table for this month yet',
+    key_yield: 'Distribution yield', key_yhi: '8% or more on calls', key_ylo: 'quarter below 2%',
     year: 'Year', month: 'Month', upload: 'Upload image',
     empty_title: 'No data for this sub-tab yet', empty_text: 'Upload an image of the monthly slide or table. Claude reads it and turns it into a real chart or table.',
     load_error: 'This month could not be loaded',
@@ -61,6 +68,9 @@ const STR = {
   },
   cn: {
     tab_performance: '基金表现', tab_budget: '预算完成度',
+    kind_performance: '现金收息 vs 预算', kind_calls: 'Call款与派息', kind_returns: '总体收益率', kind_budget: '预算完成度',
+    up_kind: '表格', empty_kind: '本月尚无“{kind}”表格',
+    key_yield: '派息率', key_yhi: '按Call款 8% 及以上', key_ylo: '季度低于 2%',
     year: '年份', month: '月份', upload: '上传图片',
     empty_title: '该子页暂无数据', empty_text: '上传当月幻灯片或表格的图片，Claude 会读取并还原为真实的图表或表格。',
     load_error: '无法加载该月份的数据',
@@ -100,7 +110,8 @@ const STR = {
   },
 };
 
-const state = {lang: 'en', tab: 'performance', ym: null, index: null, doc: null, built: false, seq: 0, picked: null};
+// doc: the document whose labels L() / LQ() translate (the one being drawn or edited); docs: every kind of the month on screen
+const state = {lang: 'en', tab: 'performance', ym: null, index: null, doc: null, docs: {}, noteKind: null, moveKind: null, built: false, seq: 0, picked: null};
 const $ = (id) => document.getElementById(id);
 function t(key, vars) {
   let s = (STR[state.lang] || STR.en)[key];
@@ -182,11 +193,11 @@ function lacksEnglish(doc) {
   });
   return seen.some((x) => CJK.test(x) && !en[x]);
 }
-async function makeEnglish() {
+async function makeEnglish(kind) {
   const tab = state.tab, ym = state.ym;
   toast(t('en_working'));
   try {
-    const r = await fetch('/api/factors/' + tab + '/' + ym + '/translate', {method: 'POST'});
+    const r = await fetch('/api/factors/' + kind + '/' + ym + '/translate', {method: 'POST'});
     let data = null; try { data = await r.json(); } catch (e) {}
     if (r.status === 401) { location.href = '/login.html?next=' + encodeURIComponent(location.hash); return; }
     if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
@@ -210,7 +221,9 @@ async function loadIndex(force) {
   state.index = (idx && idx.tabs) || {};
   return state.index;
 }
-function months(tab) { return ((state.index || {})[tab] || []).slice().sort(); }
+function kindMonths(kind) { return ((state.index || {})[kind] || []).slice().sort(); }
+/* the months a sub-tab can show: any of its kinds has data for the month */
+function months(tab) { return Array.from(new Set((KINDS[tab] || [tab]).flatMap(kindMonths))).sort(); }
 function go(tab, ym) { location.hash = '#/factors/' + tab + (ym ? '/' + ym : ''); }
 
 /* ---------------------------------------------------------------- shell */
@@ -287,37 +300,71 @@ async function show(tab, ym) {
   const want = '#/factors/' + state.tab + (state.ym ? '/' + state.ym : '');
   if (location.hash !== want && location.hash.indexOf('#/factors') === 0) history.replaceState(null, '', want);
   paintShell();
-  if (!state.ym) { state.doc = null; body.classList.remove('is-loading'); renderEmpty(body); return; }
-  let doc = null, err = null;
-  try { doc = await getJson('data/factors/' + state.tab + '/' + state.ym + '.json'); }
-  catch (e) { err = e; }
+  if (!state.ym) { state.doc = null; state.docs = {}; body.classList.remove('is-loading'); renderEmpty(body); return; }
+  // every kind of the sub-tab for the month; a kind with no data for the month stays null
+  const kinds = KINDS[state.tab], docs = {}, errors = {};
+  await Promise.all(kinds.map(async (kind) => {
+    docs[kind] = null;
+    if (!kindMonths(kind).includes(state.ym)) return;
+    try { docs[kind] = await getJson('data/factors/' + kind + '/' + state.ym + '.json'); }
+    catch (e) { errors[kind] = e; }
+  }));
   if (seq !== state.seq) return;
   body.classList.remove('is-loading');
-  state.doc = doc;
-  if (!doc) { renderEmpty(body, err ? (t('load_error') + ': ' + err.message) : t('load_error')); return; }
-  renderDoc(body, doc);
+  state.docs = docs; state.doc = docs[kinds[0]] || null;
+  if (kinds.every((k) => !docs[k])) {
+    const err = errors[kinds[0]];
+    renderEmpty(body, err ? (t('load_error') + ': ' + err.message) : (kindMonths(kinds[0]).includes(state.ym) ? t('load_error') : null));
+    return;
+  }
+  renderTab(body, kinds, docs);
 }
-function renderEmpty(body, message) {
+/* the sub-tab's kinds one under the other; with several, a row of links jumps between them */
+function renderTab(body, kinds, docs) {
   body.textContent = '';
-  const box = h('div', 'ff-empty');
+  if (kinds.length > 1) {
+    const jump = h('nav', 'ff-jump'); jump.setAttribute('aria-label', 'sections');
+    kinds.forEach((kind) => {
+      const a = h('a', docs[kind] ? '' : 'off', t('kind_' + kind)); a.href = '#';
+      a.addEventListener('click', (ev) => { ev.preventDefault(); const sec = $('ffk-' + kind); if (sec) sec.scrollIntoView({behavior: 'smooth', block: 'start'}); });
+      jump.appendChild(a);
+    });
+    body.appendChild(jump);
+  }
+  kinds.forEach((kind) => {
+    // attached before it is drawn: the charts and the sticky header measure their box
+    const sec = h('section', 'ff-kind'); sec.id = 'ffk-' + kind;
+    body.appendChild(sec);
+    if (docs[kind]) renderDoc(sec, docs[kind], kind);
+    else renderEmpty(sec, t('empty_kind', {kind: t('kind_' + kind)}), kind, true);
+  });
+}
+/* kind: the upload button opens on that kind; compact: the box for one missing kind of a month */
+function renderEmpty(body, message, kind, compact) {
+  body.textContent = '';
+  const box = h('div', 'ff-empty' + (compact ? ' compact' : ''));
   box.appendChild(h('b', null, message || t('empty_title')));
   if (!message) box.appendChild(document.createTextNode(t('empty_text')));
   box.appendChild(document.createElement('br'));
-  const b = h('button', 'btn primary', '⬆ ' + t('upload')); b.type = 'button';
-  b.addEventListener('click', () => openUpload());
+  const b = h('button', 'btn primary' + (compact ? ' small' : ''), '⬆ ' + t('upload')); b.type = 'button';
+  b.addEventListener('click', () => openUpload(kind || null));
   box.appendChild(b);
   body.appendChild(box);
 }
-function renderDoc(body, doc) {
+function renderDoc(body, doc, kind) {
   body.textContent = '';
+  state.doc = doc;
+  const multi = KINDS[kindTab(kind)].length > 1;
   const head = h('div', 'ff-head');
-  head.appendChild(h('h2', null, L(doc.title) || t('tab_' + state.tab)));
+  // on a sub-tab with several tables the heading is the table's name and the slide's own title sits beside it
+  head.appendChild(h('h2', null, multi ? t('kind_' + kind) : (L(doc.title) || t('kind_' + kind))));
   head.appendChild(h('span', 'ff-period', monthLabel(state.ym)));
+  if (multi && L(doc.title)) head.appendChild(h('span', 'ff-sub', L(doc.title)));
   body.appendChild(head);
   // a warning that a note explains (listed in doc.dismissed) is no longer shown
   const dismissed = doc.dismissed || [];
   const warnings = (doc.warnings || []).filter((x) => !dismissed.includes(x));
-  const action = (label, explain) => { const b = h('button', 'btn small', label); b.type = 'button'; b.addEventListener('click', () => openNote(explain)); return b; };
+  const action = (label, explain) => { const b = h('button', 'btn small', label); b.type = 'button'; b.addEventListener('click', () => openNote(explain, kind)); return b; };
   if (warnings.length) {
     const w = h('div', 'ff-warn'); const inner = h('div');
     inner.appendChild(h('b', null, t('warn_title')));
@@ -338,7 +385,7 @@ function renderDoc(body, doc) {
     n.appendChild(action(t(doc.notes && doc.notes.length ? 'note_edit' : 'note_add'), false));
     body.appendChild(n);
   }
-  if (state.tab === 'budget') renderBudget(body, doc); else { watchWidth(null); renderPerformance(body, doc); }
+  if (kind === 'budget') renderBudget(body, doc); else { watchWidth(null); renderPerformance(body, doc); }
   const meta = h('div', 'ff-meta');
   let when = doc.extracted_at || '';
   try { when = new Date(doc.extracted_at).toLocaleDateString(locale(), {year: 'numeric', month: 'short', day: 'numeric'}); } catch (e) {}
@@ -346,32 +393,32 @@ function renderDoc(body, doc) {
   meta.appendChild(h('span', null, t('extracted', {date: when}) + ' · ' + model));
   if (doc.source_image) {
     const a = h('a', null, t('source')); a.target = '_blank'; a.rel = 'noopener';
-    a.href = 'data/factors/' + state.tab + '/' + encodeURIComponent(doc.source_image);
+    a.href = 'data/factors/' + kind + '/' + encodeURIComponent(doc.source_image);
     // opens in the panel's image viewer (close with the cross, Esc, or a click outside the image);
     // a modified click, or a missing viewer, still follows the link to the image itself
     a.addEventListener('click', (ev) => {
       if (!window.AIDLightbox || ev.ctrlKey || ev.metaKey || ev.shiftKey || ev.button !== 0) return;
       ev.preventDefault();
-      window.AIDLightbox.open(a.href, (L(doc.title) || t('tab_' + state.tab)) + ' · ' + monthLabel(state.ym));
+      window.AIDLightbox.open(a.href, t('kind_' + kind) + ' · ' + monthLabel(state.ym));
     });
     meta.appendChild(a);
   }
   const noteLink = h('a', null, doc.notes && doc.notes.length ? t('note_edit') : t('note_add'));
   noteLink.href = '#'; noteLink.setAttribute('role', 'button');
-  noteLink.addEventListener('click', (ev) => { ev.preventDefault(); openNote(false); });
+  noteLink.addEventListener('click', (ev) => { ev.preventDefault(); openNote(false, kind); });
   meta.appendChild(noteLink);
   // a month saved before translation existed, or whose translation failed: make it now.
   // On GitHub Pages the build workflow does this by itself on its next run.
   if (state.lang === 'en' && lacksEnglish(doc) && !(window.DataLayer && window.DataLayer.mode === 'static')) {
     const enLink = h('a', null, t('en_make'));
     enLink.href = '#'; enLink.setAttribute('role', 'button');
-    enLink.addEventListener('click', (ev) => { ev.preventDefault(); makeEnglish(); });
+    enLink.addEventListener('click', (ev) => { ev.preventDefault(); makeEnglish(kind); });
     meta.appendChild(enLink);
   }
   // uploaded under the wrong year or month: file it under the right one
   const moveLink = h('a', null, t('move_link'));
   moveLink.href = '#'; moveLink.setAttribute('role', 'button');
-  moveLink.addEventListener('click', (ev) => { ev.preventDefault(); openMove(); });
+  moveLink.addEventListener('click', (ev) => { ev.preventDefault(); openMove(kind); });
   meta.appendChild(moveLink);
   body.appendChild(meta);
 }
@@ -428,6 +475,9 @@ function renderPerformance(body, doc) {
       else if (v < 0) cls.push('neg');
       if (c.style === 'completion') { cls.push('c-center'); if (!row.total) cls.push(completionClass(v)); }
       if (c.style === 'irr') cls.push('irr');
+      // the slide's own highlights: a year's distribution yield of 8% or more, a quarter's under 2%
+      if (c.style === 'yield' && !row.total && v !== null && v !== undefined && v >= 8) cls.push('y-hi');
+      if (c.style === 'qyield' && !row.total && v !== null && v !== undefined && v < 2) cls.push('y-lo');
       if (c.style === 'heat' && !row.total && v !== null && v !== undefined) {
         // one hue, deeper with magnitude; a zero yield is flagged like a zero completion
         if (v <= 0) cls.push('c-neg2');
@@ -448,6 +498,18 @@ function renderPerformance(body, doc) {
     const key = h('div', 'ff-key');
     key.appendChild(h('span', 'lbl', t('key_completion')));
     [['--ff-pos-2', 'key_pos2'], ['--ff-pos-1', 'key_pos1'], ['--ff-neg-1', 'key_neg1'], ['--ff-neg-2', 'key_neg2']].forEach(([v, k]) => {
+      const sp = h('span'); const i = h('i'); i.style.background = 'var(' + v + ')';
+      sp.appendChild(i); sp.appendChild(document.createTextNode(t(k))); key.appendChild(sp);
+    });
+    body.appendChild(key);
+  }
+  if (cols.some((c) => c.style === 'yield' || c.style === 'qyield')) {
+    const key = h('div', 'ff-key');
+    key.appendChild(h('span', 'lbl', t('key_yield')));
+    const entries = [];
+    if (cols.some((c) => c.style === 'yield')) entries.push(['--ff-yhi', 'key_yhi']);
+    if (cols.some((c) => c.style === 'qyield')) entries.push(['--ff-ylo', 'key_ylo']);
+    entries.forEach(([v, k]) => {
       const sp = h('span'); const i = h('i'); i.style.background = 'var(' + v + ')';
       sp.appendChild(i); sp.appendChild(document.createTextNode(t(k))); key.appendChild(sp);
     });
@@ -771,6 +833,7 @@ function buildUploadDialog() {
   const grid = h('div', 'grid2');
   const mk = (id, lblId, control) => { const l = h('label'); l.appendChild(h('span')).id = lblId; control.id = id; l.appendChild(control); grid.appendChild(l); return control; };
   const selTab = mk('ffUpTab', 'ffUpTabLbl', h('select'));
+  const selKind = mk('ffUpKind', 'ffUpKindLbl', h('select'));
   const inYear = mk('ffUpYear', 'ffUpYearLbl', h('input')); inYear.type = 'number'; inYear.min = 2000; inYear.max = 2100; inYear.required = true;
   const selMonth = mk('ffUpMonth', 'ffUpMonthLbl', h('select'));
   form.appendChild(grid);
@@ -800,7 +863,8 @@ function buildUploadDialog() {
     const f = Array.from((ev.clipboardData && ev.clipboardData.files) || []).find((x) => MIME_EXT[x.type]);
     if (f) { ev.preventDefault(); pick(f); }
   });
-  [selTab, inYear, selMonth].forEach((n) => n.addEventListener('change', paintReplaceHint));
+  selTab.addEventListener('change', () => { paintKindOptions(null); paintReplaceHint(); });
+  [selKind, inYear, selMonth].forEach((n) => n.addEventListener('change', paintReplaceHint));
   inYear.addEventListener('input', paintReplaceHint);
   close.addEventListener('click', closeUpload);
   cancel.addEventListener('click', closeUpload);
@@ -815,6 +879,7 @@ function paintUploadDialog() {
   $('ffDropTxt').textContent = t('up_drop');
   $('ffDropTypes').textContent = t('up_types');
   $('ffUpTabLbl').textContent = t('up_tab');
+  $('ffUpKindLbl').textContent = t('up_kind');
   $('ffUpYearLbl').textContent = t('up_year');
   $('ffUpMonthLbl').textContent = t('up_month');
   $('ffUpCancel').textContent = t('cancel');
@@ -826,27 +891,41 @@ function paintUploadDialog() {
   for (let m = 1; m <= 12; m++) { const o = h('option', null, monthName(m)); o.value = String(m); selMonth.appendChild(o); }
   if (curTab) selTab.value = curTab;
   if (curMonth) selMonth.value = curMonth;
+  paintKindOptions($('ffUpKind').value);
   paintReplaceHint();
+}
+/* the table select lists the kinds of the chosen sub-tab; it is hidden when there is only one */
+function paintKindOptions(keep) {
+  const selKind = $('ffUpKind'), kinds = KINDS[$('ffUpTab').value] || [];
+  const cur = keep || selKind.value;
+  selKind.textContent = '';
+  kinds.forEach((kind) => { const o = h('option', null, t('kind_' + kind)); o.value = kind; selKind.appendChild(o); });
+  selKind.value = kinds.includes(cur) ? cur : kinds[0];
+  selKind.parentNode.hidden = kinds.length < 2;
 }
 function uploadTarget() {
   const year = Number($('ffUpYear').value), month = Number($('ffUpMonth').value);
-  return {tab: $('ffUpTab').value, year, month, ym: year + '-' + String(month).padStart(2, '0')};
+  return {tab: $('ffUpTab').value, kind: $('ffUpKind').value, year, month, ym: year + '-' + String(month).padStart(2, '0')};
 }
 function paintReplaceHint() {
   const hint = $('ffUpHint'); if (!hint) return;
   const tg = uploadTarget();
-  const exists = months(tg.tab).includes(tg.ym);
+  const exists = kindMonths(tg.kind).includes(tg.ym);
   hint.textContent = t('up_hint') + (exists ? ' ' : '');
   if (exists) hint.appendChild(h('b', 'ff-replace', t('up_replace')));
 }
 function setMsg(text, cls) { const m = $('ffUpMsg'); m.className = 'form-msg' + (cls ? ' ' + cls : ''); m.textContent = text || ''; }
-function openUpload() {
+/* kind: opened for one table of the month on screen (its empty box); otherwise the sub-tab's first kind */
+function openUpload(kind) {
   const now = new Date();
-  $('ffUpTab').value = state.tab;
-  // default to the month after the newest one shown, or the current month
-  const all = months(state.tab), last = all[all.length - 1];
+  const tab = kindTab(kind) || state.tab;
+  $('ffUpTab').value = tab;
+  paintKindOptions(kind || null);
+  // for a named table default to the month on screen; otherwise to the month after the newest one, or the current month
+  const all = months(tab), last = all[all.length - 1];
   let y = now.getFullYear(), m = now.getMonth() + 1;
-  if (last) { y = Number(last.slice(0, 4)); m = Number(last.slice(5)) + 1; if (m > 12) { m = 1; y += 1; } }
+  if (kind && state.ym) { y = Number(state.ym.slice(0, 4)); m = Number(state.ym.slice(5)); }
+  else if (last) { y = Number(last.slice(0, 4)); m = Number(last.slice(5)) + 1; if (m > 12) { m = 1; y += 1; } }
   $('ffUpYear').value = y; $('ffUpMonth').value = String(m);
   $('ffFile').value = ''; $('ffOverlay')._pick(null);
   $('ffUpSubmit').disabled = false;
@@ -871,21 +950,21 @@ async function submitUpload(ev) {
     if (DL && DL.mode === 'static') {
       setMsg(t('up_saving'));
       const bytes = new Uint8Array(await f.arrayBuffer());
-      const name = tg.tab + '-' + tg.ym + '.' + MIME_EXT[f.type];
+      const name = tg.kind + '-' + tg.ym + '.' + MIME_EXT[f.type];
       await DL.commitFile('factors/incoming/' + name, bytes, 'factors: upload ' + name);
       setMsg(t('up_pending'), 'ok');
       toast(t('up_pending'), DL.actionsUrl ? {text: t('view_actions'), href: DL.actionsUrl()} : null);
     } else {
       setMsg(t('up_working'));
       const fd = new FormData();
-      fd.append('file', f); fd.append('tab', tg.tab); fd.append('year', String(tg.year)); fd.append('month', String(tg.month));
+      fd.append('file', f); fd.append('tab', tg.kind); fd.append('year', String(tg.year)); fd.append('month', String(tg.month));
       const r = await fetch('/api/factors/upload', {method: 'POST', body: fd});
       let data = null; try { data = await r.json(); } catch (e) {}
       if (r.status === 401) { location.href = '/login.html?next=' + encodeURIComponent(location.hash); return; }
       if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
       await loadIndex(true);
       closeUpload();
-      toast(t('up_done', {tab: t('tab_' + tg.tab), month: monthLabel(tg.ym)}));
+      toast(t('up_done', {tab: t('kind_' + tg.kind), month: monthLabel(tg.ym)}));
       if (location.hash === '#/factors/' + tg.tab + '/' + tg.ym) show(tg.tab, tg.ym); else go(tg.tab, tg.ym);
     }
   } catch (e) {
@@ -933,11 +1012,13 @@ function buildNoteDialog() {
 }
 function noteMsg(text, cls) { const m = $('ffNoteMsg'); m.className = 'form-msg' + (cls ? ' ' + cls : ''); m.textContent = text || ''; }
 /* explain = opened from the warning box: the warnings on screen start ticked */
-function openNote(explain) {
-  const doc = state.doc;
+function openNote(explain, kind) {
+  kind = kind || state.noteKind || KINDS[state.tab][0];
+  const doc = state.docs[kind];
   if (!doc) return;
-  const tab = state.tab, ym = state.ym;
-  $('ffNoteTitle').textContent = t('note_dlg', {tab: t('tab_' + tab), month: monthLabel(ym)});
+  state.noteKind = kind; state.doc = doc;
+  const tab = kind, ym = state.ym;
+  $('ffNoteTitle').textContent = t('note_dlg', {tab: t('kind_' + kind), month: monthLabel(ym)});
   $('ffNoteClose').textContent = t('close');
   $('ffNoteLbl').textContent = t('note_label');
   $('ffNoteHint').textContent = t('note_hint');
@@ -966,10 +1047,10 @@ function openNote(explain) {
 
   // the month before often needs the same explanation: offer its note
   const copy = $('ffNoteCopy'); copy.hidden = true; copy.onclick = null;
-  const list2 = months(tab), prev = list2[list2.indexOf(ym) - 1];
+  const list2 = kindMonths(tab), prev = list2[list2.indexOf(ym) - 1];
   if (prev && !(doc.notes || []).length && !(doc.auto_notes || []).length) {
     getJson('data/factors/' + tab + '/' + prev + '.json').then((before) => {
-      if (!before || !(before.notes || []).length || state.ym !== ym || state.tab !== tab) return;
+      if (!before || !(before.notes || []).length || state.ym !== ym || state.noteKind !== tab) return;
       copy.textContent = t('note_copy', {month: monthLabel(prev)});
       copy.onclick = () => { $('ffNoteText').value = before.notes.join('\n'); $('ffNoteText').focus(); };
       copy.hidden = false;
@@ -986,7 +1067,7 @@ function closeNote() {
 }
 async function saveNote(ev) {
   ev.preventDefault();
-  const doc = state.doc, tab = state.tab, ym = state.ym;
+  const tab = state.noteKind, doc = state.docs[tab], ym = state.ym;
   if (!doc) return;
   const notes = $('ffNoteText').value.split(/\n+/).map((x) => x.trim()).filter(Boolean);
   const dismissed = Array.from(document.querySelectorAll('#ffNoteWarnList input:checked')).map((cb) => cb.value);
@@ -1000,16 +1081,16 @@ async function saveNote(ev) {
       const next = Object.assign({}, doc, {notes, dismissed});
       const bytes = new TextEncoder().encode(JSON.stringify(next, null, 2) + '\n');
       await DL.commitFile('factors/data/' + tab + '/' + ym + '.json', bytes, 'factors: note for ' + tab + ' ' + ym);
-      state.doc = next; pending = true;
+      state.docs[tab] = next; pending = true;
     } else {
       const r = await fetch('/api/factors/' + tab + '/' + ym + '/notes', {method: 'PUT', headers: {'Content-Type': 'application/json'}, body: JSON.stringify({notes, dismissed})});
       let data = null; try { data = await r.json(); } catch (e) {}
       if (r.status === 401) { location.href = '/login.html?next=' + encodeURIComponent(location.hash); return; }
       if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
-      state.doc = Object.assign({}, doc, {notes: data.notes, dismissed: data.dismissed});
+      state.docs[tab] = Object.assign({}, doc, {notes: data.notes, dismissed: data.dismissed});
     }
     closeNote();
-    if (state.tab === tab && state.ym === ym) renderDoc($('ffBody'), state.doc);
+    if (kindTab(tab) === state.tab && state.ym === ym) { const sec = $('ffk-' + tab); if (sec) renderDoc(sec, state.docs[tab], tab); }
     if (pending) toast(t('note_pending'), DL.actionsUrl ? {text: t('view_actions'), href: DL.actionsUrl()} : null);
     else toast(t('note_saved'));
   } catch (e) {
@@ -1063,15 +1144,17 @@ function moveTarget() {
 /* show the "replace" tick only when the chosen month already holds other data */
 function paintMoveTarget() {
   const tg = moveTarget(), row = $('ffMoveReplaceRow');
-  const taken = tg.ym !== state.ym && months(state.tab).includes(tg.ym);
+  const taken = tg.ym !== state.ym && kindMonths(state.moveKind).includes(tg.ym);
   row.hidden = !taken;
   if (taken) $('ffMoveReplaceLbl').textContent = t('move_replace', {month: monthLabel(tg.ym)});
   else $('ffMoveReplace').checked = false;
   moveMsg('');
 }
-function openMove() {
-  if (!state.doc || !state.ym) return;
-  $('ffMoveTitle').textContent = t('move_dlg', {tab: t('tab_' + state.tab)});
+function openMove(kind) {
+  kind = kind || KINDS[state.tab][0];
+  if (!state.docs[kind] || !state.ym) return;
+  state.moveKind = kind;
+  $('ffMoveTitle').textContent = t('move_dlg', {tab: t('kind_' + kind)});
   $('ffMoveClose').textContent = t('close');
   $('ffMoveNow').textContent = t('move_now', {month: monthLabel(state.ym)});
   $('ffMoveYearLbl').textContent = t('up_year');
@@ -1094,10 +1177,10 @@ function closeMove() {
 }
 async function submitMove(ev) {
   ev.preventDefault();
-  const tab = state.tab, from = state.ym, tg = moveTarget();
+  const tab = state.moveKind, from = state.ym, tg = moveTarget();
   if (!(tg.year >= 2000 && tg.year <= 2100)) { moveMsg(t('up_year'), 'err'); return; }
   if (tg.ym === from) { moveMsg(t('move_same'), 'err'); return; }
-  const taken = months(tab).includes(tg.ym), replace = $('ffMoveReplace').checked;
+  const taken = kindMonths(tab).includes(tg.ym), replace = $('ffMoveReplace').checked;
   if (taken && !replace) { moveMsg(t('move_need_replace'), 'err'); return; }
   const DL = window.DataLayer, btn = $('ffMoveSubmit');
   btn.disabled = true; moveMsg(t('move_working'));
@@ -1117,7 +1200,7 @@ async function submitMove(ev) {
       await loadIndex(true);
       closeMove();
       toast(t('move_done', {month: monthLabel(tg.ym)}));
-      go(tab, tg.ym);
+      go(kindTab(tab), tg.ym);
     }
   } catch (e) {
     moveMsg(e.message || String(e), 'err');
@@ -1131,7 +1214,7 @@ function toLang(lang) { return lang === 'cn' || lang === 'zh' ? 'cn' : 'en'; }
 window.FundFactors = {
   mount(lang, tab, ym) {
     state.lang = toLang(lang);
-    return show(tab || state.tab, ym || null);
+    return show(TABS.includes(tab) ? tab : (kindTab(tab) || state.tab), ym || null);
   },
   setLanguage(lang) {
     const next = toLang(lang);

@@ -54,13 +54,16 @@ INCOMING = ROOT / "incoming"
 FAILED = ROOT / "failed"
 CONFIG = ROOT / "config.json"
 
-TABS = ("performance", "budget")
+# performance / calls / returns are tables (the three sections of the Fund performance sub-tab);
+# budget is the chart slide of the Budget completion sub-tab
+TABS = ("performance", "calls", "returns", "budget")
+TABLE_TABS = ("performance", "calls", "returns")
 DEFAULT_MODEL = "claude-opus-5-5"
 MEDIA_TYPES = {".png": "image/png", ".jpg": "image/jpeg", ".jpeg": "image/jpeg", ".webp": "image/webp", ".gif": "image/gif"}
 MAX_IMAGE_BYTES = 5 * 1024 * 1024
-INCOMING_RE = re.compile(r"^(performance|budget)-(\d{4})-(\d{2})\.(png|jpe?g|webp|gif)$", re.I)
+INCOMING_RE = re.compile(r"^(" + "|".join(TABS) + r")-(\d{4})-(\d{2})\.(png|jpe?g|webp|gif)$", re.I)
 # a request to file a month under another date: {"to": "YYYY-MM", "replace": false}
-MOVE_RE = re.compile(r"^(performance|budget)-(\d{4}-\d{2})\.move\.json$", re.I)
+MOVE_RE = re.compile(r"^(" + "|".join(TABS) + r")-(\d{4}-\d{2})\.move\.json$", re.I)
 
 
 class ExtractionError(Exception):
@@ -122,6 +125,9 @@ RAW_SCHEMAS: dict[str, dict[str, Any]] = {
     }),
 }
 
+RAW_SCHEMAS["calls"] = RAW_SCHEMAS["performance"]
+RAW_SCHEMAS["returns"] = RAW_SCHEMAS["performance"]
+
 PROMPTS: dict[str, str] = {
     "performance": """This image is a fund performance table from an internal investment report. Transcribe it exactly so it can be rebuilt as a real table. Accuracy matters more than anything else here: these are financial figures, so read every digit carefully and never estimate or fill in a value you cannot see.
 
@@ -145,6 +151,17 @@ Keep the original language of every label; do not translate.""",
 
 Keep the original language of every label and note; do not translate.""",
 }
+# the two other tables of the Fund performance sub-tab: same transcription rules, different subject
+_TABLE_RULES = PROMPTS["performance"].split("\n", 1)[1]
+PROMPTS["calls"] = ("This image is a table of each fund's capital calls and distributions for the year from an internal investment report "
+                    "(amounts called at the start of the year and now, distributions received, distribution yields and quarterly yields). "
+                    "Transcribe it exactly so it can be rebuilt as a real table. Accuracy matters more than anything else here: these are "
+                    "financial figures, so read every digit carefully and never estimate or fill in a value you cannot see. A figure printed in "
+                    "parentheses is negative: keep the parentheses.\n" + _TABLE_RULES)
+PROMPTS["returns"] = ("This image is a table of each fund's overall return since investment from an internal investment report (years invested, "
+                      "cost, NAV, NAV to cost, income and capital returned, value gain, IRR, DPI). Transcribe it exactly so it can be rebuilt as a "
+                      "real table. Accuracy matters more than anything else here: these are financial figures, so read every digit carefully and "
+                      "never estimate or fill in a value you cannot see. A figure printed in parentheses is negative: keep the parentheses.\n" + _TABLE_RULES)
 
 
 # ------------------------------------------------------------------ Claude call
@@ -451,6 +468,10 @@ def _column_style(label: str, group: str) -> str:
         return "irr"
     if "ltm" in low:
         return "heat"
+    if re.fullmatch(r"q[1-4]", low):
+        return "qyield"  # a quarter's distribution yield: a low one is flagged
+    if "call" in low and ("派息" in group or "distribution" in glow or "yield" in glow):
+        return "yield"  # the year's distribution yield on calls: a high one is highlighted
     return ""
 
 
@@ -509,6 +530,8 @@ def normalize_performance(raw: dict[str, Any]) -> dict[str, Any]:
 
 
 COLUMN_WARNING_PREFIX = "Column “"
+# columns whose total row is an average or a ratio, not a sum (years invested, NAV / cost, DPI)
+RATIO_COLUMN_RE = re.compile(r"年限|years|/|倍|\bdpi\b|ratio|multiple|moic|tvpi|average|平均", re.I)
 _COUNT_WORDS = {1: "one", 2: "two", 3: "three", 4: "four", 5: "five", 6: "six", 7: "seven", 8: "eight", 9: "nine", 10: "ten"}
 
 
@@ -549,12 +572,13 @@ def check_performance_totals(columns: list[dict[str, Any]], rows: list[dict[str,
     notes: list[str] = []
     totals = [r for r in rows if r.get("total")]
     body = [r for r in rows if not r.get("total")]
-    if len(totals) != 1 or not body:
+    if not totals or not body:
         return warnings, notes
+    # a second total row (for example "Excl. Progress" under "AWIS Total") is a subtotal: only the first is the sum of the rows
     pattern, hidden = hidden_budget_items()
     expected_gap = sum(amount for _, amount in hidden)
     for j, col in enumerate(columns):
-        if col.get("type") != "number":
+        if col.get("type") != "number" or RATIO_COLUMN_RE.search((col.get("label") or "") + " " + (col.get("group") or "")):
             continue
         printed = totals[0]["cells"][j]
         if printed is None:
@@ -583,7 +607,7 @@ def recheck(path: Path) -> dict[str, Any] | None:
     """Run the arithmetic checks again on a saved month (after config.json or the rules changed).
     Hand-written notes and the figures themselves are left as they are."""
     doc = json.loads(path.read_text(encoding="utf-8"))
-    if doc.get("tab") == "performance":
+    if doc.get("tab") in TABLE_TABS:
         column_warnings, auto_notes = check_performance_totals(doc.get("columns") or [], doc.get("rows") or [])
         doc["warnings"] = [w for w in (doc.get("warnings") or []) if not w.startswith(COLUMN_WARNING_PREFIX)] + column_warnings
         doc["auto_notes"] = auto_notes
@@ -697,7 +721,7 @@ def recheck_budget(doc: dict[str, Any]) -> None:
     doc["warnings"] = warnings
 
 
-NORMALIZERS = {"performance": normalize_performance, "budget": normalize_budget}
+NORMALIZERS = {"performance": normalize_performance, "calls": normalize_performance, "returns": normalize_performance, "budget": normalize_budget}
 
 
 # ------------------------------------------------------------------ storage
