@@ -21,34 +21,14 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:31:59+00:00",
   "stats": {
-    "blocks": 649,
-    "images": 14,
-    "tables": 4,
-    "chars": 23467,
+    "blocks": 384,
+    "images": 18,
+    "tables": 0,
+    "chars": 12730,
     "pages": 29
   },
   "exhibit_count": 18,
   "toc": [
-    {
-      "level": 1,
-      "text": "Pretium"
-    },
-    {
-      "level": 1,
-      "text": "Residential Real"
-    },
-    {
-      "level": 1,
-      "text": "Estate Fund IV, LP"
-    },
-    {
-      "level": 2,
-      "text": "Quarterly Fund Review & Outlook:"
-    },
-    {
-      "level": 2,
-      "text": "Second Quarter 2026 LPAC Meeting"
-    },
     {
       "level": 1,
       "text": "Agenda"
@@ -178,84 +158,8 @@
       "text": "The Legislation is Consistent with Pretium’s Existing Business"
     },
     {
-      "level": 2,
-      "text": "The 21st Century ROAD to Housing Act formalizes Pretium’s business practices, and grandfathers existing single-family rental portfolios"
-    },
-    {
       "level": 1,
       "text": "Research Publications Predict Increasingly Positive Outlook"
-    },
-    {
-      "level": 2,
-      "text": "Third"
-    },
-    {
-      "level": 2,
-      "text": "parties forecast accelerating rent growth and growing investor appetite for the sector"
-    },
-    {
-      "level": 2,
-      "text": "Goldman Sachs and John Burns See Macro Indicators Supporting SFR Rent Acceleration"
-    },
-    {
-      "level": 2,
-      "text": "Along with reducing supply pressure, Zillow’s ZORDI"
-    },
-    {
-      "level": 2,
-      "text": "index, which measures SFR demand engagement on"
-    },
-    {
-      "level": 2,
-      "text": "The lock"
-    },
-    {
-      "level": 2,
-      "text": "in effect has also helped keep new SFR"
-    },
-    {
-      "level": 2,
-      "text": "Zillow’s platform relative to available SFR listings, has"
-    },
-    {
-      "level": 2,
-      "text": "inventory low, supporting rent growth"
-    },
-    {
-      "level": 2,
-      "text": "inflected meaningfully in recent months… we believe"
-    },
-    {
-      "level": 2,
-      "text": "this could likely signal renewed momentum in SFR"
-    },
-    {
-      "level": 2,
-      "text": "market rent growth"
-    },
-    {
-      "level": 2,
-      "text": "Townsend Anticipates Scarcity Premium for Grandfathered SFR Portfolios"
-    },
-    {
-      "level": 2,
-      "text": "Existing, grandfathered portfolios of Scattered SFR"
-    },
-    {
-      "level": 2,
-      "text": "We anticipate these homes to be attractive to certain"
-    },
-    {
-      "level": 2,
-      "text": "will likely benefit from reduced new supply of rental"
-    },
-    {
-      "level": 2,
-      "text": "renters and to institutional capital, creating scarcity"
-    },
-    {
-      "level": 2,
-      "text": "homes that are located near employment centers"
     },
     {
       "level": 1,
@@ -268,6 +172,102 @@
     {
       "level": 1,
       "text": "02 Operating Performance & Value"
+    },
+    {
+      "level": 1,
+      "text": "-Enhancing Initiatives"
+    },
+    {
+      "level": 1,
+      "text": "03 Capital Markets Update"
+    },
+    {
+      "level": 1,
+      "text": "04 Valuation Update & Exit Strategy"
+    },
+    {
+      "level": 1,
+      "text": "05 Appendix"
+    },
+    {
+      "level": 1,
+      "text": "Fund Operating Performance"
+    },
+    {
+      "level": 1,
+      "text": "Fund Financial Performance – Twelve Months Ended"
+    },
+    {
+      "level": 1,
+      "text": "AI Initiatives and Implementation"
+    },
+    {
+      "level": 2,
+      "text": "Pretium’s large, proprietary residential data ecosystem serves as the foundation for AI"
+    },
+    {
+      "level": 2,
+      "text": "driven"
+    },
+    {
+      "level": 2,
+      "text": "operational efficiency and investment implementations"
+    },
+    {
+      "level": 1,
+      "text": "Data Tools and Implementation"
+    },
+    {
+      "level": 2,
+      "text": "AI Initiatives: Secured, Unified Backbone for Pretium Data"
+    },
+    {
+      "level": 1,
+      "text": "PRISM"
+    },
+    {
+      "level": 1,
+      "text": "Asset360"
+    },
+    {
+      "level": 1,
+      "text": "Palantir"
+    },
+    {
+      "level": 1,
+      "text": "EliseAI"
+    },
+    {
+      "level": 3,
+      "text": "Generating new investment insights through"
+    },
+    {
+      "level": 3,
+      "text": "connected data, research, and knowledge across"
+    },
+    {
+      "level": 3,
+      "text": "the residential ecosystem"
+    },
+    {
+      "level": 1,
+      "text": "Agenda"
+    },
+    {
+      "level": 1,
+      "text": "01 Key Takeaways & Legislative Update"
+    },
+    {
+      "level": 1,
+      "text": "02 Operating Performance & Value-Enhancing Initiatives"
+    },
+    {
+      "level": 1,
+      "text": "03 Capital Markets Update"
+    },
+    {
+      "level": 1,
+      "text": "04 Valuation Update & Exit Strategy"
     }
   ],
   "summary": "Statements throughout these materials, including these regarding the opportunity, Pretium’s advantages, and the market repres"

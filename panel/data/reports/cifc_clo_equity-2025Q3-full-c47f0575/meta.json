@@ -21,13 +21,13 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:12:31+00:00",
   "stats": {
-    "blocks": 76,
-    "images": 8,
+    "blocks": 65,
+    "images": 9,
     "tables": 0,
-    "chars": 15792,
+    "chars": 15651,
     "pages": 8
   },
-  "exhibit_count": 8,
+  "exhibit_count": 9,
   "toc": [
     {
       "level": 3,

@@ -21,13 +21,13 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:06:51+00:00",
   "stats": {
-    "blocks": 157,
-    "images": 4,
+    "blocks": 146,
+    "images": 5,
     "tables": 7,
-    "chars": 90715,
+    "chars": 90486,
     "pages": 24
   },
-  "exhibit_count": 11,
+  "exhibit_count": 12,
   "toc": [
     {
       "level": 3,
@@ -60,14 +60,6 @@
     {
       "level": 2,
       "text": "Outlook"
-    },
-    {
-      "level": 3,
-      "text": "Lower"
-    },
-    {
-      "level": 3,
-      "text": "Jan-23"
     },
     {
       "level": 2,

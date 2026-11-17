@@ -21,22 +21,14 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:32:09+00:00",
   "stats": {
-    "blocks": 78,
-    "images": 5,
-    "tables": 2,
-    "chars": 20353,
+    "blocks": 53,
+    "images": 3,
+    "tables": 0,
+    "chars": 19196,
     "pages": 8
   },
-  "exhibit_count": 7,
+  "exhibit_count": 3,
   "toc": [
-    {
-      "level": 1,
-      "text": "Ivy II 1Q26 LP Update"
-    },
-    {
-      "level": 1,
-      "text": "June 2026"
-    },
     {
       "level": 1,
       "text": "Summary"
@@ -99,51 +91,11 @@
     },
     {
       "level": 1,
-      "text": "As of March 31, 2026"
-    },
-    {
-      "level": 1,
-      "text": "income portfolio – constructed to cash-flow match expected liability outflows"
-    },
-    {
-      "level": 1,
-      "text": "Asset Portfolio"
-    },
-    {
-      "level": 2,
-      "text": "including long-duration infrastructure and structured alts, and rotating the portfolio to capture relative value opportunities"
-    },
-    {
-      "level": 2,
-      "text": "reserves"
-    },
-    {
-      "level": 1,
       "text": "Liability Portfolio Summary"
     },
     {
       "level": 1,
-      "text": "As of March 31, 2026"
-    },
-    {
-      "level": 1,
-      "text": "Ivy II has a seasoned mix of stable liabilities with a risk profile we believe is diversified across product type, distribution channel, cedant and vintage"
-    },
-    {
-      "level": 1,
       "text": "Distributions and Valuation"
-    },
-    {
-      "level": 1,
-      "text": "Ivy II’s performance can be evaluated through its distributions to investors and valuation"
-    },
-    {
-      "level": 2,
-      "text": "Qualifying Transactions"
-    },
-    {
-      "level": 2,
-      "text": "percentage of Ivy II’s called commitments (v. total committed capital)"
     },
     {
       "level": 1,
@@ -190,5 +142,5 @@
       "text": "Ivy II"
     }
   ],
-  "summary": "Global Atlantic is the marketing name for The Global Atlantic Financial Group LLC and its subsidiaries, including Forethought Life Insurance Company and Accordia Life and Annuity Company. Each subsidiary is responsible f"
+  "summary": "1. Inclusive of the $58mm net investor distribution that was recommended to and approved by each of the Ivy Re II Limited and Ivy UK Co-Invest Vehicle II Limited Board of Directors (together, the “Boards”) on April 23, 2"
 }

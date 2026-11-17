@@ -21,22 +21,14 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:07:05+00:00",
   "stats": {
-    "blocks": 89,
-    "images": 8,
-    "tables": 3,
-    "chars": 32344,
+    "blocks": 62,
+    "images": 6,
+    "tables": 0,
+    "chars": 27139,
     "pages": 13
   },
-  "exhibit_count": 11,
+  "exhibit_count": 6,
   "toc": [
-    {
-      "level": 1,
-      "text": "Bain Capital Griffin Aircraft Fund"
-    },
-    {
-      "level": 1,
-      "text": "Quarterly Investor Update"
-    },
     {
       "level": 2,
       "text": "DISCLAIMER"
@@ -59,43 +51,27 @@
     },
     {
       "level": 1,
-      "text": "Aircraft deliveries are recovering from pandemic-era lows, with"
+      "text": "Aircraft deliveries are recovering from pandemic-era lows, with narrowbodies driving long-term growth amid persistent supply constraints."
     },
     {
       "level": 1,
-      "text": "Passenger Aircraft Delivery Evolution and Forecast"
-    },
-    {
-      "level": 3,
-      "text": "# of Aircraft"
+      "text": "An elevated replacement cycle favors aircraft lessors, supporting long-term lease demand, asset utilization, and residual values."
     },
     {
       "level": 1,
-      "text": "An elevated replacement cycle favors aircraft lessors, supporting long-term"
+      "text": "Portfolio composition further diversified QoQ through the acquisition of 9x1 assets added in connection with our inaugural securitization."
     },
     {
       "level": 1,
-      "text": "Portfolio composition further diversified QoQ through the acquisition of 9x1"
+      "text": "Our existing portfolio is comprised of 15x aircraft1 and 5x engines3, built across three high-impact transactions."
     },
     {
       "level": 1,
-      "text": "Portfolio Scorecard"
-    },
-    {
-      "level": 1,
-      "text": "Our existing portfolio is comprised of 15x aircraft1 and 5x engines3, built"
-    },
-    {
-      "level": 1,
-      "text": "Our existing portfolio is comprised of 15x aircraft1 and 5x engines2, built"
+      "text": "Our existing portfolio is comprised of 15x aircraft1 and 5x engines2, built across three high-impact transactions."
     },
     {
       "level": 1,
       "text": "Q4 2025 Fund Performance Summary"
-    },
-    {
-      "level": 1,
-      "text": "Performance Summary"
     },
     {
       "level": 2,

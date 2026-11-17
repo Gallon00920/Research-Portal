@@ -21,26 +21,14 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:12:59+00:00",
   "stats": {
-    "blocks": 76,
-    "images": 5,
-    "tables": 2,
-    "chars": 18502,
+    "blocks": 47,
+    "images": 6,
+    "tables": 0,
+    "chars": 14012,
     "pages": 12
   },
-  "exhibit_count": 7,
+  "exhibit_count": 6,
   "toc": [
-    {
-      "level": 1,
-      "text": "Guggenheim Investments"
-    },
-    {
-      "level": 1,
-      "text": "Guggenheim Private Debt Fund IV"
-    },
-    {
-      "level": 1,
-      "text": "Q1 2026 Update"
-    },
     {
       "level": 1,
       "text": "Commentary & Market Overview"
@@ -74,52 +62,20 @@
       "text": "Guggenheim Private Debt Fund IV"
     },
     {
-      "level": 2,
-      "text": "Aggregate Private Debt Characteristics1 (as of 3.31.2026)"
-    },
-    {
-      "level": 3,
-      "text": "PDF IV Account Overview"
-    },
-    {
-      "level": 3,
-      "text": "GICS Sub-Industry (as % of Par)"
-    },
-    {
-      "level": 3,
-      "text": "Sponsor vs. Non Sponsor (as % of NAV)"
-    },
-    {
       "level": 1,
       "text": "1Q26 Closed Transactions Case Studies"
-    },
-    {
-      "level": 3,
-      "text": "Sponsored"
     },
     {
       "level": 1,
       "text": "Manufacturer of Absorbent Pulp - Global Cellulose Fibers"
     },
     {
-      "level": 3,
-      "text": "Sponsored"
-    },
-    {
       "level": 1,
       "text": "Online Classifieds Company - Adevinta Spain"
     },
     {
-      "level": 3,
-      "text": "Sponsored"
-    },
-    {
       "level": 1,
       "text": "Above Grade Precast Concrete Provider – Wells Concrete"
-    },
-    {
-      "level": 2,
-      "text": "Provider of above grade precast concrete products to the nonresidential market, across both architectural and"
     },
     {
       "level": 1,
@@ -134,5 +90,5 @@
       "text": "Disclosures and Legal Notice"
     }
   ],
-  "summary": "Strictly Private and Confidential. For discussion purposes only. Guggenheim expressly prohibits redistribution of this document and any information contained herein without prior written consent. For Institutional Invest"
+  "summary": "1. Stanger Report, Defining the non-traded BDC Landscape, 2. S&P Global Data, 3. Bloomberg Data and BDC Public Filings, as of 3/31/2026"
 }

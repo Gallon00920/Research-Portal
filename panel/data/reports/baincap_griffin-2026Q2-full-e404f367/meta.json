@@ -21,22 +21,14 @@
   "source_ext": ".pdf",
   "uploaded_at": "2026-11-13T07:07:25+00:00",
   "stats": {
-    "blocks": 106,
-    "images": 7,
-    "tables": 5,
-    "chars": 40854,
+    "blocks": 65,
+    "images": 8,
+    "tables": 0,
+    "chars": 32171,
     "pages": 14
   },
-  "exhibit_count": 12,
+  "exhibit_count": 8,
   "toc": [
-    {
-      "level": 1,
-      "text": "Bain Capital Griffin Aircraft Fund"
-    },
-    {
-      "level": 1,
-      "text": "Quarterly Investor Update"
-    },
     {
       "level": 2,
       "text": "DISCLAIMER"
@@ -59,63 +51,35 @@
     },
     {
       "level": 1,
-      "text": "Airline profitability has compressed sharply following the ME conflict and associated fuel"
+      "text": "Airline profitability has compressed sharply following the ME conflict and associated fuel price shock; we believe lessors remain structurally insulated from this margin pressure."
     },
     {
       "level": 1,
-      "text": "Airline Net Profit & Load Factors 2023A – 2026F1,2"
+      "text": "The Middle East conflict remains a regional disruption, not a systemic one; global demand excluding the region continued to grow in May."
     },
     {
       "level": 1,
-      "text": "The Middle East conflict remains a regional disruption, not a systemic one; global demand"
+      "text": "We believe the Aircraft Fund is tracking well. We have progressed deploying capital (~$1.1Bn delivered/committed assets today), and monetizing assets where returns are accretive."
     },
     {
       "level": 1,
-      "text": "May 2026 Passenger Demand by Region, YoY Change in RPKs1"
+      "text": "We have sourced our portfolio across five high-impact transactions to date; pro forma for monetizations executed and in progress, the Fund holds 29x aircraft and 5x engines.1,2"
     },
     {
       "level": 1,
-      "text": "We believe the Aircraft Fund is tracking well. We have progressed deploying capital (~$1.1Bn"
+      "text": "We have sourced our portfolio across five high-impact transactions to date; pro forma for monetizations executed and in progress, the Fund holds 29x aircraft and 5x engines.1,2"
     },
     {
       "level": 1,
-      "text": "Portfolio Composition – Aircraft Fund Total"
+      "text": "We have sourced our portfolio across five high-impact transactions to date; pro forma for monetizations executed and in progress, the Fund holds 29x aircraft and 5x engines.1,2"
     },
     {
       "level": 1,
-      "text": "Portfolio Scorecard"
+      "text": "We have sourced our portfolio across five high-impact transactions to date; pro forma for monetizations executed and in progress, the Fund holds 29x aircraft and 5x engines.1,2"
     },
     {
       "level": 1,
       "text": "Q2 2026 Fund Performance Summary"
-    },
-    {
-      "level": 3,
-      "text": "Capital Summary"
-    },
-    {
-      "level": 3,
-      "text": "Value"
-    },
-    {
-      "level": 3,
-      "text": "Commitment"
-    },
-    {
-      "level": 3,
-      "text": "ITD Contributions"
-    },
-    {
-      "level": 3,
-      "text": "ITD Distributions4"
-    },
-    {
-      "level": 3,
-      "text": "NAV"
-    },
-    {
-      "level": 3,
-      "text": "ITD Proceeds Realized"
     },
     {
       "level": 2,

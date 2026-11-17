@@ -61,8 +61,13 @@ GLYPHS = {"": "•", "": "•", "": "•", "": "✓", "": "✗", 
 
 # a value label of a chart: 149, $149, 12.5%, (3.2), 2.1x, -39
 VALUE_RE = re.compile(r"^[-+−(]?[$€£¥]?\d[\d,.]*%?[)xX]?$")
+# a figure as a panel states it: an amount, a percentage, a multiple, a decimal or a thousands number
+# (a footnote marker such as "(22)" or a year is not one)
+PANEL_VALUE_RE = re.compile(r"^[-+−(]?[$€£¥]\s?\d|^[-+−(]?\d[\d,.]*\s?(%|x|bn|mm|bps|m|k|b)\)?$|^\(?[-+−]?\d{1,3}(,\d{3})+\)?$|^\(?[-+−]?\d+\.\d+\)?$", re.I)
 # a figure on a slide: an amount, a percentage, a multiple, a date
 SLIDE_NUM_RE = re.compile(r"^\(?[-–−]?[$€£¥]?\d[\d,]*(\.\d+)?%?(bn|mm|m|k|x)?\)?$|^\d{1,2}/\d{1,2}/\d{2,4}$", re.I)
+# a line led by a figure with its unit ("$115.1B Direct Lending", "~90 deals", "860+ sponsors", "40%+")
+FIG_LEAD_RE = re.compile(r"^[~≈]?[$€£¥]\d|^[~≈]?\d[\d,.]*\s*(%|x|bps|bn|mm|m|k|b|\+)(?=[\s+]|$)|^\d{1,3}(,\d{3})+(?=\s|$)", re.I)
 
 
 def _clean(text: str) -> str:
@@ -514,6 +519,13 @@ class PdfParser:
                 continue  # text drawn as bitmaps, or a bitmap behind a paragraph: the text fills it, a chart's labels are sparse
             self._add_image(page, rect, items, covered)
 
+        # boxed layouts that are not prose (tiles of key figures, labelled boxes, diagrams of
+        # shapes with short labels) are kept as pictures: read as text they come out as fragments
+        if not cover:
+            for rect in self._panel_regions(page, lines, covered, repeated, body_size):
+                if not any(_overlap(rect, c) > 0.6 for c in covered):
+                    self._add_image(page, rect, items, covered)
+
         # text, line by line
         underlines = self._underlines(page, self._drawings)
         for blk in self._text_blocks(lines, covered, repeated, body_size, underlines, page):
@@ -526,6 +538,67 @@ class PdfParser:
                 continue
             self.blocks.append(blk)
 
+    # ------------------------------------------------------------------ boxed panels
+    def _panel_regions(self, page, lines, covered, repeated, body_size: float) -> list[Any]:
+        """The page's boxed panels: filled boxes whose text is short labels and figures rather
+        than sentences (a strip of key-figure tiles, a sidebar of metrics, a diagram), grouped
+        when they sit together. A table's bands, a decorative side band, a call-out of sentences
+        and a lone label chip are not panels."""
+        w, h = page.rect.width, page.rect.height
+        page_area = w * h
+        boxes: list[tuple[Any, int]] = []
+        for r, _col in _fill_rects(self._drawings):
+            area = r.width * r.height
+            if r.width < 40 or r.height < 2.2 * body_size or area < 0.003 * page_area or area > 0.6 * page_area:
+                continue
+            if r.width > 0.6 * w and r.height < 3.5 * body_size:
+                continue  # a title or header band of a table
+            if r.height >= 0.9 * h and r.width < 0.35 * w:
+                continue  # a decorative side band
+            if any(_overlap(r, c) > 0.5 for c in covered):
+                continue
+            inside = [ln for ln in lines if _overlap(ln["rect"], r) > 0.8 and not self._skip_line(ln, repeated)]
+            if not inside:
+                continue
+            short = sum(1 for ln in inside if len(ln["text"].split()) <= 5 or VALUE_RE.match(ln["text"].strip()))
+            if short < 0.8 * len(inside):
+                continue  # a call-out of sentences stays text
+            boxes.append((r, len(inside)))
+        if not boxes:
+            return []
+        # tiles in a strip or a grid belong together: boxes within 24pt of each other are one panel
+        groups: list[list[tuple[Any, int]]] = []
+        for r, n in boxes:
+            near = [g for g in groups if any(a.x0 - 24 <= r.x1 and r.x0 - 24 <= a.x1 and a.y0 - 24 <= r.y1 and r.y0 - 24 <= a.y1 for a, _ in g)]
+            if not near:
+                groups.append([(r, n)])
+                continue
+            near[0].append((r, n))
+            for g in near[1:]:
+                near[0].extend(g)
+                g.clear()
+        out = []
+        kept = [ln for ln in lines if not self._skip_line(ln, repeated)]
+        for g in groups:
+            if not g or (len(g) < 2 and g[0][1] < 2):
+                continue  # one box with one label: a chip or a heading band, not a panel
+            box = fitz.Rect(min(r.x0 for r, _ in g), min(r.y0 for r, _ in g), max(r.x1 for r, _ in g), max(r.y1 for r, _ in g))
+            inside = sum(n for _, n in g)
+            # label boxes beside rows of text (a column of section labels next to bullets) belong
+            # to that text, not to a panel: the text beside the boxes outweighs the text in them
+            beside = [ln for ln in kept if box.y0 <= (ln["rect"].y0 + ln["rect"].y1) / 2 <= box.y1
+                      and (ln["rect"].x0 >= box.x1 - 2 or ln["rect"].x1 <= box.x0 + 2)]
+            if len(beside) >= inside:
+                continue
+            # a panel holds figures: a tile or a sidebar states numbers. Boxes of words only (a
+            # shaded cell with a name in it, a column of labels, a diagram of named shapes) are not
+            # pictured, so a dense filing never loses a cell to a crop
+            with_value = sum(1 for r, _ in g if any(PANEL_VALUE_RE.match(ln["text"].strip()) for ln in kept if _overlap(ln["rect"], r) > 0.8))
+            if with_value < 1 or (len(g) < 2 and not any(n >= 2 for _, n in g)):
+                continue
+            out.append(fitz.Rect(box.x0 - 3, box.y0 - 3, box.x1 + 3, box.y1 + 3) & page.rect)
+        return self._join_regions(out, lines)
+
     # ------------------------------------------------------------------ slide decks
     # A deck is kept as slides: the slide's title becomes a heading, and a slide that carries
     # tables, charts or tiles of figures is kept as one picture of its body (everything between
@@ -534,13 +607,13 @@ class PdfParser:
     # document's title only.
     def _parse_slide(self, page, pno: int, lines, body_size: float, repeated: set[str]):
         w, h = page.rect.width, page.rect.height
-        if pno == 0 and len(page.get_text("text")) < 400:
-            return
+        kept = [ln for ln in lines if not self._skip_line(ln, repeated)]
+        if pno == 0 and (len(page.get_text("text")) < 400 or len(kept) <= 12):
+            return  # the cover: a title, a date, a disclaimer line
         try:
             self._drawings = page.get_drawings()
         except Exception:
             self._drawings = []
-        kept = [ln for ln in lines if not self._skip_line(ln, repeated)]
         # the title: the largest text in the top part of the slide (one or two lines of it)
         top = [ln for ln in kept if ln["rect"].y1 <= 0.24 * h]
         title, title_bottom = "", 0.0
@@ -554,15 +627,28 @@ class PdfParser:
         footer_top = min((ln["rect"].y0 for ln in footer), default=h)
         # a slide of figures: filled shapes below the title (table bands, bars, tiles), a share of
         # numeric words, or a pasted picture that is not the deck's logo
-        fills = [d for d in self._drawings if d.get("fill") and d["rect"].width > 3 and d["rect"].height > 3 and d["rect"].y0 >= title_bottom]
+        # filled shapes of some size (a table band, a bar, a tile); the pieces of a logo are not counted
+        fills = [d for d in self._drawings if d.get("fill") and d["rect"].width > 3 and d["rect"].height > 3 and d["rect"].y0 >= title_bottom
+                 and d["rect"].width * d["rect"].height >= 0.0015 * w * h]
         words = [t[4].strip(",;:") for t in page.get_text("words") if t[1] >= title_bottom and t[3] <= footer_top]
         numeric = sum(1 for t in words if SLIDE_NUM_RE.match(t)) / len(words) if words else 0.0
+        # a pasted picture of some size (a chart saved as a bitmap); words drawn as bitmaps are small
         pictures = [i for i in self._image_infos[pno] if self._image_key(fitz.Rect(i["bbox"])) not in self._repeated_images
-                    and fitz.Rect(i["bbox"]).width * fitz.Rect(i["bbox"]).height > 0.02 * w * h]
+                    and fitz.Rect(i["bbox"]).width * fitz.Rect(i["bbox"]).height > 0.05 * w * h and min(fitz.Rect(i["bbox"]).width, fitz.Rect(i["bbox"]).height) >= 60]
         # a chart with few bars has few fills: its text is all short labels (a slide of prose is not)
         kept_body = [ln for ln in kept if ln["rect"].y0 >= title_bottom - 1 and ln["rect"].y0 < footer_top]
         short = sum(1 for ln in kept_body if len(ln["text"].split()) <= 4) / len(kept_body) if kept_body else 0.0
-        graphic = len(fills) >= 6 or numeric >= 0.25 or bool(pictures) or (len(fills) >= 3 and short >= 0.85)
+        # columns of figures with their captions ("$115.1B Direct Lending") are a layout, not prose
+        figure_lines = sum(1 for ln in kept_body if FIG_LEAD_RE.match(ln["text"].strip()) and len(ln["text"].split()) <= 6)
+        # a layout in lanes: lines starting in three or more columns spread across the slide (tiles with
+        # captions, labelled rows with side notes); prose and its indented bullets start in one or two
+        lanes: dict[int, int] = {}
+        for ln in kept_body:
+            lanes[round(ln["rect"].x0 / 20)] = lanes.get(round(ln["rect"].x0 / 20), 0) + 1
+        cols = sorted(k for k, n in lanes.items() if n >= 3)
+        # a layout has a few columns; text drawn word by word (bitmap fonts) starts everywhere
+        laned = 3 <= len(cols) <= 6 and (cols[-1] - cols[0]) * 20 >= 0.4 * w
+        graphic = len(fills) >= 6 or numeric >= 0.25 or bool(pictures) or (len(fills) >= 3 and short >= 0.85) or figure_lines >= 5 or laned
         if not graphic:
             self._parse_page(page, lines, body_size, repeated)
             return
