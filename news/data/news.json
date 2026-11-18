@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-18T17:00:40.253232+00:00",
+  "updatedAt": "2026-11-18T23:49:22.708383+00:00",
   "scope": {
     "regions": [
       "US",
@@ -223934,6 +223934,99 @@
               "finalScore": 8.11,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-455662ef1bbf",
+            "title": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+            "titleZh": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+            "summary": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfT3RNMUtiQXFvdVpLMVRiWnFQclU0c0hQSmVtd2ViU2dNTFpUelhwQ01oRnpnNVMtRWw1aWdKOEFnQy1jejlMajd3WDE5OFJr?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-17",
+            "lede": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+            "articleExcerpt": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK. TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+            "contentFingerprint": "e7fc0c670e71f782",
+            "region": "Europe",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 44,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.44,
+              "finalScore": 17.44,
+              "semanticEnabled": true
+            }
           }
         ],
         "Golub": [
@@ -225052,6 +225145,103 @@
         ],
         "CVC": [
           {
+            "id": "2026-11-17-8fd8c42d68ee",
+            "title": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
+            "titleZh": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
+            "summary": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQX3RLSVpTdFFXOXd4ZjRSc2JwTFBEeXhzY05XeTVsTEVZSmRxQjRpalNaSTRGV2J1bGpUSmxjVnRJSnFncVFjQ2VvYm0xZC1TaHlpaHJUWTNia2FBNlZHMkNLUE91MFdfbTdZOVNjbWZpWmJ2X3JuOC1RZnpteGZEQnFoc1VsaHNSV25uYkZfZktTN25ZMndmNk9fWXNHWmdyS0UtcUFKUEtHQjFNalY4RmZHaTBQR1lGeW1yWFNYd0hIb3prOVRyN0s3b0RJWjVDVjc2bU9xMjk?oc=5",
+            "source": "PEI Private Equity",
+            "publishedAt": "2026-11-17",
+            "lede": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
+            "articleExcerpt": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity. Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
+            "contentFingerprint": "f84b84643fb8ce6b",
+            "region": "Global",
+            "gps": [
+              "Blackstone",
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone",
+                "CVC"
+              ],
+              "titleGps": [
+                "Blackstone",
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone",
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "PEI Private Equity"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.2
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-18T16:51:16.034080+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 5.03,
+              "finalScore": 12.030000000000001,
+              "semanticEnabled": true
+            }
+          },
+          {
             "id": "2026-11-17-ce91e88a49be",
             "title": "Canada pension funds buy into €820M Cary Group as CVC exits - Dealroom",
             "titleZh": "Canada pension funds buy into €820M Cary Group as CVC exits - Dealroom",
@@ -225879,103 +226069,6 @@
               "keywordScore": 3,
               "semanticScore": 5.28,
               "finalScore": 8.280000000000001,
-              "semanticEnabled": true
-            }
-          },
-          {
-            "id": "2026-11-17-8fd8c42d68ee",
-            "title": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
-            "titleZh": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
-            "summary": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
-            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
-            "summaryZhLanguage": "",
-            "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQX3RLSVpTdFFXOXd4ZjRSc2JwTFBEeXhzY05XeTVsTEVZSmRxQjRpalNaSTRGV2J1bGpUSmxjVnRJSnFncVFjQ2VvYm0xZC1TaHlpaHJUWTNia2FBNlZHMkNLUE91MFdfbTdZOVNjbWZpWmJ2X3JuOC1RZnpteGZEQnFoc1VsaHNSV25uYkZfZktTN25ZMndmNk9fWXNHWmdyS0UtcUFKUEtHQjFNalY4RmZHaTBQR1lGeW1yWFNYd0hIb3prOVRyN0s3b0RJWjVDVjc2bU9xMjk?oc=5",
-            "source": "PEI Private Equity",
-            "publishedAt": "2026-11-17",
-            "lede": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
-            "articleExcerpt": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity. Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
-            "contentFingerprint": "f84b84643fb8ce6b",
-            "region": "Global",
-            "gps": [
-              "Blackstone",
-              "CVC"
-            ],
-            "strategies": [],
-            "sectors": [],
-            "events": [
-              "financing"
-            ],
-            "curation": "rss_filter",
-            "excludedByClassifier": false,
-            "classificationBreakdown": {
-              "keywordGps": [
-                "Blackstone",
-                "CVC"
-              ],
-              "titleGps": [
-                "Blackstone",
-                "CVC"
-              ],
-              "llmGps": [],
-              "keywordStrategies": [],
-              "titleStrategies": [],
-              "llmStrategies": [],
-              "llmEvents": [],
-              "llmImportance": null,
-              "llmExclude": false,
-              "llmReason": "",
-              "llmReasonZh": ""
-            },
-            "rating": {
-              "parts": {
-                "institution": {
-                  "value": 1.0,
-                  "code": "title_names_gp",
-                  "gps": [
-                    "Blackstone",
-                    "CVC"
-                  ]
-                },
-                "strategy": {
-                  "value": 0.21,
-                  "code": "no_strategy",
-                  "tagValue": 0.0,
-                  "strategies": [],
-                  "semanticValue": 0.42
-                },
-                "event": {
-                  "value": 0.95,
-                  "code": "major_signal",
-                  "ruleValue": 0.95,
-                  "events": [
-                    "financing"
-                  ]
-                },
-                "source": {
-                  "value": 0.35,
-                  "code": "tier_other",
-                  "source": "PEI Private Equity"
-                },
-                "freshness": {
-                  "value": 0.8,
-                  "code": "within_7d",
-                  "days": 1.2
-                }
-              },
-              "weights": {
-                "institution": 18,
-                "strategy": 12,
-                "event": 30,
-                "source": 25,
-                "freshness": 15
-              },
-              "score": 70,
-              "retrievedAt": "2026-11-18T16:51:16.034080+00:00"
-            },
-            "scoreBreakdown": {
-              "keywordScore": 7,
-              "semanticScore": 5.03,
-              "finalScore": 12.030000000000001,
               "semanticEnabled": true
             }
           }
@@ -227379,6 +227472,103 @@
           }
         },
         {
+          "id": "2026-11-17-8fd8c42d68ee",
+          "title": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
+          "titleZh": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
+          "summary": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQX3RLSVpTdFFXOXd4ZjRSc2JwTFBEeXhzY05XeTVsTEVZSmRxQjRpalNaSTRGV2J1bGpUSmxjVnRJSnFncVFjQ2VvYm0xZC1TaHlpaHJUWTNia2FBNlZHMkNLUE91MFdfbTdZOVNjbWZpWmJ2X3JuOC1RZnpteGZEQnFoc1VsaHNSV25uYkZfZktTN25ZMndmNk9fWXNHWmdyS0UtcUFKUEtHQjFNalY4RmZHaTBQR1lGeW1yWFNYd0hIb3prOVRyN0s3b0RJWjVDVjc2bU9xMjk?oc=5",
+          "source": "PEI Private Equity",
+          "publishedAt": "2026-11-17",
+          "lede": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
+          "articleExcerpt": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity. Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
+          "contentFingerprint": "f84b84643fb8ce6b",
+          "region": "Global",
+          "gps": [
+            "Blackstone",
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone",
+              "CVC"
+            ],
+            "titleGps": [
+              "Blackstone",
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone",
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "PEI Private Equity"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.2
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-18T16:51:16.034080+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 7,
+            "semanticScore": 5.03,
+            "finalScore": 12.030000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-17-8cc6ceb2d0a2",
           "title": "Apollo Global Management CEO discusses AI financing risks, private credit on CNBC - Traders Union",
           "titleZh": "Apollo Global Management CEO discusses AI financing risks, private credit on CNBC - Traders Union",
@@ -228064,6 +228254,99 @@
             "keywordScore": 3,
             "semanticScore": 5.11,
             "finalScore": 8.11,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-455662ef1bbf",
+          "title": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+          "titleZh": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+          "summary": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfT3RNMUtiQXFvdVpLMVRiWnFQclU0c0hQSmVtd2ViU2dNTFpUelhwQ01oRnpnNVMtRWw1aWdKOEFnQy1jejlMajd3WDE5OFJr?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-17",
+          "lede": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+          "articleExcerpt": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK. TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+          "contentFingerprint": "e7fc0c670e71f782",
+          "region": "Europe",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 44,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.44,
+            "finalScore": 17.44,
             "semanticEnabled": true
           }
         },
@@ -230009,103 +230292,6 @@
             "finalScore": 8.280000000000001,
             "semanticEnabled": true
           }
-        },
-        {
-          "id": "2026-11-17-8fd8c42d68ee",
-          "title": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
-          "titleZh": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity",
-          "summary": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
-          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
-          "summaryZhLanguage": "",
-          "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxQX3RLSVpTdFFXOXd4ZjRSc2JwTFBEeXhzY05XeTVsTEVZSmRxQjRpalNaSTRGV2J1bGpUSmxjVnRJSnFncVFjQ2VvYm0xZC1TaHlpaHJUWTNia2FBNlZHMkNLUE91MFdfbTdZOVNjbWZpWmJ2X3JuOC1RZnpteGZEQnFoc1VsaHNSV25uYkZfZktTN25ZMndmNk9fWXNHWmdyS0UtcUFKUEtHQjFNalY4RmZHaTBQR1lGeW1yWFNYd0hIb3prOVRyN0s3b0RJWjVDVjc2bU9xMjk?oc=5",
-          "source": "PEI Private Equity",
-          "publishedAt": "2026-11-17",
-          "lede": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
-          "articleExcerpt": "Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC - PEI Private Equity. Ultimate deadlines loom over dealmaking processes, says CSC; Blackstone to acquire Skroutz from CVC PEI Private Equity",
-          "contentFingerprint": "f84b84643fb8ce6b",
-          "region": "Global",
-          "gps": [
-            "Blackstone",
-            "CVC"
-          ],
-          "strategies": [],
-          "sectors": [],
-          "events": [
-            "financing"
-          ],
-          "curation": "rss_filter",
-          "excludedByClassifier": false,
-          "classificationBreakdown": {
-            "keywordGps": [
-              "Blackstone",
-              "CVC"
-            ],
-            "titleGps": [
-              "Blackstone",
-              "CVC"
-            ],
-            "llmGps": [],
-            "keywordStrategies": [],
-            "titleStrategies": [],
-            "llmStrategies": [],
-            "llmEvents": [],
-            "llmImportance": null,
-            "llmExclude": false,
-            "llmReason": "",
-            "llmReasonZh": ""
-          },
-          "rating": {
-            "parts": {
-              "institution": {
-                "value": 1.0,
-                "code": "title_names_gp",
-                "gps": [
-                  "Blackstone",
-                  "CVC"
-                ]
-              },
-              "strategy": {
-                "value": 0.21,
-                "code": "no_strategy",
-                "tagValue": 0.0,
-                "strategies": [],
-                "semanticValue": 0.42
-              },
-              "event": {
-                "value": 0.95,
-                "code": "major_signal",
-                "ruleValue": 0.95,
-                "events": [
-                  "financing"
-                ]
-              },
-              "source": {
-                "value": 0.35,
-                "code": "tier_other",
-                "source": "PEI Private Equity"
-              },
-              "freshness": {
-                "value": 0.8,
-                "code": "within_7d",
-                "days": 1.2
-              }
-            },
-            "weights": {
-              "institution": 18,
-              "strategy": 12,
-              "event": 30,
-              "source": 25,
-              "freshness": 15
-            },
-            "score": 70,
-            "retrievedAt": "2026-11-18T16:51:16.034080+00:00"
-          },
-          "scoreBreakdown": {
-            "keywordScore": 7,
-            "semanticScore": 5.03,
-            "finalScore": 12.030000000000001,
-            "semanticEnabled": true
-          }
         }
       ]
     },
@@ -230398,6 +230584,99 @@
               "finalScore": 13.190000000000001,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-1ce4b9c5afc1",
+            "title": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) - Seeking Alpha",
+            "titleZh": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) - Seeking Alpha",
+            "summary": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) Seeking Alpha",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZW85UlFwcTBud0RVdWdjdkl4dUF4a1V0Ulphek5PN3NWc3BpSzV3Rmd5a1BQYmZ2QVUwVFUyU284TTE3cVJ1ZXVkSnF2UkZ5Q21zTC03NFJENUlmOVZTSm9qcnMxRTlWWkdxdjBqRW1OVzFqTzNPTTdPZndVcU5RQ3ZocEszc2c4OXBETmtxV2RFV0lR?oc=5",
+            "source": "Seeking Alpha",
+            "publishedAt": "2026-11-18",
+            "lede": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) Seeking Alpha",
+            "articleExcerpt": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) - Seeking Alpha. KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) Seeking Alpha",
+            "contentFingerprint": "74a069bd6a164a5b",
+            "region": "US",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Seeking Alpha"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 5.29,
+              "finalScore": 18.29,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -230680,6 +230959,99 @@
               "finalScore": 17.12,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-745b146d66c8",
+            "title": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion - TradingView",
+            "titleZh": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion - TradingView",
+            "summary": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQWmRWdFNOeXRHVFE0REE5c0tGMUNWUlBucHgzY0RoVmdPNkpvcHliRU15Qm9hNG5Gdk5HR2xUMFoxblVHZ0F1T2c5Z3hBUVV2SVdBZUtnbC00bi1oUW10SVRpdllzOUNLX25oX2hvTHFIcjhZdkl2OEVadm4zOUNvcHdudVpHSllPS1hWeXBzOC14TkhidmlYWXRiQ3RVWUxCczJjc0ZyYnUwS3hsdEJWbkJrYlFNaU9RckpLMFA1NldzcW9wQ01OWEI4em1JMTBUZk5EU0szSGNBdGdoS011STQ2U09TNjVwR01aYlJvWTlxXzFr?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-18",
+            "lede": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion TradingView",
+            "articleExcerpt": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion - TradingView. Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion TradingView",
+            "contentFingerprint": "eaa7fd11d276a9c8",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.02,
+              "finalScore": 17.02,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -230776,9 +231148,305 @@
               "finalScore": 16.259999999999998,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-bebdfb3ff53a",
+            "title": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion - MLQ.ai",
+            "titleZh": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion - MLQ.ai",
+            "summary": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion MLQ.ai",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQXhvM0o4LVZienhnTS0wZkg0R0M5bjhtYjRxZTVZbC16ZlZ6QmNURE12dkFTdUJaaHpvUzdHR2VlYXdsWi1VdmJPTHhMNzRGVXAyUHQ0d3lfbEt0cG9ocEFHTzRtZGJlYXlUNWk5SXY0Y2RRSGJsQzFKb0NaeUd1dzJoQ2hmaE5EbkRkTXV6aTU5RHJoZGxoRV9ucVpuQzlfUDRETkJtRERUcHdyM2ZjcElBLXExV2pDUF9tVGJwWk1kMmlzRVdDUg?oc=5",
+            "source": "MLQ.ai",
+            "publishedAt": "2026-11-18",
+            "lede": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion MLQ.ai",
+            "articleExcerpt": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion - MLQ.ai. Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion MLQ.ai",
+            "contentFingerprint": "051c24f568918416",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.71,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "MLQ.ai"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 79,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 5.05,
+              "finalScore": 11.05,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-1b9fdb097fdd",
+            "title": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS - TradingView",
+            "titleZh": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS - TradingView",
+            "summary": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95d2tUTnJHMVZVQXVNNW9wZl9MM3JGYi1HcmpLbmE1QWJqbVBfQUdrenNFdjBHa0Y3RUpfZkxpVFZLb25LQ21hMkJQMGhIZUpoRk1TdmRaU3RMSU5EN2ktMkc0V2VnUE1VXzlEMTV3?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-18",
+            "lede": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS TradingView",
+            "articleExcerpt": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS - TradingView. Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS TradingView",
+            "contentFingerprint": "ef7d577604ef399f",
+            "region": "US",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 5.7,
+              "finalScore": 10.7,
+              "semanticEnabled": true
+            }
           }
         ],
-        "Blackstone": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-18-7464068e767c",
+            "title": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance",
+            "titleZh": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance",
+            "summary": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone BigGo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5KUTlWTGJwZVVFZFQ3TUxnMlRVaFhob2QwcXJ6U1BpcFJoT1pGM2w0R3h6aUQ1ZTJLUjFGMlkyOVB5ZjlyNmhyU0lPcmVaaVNFdzZtcEZrdDVZcXZ2REdBdmFuQUtBT084X3J3bXM1WlBKZGFZS1E?oc=5",
+            "source": "BigGo Finance",
+            "publishedAt": "2026-11-18",
+            "lede": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone BigGo Finance",
+            "articleExcerpt": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance. Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone BigGo Finance",
+            "contentFingerprint": "198d73fb002ab988",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "BigGo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 71,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.18,
+              "finalScore": 19.18,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Apollo": [
           {
             "id": "2026-11-18-4d1d4a731095",
@@ -230979,8 +231647,198 @@
             }
           }
         ],
-        "Golub": [],
-        "CVC": [],
+        "Golub": [
+          {
+            "id": "2026-11-18-0c9491ea1371",
+            "title": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su - GuruFocus",
+            "titleZh": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su - GuruFocus",
+            "summary": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su GuruFocus",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSlJmaEhEb292cEpReUM3d3lRUEw3eTg2dUQybUhfaGRwQW9yMnZFc2JVclZZWmVqc3A0bC1ZOExUcGVwVmJOQ2NvejZoLV9Ld2lJQVU4M0tyUTkzNTFYcjE5am12VzBEUWF4QmpZLUExanppUGJRTFQwcVEwanBiUWlRY0l5c0lSN0ZPYVFYek1WYV9tOWFMOWEwSXBNS0xWTUNvVTYzT3Eyem4ySkk0N2xQN09yUFNPTGgwTl8wZw?oc=5",
+            "source": "GuruFocus",
+            "publishedAt": "2026-11-18",
+            "lede": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su GuruFocus",
+            "articleExcerpt": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su - GuruFocus. Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su GuruFocus",
+            "contentFingerprint": "b1cff4c74866c9b3",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.78,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.56
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "GuruFocus"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.69,
+              "finalScore": 20.69,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "CVC": [
+          {
+            "id": "2026-11-18-d93b9f64335d",
+            "title": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
+            "titleZh": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
+            "summary": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed Halton Hills News",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWGl5U1pLSFpScXhxSkFnbTUtYW5BZEVrZ0JXN2U4TFdQN1R4NWJCTTNrT0JzdEl4ZEhMRkp1eDd3WFVUSVE3RWRYMU5EdjVBbFZSU1VGRThoMGxDN3pvcHB3TnhVV19KQXZ4RXM4QkJLSktXOUlEdFZwTGdBZ21xT2pBazJHVEs2TU5Sdm5MVUpQZ1hUSDlhMTBwdkVDQmtGQ0pfN1lxZzdTOWFDdHNiZWw3N2ZvTXJxWHFBNi1BYjFlMU5idW9aSTBSZXZtMzNqNld3?oc=5",
+            "source": "Halton Hills News",
+            "publishedAt": "2026-11-18",
+            "lede": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed Halton Hills News",
+            "articleExcerpt": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News. CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed Halton Hills News",
+            "contentFingerprint": "6982c8c6a9b2d183",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Halton Hills News"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.34,
+              "finalScore": 16.34,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Canyon": []
       },
       "items": [
@@ -231270,6 +232128,99 @@
           }
         },
         {
+          "id": "2026-11-18-1ce4b9c5afc1",
+          "title": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) - Seeking Alpha",
+          "titleZh": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) - Seeking Alpha",
+          "summary": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) Seeking Alpha",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNZW85UlFwcTBud0RVdWdjdkl4dUF4a1V0Ulphek5PN3NWc3BpSzV3Rmd5a1BQYmZ2QVUwVFUyU284TTE3cVJ1ZXVkSnF2UkZ5Q21zTC03NFJENUlmOVZTSm9qcnMxRTlWWkdxdjBqRW1OVzFqTzNPTTdPZndVcU5RQ3ZocEszc2c4OXBETmtxV2RFV0lR?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-11-18",
+          "lede": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) Seeking Alpha",
+          "articleExcerpt": "KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) - Seeking Alpha. KKR Real Estate Finance: Leverage Remains Too High (NYSE:KREF) Seeking Alpha",
+          "contentFingerprint": "74a069bd6a164a5b",
+          "region": "US",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Seeking Alpha"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 5.29,
+            "finalScore": 18.29,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-18-1aef84e96bf2",
           "title": "Guggenheim Macro Opportunities Fund Q3 2026 Commentary (GIOIX) - Seeking Alpha",
           "titleZh": "Guggenheim Macro Opportunities Fund Q3 2026 Commentary (GIOIX) - Seeking Alpha",
@@ -231545,6 +232496,99 @@
           }
         },
         {
+          "id": "2026-11-18-745b146d66c8",
+          "title": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion - TradingView",
+          "titleZh": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion - TradingView",
+          "summary": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxQWmRWdFNOeXRHVFE0REE5c0tGMUNWUlBucHgzY0RoVmdPNkpvcHliRU15Qm9hNG5Gdk5HR2xUMFoxblVHZ0F1T2c5Z3hBUVV2SVdBZUtnbC00bi1oUW10SVRpdllzOUNLX25oX2hvTHFIcjhZdkl2OEVadm4zOUNvcHdudVpHSllPS1hWeXBzOC14TkhidmlYWXRiQ3RVWUxCczJjc0ZyYnUwS3hsdEJWbkJrYlFNaU9RckpLMFA1NldzcW9wQ01OWEI4em1JMTBUZk5EU0szSGNBdGdoS011STQ2U09TNjVwR01aYlJvWTlxXzFr?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-18",
+          "lede": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion TradingView",
+          "articleExcerpt": "Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion - TradingView. Jeeves Announces $300 Mln In Financing, Adding Neuberger Berman To Fuel Rapid Global Expansion TradingView",
+          "contentFingerprint": "eaa7fd11d276a9c8",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.25,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.02,
+            "finalScore": 17.02,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-18-aea43086d273",
           "title": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de",
           "titleZh": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de",
@@ -231634,6 +232678,301 @@
             "keywordScore": 11,
             "semanticScore": 5.26,
             "finalScore": 16.259999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-bebdfb3ff53a",
+          "title": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion - MLQ.ai",
+          "titleZh": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion - MLQ.ai",
+          "summary": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion MLQ.ai",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOQXhvM0o4LVZienhnTS0wZkg0R0M5bjhtYjRxZTVZbC16ZlZ6QmNURE12dkFTdUJaaHpvUzdHR2VlYXdsWi1VdmJPTHhMNzRGVXAyUHQ0d3lfbEt0cG9ocEFHTzRtZGJlYXlUNWk5SXY0Y2RRSGJsQzFKb0NaeUd1dzJoQ2hmaE5EbkRkTXV6aTU5RHJoZGxoRV9ucVpuQzlfUDRETkJtRERUcHdyM2ZjcElBLXExV2pDUF9tVGJwWk1kMmlzRVdDUg?oc=5",
+          "source": "MLQ.ai",
+          "publishedAt": "2026-11-18",
+          "lede": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion MLQ.ai",
+          "articleExcerpt": "Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion - MLQ.ai. Bain Capital Crypto leads a $110 million round valuing onchain derivatives platform Variational at $1.5 billion MLQ.ai",
+          "contentFingerprint": "051c24f568918416",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.71,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "MLQ.ai"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 79,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 5.05,
+            "finalScore": 11.05,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-1b9fdb097fdd",
+          "title": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS - TradingView",
+          "titleZh": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS - TradingView",
+          "summary": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE95d2tUTnJHMVZVQXVNNW9wZl9MM3JGYi1HcmpLbmE1QWJqbVBfQUdrenNFdjBHa0Y3RUpfZkxpVFZLb25LQ21hMkJQMGhIZUpoRk1TdmRaU3RMSU5EN2ktMkc0V2VnUE1VXzlEMTV3?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-18",
+          "lede": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS TradingView",
+          "articleExcerpt": "Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS - TradingView. Bain Capital GSS Investment Corp. Financial Statements – NYSE:BCSS TradingView",
+          "contentFingerprint": "ef7d577604ef399f",
+          "region": "US",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 5.7,
+            "finalScore": 10.7,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-7464068e767c",
+          "title": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance",
+          "titleZh": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance",
+          "summary": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone BigGo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5KUTlWTGJwZVVFZFQ3TUxnMlRVaFhob2QwcXJ6U1BpcFJoT1pGM2w0R3h6aUQ1ZTJLUjFGMlkyOVB5ZjlyNmhyU0lPcmVaaVNFdzZtcEZrdDVZcXZ2REdBdmFuQUtBT084X3J3bXM1WlBKZGFZS1E?oc=5",
+          "source": "BigGo Finance",
+          "publishedAt": "2026-11-18",
+          "lede": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone BigGo Finance",
+          "articleExcerpt": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance. Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone BigGo Finance",
+          "contentFingerprint": "198d73fb002ab988",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "BigGo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 71,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.18,
+            "finalScore": 19.18,
             "semanticEnabled": true
           }
         },
@@ -231832,6 +233171,194 @@
             "finalScore": 16.47,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-18-0c9491ea1371",
+          "title": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su - GuruFocus",
+          "titleZh": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su - GuruFocus",
+          "summary": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su GuruFocus",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSlJmaEhEb292cEpReUM3d3lRUEw3eTg2dUQybUhfaGRwQW9yMnZFc2JVclZZWmVqc3A0bC1ZOExUcGVwVmJOQ2NvejZoLV9Ld2lJQVU4M0tyUTkzNTFYcjE5am12VzBEUWF4QmpZLUExanppUGJRTFQwcVEwanBiUWlRY0l5c0lSN0ZPYVFYek1WYV9tOWFMOWEwSXBNS0xWTUNvVTYzT3Eyem4ySkk0N2xQN09yUFNPTGgwTl8wZw?oc=5",
+          "source": "GuruFocus",
+          "publishedAt": "2026-11-18",
+          "lede": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su GuruFocus",
+          "articleExcerpt": "Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su - GuruFocus. Golub Capital BDC (GBDC) Reports Challenging Q4 with Dividend Su GuruFocus",
+          "contentFingerprint": "b1cff4c74866c9b3",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.78,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.56
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "GuruFocus"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.69,
+            "finalScore": 20.69,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-d93b9f64335d",
+          "title": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
+          "titleZh": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
+          "summary": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed Halton Hills News",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWGl5U1pLSFpScXhxSkFnbTUtYW5BZEVrZ0JXN2U4TFdQN1R4NWJCTTNrT0JzdEl4ZEhMRkp1eDd3WFVUSVE3RWRYMU5EdjVBbFZSU1VGRThoMGxDN3pvcHB3TnhVV19KQXZ4RXM4QkJLSktXOUlEdFZwTGdBZ21xT2pBazJHVEs2TU5Sdm5MVUpQZ1hUSDlhMTBwdkVDQmtGQ0pfN1lxZzdTOWFDdHNiZWw3N2ZvTXJxWHFBNi1BYjFlMU5idW9aSTBSZXZtMzNqNld3?oc=5",
+          "source": "Halton Hills News",
+          "publishedAt": "2026-11-18",
+          "lede": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed Halton Hills News",
+          "articleExcerpt": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News. CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed Halton Hills News",
+          "contentFingerprint": "6982c8c6a9b2d183",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Halton Hills News"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-18T23:43:35.865986+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.34,
+            "finalScore": 16.34,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -231839,7 +233366,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 26,
+      "count": 28,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -231847,7 +233374,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
@@ -231860,7 +233387,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
@@ -231873,12 +233400,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 7,
+      "count": 9,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -231886,7 +233413,7 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
@@ -231899,7 +233426,7 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
@@ -231912,12 +233439,12 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 9,
+      "count": 8,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -231925,7 +233452,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
@@ -231938,12 +233465,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 17,
+      "count": 20,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -231951,12 +233478,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 100,
+      "count": 102,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -231964,12 +233491,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 30,
+      "count": 29,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -231977,12 +233504,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 8,
+      "count": 9,
       "selected": 6,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -231990,12 +233517,12 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 12,
+      "count": 13,
       "selected": 6,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -232003,12 +233530,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 23,
+      "count": 27,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -232016,12 +233543,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 25,
+      "count": 22,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -232029,12 +233556,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 684,
+      "count": 636,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -232051,9 +233578,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-18T16:51:16.034080+00:00",
+      "asOf": "2026-11-18T23:43:35.865986+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-18T16:51:16.034080+00:00"
+  "checkedAt": "2026-11-18T23:43:35.865986+00:00"
 }
