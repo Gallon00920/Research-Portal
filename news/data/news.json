@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-17T19:45:20.008949+00:00",
+  "updatedAt": "2026-11-18T02:13:59.766894+00:00",
   "scope": {
     "regions": [
       "US",
@@ -172,358 +172,6 @@
     }
   },
   "dates": {
-    "2026-08-20": {
-      "byGp": {
-        "Blue Owl": [],
-        "KKR": [],
-        "CIFC": [],
-        "PAG": [],
-        "Pretium": [],
-        "Guggenheim": [
-          {
-            "id": "2026-08-20-780f01224183",
-            "title": "Guggenheim Investments Expands Active ETF Platform with Launch of Two New ETFs - finance.yahoo.com",
-            "titleZh": "Guggenheim Investments推出两只新ETF，扩展主动型ETF平台 - finance.yahoo.com",
-            "summary": "Guggenheim Investments Expands Active ETF Platform with Launch of Two New ETFs finance.yahoo.com",
-            "summaryZh": "Guggenheim Investments推出两只新ETF，扩展其主动型ETF平台 finance.yahoo.com",
-            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVkx4M3lVeXhWZmJVVlRCMlBfbGdkbzBRUkl4VkpUdHhab2t3cTVWZGhJZHRzXzJHM0RMbHI3QXJxNUVkTlRKNWhmUjdBZUZtMi0zWi01bFlxUkhwS1l4NzdtSUF3MUswdXJTOWRPNWt6Q0lIZW5BakUtUnBqbDdvREhmVXkzS2dhLXM0N2FnVjJGakF2NHYzMTFHanNXYy1neGNDX0hQSnloQQ?oc=5",
-            "source": "finance.yahoo.com",
-            "publishedAt": "2026-08-20",
-            "lede": "Guggenheim Investments Expands Active ETF Platform with Launch of Two New ETFs finance.yahoo.com",
-            "region": "Global",
-            "gps": [
-              "Guggenheim"
-            ],
-            "sectors": [],
-            "curation": "rss_filter",
-            "scoreBreakdown": {
-              "keywordScore": 11,
-              "semanticScore": 0,
-              "finalScore": 11,
-              "semanticEnabled": false
-            },
-            "classificationBreakdown": {
-              "llmReasonZh": "无"
-            },
-            "strategies": [],
-            "events": [
-              "financing"
-            ],
-            "rating": {
-              "parts": {
-                "institution": {
-                  "value": 1.0,
-                  "code": "title_names_gp",
-                  "gps": [
-                    "Guggenheim"
-                  ]
-                },
-                "strategy": {
-                  "value": 0.0,
-                  "code": "no_strategy",
-                  "tagValue": 0.0,
-                  "strategies": []
-                },
-                "event": {
-                  "value": 0.7,
-                  "code": "financing",
-                  "ruleValue": 0.7,
-                  "events": [
-                    "financing"
-                  ]
-                },
-                "source": {
-                  "value": 0.25,
-                  "code": "tier_aggregator",
-                  "source": "finance.yahoo.com"
-                },
-                "freshness": {
-                  "value": 0.8,
-                  "code": "estimated"
-                }
-              },
-              "weights": {
-                "institution": 18,
-                "strategy": 12,
-                "event": 30,
-                "source": 25,
-                "freshness": 15
-              },
-              "score": 57,
-              "retrievedAt": "2026-10-29T09:02:01.312627+00:00"
-            },
-            "summaryZhLanguage": "Simplified Chinese"
-          },
-          {
-            "id": "2026-08-20-5a2b857ef4f7",
-            "title": "Problems at Guggenheim Strategic Opportunities Fund (GOF) - The Bear Cave | Substack",
-            "titleZh": "Guggenheim Strategic Opportunities Fund (GOF) 问题重重 - The Bear Cave | Substack",
-            "summary": "Problems at Guggenheim Strategic Opportunities Fund (GOF) The Bear Cave | Substack",
-            "summaryZh": "Guggenheim Strategic Opportunities Fund (GOF) 存在的问题 The Bear Cave | Substack",
-            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IRzFnWHphZXl1Ukx4am0xZU0tV2UxRFRRZkVmcmhxX09zcGJHXzdRemJqZFpOUlQ5QkFtN3IwdTRiTjdfREpMeDNIYjNxOVFiaHg4N29yZXFsckl0cHV3ZHZFRy1oVjNYam9FRjVDYWMwV0xqYXc?oc=5",
-            "source": "The Bear Cave | Substack",
-            "publishedAt": "2026-08-20",
-            "lede": "Problems at Guggenheim Strategic Opportunities Fund (GOF) The Bear Cave | Substack",
-            "articleExcerpt": "Problems at Guggenheim Strategic Opportunities Fund (GOF) - The Bear Cave | Substack. Problems at Guggenheim Strategic Opportunities Fund (GOF) The Bear Cave | Substack",
-            "region": "Global",
-            "gps": [
-              "Guggenheim"
-            ],
-            "sectors": [
-              "clo"
-            ],
-            "curation": "rss_filter",
-            "excludedByClassifier": false,
-            "classificationBreakdown": {
-              "keywordGps": [
-                "Guggenheim"
-              ],
-              "llmGps": [
-                "Guggenheim"
-              ],
-              "keywordSectors": [],
-              "llmSectors": [
-                "CLO"
-              ],
-              "llmExclude": false,
-              "llmReason": "Guggenheim Strategic Opportunities Fund (GOF) is a publicly traded closed-end fund managed by Guggenheim Investments, primarily invested in a diversified portfolio of credit instruments including CLOs, high-yield bonds, and leveraged loans — squarely within tracked credit/structured-finance activity. CLO is a tracked sub-sector.",
-              "llmReasonZh": "Guggenheim Strategic Opportunities Fund (GOF) 是一只由 Guggenheim Investments 管理的公开交易封闭式基金，主要投资于多元化的信贷工具组合，包括CLO、高收益债券和杠杆贷款，完全属于所追踪的信贷/结构化融资领域。CLO为所追踪的细分领域。"
-            },
-            "scoreBreakdown": {
-              "keywordScore": 6,
-              "semanticScore": 5.86,
-              "finalScore": 11.86,
-              "semanticEnabled": true
-            },
-            "strategies": [
-              "clo"
-            ],
-            "events": [],
-            "rating": {
-              "parts": {
-                "institution": {
-                  "value": 1.0,
-                  "code": "title_names_gp",
-                  "gps": [
-                    "Guggenheim"
-                  ]
-                },
-                "strategy": {
-                  "value": 0.54,
-                  "code": "body_strategy",
-                  "tagValue": 0.6,
-                  "strategies": [
-                    "clo"
-                  ],
-                  "semanticValue": 0.49
-                },
-                "event": {
-                  "value": 0.2,
-                  "code": "routine",
-                  "ruleValue": 0.2,
-                  "events": []
-                },
-                "source": {
-                  "value": 0.35,
-                  "code": "tier_other",
-                  "source": "The Bear Cave | Substack"
-                },
-                "freshness": {
-                  "value": 0.8,
-                  "code": "estimated"
-                }
-              },
-              "weights": {
-                "institution": 18,
-                "strategy": 12,
-                "event": 30,
-                "source": 25,
-                "freshness": 15
-              },
-              "score": 51,
-              "retrievedAt": "2026-10-29T09:02:01.313101+00:00"
-            },
-            "summaryZhLanguage": "Simplified Chinese"
-          }
-        ],
-        "Neuberger": [],
-        "BasePoint": [],
-        "Bain Capital": [],
-        "Blackstone": [],
-        "Apollo": [],
-        "TPG": [],
-        "Golub": [],
-        "CVC": [],
-        "Canyon": []
-      },
-      "items": [
-        {
-          "id": "2026-08-20-780f01224183",
-          "title": "Guggenheim Investments Expands Active ETF Platform with Launch of Two New ETFs - finance.yahoo.com",
-          "titleZh": "Guggenheim Investments推出两只新ETF，扩展主动型ETF平台 - finance.yahoo.com",
-          "summary": "Guggenheim Investments Expands Active ETF Platform with Launch of Two New ETFs finance.yahoo.com",
-          "summaryZh": "Guggenheim Investments推出两只新ETF，扩展其主动型ETF平台 finance.yahoo.com",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOVkx4M3lVeXhWZmJVVlRCMlBfbGdkbzBRUkl4VkpUdHhab2t3cTVWZGhJZHRzXzJHM0RMbHI3QXJxNUVkTlRKNWhmUjdBZUZtMi0zWi01bFlxUkhwS1l4NzdtSUF3MUswdXJTOWRPNWt6Q0lIZW5BakUtUnBqbDdvREhmVXkzS2dhLXM0N2FnVjJGakF2NHYzMTFHanNXYy1neGNDX0hQSnloQQ?oc=5",
-          "source": "finance.yahoo.com",
-          "publishedAt": "2026-08-20",
-          "lede": "Guggenheim Investments Expands Active ETF Platform with Launch of Two New ETFs finance.yahoo.com",
-          "region": "Global",
-          "gps": [
-            "Guggenheim"
-          ],
-          "sectors": [],
-          "curation": "rss_filter",
-          "scoreBreakdown": {
-            "keywordScore": 11,
-            "semanticScore": 0,
-            "finalScore": 11,
-            "semanticEnabled": false
-          },
-          "classificationBreakdown": {
-            "llmReasonZh": "无"
-          },
-          "strategies": [],
-          "events": [
-            "financing"
-          ],
-          "rating": {
-            "parts": {
-              "institution": {
-                "value": 1.0,
-                "code": "title_names_gp",
-                "gps": [
-                  "Guggenheim"
-                ]
-              },
-              "strategy": {
-                "value": 0.0,
-                "code": "no_strategy",
-                "tagValue": 0.0,
-                "strategies": []
-              },
-              "event": {
-                "value": 0.7,
-                "code": "financing",
-                "ruleValue": 0.7,
-                "events": [
-                  "financing"
-                ]
-              },
-              "source": {
-                "value": 0.25,
-                "code": "tier_aggregator",
-                "source": "finance.yahoo.com"
-              },
-              "freshness": {
-                "value": 0.8,
-                "code": "estimated"
-              }
-            },
-            "weights": {
-              "institution": 18,
-              "strategy": 12,
-              "event": 30,
-              "source": 25,
-              "freshness": 15
-            },
-            "score": 57,
-            "retrievedAt": "2026-10-29T09:02:01.312627+00:00"
-          },
-          "summaryZhLanguage": "Simplified Chinese"
-        },
-        {
-          "id": "2026-08-20-5a2b857ef4f7",
-          "title": "Problems at Guggenheim Strategic Opportunities Fund (GOF) - The Bear Cave | Substack",
-          "titleZh": "Guggenheim Strategic Opportunities Fund (GOF) 问题重重 - The Bear Cave | Substack",
-          "summary": "Problems at Guggenheim Strategic Opportunities Fund (GOF) The Bear Cave | Substack",
-          "summaryZh": "Guggenheim Strategic Opportunities Fund (GOF) 存在的问题 The Bear Cave | Substack",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE1IRzFnWHphZXl1Ukx4am0xZU0tV2UxRFRRZkVmcmhxX09zcGJHXzdRemJqZFpOUlQ5QkFtN3IwdTRiTjdfREpMeDNIYjNxOVFiaHg4N29yZXFsckl0cHV3ZHZFRy1oVjNYam9FRjVDYWMwV0xqYXc?oc=5",
-          "source": "The Bear Cave | Substack",
-          "publishedAt": "2026-08-20",
-          "lede": "Problems at Guggenheim Strategic Opportunities Fund (GOF) The Bear Cave | Substack",
-          "articleExcerpt": "Problems at Guggenheim Strategic Opportunities Fund (GOF) - The Bear Cave | Substack. Problems at Guggenheim Strategic Opportunities Fund (GOF) The Bear Cave | Substack",
-          "region": "Global",
-          "gps": [
-            "Guggenheim"
-          ],
-          "sectors": [
-            "clo"
-          ],
-          "curation": "rss_filter",
-          "excludedByClassifier": false,
-          "classificationBreakdown": {
-            "keywordGps": [
-              "Guggenheim"
-            ],
-            "llmGps": [
-              "Guggenheim"
-            ],
-            "keywordSectors": [],
-            "llmSectors": [
-              "CLO"
-            ],
-            "llmExclude": false,
-            "llmReason": "Guggenheim Strategic Opportunities Fund (GOF) is a publicly traded closed-end fund managed by Guggenheim Investments, primarily invested in a diversified portfolio of credit instruments including CLOs, high-yield bonds, and leveraged loans — squarely within tracked credit/structured-finance activity. CLO is a tracked sub-sector.",
-            "llmReasonZh": "Guggenheim Strategic Opportunities Fund (GOF) 是一只由 Guggenheim Investments 管理的公开交易封闭式基金，主要投资于多元化的信贷工具组合，包括CLO、高收益债券和杠杆贷款，完全属于所追踪的信贷/结构化融资领域。CLO为所追踪的细分领域。"
-          },
-          "scoreBreakdown": {
-            "keywordScore": 6,
-            "semanticScore": 5.86,
-            "finalScore": 11.86,
-            "semanticEnabled": true
-          },
-          "strategies": [
-            "clo"
-          ],
-          "events": [],
-          "rating": {
-            "parts": {
-              "institution": {
-                "value": 1.0,
-                "code": "title_names_gp",
-                "gps": [
-                  "Guggenheim"
-                ]
-              },
-              "strategy": {
-                "value": 0.54,
-                "code": "body_strategy",
-                "tagValue": 0.6,
-                "strategies": [
-                  "clo"
-                ],
-                "semanticValue": 0.49
-              },
-              "event": {
-                "value": 0.2,
-                "code": "routine",
-                "ruleValue": 0.2,
-                "events": []
-              },
-              "source": {
-                "value": 0.35,
-                "code": "tier_other",
-                "source": "The Bear Cave | Substack"
-              },
-              "freshness": {
-                "value": 0.8,
-                "code": "estimated"
-              }
-            },
-            "weights": {
-              "institution": 18,
-              "strategy": 12,
-              "event": 30,
-              "source": 25,
-              "freshness": 15
-            },
-            "score": 51,
-            "retrievedAt": "2026-10-29T09:02:01.313101+00:00"
-          },
-          "summaryZhLanguage": "Simplified Chinese"
-        }
-      ]
-    },
     "2026-08-24": {
       "byGp": {
         "Blue Owl": [],
@@ -213788,6 +213436,99 @@
               "finalScore": 17.12,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-16-a24dda3c2efb",
+            "title": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart - Yahoo Finance UK",
+            "titleZh": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart - Yahoo Finance UK",
+            "summary": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBReFl3TkpmYzc5d3pUWFkwTXVjNEhHOVlOUW11eHhaX2t2eWRYNGhUdHpBTmZZMi1wY1lERTNCc2dXUHdyQkNOblpDZ3FqbXBsUTVlQ3JHUlBMVkE4SXZDRURVbmc?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-16",
+            "lede": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart Yahoo Finance UK",
+            "articleExcerpt": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart - Yahoo Finance UK. Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart Yahoo Finance UK",
+            "contentFingerprint": "a120da838f825f1f",
+            "region": "Europe",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 6.3,
+              "finalScore": 18.3,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -213974,6 +213715,188 @@
               "keywordScore": 11,
               "semanticScore": 5.33,
               "finalScore": 16.33,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-715bba400d7b",
+            "title": "KKR Completes Sale of USI - Business Wire",
+            "titleZh": "KKR Completes Sale of USI - Business Wire",
+            "summary": "KKR Completes Sale of USI Business Wire",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZFJydzNwTmN0MW1jbXhuaVBqNDFfQUhlejN4ZXpkQmMyOW82ODhyZGZLWklSVTFEVFduMWtGRndnRnVvelpON1k5OHIxbkxCdjhiX3dEMFVPMmRSR3A2ajdXRDNmRl9EeEp0VXo1YjFTSlVmZ05VU29WUFVHcjVIbW5ONkZUY1Bybnc?oc=5",
+            "source": "Business Wire",
+            "publishedAt": "2026-11-16",
+            "lede": "KKR Completes Sale of USI Business Wire",
+            "articleExcerpt": "KKR Completes Sale of USI - Business Wire. KKR Completes Sale of USI Business Wire",
+            "contentFingerprint": "4c18faed4a929278",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.4,
+                  "code": "tier_press_release",
+                  "source": "Business Wire"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 71,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 5.3,
+              "finalScore": 11.3,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-16-1b5f28493b67",
+            "title": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "titleZh": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "summary": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWZ4bkRwdk81X2ROTE5ZRlFIcFM1Nm9ISENzOUtKc2FzYTZNeU9Ec2VqczZSUWRRMXdVekI4WVdNQVoyc0pYRkExMUpwS0M1d2NDSWFrSHpEVDdBZUhhSF9LdW90dFZtVVY5RkpkRHdDd083ZmpWcWxWOWhBbkpVcnlpU1liOVFBMUlkSUtodTB4cDJoNlZSa1JKSWFwaU1ob1JEQw?oc=5",
+            "source": "EnergyNow.com",
+            "publishedAt": "2026-11-16",
+            "lede": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "articleExcerpt": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com. Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "contentFingerprint": "c4fbe37311781970",
+            "region": "Global",
+            "gps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "titleGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR",
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "EnergyNow.com"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 4.29,
+              "finalScore": 11.29,
               "semanticEnabled": true
             }
           }
@@ -215006,6 +214929,99 @@
           }
         ],
         "Blackstone": [
+          {
+            "id": "2026-11-16-1b5f28493b67",
+            "title": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "titleZh": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+            "summary": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWZ4bkRwdk81X2ROTE5ZRlFIcFM1Nm9ISENzOUtKc2FzYTZNeU9Ec2VqczZSUWRRMXdVekI4WVdNQVoyc0pYRkExMUpwS0M1d2NDSWFrSHpEVDdBZUhhSF9LdW90dFZtVVY5RkpkRHdDd083ZmpWcWxWOWhBbkpVcnlpU1liOVFBMUlkSUtodTB4cDJoNlZSa1JKSWFwaU1ob1JEQw?oc=5",
+            "source": "EnergyNow.com",
+            "publishedAt": "2026-11-16",
+            "lede": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "articleExcerpt": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com. Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+            "contentFingerprint": "c4fbe37311781970",
+            "region": "Global",
+            "gps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "titleGps": [
+                "KKR",
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR",
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.36
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "EnergyNow.com"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 4.29,
+              "finalScore": 11.29,
+              "semanticEnabled": true
+            }
+          },
           {
             "id": "2026-11-16-cc2746afc0b0",
             "title": "J&J Secures $750 Million in Blackstone R&D Funding, Pending Ollin Closing - Securities.io",
@@ -217592,6 +217608,99 @@
           }
         },
         {
+          "id": "2026-11-16-a24dda3c2efb",
+          "title": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart - Yahoo Finance UK",
+          "titleZh": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart - Yahoo Finance UK",
+          "summary": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBReFl3TkpmYzc5d3pUWFkwTXVjNEhHOVlOUW11eHhaX2t2eWRYNGhUdHpBTmZZMi1wY1lERTNCc2dXUHdyQkNOblpDZ3FqbXBsUTVlQ3JHUlBMVkE4SXZDRURVbmc?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-16",
+          "lede": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart Yahoo Finance UK",
+          "articleExcerpt": "Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart - Yahoo Finance UK. Blue Owl Capital Inc. (OWL.MX) Seasonal returns chart Yahoo Finance UK",
+          "contentFingerprint": "a120da838f825f1f",
+          "region": "Europe",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 6.3,
+            "finalScore": 18.3,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-16-70e37f64614f",
           "title": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor",
           "titleZh": "The Pipeline: KKR on early exits, Cube’s first close, ICG preps debt fund - Infrastructure Investor",
@@ -217774,6 +217883,188 @@
             "keywordScore": 11,
             "semanticScore": 5.33,
             "finalScore": 16.33,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-715bba400d7b",
+          "title": "KKR Completes Sale of USI - Business Wire",
+          "titleZh": "KKR Completes Sale of USI - Business Wire",
+          "summary": "KKR Completes Sale of USI Business Wire",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPZFJydzNwTmN0MW1jbXhuaVBqNDFfQUhlejN4ZXpkQmMyOW82ODhyZGZLWklSVTFEVFduMWtGRndnRnVvelpON1k5OHIxbkxCdjhiX3dEMFVPMmRSR3A2ajdXRDNmRl9EeEp0VXo1YjFTSlVmZ05VU29WUFVHcjVIbW5ONkZUY1Bybnc?oc=5",
+          "source": "Business Wire",
+          "publishedAt": "2026-11-16",
+          "lede": "KKR Completes Sale of USI Business Wire",
+          "articleExcerpt": "KKR Completes Sale of USI - Business Wire. KKR Completes Sale of USI Business Wire",
+          "contentFingerprint": "4c18faed4a929278",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.4,
+                "code": "tier_press_release",
+                "source": "Business Wire"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 71,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 5.3,
+            "finalScore": 11.3,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-16-1b5f28493b67",
+          "title": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+          "titleZh": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com",
+          "summary": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNWZ4bkRwdk81X2ROTE5ZRlFIcFM1Nm9ISENzOUtKc2FzYTZNeU9Ec2VqczZSUWRRMXdVekI4WVdNQVoyc0pYRkExMUpwS0M1d2NDSWFrSHpEVDdBZUhhSF9LdW90dFZtVVY5RkpkRHdDd083ZmpWcWxWOWhBbkpVcnlpU1liOVFBMUlkSUtodTB4cDJoNlZSa1JKSWFwaU1ob1JEQw?oc=5",
+          "source": "EnergyNow.com",
+          "publishedAt": "2026-11-16",
+          "lede": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+          "articleExcerpt": "Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say - EnergyNow.com. Apollo, Blackstone and KKR vie for Shell Stake in LNG Canada, Sources Say EnergyNow.com",
+          "contentFingerprint": "c4fbe37311781970",
+          "region": "Global",
+          "gps": [
+            "KKR",
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "titleGps": [
+              "KKR",
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR",
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.36
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "EnergyNow.com"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 7,
+            "semanticScore": 4.29,
+            "finalScore": 11.29,
             "semanticEnabled": true
           }
         },
@@ -220680,6 +220971,99 @@
               "finalScore": 17.57,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-90a51f9e4654",
+            "title": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qWDdoZkQ2NE9hUDlrQ3ZTSWlmaXM5U3pjeXNhMkRhcF9GWmlNZFZqX2JIYmRDaGJtcVEycVhuNnM1Y0tyVkl0ZEJRZ25zSElN?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-17",
+            "lede": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada. Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "ddc9f8cb5056c73f",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.32,
+              "finalScore": 17.32,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -220961,6 +221345,184 @@
               "finalScore": 16.4,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-f7810fc9c421",
+            "title": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya - Bloomberg.com",
+            "titleZh": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya - Bloomberg.com",
+            "summary": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya Bloomberg.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTGJFeHlEdGhrZVIwNWVQNDBCdFI1V3BGakotSHZUSTdnNlgzb0xiMGhEbmkxNjdSZGU4Q3cyYmhkWFFtSGQzaG9RNXgxb1RnLUV6b3lCa2dKb1dvbFlmbTRzUXVPakxNNU5yaUFpZXVuOVIyRUpJa2YySXVaUW02emY3Z2p2dWE1ZHNOdlVyb0lZQk9pMk8zSkYzM2JaVVRzSWc2ZElTU2N4QnM5Nl9jLTFDMUpTMDJ5eHlTWWVScDlDeXBCbEE?oc=5",
+            "source": "Bloomberg.com",
+            "publishedAt": "2026-11-17",
+            "lede": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya Bloomberg.com",
+            "articleExcerpt": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya - Bloomberg.com. KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya Bloomberg.com",
+            "contentFingerprint": "15f7dd5f8d3ba504",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 1.0,
+                  "code": "tier_top",
+                  "source": "Bloomberg.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 4.8,
+              "finalScore": 10.8,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-40d85ddcfbb9",
+            "title": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? - Kalkine Media",
+            "titleZh": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? - Kalkine Media",
+            "summary": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? Kalkine Media",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPckdONVVwdVJvWHppNnlQSHVLZXNlRmgyWUZLZzFTd05UUnN0M2diWE9XVG9tQjNud0ItY1h0aWZDdm8zQ0pTamI2M1hhRV9ucjN0VmpvbG1WWnd2OGVhSWI3OWhxTmtVNUcwLUVYQ29xeWxocXpnY2d6SGpEQXFnNTNCOS13OHoyU3RNa0tsX3dTcUF1cDVRdmltYWtuSVF3SVAzYVFB?oc=5",
+            "source": "Kalkine Media",
+            "publishedAt": "2026-11-17",
+            "lede": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? Kalkine Media",
+            "articleExcerpt": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? - Kalkine Media. Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? Kalkine Media",
+            "contentFingerprint": "3cb0dbf2d1e60c81",
+            "region": "US",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine Media"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 4.98,
+              "finalScore": 9.98,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -221066,6 +221628,99 @@
               "finalScore": 10.309999999999999,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-8c8c02d7a9db",
+            "title": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart - Yahoo Finance UK",
+            "titleZh": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart - Yahoo Finance UK",
+            "summary": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rSzZGM05HT0ZadUw5SHdLWUNPbTVxek80eVVod1kxTk5VcjgwWUdOcjB2aGdVTmRjM2ZPVDFQaDBCbFZlclB0Q2pkR1I1TDE3bDZ3ZGJRdUMtSWIta2RjbDZlb1BKTHcybVB2c2QyVEU?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-17",
+            "lede": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart Yahoo Finance UK",
+            "articleExcerpt": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart - Yahoo Finance UK. Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart Yahoo Finance UK",
+            "contentFingerprint": "4cef4946d310848f",
+            "region": "Europe",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 4.9,
+              "finalScore": 16.9,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -221160,6 +221815,95 @@
               "keywordScore": 3,
               "semanticScore": 5.83,
               "finalScore": 8.83,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-d917c6424af7",
+            "title": "Bain Capital's 200% IRR years — and the building of Audax, from the inside - Dealroom",
+            "titleZh": "Bain Capital's 200% IRR years — and the building of Audax, from the inside - Dealroom",
+            "summary": "Bain Capital's 200% IRR years — and the building of Audax, from the inside Dealroom",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdEZXVGtJT2E3YVM3NmlMUlBGV2J2WXdNaTd3bndld2FvY0xKTWVWZkVCVVN2X2phZzEwaEVEOXpEcHkxVkd1ZnBMRm16c2FMRHdLbjVHNC1EeWJOSHRMR0lVRUR0MWdQTFdDQmpVMEpjbThaU2w5YklDdjN2ckY0MWI0SGpIT0o5Q2FNbEdzb2xhUjF1Uk5jRzFZRHNZaUxaM3V0WVBrVQ?oc=5",
+            "source": "Dealroom",
+            "publishedAt": "2026-11-17",
+            "lede": "Bain Capital's 200% IRR years — and the building of Audax, from the inside Dealroom",
+            "articleExcerpt": "Bain Capital's 200% IRR years — and the building of Audax, from the inside - Dealroom. Bain Capital's 200% IRR years — and the building of Audax, from the inside Dealroom",
+            "contentFingerprint": "215ccc4e4c5dc20a",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Dealroom"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.06,
+              "finalScore": 8.059999999999999,
               "semanticEnabled": true
             }
           }
@@ -221762,6 +222506,208 @@
               "keywordScore": 11,
               "semanticScore": 6.04,
               "finalScore": 17.04,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-e5dafaec12f5",
+            "title": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets - BigGo Finance",
+            "titleZh": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets - BigGo Finance",
+            "summary": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets BigGo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RQ211MFNLYVM1bVF1RHMwSU80c3Z3bTJFcV9ENDdHTFRuTmhXOTJFWC1LLWd0ZHBmdmZOSGoxVkdoVkxGTmxqXzVvbnI0cDd0ZVhnaWZpNGNlUnRzY21uY0NlV3ZwMld2dTRJOHVVdTYzbmJMQlE?oc=5",
+            "source": "BigGo Finance",
+            "publishedAt": "2026-11-17",
+            "lede": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets BigGo Finance",
+            "articleExcerpt": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets - BigGo Finance. Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets BigGo Finance",
+            "contentFingerprint": "65673e3369dc466c",
+            "region": "US",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.76,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.51
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "BigGo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 6.12,
+              "finalScore": 22.12,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-471e0a7fd7e1",
+            "title": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets - Benzinga",
+            "titleZh": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets - Benzinga",
+            "summary": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets Benzinga",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ2ZJQXFLdGdsNkdWdXo2TWRTNEc5WWRfTkdGUUlZN3RadHR0cm1BckVSbERCczRXdnlPb2dVZTRvOGFVYmI0dUdpMEJyUFI0OVBucEhLYlNsYmRIRFdYVEtWaTlGRE5tdE1SZWxaZU5pSHdMcHkxUTFLODNTYmY3SC02Wk9aSkZRc2JRYjRCbTJtbnpIeDhnV29FaHVxanlLU1czQ2xTMVVtY3A1TGZxU1FBLXVUN2cydWlRbHZLZHlhYnpNNDZZRjBFbE1xaGZlNV9pUGdtS3V6emF2WXVWUjJfWDhfQW1pNzNB?oc=5",
+            "source": "Benzinga",
+            "publishedAt": "2026-11-17",
+            "lede": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets Benzinga",
+            "articleExcerpt": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets - Benzinga. Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets Benzinga",
+            "contentFingerprint": "d5df846123f70339",
+            "region": "US",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.7,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Benzinga"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 54,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 4.84,
+              "finalScore": 20.84,
               "semanticEnabled": true
             }
           }
@@ -222449,6 +223395,509 @@
               "finalScore": 19.96,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-00f5c4e56e97",
+            "title": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline - ChartMill",
+            "titleZh": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline - ChartMill",
+            "summary": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline ChartMill",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQam1FTU5ZNXl1Vk9kZGhMUGdlM1JPVUJ2cHc5Qm54TW9GWndMZlM1TVZHSnhGQ0ZKeXV0QXVpSkFWOEMxaGRVdkE3SkJWU252dTI2ZHAzVjlDTVBhbVpWZUFCSzhIRVBmMGpyQ0o2NElKR1d2NnFxSEtKMnAxd25kbVh0R1g1ckc4ZUlYcGhfel90cUlFcFQwZzg2dnNGVElkeU1hV2syOE93R25jOWhBVVJFa1NDSDlNX3JCUEZCZzlTQUgyS2pKSjVCZw?oc=5",
+            "source": "ChartMill",
+            "publishedAt": "2026-11-17",
+            "lede": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline ChartMill",
+            "articleExcerpt": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline - ChartMill. Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline ChartMill",
+            "contentFingerprint": "a3368f47c245650f",
+            "region": "US",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ChartMill"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 57,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 6.38,
+              "finalScore": 22.38,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-c204b7d1736a",
+            "title": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates - Yahoo Finance",
+            "titleZh": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates - Yahoo Finance",
+            "summary": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOTBFX3ZleWxIQUFaLWhOOUNDTDRhcWpGSmZvYXdGd0NHdWl4cTJpVDhQZnR2RlRZSEdFUVRma1Y5Q28tU2xlcW1GM0pBN1RKUEw0Wi1ieFlmVHZyZmU1U3YwT29NT25FT3NLcXRaTmZtQ3FLNWRYclV4UnVSSi1Cdkx2UTNKZ1R6NWdQNVNJMk1aV1Ez?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-17",
+            "lede": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates Yahoo Finance",
+            "articleExcerpt": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates - Yahoo Finance. Golub Capital BDC (GBDC) Q4 Earnings Match Estimates Yahoo Finance",
+            "contentFingerprint": "0146316256a70f09",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.49,
+              "finalScore": 20.490000000000002,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-b708e340ba2d",
+            "title": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results - Quantisnow",
+            "titleZh": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results - Quantisnow",
+            "summary": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results Quantisnow",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc1JvZHlUa2FCWTQ5NkVHNE9pdkU1S016QjZFeHR2c2tDRHNINXFCdGJzMHBTM1hReVNobEFQVHVmcnJUUkp1bWNsbUtBSTVrYUpHTE00eEc2bU9JR0J4cHBVRTJfSGthZVJibnZIRmlyOU5fWnZ4SVJ6eGNHQlJjcHZPeHFBUTlDNnA2a3JyTUF3ZGREUTZSOVk0THVRQjF6aEFva3R4UEwwQQ?oc=5",
+            "source": "Quantisnow",
+            "publishedAt": "2026-11-17",
+            "lede": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results Quantisnow",
+            "articleExcerpt": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results - Quantisnow. Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results Quantisnow",
+            "contentFingerprint": "8d8d5bba1e0263de",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Quantisnow"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.36,
+              "finalScore": 20.36,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-651ee064c2ab",
+            "title": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates - GuruFocus",
+            "titleZh": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates - GuruFocus",
+            "summary": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates GuruFocus",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOR3dzbk9aeVVXM2RDZHhUSnlzOEdpZ1BtYUJ2dHRsTTVDZXVFZzFfeFNSbVRHaGd1WFBZMlRLZ2k5VlNCZGc4ZHJNSEdGNVdNX3pOVHhBU3lkYmw0S3BJUWp3NVdwX2NfcWpmOHVRTi00Tnktcjl5TUFwN1FMcXRGYTBVTE1xYVZnTU5oMHpaclFZR0VMZ1h5YTI4dzAtWW9WQUlDTXktWHlTc0Q3ZFlBVzhWWVN2bFpLeE01bW56SGM5VTQ?oc=5",
+            "source": "GuruFocus",
+            "publishedAt": "2026-11-17",
+            "lede": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates GuruFocus",
+            "articleExcerpt": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates - GuruFocus. Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates GuruFocus",
+            "contentFingerprint": "61182851522bced3",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "GuruFocus"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 57,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.36,
+              "finalScore": 20.36,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-65e05f4c0b8c",
+            "title": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot - KVUE",
+            "titleZh": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot - KVUE",
+            "summary": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot KVUE",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRExRYllUXy1TLTdPVVZYcl9QcC1GcEZHR1EzQWFidlNlRG1uUjJQWXFJX3JKSUdYZjNUNFZ4ZDZIbENFLUtWRzNPTU9vWmhPR2xiODJmWC14cWFQVFp3bzdncFJxUzdQVjhIcFVoc05UYlpBLWFOMXY5cF9oMDFuUmgydjI3c3h6eXhLOUE5VzhrV3UtX0Z6Rk4ycVp5QXNRZDdkTmhTYnVFUzVNdl9Zb0VtcDlnbzU4a01wclJKdWZPRVZtOTNFbEZNR1p3UkFrUmROMWI3SEFqbXM?oc=5",
+            "source": "KVUE",
+            "publishedAt": "2026-11-17",
+            "lede": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot KVUE",
+            "articleExcerpt": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot - KVUE. Golub Capital BDC: Fiscal Q4 Earnings Snapshot KVUE",
+            "contentFingerprint": "8b1d3d872f3287c3",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "KVUE"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 57,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.05,
+              "finalScore": 20.05,
+              "semanticEnabled": true
+            }
           }
         ],
         "CVC": [
@@ -223011,6 +224460,277 @@
               "finalScore": 7.69,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-4d2086c947a8",
+            "title": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital - TradingView",
+            "titleZh": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital - TradingView",
+            "summary": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSkNuLVFTOEVkWDRFVjNJcmw2WXJ6b2VYd1pvYVFrRWlGODV6azBrTlExZFRoWnFjMnROeXBxREZUbDFVdFJXdHpHQS1IQzc2SjU4dGxsdURlN0w4eGJTUUswTVRnME01S09NVER5d1FQekItSUZUNTJra0VZZUdocENNTlBzTFBDSFNIbkJtVVhKR2x3TlFrdmE4NzdPWUl2THJVUVYxUmZyeWxyTVY1N2Z4dkxWOFN2TThsdEo3Y0F3SmJUWnVwTXU3ejkzVTN1RHBJdDBISzdjWDFvSGdMREJR?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-17",
+            "lede": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital TradingView",
+            "articleExcerpt": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital - TradingView. CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital TradingView",
+            "contentFingerprint": "a170d026f2144364",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 73,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.48,
+              "finalScore": 8.48,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-0329e0ec2a74",
+            "title": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga - 懂球帝",
+            "titleZh": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga - 懂球帝",
+            "summary": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga 懂球帝",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA2blhwTzVHc2pnZjlHN1ZoNU9QWEhzazlsYmk2U1dTMDIxUWlkUV9VZEpaLU1idGg1OGxMQlNYemJFYy1wSkxfdDJ4TDI4NVU?oc=5",
+            "source": "懂球帝",
+            "publishedAt": "2026-11-17",
+            "lede": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga 懂球帝",
+            "articleExcerpt": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga - 懂球帝. Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga 懂球帝",
+            "contentFingerprint": "02e7493906280f44",
+            "region": "Europe",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "lawsuit"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.18,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.37
+                },
+                "event": {
+                  "value": 1.0,
+                  "code": "lawsuit",
+                  "ruleValue": 1.0,
+                  "events": [
+                    "lawsuit"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "懂球帝"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 74,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 4,
+              "semanticScore": 4.41,
+              "finalScore": 8.41,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-6e6caed97970",
+            "title": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist - Law360",
+            "titleZh": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist - Law360",
+            "summary": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist Law360",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Ob3JlZDdWbW00clc3ZUpJdGxYeV9rY3U2WUtaUzZKUkJlbUttd2RrdG5zS21wZkJxZUtLWFdOdXhwOHpoeXNZUnlaWkFqSEFtSjZwNnB30gFWQVVfeXFMTU5vcmVkN1ZtbTRyVzdlSkl0bFh5X2tjdTZZS1pTNkpSQmVtS213ZGt0bnNLbXBmQnFlS0tYV051eHA4emh5c1lSeVpaQWpIQW1KNnA2cHc?oc=5",
+            "source": "Law360",
+            "publishedAt": "2026-11-17",
+            "lede": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist Law360",
+            "articleExcerpt": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist - Law360. CVC Fund To Sell Stake In Swedish Glass Repairs Specialist Law360",
+            "contentFingerprint": "0a8004ad0a9fdbfc",
+            "region": "Global",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Law360"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.6
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.28,
+              "finalScore": 8.280000000000001,
+              "semanticEnabled": true
+            }
           }
         ],
         "Canyon": []
@@ -223106,6 +224826,99 @@
             "keywordScore": 11,
             "semanticScore": 6.57,
             "finalScore": 17.57,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-90a51f9e4654",
+          "title": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE9qWDdoZkQ2NE9hUDlrQ3ZTSWlmaXM5U3pjeXNhMkRhcF9GWmlNZFZqX2JIYmRDaGJtcVEycVhuNnM1Y0tyVkl0ZEJRZ25zSElN?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-17",
+          "lede": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History - Yahoo! Finance Canada. Blue Owl Capital Inc. (OWL) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "ddc9f8cb5056c73f",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.32,
+            "finalScore": 17.32,
             "semanticEnabled": true
           }
         },
@@ -223389,6 +225202,184 @@
           }
         },
         {
+          "id": "2026-11-17-f7810fc9c421",
+          "title": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya - Bloomberg.com",
+          "titleZh": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya - Bloomberg.com",
+          "summary": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya Bloomberg.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOTGJFeHlEdGhrZVIwNWVQNDBCdFI1V3BGakotSHZUSTdnNlgzb0xiMGhEbmkxNjdSZGU4Q3cyYmhkWFFtSGQzaG9RNXgxb1RnLUV6b3lCa2dKb1dvbFlmbTRzUXVPakxNNU5yaUFpZXVuOVIyRUpJa2YySXVaUW02emY3Z2p2dWE1ZHNOdlVyb0lZQk9pMk8zSkYzM2JaVVRzSWc2ZElTU2N4QnM5Nl9jLTFDMUpTMDJ5eHlTWWVScDlDeXBCbEE?oc=5",
+          "source": "Bloomberg.com",
+          "publishedAt": "2026-11-17",
+          "lede": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya Bloomberg.com",
+          "articleExcerpt": "KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya - Bloomberg.com. KKR Is Said to Emerge as Preferred Bidder for Japanese Curry Chain Ichibanya Bloomberg.com",
+          "contentFingerprint": "15f7dd5f8d3ba504",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 1.0,
+                "code": "tier_top",
+                "source": "Bloomberg.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 4.8,
+            "finalScore": 10.8,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-40d85ddcfbb9",
+          "title": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? - Kalkine Media",
+          "titleZh": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? - Kalkine Media",
+          "summary": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? Kalkine Media",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPckdONVVwdVJvWHppNnlQSHVLZXNlRmgyWUZLZzFTd05UUnN0M2diWE9XVG9tQjNud0ItY1h0aWZDdm8zQ0pTamI2M1hhRV9ucjN0VmpvbG1WWnd2OGVhSWI3OWhxTmtVNUcwLUVYQ29xeWxocXpnY2d6SGpEQXFnNTNCOS13OHoyU3RNa0tsX3dTcUF1cDVRdmltYWtuSVF3SVAzYVFB?oc=5",
+          "source": "Kalkine Media",
+          "publishedAt": "2026-11-17",
+          "lede": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? Kalkine Media",
+          "articleExcerpt": "Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? - Kalkine Media. Is Diamondback (NASDAQ:FANG) Teaming With KKR on Midland Assets? Kalkine Media",
+          "contentFingerprint": "3cb0dbf2d1e60c81",
+          "region": "US",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine Media"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 4.98,
+            "finalScore": 9.98,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-17-08d83f033078",
           "title": "Neuberger Berman’s investment head: ‘AI has peaked, the easy gains have been made’ - Business Post",
           "titleZh": "Neuberger Berman’s investment head: ‘AI has peaked, the easy gains have been made’ - Business Post",
@@ -223488,6 +225479,99 @@
           }
         },
         {
+          "id": "2026-11-17-8c8c02d7a9db",
+          "title": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart - Yahoo Finance UK",
+          "titleZh": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart - Yahoo Finance UK",
+          "summary": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE1rSzZGM05HT0ZadUw5SHdLWUNPbTVxek80eVVod1kxTk5VcjgwWUdOcjB2aGdVTmRjM2ZPVDFQaDBCbFZlclB0Q2pkR1I1TDE3bDZ3ZGJRdUMtSWIta2RjbDZlb1BKTHcybVB2c2QyVEU?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-17",
+          "lede": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart Yahoo Finance UK",
+          "articleExcerpt": "Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart - Yahoo Finance UK. Neuberger Berman Glb Eq Inc EUR1 I Acc (IE00B8HXKS57.IR) Seasonal returns chart Yahoo Finance UK",
+          "contentFingerprint": "4cef4946d310848f",
+          "region": "Europe",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 4.9,
+            "finalScore": 16.9,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-17-1202f905836c",
           "title": "Bain Capital-backed RSB Group to file IPO papers with SEBI in Dec; raises funds from institutional investors - Upstox",
           "titleZh": "Bain Capital-backed RSB Group to file IPO papers with SEBI in Dec; raises funds from institutional investors - Upstox",
@@ -223577,6 +225661,95 @@
             "keywordScore": 3,
             "semanticScore": 5.83,
             "finalScore": 8.83,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-d917c6424af7",
+          "title": "Bain Capital's 200% IRR years — and the building of Audax, from the inside - Dealroom",
+          "titleZh": "Bain Capital's 200% IRR years — and the building of Audax, from the inside - Dealroom",
+          "summary": "Bain Capital's 200% IRR years — and the building of Audax, from the inside Dealroom",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdEZXVGtJT2E3YVM3NmlMUlBGV2J2WXdNaTd3bndld2FvY0xKTWVWZkVCVVN2X2phZzEwaEVEOXpEcHkxVkd1ZnBMRm16c2FMRHdLbjVHNC1EeWJOSHRMR0lVRUR0MWdQTFdDQmpVMEpjbThaU2w5YklDdjN2ckY0MWI0SGpIT0o5Q2FNbEdzb2xhUjF1Uk5jRzFZRHNZaUxaM3V0WVBrVQ?oc=5",
+          "source": "Dealroom",
+          "publishedAt": "2026-11-17",
+          "lede": "Bain Capital's 200% IRR years — and the building of Audax, from the inside Dealroom",
+          "articleExcerpt": "Bain Capital's 200% IRR years — and the building of Audax, from the inside - Dealroom. Bain Capital's 200% IRR years — and the building of Audax, from the inside Dealroom",
+          "contentFingerprint": "215ccc4e4c5dc20a",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Dealroom"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.06,
+            "finalScore": 8.059999999999999,
             "semanticEnabled": true
           }
         },
@@ -224082,6 +226255,208 @@
             "keywordScore": 11,
             "semanticScore": 6.04,
             "finalScore": 17.04,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-e5dafaec12f5",
+          "title": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets - BigGo Finance",
+          "titleZh": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets - BigGo Finance",
+          "summary": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets BigGo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5RQ211MFNLYVM1bVF1RHMwSU80c3Z3bTJFcV9ENDdHTFRuTmhXOTJFWC1LLWd0ZHBmdmZOSGoxVkdoVkxGTmxqXzVvbnI0cDd0ZVhnaWZpNGNlUnRzY21uY0NlV3ZwMld2dTRJOHVVdTYzbmJMQlE?oc=5",
+          "source": "BigGo Finance",
+          "publishedAt": "2026-11-17",
+          "lede": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets BigGo Finance",
+          "articleExcerpt": "Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets - BigGo Finance. Apollo's Rowan Sees AI Buildout Demanding Up to $8 Trillion in Financing, Testing U.S. Credit Markets BigGo Finance",
+          "contentFingerprint": "65673e3369dc466c",
+          "region": "US",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.76,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.51
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "BigGo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 6.12,
+            "finalScore": 22.12,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-471e0a7fd7e1",
+          "title": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets - Benzinga",
+          "titleZh": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets - Benzinga",
+          "summary": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets Benzinga",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQ2ZJQXFLdGdsNkdWdXo2TWRTNEc5WWRfTkdGUUlZN3RadHR0cm1BckVSbERCczRXdnlPb2dVZTRvOGFVYmI0dUdpMEJyUFI0OVBucEhLYlNsYmRIRFdYVEtWaTlGRE5tdE1SZWxaZU5pSHdMcHkxUTFLODNTYmY3SC02Wk9aSkZRc2JRYjRCbTJtbnpIeDhnV29FaHVxanlLU1czQ2xTMVVtY3A1TGZxU1FBLXVUN2cydWlRbHZLZHlhYnpNNDZZRjBFbE1xaGZlNV9pUGdtS3V6emF2WXVWUjJfWDhfQW1pNzNB?oc=5",
+          "source": "Benzinga",
+          "publishedAt": "2026-11-17",
+          "lede": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets Benzinga",
+          "articleExcerpt": "Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets - Benzinga. Apollo CEO Marc Rowan Says AI Boom Could Require Up to $8 Trillion, Reshape US Credit Markets Benzinga",
+          "contentFingerprint": "d5df846123f70339",
+          "region": "US",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.7,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Benzinga"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 54,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 4.84,
+            "finalScore": 20.84,
             "semanticEnabled": true
           }
         },
@@ -224767,6 +227142,509 @@
           }
         },
         {
+          "id": "2026-11-17-00f5c4e56e97",
+          "title": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline - ChartMill",
+          "titleZh": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline - ChartMill",
+          "summary": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline ChartMill",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQam1FTU5ZNXl1Vk9kZGhMUGdlM1JPVUJ2cHc5Qm54TW9GWndMZlM1TVZHSnhGQ0ZKeXV0QXVpSkFWOEMxaGRVdkE3SkJWU252dTI2ZHAzVjlDTVBhbVpWZUFCSzhIRVBmMGpyQ0o2NElKR1d2NnFxSEtKMnAxd25kbVh0R1g1ckc4ZUlYcGhfel90cUlFcFQwZzg2dnNGVElkeU1hV2syOE93R25jOWhBVVJFa1NDSDlNX3JCUEZCZzlTQUgyS2pKSjVCZw?oc=5",
+          "source": "ChartMill",
+          "publishedAt": "2026-11-17",
+          "lede": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline ChartMill",
+          "articleExcerpt": "Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline - ChartMill. Golub Capital BDC (NASDAQ:GBDC) Slides After Mixed Q4 Revenue Miss and NAV Decline ChartMill",
+          "contentFingerprint": "a3368f47c245650f",
+          "region": "US",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ChartMill"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 57,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 6.38,
+            "finalScore": 22.38,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-c204b7d1736a",
+          "title": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates - Yahoo Finance",
+          "titleZh": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates - Yahoo Finance",
+          "summary": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPOTBFX3ZleWxIQUFaLWhOOUNDTDRhcWpGSmZvYXdGd0NHdWl4cTJpVDhQZnR2RlRZSEdFUVRma1Y5Q28tU2xlcW1GM0pBN1RKUEw0Wi1ieFlmVHZyZmU1U3YwT29NT25FT3NLcXRaTmZtQ3FLNWRYclV4UnVSSi1Cdkx2UTNKZ1R6NWdQNVNJMk1aV1Ez?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-17",
+          "lede": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates Yahoo Finance",
+          "articleExcerpt": "Golub Capital BDC (GBDC) Q4 Earnings Match Estimates - Yahoo Finance. Golub Capital BDC (GBDC) Q4 Earnings Match Estimates Yahoo Finance",
+          "contentFingerprint": "0146316256a70f09",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.49,
+            "finalScore": 20.490000000000002,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-b708e340ba2d",
+          "title": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results - Quantisnow",
+          "titleZh": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results - Quantisnow",
+          "summary": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results Quantisnow",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxPc1JvZHlUa2FCWTQ5NkVHNE9pdkU1S016QjZFeHR2c2tDRHNINXFCdGJzMHBTM1hReVNobEFQVHVmcnJUUkp1bWNsbUtBSTVrYUpHTE00eEc2bU9JR0J4cHBVRTJfSGthZVJibnZIRmlyOU5fWnZ4SVJ6eGNHQlJjcHZPeHFBUTlDNnA2a3JyTUF3ZGREUTZSOVk0THVRQjF6aEFva3R4UEwwQQ?oc=5",
+          "source": "Quantisnow",
+          "publishedAt": "2026-11-17",
+          "lede": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results Quantisnow",
+          "articleExcerpt": "Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results - Quantisnow. Golub Capital BDC, Inc. Announces Fiscal Year 2026 Fourth Quarter Financial Results Quantisnow",
+          "contentFingerprint": "8d8d5bba1e0263de",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Quantisnow"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.36,
+            "finalScore": 20.36,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-651ee064c2ab",
+          "title": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates - GuruFocus",
+          "titleZh": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates - GuruFocus",
+          "summary": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates GuruFocus",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxOR3dzbk9aeVVXM2RDZHhUSnlzOEdpZ1BtYUJ2dHRsTTVDZXVFZzFfeFNSbVRHaGd1WFBZMlRLZ2k5VlNCZGc4ZHJNSEdGNVdNX3pOVHhBU3lkYmw0S3BJUWp3NVdwX2NfcWpmOHVRTi00Tnktcjl5TUFwN1FMcXRGYTBVTE1xYVZnTU5oMHpaclFZR0VMZ1h5YTI4dzAtWW9WQUlDTXktWHlTc0Q3ZFlBVzhWWVN2bFpLeE01bW56SGM5VTQ?oc=5",
+          "source": "GuruFocus",
+          "publishedAt": "2026-11-17",
+          "lede": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates GuruFocus",
+          "articleExcerpt": "Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates - GuruFocus. Golub Capital BDC Inc Reports $0.08 EPS and $82.5 Million Revenue; Misses Analyst Estimates GuruFocus",
+          "contentFingerprint": "61182851522bced3",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "GuruFocus"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 57,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.36,
+            "finalScore": 20.36,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-65e05f4c0b8c",
+          "title": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot - KVUE",
+          "titleZh": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot - KVUE",
+          "summary": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot KVUE",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPRExRYllUXy1TLTdPVVZYcl9QcC1GcEZHR1EzQWFidlNlRG1uUjJQWXFJX3JKSUdYZjNUNFZ4ZDZIbENFLUtWRzNPTU9vWmhPR2xiODJmWC14cWFQVFp3bzdncFJxUzdQVjhIcFVoc05UYlpBLWFOMXY5cF9oMDFuUmgydjI3c3h6eXhLOUE5VzhrV3UtX0Z6Rk4ycVp5QXNRZDdkTmhTYnVFUzVNdl9Zb0VtcDlnbzU4a01wclJKdWZPRVZtOTNFbEZNR1p3UkFrUmROMWI3SEFqbXM?oc=5",
+          "source": "KVUE",
+          "publishedAt": "2026-11-17",
+          "lede": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot KVUE",
+          "articleExcerpt": "Golub Capital BDC: Fiscal Q4 Earnings Snapshot - KVUE. Golub Capital BDC: Fiscal Q4 Earnings Snapshot KVUE",
+          "contentFingerprint": "8b1d3d872f3287c3",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "KVUE"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 57,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.05,
+            "finalScore": 20.05,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-17-ce91e88a49be",
           "title": "Canada pension funds buy into €820M Cary Group as CVC exits - Dealroom",
           "titleZh": "Canada pension funds buy into €820M Cary Group as CVC exits - Dealroom",
@@ -225325,6 +228203,485 @@
             "finalScore": 7.69,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-17-4d2086c947a8",
+          "title": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital - TradingView",
+          "titleZh": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital - TradingView",
+          "summary": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxPSkNuLVFTOEVkWDRFVjNJcmw2WXJ6b2VYd1pvYVFrRWlGODV6azBrTlExZFRoWnFjMnROeXBxREZUbDFVdFJXdHpHQS1IQzc2SjU4dGxsdURlN0w4eGJTUUswTVRnME01S09NVER5d1FQekItSUZUNTJra0VZZUdocENNTlBzTFBDSFNIbkJtVVhKR2x3TlFrdmE4NzdPWUl2THJVUVYxUmZyeWxyTVY1N2Z4dkxWOFN2TThsdEo3Y0F3SmJUWnVwTXU3ejkzVTN1RHBJdDBISzdjWDFvSGdMREJR?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-17",
+          "lede": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital TradingView",
+          "articleExcerpt": "CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital - TradingView. CVC Sells Cary Group Stake in €3 Billion Deal to Canadian Pension Funds, Nordic Capital TradingView",
+          "contentFingerprint": "a170d026f2144364",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 73,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.48,
+            "finalScore": 8.48,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-0329e0ec2a74",
+          "title": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga - 懂球帝",
+          "titleZh": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga - 懂球帝",
+          "summary": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga 懂球帝",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFA2blhwTzVHc2pnZjlHN1ZoNU9QWEhzazlsYmk2U1dTMDIxUWlkUV9VZEpaLU1idGg1OGxMQlNYemJFYy1wSkxfdDJ4TDI4NVU?oc=5",
+          "source": "懂球帝",
+          "publishedAt": "2026-11-17",
+          "lede": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga 懂球帝",
+          "articleExcerpt": "Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga - 懂球帝. Real Madrid says Spain's Supreme Court backs club in CVC case against LaLiga 懂球帝",
+          "contentFingerprint": "02e7493906280f44",
+          "region": "Europe",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "lawsuit"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.18,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.37
+              },
+              "event": {
+                "value": 1.0,
+                "code": "lawsuit",
+                "ruleValue": 1.0,
+                "events": [
+                  "lawsuit"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "懂球帝"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 74,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 4,
+            "semanticScore": 4.41,
+            "finalScore": 8.41,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-6e6caed97970",
+          "title": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist - Law360",
+          "titleZh": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist - Law360",
+          "summary": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist Law360",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1Ob3JlZDdWbW00clc3ZUpJdGxYeV9rY3U2WUtaUzZKUkJlbUttd2RrdG5zS21wZkJxZUtLWFdOdXhwOHpoeXNZUnlaWkFqSEFtSjZwNnB30gFWQVVfeXFMTU5vcmVkN1ZtbTRyVzdlSkl0bFh5X2tjdTZZS1pTNkpSQmVtS213ZGt0bnNLbXBmQnFlS0tYV051eHA4emh5c1lSeVpaQWpIQW1KNnA2cHc?oc=5",
+          "source": "Law360",
+          "publishedAt": "2026-11-17",
+          "lede": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist Law360",
+          "articleExcerpt": "CVC Fund To Sell Stake In Swedish Glass Repairs Specialist - Law360. CVC Fund To Sell Stake In Swedish Glass Repairs Specialist Law360",
+          "contentFingerprint": "0a8004ad0a9fdbfc",
+          "region": "Global",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Law360"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.6
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.28,
+            "finalScore": 8.280000000000001,
+            "semanticEnabled": true
+          }
+        }
+      ]
+    },
+    "2026-11-18": {
+      "byGp": {
+        "Blue Owl": [],
+        "KKR": [],
+        "CIFC": [],
+        "PAG": [],
+        "Pretium": [],
+        "Guggenheim": [],
+        "Neuberger": [],
+        "BasePoint": [],
+        "Bain Capital": [
+          {
+            "id": "2026-11-18-aea43086d273",
+            "title": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de",
+            "titleZh": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de",
+            "summary": "Manappuram Finance stock: Bain Capital to take 18% stake ad-hoc-news.de",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc3VBTjlrWkVYaW00Njh6SHZERnA5TU42SEF6RTUwMF9RaTkwMGg3MzBHZEdBZjVJTUdCOVluQUpYQ24tcm45bVhXQkhUdkk1czQydGlrMW9fVDZhRW9LS25KQ20wV0VVS0QzeGQyRWN4bVZaT045UjNaeFRNWkNJOUluVlBTd1JoZzFCZ1Vaa1FFNHBFMnpHbU9iUkZCci1ldS1JUHJfbDRZMzhhVTUyS0dYUQ?oc=5",
+            "source": "ad-hoc-news.de",
+            "publishedAt": "2026-11-18",
+            "lede": "Manappuram Finance stock: Bain Capital to take 18% stake ad-hoc-news.de",
+            "articleExcerpt": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de. Manappuram Finance stock: Bain Capital to take 18% stake ad-hoc-news.de",
+            "contentFingerprint": "c097f18b6fc36b7f",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "ad-hoc-news.de"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 65,
+              "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.26,
+              "finalScore": 16.259999999999998,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Blackstone": [],
+        "Apollo": [],
+        "TPG": [],
+        "Golub": [],
+        "CVC": [],
+        "Canyon": []
+      },
+      "items": [
+        {
+          "id": "2026-11-18-aea43086d273",
+          "title": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de",
+          "titleZh": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de",
+          "summary": "Manappuram Finance stock: Bain Capital to take 18% stake ad-hoc-news.de",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQc3VBTjlrWkVYaW00Njh6SHZERnA5TU42SEF6RTUwMF9RaTkwMGg3MzBHZEdBZjVJTUdCOVluQUpYQ24tcm45bVhXQkhUdkk1czQydGlrMW9fVDZhRW9LS25KQ20wV0VVS0QzeGQyRWN4bVZaT045UjNaeFRNWkNJOUluVlBTd1JoZzFCZ1Vaa1FFNHBFMnpHbU9iUkZCci1ldS1JUHJfbDRZMzhhVTUyS0dYUQ?oc=5",
+          "source": "ad-hoc-news.de",
+          "publishedAt": "2026-11-18",
+          "lede": "Manappuram Finance stock: Bain Capital to take 18% stake ad-hoc-news.de",
+          "articleExcerpt": "Manappuram Finance stock: Bain Capital to take 18% stake - ad-hoc-news.de. Manappuram Finance stock: Bain Capital to take 18% stake ad-hoc-news.de",
+          "contentFingerprint": "c097f18b6fc36b7f",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "ad-hoc-news.de"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 65,
+            "retrievedAt": "2026-11-18T02:04:11.027894+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.26,
+            "finalScore": 16.259999999999998,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -225332,7 +228689,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 21,
+      "count": 25,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -225340,7 +228697,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
@@ -225353,7 +228710,7 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
@@ -225366,12 +228723,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 6,
+      "count": 7,
       "selected": 0,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -225379,7 +228736,7 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
@@ -225392,7 +228749,7 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
@@ -225405,20 +228762,20 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
       "count": 7,
-      "selected": 3,
+      "selected": 4,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
       "queries": [
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
@@ -225431,12 +228788,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 28,
+      "count": 24,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -225444,12 +228801,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 96,
+      "count": 99,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -225457,12 +228814,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 26,
+      "count": 24,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -225470,12 +228827,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 6,
+      "count": 7,
       "selected": 5,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -225483,25 +228840,25 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 8,
-      "selected": 4,
+      "count": 9,
+      "selected": 6,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
       "queries": [
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 20,
+      "count": 19,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -225509,7 +228866,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
@@ -225522,12 +228879,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 689,
+      "count": 720,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -225544,9 +228901,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-17T19:36:13.508356+00:00",
+      "asOf": "2026-11-18T02:04:11.027894+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-17T19:36:13.508356+00:00"
+  "checkedAt": "2026-11-18T02:04:11.027894+00:00"
 }
