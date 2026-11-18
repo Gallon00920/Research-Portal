@@ -19,6 +19,7 @@ import os
 import re
 import sys
 import textwrap
+import time
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -158,6 +159,13 @@ DEFAULT_CLAUDE_API_KEY_ENV = "ANTHROPIC_API_KEY"
 DEFAULT_CLAUDE_EFFORT = "low"
 DEFAULT_CLAUDE_MAX_TOKENS = 16000
 REFUSAL_FALLBACK_BETA = "server-side-fallback-2026-07-01"
+# Batch mode: classification, relevance judging and translation go through the Message
+# Batches API (half price; results usually within the hour, within 24 hours at most).
+DEFAULT_CLAUDE_BATCH_POLL_SECONDS = 30
+DEFAULT_CLAUDE_BATCH_TIMEOUT_MINUTES = 120
+BATCH_STATE_PATH = ROOT / "data" / ".claude_batches.json"  # batches submitted but not yet collected
+LOCK_PATH = ROOT / "data" / ".update_news.lock"  # one run at a time: a batch run can outlast the cron hour
+LOCK_STALE_SECONDS = 4 * 3600
 
 # Default GP aliases; config/news_sources.json `gpAliases` overrides this map.
 GP_ALIASES = {
@@ -343,6 +351,32 @@ MONTH_INDEX = {
 WARNED_KEYS: set[str] = set()
 
 
+def acquire_run_lock() -> bool:
+    """Take the run lock, or report that another run holds it. A lock older than
+    LOCK_STALE_SECONDS belongs to a run that was killed and is taken over."""
+    LOCK_PATH.parent.mkdir(parents=True, exist_ok=True)
+    for _attempt in range(2):
+        try:
+            fd = os.open(LOCK_PATH, os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+        except FileExistsError:
+            try:
+                age = time.time() - LOCK_PATH.stat().st_mtime
+            except FileNotFoundError:
+                continue
+            if age < LOCK_STALE_SECONDS:
+                return False
+            LOCK_PATH.unlink(missing_ok=True)
+            continue
+        with os.fdopen(fd, "w", encoding="utf-8") as fh:
+            fh.write(f"{os.getpid()} {dt.datetime.now(dt.timezone.utc).isoformat()}\n")
+        return True
+    return False
+
+
+def release_run_lock() -> None:
+    LOCK_PATH.unlink(missing_ok=True)
+
+
 def warn_once(key: str, message: str) -> None:
     if key in WARNED_KEYS:
         return
@@ -389,7 +423,13 @@ def main() -> int:
         print(f"Backfilled {changed} saved item(s) in {DATA_PATH}")
         return 0
 
-    result = update_news(args.date, dry_run=args.dry_run, recent_days=args.recent_days)
+    if not acquire_run_lock():
+        print(f"Another update_news.py run is in progress (lock {LOCK_PATH}); try again when it finishes.", file=sys.stderr)
+        return 2
+    try:
+        result = update_news(args.date, dry_run=args.dry_run, recent_days=args.recent_days)
+    finally:
+        release_run_lock()
     if args.dry_run:
         print(json.dumps(result["selectedByDate"], ensure_ascii=False, indent=2))
     else:
@@ -452,7 +492,7 @@ def update_news(date_key: str | None = None, dry_run: bool = False, recent_days:
     else:
         merge_digests_by_published_date(data, date_key, selected_by_date, retention_days)
     result["backfilledCount"] = backfill_saved_items(data, config)
-    # Every mode backfills translations and prunes, so the hourly run is self-sufficient.
+    # Every mode backfills translations and prunes, so the scheduled run is self-sufficient.
     result["translatedCount"] = translate_existing_chinese_summaries(data, translator)
     result["sanitizedCount"] = sanitize_saved_news(data)
     data["coverage"] = coverage
@@ -920,10 +960,29 @@ def select_items_by_gp(
     selected_by_gp = {}
     coverage: list[dict] = []
 
+    fetched: list[tuple[str, list[str], list[dict], dict]] = []
     for gp in gp_order:
         queries = gp_queries.get(gp) or [f"{gp} private credit"]
         stats: dict = {}
-        candidates = fetch_google_candidates(queries, lookback_days, stats)
+        fetched.append((gp, queries, fetch_google_candidates(queries, lookback_days, stats), stats))
+
+    general_stats: dict = {}
+    general_candidates = fetch_google_candidates(config.get("sourceQueries", []), lookback_days, general_stats)
+    general_candidates = merge_items(general_candidates, fetch_rss_candidates(config.get("rssFeeds", [])))
+    general_candidates = merge_items(general_candidates, fetch_html_candidates(config.get("htmlSources", [])))
+
+    # batch mode: every Claude question about the candidates is asked up front, one batch per stage
+    prefetch_claude_answers(
+        [candidates for _gp, _queries, candidates, _stats in fetched] + [general_candidates],
+        config,
+        date_key,
+        lookback_days,
+        semantic_scorer,
+        classifier,
+        recent_days=recent_days,
+    )
+
+    for gp, queries, candidates, stats in fetched:
         selected_by_gp[gp] = select_items(
             candidates,
             config,
@@ -950,10 +1009,6 @@ def select_items_by_gp(
             }
         )
 
-    general_stats: dict = {}
-    general_candidates = fetch_google_candidates(config.get("sourceQueries", []), lookback_days, general_stats)
-    general_candidates = merge_items(general_candidates, fetch_rss_candidates(config.get("rssFeeds", [])))
-    general_candidates = merge_items(general_candidates, fetch_html_candidates(config.get("htmlSources", [])))
     general_selected = select_items(
         general_candidates,
         config,
@@ -984,7 +1039,98 @@ def select_items_by_gp(
         }
     )
 
+    translate_selected(selected_by_gp, translator)
     return selected_by_gp, coverage
+
+
+def selection_window(date_key: str, lookback_days: int, recent_days: int | None) -> tuple[dt.date, dt.date]:
+    target_date = dt.date.fromisoformat(date_key)
+    cutoff = target_date - dt.timedelta(days=(recent_days or lookback_days) - 1)
+    return cutoff, target_date
+
+
+def prefetch_claude_answers(
+    candidate_lists: list[list[dict]],
+    config: dict,
+    date_key: str,
+    lookback_days: int,
+    semantic_scorer: "SemanticScorer | None",
+    classifier: "ArticleClassifier | None",
+    recent_days: int | None = None,
+) -> None:
+    """Batch mode: classify every candidate in the window in one Message Batch, then (with
+    the Claude relevance judge) rate every candidate in a second one, so that the per-item
+    scoring finds its answers ready. In synchronous mode this does nothing."""
+    judge = getattr(semantic_scorer, "backend", None) if semantic_scorer else None
+    llms = [classifier.llm if classifier else None, getattr(judge, "llm", None)]
+    if not any(llm is not None and llm.batch for llm in llms):
+        return
+    cutoff, target_date = selection_window(date_key, lookback_days, recent_days)
+    items: list[dict] = []
+    for candidates in candidate_lists:
+        for item in candidates:
+            published = dt.date.fromisoformat(item["publishedAt"])
+            if cutoff <= published <= target_date:
+                items.append(item)
+    if not items:
+        return
+    # the article text is fetched once per URL and kept on every copy of the candidate,
+    # so the prompts built here are the prompts the scoring builds later
+    texts: dict[str, str] = {}
+    for item in items:
+        if item.get("articleText"):
+            continue
+        key = normalize_url(item["url"])
+        if key not in texts:
+            texts[key] = fetch_article_text(item["url"])
+        item["articleText"] = texts[key]
+    print(f"Batch mode: {len(items)} candidate(s) in the window", file=sys.stderr, flush=True)
+    if classifier and classifier.llm.batch:
+        classifier.prefetch(items)
+    if semantic_scorer and judge is not None and getattr(judge, "llm", None) is not None and judge.llm.batch:
+        gp_order = config.get("gps") or list(GP_ALIASES)
+        aliases = gp_alias_map(config)
+        semantic_items = []
+        for item in items:
+            blob = f"{item['title']} {item.get('description', '')} {item.get('source', '')}".lower()
+            llm_classification = classifier.classify(item) if classifier else default_classification()
+            llm_gps = valid_ordered_labels(llm_classification.get("gps", []), gp_order)
+            semantic_item = dict(item)
+            semantic_item["gps"] = union_ordered(gp_order, match_terms(blob, aliases), llm_gps)
+            semantic_items.append(semantic_item)
+        semantic_scorer.prefetch(semantic_items)
+
+
+def translate_selected(selected_by_gp: dict[str, list[dict]], translator: "ChineseTranslator | None") -> None:
+    """Batch mode: the selected items were left untranslated by the scoring; translate them
+    now, in one batch. In synchronous mode the scoring translated them already."""
+    if not translator or not translator.deferred:
+        return
+    items: dict[int, dict] = {}
+    for selected in selected_by_gp.values():
+        for item in selected:
+            items.setdefault(id(item), item)
+    if not items:
+        return
+    bundles = {}
+    for item in items.values():
+        reason = item.get("classificationBreakdown", {}).get("llmReason", "")
+        bundles[id(item)] = (item.get("title", ""), item.get("summary", ""), reason)
+    translator.prefetch_bundles(list(bundles.values()))
+    for key, item in items.items():
+        apply_translation(item, translator.translate_bundle(*bundles[key]))
+
+
+def apply_translation(item: dict, bundle: dict) -> None:
+    item["titleZh"] = bundle["title"]
+    item["summaryZh"] = bundle["summary"]
+    item.setdefault("classificationBreakdown", {})["llmReasonZh"] = bundle["reason"]
+    # a title that comes back unchanged (a fund or product name) would otherwise be sent
+    # again on every run, since needs_chinese_title cannot tell it from an untranslated one
+    if bundle["summary"] != MISSING_ZH_SUMMARY and bundle["title"].strip() == (item.get("title") or "").strip():
+        item["titleZhKept"] = True
+    else:
+        item.pop("titleZhKept", None)
 
 
 def select_items(
@@ -1001,8 +1147,7 @@ def select_items(
     retrieved_at: dt.datetime | None = None,
 ) -> list[dict]:
     scored = []
-    target_date = dt.date.fromisoformat(date_key)
-    cutoff = target_date - dt.timedelta(days=(recent_days or lookback_days) - 1)
+    cutoff, target_date = selection_window(date_key, lookback_days, recent_days)
     for item in candidates:
         published = dt.date.fromisoformat(item["publishedAt"])
         if published < cutoff or published > target_date:
@@ -1735,11 +1880,26 @@ class ChineseTranslator:
             warn_once("translation_runtime", f"Warning: Chinese translation failed during runtime; using placeholders: {exc}")
             return MISSING_ZH_SUMMARY
 
+    @property
+    def deferred(self) -> bool:
+        """Batch mode: items are translated after selection, in one batch, not one by one."""
+        return self.llm.batch
+
+    @staticmethod
+    def bundle_prompt(title: str, summary: str, reason: str) -> str:
+        return TRANSLATION_BUNDLE_PROMPT.format(title=title, summary=summary or title, reason=reason or "n/a")
+
+    def prefetch_bundles(self, bundles: list[tuple[str, str, str]]) -> None:
+        self.llm.prefetch([self.bundle_prompt(*bundle) for bundle in bundles])
+
     def translate_bundle(self, title: str, summary: str, reason: str) -> dict:
         """Translate title, summary and selection reason in one call; falls back to English."""
         fallback = {"title": title, "summary": MISSING_ZH_SUMMARY, "reason": reason}
+        prompt = self.bundle_prompt(title, summary, reason)
+        if self.deferred and not self.llm.has(prompt):
+            return fallback  # translated later by translate_selected / translate_existing_chinese_summaries
         try:
-            content = self.llm.invoke(TRANSLATION_BUNDLE_PROMPT.format(title=title, summary=summary or title, reason=reason or "n/a"))
+            content = self.llm.invoke(prompt)
         except Exception as exc:
             warn_once("translation_runtime", f"Warning: Chinese translation failed during runtime; using placeholders: {exc}")
             return fallback
@@ -1762,15 +1922,21 @@ class ArticleClassifier:
         classification_config = config.get("classification", {})
         self.llm = make_claude_chat_model(claude_settings(config, classification_config), "GP and sector classification")
 
-    def classify(self, item: dict) -> dict:
-        article_body = document_for_semantic_scoring(item)
-        prompt = CLASSIFICATION_PROMPT.format(
+    def prompt_for(self, item: dict) -> str:
+        return CLASSIFICATION_PROMPT.format(
             gp_list="\n".join(f"- {gp}" for gp in self.config.get("gps", list(GP_ALIASES))),
             strategy_list=document_strategy_list(),
             bad_history_logs=format_golden_cases(self.golden_cases, limit=8),
             article_title=item.get("title", ""),
-            article_body=article_body,
+            article_body=document_for_semantic_scoring(item),
         )
+
+    def prefetch(self, items: list[dict]) -> None:
+        """Batch mode: classify all the items in one batch; `classify` then reads the answers."""
+        self.llm.prefetch([self.prompt_for(item) for item in items])
+
+    def classify(self, item: dict) -> dict:
+        prompt = self.prompt_for(item)
         try:
             content = self.llm.invoke(prompt)
         except Exception as exc:
@@ -1834,6 +2000,29 @@ class SemanticScorer:
             warn_once("semantic_score_runtime", f"Warning: semantic scoring failed during runtime; using keyword score only: {exc}")
             return 0
         return round(self.normalize_score(avg_raw), 2)
+
+    def prefetch(self, items: list[dict]) -> None:
+        """Batch mode with the Claude relevance judge: rate all the items in one batch."""
+        if not hasattr(self.backend, "prefetch"):
+            return
+        pairs = []
+        for item in items:
+            document = document_for_semantic_scoring(item)
+            if not document:
+                continue
+            try:
+                queries = self.queries_for_gps(item.get("gps") or [])
+            except Exception as exc:
+                self.failed = True
+                warn_once("semantic_query_runtime", f"Warning: semantic query generation failed during runtime; using keyword score only: {exc}")
+                return
+            if queries:
+                pairs.append((queries, document))
+        try:
+            self.backend.prefetch(pairs)
+        except Exception as exc:
+            self.failed = True
+            warn_once("semantic_score_runtime", f"Warning: semantic scoring failed during runtime; using keyword score only: {exc}")
 
     def normalize_score(self, raw_score: float) -> float:
         raw_min = float(getattr(self.backend, "raw_min", self.semantic_config.get("rawScoreMin", 0)))
@@ -1924,7 +2113,23 @@ def claude_settings(config: dict, section: dict | None = None) -> dict:
         "effort": section.get("claudeEffort") or base.get("effort") or DEFAULT_CLAUDE_EFFORT,
         "maxTokens": int(section.get("claudeMaxTokens") or base.get("maxTokens") or DEFAULT_CLAUDE_MAX_TOKENS),
         "refusalFallback": bool(base.get("refusalFallback", True)),
+        # CLAUDE_BATCH=0/1 in the environment overrides the config for one run (the GitHub
+        # workflow sets 0: a runner waiting on a batch burns Actions minutes)
+        "batch": claude_batch_enabled(base, section),
+        "batchPollSeconds": int(base.get("batchPollSeconds") or DEFAULT_CLAUDE_BATCH_POLL_SECONDS),
+        "batchTimeoutMinutes": int(base.get("batchTimeoutMinutes") or DEFAULT_CLAUDE_BATCH_TIMEOUT_MINUTES),
     }
+
+
+def claude_batch_enabled(base: dict, section: dict) -> bool:
+    override = os.environ.get("CLAUDE_BATCH", "").strip().lower()
+    if override in {"0", "false", "no", "off"}:
+        return False
+    if override in {"1", "true", "yes", "on"}:
+        return True
+    if "claudeBatch" in section:
+        return bool(section["claudeBatch"])
+    return bool(base.get("batch", False))
 
 
 def make_claude_chat_model(settings: dict, purpose: str) -> "ClaudeChat":
@@ -1950,14 +2155,49 @@ class ClaudeChat:
         self.max_tokens = settings["maxTokens"]
         self.refusal_fallback = settings["refusalFallback"]
         self.purpose = purpose
+        self.batch = bool(settings.get("batch"))
+        self.poll_seconds = int(settings.get("batchPollSeconds") or DEFAULT_CLAUDE_BATCH_POLL_SECONDS)
+        self.timeout_seconds = int(settings.get("batchTimeoutMinutes") or DEFAULT_CLAUDE_BATCH_TIMEOUT_MINUTES) * 60
+        # answers a batch produced, by prompt; an Exception records a failed request
+        self._answers: dict[str, str | Exception] = {}
 
-    def invoke(self, prompt: str) -> str:
-        request = {
+    def params(self, prompt: str) -> dict:
+        return {
             "model": self.model,
             "max_tokens": self.max_tokens,
             "output_config": {"effort": self.effort},
             "messages": [{"role": "user", "content": prompt}],
         }
+
+    def has(self, prompt: str) -> bool:
+        return prompt in self._answers
+
+    def prefetch(self, prompts: list[str]) -> None:
+        """Batch mode: answer every prompt not answered yet in one Message Batch, at half
+        the price of single requests; `invoke` then returns the answers. Synchronous mode:
+        nothing to do, `invoke` asks each question when it comes."""
+        if not self.batch:
+            return
+        pending = [prompt for prompt in dict.fromkeys(prompts) if prompt not in self._answers]
+        if not pending:
+            return
+        outcomes = run_message_batch(self.client, [self.params(prompt) for prompt in pending], self.purpose, self.poll_seconds, self.timeout_seconds)
+        for prompt, outcome in zip(pending, outcomes):
+            if isinstance(outcome, Exception):
+                self._answers[prompt] = outcome
+            else:
+                try:
+                    self._answers[prompt] = self.text_of(outcome)
+                except Exception as exc:  # noqa: BLE001  (refusal, empty reply)
+                    self._answers[prompt] = exc
+
+    def invoke(self, prompt: str) -> str:
+        answer = self._answers.get(prompt)
+        if answer is not None:
+            if isinstance(answer, Exception):
+                raise answer
+            return answer
+        request = self.params(prompt)
         if self.refusal_fallback:
             # Server-side refusal fallback: if the safety classifier declines, the API
             # re-runs the same request on a fallback model inside the same call.
@@ -1968,7 +2208,9 @@ class ClaudeChat:
             )
         else:
             response = self.client.messages.create(**request)
+        return self.text_of(response)
 
+    def text_of(self, response) -> str:
         if response.stop_reason == "refusal":
             details = getattr(response, "stop_details", None)
             explanation = getattr(details, "explanation", "") if details else ""
@@ -1979,31 +2221,123 @@ class ClaudeChat:
         return text
 
 
+def run_message_batch(client, params_list: list[dict], purpose: str, poll_seconds: int, timeout_seconds: int) -> list:
+    """Submit the requests as one Message Batch, wait for it and return one outcome per
+    request, in order: the Message, or an Exception for a request that failed.
+
+    A batch is remembered in BATCH_STATE_PATH until its results are collected, so a run
+    that is killed while waiting (timeout, server restart) does not pay for the same
+    questions twice: the next run with the same questions resumes the batch instead.
+    """
+    key = hashlib.sha1(json.dumps(params_list, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()
+    state = load_batch_state()
+    batch = None
+    if key in state:
+        try:
+            batch = client.messages.batches.retrieve(state[key]["id"])
+            print(f"Claude batch {batch.id}: resuming {len(params_list)} {purpose} request(s) submitted {state[key]['submittedAt']}", file=sys.stderr, flush=True)
+        except Exception as exc:  # noqa: BLE001  (expired, deleted, network)
+            print(f"Claude batch {state[key]['id']} cannot be resumed ({exc}); submitting again", file=sys.stderr, flush=True)
+            batch = None
+    if batch is None:
+        requests = [{"custom_id": f"r{index}", "params": params} for index, params in enumerate(params_list)]
+        batch = client.messages.batches.create(requests=requests)
+        state[key] = {"id": batch.id, "purpose": purpose, "submittedAt": dt.datetime.now(dt.timezone.utc).isoformat(), "requests": len(params_list)}
+        save_batch_state(state)
+        print(f"Claude batch {batch.id}: {len(params_list)} {purpose} request(s) submitted", file=sys.stderr, flush=True)
+
+    started = time.monotonic()
+    last_report = (None, started)
+    while batch.processing_status != "ended":
+        if time.monotonic() - started > timeout_seconds:
+            raise RuntimeError(
+                f"Claude batch {batch.id} ({purpose}) did not finish within {timeout_seconds // 60} minutes; "
+                "the next run resumes it"
+            )
+        time.sleep(poll_seconds)
+        batch = client.messages.batches.retrieve(batch.id)
+        counts = batch.request_counts
+        progress = (counts.processing, counts.succeeded, counts.errored)
+        # a log line when the counts move, and every five minutes while they do not
+        if progress != last_report[0] or time.monotonic() - last_report[1] >= 300:
+            last_report = (progress, time.monotonic())
+            print(
+                f"Claude batch {batch.id}: {counts.processing} processing, {counts.succeeded} succeeded, "
+                f"{counts.errored} errored ({(time.monotonic() - started) / 60:.0f} min)",
+                file=sys.stderr,
+                flush=True,
+            )
+
+    outcomes: list = [RuntimeError(f"Claude batch {batch.id} returned no result for the {purpose} request")] * len(params_list)
+    for result in client.messages.batches.results(batch.id):
+        try:
+            index = int(result.custom_id[1:])
+        except (TypeError, ValueError):
+            continue
+        if not 0 <= index < len(params_list):
+            continue
+        kind = result.result.type
+        if kind == "succeeded":
+            outcomes[index] = result.result.message
+        elif kind == "errored":
+            error = getattr(result.result, "error", None)
+            detail = getattr(error, "type", "") or getattr(getattr(error, "error", None), "type", "") or "error"
+            outcomes[index] = RuntimeError(f"Claude batch request failed ({detail}) for {purpose}")
+        else:
+            outcomes[index] = RuntimeError(f"Claude batch request {kind} for {purpose}")
+    state = load_batch_state()
+    state.pop(key, None)
+    save_batch_state(state)
+    return outcomes
+
+
+def load_batch_state() -> dict:
+    if not BATCH_STATE_PATH.exists():
+        return {}
+    try:
+        state = json.loads(BATCH_STATE_PATH.read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return {}
+    return state if isinstance(state, dict) else {}
+
+
+def save_batch_state(state: dict) -> None:
+    BATCH_STATE_PATH.parent.mkdir(parents=True, exist_ok=True)
+    if state:
+        BATCH_STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    else:
+        BATCH_STATE_PATH.unlink(missing_ok=True)
+
+
 def translate_existing_chinese_summaries(data: dict, translator: "ChineseTranslator | None") -> int:
     if not translator:
         return 0
-    changed = 0
-    translated_by_key: dict[str, dict] = {}
+    bundles: dict[str, tuple[str, str, str]] = {}
+    targets: list[tuple[str, dict]] = []
     for date_digest in data.get("dates", {}).values():
         for item in iter_digest_items(date_digest):
             if not needs_chinese_summary(item, translator.target_language) and not needs_chinese_title(item):
                 continue
             key = item.get("id") or item.get("url") or item.get("summary")
-            if key not in translated_by_key:
+            if key not in bundles:
                 reason = item.get("classificationBreakdown", {}).get("llmReason", "")
-                translated_by_key[key] = translator.translate_bundle(item.get("title", ""), item.get("summary", ""), reason)
-            bundle = translated_by_key[key]
-            item["titleZh"] = bundle["title"]
-            item["summaryZh"] = bundle["summary"]
-            item["summaryZhLanguage"] = translator.target_language
-            item.setdefault("classificationBreakdown", {})["llmReasonZh"] = bundle["reason"]
-            changed += 1
-    return changed
+                bundles[key] = (item.get("title", ""), item.get("summary", ""), reason)
+            targets.append((key, item))
+    if not targets:
+        return 0
+    translator.prefetch_bundles(list(bundles.values()))  # batch mode: one batch for all of them
+    translated_by_key = {key: translator.translate_bundle(*bundle) for key, bundle in bundles.items()}
+    for key, item in targets:
+        apply_translation(item, translated_by_key[key])
+        item["summaryZhLanguage"] = translator.target_language
+    return len(targets)
 
 
 def needs_chinese_title(item: dict) -> bool:
     title = (item.get("title") or "").strip()
     title_zh = (item.get("titleZh") or "").strip()
+    if item.get("titleZhKept"):
+        return False  # Claude kept the title as it is (a fund or product name): not asked again
     return bool(title) and (not title_zh or title_zh == title)
 
 
@@ -2117,9 +2451,16 @@ class ClaudeRelevanceBackend:
     def score(self, query: str, document: str) -> float:
         return self.score_many([query], document)
 
-    def score_many(self, queries: list[str], document: str) -> float:
+    @staticmethod
+    def prompt_for(queries: list[str], document: str) -> str:
         examples = "\n".join(f"{index}. {query}" for index, query in enumerate(queries, start=1))
-        content = self.llm.invoke(RELEVANCE_PROMPT.format(examples=examples, document=document))
+        return RELEVANCE_PROMPT.format(examples=examples, document=document)
+
+    def prefetch(self, pairs: list[tuple[list[str], str]]) -> None:
+        self.llm.prefetch([self.prompt_for(queries, document) for queries, document in pairs])
+
+    def score_many(self, queries: list[str], document: str) -> float:
+        content = self.llm.invoke(self.prompt_for(queries, document))
         payload = parse_json_object(content)
         try:
             score = float(payload.get("score", 0))

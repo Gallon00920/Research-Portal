@@ -8,7 +8,10 @@
     "apiKeyEnv": "ANTHROPIC_API_KEY",
     "effort": "low",
     "maxTokens": 16000,
-    "refusalFallback": true
+    "refusalFallback": true,
+    "batch": true,
+    "batchPollSeconds": 30,
+    "batchTimeoutMinutes": 120
   },
   "classification": {
     "enabled": true

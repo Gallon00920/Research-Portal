@@ -343,7 +343,7 @@ under `news/`:
   `news/data/news.json`. `news/README.md` and `news/docs/news_methodology.md`
   describe the method; `news/config/news_sources.json` holds the sources,
   aliases and weights.
-- `.github/workflows/update-news.yml` runs that script every hour (or on
+- `.github/workflows/update-news.yml` runs that script every two hours (or on
   demand with the "Refresh news" button in the tab), commits the new data and
   dispatches `build-deploy.yml` so GitHub Pages serves it. It needs two
   repository secrets: `ANTHROPIC_API_KEY` (required) and `HF_TOKEN`
@@ -362,8 +362,23 @@ at `GET /api/news/refresh`) and reloads the data when it finishes; on the
 static site it dispatches the workflow and asks for a fine-grained token
 with *Actions: read and write* on this repository, kept in the browser only.
 On a server, a cron line such as
-`7 * * * * cd /path/to/Research-Portal && .venv/bin/python news/scripts/update_news.py --recent-days 3`
-gives the hourly refresh that the workflow provides on GitHub.
+`7 */2 * * * cd /path/to/Research-Portal && .venv/bin/python news/scripts/update_news.py --recent-days 3`
+gives the two-hourly refresh that the workflow provides on GitHub.
+
+The updater's Claude calls (classification, the relevance judge when ColBERT
+is unavailable, translation) run in batch mode when `claude.batch` is true in
+`news/config/news_sources.json`: every question about the fetched candidates
+goes to the Message Batches API in one batch per stage, at half the price of
+single requests. A batch usually finishes within the hour (24 hours at most),
+so a run takes longer than in synchronous mode; `batchPollSeconds` and
+`batchTimeoutMinutes` set the polling and the wait. A batch that is still
+running when the wait ends is remembered in `news/data/.claude_batches.json`
+and resumed by the next run with the same questions, and
+`news/data/.update_news.lock` keeps two runs from overlapping (a cron tick
+during a long run exits with "Another update_news.py run is in progress").
+`CLAUDE_BATCH=0` or `1` in the environment overrides the setting for one run;
+the GitHub workflow sets 0 so a runner never waits on a batch. The HyDE query
+generation stays a single request (cached in `semantic_queries.json`).
 
 ## Investment performance
 
@@ -509,7 +524,7 @@ panel/                       the research panel
 news/                        the News tracker
   web/news.js, news.css      the view (module + scoped styles)
   scripts/, config/, docs/   news updater pipeline, its sources / weights, method
-  data/news.json             news data (committed hourly by update-news.yml)
+  data/news.json             news data (committed every two hours by update-news.yml)
 factors/                     Investment performance (fund key factors)
   web/factors.js, factors.css  the view: sub-tabs, month picker, charts, table, upload
   scripts/extract_factors.py   image -> Claude -> checked data

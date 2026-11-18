@@ -4,3 +4,5 @@ server.*.log
 site/
 panel/data/_tmp/
 panel/data/ai_jobs/
+news/data/.update_news.lock
+news/data/.claude_batches.json

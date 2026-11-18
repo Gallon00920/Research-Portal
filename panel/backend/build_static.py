@@ -377,7 +377,7 @@ def build_site(out: Path, c: Crypto, repo: str, branch: str):
         f = DATA / name
         if f.exists():
             shutil.copy(f, out / "data" / name)
-    # news tracker data, written hourly by news/scripts/update_news.py (served plain, never encrypted)
+    # news tracker data, written every two hours by news/scripts/update_news.py (served plain, never encrypted)
     if NEWS_DATA.exists():
         shutil.copy(NEWS_DATA, out / "data" / "news.json")
     # fund key factors: monthly data + source images. They have no encrypted form, so an

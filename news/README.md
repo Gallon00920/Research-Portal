@@ -27,7 +27,7 @@ To preview without writing:
 python3 scripts/update_news.py --dry-run
 ```
 
-For the hourly recent-window update:
+For the scheduled (two-hourly) recent-window update:
 
 ```bash
 python3 scripts/update_news.py --recent-days 3
@@ -79,10 +79,10 @@ The page reads `data/news.json` only; every filter, weight and sort runs in the 
 
 The public site is intended to stay fully static. News updates are handled by `.github/workflows/update-news.yml`, which runs the Python updater in GitHub Actions and commits changed JSON data back to the repository.
 
-- Hourly: runs `python3 scripts/update_news.py --recent-days 3`. This fetches current sources, admits only articles whose `publishedAt` date is within the latest three calendar days, dedupes by normalized URL, classifies, scores, translates, and merges only into those recent date buckets. Every run also backfills saved items that predate the current schema, translates any saved item still missing a Chinese title or summary, and prunes dates outside the 90-day window.
+- Every two hours: runs `python3 scripts/update_news.py --recent-days 3`. This fetches current sources, admits only articles whose `publishedAt` date is within the latest three calendar days, dedupes by normalized URL, classifies, scores, translates, and merges only into those recent date buckets. Every run also backfills saved items that predate the current schema, translates any saved item still missing a Chinese title or summary, and prunes dates outside the 90-day window.
 - Today refresh: the dashboard's `Refresh news` button dispatches the workflow with mode `today`, which runs `python3 scripts/update_news.py --recent-days 1`. The same mode can be started by hand from the Actions page with `Run workflow`.
 - There is no full 90-day mode in the workflow any more. A full-window run is still possible locally with `python3 scripts/update_news.py` if you ever need to re-fetch the whole archive.
-- GitHub Actions uses `concurrency.cancel-in-progress: false`, so a today run does not cancel or overwrite the automatic hourly recent-window job. If another refresh is already running, GitHub queues the next run; the dashboard keeps polling until its run completes.
+- GitHub Actions uses `concurrency.cancel-in-progress: false`, so a today run does not cancel or overwrite the automatic two-hourly recent-window job. If another refresh is already running, GitHub queues the next run; the dashboard keeps polling until its run completes.
 - The workflow uses repository secrets named `ANTHROPIC_API_KEY` and optional `HF_TOKEN`.
 - Cloudflare Pages, GitHub Pages, or another static host can redeploy automatically from GitHub after the workflow commits changed `data/news.json` or `data/semantic_queries.json`.
 

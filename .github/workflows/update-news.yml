@@ -1,6 +1,6 @@
 name: Update news tracker
 
-# Hourly refresh of the Credit News Radar data (news/data/news.json). The updater lives
+# Two-hourly refresh of the Credit News Radar data (news/data/news.json). The updater lives
 # under news/ and is unchanged from the standalone Credit_bearing_news_updater repository.
 # After committing new data it dispatches build-deploy.yml so GitHub Pages picks it up
 # (a push made with GITHUB_TOKEN does not trigger other workflows by itself).
@@ -17,7 +17,7 @@ on:
           - today
           - recent
   schedule:
-    - cron: "0 * * * *"
+    - cron: "0 */2 * * *"
 
 permissions:
   contents: write
@@ -33,6 +33,8 @@ jobs:
     env:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      # single requests here: a runner waiting on a Message Batch would burn Actions minutes
+      CLAUDE_BATCH: "0"
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -83,7 +85,7 @@ jobs:
             echo "No news data changes to commit."
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "news: hourly data update [skip ci]"
+            git commit -m "news: scheduled data update [skip ci]"
             # the report build may push to main at the same time: rebase and retry
             for i in 1 2 3; do
               git push origin HEAD:main && break

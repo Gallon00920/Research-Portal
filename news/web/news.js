@@ -21,6 +21,7 @@ const RUN_POLL_MS = 20000;
 const SERVER_REFRESH_URL = "api/news/refresh"; // served by panel/backend/server.py; absent on the static site
 const SERVER_POLL_MS = 5000;
 const RUN_TIMEOUT_MS = 40 * 60 * 1000;
+const SERVER_RUN_TIMEOUT_MS = 150 * 60 * 1000; // the server's updater batches its Claude calls: usually under an hour
 const DEPLOY_POLL_MS = 15000;
 const DEPLOY_TIMEOUT_MS = 12 * 60 * 1000;
 const STORAGE = {
@@ -149,12 +150,12 @@ const UI = {
     firmStorageFail: "Browser storage unavailable; the institution is kept for this page only.",
     firmReadFail: "The institution list in this browser could not be read; add them again.",
     coverageNotes: "COVERAGE NOTES",
-    coverageNoteA: "Public news · English first\nHourly pipeline · Claude classification",
+    coverageNoteA: "Public news · English first\nTwo-hourly pipeline · Claude classification",
     coverageNoteB: "Blue Owl incl. Dyal\nTPG incl. Angelo Gordon",
     githubSettingsButton: "GitHub connection",
     githubEyebrow: "Live refresh",
     githubTitle: "Connect GitHub to refresh today's news",
-    githubIntro: "Refreshing runs the updater in GitHub Actions for today's news (fetch, Claude classification, semantic scoring, translation) and reloads the page when the new data is deployed. The hourly automatic update keeps running on its own.",
+    githubIntro: "Refreshing runs the updater in GitHub Actions for today's news (fetch, Claude classification, semantic scoring, translation) and reloads the page when the new data is deployed. The automatic update every two hours keeps running on its own.",
     githubSteps: "Create a fine-grained personal access token on GitHub limited to this repository with Actions permission set to Read and write, then paste it below. It is stored only in this browser.",
     githubTokenLabel: "GitHub token",
     githubTokenSaved: "A token is saved in this browser. Leave the field empty to keep it.",
@@ -354,12 +355,12 @@ const UI = {
     firmStorageFail: "浏览器存储不可用，新增机构仅在本次页面中保留。",
     firmReadFail: "浏览器中的机构列表无法读取，可重新新增。",
     coverageNotes: "COVERAGE NOTES",
-    coverageNoteA: "公开新闻 · 英文优先\n每小时更新 · Claude 分类",
+    coverageNoteA: "公开新闻 · 英文优先\n每两小时更新 · Claude 分类",
     coverageNoteB: "Blue Owl 含 Dyal\nTPG 含 Angelo Gordon",
     githubSettingsButton: "GitHub 连接",
     githubEyebrow: "实时刷新",
     githubTitle: "连接 GitHub 以刷新今日新闻",
-    githubIntro: "刷新会在 GitHub Actions 中运行今日新闻更新（抓取、Claude 分类、语义评分、翻译），并在新数据部署后自动重新加载页面。每小时的自动更新照常运行。",
+    githubIntro: "刷新会在 GitHub Actions 中运行今日新闻更新（抓取、Claude 分类、语义评分、翻译），并在新数据部署后自动重新加载页面。每两小时的自动更新照常运行。",
     githubSteps: "在 GitHub 创建一个仅限本仓库、Actions 权限为 Read and write 的 fine-grained personal access token，粘贴到下方。令牌只保存在当前浏览器。",
     githubTokenLabel: "GitHub 令牌",
     githubTokenSaved: "当前浏览器已保存令牌；留空即沿用。",
@@ -1931,7 +1932,7 @@ async function startServerRefresh() {
     if (!start.ok) throw new Error(t().refreshServerError(`HTTP ${start.status}`));
     setRefresh({ phase: "running" });
     let job = await start.json();
-    const deadline = startedAt + RUN_TIMEOUT_MS;
+    const deadline = startedAt + SERVER_RUN_TIMEOUT_MS;
     while (job.state === "running" && Date.now() < deadline) {
       await sleep(SERVER_POLL_MS);
       try {

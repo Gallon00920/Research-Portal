@@ -643,7 +643,7 @@ def news_data():
 # dispatching the GitHub workflow, which only the static site needs. One run at a time; the
 # script inherits this process's environment (ANTHROPIC_API_KEY, HF_TOKEN) and interpreter.
 NEWS_SCRIPT = REPO / "news" / "scripts" / "update_news.py"
-NEWS_REFRESH_TIMEOUT = 40 * 60
+NEWS_REFRESH_TIMEOUT = 150 * 60  # batch mode waits on Claude's Message Batches (usually under an hour)
 _news_lock = threading.Lock()
 _news_job: dict[str, Any] = {"state": "idle"}
 
