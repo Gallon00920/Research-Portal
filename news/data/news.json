@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-19T14:59:57.218876+00:00",
+  "updatedAt": "2026-11-19T23:01:22.297674+00:00",
   "scope": {
     "regions": [
       "US",
@@ -232316,6 +232316,192 @@
               "finalScore": 15.120000000000001,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-9a35d4ae6a26",
+            "title": "KKR Income Opportunities Fund (KIO) Seasonal returns chart - Yahoo Finance UK",
+            "titleZh": "KKR Income Opportunities Fund (KIO) Seasonal returns chart - Yahoo Finance UK",
+            "summary": "KKR Income Opportunities Fund (KIO) Seasonal returns chart Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90a24tUGoyamdIY20xaG8zSldWOXQ0ZGdUWW5ZNmtKbGxDb2JUOFFUR0RyUlQ1UUFrQXo1dE5mazVxcXRucXpaOURBLTJ0TlBreFNuVWJIRk4zY3ZLX19ldg?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-18",
+            "lede": "KKR Income Opportunities Fund (KIO) Seasonal returns chart Yahoo Finance UK",
+            "articleExcerpt": "KKR Income Opportunities Fund (KIO) Seasonal returns chart - Yahoo Finance UK. KKR Income Opportunities Fund (KIO) Seasonal returns chart Yahoo Finance UK",
+            "contentFingerprint": "b5b633160cbecc9f",
+            "region": "Europe",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.5,
+              "finalScore": 17.5,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-96741e07ff4a",
+            "title": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart - Yahoo Finance UK",
+            "titleZh": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart - Yahoo Finance UK",
+            "summary": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TTXJBemdRajFxRVNoRUhEN2EtUjI1c3VFVkRnaEdiZ2hOLUIwZzgzdkpVTndzWUNmZTYzaWxJT1hRZVMtQURMSFNtQnlPQi0wZV9UWjllVXlaaE9yOHpEcG1PREhYaTQzSnVLcw?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-18",
+            "lede": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart Yahoo Finance UK",
+            "articleExcerpt": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart - Yahoo Finance UK. KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart Yahoo Finance UK",
+            "contentFingerprint": "ecf9bbe0855dea55",
+            "region": "Europe",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.41
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 43,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 4.9,
+              "finalScore": 16.9,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -233571,23 +233757,116 @@
               "finalScore": 16.19,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-d22ebaad4790",
+            "title": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership - Yahoo Finance",
+            "titleZh": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership - Yahoo Finance",
+            "summary": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOWtaTVBqSjNYSElFSVJrRG9rYVkyTF9OWW9rWkNjTGhPWFI5amJTTzZ3NXltN1I1Z3E4blVPR2NYdTU1RDlBMm9mc2p2V3A1U0I5RV9XY3cyWDFBTk9TMUdPS1pFZng1cUFnOG4yazZVcUxReHBQWHZNcDU0ZlM3SzR5LTNsN1FxMlowVEc1TzJ5dkhySWc?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-18",
+            "lede": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership Yahoo Finance",
+            "articleExcerpt": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership - Yahoo Finance. Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership Yahoo Finance",
+            "contentFingerprint": "246af3e454b0714b",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.51
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.14,
+              "finalScore": 17.14,
+              "semanticEnabled": true
+            }
           }
         ],
         "TPG": [
           {
-            "id": "2026-11-18-4691a74a5842",
-            "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-            "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-            "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "id": "2026-11-18-455662ef1bbf",
+            "title": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+            "titleZh": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+            "summary": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
             "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
             "summaryZhLanguage": "",
-            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
-            "source": "Yahoo! Finance Canada",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfT3RNMUtiQXFvdVpLMVRiWnFQclU0c0hQSmVtd2ViU2dNTFpUelhwQ01oRnpnNVMtRWw1aWdKOEFnQy1jejlMajd3WDE5OFJr?oc=5",
+            "source": "Yahoo Finance UK",
             "publishedAt": "2026-11-18",
-            "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
-            "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
-            "contentFingerprint": "739305dd4df461e1",
-            "region": "Global",
+            "lede": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+            "articleExcerpt": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK. TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+            "contentFingerprint": "c23439475bf488e6",
+            "region": "Europe",
             "gps": [
               "TPG"
             ],
@@ -233629,7 +233908,7 @@
                   "code": "no_strategy",
                   "tagValue": 0.0,
                   "strategies": [],
-                  "semanticValue": 0.46
+                  "semanticValue": 0.45
                 },
                 "event": {
                   "value": 0.15,
@@ -233642,12 +233921,112 @@
                 "source": {
                   "value": 0.25,
                   "code": "tier_aggregator",
-                  "source": "Yahoo! Finance Canada"
+                  "source": "Yahoo Finance UK"
                 },
                 "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 44,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.44,
+              "finalScore": 17.44,
+              "semanticEnabled": true
+            },
+            "alternateSources": [
+              {
+                "source": "Yahoo! Finance Canada",
+                "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+                "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada"
+              }
+            ]
+          },
+          {
+            "id": "2026-11-18-afc771c00eb6",
+            "title": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News",
+            "titleZh": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News",
+            "summary": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPVlRmNk9JTFJFNnlRbXlPYTVMM3JKdTZ0ZlVYdDZhVVBITHFicmMybURDNXpQR1JOOEVXakczaGNDVnZ2MXozY1Q0Z29ZTDRqNUNfNS1FQm0tRGl3cVRXRy1HV3BkME9JUEN3Q1B1STBHS0Q2VjhPY2UzdXE3Y1R4N2F1b210Z0FZVVU0b2hVVk9yZW1GY3pGbVItMWdWQnBhY3lZdTJzYVRCUDAxSXZ0UkJZS3h5ZUFfcEFhY0I4SUFOa2NYNVhWcm05RDlXZzZwZTUzQXctNDUweUxCWHFOYXlLTUhpbWsySWdwY1hubHBiWmNiSDJfa1ZCTTdmdE1GY3BvOFRRNA?oc=5",
+            "source": "AltAssets Private Equity News",
+            "publishedAt": "2026-11-18",
+            "lede": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+            "articleExcerpt": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News. CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+            "contentFingerprint": "cc7e4ebfc6fd939a",
+            "region": "Global",
+            "gps": [
+              "TPG",
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG",
+                "CVC"
+              ],
+              "titleGps": [
+                "TPG",
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
                   "value": 1.0,
-                  "code": "within_24h",
-                  "days": 0.2
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG",
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "AltAssets Private Equity News"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
                 }
               },
               "weights": {
@@ -233658,12 +234037,12 @@
                 "freshness": 15
               },
               "score": 47,
-              "retrievedAt": "2026-11-18T16:51:16.034080+00:00"
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
             },
             "scoreBreakdown": {
-              "keywordScore": 11,
-              "semanticScore": 5.47,
-              "finalScore": 16.47,
+              "keywordScore": 7,
+              "semanticScore": 5.09,
+              "finalScore": 12.09,
               "semanticEnabled": true
             }
           }
@@ -233873,6 +234252,99 @@
           }
         ],
         "CVC": [
+          {
+            "id": "2026-11-18-afc771c00eb6",
+            "title": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News",
+            "titleZh": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News",
+            "summary": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPVlRmNk9JTFJFNnlRbXlPYTVMM3JKdTZ0ZlVYdDZhVVBITHFicmMybURDNXpQR1JOOEVXakczaGNDVnZ2MXozY1Q0Z29ZTDRqNUNfNS1FQm0tRGl3cVRXRy1HV3BkME9JUEN3Q1B1STBHS0Q2VjhPY2UzdXE3Y1R4N2F1b210Z0FZVVU0b2hVVk9yZW1GY3pGbVItMWdWQnBhY3lZdTJzYVRCUDAxSXZ0UkJZS3h5ZUFfcEFhY0I4SUFOa2NYNVhWcm05RDlXZzZwZTUzQXctNDUweUxCWHFOYXlLTUhpbWsySWdwY1hubHBiWmNiSDJfa1ZCTTdmdE1GY3BvOFRRNA?oc=5",
+            "source": "AltAssets Private Equity News",
+            "publishedAt": "2026-11-18",
+            "lede": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+            "articleExcerpt": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News. CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+            "contentFingerprint": "cc7e4ebfc6fd939a",
+            "region": "Global",
+            "gps": [
+              "TPG",
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG",
+                "CVC"
+              ],
+              "titleGps": [
+                "TPG",
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG",
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "AltAssets Private Equity News"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 7,
+              "semanticScore": 5.09,
+              "finalScore": 12.09,
+              "semanticEnabled": true
+            }
+          },
           {
             "id": "2026-11-18-d93b9f64335d",
             "title": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
@@ -234701,6 +235173,192 @@
             "keywordScore": 11,
             "semanticScore": 4.12,
             "finalScore": 15.120000000000001,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-9a35d4ae6a26",
+          "title": "KKR Income Opportunities Fund (KIO) Seasonal returns chart - Yahoo Finance UK",
+          "titleZh": "KKR Income Opportunities Fund (KIO) Seasonal returns chart - Yahoo Finance UK",
+          "summary": "KKR Income Opportunities Fund (KIO) Seasonal returns chart Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE90a24tUGoyamdIY20xaG8zSldWOXQ0ZGdUWW5ZNmtKbGxDb2JUOFFUR0RyUlQ1UUFrQXo1dE5mazVxcXRucXpaOURBLTJ0TlBreFNuVWJIRk4zY3ZLX19ldg?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-18",
+          "lede": "KKR Income Opportunities Fund (KIO) Seasonal returns chart Yahoo Finance UK",
+          "articleExcerpt": "KKR Income Opportunities Fund (KIO) Seasonal returns chart - Yahoo Finance UK. KKR Income Opportunities Fund (KIO) Seasonal returns chart Yahoo Finance UK",
+          "contentFingerprint": "b5b633160cbecc9f",
+          "region": "Europe",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.5,
+            "finalScore": 17.5,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-96741e07ff4a",
+          "title": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart - Yahoo Finance UK",
+          "titleZh": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart - Yahoo Finance UK",
+          "summary": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE5TTXJBemdRajFxRVNoRUhEN2EtUjI1c3VFVkRnaEdiZ2hOLUIwZzgzdkpVTndzWUNmZTYzaWxJT1hRZVMtQURMSFNtQnlPQi0wZV9UWjllVXlaaE9yOHpEcG1PREhYaTQzSnVLcw?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-18",
+          "lede": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart Yahoo Finance UK",
+          "articleExcerpt": "KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart - Yahoo Finance UK. KKR Dec 2026 94.000 put (KKR261204P00094000) interactive stock chart Yahoo Finance UK",
+          "contentFingerprint": "ecf9bbe0855dea55",
+          "region": "Europe",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.41
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 43,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 4.9,
+            "finalScore": 16.9,
             "semanticEnabled": true
           }
         },
@@ -235946,19 +236604,112 @@
           }
         },
         {
-          "id": "2026-11-18-4691a74a5842",
-          "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "titleZh": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada",
-          "summary": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "id": "2026-11-18-d22ebaad4790",
+          "title": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership - Yahoo Finance",
+          "titleZh": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership - Yahoo Finance",
+          "summary": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership Yahoo Finance",
           "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
           "summaryZhLanguage": "",
-          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
-          "source": "Yahoo! Finance Canada",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNOWtaTVBqSjNYSElFSVJrRG9rYVkyTF9OWW9rWkNjTGhPWFI5amJTTzZ3NXltN1I1Z3E4blVPR2NYdTU1RDlBMm9mc2p2V3A1U0I5RV9XY3cyWDFBTk9TMUdPS1pFZng1cUFnOG4yazZVcUxReHBQWHZNcDU0ZlM3SzR5LTNsN1FxMlowVEc1TzJ5dkhySWc?oc=5",
+          "source": "Yahoo Finance",
           "publishedAt": "2026-11-18",
-          "lede": "TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
-          "articleExcerpt": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada. TPG Inc. (TPG) Stock Price, News, Quote & History Yahoo! Finance Canada",
-          "contentFingerprint": "739305dd4df461e1",
+          "lede": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership Yahoo Finance",
+          "articleExcerpt": "Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership - Yahoo Finance. Learn Why The Bull Case For Apollo Global Management (APO) Could Change Following Victory Capital Partnership Yahoo Finance",
+          "contentFingerprint": "246af3e454b0714b",
           "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.51
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.14,
+            "finalScore": 17.14,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-455662ef1bbf",
+          "title": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+          "titleZh": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK",
+          "summary": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBfT3RNMUtiQXFvdVpLMVRiWnFQclU0c0hQSmVtd2ViU2dNTFpUelhwQ01oRnpnNVMtRWw1aWdKOEFnQy1jejlMajd3WDE5OFJr?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-18",
+          "lede": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+          "articleExcerpt": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance UK. TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance UK",
+          "contentFingerprint": "c23439475bf488e6",
+          "region": "Europe",
           "gps": [
             "TPG"
           ],
@@ -236000,7 +236751,7 @@
                 "code": "no_strategy",
                 "tagValue": 0.0,
                 "strategies": [],
-                "semanticValue": 0.46
+                "semanticValue": 0.45
               },
               "event": {
                 "value": 0.15,
@@ -236013,12 +236764,112 @@
               "source": {
                 "value": 0.25,
                 "code": "tier_aggregator",
-                "source": "Yahoo! Finance Canada"
+                "source": "Yahoo Finance UK"
               },
               "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 44,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.44,
+            "finalScore": 17.44,
+            "semanticEnabled": true
+          },
+          "alternateSources": [
+            {
+              "source": "Yahoo! Finance Canada",
+              "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE01dVdacTJ3cTBGWUNIYlVkSldxb0kwRzBaeG5HWEpTQk1KSDl0dTFBUVdDb0NSU0s1SjJ2QkFFOS1tNW0tSk1fSUUwajZOREx4?oc=5",
+              "title": "TPG Inc. (TPG) Stock Price, News, Quote & History - Yahoo! Finance Canada"
+            }
+          ]
+        },
+        {
+          "id": "2026-11-18-afc771c00eb6",
+          "title": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News",
+          "titleZh": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News",
+          "summary": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPVlRmNk9JTFJFNnlRbXlPYTVMM3JKdTZ0ZlVYdDZhVVBITHFicmMybURDNXpQR1JOOEVXakczaGNDVnZ2MXozY1Q0Z29ZTDRqNUNfNS1FQm0tRGl3cVRXRy1HV3BkME9JUEN3Q1B1STBHS0Q2VjhPY2UzdXE3Y1R4N2F1b210Z0FZVVU0b2hVVk9yZW1GY3pGbVItMWdWQnBhY3lZdTJzYVRCUDAxSXZ0UkJZS3h5ZUFfcEFhY0I4SUFOa2NYNVhWcm05RDlXZzZwZTUzQXctNDUweUxCWHFOYXlLTUhpbWsySWdwY1hubHBiWmNiSDJfa1ZCTTdmdE1GY3BvOFRRNA?oc=5",
+          "source": "AltAssets Private Equity News",
+          "publishedAt": "2026-11-18",
+          "lede": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+          "articleExcerpt": "CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up - AltAssets Private Equity News. CVC names TPG president Todd Sisitsky, Peter Rutland as future co-CEOs in major leadership shake-up AltAssets Private Equity News",
+          "contentFingerprint": "cc7e4ebfc6fd939a",
+          "region": "Global",
+          "gps": [
+            "TPG",
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG",
+              "CVC"
+            ],
+            "titleGps": [
+              "TPG",
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
                 "value": 1.0,
-                "code": "within_24h",
-                "days": 0.2
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG",
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "AltAssets Private Equity News"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.5
               }
             },
             "weights": {
@@ -236029,12 +236880,12 @@
               "freshness": 15
             },
             "score": 47,
-            "retrievedAt": "2026-11-18T16:51:16.034080+00:00"
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
           },
           "scoreBreakdown": {
-            "keywordScore": 11,
-            "semanticScore": 5.47,
-            "finalScore": 16.47,
+            "keywordScore": 7,
+            "semanticScore": 5.09,
+            "finalScore": 12.09,
             "semanticEnabled": true
           }
         },
@@ -236757,9 +237608,216 @@
               "finalScore": 17.4,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-19-3560d50a93cb",
+            "title": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center - Yahoo Finance",
+            "titleZh": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center - Yahoo Finance",
+            "summary": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM3R0OEMtRXkzTnNZLW5nUEdwY1daN0draVFLeHlHNXNBRzVGc0Z0ZHlWYVVrZHc3N0IxdFRnTThmb2hZRlBjWUVWZm5Lb29hZUdMaHo5WEFIOVNZeG5tWkhMOU9XNnVmM2IwVm5Mb3NwbFVTbEhZYl9hQUNic19TZ1g0NXZYaHF1WF9FUEhKUGI?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-19",
+            "lede": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center Yahoo Finance",
+            "articleExcerpt": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center - Yahoo Finance. Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center Yahoo Finance",
+            "contentFingerprint": "7a4336129d50988e",
+            "region": "US",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.76,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 6.25,
+              "finalScore": 22.25,
+              "semanticEnabled": true
+            }
           }
         ],
-        "KKR": [],
+        "KKR": [
+          {
+            "id": "2026-11-19-29bfc75b0701",
+            "title": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing - Traders Union",
+            "titleZh": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing - Traders Union",
+            "summary": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing Traders Union",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPalJqVUNtc0NCMFQ4OXYxWWU0aS1RVmlXY0xCc3p4dDdzbDBzbk9Na2k3R3Z0NG0wQl9CR09SUFZxcHFHejUtSHhOQ3dEQk5PcEEtSHl3TTZKTUtmeUhXNnBfaWdDb1RVYWI4bEZiN3lxTTNSbWV2MDVQZHlINjY2ZVVWX2pVMXFkU2hsUnZLRQ?oc=5",
+            "source": "Traders Union",
+            "publishedAt": "2026-11-19",
+            "lede": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing Traders Union",
+            "articleExcerpt": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing - Traders Union. KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing Traders Union",
+            "contentFingerprint": "ab328e686f9231f8",
+            "region": "US",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [
+              "clo"
+            ],
+            "sectors": [
+              "clo"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "clo"
+              ],
+              "titleStrategies": [
+                "clo"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "clo"
+                  ],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Traders Union"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 16,
+              "semanticScore": 5.95,
+              "finalScore": 21.95,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "CIFC": [],
         "PAG": [],
         "Pretium": [
@@ -237213,6 +238271,184 @@
               "keywordScore": 5,
               "semanticScore": 5.75,
               "finalScore": 10.75,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-8d28ab8f85a9",
+            "title": "Pretium Expands Real Estate Debt Platform - Business Wire",
+            "titleZh": "Pretium Expands Real Estate Debt Platform - Business Wire",
+            "summary": "Pretium Expands Real Estate Debt Platform Business Wire",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1htb3lTVEhCUF9yRW1MYnprbEs5aHk5anRYd05ac3NobkFlSzhneVdlVVdQVjdIZmpZMmhPMkMwV2M2TUJxNXJmY3dYdXhyRmNoN25rd045YXQ2ZmR6SmxKOFQ3aEZEaW9oaUJjQ3dieG11WXdHTDhVT25lVzFyX2ZCcXBoSzBQN1JJbWswWUVvY2JCTUl4bWpYU3RzN1E?oc=5",
+            "source": "Business Wire",
+            "publishedAt": "2026-11-19",
+            "lede": "Pretium Expands Real Estate Debt Platform Business Wire",
+            "articleExcerpt": "Pretium Expands Real Estate Debt Platform - Business Wire. Pretium Expands Real Estate Debt Platform Business Wire",
+            "contentFingerprint": "73179e5e806b59db",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.27,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.4,
+                  "code": "tier_press_release",
+                  "source": "Business Wire"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 52,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.43,
+              "finalScore": 20.43,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-155c2e1b06f1",
+            "title": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M - Multifamily Dive",
+            "titleZh": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M - Multifamily Dive",
+            "summary": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M Multifamily Dive",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQenBaei1JbmtISUNoOHY2UV9ZODdIa1NlaHJTcnBWOFN2WGlySVprTWZMcURNX29XOG1Rcm5aZjVDcF9wYjByX25tMmFLNmhDY3kyanNMRzN6Y3B0dVB2ZEZiSFA5VXhmYXJkcGJ1S2QzLUwyTXFfMkdtY0xfeEZEajdQSkNKZnFieUMtMm91SDN2dTVWZ2VmaWcyMElGTzdjQkxqTS1B?oc=5",
+            "source": "Multifamily Dive",
+            "publishedAt": "2026-11-19",
+            "lede": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M Multifamily Dive",
+            "articleExcerpt": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M - Multifamily Dive. Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M Multifamily Dive",
+            "contentFingerprint": "857b37ab15953316",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.37
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Multifamily Dive"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.47,
+              "finalScore": 7.47,
               "semanticEnabled": true
             }
           }
@@ -237878,6 +239114,109 @@
               "finalScore": 18.82,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-19-86d396510804",
+            "title": "The Expanding Role of Asset-Based Finance - Neuberger Berman",
+            "titleZh": "The Expanding Role of Asset-Based Finance - Neuberger Berman",
+            "summary": "The Expanding Role of Asset-Based Finance Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaGFUU1VXLUxtRmtXUmtnUlZ5STNIeWp0VldTeGRjV2l0XzF2VHBDdU9HWmN5TXgtY2V5MjNNeF9zak9nblhOMmpRVmxpNXVuN3ExdExXM0F1THBVc3MtN19ISG9YY2NHaWg2czBRX0Fwb0VNUHlHOWI1eVlNTERfZ1UzbHhqWVk?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-19",
+            "lede": "The Expanding Role of Asset-Based Finance Neuberger Berman",
+            "articleExcerpt": "The Expanding Role of Asset-Based Finance - Neuberger Berman. The Expanding Role of Asset-Based Finance Neuberger Berman",
+            "contentFingerprint": "06cff96bc9637ffc",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.93,
+              "finalScore": 19.93,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
@@ -238083,6 +239422,99 @@
               "keywordScore": 14,
               "semanticScore": 6.2,
               "finalScore": 20.2,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-32e80f2012fe",
+            "title": "Blackstone Investment Boosts IIFL Finance Capital: Fitch - Rediff MoneyWiz",
+            "titleZh": "Blackstone Investment Boosts IIFL Finance Capital: Fitch - Rediff MoneyWiz",
+            "summary": "Blackstone Investment Boosts IIFL Finance Capital: Fitch Rediff MoneyWiz",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc2VDR3RWS296OHktcjAxZEpNSHlxa0VJakptWXp5SzhSTDBONkpfSV83SkpNY0xBeGppZG8zRzV5TU9iY05vUnNMSk91S0txSVNSNlZBUUF0SU45ZE9zWklQUmdzUUh4TTVtN1FKdU1ZSkVkVG12dmU4dllSa1VYcl9JMTdqT1lpRW1vNTBrY3l1Q1Joc1VZOW03a2FCZktEX2xuSGxLVkFhSUnSAbABQVVfeXFMTmtRWXFjUWZ1SmZLUXU3c0dwMWhsN1pDMzJtaHJRc3J4QVBQb1d3UzRzVkNnWjc5NC1TVmRzTm1hckZUcDFjeW1Hc2ZaU3lNZTEzakxad0FDWWhFa2Ixa3d0d3VDTGVOcTNpUjRBZng1TmdfaHkyallZaDZHSHJuNUxmSXRVNlNUM2pBUk5IVHVhNGZ1QS1VenNzeDVHYWZSSFhaT1hVU2xnWEhHTl83Z0c?oc=5",
+            "source": "Rediff MoneyWiz",
+            "publishedAt": "2026-11-19",
+            "lede": "Blackstone Investment Boosts IIFL Finance Capital: Fitch Rediff MoneyWiz",
+            "articleExcerpt": "Blackstone Investment Boosts IIFL Finance Capital: Fitch - Rediff MoneyWiz. Blackstone Investment Boosts IIFL Finance Capital: Fitch Rediff MoneyWiz",
+            "contentFingerprint": "1f012fd74e02e01b",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Rediff MoneyWiz"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.82,
+              "finalScore": 16.82,
               "semanticEnabled": true
             }
           }
@@ -238378,6 +239810,99 @@
               "finalScore": 16.46,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-19-f147c3e34a7d",
+            "title": "BILL Agrees to be Acquired by TPG in Partnership with Corpay - Business Wire",
+            "titleZh": "BILL Agrees to be Acquired by TPG in Partnership with Corpay - Business Wire",
+            "summary": "BILL Agrees to be Acquired by TPG in Partnership with Corpay Business Wire",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckZLdm9UQ2plN1FiYzhIaXBMcW5Dd2lHY1gwMjZQQnRCYmlHLXgybkFYMEpTTjdydDRNUU9VX1VpR01TcTZZRVl2X1dxSXlLS0c4QklUMXBScEpQdS0zdU9aYXhiZl95eVVmc2o0QmFkQjRqN2tac0MyMk83alJ5S2JPVy1JR3hJRkw4ckFpVERuMlZDVG90R0N2Zl9kamJRRDRLNkczV1lwdjduX1V1ZFZTUVJteVVH?oc=5",
+            "source": "Business Wire",
+            "publishedAt": "2026-11-19",
+            "lede": "BILL Agrees to be Acquired by TPG in Partnership with Corpay Business Wire",
+            "articleExcerpt": "BILL Agrees to be Acquired by TPG in Partnership with Corpay - Business Wire. BILL Agrees to be Acquired by TPG in Partnership with Corpay Business Wire",
+            "contentFingerprint": "da0978f4b1068977",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.4,
+                  "code": "tier_press_release",
+                  "source": "Business Wire"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 74,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 5.17,
+              "finalScore": 11.17,
+              "semanticEnabled": true
+            }
           }
         ],
         "Golub": [
@@ -238481,7 +240006,97 @@
             }
           }
         ],
-        "CVC": [],
+        "CVC": [
+          {
+            "id": "2026-11-19-6e5e991c38ee",
+            "title": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals - PEI Private Equity",
+            "titleZh": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals - PEI Private Equity",
+            "summary": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals PEI Private Equity",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNYU1lVHZfUEVvVmJ2QUx2cU1Bc1Ftd3BMbnNMSkxhTjZzNmVKUzJxNnByU2h5ZTVad2dVQklJdlJqQXhtMVVIbG9yd0FPcE9Ybzg0b2E1XzYzZ1hGSzBSQ1U4TEFLRi1uTURtSlFoTjB2TzhzT2FCbHJ2UmNWSkxOMFlCeWs4SDMxby12MFAyWHJuQnVaaHE3SVNlSm5HWEk0d0FaOWxNbVM1SGZNZkpTYkNLTW00elM3V2hCOHB1aHVMMUNqSTdBRUJROFRBX3FCdmNSSlhPeDd5TUFXaVYtYXp6TmJVbWs0VEhWTXNqT1FDUUV6WnVnNk0zcDlDQ0k5cWFoWFMxRFRaZVA3Ulcw?oc=5",
+            "source": "PEI Private Equity",
+            "publishedAt": "2026-11-19",
+            "lede": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals PEI Private Equity",
+            "articleExcerpt": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals - PEI Private Equity. Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals PEI Private Equity",
+            "contentFingerprint": "66ef092dc04949bd",
+            "region": "US",
+            "gps": [
+              "CVC"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "CVC"
+              ],
+              "titleGps": [
+                "CVC"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "CVC"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "PEI Private Equity"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.5
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 5.57,
+              "finalScore": 10.57,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Canyon": []
       },
       "items": [
@@ -238906,6 +240521,212 @@
             "keywordScore": 12,
             "semanticScore": 5.4,
             "finalScore": 17.4,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-3560d50a93cb",
+          "title": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center - Yahoo Finance",
+          "titleZh": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center - Yahoo Finance",
+          "summary": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPM3R0OEMtRXkzTnNZLW5nUEdwY1daN0draVFLeHlHNXNBRzVGc0Z0ZHlWYVVrZHc3N0IxdFRnTThmb2hZRlBjWUVWZm5Lb29hZUdMaHo5WEFIOVNZeG5tWkhMOU9XNnVmM2IwVm5Mb3NwbFVTbEhZYl9hQUNic19TZ1g0NXZYaHF1WF9FUEhKUGI?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-19",
+          "lede": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center Yahoo Finance",
+          "articleExcerpt": "Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center - Yahoo Finance. Blue Owl Taps Wall Street For $513M To Finance Amazon Data Center Yahoo Finance",
+          "contentFingerprint": "7a4336129d50988e",
+          "region": "US",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.76,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 6.25,
+            "finalScore": 22.25,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-29bfc75b0701",
+          "title": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing - Traders Union",
+          "titleZh": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing - Traders Union",
+          "summary": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing Traders Union",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPalJqVUNtc0NCMFQ4OXYxWWU0aS1RVmlXY0xCc3p4dDdzbDBzbk9Na2k3R3Z0NG0wQl9CR09SUFZxcHFHejUtSHhOQ3dEQk5PcEEtSHl3TTZKTUtmeUhXNnBfaWdDb1RVYWI4bEZiN3lxTTNSbWV2MDVQZHlINjY2ZVVWX2pVMXFkU2hsUnZLRQ?oc=5",
+          "source": "Traders Union",
+          "publishedAt": "2026-11-19",
+          "lede": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing Traders Union",
+          "articleExcerpt": "KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing - Traders Union. KKR CLO 66 secures Fitch ratings for $500 million U.S. leveraged loan financing Traders Union",
+          "contentFingerprint": "ab328e686f9231f8",
+          "region": "US",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [
+            "clo"
+          ],
+          "sectors": [
+            "clo"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "clo"
+            ],
+            "titleStrategies": [
+              "clo"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "clo"
+                ],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Traders Union"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 16,
+            "semanticScore": 5.95,
+            "finalScore": 21.95,
             "semanticEnabled": true
           }
         },
@@ -239359,6 +241180,184 @@
             "keywordScore": 5,
             "semanticScore": 5.75,
             "finalScore": 10.75,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-8d28ab8f85a9",
+          "title": "Pretium Expands Real Estate Debt Platform - Business Wire",
+          "titleZh": "Pretium Expands Real Estate Debt Platform - Business Wire",
+          "summary": "Pretium Expands Real Estate Debt Platform Business Wire",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPY1htb3lTVEhCUF9yRW1MYnprbEs5aHk5anRYd05ac3NobkFlSzhneVdlVVdQVjdIZmpZMmhPMkMwV2M2TUJxNXJmY3dYdXhyRmNoN25rd045YXQ2ZmR6SmxKOFQ3aEZEaW9oaUJjQ3dieG11WXdHTDhVT25lVzFyX2ZCcXBoSzBQN1JJbWswWUVvY2JCTUl4bWpYU3RzN1E?oc=5",
+          "source": "Business Wire",
+          "publishedAt": "2026-11-19",
+          "lede": "Pretium Expands Real Estate Debt Platform Business Wire",
+          "articleExcerpt": "Pretium Expands Real Estate Debt Platform - Business Wire. Pretium Expands Real Estate Debt Platform Business Wire",
+          "contentFingerprint": "73179e5e806b59db",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.27,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.4,
+                "code": "tier_press_release",
+                "source": "Business Wire"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 52,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.43,
+            "finalScore": 20.43,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-155c2e1b06f1",
+          "title": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M - Multifamily Dive",
+          "titleZh": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M - Multifamily Dive",
+          "summary": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M Multifamily Dive",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQenBaei1JbmtISUNoOHY2UV9ZODdIa1NlaHJTcnBWOFN2WGlySVprTWZMcURNX29XOG1Rcm5aZjVDcF9wYjByX25tMmFLNmhDY3kyanNMRzN6Y3B0dVB2ZEZiSFA5VXhmYXJkcGJ1S2QzLUwyTXFfMkdtY0xfeEZEajdQSkNKZnFieUMtMm91SDN2dTVWZ2VmaWcyMElGTzdjQkxqTS1B?oc=5",
+          "source": "Multifamily Dive",
+          "publishedAt": "2026-11-19",
+          "lede": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M Multifamily Dive",
+          "articleExcerpt": "Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M - Multifamily Dive. Progress Residential, owner Pretium Partners settle FTC rental fee suit for $50M Multifamily Dive",
+          "contentFingerprint": "857b37ab15953316",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.37
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Multifamily Dive"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.47,
+            "finalScore": 7.47,
             "semanticEnabled": true
           }
         },
@@ -240022,6 +242021,109 @@
           }
         },
         {
+          "id": "2026-11-19-86d396510804",
+          "title": "The Expanding Role of Asset-Based Finance - Neuberger Berman",
+          "titleZh": "The Expanding Role of Asset-Based Finance - Neuberger Berman",
+          "summary": "The Expanding Role of Asset-Based Finance Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNaGFUU1VXLUxtRmtXUmtnUlZ5STNIeWp0VldTeGRjV2l0XzF2VHBDdU9HWmN5TXgtY2V5MjNNeF9zak9nblhOMmpRVmxpNXVuN3ExdExXM0F1THBVc3MtN19ISG9YY2NHaWg2czBRX0Fwb0VNUHlHOWI1eVlNTERfZ1UzbHhqWVk?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-19",
+          "lede": "The Expanding Role of Asset-Based Finance Neuberger Berman",
+          "articleExcerpt": "The Expanding Role of Asset-Based Finance - Neuberger Berman. The Expanding Role of Asset-Based Finance Neuberger Berman",
+          "contentFingerprint": "06cff96bc9637ffc",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.93,
+            "finalScore": 19.93,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-19-c82f183909d2",
           "title": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor",
           "titleZh": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor",
@@ -240220,6 +242322,99 @@
             "keywordScore": 14,
             "semanticScore": 6.2,
             "finalScore": 20.2,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-32e80f2012fe",
+          "title": "Blackstone Investment Boosts IIFL Finance Capital: Fitch - Rediff MoneyWiz",
+          "titleZh": "Blackstone Investment Boosts IIFL Finance Capital: Fitch - Rediff MoneyWiz",
+          "summary": "Blackstone Investment Boosts IIFL Finance Capital: Fitch Rediff MoneyWiz",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOc2VDR3RWS296OHktcjAxZEpNSHlxa0VJakptWXp5SzhSTDBONkpfSV83SkpNY0xBeGppZG8zRzV5TU9iY05vUnNMSk91S0txSVNSNlZBUUF0SU45ZE9zWklQUmdzUUh4TTVtN1FKdU1ZSkVkVG12dmU4dllSa1VYcl9JMTdqT1lpRW1vNTBrY3l1Q1Joc1VZOW03a2FCZktEX2xuSGxLVkFhSUnSAbABQVVfeXFMTmtRWXFjUWZ1SmZLUXU3c0dwMWhsN1pDMzJtaHJRc3J4QVBQb1d3UzRzVkNnWjc5NC1TVmRzTm1hckZUcDFjeW1Hc2ZaU3lNZTEzakxad0FDWWhFa2Ixa3d0d3VDTGVOcTNpUjRBZng1TmdfaHkyallZaDZHSHJuNUxmSXRVNlNUM2pBUk5IVHVhNGZ1QS1VenNzeDVHYWZSSFhaT1hVU2xnWEhHTl83Z0c?oc=5",
+          "source": "Rediff MoneyWiz",
+          "publishedAt": "2026-11-19",
+          "lede": "Blackstone Investment Boosts IIFL Finance Capital: Fitch Rediff MoneyWiz",
+          "articleExcerpt": "Blackstone Investment Boosts IIFL Finance Capital: Fitch - Rediff MoneyWiz. Blackstone Investment Boosts IIFL Finance Capital: Fitch Rediff MoneyWiz",
+          "contentFingerprint": "1f012fd74e02e01b",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Rediff MoneyWiz"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.82,
+            "finalScore": 16.82,
             "semanticEnabled": true
           }
         },
@@ -240513,6 +242708,99 @@
           }
         },
         {
+          "id": "2026-11-19-f147c3e34a7d",
+          "title": "BILL Agrees to be Acquired by TPG in Partnership with Corpay - Business Wire",
+          "titleZh": "BILL Agrees to be Acquired by TPG in Partnership with Corpay - Business Wire",
+          "summary": "BILL Agrees to be Acquired by TPG in Partnership with Corpay Business Wire",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNckZLdm9UQ2plN1FiYzhIaXBMcW5Dd2lHY1gwMjZQQnRCYmlHLXgybkFYMEpTTjdydDRNUU9VX1VpR01TcTZZRVl2X1dxSXlLS0c4QklUMXBScEpQdS0zdU9aYXhiZl95eVVmc2o0QmFkQjRqN2tac0MyMk83alJ5S2JPVy1JR3hJRkw4ckFpVERuMlZDVG90R0N2Zl9kamJRRDRLNkczV1lwdjduX1V1ZFZTUVJteVVH?oc=5",
+          "source": "Business Wire",
+          "publishedAt": "2026-11-19",
+          "lede": "BILL Agrees to be Acquired by TPG in Partnership with Corpay Business Wire",
+          "articleExcerpt": "BILL Agrees to be Acquired by TPG in Partnership with Corpay - Business Wire. BILL Agrees to be Acquired by TPG in Partnership with Corpay Business Wire",
+          "contentFingerprint": "da0978f4b1068977",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.4,
+                "code": "tier_press_release",
+                "source": "Business Wire"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 74,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 5.17,
+            "finalScore": 11.17,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-19-fe2189854e60",
           "title": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks",
           "titleZh": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks",
@@ -240610,6 +242898,95 @@
             "finalScore": 20.55,
             "semanticEnabled": true
           }
+        },
+        {
+          "id": "2026-11-19-6e5e991c38ee",
+          "title": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals - PEI Private Equity",
+          "titleZh": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals - PEI Private Equity",
+          "summary": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals PEI Private Equity",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxNYU1lVHZfUEVvVmJ2QUx2cU1Bc1Ftd3BMbnNMSkxhTjZzNmVKUzJxNnByU2h5ZTVad2dVQklJdlJqQXhtMVVIbG9yd0FPcE9Ybzg0b2E1XzYzZ1hGSzBSQ1U4TEFLRi1uTURtSlFoTjB2TzhzT2FCbHJ2UmNWSkxOMFlCeWs4SDMxby12MFAyWHJuQnVaaHE3SVNlSm5HWEk0d0FaOWxNbVM1SGZNZkpTYkNLTW00elM3V2hCOHB1aHVMMUNqSTdBRUJROFRBX3FCdmNSSlhPeDd5TUFXaVYtYXp6TmJVbWs0VEhWTXNqT1FDUUV6WnVnNk0zcDlDQ0k5cWFoWFMxRFRaZVA3Ulcw?oc=5",
+          "source": "PEI Private Equity",
+          "publishedAt": "2026-11-19",
+          "lede": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals PEI Private Equity",
+          "articleExcerpt": "Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals - PEI Private Equity. Main Capital’s Sjoerd Aarts shares plans as firm ups UK presence; Clearlake grows Chelsea FC stake; CVC DIF, Carlyle and EQT in security deals PEI Private Equity",
+          "contentFingerprint": "66ef092dc04949bd",
+          "region": "US",
+          "gps": [
+            "CVC"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "CVC"
+            ],
+            "titleGps": [
+              "CVC"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "CVC"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "PEI Private Equity"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.5
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-19T22:51:35.896333+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 5.57,
+            "finalScore": 10.57,
+            "semanticEnabled": true
+          }
         }
       ]
     }
@@ -240617,7 +242994,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 34,
+      "count": 33,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -240625,7 +243002,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
@@ -240638,12 +243015,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 5,
+      "count": 4,
       "selected": 1,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -240651,12 +243028,12 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 6,
+      "count": 10,
       "selected": 1,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
@@ -240664,7 +243041,7 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
@@ -240677,12 +243054,12 @@
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 9,
+      "count": 11,
       "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
@@ -240690,12 +243067,12 @@
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 9,
+      "count": 11,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -240703,7 +243080,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
@@ -240716,12 +243093,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 24,
+      "count": 23,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -240729,12 +243106,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 85,
+      "count": 61,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -240742,12 +243119,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 33,
+      "count": 29,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -240755,12 +243132,12 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 12,
+      "count": 15,
       "selected": 6,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
@@ -240768,12 +243145,12 @@
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 11,
+      "count": 12,
       "selected": 6,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -240781,12 +243158,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 25,
+      "count": 22,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -240794,7 +243171,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
@@ -240807,12 +243184,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 673,
+      "count": 723,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -240829,9 +243206,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-19T14:54:37.337964+00:00",
+      "asOf": "2026-11-19T22:51:35.896333+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-19T14:54:37.337964+00:00"
+  "checkedAt": "2026-11-19T22:51:35.896333+00:00"
 }
