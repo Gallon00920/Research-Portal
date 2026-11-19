@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-19T05:04:19.490802+00:00",
+  "updatedAt": "2026-11-19T14:59:57.218876+00:00",
   "scope": {
     "regions": [
       "US",
@@ -222287,6 +222287,99 @@
               "finalScore": 9.98,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-e4f9d1aabcc5",
+            "title": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "titleZh": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+            "summary": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo!",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwSkl1Sy1FR0FpQ056MDZqSHgxVy12X0V2R0d5TGE2M19LVWdzd3p1dVo1WWZCczE0aEZCWTdZaWh1anZXa0JnTFpITVRYZGlV?oc=5",
+            "source": "Yahoo! Finance Canada",
+            "publishedAt": "2026-11-17",
+            "lede": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "articleExcerpt": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada. KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+            "contentFingerprint": "bb69c1aad03d70d9",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo! Finance Canada"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 43,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.26,
+              "finalScore": 16.259999999999998,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [
@@ -222384,7 +222477,101 @@
             }
           }
         ],
-        "PAG": [],
+        "PAG": [
+          {
+            "id": "2026-11-17-8b00f57e986c",
+            "title": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? - TradingView",
+            "titleZh": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? - TradingView",
+            "summary": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOWxKRmxxRkFrMjFVQnBIYk4wcW1BZTJNSzd1RWdQNW16SGhSekZZc0ZWTjJOSnNET2FxX1NPcFdlT0k0ZDFLa05DaW1zRGNPd0dPQWthT1FobUZUcjU1OWhuR1NoRHk2NnZWV0Z2WmxraWVVQTIwbFRIZWE1R1UzTUVCMXl2WXB4Rm40aGljTDB1b2c4WDNaWHc4b3lKb1ZWZk50emc2ODdZbmVpN2pDV2JlVkE?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-17",
+            "lede": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? TradingView",
+            "articleExcerpt": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? - TradingView. Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? TradingView",
+            "contentFingerprint": "c375e6b8ebf73d82",
+            "region": "Global",
+            "gps": [
+              "PAG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "PAG"
+              ],
+              "titleGps": [
+                "PAG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "PAG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.34
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 62,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.13,
+              "finalScore": 7.13,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Pretium": [],
         "Guggenheim": [],
         "Neuberger": [
@@ -224300,6 +224487,184 @@
               "keywordScore": 5,
               "semanticScore": 5.76,
               "finalScore": 10.76,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-49a25f3e910f",
+            "title": "Q3 2026 TPG Inc Earnings Call Transcript - GuruFocus",
+            "titleZh": "Q3 2026 TPG Inc Earnings Call Transcript - GuruFocus",
+            "summary": "Q3 2026 TPG Inc Earnings Call Transcript GuruFocus",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5mT2pwS1RiSFJ3OVA5b3dmSkw4RmlBXzY2RzhITVpXcG80NWJOdDBzVTFUR0RJZkZPWjJhczJCZHB2RDhyYUh2dFROMWRXMGZDazdaTldzd3MyWUpuTWpySlRZdVU1N2RsYVZj?oc=5",
+            "source": "GuruFocus",
+            "publishedAt": "2026-11-17",
+            "lede": "Q3 2026 TPG Inc Earnings Call Transcript GuruFocus",
+            "articleExcerpt": "Q3 2026 TPG Inc Earnings Call Transcript - GuruFocus. Q3 2026 TPG Inc Earnings Call Transcript GuruFocus",
+            "contentFingerprint": "ff016514654f8b87",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.37
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "GuruFocus"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.46,
+              "finalScore": 7.46,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-ef2eb4c64e0f",
+            "title": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes - Kalkine",
+            "titleZh": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes - Kalkine",
+            "summary": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes Kalkine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWWVmcHVZSm05RXNLM3JIdGhoVkN5OG9VUnZsWmJ2OHpYbWo3ZEFRMG1ob1B1UGVlbGRMSlBaZ0x0TVdoZ2dBMTFzd2FobWUtOGt3ZEM2d1pDQXBTaHVYRmtsLW9COVoxbTlJM25ySUNPYlh6bC1jVlp5TkpiTWRBaXZrUGtUWFBzb0E4QUg3SFBSWlhiekRFMkg2bFNUVUFUVkpnX3pTWk5jS2h3R2ZXV0JpenVPUjVVWUhXZQ?oc=5",
+            "source": "Kalkine",
+            "publishedAt": "2026-11-17",
+            "lede": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes Kalkine",
+            "articleExcerpt": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes - Kalkine. A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes Kalkine",
+            "contentFingerprint": "f9af53777ba76de8",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.35
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 2.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.16,
+              "finalScore": 7.16,
               "semanticEnabled": true
             }
           }
@@ -226995,6 +227360,99 @@
           }
         },
         {
+          "id": "2026-11-17-e4f9d1aabcc5",
+          "title": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "titleZh": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada",
+          "summary": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo!",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBwSkl1Sy1FR0FpQ056MDZqSHgxVy12X0V2R0d5TGE2M19LVWdzd3p1dVo1WWZCczE0aEZCWTdZaWh1anZXa0JnTFpITVRYZGlV?oc=5",
+          "source": "Yahoo! Finance Canada",
+          "publishedAt": "2026-11-17",
+          "lede": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "articleExcerpt": "KKR & Co. Inc. (KKR) Stock Price, News, Quote & History - Yahoo! Finance Canada. KKR & Co. Inc. (KKR) Stock Price, News, Quote & History Yahoo! Finance Canada",
+          "contentFingerprint": "bb69c1aad03d70d9",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo! Finance Canada"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 43,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.26,
+            "finalScore": 16.259999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-17-494f40826816",
           "title": "CIFC Global Floating Rt Crdt B-1 USD Acc (0P0001PDNP) Seasonal returns chart - Yahoo Finance UK",
           "titleZh": "CIFC Global Floating Rt Crdt B-1 USD Acc (0P0001PDNP) Seasonal returns chart - Yahoo Finance UK",
@@ -227084,6 +227542,99 @@
             "keywordScore": 12,
             "semanticScore": 4.58,
             "finalScore": 16.58,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-8b00f57e986c",
+          "title": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? - TradingView",
+          "titleZh": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? - TradingView",
+          "summary": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOOWxKRmxxRkFrMjFVQnBIYk4wcW1BZTJNSzd1RWdQNW16SGhSekZZc0ZWTjJOSnNET2FxX1NPcFdlT0k0ZDFLa05DaW1zRGNPd0dPQWthT1FobUZUcjU1OWhuR1NoRHk2NnZWV0Z2WmxraWVVQTIwbFRIZWE1R1UzTUVCMXl2WXB4Rm40aGljTDB1b2c4WDNaWHc4b3lKb1ZWZk50emc2ODdZbmVpN2pDV2JlVkE?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-17",
+          "lede": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? TradingView",
+          "articleExcerpt": "Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? - TradingView. Penske Automotive Stock: Is PAG a Buy, Hold or Sell Right Now? TradingView",
+          "contentFingerprint": "c375e6b8ebf73d82",
+          "region": "Global",
+          "gps": [
+            "PAG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "PAG"
+            ],
+            "titleGps": [
+              "PAG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "PAG"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.34
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 62,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.13,
+            "finalScore": 7.13,
             "semanticEnabled": true
           }
         },
@@ -228897,6 +229448,184 @@
             "keywordScore": 5,
             "semanticScore": 5.76,
             "finalScore": 10.76,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-49a25f3e910f",
+          "title": "Q3 2026 TPG Inc Earnings Call Transcript - GuruFocus",
+          "titleZh": "Q3 2026 TPG Inc Earnings Call Transcript - GuruFocus",
+          "summary": "Q3 2026 TPG Inc Earnings Call Transcript GuruFocus",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE5mT2pwS1RiSFJ3OVA5b3dmSkw4RmlBXzY2RzhITVpXcG80NWJOdDBzVTFUR0RJZkZPWjJhczJCZHB2RDhyYUh2dFROMWRXMGZDazdaTldzd3MyWUpuTWpySlRZdVU1N2RsYVZj?oc=5",
+          "source": "GuruFocus",
+          "publishedAt": "2026-11-17",
+          "lede": "Q3 2026 TPG Inc Earnings Call Transcript GuruFocus",
+          "articleExcerpt": "Q3 2026 TPG Inc Earnings Call Transcript - GuruFocus. Q3 2026 TPG Inc Earnings Call Transcript GuruFocus",
+          "contentFingerprint": "ff016514654f8b87",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.37
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "GuruFocus"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.46,
+            "finalScore": 7.46,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-ef2eb4c64e0f",
+          "title": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes - Kalkine",
+          "titleZh": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes - Kalkine",
+          "summary": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes Kalkine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQWWVmcHVZSm05RXNLM3JIdGhoVkN5OG9VUnZsWmJ2OHpYbWo3ZEFRMG1ob1B1UGVlbGRMSlBaZ0x0TVdoZ2dBMTFzd2FobWUtOGt3ZEM2d1pDQXBTaHVYRmtsLW9COVoxbTlJM25ySUNPYlh6bC1jVlp5TkpiTWRBaXZrUGtUWFBzb0E4QUg3SFBSWlhiekRFMkg2bFNUVUFUVkpnX3pTWk5jS2h3R2ZXV0JpenVPUjVVWUhXZQ?oc=5",
+          "source": "Kalkine",
+          "publishedAt": "2026-11-17",
+          "lede": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes Kalkine",
+          "articleExcerpt": "A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes - Kalkine. A SIM Card Without the Plastic: How TPG Telecom (ASX:TPG) Activates Phones in Minutes Kalkine",
+          "contentFingerprint": "f9af53777ba76de8",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.35
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 2.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.16,
+            "finalScore": 7.16,
             "semanticEnabled": true
           }
         },
@@ -230950,6 +231679,99 @@
               "finalScore": 22.06,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-df4e59adfdae",
+            "title": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history - Yahoo Finance UK",
+            "titleZh": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history - Yahoo Finance UK",
+            "summary": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history Yahoo Finance UK",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvaFVpRzQydE1VSEJQR0YzeFVsRVhVRzZTNlY4Y3ZMYnlrRmhNaUlVYnJlcVloNXUxVmZlS0s2dlBvZWlsaWFVX3k3WjhQT2llRTV2bFpUUURMazJtM3pXVDhfV0s?oc=5",
+            "source": "Yahoo Finance UK",
+            "publishedAt": "2026-11-18",
+            "lede": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history Yahoo Finance UK",
+            "articleExcerpt": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history - Yahoo Finance UK. Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history Yahoo Finance UK",
+            "contentFingerprint": "dc75fe33afb6f918",
+            "region": "Europe",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance UK"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 44,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 6.25,
+              "finalScore": 18.25,
+              "semanticEnabled": true
+            }
           }
         ],
         "KKR": [
@@ -231403,6 +232225,95 @@
               "keywordScore": 11,
               "semanticScore": 5.07,
               "finalScore": 16.07,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-2b16a70b714e",
+            "title": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn - Smartkarma",
+            "titleZh": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn - Smartkarma",
+            "summary": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn Smartkarma",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPb0s0SkVnMUtLQS1SckxZQXhGYnVheTdTbmVidHkwcWlySnpZYlNPVTl0dG12VUM1ZmpVSURObHJValh3bnc3aWhaaDlsV3dtYVBwRVBicnAwNDlTejkyeXJPWFptMmZWa01RMHJpNlo0YjQwdmdMekFTdWtMWE81ZVFjWVBGQTBOa0JhcjdiX2o1bHR2NnBtTmNwendTMmVqVzJneFdwRG5xbE1vRHp4WVV0aVhVWjk3Z01hd2xoT0JWQQ?oc=5",
+            "source": "Smartkarma",
+            "publishedAt": "2026-11-18",
+            "lede": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn Smartkarma",
+            "articleExcerpt": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn - Smartkarma. [Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn Smartkarma",
+            "contentFingerprint": "374b36b2c54aafcc",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.34
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Smartkarma"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.12,
+              "finalScore": 15.120000000000001,
               "semanticEnabled": true
             }
           }
@@ -233159,6 +234070,99 @@
           }
         },
         {
+          "id": "2026-11-18-df4e59adfdae",
+          "title": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history - Yahoo Finance UK",
+          "titleZh": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history - Yahoo Finance UK",
+          "summary": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history Yahoo Finance UK",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBvaFVpRzQydE1VSEJQR0YzeFVsRVhVRzZTNlY4Y3ZMYnlrRmhNaUlVYnJlcVloNXUxVmZlS0s2dlBvZWlsaWFVX3k3WjhQT2llRTV2bFpUUURMazJtM3pXVDhfV0s?oc=5",
+          "source": "Yahoo Finance UK",
+          "publishedAt": "2026-11-18",
+          "lede": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history Yahoo Finance UK",
+          "articleExcerpt": "Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history - Yahoo Finance UK. Blue Owl Technology Finance Corp (F4G.MU) stock price, news, quote and history Yahoo Finance UK",
+          "contentFingerprint": "dc75fe33afb6f918",
+          "region": "Europe",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance UK"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 44,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 6.25,
+            "finalScore": 18.25,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-18-d7f2b122f17a",
           "title": "Accel-KKR-backed Pacera unites three Nordic finance tools under one suite - Dealroom",
           "titleZh": "Accel-KKR-backed Pacera unites three Nordic finance tools under one suite - Dealroom",
@@ -233608,6 +234612,95 @@
             "keywordScore": 11,
             "semanticScore": 5.07,
             "finalScore": 16.07,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-2b16a70b714e",
+          "title": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn - Smartkarma",
+          "titleZh": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn - Smartkarma",
+          "summary": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn Smartkarma",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPb0s0SkVnMUtLQS1SckxZQXhGYnVheTdTbmVidHkwcWlySnpZYlNPVTl0dG12VUM1ZmpVSURObHJValh3bnc3aWhaaDlsV3dtYVBwRVBicnAwNDlTejkyeXJPWFptMmZWa01RMHJpNlo0YjQwdmdMekFTdWtMWE81ZVFjWVBGQTBOa0JhcjdiX2o1bHR2NnBtTmNwendTMmVqVzJneFdwRG5xbE1vRHp4WVV0aVhVWjk3Z01hd2xoT0JWQQ?oc=5",
+          "source": "Smartkarma",
+          "publishedAt": "2026-11-18",
+          "lede": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn Smartkarma",
+          "articleExcerpt": "[Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn - Smartkarma. [Japan M&A] House Foods (2810) Closes on Sale of Ichibanya (7630) To KKR at ¥170bn And/Or ¥200bn Smartkarma",
+          "contentFingerprint": "374b36b2c54aafcc",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.34
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Smartkarma"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.12,
+            "finalScore": 15.120000000000001,
             "semanticEnabled": true
           }
         },
@@ -235669,8 +236762,827 @@
         "KKR": [],
         "CIFC": [],
         "PAG": [],
-        "Pretium": [],
-        "Guggenheim": [],
+        "Pretium": [
+          {
+            "id": "2026-11-19-9e4ccbb51824",
+            "title": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team - citybiz",
+            "titleZh": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team - citybiz",
+            "summary": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team citybiz",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNm5TSkQzQmpHdnhCMVc5TXRfTGxPWmpISXR2dENoa0NlcVV6Y1BBMW0wUElQTmRuaWVLTU1TclB0aVBHQ01TdmRERkRlRnphSmhFRnJLU1Y1WlBfTHg4VERwVHVNZldFTV9Ydk9qRWZsZ0ZON005T0k5WWRLU0dZQVptclhoLXNSOXg2Y0FxT3VnMVZJRFBENFE3S2lWdzVpaUFlQXNUaGNFVFpnVVlMVzVKbmlLVVBGX3c?oc=5",
+            "source": "citybiz",
+            "publishedAt": "2026-11-19",
+            "lede": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team citybiz",
+            "articleExcerpt": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team - citybiz. Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team citybiz",
+            "contentFingerprint": "17672eaf91a143e3",
+            "region": "Europe",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.51
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "citybiz"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 6.17,
+              "finalScore": 18.17,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-3ac581ef5555",
+            "title": "Pretium Expands Real Estate Debt Platform - Yahoo Finance",
+            "titleZh": "Pretium Expands Real Estate Debt Platform - Yahoo Finance",
+            "summary": "Pretium Expands Real Estate Debt Platform Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGQ4RlQ0cVp3SnlqSmZtaGFjWFZ2LXA3QXVia1Y0TUc4TFNwNzYzUlBMajA0VTctVG55VmR3WEVUYnphRXpCc2dCSGpHU202Ylc2UGlHY3laU1ZSSGZEQjRWN1ZZeGJxdFhHZFhtbUFkQkhZQ0V6LUp1eVpVVWxJLWkxcTA1cC1UQWo1ekdULWdLUmRpLUhNZ053?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-19",
+            "lede": "Pretium Expands Real Estate Debt Platform Yahoo Finance",
+            "articleExcerpt": "Pretium Expands Real Estate Debt Platform - Yahoo Finance. Pretium Expands Real Estate Debt Platform Yahoo Finance",
+            "contentFingerprint": "b59b3193ffbe66d3",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.28,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.55
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 64,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.63,
+              "finalScore": 17.63,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-a5c38cf2a433",
+            "title": "Pretium Expands Real Estate Debt Platform - Via TT",
+            "titleZh": "Pretium Expands Real Estate Debt Platform - Via TT",
+            "summary": "Pretium Expands Real Estate Debt Platform Via TT",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUHRLQ1JhYnJ5eThVVVotN00wVEswWE40YzVmNXgwZ1dudFFiU25KQ3B4XzUzdzhBUlpmRFZoQkg1OW5tNEh5aTNoYUNValpYV1JDa214dGkzelpxN1M3US1CdXEzam1CUFktNG1HaUkyY1BWRDdVWElQbmpRSm1FQk1iaWxwUHNSY01zak5FSTFqczRaZTFWYkkzZGZmcUxVMVFvdC1tdk5kZWl3RjVN?oc=5",
+            "source": "Via TT",
+            "publishedAt": "2026-11-19",
+            "lede": "Pretium Expands Real Estate Debt Platform Via TT",
+            "articleExcerpt": "Pretium Expands Real Estate Debt Platform - Via TT. Pretium Expands Real Estate Debt Platform Via TT",
+            "contentFingerprint": "a6cd3fa4925cc8df",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.26,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Via TT"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 6.23,
+              "finalScore": 17.23,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-4c691a4a6205",
+            "title": "Pretium Expands Real Estate Debt Platform - lincolnjournal.com",
+            "titleZh": "Pretium Expands Real Estate Debt Platform - lincolnjournal.com",
+            "summary": "Pretium Expands Real Estate Debt Platform lincolnjournal.com",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTzluR0ZWTFJSS0xTdUxnWWYtdld1YUFaN3F6enotUTFHRENPem80d0dHWUNLd1JWS2g3bXdNSWtfbW5BN1lXOThON1RQOG5rSnRDa2JrSTZkMHlVcHNSUjFub21JdkNYdzJzYU5Fb24yYm4zRWk5OHoyMEdNMmlNeTVIbmhCb0VxSjU5aHVCX3lBaWNNelhBTjZHT3QyaEd6R1hyY25RNnR1cWZfZnFPN1dVRy00eDdLTFNpb0l2YzJoRFQ5Vk13YWVQd1N2TlFHODlQcll5dmNOQmlOY1NiSEZxeVNCWnVj?oc=5",
+            "source": "lincolnjournal.com",
+            "publishedAt": "2026-11-19",
+            "lede": "Pretium Expands Real Estate Debt Platform lincolnjournal.com",
+            "articleExcerpt": "Pretium Expands Real Estate Debt Platform - lincolnjournal.com. Pretium Expands Real Estate Debt Platform lincolnjournal.com",
+            "contentFingerprint": "aec5833af933aa69",
+            "region": "Global",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.25,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "lincolnjournal.com"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 51,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.95,
+              "finalScore": 16.95,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-817bf863f3c2",
+            "title": "Pretium expands outside US with acquisition of London-based investment manager - Green Street News",
+            "titleZh": "Pretium expands outside US with acquisition of London-based investment manager - Green Street News",
+            "summary": "Pretium expands outside US with acquisition of London-based investment manager Green Street News",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ29UeHBQRy0talFUNVJQSWlKRkRBX0FwUTJxY3RCZGFZVHkyRnRfTEVVTXhSTnlYY3R3T0dybTBVMFRqQld6Zmo2NldjcFQ3MTk2QjRucWdkcVk1ZHdXVTdCUWU3QWwzdzJrdEl1NEUxaFl2VVZUb1EwNEtyQnVneHBjNVZFbVpaZkNNN3FPSU9IWF9iam5YOUdxTzhweDNqV0hKTmExNloxU0dMWXdvNEJMa2szZw?oc=5",
+            "source": "Green Street News",
+            "publishedAt": "2026-11-19",
+            "lede": "Pretium expands outside US with acquisition of London-based investment manager Green Street News",
+            "articleExcerpt": "Pretium expands outside US with acquisition of London-based investment manager - Green Street News. Pretium expands outside US with acquisition of London-based investment manager Green Street News",
+            "contentFingerprint": "644c7a489ecbf658",
+            "region": "US",
+            "gps": [
+              "Pretium"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Pretium"
+              ],
+              "titleGps": [
+                "Pretium"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Pretium"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Green Street News"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 73,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 5.75,
+              "finalScore": 10.75,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Guggenheim": [
+          {
+            "id": "2026-11-19-72083dda90f9",
+            "title": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself - Yahoo Finance",
+            "titleZh": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself - Yahoo Finance",
+            "summary": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZEgxV0VBTlJVcjk3NFZiXzBhVVA1ekE0SlBXNmF4VklaU1RnT1BXS1Uyc0szMjBTN0FtNk9PbVo3LUs1OFVhVFFvVUQwRzFGaUoyX2VsRkpnV3ZFZmpJV09yVks2ZmNzcHJCamNnWXFJNGZNOWxBNG5jcUYtMlZKVUV5UzFmTTJLUklhd1ZpVTdLWWhUYTFVX2Nn?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-19",
+            "lede": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself Yahoo Finance",
+            "articleExcerpt": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself - Yahoo Finance. TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself Yahoo Finance",
+            "contentFingerprint": "4b0c14d4c83d31fb",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.19,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.38
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 4.58,
+              "finalScore": 15.58,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-8302ee630287",
+            "title": "Guggenheim Municipal Income Fund Q3 2026 Commentary - Seeking Alpha",
+            "titleZh": "Guggenheim Municipal Income Fund Q3 2026 Commentary - Seeking Alpha",
+            "summary": "Guggenheim Municipal Income Fund Q3 2026 Commentary Seeking Alpha",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS3lockNwUEdxbEZGXzUtbDh2UTBtRHUzVUZRYmc4UWQxeWs2Uk1pTzktVTRZNUJ5SzdGaHN2c1dlandNRjNjQTEyY09jbjhLeTRQeWItRlo3d0UzNGJ2RktUazFoV0hoWWlrSTNwMWs1aWJ1V05WTVVlSHR5QlV5Yk53TGl1TExvTzJTNEZBVEFfZEtINkM4bnZuYVZ2NngtZHlwckNURmZtalNPLVBTVQ?oc=5",
+            "source": "Seeking Alpha",
+            "publishedAt": "2026-11-19",
+            "lede": "Guggenheim Municipal Income Fund Q3 2026 Commentary Seeking Alpha",
+            "articleExcerpt": "Guggenheim Municipal Income Fund Q3 2026 Commentary - Seeking Alpha. Guggenheim Municipal Income Fund Q3 2026 Commentary Seeking Alpha",
+            "contentFingerprint": "b6682f6a587059cc",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.2,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.4
+                },
+                "event": {
+                  "value": 0.8,
+                  "code": "fundraising",
+                  "ruleValue": 0.8,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Seeking Alpha"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.85,
+              "finalScore": 7.85,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-d9b85dec43c9",
+            "title": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde - freeyork",
+            "titleZh": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde - freeyork",
+            "summary": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde freeyork",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRa0h4WHhFMV91R2ZpWGI5YW9tT2Jjak9BcTliVndPNjhkZmM2ekZGUUk5eTJnREpFQkxkOVBtRnhmSko4SWE5aE9nX0FSYVIwNlU1SF8zcVZYal85UjN4MllCSHlzMHI0?oc=5",
+            "source": "freeyork",
+            "publishedAt": "2026-11-19",
+            "lede": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde freeyork",
+            "articleExcerpt": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde - freeyork. Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde freeyork",
+            "contentFingerprint": "a381b466009bea32",
+            "region": "Europe",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.16,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.32
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "freeyork"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 4,
+              "semanticScore": 3.85,
+              "finalScore": 7.85,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-bf88f88d8ab6",
+            "title": "Target price target raised to $180 from $175 at Guggenheim - TipRanks",
+            "titleZh": "Target price target raised to $180 from $175 at Guggenheim - TipRanks",
+            "summary": "Target price target raised to $180 from $175 at Guggenheim TipRanks",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaGpNNU5pVHRRbFIzWVFtU1NKdHpPbzY5eHlHV0hwTzd6QV9CT2xyN0J5OG5zNXhTajcxV0Zfa2R6UVZJSmJobjlsbXhKWmJ0NFhkWlRISk0xRGlMQUF5bzdsd3g5WW84UzYtSTYwYTV1OUlyZDNYRXBXdVpxb2dCM3V5ZXp0TlY0MVdvYTUwcll4Ym1RYUtVR2wyMEh1SmRJSjdINWFLZEdDdw?oc=5",
+            "source": "TipRanks",
+            "publishedAt": "2026-11-19",
+            "lede": "Target price target raised to $180 from $175 at Guggenheim TipRanks",
+            "articleExcerpt": "Target price target raised to $180 from $175 at Guggenheim - TipRanks. Target price target raised to $180 from $175 at Guggenheim TipRanks",
+            "contentFingerprint": "864a0a8101cffff9",
+            "region": "Global",
+            "gps": [
+              "Guggenheim"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Guggenheim"
+              ],
+              "titleGps": [
+                "Guggenheim"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Guggenheim"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.17,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.34
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "TipRanks"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 46,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 4.12,
+              "finalScore": 7.12,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Neuberger": [
           {
             "id": "2026-11-19-8c406e0a01f6",
@@ -235770,10 +237682,306 @@
               "finalScore": 17.48,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-19-20933e9a1823",
+            "title": "Jeeves Receives Investment From Neuberger Berman Specialty Finance - FinSMEs",
+            "titleZh": "Jeeves Receives Investment From Neuberger Berman Specialty Finance - FinSMEs",
+            "summary": "Jeeves Receives Investment From Neuberger Berman Specialty Finance FinSMEs",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcFFFUlRxRHVEa3Vmd1dhckFWSmJDV2lYQmtBSXlrSDdzZGtCSVVFczlhWFQ4cm1MdlFjY0tHcEFGS2Q2SmZiT3UwV3JIVXpuNU5pMzFRVGtUZXU0SUd1TENTcTJ3ajZQdkIyOGZ1V0pKSVd2SmZ6cnVOYVNJTlhYU3IxZTBWNXFhQUV6eEhvR2M0QjlGR0FJenBzcl9hVkIxcHVaUU9B?oc=5",
+            "source": "FinSMEs",
+            "publishedAt": "2026-11-19",
+            "lede": "Jeeves Receives Investment From Neuberger Berman Specialty Finance FinSMEs",
+            "articleExcerpt": "Jeeves Receives Investment From Neuberger Berman Specialty Finance - FinSMEs. Jeeves Receives Investment From Neuberger Berman Specialty Finance FinSMEs",
+            "contentFingerprint": "4b857c045749aeda",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [
+              "abf"
+            ],
+            "sectors": [
+              "abf"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "abf"
+              ],
+              "titleStrategies": [
+                "abf"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.75,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "abf"
+                  ],
+                  "semanticValue": 0.5
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "FinSMEs"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.94,
+              "finalScore": 19.94,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-3a2a422b0049",
+            "title": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations - FF News",
+            "titleZh": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations - FF News",
+            "summary": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations FF News",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQU1ZbE5RMWhXS1Z6cVVJTFlsUFpRUGdaWkM3Ui1tYlFsVkNIWUU1UElQQy1nYXBQV25STFFPVEp3UWZFVzdWb0tTTEhWYkNaQXktNThKcWFNMmh4Tl9KZVowUndkdU5JZ0ZDMEtNcGZpWkZJWHZFSy1KVll6TGQtSFpWZDUyU3JiTTdyQ2lDamVUbEpCMnR2VEVETzJsWmFPc0g4aHE4RDNUcnBMdmZsRzhFTQ?oc=5",
+            "source": "FF News",
+            "publishedAt": "2026-11-19",
+            "lede": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations FF News",
+            "articleExcerpt": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations - FF News. Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations FF News",
+            "contentFingerprint": "c5e88c33950fc1c2",
+            "region": "US",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "FF News"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 66,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 5.82,
+              "finalScore": 18.82,
+              "semanticEnabled": true
+            }
           }
         ],
         "BasePoint": [],
-        "Bain Capital": [],
+        "Bain Capital": [
+          {
+            "id": "2026-11-19-c82f183909d2",
+            "title": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor",
+            "titleZh": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor",
+            "summary": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres Benefits and Pensions Monitor",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHljcHVhVHEwTG1oM29HT3JScmtDR2Y2dlZsdVVJUy1rbXRONmNiaFF3Z0JYV2Z1R3djU2NUWGxlLWJ4QWZOeWtNZzdTandpMzlmT0R4ejA2UEt1UVFMSWVCODNCM19RZ1RfYTJJaU9pTnpMQjI4TDBnMXpwLWtTN0tTVXFwT2VreFRFNWFJbHhKN2RzSkRTbHdvTUpwUjVFSG5mZTQyQTd5djJwWjJ1TDJmYmRSS3VNZDRxbDVBajVGdDRaWHhBc0V3Y3plR1h4Q1Q2eU03WnhOWVVzUjNEbzd3?oc=5",
+            "source": "Benefits and Pensions Monitor",
+            "publishedAt": "2026-11-19",
+            "lede": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres Benefits and Pensions Monitor",
+            "articleExcerpt": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor. Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres Benefits and Pensions Monitor",
+            "contentFingerprint": "50fd05a266cfa912",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [
+              "data-center"
+            ],
+            "sectors": [
+              "data-center"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "data-center"
+              ],
+              "titleStrategies": [
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "data-center"
+                  ],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Benefits and Pensions Monitor"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 57,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 6,
+              "semanticScore": 5.44,
+              "finalScore": 11.440000000000001,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Blackstone": [
           {
             "id": "2026-11-19-17331a2a7b8c",
@@ -235879,8 +238087,299 @@
             }
           }
         ],
-        "Apollo": [],
-        "TPG": [],
+        "Apollo": [
+          {
+            "id": "2026-11-19-784ee81092ad",
+            "title": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports - MLQ.ai",
+            "titleZh": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports - MLQ.ai",
+            "summary": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports MLQ.ai",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUWhzQ0xndWNEM3V4NjUzejBpNWlpVDVSNkVVcVFwOERwVGhMZ3BNSHQwNEt3elBlbjJleUQ2WExhYzRnT1VIVXl1eVRxcHA0dXViX3NnNENwWloxenY4ZnhITXVDNW5JRVZYV3VWcWRrNTVEaVpPQ1JUa2VYbnhZRUFITjB0S3ZKeVY4Y3AwWExwVWRUNV90T1Jmelo5ek1tQkxjSDJMQTRfZjRtc3paQw?oc=5",
+            "source": "MLQ.ai",
+            "publishedAt": "2026-11-19",
+            "lede": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports MLQ.ai",
+            "articleExcerpt": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports - MLQ.ai. Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports MLQ.ai",
+            "contentFingerprint": "b2f97097f7af95e3",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.73,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "MLQ.ai"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 79,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.63,
+              "finalScore": 19.63,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-19627b752ae3",
+            "title": "Apollo scraps $2 billion loan to Manchester City owner, FT says - Reuters",
+            "titleZh": "Apollo scraps $2 billion loan to Manchester City owner, FT says - Reuters",
+            "summary": "Apollo scraps $2 billion loan to Manchester City owner, FT says Reuters",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRFpHMDdacDRPb2VQZUxrbHJMVkZ4aG13M2hQMHNlV3BmVXhJcnVqWjlkaUtYZmEtR1ZkOFpucG8za2xEeEI3SmNlSEt3X1VGQnZocG0wVEk0RlBGUnUwenIzTDNOSHczZmxFSDlVWmZjQjk2UU54Z2U4QWRPMFBlWUlFNDczeFRiTXNGU21PMUVPOE9ZZ3BOZjA1MGN6RGNFLTBtcjhJRFVBbWVEQlk3dw?oc=5",
+            "source": "Reuters",
+            "publishedAt": "2026-11-19",
+            "lede": "Apollo scraps $2 billion loan to Manchester City owner, FT says Reuters",
+            "articleExcerpt": "Apollo scraps $2 billion loan to Manchester City owner, FT says - Reuters. Apollo scraps $2 billion loan to Manchester City owner, FT says Reuters",
+            "contentFingerprint": "ab468d2eeb001aad",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.44
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 1.0,
+                  "code": "tier_top",
+                  "source": "Reuters"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 89,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.26,
+              "finalScore": 19.259999999999998,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "TPG": [
+          {
+            "id": "2026-11-19-527595eda5dc",
+            "title": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance Singapore",
+            "titleZh": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance Singapore",
+            "summary": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance Singapore",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBYOVpvS3h4ZlVUSXdITXV5TUtJQU55c2VmR0RYYlNJenVTZVl6Nm9xNjdJT3dpN1JIUTBsYkNVenV2d3NLcXJFOEJnOTIwSDJh?oc=5",
+            "source": "Yahoo Finance Singapore",
+            "publishedAt": "2026-11-19",
+            "lede": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance Singapore",
+            "articleExcerpt": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance Singapore. TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance Singapore",
+            "contentFingerprint": "5d9096e87197229b",
+            "region": "Global",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance Singapore"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.1
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 47,
+              "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.46,
+              "finalScore": 16.46,
+              "semanticEnabled": true
+            }
+          }
+        ],
         "Golub": [
           {
             "id": "2026-11-19-fe2189854e60",
@@ -236411,6 +238910,823 @@
           }
         },
         {
+          "id": "2026-11-19-9e4ccbb51824",
+          "title": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team - citybiz",
+          "titleZh": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team - citybiz",
+          "summary": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team citybiz",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNm5TSkQzQmpHdnhCMVc5TXRfTGxPWmpISXR2dENoa0NlcVV6Y1BBMW0wUElQTmRuaWVLTU1TclB0aVBHQ01TdmRERkRlRnphSmhFRnJLU1Y1WlBfTHg4VERwVHVNZldFTV9Ydk9qRWZsZ0ZON005T0k5WWRLU0dZQVptclhoLXNSOXg2Y0FxT3VnMVZJRFBENFE3S2lWdzVpaUFlQXNUaGNFVFpnVVlMVzVKbmlLVVBGX3c?oc=5",
+          "source": "citybiz",
+          "publishedAt": "2026-11-19",
+          "lede": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team citybiz",
+          "articleExcerpt": "Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team - citybiz. Pretium Expands Residential Real Estate Debt Platform Into UK With Hilltop Team citybiz",
+          "contentFingerprint": "17672eaf91a143e3",
+          "region": "Europe",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.51
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "citybiz"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 6.17,
+            "finalScore": 18.17,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-3ac581ef5555",
+          "title": "Pretium Expands Real Estate Debt Platform - Yahoo Finance",
+          "titleZh": "Pretium Expands Real Estate Debt Platform - Yahoo Finance",
+          "summary": "Pretium Expands Real Estate Debt Platform Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNTGQ4RlQ0cVp3SnlqSmZtaGFjWFZ2LXA3QXVia1Y0TUc4TFNwNzYzUlBMajA0VTctVG55VmR3WEVUYnphRXpCc2dCSGpHU202Ylc2UGlHY3laU1ZSSGZEQjRWN1ZZeGJxdFhHZFhtbUFkQkhZQ0V6LUp1eVpVVWxJLWkxcTA1cC1UQWo1ekdULWdLUmRpLUhNZ053?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-19",
+          "lede": "Pretium Expands Real Estate Debt Platform Yahoo Finance",
+          "articleExcerpt": "Pretium Expands Real Estate Debt Platform - Yahoo Finance. Pretium Expands Real Estate Debt Platform Yahoo Finance",
+          "contentFingerprint": "b59b3193ffbe66d3",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.28,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.55
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 64,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.63,
+            "finalScore": 17.63,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-a5c38cf2a433",
+          "title": "Pretium Expands Real Estate Debt Platform - Via TT",
+          "titleZh": "Pretium Expands Real Estate Debt Platform - Via TT",
+          "summary": "Pretium Expands Real Estate Debt Platform Via TT",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPUHRLQ1JhYnJ5eThVVVotN00wVEswWE40YzVmNXgwZ1dudFFiU25KQ3B4XzUzdzhBUlpmRFZoQkg1OW5tNEh5aTNoYUNValpYV1JDa214dGkzelpxN1M3US1CdXEzam1CUFktNG1HaUkyY1BWRDdVWElQbmpRSm1FQk1iaWxwUHNSY01zak5FSTFqczRaZTFWYkkzZGZmcUxVMVFvdC1tdk5kZWl3RjVN?oc=5",
+          "source": "Via TT",
+          "publishedAt": "2026-11-19",
+          "lede": "Pretium Expands Real Estate Debt Platform Via TT",
+          "articleExcerpt": "Pretium Expands Real Estate Debt Platform - Via TT. Pretium Expands Real Estate Debt Platform Via TT",
+          "contentFingerprint": "a6cd3fa4925cc8df",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.26,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Via TT"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 6.23,
+            "finalScore": 17.23,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-4c691a4a6205",
+          "title": "Pretium Expands Real Estate Debt Platform - lincolnjournal.com",
+          "titleZh": "Pretium Expands Real Estate Debt Platform - lincolnjournal.com",
+          "summary": "Pretium Expands Real Estate Debt Platform lincolnjournal.com",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPTzluR0ZWTFJSS0xTdUxnWWYtdld1YUFaN3F6enotUTFHRENPem80d0dHWUNLd1JWS2g3bXdNSWtfbW5BN1lXOThON1RQOG5rSnRDa2JrSTZkMHlVcHNSUjFub21JdkNYdzJzYU5Fb24yYm4zRWk5OHoyMEdNMmlNeTVIbmhCb0VxSjU5aHVCX3lBaWNNelhBTjZHT3QyaEd6R1hyY25RNnR1cWZfZnFPN1dVRy00eDdLTFNpb0l2YzJoRFQ5Vk13YWVQd1N2TlFHODlQcll5dmNOQmlOY1NiSEZxeVNCWnVj?oc=5",
+          "source": "lincolnjournal.com",
+          "publishedAt": "2026-11-19",
+          "lede": "Pretium Expands Real Estate Debt Platform lincolnjournal.com",
+          "articleExcerpt": "Pretium Expands Real Estate Debt Platform - lincolnjournal.com. Pretium Expands Real Estate Debt Platform lincolnjournal.com",
+          "contentFingerprint": "aec5833af933aa69",
+          "region": "Global",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.25,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "lincolnjournal.com"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 51,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.95,
+            "finalScore": 16.95,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-817bf863f3c2",
+          "title": "Pretium expands outside US with acquisition of London-based investment manager - Green Street News",
+          "titleZh": "Pretium expands outside US with acquisition of London-based investment manager - Green Street News",
+          "summary": "Pretium expands outside US with acquisition of London-based investment manager Green Street News",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNZ29UeHBQRy0talFUNVJQSWlKRkRBX0FwUTJxY3RCZGFZVHkyRnRfTEVVTXhSTnlYY3R3T0dybTBVMFRqQld6Zmo2NldjcFQ3MTk2QjRucWdkcVk1ZHdXVTdCUWU3QWwzdzJrdEl1NEUxaFl2VVZUb1EwNEtyQnVneHBjNVZFbVpaZkNNN3FPSU9IWF9iam5YOUdxTzhweDNqV0hKTmExNloxU0dMWXdvNEJMa2szZw?oc=5",
+          "source": "Green Street News",
+          "publishedAt": "2026-11-19",
+          "lede": "Pretium expands outside US with acquisition of London-based investment manager Green Street News",
+          "articleExcerpt": "Pretium expands outside US with acquisition of London-based investment manager - Green Street News. Pretium expands outside US with acquisition of London-based investment manager Green Street News",
+          "contentFingerprint": "644c7a489ecbf658",
+          "region": "US",
+          "gps": [
+            "Pretium"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Pretium"
+            ],
+            "titleGps": [
+              "Pretium"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Pretium"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Green Street News"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 73,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 5.75,
+            "finalScore": 10.75,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-72083dda90f9",
+          "title": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself - Yahoo Finance",
+          "titleZh": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself - Yahoo Finance",
+          "summary": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOZEgxV0VBTlJVcjk3NFZiXzBhVVA1ekE0SlBXNmF4VklaU1RnT1BXS1Uyc0szMjBTN0FtNk9PbVo3LUs1OFVhVFFvVUQwRzFGaUoyX2VsRkpnV3ZFZmpJV09yVks2ZmNzcHJCamNnWXFJNGZNOWxBNG5jcUYtMlZKVUV5UzFmTTJLUklhd1ZpVTdLWWhUYTFVX2Nn?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-19",
+          "lede": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself Yahoo Finance",
+          "articleExcerpt": "TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself - Yahoo Finance. TGT Stock Gets Multiple Price-Target Hikes — But Guggenheim Says Turnaround Still Has To Prove Itself Yahoo Finance",
+          "contentFingerprint": "4b0c14d4c83d31fb",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.19,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.38
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 4.58,
+            "finalScore": 15.58,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-8302ee630287",
+          "title": "Guggenheim Municipal Income Fund Q3 2026 Commentary - Seeking Alpha",
+          "titleZh": "Guggenheim Municipal Income Fund Q3 2026 Commentary - Seeking Alpha",
+          "summary": "Guggenheim Municipal Income Fund Q3 2026 Commentary Seeking Alpha",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNS3lockNwUEdxbEZGXzUtbDh2UTBtRHUzVUZRYmc4UWQxeWs2Uk1pTzktVTRZNUJ5SzdGaHN2c1dlandNRjNjQTEyY09jbjhLeTRQeWItRlo3d0UzNGJ2RktUazFoV0hoWWlrSTNwMWs1aWJ1V05WTVVlSHR5QlV5Yk53TGl1TExvTzJTNEZBVEFfZEtINkM4bnZuYVZ2NngtZHlwckNURmZtalNPLVBTVQ?oc=5",
+          "source": "Seeking Alpha",
+          "publishedAt": "2026-11-19",
+          "lede": "Guggenheim Municipal Income Fund Q3 2026 Commentary Seeking Alpha",
+          "articleExcerpt": "Guggenheim Municipal Income Fund Q3 2026 Commentary - Seeking Alpha. Guggenheim Municipal Income Fund Q3 2026 Commentary Seeking Alpha",
+          "contentFingerprint": "b6682f6a587059cc",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.2,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.4
+              },
+              "event": {
+                "value": 0.8,
+                "code": "fundraising",
+                "ruleValue": 0.8,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Seeking Alpha"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.85,
+            "finalScore": 7.85,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-d9b85dec43c9",
+          "title": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde - freeyork",
+          "titleZh": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde - freeyork",
+          "summary": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde freeyork",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTFBRa0h4WHhFMV91R2ZpWGI5YW9tT2Jjak9BcTliVndPNjhkZmM2ekZGUUk5eTJnREpFQkxkOVBtRnhmSko4SWE5aE9nX0FSYVIwNlU1SF8zcVZYal85UjN4MllCSHlzMHI0?oc=5",
+          "source": "freeyork",
+          "publishedAt": "2026-11-19",
+          "lede": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde freeyork",
+          "articleExcerpt": "Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde - freeyork. Before the Collection: Peggy Guggenheim’s London Gallery Shaped Britain’s Avant-Garde freeyork",
+          "contentFingerprint": "a381b466009bea32",
+          "region": "Europe",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.16,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.32
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "freeyork"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 4,
+            "semanticScore": 3.85,
+            "finalScore": 7.85,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-bf88f88d8ab6",
+          "title": "Target price target raised to $180 from $175 at Guggenheim - TipRanks",
+          "titleZh": "Target price target raised to $180 from $175 at Guggenheim - TipRanks",
+          "summary": "Target price target raised to $180 from $175 at Guggenheim TipRanks",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNaGpNNU5pVHRRbFIzWVFtU1NKdHpPbzY5eHlHV0hwTzd6QV9CT2xyN0J5OG5zNXhTajcxV0Zfa2R6UVZJSmJobjlsbXhKWmJ0NFhkWlRISk0xRGlMQUF5bzdsd3g5WW84UzYtSTYwYTV1OUlyZDNYRXBXdVpxb2dCM3V5ZXp0TlY0MVdvYTUwcll4Ym1RYUtVR2wyMEh1SmRJSjdINWFLZEdDdw?oc=5",
+          "source": "TipRanks",
+          "publishedAt": "2026-11-19",
+          "lede": "Target price target raised to $180 from $175 at Guggenheim TipRanks",
+          "articleExcerpt": "Target price target raised to $180 from $175 at Guggenheim - TipRanks. Target price target raised to $180 from $175 at Guggenheim TipRanks",
+          "contentFingerprint": "864a0a8101cffff9",
+          "region": "Global",
+          "gps": [
+            "Guggenheim"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Guggenheim"
+            ],
+            "titleGps": [
+              "Guggenheim"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Guggenheim"
+                ]
+              },
+              "strategy": {
+                "value": 0.17,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.34
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "TipRanks"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 46,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 4.12,
+            "finalScore": 7.12,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-19-8c406e0a01f6",
           "title": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman",
           "titleZh": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman",
@@ -236506,6 +239822,301 @@
             "keywordScore": 14,
             "semanticScore": 3.48,
             "finalScore": 17.48,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-20933e9a1823",
+          "title": "Jeeves Receives Investment From Neuberger Berman Specialty Finance - FinSMEs",
+          "titleZh": "Jeeves Receives Investment From Neuberger Berman Specialty Finance - FinSMEs",
+          "summary": "Jeeves Receives Investment From Neuberger Berman Specialty Finance FinSMEs",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNcFFFUlRxRHVEa3Vmd1dhckFWSmJDV2lYQmtBSXlrSDdzZGtCSVVFczlhWFQ4cm1MdlFjY0tHcEFGS2Q2SmZiT3UwV3JIVXpuNU5pMzFRVGtUZXU0SUd1TENTcTJ3ajZQdkIyOGZ1V0pKSVd2SmZ6cnVOYVNJTlhYU3IxZTBWNXFhQUV6eEhvR2M0QjlGR0FJenBzcl9hVkIxcHVaUU9B?oc=5",
+          "source": "FinSMEs",
+          "publishedAt": "2026-11-19",
+          "lede": "Jeeves Receives Investment From Neuberger Berman Specialty Finance FinSMEs",
+          "articleExcerpt": "Jeeves Receives Investment From Neuberger Berman Specialty Finance - FinSMEs. Jeeves Receives Investment From Neuberger Berman Specialty Finance FinSMEs",
+          "contentFingerprint": "4b857c045749aeda",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [
+            "abf"
+          ],
+          "sectors": [
+            "abf"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "abf"
+            ],
+            "titleStrategies": [
+              "abf"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.75,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "abf"
+                ],
+                "semanticValue": 0.5
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "FinSMEs"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.94,
+            "finalScore": 19.94,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-3a2a422b0049",
+          "title": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations - FF News",
+          "titleZh": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations - FF News",
+          "summary": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations FF News",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNQU1ZbE5RMWhXS1Z6cVVJTFlsUFpRUGdaWkM3Ui1tYlFsVkNIWUU1UElQQy1nYXBQV25STFFPVEp3UWZFVzdWb0tTTEhWYkNaQXktNThKcWFNMmh4Tl9KZVowUndkdU5JZ0ZDMEtNcGZpWkZJWHZFSy1KVll6TGQtSFpWZDUyU3JiTTdyQ2lDamVUbEpCMnR2VEVETzJsWmFPc0g4aHE4RDNUcnBMdmZsRzhFTQ?oc=5",
+          "source": "FF News",
+          "publishedAt": "2026-11-19",
+          "lede": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations FF News",
+          "articleExcerpt": "Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations - FF News. Jeeves Secures $300 Million Financing from Neuberger Berman to Scale Global Fintech Operations FF News",
+          "contentFingerprint": "c5e88c33950fc1c2",
+          "region": "US",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "FF News"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 66,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 5.82,
+            "finalScore": 18.82,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-c82f183909d2",
+          "title": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor",
+          "titleZh": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor",
+          "summary": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres Benefits and Pensions Monitor",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxOWHljcHVhVHEwTG1oM29HT3JScmtDR2Y2dlZsdVVJUy1rbXRONmNiaFF3Z0JYV2Z1R3djU2NUWGxlLWJ4QWZOeWtNZzdTandpMzlmT0R4ejA2UEt1UVFMSWVCODNCM19RZ1RfYTJJaU9pTnpMQjI4TDBnMXpwLWtTN0tTVXFwT2VreFRFNWFJbHhKN2RzSkRTbHdvTUpwUjVFSG5mZTQyQTd5djJwWjJ1TDJmYmRSS3VNZDRxbDVBajVGdDRaWHhBc0V3Y3plR1h4Q1Q2eU03WnhOWVVzUjNEbzd3?oc=5",
+          "source": "Benefits and Pensions Monitor",
+          "publishedAt": "2026-11-19",
+          "lede": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres Benefits and Pensions Monitor",
+          "articleExcerpt": "Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres - Benefits and Pensions Monitor. Pension fund leads the bidding for a stake in Bain Capital’s Bridge Data Centres Benefits and Pensions Monitor",
+          "contentFingerprint": "50fd05a266cfa912",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [
+            "data-center"
+          ],
+          "sectors": [
+            "data-center"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "data-center"
+            ],
+            "titleStrategies": [
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "data-center"
+                ],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Benefits and Pensions Monitor"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 57,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 6,
+            "semanticScore": 5.44,
+            "finalScore": 11.440000000000001,
             "semanticEnabled": true
           }
         },
@@ -236609,6 +240220,295 @@
             "keywordScore": 14,
             "semanticScore": 6.2,
             "finalScore": 20.2,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-784ee81092ad",
+          "title": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports - MLQ.ai",
+          "titleZh": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports - MLQ.ai",
+          "summary": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports MLQ.ai",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUWhzQ0xndWNEM3V4NjUzejBpNWlpVDVSNkVVcVFwOERwVGhMZ3BNSHQwNEt3elBlbjJleUQ2WExhYzRnT1VIVXl1eVRxcHA0dXViX3NnNENwWloxenY4ZnhITXVDNW5JRVZYV3VWcWRrNTVEaVpPQ1JUa2VYbnhZRUFITjB0S3ZKeVY4Y3AwWExwVWRUNV90T1Jmelo5ek1tQkxjSDJMQTRfZjRtc3paQw?oc=5",
+          "source": "MLQ.ai",
+          "publishedAt": "2026-11-19",
+          "lede": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports MLQ.ai",
+          "articleExcerpt": "Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports - MLQ.ai. Apollo scraps a $2 billion loan to Manchester City owner City Football Group, the FT reports MLQ.ai",
+          "contentFingerprint": "b2f97097f7af95e3",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.73,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "MLQ.ai"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 79,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.63,
+            "finalScore": 19.63,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-19627b752ae3",
+          "title": "Apollo scraps $2 billion loan to Manchester City owner, FT says - Reuters",
+          "titleZh": "Apollo scraps $2 billion loan to Manchester City owner, FT says - Reuters",
+          "summary": "Apollo scraps $2 billion loan to Manchester City owner, FT says Reuters",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRFpHMDdacDRPb2VQZUxrbHJMVkZ4aG13M2hQMHNlV3BmVXhJcnVqWjlkaUtYZmEtR1ZkOFpucG8za2xEeEI3SmNlSEt3X1VGQnZocG0wVEk0RlBGUnUwenIzTDNOSHczZmxFSDlVWmZjQjk2UU54Z2U4QWRPMFBlWUlFNDczeFRiTXNGU21PMUVPOE9ZZ3BOZjA1MGN6RGNFLTBtcjhJRFVBbWVEQlk3dw?oc=5",
+          "source": "Reuters",
+          "publishedAt": "2026-11-19",
+          "lede": "Apollo scraps $2 billion loan to Manchester City owner, FT says Reuters",
+          "articleExcerpt": "Apollo scraps $2 billion loan to Manchester City owner, FT says - Reuters. Apollo scraps $2 billion loan to Manchester City owner, FT says Reuters",
+          "contentFingerprint": "ab468d2eeb001aad",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.44
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 1.0,
+                "code": "tier_top",
+                "source": "Reuters"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 89,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.26,
+            "finalScore": 19.259999999999998,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-527595eda5dc",
+          "title": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance Singapore",
+          "titleZh": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance Singapore",
+          "summary": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance Singapore",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTFBYOVpvS3h4ZlVUSXdITXV5TUtJQU55c2VmR0RYYlNJenVTZVl6Nm9xNjdJT3dpN1JIUTBsYkNVenV2d3NLcXJFOEJnOTIwSDJh?oc=5",
+          "source": "Yahoo Finance Singapore",
+          "publishedAt": "2026-11-19",
+          "lede": "TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance Singapore",
+          "articleExcerpt": "TPG Inc. (TPG) stock price, news, quote and history - Yahoo Finance Singapore. TPG Inc. (TPG) stock price, news, quote and history Yahoo Finance Singapore",
+          "contentFingerprint": "5d9096e87197229b",
+          "region": "Global",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance Singapore"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.1
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 47,
+            "retrievedAt": "2026-11-19T14:54:37.337964+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.46,
+            "finalScore": 16.46,
             "semanticEnabled": true
           }
         },
@@ -236717,7 +240617,7 @@
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 32,
+      "count": 34,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -236725,7 +240625,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
@@ -236738,12 +240638,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 4,
+      "count": 5,
       "selected": 1,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -236751,51 +240651,51 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "PAG",
-      "count": 9,
-      "selected": 0,
+      "count": 6,
+      "selected": 1,
       "status": "ok",
       "query": "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
       "queries": [
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
       "count": 5,
-      "selected": 0,
+      "selected": 5,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 6,
-      "selected": 1,
+      "count": 9,
+      "selected": 5,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 7,
+      "count": 9,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -236803,7 +240703,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
@@ -236816,12 +240716,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 21,
+      "count": 24,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -236829,12 +240729,12 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Blackstone",
-      "count": 102,
+      "count": 85,
       "selected": 6,
       "status": "ok",
       "query": "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
@@ -236842,12 +240742,12 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Apollo",
-      "count": 29,
+      "count": 33,
       "selected": 6,
       "status": "ok",
       "query": "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
@@ -236855,25 +240755,25 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 10,
-      "selected": 4,
+      "count": 12,
+      "selected": 6,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 14,
+      "count": 11,
       "selected": 6,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -236881,12 +240781,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 28,
+      "count": 25,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -236894,12 +240794,12 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Canyon",
-      "count": 22,
+      "count": 21,
       "selected": 0,
       "status": "ok",
       "query": "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
@@ -236907,12 +240807,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 620,
+      "count": 673,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -236929,9 +240829,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-19T04:56:47.915097+00:00",
+      "asOf": "2026-11-19T14:54:37.337964+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-19T04:56:47.915097+00:00"
+  "checkedAt": "2026-11-19T14:54:37.337964+00:00"
 }
