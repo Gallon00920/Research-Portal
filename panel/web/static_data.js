@@ -164,7 +164,7 @@ window.DataLayer = (function(){
         Object.keys(bundle.images || {}).forEach(name => {
           const bytes = Uint8Array.from(atob(bundle.images[name]), c => c.charCodeAt(0));
           const ext = name.split('.').pop().toLowerCase();
-          const type = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : (ext === 'gif' ? 'image/gif' : (ext === 'svg' ? 'image/svg+xml' : 'image/png'));
+          const type = ext === 'jpg' || ext === 'jpeg' ? 'image/jpeg' : (ext === 'gif' ? 'image/gif' : (ext === 'svg' ? 'image/svg+xml' : (ext === 'webp' ? 'image/webp' : 'image/png')));
           imageCache[id][name] = URL.createObjectURL(new Blob([bytes], {type}));
         });
         return {meta: bundle.meta, content: bundle.content};
@@ -179,6 +179,10 @@ window.DataLayer = (function(){
       return `data/reports/${id}/images/${encodeURIComponent(name)}`;
     },
     async upload(fields, file){
+      if (Array.isArray(file)){
+        if (file.length > 1) throw new Error('Several pictures in one report need the server (the static site takes one file per upload).');
+        file = file[0];
+      }
       const id = uid();
       const ext = (file.name.split('.').pop() || 'docx').toLowerCase();
       let bytes = new Uint8Array(await file.arrayBuffer());
@@ -228,7 +232,7 @@ window.DataLayer = (function(){
     imageUrl(id, name){ return '/api/reports/' + encodeURIComponent(id) + '/images/' + encodeURIComponent(name); },
     async upload(fields, file){
       const fd = new FormData();
-      fd.append('file', file);
+      (Array.isArray(file) ? file : [file]).forEach(f => fd.append('file', f));  // several pictures: one slide each, in order
       Object.keys(fields).forEach(k => fd.append(k, fields[k] == null ? '' : fields[k]));
       return api('/api/upload', {method: 'POST', body: fd});
     },

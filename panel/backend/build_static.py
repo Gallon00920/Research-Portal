@@ -35,7 +35,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 
 from crypto_util import decrypt_bytes, derive_key, encrypt_bytes, load_or_create_salt, password_from_env  # noqa: E402
-from parsers import parse_report  # noqa: E402
+from parsers import fill_from_file_name, parse_report  # noqa: E402
 
 DATA = ROOT / "data"
 REPORTS = DATA / "reports"
@@ -250,8 +250,9 @@ def process_incoming(c: Crypto) -> int:
         d.mkdir(parents=True)
         src = d / f"source{ext}"
         src.write_bytes(raw)
+        source_name = meta_in.get("source_name") or p.name.replace(".enc", "")
         try:
-            parsed = parse_report(src, d / "images")
+            parsed = fill_from_file_name(parse_report(src, d / "images"), source_name)
         except Exception as e:
             log("PARSE FAILED", p.name, e)
             shutil.rmtree(d, ignore_errors=True)
@@ -264,7 +265,7 @@ def process_incoming(c: Crypto) -> int:
             # a dated report (a weekly update): one edition per date
             **({"date": str(meta_in["date"]).strip()} if re.fullmatch(r"\d{4}-\d{2}-\d{2}", str(meta_in.get("date") or "").strip()) else {}),
             "keywords": [k.strip() for k in re.split(r"[,，;；]", meta_in.get("keywords") or "") if k.strip()],
-            "source_name": meta_in.get("source_name") or p.name.replace(".enc", ""), "source_ext": ext,
+            "source_name": source_name, "source_ext": ext,
             "uploaded_at": meta_in.get("uploaded_at") or now_iso(),
         }
         fill_meta_from_parsed(meta, parsed)

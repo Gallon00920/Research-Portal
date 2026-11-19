@@ -6,7 +6,21 @@ or in public link https://gallon00920.github.io/Research-Portal/
 Internal website that visualises AID quarterly research reports by sector.
 Reports are uploaded as `.docx` or `.pdf`, parsed into structured content
 (headings, paragraphs, lists, tables, figures) and displayed in a reader that
-mirrors the AID Research Portal design. No database: every report lives as
+mirrors the AID Research Portal design. A portfolio fund's AID analysis tab
+also takes pictures (`.png`, `.jpg`, `.webp`, `.gif`, `.bmp`), read like the
+pages of a slide deck: Claude (vision) transcribes the text into headings,
+paragraphs and lists, reads every table (and panel of key-figure tiles) into a
+real table with its tinted and highlighted cells (the cropped picture stays as
+its full-size view), and marks every chart and picture, which is cropped whole (`panel/backend/parsers/image_parser.py`). The crops
+follow the picture's own blocks, found along its blank gutters (a framed panel
+is opened up into its parts), so a rough box from Claude never cuts a figure
+or takes a sliver of the next panel. Several pictures uploaded together (picked,
+dropped or pasted with Ctrl+V, shown as numbered thumbnails) are one report,
+one slide each in that order, kept as `source.zip`; the report's title is what
+the slide titles share (e.g. "Progress 2Q26 更新"). It needs `ANTHROPIC_API_KEY`
+on the server; without it (and on the static site's build) each picture is kept
+whole as a slide.
+No database: every report lives as
 files under `panel/data/reports/<id>/`. The same site also hosts the
 **News tracker** and **Investment performance** (see below); the three features
 live in `panel/`, `news/` and `factors/`, and only the shared page shell is in

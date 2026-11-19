@@ -27,18 +27,20 @@ import sys
 import threading
 import time
 import uuid
+import zipfile
 from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, File, Form, HTTPException, Request, UploadFile
+from fastapi.concurrency import run_in_threadpool
 from fastapi.responses import FileResponse, JSONResponse, RedirectResponse
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 
 import ai_assist  # noqa: E402  (report generation with Skills + the editing chat)
-from parsers import parse_report  # noqa: E402
+from parsers import IMAGE_EXTS, SLIDES_EXT, UPLOAD_EXTS, fill_from_file_name, parse_report  # noqa: E402
 
 DATA = ROOT / "data"
 REPORTS = DATA / "reports"
@@ -467,7 +469,7 @@ def _write_content(d: Path, meta: dict[str, Any], parsed: dict[str, Any], keep_t
 def ingest_report(src_path: Path, source_name: str, sector: str, year: int | None, quarter: int | None,
                   nature: str = "full", language: str = "", title: str = "", keywords: str = "", section: str = "",
                   date: str = "") -> dict[str, Any]:
-    """Store one .docx / .pdf as a report: copy it into a new report folder, parse it, write meta +
+    """Store one .docx / .pdf (or a picture, kept as a one-slide report) as a report: copy it into a new report folder, parse it, write meta +
     content, and replace any earlier edition with the same sector, quarter, type and language (and
     date, for a dated report such as a weekly update).
     Used by the upload endpoint and by AI generation."""
@@ -482,8 +484,8 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
     if nature not in ("full", "summary"):
         raise HTTPException(400, "nature must be full or summary")
     ext = Path(source_name or "").suffix.lower()
-    if ext not in (".docx", ".pdf"):
-        raise HTTPException(400, "Only .docx and .pdf reports are supported")
+    if ext not in UPLOAD_EXTS + (SLIDES_EXT,):
+        raise HTTPException(400, "Only .docx and .pdf reports or images (.png .jpg .webp .gif .bmp) are supported")
 
     rid = f"{sector}-{year}Q{quarter}-{nature}-{uuid.uuid4().hex[:8]}"
     d = REPORTS / rid
@@ -491,7 +493,7 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
     src = d / f"source{ext}"
     shutil.copyfile(src_path, src)
     try:
-        parsed = parse_report(src, d / "images")
+        parsed = fill_from_file_name(parse_report(src, d / "images"), source_name)
     except Exception as e:  # keep the data folder clean on failure
         shutil.rmtree(d, ignore_errors=True)
         raise HTTPException(422, f"Could not parse report: {e}")
@@ -523,17 +525,34 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
 
 
 @app.post("/api/upload")
-async def api_upload(file: UploadFile = File(...), sector: str = Form(...), year: int | None = Form(None),
+async def api_upload(file: list[UploadFile] = File(...), sector: str = Form(...), year: int | None = Form(None),
                      quarter: int | None = Form(None), nature: str = Form("full"), language: str = Form(""),
                      title: str = Form(""), keywords: str = Form(""), section: str = Form(""), date: str = Form("")):
-    ext = Path(file.filename or "").suffix.lower()
-    if ext not in (".docx", ".pdf"):
-        raise HTTPException(400, "Only .docx and .pdf reports are supported")
-    tmp = REPORTS / f".upload-{uuid.uuid4().hex[:8]}{ext}"
-    try:
+    """One report from one file; or from several pictures (a fund's slides), which become one
+    report with a slide each, in the order sent (kept together as source.zip)."""
+    files = [f for f in file if f.filename]
+    if not files:
+        raise HTTPException(400, "no file")
+    exts = [Path(f.filename or "").suffix.lower() for f in files]
+    if any(ext not in UPLOAD_EXTS for ext in exts):
+        raise HTTPException(400, "Only .docx and .pdf reports or images (.png .jpg .webp .gif .bmp) are supported")
+    if len(files) > 1 and any(ext not in IMAGE_EXTS for ext in exts):
+        raise HTTPException(400, "Several files can be uploaded together only when all are images (one slide each)")
+    tag = uuid.uuid4().hex[:8]
+    if len(files) == 1:
+        tmp = REPORTS / f".upload-{tag}{exts[0]}"
+        source_name = files[0].filename or f"report{exts[0]}"
         with tmp.open("wb") as fh:
-            shutil.copyfileobj(file.file, fh)
-        return ingest_report(tmp, file.filename or f"report{ext}", sector, year, quarter, nature, language, title, keywords, section, date)
+            shutil.copyfileobj(files[0].file, fh)
+    else:
+        tmp = REPORTS / f".upload-{tag}{SLIDES_EXT}"
+        source_name = Path(files[0].filename).stem + SLIDES_EXT
+        with zipfile.ZipFile(tmp, "w") as zf:  # names keep the order: 01-..., 02-...
+            for i, (f, ext) in enumerate(zip(files, exts), start=1):
+                zf.writestr(f"{i:02d}-{Path(f.filename).stem[:60]}{ext}", f.file.read())
+    try:
+        # off the event loop: reading pictures waits on Claude for a while
+        return await run_in_threadpool(ingest_report, tmp, source_name, sector, year, quarter, nature, language, title, keywords, section, date)
     finally:
         tmp.unlink(missing_ok=True)
 

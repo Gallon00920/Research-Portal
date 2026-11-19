@@ -584,19 +584,19 @@ function pushExhibit(b, cap){
   return state.exhibits.length - 1;
 }
 function renderFigure(b){
-  const fig = el('figure', 'fig'); fig.id = b.anchor || ('ex-' + b.exhibit);
+  const fig = el('figure', b.slide ? 'fig slide' : 'fig'); fig.id = b.anchor || ('ex-' + b.exhibit);
   const head = el('div', 'fig-head');
   head.appendChild(el('span', 'fig-no', exhibitLabel(b)));
   const cap = captionText(b);
   if (cap) head.appendChild(el('span', 'fig-cap', cap));
-  fig.appendChild(head);
+  if (!b.slide) fig.appendChild(head);  // an uploaded picture is the slide itself: no exhibit header
   const idx = pushExhibit(b, cap);
   if (b.unsupported){
     fig.appendChild(el('div', 'unsupported', t('unsupported_img')));
   } else {
     const im = document.createElement('img');
     im.loading = 'lazy'; im.src = imgUrl(b.src); im.alt = cap || exhibitLabel(b);
-    if (b.width && b.width < 900) im.style.maxWidth = Math.round(b.width) + 'px';
+    if (b.width && b.width < 900) im.style.maxWidth = 'min(100%, ' + Math.round(b.width) + 'px)';  // never wider than the column
     im.addEventListener('click', () => openLb(idx));
     fig.appendChild(im);
   }
@@ -625,9 +625,18 @@ function renderTable(b){
     thead.appendChild(trh); tb.appendChild(thead);
   }
   const tbody = el('tbody');
-  rows.slice(b.header === false ? 0 : 1).forEach(r => {
+  const first = b.header === false ? 0 : 1;
+  // cells the source sets apart (a heat map's tinted cells, a highlighted scenario): [row, col, mark]
+  const marks = {};
+  (b.marks || []).forEach(m => { marks[m[0] + ':' + m[1]] = m[2]; });
+  rows.slice(first).forEach((r, i) => {
     const tr = el('tr');
-    r.forEach(c => { const td = el('td'); td.innerHTML = escapeHtml(c).replace(/\n/g, '<br>'); tr.appendChild(td); });
+    r.forEach((c, j) => {
+      const td = el('td'); td.innerHTML = escapeHtml(c).replace(/\n/g, '<br>');
+      const mk = marks[(i + first) + ':' + j];
+      if (mk) td.classList.add('mk-' + mk);
+      tr.appendChild(td);
+    });
     tbody.appendChild(tr);
   });
   tb.appendChild(tbody); wrap.appendChild(tb); frag.appendChild(wrap);
@@ -891,12 +900,14 @@ function openUpload(sectorId, editMeta){
   const isEdit = !!editMeta;
   $('upTitle').textContent = isEdit ? t('edit_report') : t('upload_report');
   $('drop').hidden = isEdit;
-  $('upFile').value = ''; $('dropFile').textContent = '';
+  $('upFile').value = ''; state.upFiles = []; paintChosenFiles();
   // the sub-sector (portfolio management only): the report's own, else the tab on screen
   const upSpace = isEdit ? spaceOf(editMeta.sector) : (sectorId ? spaceOf(sectorId) : state.space);
   const secs = sections(upSpace);
+  state.upSpace = upSpace;
   $('upSectionLbl').hidden = !secs;
   if (secs) fillSelect($('upSection'), secs.map(sec => [sec, sectionName(sec)]), isEdit ? sectionOfReport(editMeta) : (secs.includes(state.section) ? state.section : secs[0]));
+  paintUploadTypes();
   fillUploadSectors(upSpace, isEdit ? editMeta.sector : sectorId);
   fillSelect($('upQuarter'), [1,2,3,4].map(q => [String(q), 'Q' + q]), String(isEdit ? editMeta.quarter : state.meta.current_quarter));
   fillSelect($('upNature'), [['full', t('full')], ['summary', t('summary')]], isEdit ? editMeta.nature : 'full');
@@ -917,6 +928,90 @@ function openUpload(sectorId, editMeta){
   setUploadMode('file', sectorId);
   $('upOverlay').classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+/* what the file picker takes: Word and PDF everywhere (read for text, tables and figures); a
+   portfolio fund's AID analysis also takes a picture, kept whole as a one-slide report */
+const REPORT_EXTS = ['.docx', '.pdf'];
+const IMAGE_EXTS = ['.png', '.jpg', '.jpeg', '.webp', '.gif', '.bmp'];
+function imagesAllowed(){ return state.upSpace === 'portfolio' && $('upSection').value === 'internal'; }
+function uploadExts(){ return imagesAllowed() ? REPORT_EXTS.concat(IMAGE_EXTS) : REPORT_EXTS; }
+function fileExt(name){ const m = /\.[^.]+$/.exec(name || ''); return m ? m[0].toLowerCase() : ''; }
+function paintUploadTypes(){
+  const img = imagesAllowed();
+  $('upFile').accept = uploadExts().join(',');
+  $('upFile').multiple = img;  // several pictures: one report, a slide each
+  $('dropTypes').dataset.i18n = img ? 'drop_types_img' : 'drop_types';  // kept through a language switch
+  $('dropTypes').textContent = t($('dropTypes').dataset.i18n);
+  const keep = (state.upFiles || []).filter(x => uploadExts().includes(fileExt(x.file.name)));
+  if (keep.length !== (state.upFiles || []).length){ state.upFiles = keep; paintChosenFiles(); }
+}
+const isImage = f => IMAGE_EXTS.includes(fileExt(f.name));
+/* the files chosen for the upload, in order: a Word or PDF report alone, or one or more
+   pictures. Pictures picked, dropped or pasted are added after those already chosen. */
+function addUpFiles(files, pasted){
+  const msg = $('upMsg'); msg.textContent = ''; msg.className = 'form-msg';
+  files = files.filter(f => uploadExts().includes(fileExt(f.name)));
+  if (!files.length) return false;
+  const pics = files.filter(isImage);
+  if (pics.length === files.length && imagesAllowed()){
+    if (!pasted) pics.sort((a, b) => a.name.localeCompare(b.name, undefined, {numeric: true}));  // 1, 2, ..., 10
+    const before = (state.upFiles || []).filter(x => isImage(x.file));
+    state.upFiles = before.concat(pics.map(f => ({file: f, pasted: !!pasted})));
+  } else {
+    const doc = files.find(f => !isImage(f)) || files[0];
+    state.upFiles = [{file: doc, pasted: !!pasted}];
+  }
+  paintChosenFiles();
+  return true;
+}
+/* under the drop zone: the chosen file's name, or the pictures as numbered thumbnails (slide
+   order), each with a button that takes it out */
+function paintChosenFiles(){
+  const list = state.upFiles || [], box = $('upFiles');
+  box.querySelectorAll('img').forEach(im => URL.revokeObjectURL(im.src));
+  box.innerHTML = '';
+  const pics = list.filter(x => isImage(x.file));
+  $('dropFile').textContent = !list.length ? '' : (pics.length > 1 ? t('n_images', {n: pics.length})
+    : (list[0].pasted ? t('pasted_image') : list[0].file.name));
+  pics.forEach((x, i) => {
+    const card = el('div', 'up-thumb');
+    const im = document.createElement('img'); im.src = URL.createObjectURL(x.file); im.alt = x.file.name;
+    card.appendChild(im);
+    card.appendChild(el('span', 'up-thumb-no', String(i + 1)));
+    const rm = el('button', 'up-thumb-rm', '×'); rm.type = 'button'; rm.title = t('remove');
+    rm.addEventListener('click', () => { state.upFiles = list.filter(y => y !== x); paintChosenFiles(); });
+    card.appendChild(rm);
+    box.appendChild(card);
+  });
+  box.hidden = !pics.length;
+}
+/* Ctrl+V in the upload dialog: a copied picture (a screenshot, an image copied from a page or a
+   slide) is added as the next slide; a file copied in Explorer is chosen like a picked one.
+   Pictures only where pictures are taken (a portfolio fund's AID analysis); a text paste into
+   a field is left alone. */
+function onUploadPaste(e){
+  if (!$('upOverlay').classList.contains('open') || state.editing || AI.mode === 'ai') return;
+  const cd = e.clipboardData; if (!cd) return;
+  const files = Array.from(cd.files || []);
+  const named = files.filter(f => uploadExts().includes(fileExt(f.name)) && !/^image\.[a-z]+$/i.test(f.name));
+  if (named.length){ e.preventDefault(); addUpFiles(named, false); return; }
+  const item = Array.from(cd.items || []).find(it => it.kind === 'file' && /^image\//.test(it.type));
+  const blob = item ? item.getAsFile() : files.find(f => /^image\//.test(f.type));
+  if (!blob){
+    if (files.length){ e.preventDefault(); const msg = $('upMsg'); msg.className = 'form-msg err'; msg.textContent = t(imagesAllowed() ? 'choose_file_img' : 'choose_file'); }
+    return;  // text: let it paste into the field
+  }
+  e.preventDefault();
+  if (!imagesAllowed()){ const msg = $('upMsg'); msg.className = 'form-msg err'; msg.textContent = t('paste_img_not_here'); return; }
+  const ext = ({'image/jpeg': '.jpg', 'image/webp': '.webp', 'image/gif': '.gif', 'image/bmp': '.bmp'})[blob.type] || '.png';
+  // named after the fund and tab: the report's title when Claude finds none on the picture
+  addUpFiles([new File([blob], pastedName() + ext, {type: blob.type || 'image/png'})], true);
+}
+/* a pasted picture has no file name: the fund and the tab give one (the reader shows the
+   quarter beside the title) */
+function pastedName(){
+  const s = sectorById($('upSector').value);
+  return [s ? sectorName(s) : '', sectionName('internal')].filter(Boolean).join(' ').replace(/[\/:*?"<>|]/g, ' ') || 'pasted-image';
 }
 function todayIso(){ const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 /* a dated sector (the weekly updates): the dialog asks for the date of the update, not a year and quarter */
@@ -1157,13 +1252,13 @@ async function submitUpload(ev){
       nav(hashReport(m.id)); route();
       return;
     }
-    const f = $('upFile').files[0];
-    if (!f){ msg.className = 'form-msg err'; msg.textContent = t('choose_file'); btn.disabled = false; return; }
+    const files = (state.upFiles || []).map(x => x.file).filter(f => uploadExts().includes(fileExt(f.name)));
+    if (!files.length){ msg.className = 'form-msg err'; msg.textContent = t(imagesAllowed() ? 'choose_file_img' : 'choose_file'); btn.disabled = false; return; }
     msg.className = 'form-msg'; msg.textContent = t('uploading');
     if (datedUpload()) applyDated();
     const fields = {sector, year: $('upYear').value, quarter: $('upQuarter').value, nature, language, title, keywords, section};
     if (datedUpload()) fields.date = $('upDate').value;
-    const m = await DL.upload(fields, f);
+    const m = await DL.upload(fields, files.length > 1 ? files : files[0]);
     closeUpload();
     if (afterWrite(m)) return;
     toast(m.replaced && m.replaced.length ? t('upload_replaced') : t('upload_ok'));
@@ -1176,10 +1271,11 @@ async function submitUpload(ev){
 }
 function wireUpload(){
   const drop = $('drop'), file = $('upFile');
-  file.addEventListener('change', () => { $('dropFile').textContent = file.files[0] ? file.files[0].name : ''; });
+  file.addEventListener('change', () => { addUpFiles(Array.from(file.files), false); file.value = ''; });
+  document.addEventListener('paste', onUploadPaste);
   ['dragenter', 'dragover'].forEach(evn => drop.addEventListener(evn, e => { e.preventDefault(); drop.classList.add('over'); }));
   ['dragleave', 'drop'].forEach(evn => drop.addEventListener(evn, e => { e.preventDefault(); drop.classList.remove('over'); }));
-  drop.addEventListener('drop', e => { if (e.dataTransfer.files.length){ file.files = e.dataTransfer.files; $('dropFile').textContent = file.files[0].name; } });
+  drop.addEventListener('drop', e => { if (e.dataTransfer.files.length && !addUpFiles(Array.from(e.dataTransfer.files), false)){ const msg = $('upMsg'); msg.className = 'form-msg err'; msg.textContent = t(imagesAllowed() ? 'choose_file_img' : 'choose_file'); } });
   $('upForm').addEventListener('submit', submitUpload);
   $('upClose').addEventListener('click', closeUpload);
   $('upCancel').addEventListener('click', closeUpload);
@@ -1191,7 +1287,7 @@ function wireUpload(){
   // the dashboard's upload button: the sector picker lists the current space's sectors
   $('dashUploadBtn').addEventListener('click', () => openUpload(null));
   // choosing the other sub-sector switches the fund list to that sub-sector's funds
-  $('upSection').addEventListener('change', () => fillUploadSectors(state.editing ? spaceOf(state.editing.sector) : state.space, null));
+  $('upSection').addEventListener('change', () => { fillUploadSectors(state.editing ? spaceOf(state.editing.sector) : state.space, null); paintUploadTypes(); });
 }
 
 /* ---------------------------------------------------------------- sector manager (add / edit / remove) */
