@@ -1,0 +1,142 @@
+{
+  "id": "private_credit-2026Q4-full-7e93461b",
+  "title": "2026Q4 Private Credit Quarterly Update",
+  "sector": "private_credit",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "cn",
+  "section": "",
+  "keywords": [
+    "私募信贷",
+    "直接贷款",
+    "商业发展公司",
+    "中型市场贷款抵押债券"
+  ],
+  "source_name": "Junson_Private_Credit_Report_2026Q4_CN_v1.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-19T08:33:45+00:00",
+  "stats": {
+    "blocks": 109,
+    "images": 36,
+    "tables": 16,
+    "chars": 12077
+  },
+  "exhibit_count": 52,
+  "masthead": "JUNSON Capital 研究",
+  "coverage": "私募信贷／直接贷款／商业发展公司／中型市场贷款抵押债券",
+  "publish_date": "2026年11月19日",
+  "toc": [
+    {
+      "level": 1,
+      "text": "市场规模"
+    },
+    {
+      "level": 2,
+      "text": "私募信贷市场规模"
+    },
+    {
+      "level": 2,
+      "text": "供给端"
+    },
+    {
+      "level": 2,
+      "text": "需求端"
+    },
+    {
+      "level": 2,
+      "text": "资金流向——中型市场贷款抵押债券"
+    },
+    {
+      "level": 1,
+      "text": "回报与相对价值"
+    },
+    {
+      "level": 2,
+      "text": "直接贷款回报与公开信贷对比"
+    },
+    {
+      "level": 2,
+      "text": "私募信贷相对银团贷款的利差溢价"
+    },
+    {
+      "level": 1,
+      "text": "定价与条款"
+    },
+    {
+      "level": 2,
+      "text": "利差"
+    },
+    {
+      "level": 2,
+      "text": "契约结构与实物付息"
+    },
+    {
+      "level": 1,
+      "text": "信用基本面"
+    },
+    {
+      "level": 2,
+      "text": "违约率"
+    },
+    {
+      "level": 2,
+      "text": "回收率"
+    },
+    {
+      "level": 2,
+      "text": "杠杆"
+    },
+    {
+      "level": 2,
+      "text": "利息保障倍数"
+    },
+    {
+      "level": 2,
+      "text": "商业发展公司停止计息资产"
+    },
+    {
+      "level": 2,
+      "text": "实物付息收入占投资收入比例"
+    },
+    {
+      "level": 1,
+      "text": "市场情绪"
+    },
+    {
+      "level": 2,
+      "text": "券商观点汇总"
+    },
+    {
+      "level": 2,
+      "text": "相关新闻"
+    },
+    {
+      "level": 1,
+      "text": "值得关注的事项"
+    },
+    {
+      "level": 1,
+      "text": "基金更新"
+    },
+    {
+      "level": 2,
+      "text": "PAG BRS Fund III (SRT strategy)"
+    },
+    {
+      "level": 2,
+      "text": "Guggenheim Private Debt Fund IV (US direct lending)"
+    },
+    {
+      "level": 2,
+      "text": "HSBC RCF Partnership Fund (RCF strategy)"
+    },
+    {
+      "level": 1,
+      "text": "免责声明"
+    }
+  ],
+  "summary": "按 PitchBook 最新统计，全球私募债权资产管理规模为25,486亿美元（图1）。其中机构型基金19,286亿美元（占75.7%，截至2025年12月31日），零售产品4,132亿美元（16.2%），保险资金估计为2,068亿美元（8.1%），后两者截至2026年6月30日。结构正在变化：机构资产管理规模较2024年末的20,198亿美元减少912亿美元，为该序列自2015年有数据以来首次年度下降；同期零售由2024年末的2,87"
+}

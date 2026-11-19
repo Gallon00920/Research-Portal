@@ -1,0 +1,142 @@
+{
+  "id": "private_credit-2026Q4-full-53459ee1",
+  "title": "2026Q4 Private Credit Quarterly Update",
+  "sector": "private_credit",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "en",
+  "section": "",
+  "keywords": [
+    "private credit",
+    "direct lending",
+    "BDC",
+    "MM CLO"
+  ],
+  "source_name": "Junson_Private_Credit_Report_2026Q4_EN_v1.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-19T08:34:50+00:00",
+  "stats": {
+    "blocks": 109,
+    "images": 36,
+    "tables": 16,
+    "chars": 31269
+  },
+  "exhibit_count": 52,
+  "masthead": "JUNSON Capital Research",
+  "coverage": "private credit / direct lending / BDC / MM CLO",
+  "publish_date": "19 Nov, 2026",
+  "toc": [
+    {
+      "level": 1,
+      "text": "Market Size"
+    },
+    {
+      "level": 2,
+      "text": "Private credit market size"
+    },
+    {
+      "level": 2,
+      "text": "Supply side"
+    },
+    {
+      "level": 2,
+      "text": "Demand side"
+    },
+    {
+      "level": 2,
+      "text": "Fund flow — middle-market CLOs"
+    },
+    {
+      "level": 1,
+      "text": "Returns & Relative Value"
+    },
+    {
+      "level": 2,
+      "text": "Direct lending returns versus public credit"
+    },
+    {
+      "level": 2,
+      "text": "Private credit spread premium over syndicated loans"
+    },
+    {
+      "level": 1,
+      "text": "Pricing & Term"
+    },
+    {
+      "level": 2,
+      "text": "Spread"
+    },
+    {
+      "level": 2,
+      "text": "Covenant structure and PIK"
+    },
+    {
+      "level": 1,
+      "text": "Credit Fundamentals"
+    },
+    {
+      "level": 2,
+      "text": "Default rate"
+    },
+    {
+      "level": 2,
+      "text": "Recovery rate"
+    },
+    {
+      "level": 2,
+      "text": "Leverage"
+    },
+    {
+      "level": 2,
+      "text": "Interest coverage"
+    },
+    {
+      "level": 2,
+      "text": "BDC non-accruals"
+    },
+    {
+      "level": 2,
+      "text": "PIK income as a share of investment income"
+    },
+    {
+      "level": 1,
+      "text": "Sentiment"
+    },
+    {
+      "level": 2,
+      "text": "Broker summary"
+    },
+    {
+      "level": 2,
+      "text": "Related news"
+    },
+    {
+      "level": 1,
+      "text": "Things We Should Know"
+    },
+    {
+      "level": 1,
+      "text": "Fund Update"
+    },
+    {
+      "level": 2,
+      "text": "PAG BRS Fund III (SRT strategy)"
+    },
+    {
+      "level": 2,
+      "text": "Guggenheim Private Debt Fund IV (US direct lending)"
+    },
+    {
+      "level": 2,
+      "text": "HSBC RCF Partnership Fund (RCF strategy)"
+    },
+    {
+      "level": 1,
+      "text": "Disclaimer"
+    }
+  ],
+  "summary": "Global private debt assets under management stand at US$2,548.6bn on PitchBook’s latest count (Exhibit 1). Institutional funds account for US$1,928.6bn (75.7%, as of 31 December 2025), retail vehicles for US$413.2bn (16."
+}
