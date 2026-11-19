@@ -1,7 +1,7 @@
 {
   "startDate": "2026-09-11",
   "retentionDays": 90,
-  "updatedAt": "2026-11-18T23:49:22.708383+00:00",
+  "updatedAt": "2026-11-19T05:04:19.490802+00:00",
   "scope": {
     "regions": [
       "US",
@@ -223148,6 +223148,192 @@
               "finalScore": 12.030000000000001,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-17-77b489d0d2ae",
+            "title": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference - Yahoo Finance",
+            "titleZh": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference - Yahoo Finance",
+            "summary": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORFhjRjB6empwSDJ3aGZfSG5ySG9ZU1dmQ0d1OExlME0zUkxlNEt1Z19KSzctekcxZHpEdkp0ci1MZ3BHMW5tWWVoNTd4RVpOdWpFWENkakxlNjlGdTVxTHFSeWI3ekRDZEE4MUktTDMtQ3JDUXY2UkZvQ1dUWjYtcnBxX0szeW1YZVZTcnJILVdqeVJkcTFER2JScDBPTnYyNnhWQQ?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-17",
+            "lede": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference Yahoo Finance",
+            "articleExcerpt": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference - Yahoo Finance. Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference Yahoo Finance",
+            "contentFingerprint": "b57052ccaf172a00",
+            "region": "US",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 13,
+              "semanticScore": 5.12,
+              "finalScore": 18.12,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-7652ca3b6e56",
+            "title": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? - Yahoo Finance",
+            "titleZh": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? - Yahoo Finance",
+            "summary": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSEVVSzI1ZTBySnNyVWRHMUlGTEd3ZzhTQzFZdFJOOG5qLVZrSTJqZnJ1TnNuUEdHUkUtUXlhVjhDcFBybVJlQzVJWW05eTN2QXBKQnVCNHY4andSV2tHclFiRlZKODR2S1ZRVW9NSlZEVTEzYVdyR19vSVFzT25jaGNVczctaGkyRXkyVTQ5QmZtZnI0VWtERUR4Y2JaRC1KbkttYTBZVktfaGZuZ1E?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-17",
+            "lede": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? Yahoo Finance",
+            "articleExcerpt": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? - Yahoo Finance. Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? Yahoo Finance",
+            "contentFingerprint": "0e19be4af1d6fdf0",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 60,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.86,
+              "finalScore": 16.86,
+              "semanticEnabled": true
+            }
           }
         ],
         "Apollo": [
@@ -224025,6 +224211,95 @@
               "keywordScore": 12,
               "semanticScore": 5.44,
               "finalScore": 17.44,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-17-ef5541974d71",
+            "title": "TPG (NASDAQ:TPG) Now Covered by Mizuho - MarketBeat",
+            "titleZh": "TPG (NASDAQ:TPG) Now Covered by Mizuho - MarketBeat",
+            "summary": "TPG (NASDAQ:TPG) Now Covered by Mizuho MarketBeat",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSHFqYTZsWi1iTEVhWEYzTllLRVc5RFQ1am5IYWVPTENRNHdRQWxjeGVGckZxaHIzd0xEanBXa3d0VnZMdk9iaUV3eC1EbDh4WlBkbGVPMWJBTWFKbFYzQTJXT1U0M2wzSEszT2l1S3NGSzdWS2xWMUVVd3J5WlhuZmRGVHkxMVBVaW5WUUphOFVuUnRYVlVxazQzMVBkZkE?oc=5",
+            "source": "MarketBeat",
+            "publishedAt": "2026-11-17",
+            "lede": "TPG (NASDAQ:TPG) Now Covered by Mizuho MarketBeat",
+            "articleExcerpt": "TPG (NASDAQ:TPG) Now Covered by Mizuho - MarketBeat. TPG (NASDAQ:TPG) Now Covered by Mizuho MarketBeat",
+            "contentFingerprint": "27191019b502097a",
+            "region": "US",
+            "gps": [
+              "TPG"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "TPG"
+              ],
+              "titleGps": [
+                "TPG"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "TPG"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.48
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "MarketBeat"
+                },
+                "freshness": {
+                  "value": 0.8,
+                  "code": "within_7d",
+                  "days": 1.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 45,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 5,
+              "semanticScore": 5.76,
+              "finalScore": 10.76,
               "semanticEnabled": true
             }
           }
@@ -227569,6 +227844,192 @@
           }
         },
         {
+          "id": "2026-11-17-77b489d0d2ae",
+          "title": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference - Yahoo Finance",
+          "titleZh": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference - Yahoo Finance",
+          "summary": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxORFhjRjB6empwSDJ3aGZfSG5ySG9ZU1dmQ0d1OExlME0zUkxlNEt1Z19KSzctekcxZHpEdkp0ci1MZ3BHMW5tWWVoNTd4RVpOdWpFWENkakxlNjlGdTVxTHFSeWI3ekRDZEE4MUktTDMtQ3JDUXY2UkZvQ1dUWjYtcnBxX0szeW1YZVZTcnJILVdqeVJkcTFER2JScDBPTnYyNnhWQQ?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-17",
+          "lede": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference Yahoo Finance",
+          "articleExcerpt": "Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference - Yahoo Finance. Blackstone to Present at the Goldman Sachs 2026 US Financial Services Conference Yahoo Finance",
+          "contentFingerprint": "b57052ccaf172a00",
+          "region": "US",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 13,
+            "semanticScore": 5.12,
+            "finalScore": 18.12,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-7652ca3b6e56",
+          "title": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? - Yahoo Finance",
+          "titleZh": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? - Yahoo Finance",
+          "summary": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQSEVVSzI1ZTBySnNyVWRHMUlGTEd3ZzhTQzFZdFJOOG5qLVZrSTJqZnJ1TnNuUEdHUkUtUXlhVjhDcFBybVJlQzVJWW05eTN2QXBKQnVCNHY4andSV2tHclFiRlZKODR2S1ZRVW9NSlZEVTEzYVdyR19vSVFzT25jaGNVczctaGkyRXkyVTQ5QmZtZnI0VWtERUR4Y2JaRC1KbkttYTBZVktfaGZuZ1E?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-17",
+          "lede": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? Yahoo Finance",
+          "articleExcerpt": "Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? - Yahoo Finance. Blackstone Digital Infrastructure Trust (BXDC) Lands AWS Deal, Does It Look Fully Valued? Yahoo Finance",
+          "contentFingerprint": "0e19be4af1d6fdf0",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 60,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.86,
+            "finalScore": 16.86,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-17-8cc6ceb2d0a2",
           "title": "Apollo Global Management CEO discusses AI financing risks, private credit on CNBC - Traders Union",
           "titleZh": "Apollo Global Management CEO discusses AI financing risks, private credit on CNBC - Traders Union",
@@ -228347,6 +228808,95 @@
             "keywordScore": 12,
             "semanticScore": 5.44,
             "finalScore": 17.44,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-17-ef5541974d71",
+          "title": "TPG (NASDAQ:TPG) Now Covered by Mizuho - MarketBeat",
+          "titleZh": "TPG (NASDAQ:TPG) Now Covered by Mizuho - MarketBeat",
+          "summary": "TPG (NASDAQ:TPG) Now Covered by Mizuho MarketBeat",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSHFqYTZsWi1iTEVhWEYzTllLRVc5RFQ1am5IYWVPTENRNHdRQWxjeGVGckZxaHIzd0xEanBXa3d0VnZMdk9iaUV3eC1EbDh4WlBkbGVPMWJBTWFKbFYzQTJXT1U0M2wzSEszT2l1S3NGSzdWS2xWMUVVd3J5WlhuZmRGVHkxMVBVaW5WUUphOFVuUnRYVlVxazQzMVBkZkE?oc=5",
+          "source": "MarketBeat",
+          "publishedAt": "2026-11-17",
+          "lede": "TPG (NASDAQ:TPG) Now Covered by Mizuho MarketBeat",
+          "articleExcerpt": "TPG (NASDAQ:TPG) Now Covered by Mizuho - MarketBeat. TPG (NASDAQ:TPG) Now Covered by Mizuho MarketBeat",
+          "contentFingerprint": "27191019b502097a",
+          "region": "US",
+          "gps": [
+            "TPG"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "TPG"
+            ],
+            "titleGps": [
+              "TPG"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "TPG"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.48
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "MarketBeat"
+              },
+              "freshness": {
+                "value": 0.8,
+                "code": "within_7d",
+                "days": 1.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 45,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 5,
+            "semanticScore": 5.76,
+            "finalScore": 10.76,
             "semanticEnabled": true
           }
         },
@@ -230677,6 +231227,184 @@
               "finalScore": 18.29,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-c80709477085",
+            "title": "KKR Credit Income Fund Provides Estimated NTA Update - TipRanks",
+            "titleZh": "KKR Credit Income Fund Provides Estimated NTA Update - TipRanks",
+            "summary": "KKR Credit Income Fund Provides Estimated NTA Update TipRanks",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRnpHek53VjBqTEtreGtKUElmVDRhWW5McDd1aVFfLWl1OWJwN1pmR19hUjN0cldiSmMweVNTYUV5M0tBOTB4clRJQm9yUndzYUpnQVo1NHhTX1RIOGw5dTdnQXljTzhucmhBeXU5QmNBTjdHNFhneDRjdHdib0dfMElERmtnUnMyWkxERDVFWVVaUXBUV0VGV25jTjFNN2tRVGltVjBMbw?oc=5",
+            "source": "TipRanks",
+            "publishedAt": "2026-11-18",
+            "lede": "KKR Credit Income Fund Provides Estimated NTA Update TipRanks",
+            "articleExcerpt": "KKR Credit Income Fund Provides Estimated NTA Update - TipRanks. KKR Credit Income Fund Provides Estimated NTA Update TipRanks",
+            "contentFingerprint": "3441ba74a59a4ab4",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "TipRanks"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 48,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.84,
+              "finalScore": 16.84,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-bf4b58b260fd",
+            "title": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 - Kalkine",
+            "titleZh": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 - Kalkine",
+            "summary": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 Kalkine",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcEE5V1NodENzaGpkc0dMZ2hPQVlPaGZiQ3k4Y0dsN0owamxwcDV4bXI5Z0c3blhvU3psR2lFVE9XRWc0bUhwVWtKSmVKYmpVZXNzTzBBQnl4Y1psU2RqYlBBRTNaZVJ2amlXRHJBLWp0cjczaVBIRjNuUTRWWE5SWHJtYURUR2l4eHRWYkhNaHo1eUVSYzRnZVF0d3VrTndSaHV3T0FORnhzZw?oc=5",
+            "source": "Kalkine",
+            "publishedAt": "2026-11-18",
+            "lede": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 Kalkine",
+            "articleExcerpt": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 - Kalkine. KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 Kalkine",
+            "contentFingerprint": "fb47b832d70b3542",
+            "region": "Global",
+            "gps": [
+              "KKR"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "KKR"
+              ],
+              "titleGps": [
+                "KKR"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "KKR"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.21,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.42
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Kalkine"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 50,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.07,
+              "finalScore": 16.07,
+              "semanticEnabled": true
+            }
           }
         ],
         "CIFC": [],
@@ -231340,6 +232068,99 @@
               "finalScore": 10.7,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-8cd6ad121fdc",
+            "title": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors - Prop News Time",
+            "titleZh": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors - Prop News Time",
+            "summary": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors Prop News Time",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPaGQtYUt3a2NEcTVYVXc5RmxKNFprTnc0Y0ZLbXBDQXFHYjlackJNLTRDeE10aUh0azFXckQ2ek42dUU4U1hXbmdUX1V1TGRORUdyWWh3UVZ0QVRTMTZmQUtrMUVjYVNsTmJ6cTEyUnZzSUhEaV9uLXpiNDBEU3hEUkltU2poT0V2dHVBM0tDVXFudlVOVmRyVk8tbkhqSVVoMHhNSWJ2V2NIY2t4S1dFdVE4WmtRcUFNLXh2SXpPQmtMMUF2SXZLTF92QWFrSldlWUdyeVRWeW45SmE1QUhyXzF4ZlBXZ1dR?oc=5",
+            "source": "Prop News Time",
+            "publishedAt": "2026-11-18",
+            "lede": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors Prop News Time",
+            "articleExcerpt": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors - Prop News Time. Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors Prop News Time",
+            "contentFingerprint": "ee651937d81457d2",
+            "region": "Global",
+            "gps": [
+              "Bain Capital"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "fundraising"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Bain Capital"
+              ],
+              "titleGps": [
+                "Bain Capital"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Bain Capital"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.23,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.46
+                },
+                "event": {
+                  "value": 0.8,
+                  "code": "fundraising",
+                  "ruleValue": 0.8,
+                  "events": [
+                    "fundraising"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Prop News Time"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 3,
+              "semanticScore": 5.56,
+              "finalScore": 8.559999999999999,
+              "semanticEnabled": true
+            }
           }
         ],
         "Blackstone": [
@@ -231445,6 +232266,202 @@
               "finalScore": 19.18,
               "semanticEnabled": true
             }
+          },
+          {
+            "id": "2026-11-18-70ab0accede1",
+            "title": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick - Yahoo Finance",
+            "titleZh": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick - Yahoo Finance",
+            "summary": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTFRJaDROY29iUnhTTlBINm1iX3ptNFJlbUIxd0k2WUFuVUZGSUVyWVR3SDlHX1RodE43bHFtMlk4VFh5QUJyN3RCRUpTeHpUTGE3UnB0dFBnQlNKTU81R19BbXk5akFYV0hNcHVpUEtKbmE5V013VUZWMThmNXZKTVEwc1hWU2puT1JYN3RMZmFqUjRrQ1E?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-18",
+            "lede": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick Yahoo Finance",
+            "articleExcerpt": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick - Yahoo Finance. Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick Yahoo Finance",
+            "contentFingerprint": "3d707d6fc0d225ff",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "ai"
+            ],
+            "sectors": [
+              "ai"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "ai"
+              ],
+              "titleStrategies": [
+                "ai"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.7,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "ai"
+                  ],
+                  "semanticValue": 0.39
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 4.69,
+              "finalScore": 18.69,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-fa8657aa13b8",
+            "title": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors - Yahoo Finance",
+            "titleZh": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors - Yahoo Finance",
+            "summary": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZVRHSUt6Z21RREtybVFqSWMzSTNqdlFFQl9sUUEtSFJSLWZHOWFkcnZFZjkwSXJDaERkYTluemQ0M20wcUxjTXlGTV9lQU5tMGxRT0JhZXUzRVhOY1BkSjV4c0xfZ2dyWHJEX3JLOHh5bThqbkYtUkVnOVBJRjV1LXA0VHR3QmhOOTVodEpLWEppQ2duMkxnU00xWHl0WlpORVFLTmgxbw?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-18",
+            "lede": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+            "articleExcerpt": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors - Yahoo Finance. Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+            "contentFingerprint": "b6d90fbb817bffc1",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.24,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.47
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 63,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.68,
+              "finalScore": 16.68,
+              "semanticEnabled": true
+            }
           }
         ],
         "Apollo": [
@@ -231548,6 +232565,99 @@
               "keywordScore": 14,
               "semanticScore": 5.6,
               "finalScore": 19.6,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-bf201c18f5ce",
+            "title": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? - Yahoo Finance",
+            "titleZh": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? - Yahoo Finance",
+            "summary": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWTdHcS1DcWotR041LUl0UlgxUHh3elRHVUdSZ3JBbXJ5VHJUc0JvYUZSczlGSWx4eXVJN3NTS2pTaU5LTV9TQnBsZUprNXdqYnAydzNSbEFSeC1sdjFZZTUydGxLT0ZaN2lab0NsYWF5b2ZoSkJyeHhCMzBNajNISWVTR0J1bnNHS2YxdER2MWtHeXNvQ0pHai1jZXRoeGZMUTZvRg?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-18",
+            "lede": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? Yahoo Finance",
+            "articleExcerpt": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? - Yahoo Finance. Will Apollo's $40 billion for SpaceX to rent GPUs pay off? Yahoo Finance",
+            "contentFingerprint": "87febb6cde6a219e",
+            "region": "Global",
+            "gps": [
+              "Apollo"
+            ],
+            "strategies": [],
+            "sectors": [],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Apollo"
+              ],
+              "titleGps": [
+                "Apollo"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [],
+              "titleStrategies": [],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Apollo"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.22,
+                  "code": "no_strategy",
+                  "tagValue": 0.0,
+                  "strategies": [],
+                  "semanticValue": 0.43
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 70,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 11,
+              "semanticScore": 5.19,
+              "finalScore": 16.19,
               "semanticEnabled": true
             }
           }
@@ -231744,6 +232854,109 @@
               "keywordScore": 14,
               "semanticScore": 6.69,
               "finalScore": 20.69,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-18-7ef644a58872",
+            "title": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary - Yahoo Finance",
+            "titleZh": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary - Yahoo Finance",
+            "summary": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary Yahoo Finance",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNkdBSVZmbFBSU184OEd3d2wzeTl3amtzbDNEaV9OXzVXelpyaFhXWkdfbHRXUFdyWHpNcHEwZFZONHhuU2xDVnZOWmRkV2F2Q3hvVWlKUW9QaXFsV2JnTVB4UEFNQjgzeHNPREszOWVSWWM0ZDJOWDV2RDFwaUlWVUMwNll3SGRBNlpwakg3SlprSWs?oc=5",
+            "source": "Yahoo Finance",
+            "publishedAt": "2026-11-18",
+            "lede": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary Yahoo Finance",
+            "articleExcerpt": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary - Yahoo Finance. Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary Yahoo Finance",
+            "contentFingerprint": "43beec73967a1059",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.53
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.7
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 69,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.41,
+              "finalScore": 20.41,
               "semanticEnabled": true
             }
           }
@@ -232217,6 +233430,184 @@
             "keywordScore": 13,
             "semanticScore": 5.29,
             "finalScore": 18.29,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-c80709477085",
+          "title": "KKR Credit Income Fund Provides Estimated NTA Update - TipRanks",
+          "titleZh": "KKR Credit Income Fund Provides Estimated NTA Update - TipRanks",
+          "summary": "KKR Credit Income Fund Provides Estimated NTA Update TipRanks",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRnpHek53VjBqTEtreGtKUElmVDRhWW5McDd1aVFfLWl1OWJwN1pmR19hUjN0cldiSmMweVNTYUV5M0tBOTB4clRJQm9yUndzYUpnQVo1NHhTX1RIOGw5dTdnQXljTzhucmhBeXU5QmNBTjdHNFhneDRjdHdib0dfMElERmtnUnMyWkxERDVFWVVaUXBUV0VGV25jTjFNN2tRVGltVjBMbw?oc=5",
+          "source": "TipRanks",
+          "publishedAt": "2026-11-18",
+          "lede": "KKR Credit Income Fund Provides Estimated NTA Update TipRanks",
+          "articleExcerpt": "KKR Credit Income Fund Provides Estimated NTA Update - TipRanks. KKR Credit Income Fund Provides Estimated NTA Update TipRanks",
+          "contentFingerprint": "3441ba74a59a4ab4",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "TipRanks"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 48,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.84,
+            "finalScore": 16.84,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-bf4b58b260fd",
+          "title": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 - Kalkine",
+          "titleZh": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 - Kalkine",
+          "summary": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 Kalkine",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNcEE5V1NodENzaGpkc0dMZ2hPQVlPaGZiQ3k4Y0dsN0owamxwcDV4bXI5Z0c3blhvU3psR2lFVE9XRWc0bUhwVWtKSmVKYmpVZXNzTzBBQnl4Y1psU2RqYlBBRTNaZVJ2amlXRHJBLWp0cjczaVBIRjNuUTRWWE5SWHJtYURUR2l4eHRWYkhNaHo1eUVSYzRnZVF0d3VrTndSaHV3T0FORnhzZw?oc=5",
+          "source": "Kalkine",
+          "publishedAt": "2026-11-18",
+          "lede": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 Kalkine",
+          "articleExcerpt": "KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 - Kalkine. KKR Credit Income Fund NTA Rises to $2.3012 as at 16 November 2026 Kalkine",
+          "contentFingerprint": "fb47b832d70b3542",
+          "region": "Global",
+          "gps": [
+            "KKR"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "KKR"
+            ],
+            "titleGps": [
+              "KKR"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "KKR"
+                ]
+              },
+              "strategy": {
+                "value": 0.21,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.42
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Kalkine"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 50,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.07,
+            "finalScore": 16.07,
             "semanticEnabled": true
           }
         },
@@ -232874,6 +234265,99 @@
           }
         },
         {
+          "id": "2026-11-18-8cd6ad121fdc",
+          "title": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors - Prop News Time",
+          "titleZh": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors - Prop News Time",
+          "summary": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors Prop News Time",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPaGQtYUt3a2NEcTVYVXc5RmxKNFprTnc0Y0ZLbXBDQXFHYjlackJNLTRDeE10aUh0azFXckQ2ek42dUU4U1hXbmdUX1V1TGRORUdyWWh3UVZ0QVRTMTZmQUtrMUVjYVNsTmJ6cTEyUnZzSUhEaV9uLXpiNDBEU3hEUkltU2poT0V2dHVBM0tDVXFudlVOVmRyVk8tbkhqSVVoMHhNSWJ2V2NIY2t4S1dFdVE4WmtRcUFNLXh2SXpPQmtMMUF2SXZLTF92QWFrSldlWUdyeVRWeW45SmE1QUhyXzF4ZlBXZ1dR?oc=5",
+          "source": "Prop News Time",
+          "publishedAt": "2026-11-18",
+          "lede": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors Prop News Time",
+          "articleExcerpt": "Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors - Prop News Time. Bain Capital-backed RSB Group to file IPO papers in December, raises pre-IPO funds from five investors Prop News Time",
+          "contentFingerprint": "ee651937d81457d2",
+          "region": "Global",
+          "gps": [
+            "Bain Capital"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "fundraising"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Bain Capital"
+            ],
+            "titleGps": [
+              "Bain Capital"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Bain Capital"
+                ]
+              },
+              "strategy": {
+                "value": 0.23,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.46
+              },
+              "event": {
+                "value": 0.8,
+                "code": "fundraising",
+                "ruleValue": 0.8,
+                "events": [
+                  "fundraising"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Prop News Time"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 3,
+            "semanticScore": 5.56,
+            "finalScore": 8.559999999999999,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-18-7464068e767c",
           "title": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance",
           "titleZh": "Blackstone's Gray: AI Infrastructure Demand Outstrips Supply, Bubble Talk Overdone - BigGo Finance",
@@ -232977,6 +234461,202 @@
           }
         },
         {
+          "id": "2026-11-18-70ab0accede1",
+          "title": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick - Yahoo Finance",
+          "titleZh": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick - Yahoo Finance",
+          "summary": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPTFRJaDROY29iUnhTTlBINm1iX3ptNFJlbUIxd0k2WUFuVUZGSUVyWVR3SDlHX1RodE43bHFtMlk4VFh5QUJyN3RCRUpTeHpUTGE3UnB0dFBnQlNKTU81R19BbXk5akFYV0hNcHVpUEtKbmE5V013VUZWMThmNXZKTVEwc1hWU2puT1JYN3RMZmFqUjRrQ1E?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-18",
+          "lede": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick Yahoo Finance",
+          "articleExcerpt": "Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick - Yahoo Finance. Blackstone’s Jon Gray Says AI Demand Is Too Strong for Bubble Fears to Stick Yahoo Finance",
+          "contentFingerprint": "3d707d6fc0d225ff",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "ai"
+          ],
+          "sectors": [
+            "ai"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "ai"
+            ],
+            "titleStrategies": [
+              "ai"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.7,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "ai"
+                ],
+                "semanticValue": 0.39
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 4.69,
+            "finalScore": 18.69,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-fa8657aa13b8",
+          "title": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors - Yahoo Finance",
+          "titleZh": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors - Yahoo Finance",
+          "summary": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZVRHSUt6Z21RREtybVFqSWMzSTNqdlFFQl9sUUEtSFJSLWZHOWFkcnZFZjkwSXJDaERkYTluemQ0M20wcUxjTXlGTV9lQU5tMGxRT0JhZXUzRVhOY1BkSjV4c0xfZ2dyWHJEX3JLOHh5bThqbkYtUkVnOVBJRjV1LXA0VHR3QmhOOTVodEpLWEppQ2duMkxnU00xWHl0WlpORVFLTmgxbw?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-18",
+          "lede": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+          "articleExcerpt": "Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors - Yahoo Finance. Blackstone Digital Infrastructure: 3 Key Takeaways for Long-Term Investors Yahoo Finance",
+          "contentFingerprint": "b6d90fbb817bffc1",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.24,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.47
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 63,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.68,
+            "finalScore": 16.68,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-18-4d1d4a731095",
           "title": "Apollo Global Management (APO) Sees AI Needing $8 Trillion Of Capital - Yahoo Finance",
           "titleZh": "Apollo Global Management (APO) Sees AI Needing $8 Trillion Of Capital - Yahoo Finance",
@@ -233076,6 +234756,99 @@
             "keywordScore": 14,
             "semanticScore": 5.6,
             "finalScore": 19.6,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-18-bf201c18f5ce",
+          "title": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? - Yahoo Finance",
+          "titleZh": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? - Yahoo Finance",
+          "summary": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWTdHcS1DcWotR041LUl0UlgxUHh3elRHVUdSZ3JBbXJ5VHJUc0JvYUZSczlGSWx4eXVJN3NTS2pTaU5LTV9TQnBsZUprNXdqYnAydzNSbEFSeC1sdjFZZTUydGxLT0ZaN2lab0NsYWF5b2ZoSkJyeHhCMzBNajNISWVTR0J1bnNHS2YxdER2MWtHeXNvQ0pHai1jZXRoeGZMUTZvRg?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-18",
+          "lede": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? Yahoo Finance",
+          "articleExcerpt": "Will Apollo's $40 billion for SpaceX to rent GPUs pay off? - Yahoo Finance. Will Apollo's $40 billion for SpaceX to rent GPUs pay off? Yahoo Finance",
+          "contentFingerprint": "87febb6cde6a219e",
+          "region": "Global",
+          "gps": [
+            "Apollo"
+          ],
+          "strategies": [],
+          "sectors": [],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Apollo"
+            ],
+            "titleGps": [
+              "Apollo"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [],
+            "titleStrategies": [],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Apollo"
+                ]
+              },
+              "strategy": {
+                "value": 0.22,
+                "code": "no_strategy",
+                "tagValue": 0.0,
+                "strategies": [],
+                "semanticValue": 0.43
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 70,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 11,
+            "semanticScore": 5.19,
+            "finalScore": 16.19,
             "semanticEnabled": true
           }
         },
@@ -233272,6 +235045,109 @@
           }
         },
         {
+          "id": "2026-11-18-7ef644a58872",
+          "title": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary - Yahoo Finance",
+          "titleZh": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary - Yahoo Finance",
+          "summary": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary Yahoo Finance",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNkdBSVZmbFBSU184OEd3d2wzeTl3amtzbDNEaV9OXzVXelpyaFhXWkdfbHRXUFdyWHpNcHEwZFZONHhuU2xDVnZOWmRkV2F2Q3hvVWlKUW9QaXFsV2JnTVB4UEFNQjgzeHNPREszOWVSWWM0ZDJOWDV2RDFwaUlWVUMwNll3SGRBNlpwakg3SlprSWs?oc=5",
+          "source": "Yahoo Finance",
+          "publishedAt": "2026-11-18",
+          "lede": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary Yahoo Finance",
+          "articleExcerpt": "Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary - Yahoo Finance. Golub Capital BDC, Inc. Q4 2026 Earnings Call Summary Yahoo Finance",
+          "contentFingerprint": "43beec73967a1059",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.53
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.7
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 69,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.41,
+            "finalScore": 20.41,
+            "semanticEnabled": true
+          }
+        },
+        {
           "id": "2026-11-18-d93b9f64335d",
           "title": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
           "titleZh": "CVC gets half a million to plant 13,000 trees and shrubs across Credit River watershed - Halton Hills News",
@@ -233361,12 +235237,1487 @@
           }
         }
       ]
+    },
+    "2026-11-19": {
+      "byGp": {
+        "Blue Owl": [
+          {
+            "id": "2026-11-19-235ddb107596",
+            "title": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News - TradingView",
+            "titleZh": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News - TradingView",
+            "summary": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News TradingView",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOZ2JNSnlqWHVoYjN0VGZZdHc0dS1OUXdXczB5YnlQeHl0SjhKbFR4MXUtakJCaWJlOU1TbjFRNTZzNjFuREw3VzZILWZUbmUwejRDVU1fcXJJUUZRVkI1SmYxMUpHQ2JXLUtNekZmWHBrZkoyWm9JSUNjS2M4MmRYeURISlp3NVFCY2NhaWFUMXVBbzI0UzNPT2VjWWtLYlZ2a0dLOTdFWms4ekt5Sm9Xeloxc2R4U2RhYU1SUFNYTmtvY2tKTFNZOXZpYk5uRHh6YjR4OEJsNUVPd3hmRzQtcVlMQU4tVExoUHU5S1dySzh0aGdwazBPSHIxTXlhRFdoXzBZblRmTHdURFE?oc=5",
+            "source": "TradingView",
+            "publishedAt": "2026-11-19",
+            "lede": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News TradingView",
+            "articleExcerpt": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News - TradingView. Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News TradingView",
+            "contentFingerprint": "2c89d9be1a369d99",
+            "region": "US",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "resi",
+              "cre",
+              "data-center"
+            ],
+            "sectors": [
+              "resi",
+              "cre",
+              "data-center"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "resi",
+                "cre",
+                "data-center"
+              ],
+              "titleStrategies": [
+                "resi",
+                "cre",
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "resi",
+                    "cre",
+                    "data-center"
+                  ],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "TradingView"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 57,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 22,
+              "semanticScore": 6.44,
+              "finalScore": 28.44,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-20296b8a6f8a",
+            "title": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). - Moomoo",
+            "titleZh": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). - Moomoo",
+            "summary": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). Moomoo",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVjUwUzNVQ1AxalhETXRRbWNQeERCZHNRNWtzZGFSbndUM0tLVklmSU5vSGJ0QmNKYXFwM3R4R1k1c1ZvdkFBWkxpNlA4UnlaaEs0bGo1eXZ3X1dfTXljOGV6MThleDZFaHNoa21UMjlNWWlEQzV2T2l1N0hPNkRnNHNoaXpSSlhFQ0lYUTNydVIxcmZxTnBF?oc=5",
+            "source": "Moomoo",
+            "publishedAt": "2026-11-19",
+            "lede": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). Moomoo",
+            "articleExcerpt": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). - Moomoo. Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). Moomoo",
+            "contentFingerprint": "be64ea1bfce290e1",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "cre",
+              "data-center"
+            ],
+            "sectors": [
+              "cre",
+              "data-center"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "cre",
+                "data-center"
+              ],
+              "titleStrategies": [
+                "cre",
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "cre",
+                    "data-center"
+                  ],
+                  "semanticValue": 0.54
+                },
+                "event": {
+                  "value": 0.95,
+                  "code": "major_signal",
+                  "ruleValue": 0.95,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Moomoo"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 79,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 17,
+              "semanticScore": 6.44,
+              "finalScore": 23.44,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-c458b36fa7d0",
+            "title": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan - FourWeekMBA",
+            "titleZh": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan - FourWeekMBA",
+            "summary": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan FourWeekMBA",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMDJydVRwY3FBQUFXcmhqckdBeVJ0M011MXgyeVNFa204QXUwYnpPaTN1VFd1Vk1NMmdzVFJrM2JDMEx5NjBKa1d3ZktRUkxMSlJRNWZuREtib05vcXRkQmNxREhIdFhoWklJV2s3V01Wc1RVa1dPTHNzbEN5VFJ5aGp2dXptejdu?oc=5",
+            "source": "FourWeekMBA",
+            "publishedAt": "2026-11-19",
+            "lede": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan FourWeekMBA",
+            "articleExcerpt": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan - FourWeekMBA. Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan FourWeekMBA",
+            "contentFingerprint": "13bfc8a55d96c192",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "cre"
+            ],
+            "sectors": [
+              "cre"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "cre"
+              ],
+              "titleStrategies": [
+                "cre"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.74,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "cre"
+                  ],
+                  "semanticValue": 0.49
+                },
+                "event": {
+                  "value": 0.7,
+                  "code": "financing",
+                  "ruleValue": 0.7,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "FourWeekMBA"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 72,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 5.88,
+              "finalScore": 19.88,
+              "semanticEnabled": true
+            }
+          },
+          {
+            "id": "2026-11-19-52f92bb9703c",
+            "title": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center - Bloomberg",
+            "titleZh": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center - Bloomberg",
+            "summary": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center Bloomberg",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVUVaaktqamVpSXJCWjhzSEJrUkRaVUpKNUpEamI3VWpUMW43WlVraDRuY25BV19GUHNId04wNnZnTTVNc1EwNGtSMzcxdVliVXlHOHl1bzd0Wm41T19fa1c5MEI3c2lxMU1FRWlaWXllZmtqUGN3ZW1aQ0s3YjU4OE1vVkJnWlBVTHlhaURjQ0hfeW9KSW51SW9EWEZIX0ppUmtwVXZFM2NNLUJBMERhOU1R?oc=5",
+            "source": "Bloomberg",
+            "publishedAt": "2026-11-19",
+            "lede": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center Bloomberg",
+            "articleExcerpt": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center - Bloomberg. Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center Bloomberg",
+            "contentFingerprint": "a9511ac34718c52b",
+            "region": "Global",
+            "gps": [
+              "Blue Owl"
+            ],
+            "strategies": [
+              "cre",
+              "data-center"
+            ],
+            "sectors": [
+              "cre",
+              "data-center"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blue Owl"
+              ],
+              "titleGps": [
+                "Blue Owl"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "cre",
+                "data-center"
+              ],
+              "titleStrategies": [
+                "cre",
+                "data-center"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blue Owl"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.72,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "cre",
+                    "data-center"
+                  ],
+                  "semanticValue": 0.45
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 1.0,
+                  "code": "tier_top",
+                  "source": "Bloomberg"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 73,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 12,
+              "semanticScore": 5.4,
+              "finalScore": 17.4,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "KKR": [],
+        "CIFC": [],
+        "PAG": [],
+        "Pretium": [],
+        "Guggenheim": [],
+        "Neuberger": [
+          {
+            "id": "2026-11-19-8c406e0a01f6",
+            "title": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman",
+            "titleZh": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman",
+            "summary": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot Neuberger Berman",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUk5NSGhJNTVRTkhub3BIMkh1aGUyN2Y0Y3pWX19DV3otdjNlcnhQbHJGd1dnNm1MdjhxSEZtb29yQXlKZWgwSDBrdjJNcGtrSlZqRENpV1hONTZQUUlIUVRGdVVqbFpxQ241SkxLMWtzSksyTS1mYzdaMVhPOUtremNFVWw0cG9ORTRIMGpheEM4U3JvaWJnN3Z5R0ZUNzFqeC0zdjVZSVd1NHVXMG5zNTFkYzZCQjNPX3Fn?oc=5",
+            "source": "Neuberger Berman",
+            "publishedAt": "2026-11-19",
+            "lede": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot Neuberger Berman",
+            "articleExcerpt": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman. Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot Neuberger Berman",
+            "contentFingerprint": "2643c43e26b3cdaf",
+            "region": "Global",
+            "gps": [
+              "Neuberger"
+            ],
+            "strategies": [
+              "resi"
+            ],
+            "sectors": [
+              "resi"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Neuberger"
+              ],
+              "titleGps": [
+                "Neuberger"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "resi"
+              ],
+              "titleStrategies": [
+                "resi"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Neuberger"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.65,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "resi"
+                  ],
+                  "semanticValue": 0.29
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.35,
+                  "code": "tier_other",
+                  "source": "Neuberger Berman"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 56,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 3.48,
+              "finalScore": 17.48,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "BasePoint": [],
+        "Bain Capital": [],
+        "Blackstone": [
+          {
+            "id": "2026-11-19-17331a2a7b8c",
+            "title": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain - Yahoo Finance Singapore",
+            "titleZh": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain - Yahoo Finance Singapore",
+            "summary": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain Yahoo Finance Singapore",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb2ZGSEhUVGF5bUFwRUlRUW1BTTBXSVNNOXRCR2RBZk1ldk5odmN0ZVpNWGJXY2k0MlFKSlozTU9NOWhqNHRxQ2lIWWFZSmZiSnYxQVNEeGxSMmtLRjBDZndpd1pfNXFUQXN3RzZ6c2lJWXdlS0V5ZEdPNGJ1b2V4ZTBMMDh3NThMSWVBeQ?oc=5",
+            "source": "Yahoo Finance Singapore",
+            "publishedAt": "2026-11-19",
+            "lede": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain Yahoo Finance Singapore",
+            "articleExcerpt": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain - Yahoo Finance Singapore. Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain Yahoo Finance Singapore",
+            "contentFingerprint": "77e713e1662c621f",
+            "region": "Global",
+            "gps": [
+              "Blackstone"
+            ],
+            "strategies": [
+              "resi"
+            ],
+            "sectors": [
+              "resi"
+            ],
+            "events": [
+              "financing"
+            ],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Blackstone"
+              ],
+              "titleGps": [
+                "Blackstone"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "resi"
+              ],
+              "titleStrategies": [
+                "resi"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Blackstone"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.76,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "resi"
+                  ],
+                  "semanticValue": 0.52
+                },
+                "event": {
+                  "value": 0.15,
+                  "code": "stock_commentary",
+                  "ruleValue": 0.15,
+                  "events": [
+                    "financing"
+                  ]
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "Yahoo Finance Singapore"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 53,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.2,
+              "finalScore": 20.2,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "Apollo": [],
+        "TPG": [],
+        "Golub": [
+          {
+            "id": "2026-11-19-fe2189854e60",
+            "title": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks",
+            "titleZh": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks",
+            "summary": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress TipRanks",
+            "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+            "summaryZhLanguage": "",
+            "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQW03QTh5MThOcTRhVHZTbnY3NVZkdERsR28wWGxHQ1Jmdlh5c3lkX2wwZURTVnA5Z0VQSXMxSHdJMkdoa3dyMlp3WWZuWFpZaWR5aW9jcHpXNEdZZmFjekRtamxwVjFIdzlqelljdmlzMGJrS25VNUJKNFczUlJsWjBqQ2tUY2lxaWhRbmlWeUtRNTNxem12cVA5SFU1bGFxYnRiTEJlcmpZc0dPTlNMNFFfcXJINXdrSnJZ?oc=5",
+            "source": "TipRanks",
+            "publishedAt": "2026-11-19",
+            "lede": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress TipRanks",
+            "articleExcerpt": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks. Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress TipRanks",
+            "contentFingerprint": "38a6c4d9e0a31b95",
+            "region": "Global",
+            "gps": [
+              "Golub"
+            ],
+            "strategies": [
+              "private-credit"
+            ],
+            "sectors": [
+              "private-credit"
+            ],
+            "events": [],
+            "curation": "rss_filter",
+            "excludedByClassifier": false,
+            "classificationBreakdown": {
+              "keywordGps": [
+                "Golub"
+              ],
+              "titleGps": [
+                "Golub"
+              ],
+              "llmGps": [],
+              "keywordStrategies": [
+                "private-credit"
+              ],
+              "titleStrategies": [
+                "private-credit"
+              ],
+              "llmStrategies": [],
+              "llmEvents": [],
+              "llmImportance": null,
+              "llmExclude": false,
+              "llmReason": "",
+              "llmReasonZh": ""
+            },
+            "rating": {
+              "parts": {
+                "institution": {
+                  "value": 1.0,
+                  "code": "title_names_gp",
+                  "gps": [
+                    "Golub"
+                  ]
+                },
+                "strategy": {
+                  "value": 0.77,
+                  "code": "title_hits_strategy",
+                  "tagValue": 1.0,
+                  "strategies": [
+                    "private-credit"
+                  ],
+                  "semanticValue": 0.55
+                },
+                "event": {
+                  "value": 0.2,
+                  "code": "routine",
+                  "ruleValue": 0.2,
+                  "events": []
+                },
+                "source": {
+                  "value": 0.25,
+                  "code": "tier_aggregator",
+                  "source": "TipRanks"
+                },
+                "freshness": {
+                  "value": 1.0,
+                  "code": "within_24h",
+                  "days": 0.0
+                }
+              },
+              "weights": {
+                "institution": 18,
+                "strategy": 12,
+                "event": 30,
+                "source": 25,
+                "freshness": 15
+              },
+              "score": 54,
+              "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+            },
+            "scoreBreakdown": {
+              "keywordScore": 14,
+              "semanticScore": 6.55,
+              "finalScore": 20.55,
+              "semanticEnabled": true
+            }
+          }
+        ],
+        "CVC": [],
+        "Canyon": []
+      },
+      "items": [
+        {
+          "id": "2026-11-19-235ddb107596",
+          "title": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News - TradingView",
+          "titleZh": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News - TradingView",
+          "summary": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News TradingView",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiiwJBVV95cUxOZ2JNSnlqWHVoYjN0VGZZdHc0dS1OUXdXczB5YnlQeHl0SjhKbFR4MXUtakJCaWJlOU1TbjFRNTZzNjFuREw3VzZILWZUbmUwejRDVU1fcXJJUUZRVkI1SmYxMUpHQ2JXLUtNekZmWHBrZkoyWm9JSUNjS2M4MmRYeURISlp3NVFCY2NhaWFUMXVBbzI0UzNPT2VjWWtLYlZ2a0dLOTdFWms4ekt5Sm9Xeloxc2R4U2RhYU1SUFNYTmtvY2tKTFNZOXZpYk5uRHh6YjR4OEJsNUVPd3hmRzQtcVlMQU4tVExoUHU5S1dySzh0aGdwazBPSHIxTXlhRFdoXzBZblRmTHdURFE?oc=5",
+          "source": "TradingView",
+          "publishedAt": "2026-11-19",
+          "lede": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News TradingView",
+          "articleExcerpt": "Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News - TradingView. Blue Owl plans $513 million commercial mortgage backed securities for Amazon-leased data center - Bloomberg News TradingView",
+          "contentFingerprint": "2c89d9be1a369d99",
+          "region": "US",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "resi",
+            "cre",
+            "data-center"
+          ],
+          "sectors": [
+            "resi",
+            "cre",
+            "data-center"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "resi",
+              "cre",
+              "data-center"
+            ],
+            "titleStrategies": [
+              "resi",
+              "cre",
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "resi",
+                  "cre",
+                  "data-center"
+                ],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "TradingView"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 57,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 22,
+            "semanticScore": 6.44,
+            "finalScore": 28.44,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-20296b8a6f8a",
+          "title": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). - Moomoo",
+          "titleZh": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). - Moomoo",
+          "summary": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). Moomoo",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNVjUwUzNVQ1AxalhETXRRbWNQeERCZHNRNWtzZGFSbndUM0tLVklmSU5vSGJ0QmNKYXFwM3R4R1k1c1ZvdkFBWkxpNlA4UnlaaEs0bGo1eXZ3X1dfTXljOGV6MThleDZFaHNoa21UMjlNWWlEQzV2T2l1N0hPNkRnNHNoaXpSSlhFQ0lYUTNydVIxcmZxTnBF?oc=5",
+          "source": "Moomoo",
+          "publishedAt": "2026-11-19",
+          "lede": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). Moomoo",
+          "articleExcerpt": "Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). - Moomoo. Blue Owl intends to issue $513 million in CMBS to finance the acquisition of a fully leased data center in Northern Virginia by Amazon (AMZN.US). Moomoo",
+          "contentFingerprint": "be64ea1bfce290e1",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "cre",
+            "data-center"
+          ],
+          "sectors": [
+            "cre",
+            "data-center"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "cre",
+              "data-center"
+            ],
+            "titleStrategies": [
+              "cre",
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "cre",
+                  "data-center"
+                ],
+                "semanticValue": 0.54
+              },
+              "event": {
+                "value": 0.95,
+                "code": "major_signal",
+                "ruleValue": 0.95,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Moomoo"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 79,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 17,
+            "semanticScore": 6.44,
+            "finalScore": 23.44,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-c458b36fa7d0",
+          "title": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan - FourWeekMBA",
+          "titleZh": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan - FourWeekMBA",
+          "summary": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan FourWeekMBA",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOMDJydVRwY3FBQUFXcmhqckdBeVJ0M011MXgyeVNFa204QXUwYnpPaTN1VFd1Vk1NMmdzVFJrM2JDMEx5NjBKa1d3ZktRUkxMSlJRNWZuREtib05vcXRkQmNxREhIdFhoWklJV2s3V01Wc1RVa1dPTHNzbEN5VFJ5aGp2dXptejdu?oc=5",
+          "source": "FourWeekMBA",
+          "publishedAt": "2026-11-19",
+          "lede": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan FourWeekMBA",
+          "articleExcerpt": "Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan - FourWeekMBA. Blue Owl Plans $513M CMBS; Its Trust Took a $512.6M Loan FourWeekMBA",
+          "contentFingerprint": "13bfc8a55d96c192",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "cre"
+          ],
+          "sectors": [
+            "cre"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "cre"
+            ],
+            "titleStrategies": [
+              "cre"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.74,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "cre"
+                ],
+                "semanticValue": 0.49
+              },
+              "event": {
+                "value": 0.7,
+                "code": "financing",
+                "ruleValue": 0.7,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "FourWeekMBA"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 72,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 5.88,
+            "finalScore": 19.88,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-52f92bb9703c",
+          "title": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center - Bloomberg",
+          "titleZh": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center - Bloomberg",
+          "summary": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center Bloomberg",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPVUVaaktqamVpSXJCWjhzSEJrUkRaVUpKNUpEamI3VWpUMW43WlVraDRuY25BV19GUHNId04wNnZnTTVNc1EwNGtSMzcxdVliVXlHOHl1bzd0Wm41T19fa1c5MEI3c2lxMU1FRWlaWXllZmtqUGN3ZW1aQ0s3YjU4OE1vVkJnWlBVTHlhaURjQ0hfeW9KSW51SW9EWEZIX0ppUmtwVXZFM2NNLUJBMERhOU1R?oc=5",
+          "source": "Bloomberg",
+          "publishedAt": "2026-11-19",
+          "lede": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center Bloomberg",
+          "articleExcerpt": "Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center - Bloomberg. Blue Owl Plans $513 Million CMBS for Amazon-Leased Data Center Bloomberg",
+          "contentFingerprint": "a9511ac34718c52b",
+          "region": "Global",
+          "gps": [
+            "Blue Owl"
+          ],
+          "strategies": [
+            "cre",
+            "data-center"
+          ],
+          "sectors": [
+            "cre",
+            "data-center"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blue Owl"
+            ],
+            "titleGps": [
+              "Blue Owl"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "cre",
+              "data-center"
+            ],
+            "titleStrategies": [
+              "cre",
+              "data-center"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blue Owl"
+                ]
+              },
+              "strategy": {
+                "value": 0.72,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "cre",
+                  "data-center"
+                ],
+                "semanticValue": 0.45
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 1.0,
+                "code": "tier_top",
+                "source": "Bloomberg"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 73,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 12,
+            "semanticScore": 5.4,
+            "finalScore": 17.4,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-8c406e0a01f6",
+          "title": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman",
+          "titleZh": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman",
+          "summary": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot Neuberger Berman",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOUk5NSGhJNTVRTkhub3BIMkh1aGUyN2Y0Y3pWX19DV3otdjNlcnhQbHJGd1dnNm1MdjhxSEZtb29yQXlKZWgwSDBrdjJNcGtrSlZqRENpV1hONTZQUUlIUVRGdVVqbFpxQ241SkxLMWtzSksyTS1mYzdaMVhPOUtremNFVWw0cG9ORTRIMGpheEM4U3JvaWJnN3Z5R0ZUNzFqeC0zdjVZSVd1NHVXMG5zNTFkYzZCQjNPX3Fn?oc=5",
+          "source": "Neuberger Berman",
+          "publishedAt": "2026-11-19",
+          "lede": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot Neuberger Berman",
+          "articleExcerpt": "Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot - Neuberger Berman. Why Private Residential Credit Is Real Estate's $60 Trillion Blind Spot Neuberger Berman",
+          "contentFingerprint": "2643c43e26b3cdaf",
+          "region": "Global",
+          "gps": [
+            "Neuberger"
+          ],
+          "strategies": [
+            "resi"
+          ],
+          "sectors": [
+            "resi"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Neuberger"
+            ],
+            "titleGps": [
+              "Neuberger"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "resi"
+            ],
+            "titleStrategies": [
+              "resi"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Neuberger"
+                ]
+              },
+              "strategy": {
+                "value": 0.65,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "resi"
+                ],
+                "semanticValue": 0.29
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.35,
+                "code": "tier_other",
+                "source": "Neuberger Berman"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 56,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 3.48,
+            "finalScore": 17.48,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-17331a2a7b8c",
+          "title": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain - Yahoo Finance Singapore",
+          "titleZh": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain - Yahoo Finance Singapore",
+          "summary": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain Yahoo Finance Singapore",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOb2ZGSEhUVGF5bUFwRUlRUW1BTTBXSVNNOXRCR2RBZk1ldk5odmN0ZVpNWGJXY2k0MlFKSlozTU9NOWhqNHRxQ2lIWWFZSmZiSnYxQVNEeGxSMmtLRjBDZndpd1pfNXFUQXN3RzZ6c2lJWXdlS0V5ZEdPNGJ1b2V4ZTBMMDh3NThMSWVBeQ?oc=5",
+          "source": "Yahoo Finance Singapore",
+          "publishedAt": "2026-11-19",
+          "lede": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain Yahoo Finance Singapore",
+          "articleExcerpt": "Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain - Yahoo Finance Singapore. Blackstone Mortgage Trust (BXMT) Cuts Dividend As Investors Reassess Whether The Stock Is A Bargain Yahoo Finance Singapore",
+          "contentFingerprint": "77e713e1662c621f",
+          "region": "Global",
+          "gps": [
+            "Blackstone"
+          ],
+          "strategies": [
+            "resi"
+          ],
+          "sectors": [
+            "resi"
+          ],
+          "events": [
+            "financing"
+          ],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Blackstone"
+            ],
+            "titleGps": [
+              "Blackstone"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "resi"
+            ],
+            "titleStrategies": [
+              "resi"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Blackstone"
+                ]
+              },
+              "strategy": {
+                "value": 0.76,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "resi"
+                ],
+                "semanticValue": 0.52
+              },
+              "event": {
+                "value": 0.15,
+                "code": "stock_commentary",
+                "ruleValue": 0.15,
+                "events": [
+                  "financing"
+                ]
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "Yahoo Finance Singapore"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 53,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.2,
+            "finalScore": 20.2,
+            "semanticEnabled": true
+          }
+        },
+        {
+          "id": "2026-11-19-fe2189854e60",
+          "title": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks",
+          "titleZh": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks",
+          "summary": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress TipRanks",
+          "summaryZh": "此条目的中文摘要尚未人工整理；请先参考英文摘要与原文链接。",
+          "summaryZhLanguage": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOQW03QTh5MThOcTRhVHZTbnY3NVZkdERsR28wWGxHQ1Jmdlh5c3lkX2wwZURTVnA5Z0VQSXMxSHdJMkdoa3dyMlp3WWZuWFpZaWR5aW9jcHpXNEdZZmFjekRtamxwVjFIdzlqelljdmlzMGJrS25VNUJKNFczUlJsWjBqQ2tUY2lxaWhRbmlWeUtRNTNxem12cVA5SFU1bGFxYnRiTEJlcmpZc0dPTlNMNFFfcXJINXdrSnJZ?oc=5",
+          "source": "TipRanks",
+          "publishedAt": "2026-11-19",
+          "lede": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress TipRanks",
+          "articleExcerpt": "Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress - TipRanks. Golub Capital BDC Earnings Call Shows Resilience Amid Credit Stress TipRanks",
+          "contentFingerprint": "38a6c4d9e0a31b95",
+          "region": "Global",
+          "gps": [
+            "Golub"
+          ],
+          "strategies": [
+            "private-credit"
+          ],
+          "sectors": [
+            "private-credit"
+          ],
+          "events": [],
+          "curation": "rss_filter",
+          "excludedByClassifier": false,
+          "classificationBreakdown": {
+            "keywordGps": [
+              "Golub"
+            ],
+            "titleGps": [
+              "Golub"
+            ],
+            "llmGps": [],
+            "keywordStrategies": [
+              "private-credit"
+            ],
+            "titleStrategies": [
+              "private-credit"
+            ],
+            "llmStrategies": [],
+            "llmEvents": [],
+            "llmImportance": null,
+            "llmExclude": false,
+            "llmReason": "",
+            "llmReasonZh": ""
+          },
+          "rating": {
+            "parts": {
+              "institution": {
+                "value": 1.0,
+                "code": "title_names_gp",
+                "gps": [
+                  "Golub"
+                ]
+              },
+              "strategy": {
+                "value": 0.77,
+                "code": "title_hits_strategy",
+                "tagValue": 1.0,
+                "strategies": [
+                  "private-credit"
+                ],
+                "semanticValue": 0.55
+              },
+              "event": {
+                "value": 0.2,
+                "code": "routine",
+                "ruleValue": 0.2,
+                "events": []
+              },
+              "source": {
+                "value": 0.25,
+                "code": "tier_aggregator",
+                "source": "TipRanks"
+              },
+              "freshness": {
+                "value": 1.0,
+                "code": "within_24h",
+                "days": 0.0
+              }
+            },
+            "weights": {
+              "institution": 18,
+              "strategy": 12,
+              "event": 30,
+              "source": 25,
+              "freshness": 15
+            },
+            "score": 54,
+            "retrievedAt": "2026-11-19T04:56:47.915097+00:00"
+          },
+          "scoreBreakdown": {
+            "keywordScore": 14,
+            "semanticScore": 6.55,
+            "finalScore": 20.55,
+            "semanticEnabled": true
+          }
+        }
+      ]
     }
   },
   "coverage": [
     {
       "firm": "Blue Owl",
-      "count": 28,
+      "count": 32,
       "selected": 6,
       "status": "ok",
       "query": "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
@@ -233374,7 +236725,7 @@
         "\"Blue Owl\" OR \"BlueOwl\" OR \"Dyal Capital\"",
         "Blue Owl private credit direct lending BDC"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
@@ -233387,12 +236738,12 @@
         "\"KKR\" OR \"Kohlberg Kravis Roberts\"",
         "KKR private credit direct lending asset-based finance CLO"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "CIFC",
-      "count": 6,
+      "count": 4,
       "selected": 1,
       "status": "ok",
       "query": "\"CIFC\" OR \"CIFC Asset Management\"",
@@ -233400,7 +236751,7 @@
         "\"CIFC\" OR \"CIFC Asset Management\"",
         "CIFC CLO credit"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
@@ -233413,38 +236764,38 @@
         "\"PAG\" credit OR \"PAG\" fund OR \"Pacific Alliance Group\"",
         "PAG private credit direct lending real estate credit"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "Pretium",
       "count": 5,
-      "selected": 1,
+      "selected": 0,
       "status": "ok",
       "query": "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
       "queries": [
         "\"Pretium Partners\" OR \"Pretium\" credit OR \"Pretium\" housing",
         "Pretium residential credit mortgage"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "Guggenheim",
-      "count": 7,
-      "selected": 3,
+      "count": 6,
+      "selected": 1,
       "status": "ok",
       "query": "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
       "queries": [
         "\"Guggenheim Investments\" OR \"Guggenheim Partners\" OR \"Guggenheim\" credit",
         "Guggenheim private credit CLO asset backed lending"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "Neuberger",
-      "count": 8,
+      "count": 7,
       "selected": 6,
       "status": "ok",
       "query": "\"Neuberger Berman\"",
@@ -233452,7 +236803,7 @@
         "\"Neuberger Berman\"",
         "Neuberger Berman private credit direct lending"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
@@ -233465,12 +236816,12 @@
         "\"BasePoint Capital\" OR \"BasePoint\" credit OR \"BasePoint\" fund",
         "BasePoint private credit asset backed lending"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "Bain Capital",
-      "count": 20,
+      "count": 21,
       "selected": 6,
       "status": "ok",
       "query": "\"Bain Capital\" OR \"BainCapital\"",
@@ -233478,7 +236829,7 @@
         "\"Bain Capital\" OR \"BainCapital\"",
         "Bain Capital credit private debt direct lending"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
@@ -233491,7 +236842,7 @@
         "\"Blackstone\" credit OR \"Blackstone\" fund OR \"Blackstone\" investment",
         "Blackstone private credit direct lending BCRED"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
@@ -233504,25 +236855,25 @@
         "\"Apollo Global Management\" OR \"Apollo Management\" OR \"Apollo\" credit",
         "Apollo private credit direct lending asset backed finance"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "TPG",
-      "count": 9,
-      "selected": 6,
+      "count": 10,
+      "selected": 4,
       "status": "ok",
       "query": "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
       "queries": [
         "\"TPG\" credit OR \"TPG\" fund OR \"Angelo Gordon\"",
         "TPG Angelo Gordon private credit"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "Golub",
-      "count": 13,
+      "count": 14,
       "selected": 6,
       "status": "ok",
       "query": "\"Golub Capital\" OR \"Golub\" credit",
@@ -233530,12 +236881,12 @@
         "\"Golub Capital\" OR \"Golub\" credit",
         "Golub Capital BDC direct lending"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "CVC",
-      "count": 27,
+      "count": 28,
       "selected": 6,
       "status": "ok",
       "query": "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
@@ -233543,7 +236894,7 @@
         "\"CVC Capital Partners\" OR \"CVC Credit\" OR \"CVC\" fund",
         "CVC Credit private credit CLO"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
@@ -233556,12 +236907,12 @@
         "\"Canyon Partners\" OR \"Canyon Capital Advisors\" OR \"Canyon\" credit",
         "Canyon Partners credit fund"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     },
     {
       "firm": "Portfolio",
-      "count": 636,
+      "count": 620,
       "selected": 6,
       "status": "ok",
       "query": "private credit direct lending Blue Owl Blackstone Apollo BDC; private credit direct lending KKR Bain Capital Guggenheim Golub",
@@ -233578,9 +236929,9 @@
         "site:dbrs.morningstar.com \"single-family rental\" OR \"residential mortgage\" OR \"commercial mortgage\" OR \"net lease\" OR aircraft",
         "site:pitchbook.com \"private credit\" OR \"direct lending\" OR CLO OR \"leveraged loan\" OR BDC"
       ],
-      "asOf": "2026-11-18T23:43:35.865986+00:00",
+      "asOf": "2026-11-19T04:56:47.915097+00:00",
       "errorReason": ""
     }
   ],
-  "checkedAt": "2026-11-18T23:43:35.865986+00:00"
+  "checkedAt": "2026-11-19T04:56:47.915097+00:00"
 }
