@@ -610,6 +610,18 @@ async def ai_generate(files: list[UploadFile] = File(...), sector: str = Form(..
     return {"ok": True, "job": job["id"]}
 
 
+@app.post("/api/ai/jobs/{job_id}/recover")
+def ai_job_recover(job_id: str):
+    """A failed job whose documents Claude had written: fetch them and add them to the panel."""
+    def ingest(path, source_name, sector_id, y, q, nature, lang, ttl, keywords, date_=""):
+        return ingest_report(Path(path), source_name, sector_id, y, q, nature, lang, ttl, keywords, "", date_)
+
+    try:
+        return ai_assist.recover_job(job_id, ingest)
+    except ai_assist.AIError as exc:
+        raise _ai_err(exc)
+
+
 @app.get("/api/ai/jobs/{job_id}")
 def ai_job(job_id: str):
     try:

@@ -187,7 +187,11 @@ the pipeline.
   <id> [--update]` uploads one (with `--update` a registered sector's skill
   gets a new version under the same id; `--all` updates every quarterly
   skill for its sector), and the registered sector appears in "Generate
-  with AI". The source files may come in compressed
+  with AI". A Skill run is one long request, so like the desktop app it uses
+  server-side compaction (older context summarised past `AI_COMPACT_TRIGGER`,
+  default 300,000 tokens) and clears old tool results (past `AI_CLEAR_TRIGGER`,
+  default 150,000, keeping the last `AI_CLEAR_KEEP` = 6); the job log notes each
+  compaction. The source files may come in compressed
   bundles (.zip, .7z, .rar, .tar / .tar.gz / .tgz / .tar.bz2 / .tar.xz, a
   single .gz / .bz2 / .xz), including bundles inside bundles: the server
   unpacks them (`panel/backend/archives.py`), keeps the source files and

@@ -41,6 +41,44 @@ SKILLS_FILE = ROOT / "data" / "ai_skills.json"
 DEFAULT_MODEL = "claude-opus-5-5"
 CODE_EXEC_TOOL = {"type": "code_execution_20250825", "name": "code_execution"}
 FALLBACK_BETA = "server-side-fallback-2026-07-01"
+# A Skill run is one long request in which every file read, page image and script output stays in
+# the context, so a big quarter (the PE skill's 47 exhibits) outgrows the 1M-token window even
+# though its sources are a fraction of that. Two server-side features keep it in bounds, as the
+# desktop app does for its own sessions:
+#   compaction - when the input passes AI_COMPACT_TRIGGER tokens, older context is summarised in
+#                place (checked before every step of the server-side tool loop, so it can happen
+#                several times within one run); the files stay in the container.
+#   clearing   - old tool results (file contents and script output already used) are cleared once
+#                the input passes AI_CLEAR_TRIGGER tokens, keeping the most recent AI_CLEAR_KEEP.
+# If the API refuses the clearing edit alongside compaction, the run carries on with compaction only.
+COMPACT_BETA = "compact-2026-01-12"
+CONTEXT_EDITING_BETA = "context-management-2025-06-27"
+
+
+def _int_env(name: str, default: int, floor: int) -> int:
+    try:
+        return max(floor, int(os.environ.get(name, "") or default))
+    except ValueError:
+        return default
+
+
+AI_COMPACT_TRIGGER = _int_env("AI_COMPACT_TRIGGER", 300_000, 50_000)   # the API's minimum is 50,000
+AI_CLEAR_TRIGGER = _int_env("AI_CLEAR_TRIGGER", 150_000, 30_000)
+AI_CLEAR_KEEP = _int_env("AI_CLEAR_KEEP", 6, 1)
+
+
+def _context_management(clearing: bool) -> dict[str, Any]:
+    edits: list[dict[str, Any]] = []
+    if clearing:
+        edits.append({
+            "type": "clear_tool_uses_20250919",
+            "trigger": {"type": "input_tokens", "value": AI_CLEAR_TRIGGER},
+            "keep": {"type": "tool_uses", "value": AI_CLEAR_KEEP},
+            # clearing breaks the prompt cache: only clear when it frees a worthwhile amount
+            "clear_at_least": {"type": "input_tokens", "value": 20_000},
+        })
+    edits.append({"type": "compact_20260112", "trigger": {"type": "input_tokens", "value": AI_COMPACT_TRIGGER}})
+    return {"edits": edits}
 SOURCE_EXTS = {".docx", ".pdf", ".xlsx", ".xlsm", ".csv", ".pptx", ".md", ".txt", ".json"}
 # the four documents one generation produces: file name Claude must use -> (nature, language)
 OUTPUTS = {"full_en.docx": ("full", "en"), "full_cn.docx": ("full", "cn"), "summary_en.docx": ("summary", "en"), "summary_cn.docx": ("summary", "cn")}
@@ -221,8 +259,39 @@ def job_status(job_id: str) -> dict[str, Any]:
     with _JOBS_LOCK:
         job = JOBS.get(job_id)
     if not job:
+        job = _load_job(job_id)  # a finished job of an earlier server run
+    if not job:
         raise AIError("job not found")
     return job
+
+
+def _job_file_path(job_id: str) -> Path:
+    if not re.fullmatch(r"[0-9a-f]{6,32}", job_id or ""):
+        raise AIError("bad job id")
+    return JOBS_DIR / job_id / "job.json"
+
+
+def _save_job(job: dict[str, Any]):
+    """Keep a finished job's record next to its files, so its log and settings outlive a restart."""
+    try:
+        with _JOBS_LOCK:
+            data = {k: v for k, v in job.items() if not k.startswith("_")}
+        _job_file_path(job["id"]).write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
+    except Exception:
+        pass
+
+
+def _load_job(job_id: str) -> dict[str, Any] | None:
+    try:
+        path = _job_file_path(job_id)
+    except AIError:
+        return None
+    if not path.is_file():
+        return None
+    try:
+        return json.loads(path.read_text(encoding="utf-8"))
+    except ValueError:
+        return None
 
 
 def _log(job: dict[str, Any], text: str, step: str | None = None):
@@ -241,16 +310,7 @@ def _run_generation(job: dict[str, Any], files: list[Path], skill: dict[str, str
             produced = _mock_documents(job, out_dir)
         else:
             produced = _generate_with_skill(job, files, skill, out_dir)
-        # ingest the primary full report first, then the rest
-        order = sorted(produced.items(), key=lambda kv: (kv[1][0] != "full", kv[1][1] != job["language"]))
-        for path, (nature, language) in order:
-            with _JOBS_LOCK:
-                job["outputs"].append({"name": path.name, "nature": nature, "language": language, "size": path.stat().st_size})
-            _log(job, f"adding to the panel: {path.name} ({nature}, {language})", "ingest")
-            meta = ingest(path, path.name, job["sector"], job["year"], job["quarter"], nature, language,
-                          job["title"] if nature == "full" else "", "", job.get("date") or "")
-            with _JOBS_LOCK:
-                job["reports"].append({"id": meta["id"], "nature": nature, "language": language, "title": meta.get("title", "")})
+        _ingest_outputs(job, produced, ingest)
         _log(job, f"done: {len(job['reports'])} documents for {period} are on the site", "done")
         job["state"] = "done"
         shutil.rmtree(JOBS_DIR / job["id"] / "in", ignore_errors=True)  # the dropped sources are no longer needed
@@ -261,6 +321,101 @@ def _run_generation(job: dict[str, Any], files: list[Path], skill: dict[str, str
         job["state"] = "error"
     finally:
         job["finished_at"] = now_iso()
+        _save_job(job)
+
+
+def _ingest_outputs(job: dict[str, Any], produced: dict[Path, tuple[str, str]], ingest: Callable[..., dict[str, Any]]):
+    """Add the downloaded documents to the panel: the primary full report first, then the rest."""
+    order = sorted(produced.items(), key=lambda kv: (kv[1][0] != "full", kv[1][1] != job["language"]))
+    for path, (nature, language) in order:
+        with _JOBS_LOCK:
+            job["outputs"].append({"name": path.name, "nature": nature, "language": language, "size": path.stat().st_size})
+        _log(job, f"adding to the panel: {path.name} ({nature}, {language})", "ingest")
+        meta = ingest(path, path.name, job["sector"], job["year"], job["quarter"], nature, language,
+                      job["title"] if nature == "full" else "", "", job.get("date") or "")
+        with _JOBS_LOCK:
+            job["reports"].append({"id": meta["id"], "nature": nature, "language": language, "title": meta.get("title", "")})
+
+
+def recover_job(job_id: str, ingest: Callable[..., dict[str, Any]]) -> dict[str, Any]:
+    """A job that failed after Claude had written its documents (for example: they were not found,
+    or the server stopped while they were being fetched): fetch the documents the run left in the
+    Files API and add them to the panel, without generating again."""
+    with _JOBS_LOCK:
+        job = JOBS.get(job_id)
+    job = job or _load_job(job_id)
+    if not job:
+        raise AIError("job not found")
+    if job.get("state") == "running":
+        raise AIError("the job is still running")
+    if job.get("state") == "done" and job.get("reports"):
+        return job
+    if mock():
+        raise AIError("AI_MOCK is set: nothing to recover")
+    job.setdefault("log", []).append(f"{datetime.now().strftime('%H:%M:%S')}  recovering the documents this run wrote")
+    job.update(state="running", step="download", error=None)
+    job["outputs"], job["reports"] = [], []
+    with _JOBS_LOCK:
+        JOBS[job_id] = job
+    try:
+        client = _client()
+        out_dir = JOBS_DIR / job_id / "out"
+        out_dir.mkdir(parents=True, exist_ok=True)
+        period = job.get("date") or f"{job['quarter']}Q{job['year']}"
+        expected = WEEKLY_OUTPUTS if job.get("date") else OUTPUTS
+        stem = f"{job['sector']}_{job['date']}" if job.get("date") else f"{job['sector']}_{period}"
+        produced = _download_outputs(client, job, [], [], expected, out_dir, stem, "en" if job.get("date") else job["language"])
+        _ingest_outputs(job, produced, ingest)
+        _delete_inputs(client, job)
+        _log(job, f"done: {len(job['reports'])} documents for {period} are on the site", "done")
+        job["state"] = "done"
+        job["error"] = None
+        shutil.rmtree(JOBS_DIR / job_id / "in", ignore_errors=True)
+    except Exception as exc:
+        err = exc if isinstance(exc, AIError) else AIError(str(exc))
+        _log(job, f"recovery failed: {err}", "error")
+        job["error"] = str(err)
+        job["state"] = "error"
+    finally:
+        job["finished_at"] = now_iso()
+        _save_job(job)
+    return job
+
+
+def _job_window(job: dict[str, Any]):
+    """The time span in which a job's files were created on Anthropic's side."""
+    from datetime import timedelta
+
+    start = datetime.fromisoformat(job["started_at"]) - timedelta(minutes=1)
+    end = datetime.fromisoformat(job["finished_at"]) + timedelta(minutes=10) if job.get("finished_at") else None
+    return start, end
+
+
+def _files_since(client, job: dict[str, Any], names: set[str], limit: int = 2000):
+    """Files in the Files API whose name is one of `names`, created while this job ran (newest first)."""
+    start, end = _job_window(job)
+    hits = []
+    for n, meta in enumerate(client.files.list(limit=100)):
+        if n >= limit:
+            break
+        created = meta.created_at if meta.created_at.tzinfo else meta.created_at.replace(tzinfo=timezone.utc)
+        if created < start or (end and created > end):
+            continue
+        if Path(meta.filename or "").name.lower() in names:
+            hits.append(meta)
+    hits.sort(key=lambda m: m.created_at, reverse=True)
+    return hits
+
+
+def _delete_inputs(client, job: dict[str, Any]):
+    """The job's uploaded source files, found by name in its time window, are no longer needed."""
+    names = {Path(f).name.lower() for f in job.get("files") or []}
+    for meta in _files_since(client, dict(job, finished_at=None), names):
+        if not getattr(meta, "downloadable", False):  # inputs are not downloadable; the Skill's outputs are
+            try:
+                client.files.delete(meta.id)
+            except Exception:
+                pass
 
 
 def _skill_container(skill_id: str, container_id: str | None) -> dict[str, Any]:
@@ -289,33 +444,57 @@ def _output_files(response) -> dict[str, str]:
     return out
 
 
-def _turn(client, job: dict[str, Any], messages: list[dict[str, Any]], container: dict[str, Any], step: str) -> tuple[Any, dict[str, Any], list[str]]:
-    """One assistant turn with the Skill container, resumed through pause_turn. Returns the final
-    response, the container (with its id) and the ids of the files written during the turn."""
+def _turn(client, job: dict[str, Any], messages: list[dict[str, Any]], container: dict[str, Any], step: str) -> tuple[Any, dict[str, Any], list[str], list[dict[str, Any]]]:
+    """One assistant turn with the Skill container, resumed through pause_turn, with server-side
+    compaction and clearing of old tool results. Returns the final response, the container (with
+    its id), the ids of the files written during the turn, and the conversation including every
+    assistant step (compaction blocks must be sent back on the next request)."""
     import anthropic
 
     file_ids: list[str] = []
+    clearing = job.get("_clearing", True)
     for _ in range(30):
         try:
-            with client.messages.stream(model=job["model"], max_tokens=64000, container=container, messages=messages, tools=[CODE_EXEC_TOOL]) as stream:
+            with client.beta.messages.stream(
+                model=job["model"], max_tokens=64000, container=container, messages=messages, tools=[CODE_EXEC_TOOL],
+                betas=[COMPACT_BETA] + ([CONTEXT_EDITING_BETA] if clearing else []),
+                context_management=_context_management(clearing),
+            ) as stream:
                 response = stream.get_final_message()
+        except anthropic.BadRequestError as exc:
+            if clearing and "clear_tool_uses" in str(exc):
+                # the clearing edit is not accepted with compaction here: keep compaction alone
+                clearing = job["_clearing"] = False
+                _log(job, f"clearing old tool results is not available here ({exc.message[:160]}); continuing with compaction only", step)
+                continue
+            raise _api_error(exc)
         except anthropic.APIError as exc:
             raise _api_error(exc)
         if getattr(response, "container", None) and response.container.id:
             container = dict(container, id=response.container.id)
         file_ids.extend(_output_files(response).keys())
         for block in response.content:
-            if block.type == "text" and block.text.strip():
+            kind = getattr(block, "type", "")
+            if kind == "compaction":
+                job["compactions"] = job.get("compactions", 0) + 1
+                _log(job, f"context compacted (summary {job['compactions']}): the run continues on a summary of its earlier steps", step)
+            elif kind == "text" and block.text.strip():
                 _log(job, block.text.strip()[:400], step)
+        cm = getattr(response, "context_management", None)
+        for edit in (getattr(cm, "applied_edits", None) or []):
+            if getattr(edit, "type", "") == "clear_tool_uses_20250919":
+                _log(job, f"cleared {getattr(edit, 'cleared_tool_uses', '?')} old tool results "
+                          f"({getattr(edit, 'cleared_input_tokens', '?')} tokens)", step)
+        # every assistant step stays in the conversation: a compaction block, once returned,
+        # replaces everything before it on the following requests
+        messages = messages + [{"role": "assistant", "content": response.content}]
         if response.stop_reason == "pause_turn":
-            # the server-side loop paused: resend with the assistant turn appended, same container
-            messages = messages + [{"role": "assistant", "content": response.content}]
-            continue
+            continue  # the server-side loop paused: resend with the assistant steps appended, same container
         if response.stop_reason == "refusal":
             raise AIError("Claude declined this request (safety classifier)")
         if response.stop_reason == "max_tokens":
             raise AIError("the answer hit the token limit before the documents were finished; try with fewer source files")
-        return response, container, file_ids
+        return response, container, file_ids, messages
     raise AIError("the Skill run paused too many times without finishing")
 
 
@@ -354,7 +533,7 @@ def _generate_with_skill(job: dict[str, Any], files: list[Path], skill: dict[str
         )
         content0: list[dict[str, Any]] = [{"type": "text", "text": prompt1}] + [{"type": "container_upload", "file_id": fid} for fid in uploads]
         _log(job, f"running the {skill.get('name') or 'weekly-market-update'} Skill ({job['model']}); the update takes a few minutes", "report")
-        _, _, ids_w = _turn(client, job, [{"role": "user", "content": content0}], _skill_container(skill["skill_id"], None), "report")
+        _, _, ids_w, _ = _turn(client, job, [{"role": "user", "content": content0}], _skill_container(skill["skill_id"], None), "report")
         return _download_outputs(client, job, uploads, ids_w, WEEKLY_OUTPUTS, out_dir, f"{job['sector']}_{job['date']}")
     prompt1 = (
         f"You are producing the {period} {job['sector_name']} quarterly report for Junson Capital's AID research panel.\n"
@@ -373,7 +552,7 @@ def _generate_with_skill(job: dict[str, Any], files: list[Path], skill: dict[str
     content: list[dict[str, Any]] = [{"type": "text", "text": prompt1}] + [{"type": "container_upload", "file_id": fid} for fid in uploads]
     messages: list[dict[str, Any]] = [{"role": "user", "content": content}]
     _log(job, f"running the {skill.get('name') or 'report'} Skill ({job['model']}); the full report takes several minutes", "report")
-    response, container, ids1 = _turn(client, job, messages, _skill_container(skill["skill_id"], None), "report")
+    response, container, ids1, messages = _turn(client, job, messages, _skill_container(skill["skill_id"], None), "report")
 
     prompt2 = (
         "Now produce three more Word documents from the full report you just wrote, with the docx Skill, and save them in /tmp/outputs/:\n"
@@ -385,9 +564,9 @@ def _generate_with_skill(job: dict[str, Any], files: list[Path], skill: dict[str
         "Each document starts with the same masthead lines as the full report (\"JUNSON Capital Research\", the title, the "
         "\"Coverage: …\" line), so the panel's parser reads them the same way."
     )
-    messages = messages + [{"role": "assistant", "content": response.content}, {"role": "user", "content": prompt2}]
+    messages = messages + [{"role": "user", "content": prompt2}]  # the assistant steps are already in messages
     _log(job, f"writing the {LANG_NAME[other]} edition and the two summaries", "editions")
-    _, container, ids2 = _turn(client, job, messages, container, "editions")
+    _, container, ids2, _ = _turn(client, job, messages, container, "editions")
 
     return _download_outputs(client, job, uploads, ids1 + ids2, OUTPUTS, out_dir, f"{job['sector']}_{period}", lang)
 
@@ -406,6 +585,20 @@ def _download_outputs(client, job: dict[str, Any], uploads: list[str], file_ids:
         name = Path(meta.filename or "").name.lower()
         if name in expected:
             found[name] = fid
+    # The replies do not always show every file: compaction and the clearing of old tool results
+    # remove the code-run results that carried the file references. So the documents are also
+    # looked up in the Files API by name, among the files created while this job ran.
+    missing_names = {n for n in expected if n not in found}
+    if missing_names and job.get("started_at"):
+        try:
+            for meta in _files_since(client, job, missing_names):
+                name = Path(meta.filename or "").name.lower()
+                if name not in found and getattr(meta, "downloadable", True):
+                    found[name] = meta.id
+        except Exception as exc:
+            raise _api_error(exc)
+        if missing_names - set(found) != missing_names:
+            _log(job, "found in the Files API: " + ", ".join(sorted(missing_names & set(found))))
     missing = [n for n in expected if n not in found]
     if f"full_{lang}.docx" not in found:
         raise AIError("the Skill run finished without writing the full report (/tmp/outputs/full_%s.docx)" % lang)
