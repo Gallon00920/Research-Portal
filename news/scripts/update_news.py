@@ -27,7 +27,14 @@ from pathlib import Path
 
 
 ROOT = Path(__file__).resolve().parents[1]
-DATA_PATH = ROOT / "data" / "news.json"
+# Where this machine keeps the news it produces: news.json, the semantic query cache, the run lock
+# and the batch state. Unset (GitHub's workflow, a laptop): news/data/ in the repository. The
+# company server sets NEWS_DATA_DIR to a folder outside the git checkout, so `git pull` never
+# touches its news and GitHub's copy of news.json never replaces it; on the first run the folder
+# is seeded from the repository's copy (see ensure_data_dir).
+REPO_DATA_DIR = ROOT / "data"
+DATA_DIR = Path(os.environ["NEWS_DATA_DIR"]).expanduser() if os.environ.get("NEWS_DATA_DIR", "").strip() else REPO_DATA_DIR
+DATA_PATH = DATA_DIR / "news.json"
 CONFIG_PATH = ROOT / "config" / "news_sources.json"
 GOLDEN_CASES_PATH = ROOT / "data" / "golden_cases.json"
 SEMANTIC_PROMPT = """{gp_name} is a multi-strategy alternative asset manager. We ONLY track news
@@ -163,8 +170,8 @@ REFUSAL_FALLBACK_BETA = "server-side-fallback-2026-07-01"
 # Batches API (half price; results usually within the hour, within 24 hours at most).
 DEFAULT_CLAUDE_BATCH_POLL_SECONDS = 30
 DEFAULT_CLAUDE_BATCH_TIMEOUT_MINUTES = 120
-BATCH_STATE_PATH = ROOT / "data" / ".claude_batches.json"  # batches submitted but not yet collected
-LOCK_PATH = ROOT / "data" / ".update_news.lock"  # one run at a time: a batch run can outlast the cron hour
+BATCH_STATE_PATH = DATA_DIR / ".claude_batches.json"  # batches submitted but not yet collected
+LOCK_PATH = DATA_DIR / ".update_news.lock"  # one run at a time: a batch run can outlast the cron hour
 LOCK_STALE_SECONDS = 4 * 3600
 
 # Default GP aliases; config/news_sources.json `gpAliases` overrides this map.
@@ -405,8 +412,30 @@ def enable_os_trust_store() -> bool:
     return True
 
 
+def ensure_data_dir() -> None:
+    """A news data folder outside the repository starts as a copy of the repository's news data;
+    after that it is the machine's own and is never overwritten from the repository."""
+    if DATA_DIR == REPO_DATA_DIR:
+        return
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    for name in ("news.json", "semantic_queries.json"):
+        src, dst = REPO_DATA_DIR / name, DATA_DIR / name
+        if src.exists() and not dst.exists():
+            dst.write_bytes(src.read_bytes())
+            print(f"Seeded {dst} from {src}", file=sys.stderr)
+
+
+def query_cache_path(semantic_config: dict) -> Path:
+    """The HyDE query cache: in the news data folder when NEWS_DATA_DIR is set, else where the config says."""
+    configured = semantic_config.get("queryCachePath", "data/semantic_queries.json")
+    if DATA_DIR != REPO_DATA_DIR:
+        return DATA_DIR / Path(configured).name
+    return ROOT / configured
+
+
 def main() -> int:
     enable_os_trust_store()
+    ensure_data_dir()
     parser = argparse.ArgumentParser(description="Update the private-credit news dashboard.")
     parser.add_argument("--date", default=dt.date.today().isoformat(), help="Digest date, YYYY-MM-DD.")
     parser.add_argument("--dry-run", action="store_true", help="Print selected items without writing.")
@@ -2054,7 +2083,7 @@ class SemanticScorer:
         raise RuntimeError(f"Unknown semantic scoring backend: {backend_name}")
 
     def load_query_cache(self) -> dict:
-        cache_path = ROOT / self.semantic_config.get("queryCachePath", "data/semantic_queries.json")
+        cache_path = query_cache_path(self.semantic_config)
         if cache_path.exists():
             return load_json(cache_path)
         return {}
@@ -2067,7 +2096,7 @@ class SemanticScorer:
         return queries
 
     def load_or_generate_hyde_queries(self, gp: str) -> list[str]:
-        cache_path = ROOT / self.semantic_config.get("queryCachePath", "data/semantic_queries.json")
+        cache_path = query_cache_path(self.semantic_config)
         bad_history_logs = format_golden_cases(self.golden_cases, gp=gp, limit=6)
         prompt = SEMANTIC_PROMPT.format(gp_name=gp, bad_history_logs=bad_history_logs)
         settings = claude_settings(self.config, self.semantic_config)

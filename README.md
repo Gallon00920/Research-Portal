@@ -397,6 +397,16 @@ On a server, a cron line such as
 `7 */2 * * * cd /path/to/Research-Portal && .venv/bin/python news/scripts/update_news.py --recent-days 3`
 gives the two-hourly refresh that the workflow provides on GitHub.
 
+A server that makes its own news should keep it outside the git checkout:
+set `NEWS_DATA_DIR` (for example `/home/aidroot/research-portal-data/news`)
+for both the service and the cron job. The updater then writes `news.json`,
+its semantic query cache, run lock and batch state there, and the server
+serves that `news.json`; the first run seeds the folder from the repository's
+copy. The repository's `news/data/news.json` is then never modified on the
+server, so `git pull` never conflicts on it and GitHub's copy never replaces
+the server's news. Unset, everything stays in `news/data/` as before (the
+GitHub workflow and local runs).
+
 The updater's Claude calls (classification, the relevance judge when ColBERT
 is unavailable, translation) run in batch mode when `claude.batch` is true in
 `news/config/news_sources.json`: every question about the fetched candidates

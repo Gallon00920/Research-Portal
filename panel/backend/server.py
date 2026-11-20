@@ -50,7 +50,11 @@ WEB = ROOT / "web"  # panel frontend: app.js, i18n.js, static_data.js, login.htm
 STATIC_DIRS = (REPO / "web", WEB, REPO / "news" / "web", REPO / "factors" / "web", REPO / "macro" / "web")  # served flat; first match wins
 FACTORS = REPO / "factors"  # fund key factors: data/, incoming/, scripts/extract_factors.py
 MACRO = REPO / "macro"  # macro / market slide briefs: data/, incoming/, scripts/extract_macro.py
-NEWS_DATA = REPO / "news" / "data" / "news.json"  # written by news/scripts/update_news.py
+# written by news/scripts/update_news.py: in NEWS_DATA_DIR when set (the company server keeps its
+# news outside the git checkout, so `git pull` never brings GitHub's copy in), else in the repository
+NEWS_DATA = (Path(os.environ["NEWS_DATA_DIR"]).expanduser() if os.environ.get("NEWS_DATA_DIR", "").strip()
+             else REPO / "news" / "data") / "news.json"
+NEWS_REPO_DATA = REPO / "news" / "data" / "news.json"
 REPORTS.mkdir(parents=True, exist_ok=True)
 
 DEFAULT_SECTORS = [
@@ -652,6 +656,8 @@ def api_meta():
 @app.get("/data/news.json")
 def news_data():
     """News tracker data; the GitHub Pages build copies the same file to data/news.json."""
+    if not NEWS_DATA.exists() and NEWS_REPO_DATA.exists():  # NEWS_DATA_DIR set, no run yet: the repository's copy
+        return FileResponse(NEWS_REPO_DATA, media_type="application/json")
     if not NEWS_DATA.exists():
         raise HTTPException(404, "news data not found; run news/scripts/update_news.py")
     return FileResponse(NEWS_DATA, media_type="application/json")
