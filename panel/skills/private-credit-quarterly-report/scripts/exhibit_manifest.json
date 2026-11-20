@@ -1,0 +1,544 @@
+{
+ "_note": "exhibit 的稳定 slug 与文档顺序。编号不写进任何地方 —— 出稿时按这份 manifest 的顺序生成，正文引用一律用 {{ex:slug}} 占位符。增删一张图只改这份 manifest，编号自动重排。",
+ "_baseline": "2026Q3 基线：按此顺序编号恰好 1–58",
+ "exhibits": [
+  {
+   "slug": "mkt_aum_by_channel",
+   "section": "2.1",
+   "layout": "solo",
+   "caption": "Private debt AUM (US$bn) by channel, {y0}–{y1}",
+   "source": "PitchBook 年度全球私债报告 (+summary xlsx)",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "年份区间 {y0}–{y1}"
+  },
+  {
+   "slug": "mkt_us_levcredit_split",
+   "section": "2.1",
+   "layout": "solo",
+   "caption": "US leveraged credit market in {cq} — total US${tot}tn",
+   "source": "PitchBook|LCD via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "总规模 US${tot}tn + 季度 {cq}"
+  },
+  {
+   "slug": "mkt_inst_aum_decomp",
+   "section": "2.2",
+   "layout": "pairL",
+   "caption": "Private debt institutional fund AUM (US$bn)",
+   "source": "PitchBook",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "mkt_fundraising",
+   "section": "2.2",
+   "layout": "pairR",
+   "caption": "Private debt fundraising activity",
+   "source": "PitchBook",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "mkt_dl_origination",
+   "section": "2.3",
+   "layout": "pairL",
+   "caption": "Direct lending origination (US$bn, monthly)",
+   "source": "KBRA via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "mkt_lbo_bsl_vs_private",
+   "section": "2.3",
+   "layout": "pairR",
+   "caption": "LBOs financed in BSL vs private markets (by count)",
+   "source": "MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "mkt_mmclo_issuance_spread",
+   "section": "2.4",
+   "layout": "solo",
+   "caption": "US MM CLO new issuance and avg. MM CLO 'AAA' spread",
+   "source": "S&P Global Ratings / LevFin Insights",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ret_risk_return_table",
+   "section": "3.1",
+   "layout": "table",
+   "caption": "Private debt vs public assets: return, volatility and Sharpe ({p0} – {p1})",
+   "source": "Lincoln VOG / PitchBook|LCD / Bloomberg via MS tracker",
+   "kind": "table",
+   "caption_dynamic": true,
+   "caption_claim": "区间 {p0}–{p1}"
+  },
+  {
+   "slug": "ret_dl_vs_bsl_total_return",
+   "section": "3.1",
+   "layout": "solo",
+   "caption": "Private vs public credit: Lincoln senior debt vs single-B loans trailing 12-month total returns, with US high yield yield-to-worst (quarterly)",
+   "source": "MS tracker p41 右图 \"Annual Total Returns\" + ICE BofA US HY YTW（FRED，账本冻结）",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ret_dl_spread_vs_bsl",
+   "section": "3.2",
+   "layout": "pairL",
+   "caption": "DL new origination spreads vs Single B BSL (bps)",
+   "source": "MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ret_dl_spread_by_ebitda",
+   "section": "3.2",
+   "layout": "pairR",
+   "caption": "Spread of DL new originations by EBITDA cohort (bps)",
+   "source": "MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "prc_covenants_by_vintage",
+   "section": "4.2",
+   "layout": "pairL",
+   "caption": "Financial covenants across vintages and segments (% of deals)",
+   "source": "LCD / MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "prc_pik_toggle_share",
+   "section": "4.2",
+   "layout": "pairR",
+   "caption": "% of deals with PIK toggle across vintages",
+   "source": "LCD / MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_sp_default_vs_specgrade",
+   "section": "5.1",
+   "layout": "pairL",
+   "caption": "S&P Credit-estimate default rates vs US spec-grade (TTM, %)",
+   "source": "S&P Global Ratings",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_sp_dl_vs_bsl_default",
+   "section": "5.1",
+   "layout": "pairR",
+   "caption": "S&P T12M default rate: direct lending vs BSL",
+   "source": "S&P Global Ratings",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "两个违约率数值"
+  },
+  {
+   "slug": "cf_provider_compare_table",
+   "section": "5.1",
+   "layout": "table",
+   "caption": "Summary of private credit default measures ({pq} vs {cq})",
+   "source": "Fitch / S&P / KBRA DLD / Lincoln VOG / Proskauer via MS tracker",
+   "kind": "table",
+   "caption_dynamic": true,
+   "caption_claim": "两个季度标签 {pq} vs {cq}"
+  },
+  {
+   "slug": "cf_fitch_ttm_default",
+   "section": "5.1",
+   "layout": "pairL",
+   "caption": "Fitch TTM private credit default rate",
+   "source": "Fitch via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "违约率数值 + 月份"
+  },
+  {
+   "slug": "cf_kbra_dld_default",
+   "section": "5.1",
+   "layout": "pairR",
+   "caption": "KBRA DLD issuer TTM default rate: direct lending vs BSL",
+   "source": "KBRA via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_fitch_default_by_sector",
+   "section": "5.1",
+   "layout": "solo",
+   "caption": "Fitch LTM default rate by sector (%)",
+   "source": "Fitch via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_recovery_path",
+   "section": "5.2",
+   "layout": "pairL",
+   "caption": "Average implied recoveries, unweighted",
+   "source": "KBRA via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_recovery_by_sector",
+   "section": "5.2",
+   "layout": "pairR",
+   "caption": "Implied recovery average across sectors (2023–2026)",
+   "source": "KBRA via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_leverage_band",
+   "section": "5.3",
+   "layout": "pairL",
+   "caption": "Gross leverage in US leveraged credit",
+   "source": "Fitch/S&P/KBRA/Lincoln/Bloomberg/FactSet via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_leverage_timeseries",
+   "section": "5.3",
+   "layout": "pairR",
+   "caption": "Total leverage (x): Fitch private MM vs Lincoln vs public single B",
+   "source": "MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_icr_band",
+   "section": "5.4",
+   "layout": "pairL",
+   "caption": "Interest coverage in US leveraged credit",
+   "source": "MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_ebitda_coverage_ts",
+   "section": "5.4",
+   "layout": "pairR",
+   "caption": "EBITDA coverage (x): quarterly series",
+   "source": "MS tracker",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "方向判断 + 水平值（如 continued q/q improvement to ~2.0x）"
+  },
+  {
+   "slug": "cf_bdc_nonaccrual_avg",
+   "section": "5.5",
+   "layout": "pairL",
+   "caption": "Nonaccruals across BDCs: average at cost and share >8%",
+   "source": "BDC Collateral via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "均值 + 是否创高（如 up to 2.8%，5-yr high）"
+  },
+  {
+   "slug": "cf_bdc_nonaccrual_pubpriv",
+   "section": "5.5",
+   "layout": "pairR",
+   "caption": "Average nonaccruals at cost: public vs private BDCs",
+   "source": "BDC Collateral via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "cf_bdc_pik_avg",
+   "section": "5.6",
+   "layout": "pairL",
+   "caption": "% PIK income over total investment income: average and >12% share",
+   "source": "BDC Collateral via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "均值水平"
+  },
+  {
+   "slug": "cf_bdc_pik_pubpriv",
+   "section": "5.6",
+   "layout": "pairR",
+   "caption": "Average PIK rate: public vs private BDCs",
+   "source": "BDC Collateral via MS tracker",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "方向判断（public rising vs private range-bound）"
+  },
+  {
+   "slug": "sent_broker_summary",
+   "section": "6.1",
+   "layout": "table",
+   "caption": "Broker summary — private credit views, key points and QoQ change",
+   "source": "Broker/ 当季全部研报 + Junson AID summary",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "tws_extra_exhibit",
+   "section": "7",
+   "layout": "solo",
+   "caption": "BDC maturity wall (US$bn): Dec-25 vs Mar-26 snapshot, with vintage timing",
+   "source": "视当季议题",
+   "kind": "chart|optional",
+   "caption_dynamic": true,
+   "caption_claim": "整条题注每季重写"
+  },
+  {
+   "slug": "fund_pag_comp_type",
+   "section": "8.1",
+   "layout": "pairL",
+   "caption": "PAG BRS III — investment amount by portfolio type",
+   "source": "PAG 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_pag_comp_geo",
+   "section": "8.1",
+   "layout": "pairR",
+   "caption": "PAG BRS III — investment amount by geography",
+   "source": "PAG 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_pag_comp_ccy",
+   "section": "8.1",
+   "layout": "pairL",
+   "caption": "PAG BRS III — investment amount by currency",
+   "source": "PAG 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_pag_comp_bank",
+   "section": "8.1",
+   "layout": "pairR",
+   "caption": "PAG BRS III — investment amount by bank counterparty",
+   "source": "PAG 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_pag_comp_qoq",
+   "section": "8.1",
+   "layout": "table",
+   "caption": "PAG BRS III — composition QoQ: by portfolio type and by currency (% of total investment amount)",
+   "source": "账本（本季+上季，只需本季新报告）",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_pag_kpi_qoq",
+   "section": "8.1",
+   "layout": "table",
+   "caption": "PAG BRS Fund III — key performance and capital metrics, {cq} vs {pq}",
+   "source": "账本（本季+上季）",
+   "kind": "table",
+   "caption_dynamic": true,
+   "caption_claim": "两个季度标签"
+  },
+  {
+   "slug": "fund_pag_top10",
+   "section": "8.1",
+   "layout": "table",
+   "caption": "PAG BRS Fund III — top 10 current investments by investment amount",
+   "source": "PAG 投资人报告 持仓明细表",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_gug_gics_mix",
+   "section": "8.2",
+   "layout": "pairL",
+   "caption": "Guggenheim PDF IV — GICS sub-industry mix (% of par)",
+   "source": "Guggenheim 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_gug_sponsored",
+   "section": "8.2",
+   "layout": "pairR",
+   "caption": "Guggenheim PDF IV — sponsored vs non-sponsored (% of NAV)",
+   "source": "Guggenheim 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_gug_comp_qoq",
+   "section": "8.2",
+   "layout": "table",
+   "caption": "Guggenheim PDF IV — composition QoQ: GICS sub-industry mix and sponsored split",
+   "source": "账本（本季+上季）",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_gug_closed_deals",
+   "section": "8.2",
+   "layout": "table",
+   "caption": "Guggenheim PDF IV — {cq} closed transactions",
+   "source": "Guggenheim 投资人报告",
+   "kind": "table",
+   "caption_dynamic": true,
+   "caption_claim": "季度标签 {cq}"
+  },
+  {
+   "slug": "fund_hsbc_sector",
+   "section": "8.3",
+   "layout": "pairL",
+   "caption": "HSBC RCF — current portfolio by sector (share of {n} investments)",
+   "source": "HSBC AM 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": true,
+   "caption_claim": "持仓数量（share of N investments）"
+  },
+  {
+   "slug": "fund_hsbc_margin",
+   "section": "8.3",
+   "layout": "pairR",
+   "caption": "HSBC RCF — current margin by project (bps)",
+   "source": "HSBC AM 投资人报告",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_hsbc_comp_qoq",
+   "section": "8.3",
+   "layout": "table",
+   "caption": "HSBC RCF — composition QoQ: current portfolio by sector (count of investments)",
+   "source": "账本（本季+上季）",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "fund_hsbc_portfolio",
+   "section": "8.3",
+   "layout": "table",
+   "caption": "HSBC RCF — current portfolio summary",
+   "source": "HSBC AM 投资人报告",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_scorecard",
+   "section": "9.1",
+   "layout": "table",
+   "caption": "Positioning scorecard — Junson holdings vs vintage-matched cohorts (baseline: 2026Q3)",
+   "source": "账本 + PitchBook 导出",
+   "kind": "table",
+   "caption_dynamic": true,
+   "caption_claim": "基线/季度标签"
+  },
+  {
+   "slug": "ca_named_comparators",
+   "section": "9.2",
+   "layout": "table",
+   "caption": "Junson holdings vs named competitor funds (latest flagship vehicles)",
+   "source": "PitchBook 导出 + 基金报告",
+   "kind": "table",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_momentum_irr",
+   "section": "9.3",
+   "layout": "pairL",
+   "caption": "Baseline levels: fund IRR vs vintage cohort median",
+   "source": "账本 percentile_history",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_momentum_tvpi",
+   "section": "9.3",
+   "layout": "pairR",
+   "caption": "Baseline levels: fund TVPI and DPI vs vintage cohort medians",
+   "source": "账本 percentile_history",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_traj_irr_pct",
+   "section": "9.4",
+   "layout": "pairL",
+   "caption": "IRR percentile rank within vintage cohort — trajectory (baseline point)",
+   "source": "账本 percentile_history",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_traj_tvpi_pct",
+   "section": "9.4",
+   "layout": "pairR",
+   "caption": "TVPI percentile rank within vintage cohort — trajectory (baseline point)",
+   "source": "账本 percentile_history",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_cohort_iqr",
+   "section": "9.5",
+   "layout": "solo",
+   "caption": "Cohort dispersion: interquartile range width by vintage (IRR, pp; TVPI, x)",
+   "source": "PitchBook 导出",
+   "kind": "chart",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_apx_universe",
+   "section": "9.6",
+   "layout": "solo",
+   "caption": "Peer universe by vintage: aggregate fund size and fund count",
+   "source": "PitchBook 导出",
+   "kind": "chart|annual",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_apx_mgr_consistency",
+   "section": "9.6",
+   "layout": "solo",
+   "caption": "Manager consistency: average PitchBook quartile vs median net IRR (≥4 ranked funds)",
+   "source": "PitchBook 导出",
+   "kind": "chart|annual",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_apx_irr_by_vintage",
+   "section": "9.6",
+   "layout": "pairL",
+   "caption": "Net IRR by vintage: median and interquartile range, with Junson funds",
+   "source": "PitchBook 导出",
+   "kind": "chart|annual",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_apx_tvpi_by_vintage",
+   "section": "9.6",
+   "layout": "pairR",
+   "caption": "TVPI by vintage: median and interquartile range, with Junson funds",
+   "source": "PitchBook 导出",
+   "kind": "chart|annual",
+   "caption_dynamic": false
+  },
+  {
+   "slug": "ca_apx_called_by_vintage",
+   "section": "9.6",
+   "layout": "solo",
+   "caption": "Called-down % by vintage: median and interquartile range, with Junson funds",
+   "source": "PitchBook 导出",
+   "kind": "chart|annual",
+   "caption_dynamic": false
+  }
+ ],
+ "_caption_rule": "caption_dynamic=true 的题注含数据主张，每季必须按本季数据重写，且题注里的每个数字都要能在账本里找到。禁止沿用上季的形容词。review_sheet.py 会把这些题注单独列出来让用户确认；caption_dynamic=false 的题注固定不动。"
+}

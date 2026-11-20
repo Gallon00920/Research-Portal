@@ -1,0 +1,1740 @@
+{
+ "meta": {
+  "_note": "PC 季报数据账本。历史点只追加不重算。key 是 exhibit_manifest.json 里的稳定 slug，不是 exhibit 编号 —— 编号每季会变，slug 不会。",
+  "rq": null,
+  "as_of": {
+   "market": {
+    "quarter": null,
+    "note": "市场层：MS Tracker / S&P / PitchBook·LCD / KBRA / Fitch"
+   },
+   "fund": {
+    "quarter": null,
+    "note": "基金层：三份投资人报告，通常滞后市场层 1–2 季"
+   },
+   "competitor": {
+    "export_date": null,
+    "note": "PitchBook 导出日，就是竞品层的基准日"
+   }
+  },
+  "screen": {
+   "universe_fund_count": null,
+   "definition": "North America direct lending drawdown funds"
+  },
+  "comparator_set": {
+   "upper_mm": [],
+   "core_mm": [],
+   "_note": "人工选定，改了必须在正文声明"
+  },
+  "vintage_convention": {
+   "PAG_BRS_III": null,
+   "Guggenheim_PDF_IV": null,
+   "HSBC_RCF": null
+  }
+ },
+ "exhibits": {
+  "mkt_aum_by_channel": {
+   "_shape": "series_stacked",
+   "_section": "2.1",
+   "_layout": "solo",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 年度全球私债报告 (+summary xlsx)",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null,
+   "estimated_periods": [
+    "2015",
+    "2016",
+    "2017",
+    "2018",
+    "2019",
+    "2020",
+    "2021",
+    "2022",
+    "2023",
+    "2024"
+   ],
+   "_estimated_why": "⛔ Alex 2026-08-26：「每一个数 如果是估算的那就在数的前面加个 ~，严谨一点。」\n柱顶印的是三段之和。2015–2024 每根都含零售/保险两个**测量**分项（机构分项本身是 xlsx 明值），所以整个和算估算，印 ~606 这种。2025 那根三段全部来自第 5 页 donut 的明标值（$2,557B × 77.1 / 15.5 / 7.4%），是 exact，⛔ 不加 ~。\n这个名单是**账本说了算**，出图脚本只读不判 —— 换季如果某一年拿到了明值，从这个名单里删掉那一年即可，不用改代码。",
+   "_frozen_values": {
+    "paths": [
+     "stacks/Institutional",
+     "stacks/Retail",
+     "stacks/Insurance estimate"
+    ],
+    "n": 33,
+    "sha256": "ec6f1ecd5cc537de245d81df242c4e99c13ed791394da1e813bcfb29c332111b",
+    "_why": "⛔ Alex 2026-08-26：「避免每次出来的版本不一样。」这 33 个数里有 22 个是从源图上量出来的 —— 像素测量每跑一次都可能差一点点，而本季已经跟源文件对过账（2026 年 1–5 月合计 86.2bn 对披露的 ~87bn 差 -0.9%；2015–2024 机构段标定残差 −1.8%~+0.5%）。所以这一组值**冻结**：下季只追加年份，不许重测已有年份。真要改（比如 PitchBook 修订了历史），必须在 _frozen_values._changelog 里写清改了哪一年、为什么、新的对账结果，并同步更新 sha256。",
+    "_changelog": []
+   }
+  },
+  "mkt_us_levcredit_split": {
+   "_shape": "shares",
+   "_section": "2.1",
+   "_layout": "solo",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook|LCD via MS tracker",
+   "labels": [],
+   "vals": [],
+   "panels": null
+  },
+  "mkt_inst_aum_decomp": {
+   "_shape": "series_stacked",
+   "_section": "2.2",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "mkt_fundraising": {
+   "_shape": "series_stacked",
+   "_section": "2.2",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "mkt_dl_origination": {
+   "_shape": "series_stacked",
+   "_section": "2.3",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "KBRA via MS tracker",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "mkt_lbo_bsl_vs_private": {
+   "_shape": "series_grouped",
+   "_section": "2.3",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "MS tracker",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "mkt_mmclo_issuance_spread": {
+   "_shape": "series_stacked",
+   "_section": "2.4",
+   "_layout": "solo",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "S&P Global Ratings / LevFin Insights",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "ret_risk_return_table": {
+   "_shape": "rows_flat",
+   "_section": "3.1",
+   "_layout": "table",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Lincoln VOG / PitchBook|LCD / Bloomberg via MS tracker",
+   "cols": [],
+   "rows": []
+  },
+  "ret_dl_vs_bsl_total_return": {
+   "_shape": "series_lines",
+   "_section": "3.1",
+   "_layout": "solo",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Lincoln International VOG / PitchBook | LCD via MS tracker；ICE BofA via FRED",
+   "periods": [],
+   "lines": {},
+   "zero_line": true,
+   "ylim": null,
+   "ytick": null
+  },
+  "ret_dl_spread_vs_bsl": {
+   "_shape": "series_lines",
+   "_section": "3.2",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "MS tracker",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "ret_dl_spread_by_ebitda": {
+   "_shape": "bars_grouped_categorical",
+   "_section": "3.2",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "MS tracker",
+   "labels": [],
+   "groups": {},
+   "highlight": null
+  },
+  "prc_covenants_by_vintage": {
+   "_shape": "groups_stacked",
+   "_section": "4.2",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "LCD / MS tracker",
+   "groups": [],
+   "stacks": {}
+  },
+  "prc_pik_toggle_share": {
+   "_shape": "groups_bars",
+   "_section": "4.2",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "LCD / MS tracker",
+   "groups": [],
+   "bars": {}
+  },
+  "cf_sp_default_vs_specgrade": {
+   "_shape": "series_lines",
+   "_section": "5.1",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "S&P Global Ratings",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_sp_dl_vs_bsl_default": {
+   "_shape": "series_lines",
+   "_section": "5.1",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "S&P Global Ratings",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_provider_compare_table": {
+   "_shape": "rows_qoq",
+   "_section": "5.1",
+   "_layout": "table",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Fitch / S&P / KBRA DLD / Lincoln VOG / Proskauer via MS tracker",
+   "rows": [],
+   "header_template": [
+    "Provider",
+    "Sample / scope",
+    "Definition / methodology",
+    "<pq>",
+    "<cq>",
+    "Trend",
+    "Cohort"
+   ]
+  },
+  "cf_fitch_ttm_default": {
+   "_shape": "series_stacked",
+   "_section": "5.1",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Fitch via MS tracker",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_kbra_dld_default": {
+   "_shape": "bars_grouped_categorical",
+   "_section": "5.1",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "KBRA via MS tracker",
+   "labels": [],
+   "groups": {},
+   "highlight": null
+  },
+  "cf_fitch_default_by_sector": {
+   "_shape": "bars_categorical",
+   "_section": "5.1",
+   "_layout": "solo",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Fitch via MS tracker",
+   "labels": [],
+   "vals": [],
+   "highlight": null,
+   "emphasis": "Total",
+   "ylim": [
+    0,
+    25
+   ],
+   "ytick": 5
+  },
+  "cf_recovery_path": {
+   "_shape": "bars_grouped_categorical",
+   "_section": "5.2",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "KBRA via MS tracker",
+   "labels": [],
+   "groups": {},
+   "highlight": null
+  },
+  "cf_recovery_by_sector": {
+   "_shape": "bars_categorical",
+   "_section": "5.2",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "KBRA via MS tracker",
+   "labels": [],
+   "vals": [],
+   "highlight": null,
+   "chart_form": "vbars",
+   "ylim": [
+    0,
+    80
+   ],
+   "ytick": 10
+  },
+  "cf_leverage_band": {
+   "_shape": "band_positioning",
+   "_section": "5.3",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Fitch/S&P/KBRA/Lincoln/Bloomberg/FactSet via MS tracker",
+   "bands": [],
+   "items": []
+  },
+  "cf_leverage_timeseries": {
+   "_shape": "series_lines",
+   "_section": "5.3",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "MS tracker",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_icr_band": {
+   "_shape": "band_positioning",
+   "_section": "5.4",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "MS tracker",
+   "bands": [],
+   "items": []
+  },
+  "cf_ebitda_coverage_ts": {
+   "_shape": "series_lines",
+   "_section": "5.4",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "MS tracker",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_bdc_nonaccrual_avg": {
+   "_shape": "series_lines",
+   "_section": "5.5",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "BDC Collateral via MS tracker",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_bdc_nonaccrual_pubpriv": {
+   "_shape": "series_lines",
+   "_section": "5.5",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "BDC Collateral via MS tracker",
+   "periods": [],
+   "lines": {},
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_bdc_pik_avg": {
+   "_shape": "series_stacked",
+   "_section": "5.6",
+   "_layout": "pairL",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "BDC Collateral via MS tracker",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "cf_bdc_pik_pubpriv": {
+   "_shape": "series_grouped",
+   "_section": "5.6",
+   "_layout": "pairR",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "BDC Collateral via MS tracker",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "sent_broker_summary": {
+   "_shape": "rows_flat",
+   "_section": "6.1",
+   "_layout": "table",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Broker/ 当季全部研报 + Junson AID summary",
+   "cols": [],
+   "rows": []
+  },
+  "tws_extra_exhibit": {
+   "_shape": "series_stacked",
+   "_section": "7",
+   "_layout": "solo",
+   "_as_of_block": "market",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "视当季议题",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null
+  },
+  "fund_pag_comp_type": {
+   "_shape": "shares",
+   "_section": "8.1",
+   "_layout": "pairL",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null,
+   "chart_form": "pie"
+  },
+  "fund_pag_comp_geo": {
+   "_shape": "shares",
+   "_section": "8.1",
+   "_layout": "pairR",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null,
+   "chart_form": "pie"
+  },
+  "fund_pag_comp_ccy": {
+   "_shape": "shares",
+   "_section": "8.1",
+   "_layout": "pairL",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null
+  },
+  "fund_pag_comp_bank": {
+   "_shape": "shares",
+   "_section": "8.1",
+   "_layout": "pairR",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null,
+   "chart_form": "vbars",
+   "legend_loc": "upper right"
+  },
+  "fund_pag_comp_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8.1",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本（本季+上季，只需本季新报告）",
+   "rows": [],
+   "row_labels_fixed": {
+    "left": [
+     "Subscription Line Finance",
+     "Large Corporates RCF & TL",
+     "Secured SME",
+     "CRE",
+     "Secondaries NAV Finance",
+     "Agricultural Mortgages",
+     "Social Housing"
+    ],
+    "right": [
+     "USD",
+     "EUR",
+     "GBP"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「E36 和 E37 这张图的格式 表头 最左侧的一列也是固定死的，必须跟同事的那个报告一样，除了季度。」同事那版 E36 是**八列双栏**：左栏 By portfolio type 逐档、右栏 By currency 逐档，各带上季/本季/QoQ Δ。⛔ 我原来印的是四列摘要（Cut | Largest share | Prior Q | QoQ Δ），跟账本里冻结的八列表头完全不是一回事 —— 表头是从 build_doc 现写的字面量，所以 pc_hdrcheck 查账本全绿、纸上却是错的。现在表头和两栏行名都从账本读。",
+    "structural": false,
+    "_varies_why": "组合类型名与币种 —— 新增一档就变行",
+    "_frozen_part": "八列双栏结构与「左栏 By portfolio type / 右栏 By currency」不变",
+    "_rule": "⛔ 这一组行名是**本季数据的快照**，不是永久契约。_rq=2026Q3 记的是「这份名单属于哪一季」。同季对不上 = 出稿代码拼错了，硬失败；跨季对不上 = 数据本来就该变，打印差异让用户确认，不失败。⛔ 真正不许变的是 _frozen_part 里那些**写法**。",
+    "_rq": "<rq>"
+   },
+   "header_template": [
+    "By portfolio type",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ",
+    "By currency",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ"
+   ]
+  },
+  "fund_pag_kpi_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8.1",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本（本季+上季）",
+   "rows": [],
+   "row_labels_fixed": {
+    "rows": [
+     {
+      "label": "Current gross / net IRR",
+      "from": "Gross IRR||Net IRR"
+     },
+     {
+      "label": "Current gross / net MOIC",
+      "from": "Gross MOIC||Net MOIC (TVPI)"
+     },
+     {
+      "label": "Capital contributions (US$m / %)",
+      "from": "Capital contributions (US$m / %)"
+     },
+     {
+      "label": "Distributions (US$m)",
+      "from": "Distributions (US$m)"
+     },
+     {
+      "label": "DPI",
+      "from": "DPI"
+     },
+     {
+      "label": "NAV (US$m)",
+      "from": "NAV (US$m)"
+     },
+     {
+      "label": "Investments (total / exited)",
+      "from": "Number of investments||  exited"
+     },
+     {
+      "label": "Total value (US$m)",
+      "from": "Total value (US$m)"
+     },
+     {
+      "label": "Investment-level leverage (US$m)",
+      "from": "Investment-level leverage (US$m)"
+     }
+    ],
+    "_why": "⛔ Alex 2026-08-26：「E36 和 E37 …表头 最左侧的一列也是固定死的，必须跟同事的那个报告一样，除了季度。我之前跟你说过啊，你居然没改。」\n这九个行名是从同事那份 §8「Fund level performance detail」的 KPI 表逐行抄下来的，gross/net 合成一行（值用 \" / \" 连接）。`from` 指向账本 rows 里的行名，'||' 分隔要合成的两行 —— 值本身还是账本的，一个数都不新造。\n⛔ 账本的 rows 有 21 行（更细，含 recallable/realized 等子行），那是**数据**；纸上印的是这九行，这是**版式**。要改行名改这里，不许改 build_doc。",
+    "structural": true,
+    "_structural_why": "KPI 指标名，固定词汇表。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   },
+   "header_template": [
+    "Metric",
+    "<cq>",
+    "<pq>"
+   ]
+  },
+  "fund_pag_top10": {
+   "_shape": "rows_flat",
+   "_section": "8.1",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG 投资人报告 持仓明细表",
+   "cols": [],
+   "rows": [],
+   "header": [
+    "Investment",
+    "Date",
+    "Portfolio type",
+    "CCY",
+    "Spread",
+    "Amount ($m)",
+    "Total value ($m)",
+    "UW IRR",
+    "Expected IRR"
+   ],
+   "row_labels_fixed": {
+    "expected": [
+     "Cilo",
+     "Valentin",
+     "Moffat",
+     "Kaschak",
+     "Ultar",
+     "Pandim",
+     "Rinjani",
+     "Elbert",
+     "Ossa",
+     "Dixon"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「Exhibit 38 还不改」—— 表头九列照同事那版，UW IRR / Expected IRR 两列是本季新抽的（见 rows[*]._irr_src）。",
+    "structural": false,
+    "_varies_why": "前十大投资的项目名 —— 每季按投资额重排，新投/退出都会变行",
+    "_frozen_part": "列序与「按投资额降序取前十」这个规则不变；项目名跟着源报告走",
+    "_rule": "⛔ 这一组行名是**本季数据的快照**，不是永久契约。_rq=2026Q3 记的是「这份名单属于哪一季」。同季对不上 = 出稿代码拼错了，硬失败；跨季对不上 = 数据本来就该变，打印差异让用户确认，不失败。⛔ 真正不许变的是 _frozen_part 里那些**写法**。",
+    "_rq": "<rq>"
+   },
+   "col_widths_cm": {
+    "widths": [
+     1.85,
+     1.35,
+     3.6,
+     1.05,
+     1.35,
+     2.05,
+     2.35,
+     1.45,
+     2.05
+    ],
+    "fixed": true,
+    "_required_cm": [
+     1.63,
+     1.159,
+     3.227,
+     0.834,
+     1.147,
+     1.847,
+     2.17,
+     1.221,
+     1.812
+    ],
+    "_why": "Carlito 7.5pt 逐格量（表头粗体、第一列粗体）+ Word 默认单元格边距 0.38cm；合计 17.10cm ≤ 正文 17.12cm。fixed=true —— python-docx 默认 autofit 会重算列宽。"
+   }
+  },
+  "fund_gug_gics_mix": {
+   "_shape": "shares",
+   "_section": "8.2",
+   "_layout": "pairL",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Guggenheim 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null
+  },
+  "fund_gug_sponsored": {
+   "_shape": "shares",
+   "_section": "8.2",
+   "_layout": "pairR",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Guggenheim 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null
+  },
+  "fund_gug_comp_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8.2",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本（本季+上季）",
+   "rows": [],
+   "row_labels_fixed": {
+    "left": [
+     {
+      "label": "Software (Sys + App)",
+      "from": "Systems Software||Application Software",
+      "agg": "sum"
+     },
+     {
+      "label": "– Systems Software",
+      "from": "Systems Software"
+     },
+     {
+      "label": "– Application Software",
+      "from": "Application Software"
+     },
+     {
+      "label": "Health Care Services",
+      "from": "Health Care Services"
+     },
+     {
+      "label": "Education Services",
+      "from": "Education Services"
+     },
+     {
+      "label": "Advertising",
+      "from": "Advertising"
+     },
+     {
+      "label": "Alternative Carriers",
+      "from": "Alternative Carriers"
+     },
+     {
+      "label": "Diversified Support Svcs",
+      "from": "Diversified Support Services"
+     },
+     {
+      "label": "Personal Care Products",
+      "from": "Personal Care Products"
+     },
+     {
+      "label": "Construction Materials",
+      "from": "Construction Materials"
+     }
+    ],
+    "right": [
+     {
+      "label": "Sponsored",
+      "from": "Sponsored"
+     },
+     {
+      "label": "Non-sponsored",
+      "from": "Non-sponsored"
+     }
+    ],
+    "expected": [
+     "Software (Sys + App)",
+     "– Systems Software",
+     "– Application Software",
+     "Health Care Services",
+     "Education Services",
+     "Advertising",
+     "Alternative Carriers",
+     "Diversified Support Svcs",
+     "Personal Care Products",
+     "Construction Materials"
+    ],
+    "right_col": [
+     "Sponsored",
+     "Non-sponsored"
+    ],
+    "src_left": "fund_gug_gics_mix",
+    "src_right": "fund_gug_sponsored",
+    "_why": "⛔ Alex 2026-08-26：「Exhibit 41 也是 …… 表格的表头和最左侧一列 要跟同事的一模一样，直接写死」。同事那版 E41 是**八列双栏**：左栏 GICS 子行业（含 Software 合并行 + 两条缩进分项），右栏 sponsored 拆分，各带上季 / 本季 / QoQ Δ。`from` 用 || 分隔要合成的切片名，agg=sum 表示相加。⛔ 值一律从 src_left / src_right 两张饼图的账本条目读，不许在 build_doc 写字面量。",
+    "structural": false,
+    "_varies_why": "GICS 子行业名 —— 每季按占比重排，新行业进出都会变行",
+    "_frozen_part": "Software 合并行 + 两条缩进分项这个**结构**不变；其余行按当季占比降序，行业名跟着源报告走",
+    "_rule": "⛔ 这一组行名是**本季数据的快照**，不是永久契约。_rq=2026Q3 记的是「这份名单属于哪一季」。同季对不上 = 出稿代码拼错了，硬失败；跨季对不上 = 数据本来就该变，打印差异让用户确认，不失败。⛔ 真正不许变的是 _frozen_part 里那些**写法**。",
+    "_rq": "<rq>"
+   },
+   "col_widths_cm": {
+    "widths": [
+     4.3,
+     1.35,
+     1.35,
+     1.55,
+     3.9,
+     1.35,
+     1.35,
+     1.55
+    ],
+    "fixed": true,
+    "_required_cm": [
+     3.024,
+     1.096,
+     0.964,
+     1.23,
+     2.802,
+     0.964,
+     0.964,
+     1.098
+    ],
+    "_why": "Carlito 7.5pt 逐格量 + Word 默认单元格边距 0.38cm。合计 17.10cm ≤ 正文 17.12cm。python-docx 默认 autofit 会自己重算并抢走第一列，所以 fixed=true。"
+   },
+   "header_template": [
+    "GICS sub-industry (top)",
+    "<pq>*",
+    "<cq>",
+    "QoQ Δ*",
+    "Sponsored (% of NAV)",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ"
+   ]
+  },
+  "fund_gug_closed_deals": {
+   "_shape": "rows_flat",
+   "_section": "8.2",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Guggenheim 投资人报告",
+   "cols": [],
+   "rows": [],
+   "header": [
+    "Deal",
+    "Structure",
+    "Pricing",
+    "Net leverage",
+    "LTV",
+    "Differentiator"
+   ],
+   "row_labels_fixed": {
+    "expected": [
+     "Global Cellulose (absorbent pulp)",
+     "Adevinta Spain (online classifieds)",
+     "Wells Concrete (construction materials)"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「E42 也是 表格的表头和最左侧一列 要跟同事的一模一样，直接写死。」同事那版最左格是 `交易名 (业务)` 一行，不是我上一版那样把业务描述换行放第二行。",
+    "structural": false,
+    "_varies_why": "本季 closed transactions —— 每季完全不同",
+    "_frozen_part": "六列（Deal | Structure | Pricing | Net leverage | LTV | Differentiator）与「业务描述并进 Deal 一格」这个写法不变",
+    "_rule": "⛔ 这一组行名是**本季数据的快照**，不是永久契约。_rq=2026Q3 记的是「这份名单属于哪一季」。同季对不上 = 出稿代码拼错了，硬失败；跨季对不上 = 数据本来就该变，打印差异让用户确认，不失败。⛔ 真正不许变的是 _frozen_part 里那些**写法**。",
+    "_rq": "<rq>"
+   }
+  },
+  "fund_hsbc_sector": {
+   "_shape": "shares",
+   "_section": "8.3",
+   "_layout": "pairL",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "HSBC AM 投资人报告",
+   "labels": [],
+   "vals": [],
+   "panels": null,
+   "chart_form": "pie"
+  },
+  "fund_hsbc_margin": {
+   "_shape": "bars_categorical",
+   "_section": "8.3",
+   "_layout": "pairR",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "HSBC AM 投资人报告",
+   "labels": [],
+   "vals": [],
+   "highlight": null,
+   "chart_form": "vbars",
+   "ylim": [
+    0,
+    400
+   ],
+   "ytick": 50
+  },
+  "fund_hsbc_comp_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8.3",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本（本季+上季）",
+   "rows": [],
+   "header_template": [
+    "Sector",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ",
+    "Sector",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ"
+   ]
+  },
+  "fund_hsbc_portfolio": {
+   "_shape": "rows_flat",
+   "_section": "8.3",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "HSBC AM 投资人报告",
+   "cols": [],
+   "rows": [],
+   "header": [
+    "Project",
+    "Sector",
+    "Country",
+    "Margin",
+    "Committed (€m)",
+    "Drawn (€m)",
+    "Maturity",
+    "Est. ROIC",
+    "Watchlist"
+   ],
+   "row_labels_fixed": {
+    "expected": [
+     "Emerald",
+     "Connect",
+     "Media",
+     "Alpha",
+     "Pique",
+     "Ink",
+     "Service",
+     "Freeze",
+     "Oliver",
+     "Tooth",
+     "Box"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「E46 还没改？同事的 E46 里有 base 这一列？表头顺序都给我定死，以及最左边的这一列」—— 同事那版**没有 Base 列**，九列顺序是 Project | Sector | Country | Margin | Committed (€m) | Drawn (€m) | Maturity | Est. ROIC | Watchlist。base rate 并进 Margin 一格（SOF+350 这种写法）。",
+    "structural": false,
+    "_varies_why": "当前组合的项目名 —— 新投/退出/结算都会变行",
+    "_frozen_part": "九列列序与「base rate 并进 Margin 一格」这个写法不变",
+    "_rule": "⛔ 这一组行名是**本季数据的快照**，不是永久契约。_rq=2026Q3 记的是「这份名单属于哪一季」。同季对不上 = 出稿代码拼错了，硬失败；跨季对不上 = 数据本来就该变，打印差异让用户确认，不失败。⛔ 真正不许变的是 _frozen_part 里那些**写法**。",
+    "_rq": "<rq>"
+   },
+   "col_widths_cm": {
+    "widths": [
+     1.5,
+     2.55,
+     2.4,
+     1.6,
+     2.4,
+     1.9,
+     1.55,
+     1.6,
+     1.6
+    ],
+    "fixed": true,
+    "_required_cm": [
+     1.289,
+     2.291,
+     2.12,
+     1.382,
+     2.19,
+     1.685,
+     1.352,
+     1.375,
+     1.422
+    ],
+    "_why": "Carlito 7.5pt 逐格量（表头粗体、第一列粗体）+ Word 默认单元格边距 0.38cm；合计 17.10cm ≤ 正文 17.12cm。fixed=true —— python-docx 默认 autofit 会重算列宽。"
+   }
+  },
+  "ca_scorecard": {
+   "_shape": "rows_qoq",
+   "_section": "9.1",
+   "_layout": "table",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本 + PitchBook 导出",
+   "rows": [],
+   "header_template": [
+    "Fund / basis",
+    "Metric",
+    "<rq>",
+    "QoQ Δ",
+    "Cohort median",
+    "Cohort Δ",
+    "Percentile",
+    "Pct Δ",
+    "Read"
+   ],
+   "col_widths_cm": {
+    "widths": [
+     5.43,
+     1.22,
+     1.27,
+     1.13,
+     2.06,
+     1.38,
+     1.52,
+     0.97,
+     2.12
+    ],
+    "fixed": true,
+    "_required_cm": [
+     5.255,
+     1.185,
+     1.232,
+     1.098,
+     2.02,
+     1.345,
+     1.489,
+     0.936,
+     2.09
+    ],
+    "_rule": "数值列 = 需要+0.035cm；剩下的宽度全给必须单行的第一列。量法：Carlito 逐字 hmtx advance，Calibri 7.5pt，加 Word 默认内边距 0.38cm。",
+    "_why": "⛔ 名字只在每组第一行印，所以第一列只需装下最长那一个。"
+   }
+  },
+  "ca_named_comparators": {
+   "_shape": "rows_flat",
+   "_section": "9.2",
+   "_layout": "table",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出 + 基金报告",
+   "cols": [],
+   "rows": [],
+   "col_widths_cm": {
+    "widths": [
+     4.45,
+     1.4,
+     1.55,
+     1.4,
+     1.15,
+     1.15,
+     1.5,
+     2.1,
+     1.75
+    ],
+    "fixed": true,
+    "_required_cm": [
+     4.229,
+     1.224,
+     1.382,
+     1.207,
+     0.964,
+     0.964,
+     1.308,
+     1.929,
+     1.592
+    ],
+    "_rule": "每列 = 该列最宽单元格（含表头；第一列和分组标题行是**粗体**，粗体更宽，别忘了按粗体量）在 Calibri 7.5pt 下的文字宽 + Word 默认单元格左右内边距 0.19×2=0.38cm，再留余量（第一列 0.20cm、其余 0.15cm），向上取整到 0.05cm。量法：用 metric 兼容的 Carlito 逐字取 hmtx advance。pc_hdrcheck 会重算复核。",
+    "_why": "⛔ Alex 2026-08-26：「E48 的第一列的列宽拉长到能让第一列里的每一行都只用一行显示，也不要太长，然后固定这个宽度」。\n第一列最长的是 \"HarbourVest Direct Lending Fund II\"，粗体 7.5pt 文字宽 3.85cm，加内边距硬下限 4.229cm，留 0.20cm 余量取 4.45cm。\n⛔ 真正让它折行的**不是宽度不够**（原来声明的 4.5cm 本来就够），是 python-docx 建出来的表默认 autofit —— Word 按内容重算列宽，把第一列的宽度分给了表头字多的 \"Dry powder %\" / \"PB quartile\"（这两列原来声明的 1.6 / 1.4cm 连自己的表头都放不下，才去抢别人的）。所以 fixed=true 必须一起打开，走 tblLayout=fixed + tblGrid + 逐格设宽。\n下季基金集合变了、出现更长的名字，pc_hdrcheck 会重算并报错，不许静默折行。"
+   },
+   "row_labels_fixed": {
+    "_rule": "⛔ 这一组行名是**本季数据的快照**，不是永久契约。_rq=2026Q3 记的是「这份名单属于哪一季」。同季对不上 = 出稿代码拼错了，硬失败；跨季对不上 = 数据本来就该变，打印差异让用户确认，不失败。⛔ 真正不许变的是 _frozen_part 里那些**写法**。",
+    "expected": [
+     "Junson — PAG BRS III (SRT)",
+     "Junson — Guggenheim PDF IV †",
+     "Junson — HSBC RCF *",
+     "Core-to-upper MM",
+     "KKR Lending Partners IV",
+     "Ares Senior Direct Lending Fund II",
+     "Apollo Origination Partnership I",
+     "Low-to-core MM",
+     "TPG Twin Brook Direct Lending VI",
+     "Golub Capital Partners 15",
+     "HarbourVest Direct Lending Fund II",
+     "Oaktree Direct Lending Fund"
+    ],
+    "_next_quarter": "⛔ 下季基金集合会变(旗舰系列出新一只)。规矩:**自家三只那三行字面量永不变**;竞品行照当季 PitchBook 里的基金全名写,**同样不加 House 前缀**、同样按同事那版的简写习惯(去掉 \"Fund\" 这类可省的词以控列宽)。",
+    "structural": false,
+    "_varies_why": "竞品基金名 —— PitchBook 筛选每季重跑，基金集合会变",
+    "_frozen_part": "两行灰底分组标题（Core-to-upper MM / Low-to-core MM）、自家三只用 \"Junson — \" 开头、竞品不带前缀 —— 这些写法不变",
+    "_rq": "<rq>"
+   },
+   "tier_labels": {
+    "own fund": null,
+    "upper MM": "Core-to-upper MM",
+    "core MM": "Low-to-core MM"
+   },
+   "header": [
+    "Fund",
+    "Vintage",
+    "Size ($m)",
+    "Net IRR",
+    "TVPI",
+    "DPI",
+    "Called %",
+    "Dry powder %",
+    "PB quartile"
+   ]
+  },
+  "ca_momentum_irr": {
+   "_shape": "rows_qoq",
+   "_section": "9.3",
+   "_layout": "pairL",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本 percentile_history",
+   "rows": []
+  },
+  "ca_momentum_tvpi": {
+   "_shape": "rows_qoq",
+   "_section": "9.3",
+   "_layout": "pairR",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本 percentile_history",
+   "rows": []
+  },
+  "ca_traj_irr_pct": {
+   "_shape": "pct_history",
+   "_section": "9.4",
+   "_layout": "pairL",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本 percentile_history",
+   "history": {}
+  },
+  "ca_traj_tvpi_pct": {
+   "_shape": "pct_history",
+   "_section": "9.4",
+   "_layout": "pairR",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "账本 percentile_history",
+   "history": {}
+  },
+  "ca_cohort_iqr": {
+   "_shape": "bars_categorical_dual",
+   "_section": "9.5",
+   "_layout": "solo",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出",
+   "labels": [],
+   "left": [],
+   "right": [],
+   "left_label": null,
+   "right_label": null,
+   "x_start": "2019",
+   "_x_start_why": "⛔ 起始年份是定死的，不是每季自己想的 —— Alex 2026-08-25：「图53需要从19年开始画」。只裁画的左端，账本里的历史点一个不删。pc_audit 组 G 会核账本与模板的 x_start 是否一致。"
+  },
+  "ca_apx_universe": {
+   "_shape": "series_stacked",
+   "_section": "9.6",
+   "_layout": "solo",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出",
+   "periods": [],
+   "stacks": {},
+   "rhs_line": null,
+   "ylim": null,
+   "ytick": null,
+   "x_start": "2013",
+   "_x_start_why": "⛔ 起始年份是定死的，不是每季自己想的 —— Alex 2026-08-25：「图54需要从13年开始画就行」。只裁画的左端，账本里的历史点一个不删。pc_audit 组 G 会核账本与模板的 x_start 是否一致。"
+  },
+  "ca_apx_mgr_consistency": {
+   "_shape": "scatter_bubble",
+   "_section": "9.6",
+   "_layout": "solo",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出",
+   "points": [],
+   "highlight": []
+  },
+  "ca_apx_irr_by_vintage": {
+   "_shape": "median_iqr_by_vintage",
+   "_section": "9.6",
+   "_layout": "pairL",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出",
+   "vintages": [],
+   "median": [],
+   "p25": [],
+   "p75": [],
+   "n": [],
+   "own_funds": [],
+   "x_start": "2013",
+   "_x_start_why": "⛔ 起始年份是定死的，不是每季自己想的 —— Alex 2026-08-26：「图56 57 58的x轴都从13年开始画，统一一下」。只裁画的左端，账本里的历史点一个不删。pc_audit 组 G 会核账本与模板的 x_start 是否一致。"
+  },
+  "ca_apx_tvpi_by_vintage": {
+   "_shape": "median_iqr_by_vintage",
+   "_section": "9.6",
+   "_layout": "pairR",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出",
+   "vintages": [],
+   "median": [],
+   "p25": [],
+   "p75": [],
+   "n": [],
+   "own_funds": [],
+   "x_start": "2013",
+   "_x_start_why": "⛔ 起始年份是定死的，不是每季自己想的 —— Alex 2026-08-26：「图56 57 58的x轴都从13年开始画，统一一下」。只裁画的左端，账本里的历史点一个不删。pc_audit 组 G 会核账本与模板的 x_start 是否一致。",
+   "ylim": [
+    1.0,
+    1.8
+   ],
+   "ytick": 0.1,
+   "legend_loc": "upper right"
+  },
+  "ca_apx_called_by_vintage": {
+   "_shape": "median_iqr_by_vintage",
+   "_section": "9.6",
+   "_layout": "solo",
+   "_as_of_block": "competitor",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PitchBook 导出",
+   "vintages": [],
+   "median": [],
+   "p25": [],
+   "p75": [],
+   "n": [],
+   "own_funds": [],
+   "x_start": "2013",
+   "_x_start_why": "⛔ 起始年份是定死的，不是每季自己想的 —— Alex 2026-08-26：「图56 57 58的x轴都从13年开始画，统一一下」。只裁画的左端，账本里的历史点一个不删。pc_audit 组 G 会核账本与模板的 x_start 是否一致。"
+  },
+  "fund_pag_snapshot": {
+   "_shape": "rows_flat",
+   "_section": "8",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG BRS Fund III 本季投资人报告",
+   "row_labels_fixed": {
+    "expected": [
+     "Strategy",
+     "Total commitments",
+     "Final close",
+     "Investment period ends",
+     "Initial term ends",
+     "Status"
+    ],
+    "_why": "⛔ 同事那版 PAG 的表A 是这六行（2026-08-26 回看确认）。⚠ 三只基金**各一套**行名，不是同一套 —— GUG 五行、HSBC 六行但内容不同。pc_hdrcheck 按各自的 row_labels_fixed 核。",
+    "structural": true,
+    "_structural_why": "Fund snapshot 表A 的六个条目名。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   },
+   "rows": [],
+   "_no_header": true,
+   "col_widths_cm": {
+    "widths": [
+     3.4,
+     4.9
+    ],
+    "fixed": true,
+    "_rule": "外层 1×2 每格 (17.12-0.4)/2 = 8.36cm；表A 两列 3.4 + 4.9 = 8.3cm。左列放六个固定行名（最长 \"Investment period ends\"），右列放值，值长了在格内换行是正常的。"
+   },
+   "fund_name": "PAG BRS Fund III (SRT strategy)"
+  },
+  "fund_pag_snapshot_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "PAG BRS Fund III 本季与上季投资人报告",
+   "periods": [],
+   "header_template": [
+    "Metric",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ"
+   ],
+   "_header_note": "⛔ 表头固定 `Metric | <上季> | <本季> | QoQ Δ`；两个季度标签每季变，由 periods 填。KPI 行名各基金不同（披露口径不同），沿用上季账本里的行名，不要每季换说法。",
+   "rows": [],
+   "col_widths_cm": {
+    "widths": [
+     3.5,
+     1.6,
+     1.6,
+     1.6
+    ],
+    "fixed": true,
+    "_rule": "表B 四列合计 8.3cm，与表A 同宽，两张表并排刚好占满正文宽。"
+   },
+   "row_labels_fixed": {
+    "expected": [
+     "Total invested (US$m)",
+     "Investments (total / exited)",
+     "NAV (US$m)",
+     "Unpaid commitments (US$m)",
+     "Fund facility (US$m)",
+     "Investment-level leverage (US$m)"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「snapshot 的右边的 metrics 为什么 PAG BRS Fund III 的少了 NAV？这也能错吗？HSBC RCF Partnership Fund 的 metrics 少了 Credit facility outstanding (€m)」\n表B 的最左列（KPI 行名与行数）现在逐字锁成同事那版，各基金各一套。⛔ 之前我自己挑了几行，PAG 漏了 NAV / Fund facility / Investment-level leverage、还多塞了 net IRR / net MOIC（那两行同事是放 E37 KPI 表里的）；HSBC 漏了 Credit facility outstanding。",
+    "structural": true,
+    "_structural_why": "表B 的 KPI 名，固定词汇表。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   }
+  },
+  "fund_gug_snapshot": {
+   "_shape": "rows_flat",
+   "_section": "8",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Guggenheim PDF IV 本季投资人报告",
+   "row_labels_fixed": {
+    "expected": [
+     "Strategy",
+     "Inception",
+     "Final close",
+     "Initial target",
+     "Performance basis"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「Guggenheim … Fund snapshot 的左边的表格的最左侧一列还是不对，你对照一下同事的，然后固定。」—— 五行，跟 PAG 那六行不是同一套。",
+    "structural": true,
+    "_structural_why": "Fund snapshot 表A 的五个条目名。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   },
+   "rows": [],
+   "_no_header": true,
+   "col_widths_cm": {
+    "widths": [
+     3.4,
+     4.9
+    ],
+    "fixed": true,
+    "_rule": "外层 1×2 每格 (17.12-0.4)/2 = 8.36cm；表A 两列 3.4 + 4.9 = 8.3cm。左列放六个固定行名（最长 \"Investment period ends\"），右列放值，值长了在格内换行是正常的。"
+   },
+   "fund_name": "Guggenheim Private Debt Fund IV (US direct lending)"
+  },
+  "fund_gug_snapshot_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "Guggenheim PDF IV 本季与上季投资人报告",
+   "periods": [],
+   "header_template": [
+    "Metric",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ"
+   ],
+   "_header_note": "⛔ 表头固定 `Metric | <上季> | <本季> | QoQ Δ`；两个季度标签每季变，由 periods 填。KPI 行名各基金不同（披露口径不同），沿用上季账本里的行名，不要每季换说法。",
+   "rows": [],
+   "col_widths_cm": {
+    "widths": [
+     3.5,
+     1.6,
+     1.6,
+     1.6
+    ],
+    "fixed": true,
+    "_rule": "表B 四列合计 8.3cm，与表A 同宽，两张表并排刚好占满正文宽。"
+   },
+   "row_labels_fixed": {
+    "expected": [
+     "Investments",
+     "Invested capital (US$m)",
+     "First-lien net leverage",
+     "LTV",
+     "WA spread (2025 avg / new deals)"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「snapshot 的右边的 metrics 为什么 PAG BRS Fund III 的少了 NAV？这也能错吗？HSBC RCF Partnership Fund 的 metrics 少了 Credit facility outstanding (€m)」\n表B 的最左列（KPI 行名与行数）现在逐字锁成同事那版，各基金各一套。⛔ 之前我自己挑了几行，PAG 漏了 NAV / Fund facility / Investment-level leverage、还多塞了 net IRR / net MOIC（那两行同事是放 E37 KPI 表里的）；HSBC 漏了 Credit facility outstanding。",
+    "structural": true,
+    "_structural_why": "表B 的 KPI 名，固定词汇表。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   }
+  },
+  "fund_hsbc_snapshot": {
+   "_shape": "rows_flat",
+   "_section": "8",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "HSBC RCF Partnership Fund 本季投资人报告",
+   "row_labels_fixed": {
+    "expected": [
+     "Strategy",
+     "Initial close",
+     "Final close",
+     "Term",
+     "Base currency",
+     "Watchlist"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「HSBC RCF … Fund snapshot 的左边的表格的最左侧一列还是不对，你对照一下同事的，然后固定。」",
+    "structural": true,
+    "_structural_why": "Fund snapshot 表A 的六个条目名。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   },
+   "rows": [],
+   "_no_header": true,
+   "col_widths_cm": {
+    "widths": [
+     3.4,
+     4.9
+    ],
+    "fixed": true,
+    "_rule": "外层 1×2 每格 (17.12-0.4)/2 = 8.36cm；表A 两列 3.4 + 4.9 = 8.3cm。左列放六个固定行名（最长 \"Investment period ends\"），右列放值，值长了在格内换行是正常的。"
+   },
+   "fund_name": "HSBC RCF Partnership Fund (RCF strategy)"
+  },
+  "fund_hsbc_snapshot_qoq": {
+   "_shape": "rows_qoq",
+   "_section": "8",
+   "_layout": "table",
+   "_as_of_block": "fund",
+   "src": "",
+   "window_max": null,
+   "note": "",
+   "source_line": "HSBC RCF Partnership Fund 本季与上季投资人报告",
+   "periods": [],
+   "header_template": [
+    "Metric",
+    "<pq>",
+    "<cq>",
+    "QoQ Δ"
+   ],
+   "_header_note": "⛔ 表头固定 `Metric | <上季> | <本季> | QoQ Δ`；两个季度标签每季变，由 periods 填。KPI 行名各基金不同（披露口径不同），沿用上季账本里的行名，不要每季换说法。",
+   "rows": [],
+   "col_widths_cm": {
+    "widths": [
+     3.5,
+     1.6,
+     1.6,
+     1.6
+    ],
+    "fixed": true,
+    "_rule": "表B 四列合计 8.3cm，与表A 同宽，两张表并排刚好占满正文宽。"
+   },
+   "row_labels_fixed": {
+    "expected": [
+     "Fund size (€m)",
+     "Investments (current)",
+     "Capital called (€m)",
+     "NAV (€m)",
+     "Average drawn (settled book)",
+     "Credit facility outstanding (€m)"
+    ],
+    "_why": "⛔ Alex 2026-08-26：「snapshot 的右边的 metrics 为什么 PAG BRS Fund III 的少了 NAV？这也能错吗？HSBC RCF Partnership Fund 的 metrics 少了 Credit facility outstanding (€m)」\n表B 的最左列（KPI 行名与行数）现在逐字锁成同事那版，各基金各一套。⛔ 之前我自己挑了几行，PAG 漏了 NAV / Fund facility / Investment-level leverage、还多塞了 net IRR / net MOIC（那两行同事是放 E37 KPI 表里的）；HSBC 漏了 Credit facility outstanding。",
+    "structural": true,
+    "_structural_why": "表B 的 KPI 名，固定词汇表。⛔ 硬冻：对不上就是 ✗，不许每季自己想。"
+   }
+  }
+ },
+ "_frozen_colleague_formats": {
+  "_what": "⛔ 「跟同事的报告一样」的东西,全部抄成字面量记在这里指向的字段上。Alex 2026-08-26:「我所有说按同事的报告格式的,都是要你记住格式,而不是每次运行的时候去看同事的报告」—— 后续季度那份 docx 可能不在手边。运行时只读账本;assets/colleague-template-*.docx 只在人工溯源时回看。",
+  "_howto": "每条:slug → 承载格式的字段 + Alex 的原话。pc_hdrcheck 会逐条查字段非空;表头另外逐字比对 HDR 模板。要改先改账本,不许改代码里的字面量。",
+  "items": [
+   {
+    "slug": "cf_provider_compare_table",
+    "fields": [
+     "header_template",
+     "header"
+    ],
+    "said": "E16 这个表:每一个列名都是固定的,除了倒数第二和倒数第三列的季度,要根据报告来"
+   },
+   {
+    "slug": "cf_fitch_default_by_sector",
+    "fields": [
+     "emphasis"
+    ],
+    "said": "E19 的图也需要改,Total 是深蓝色,software 是亮蓝色,其他是比深蓝色稍浅的色"
+   },
+   {
+    "slug": "cf_recovery_by_sector",
+    "fields": [
+     "chart_form"
+    ],
+    "said": "Exhibit 21 的图要竖着,像同事报告里的 E21 一样"
+   },
+   {
+    "slug": "fund_pag_comp_type",
+    "fields": [
+     "chart_form"
+    ],
+    "said": "E32 和 E33 都必须是饼图"
+   },
+   {
+    "slug": "fund_pag_comp_geo",
+    "fields": [
+     "chart_form"
+    ],
+    "said": "E32 和 E33 都必须是饼图"
+   },
+   {
+    "slug": "fund_pag_comp_bank",
+    "fields": [
+     "chart_form"
+    ],
+    "said": "E35 的柱状图必须竖着"
+   },
+   {
+    "slug": "fund_pag_comp_qoq",
+    "fields": [
+     "header"
+    ],
+    "said": "Exhibit 36 和 37 和 38 的表格的左侧和顶部的表头也必须是一样的(跟同事的报告)"
+   },
+   {
+    "slug": "fund_pag_kpi_qoq",
+    "fields": [
+     "header"
+    ],
+    "said": "同上 —— ⚠ E37 是本季在前、上季在后(Metric | <cq> | <pq>),同事那版就是这样"
+   },
+   {
+    "slug": "fund_pag_top10",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "col_widths_cm"
+    ],
+    "said": "Exhibit 38 还不改 —— 九列（末两列 UW IRR / Expected IRR）+ 最左那十个项目名，都写死"
+   },
+   {
+    "slug": "fund_gug_comp_qoq",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "col_widths_cm"
+    ],
+    "said": "Exhibit 41 也是 表格的表头和最左侧一列 要跟同事的一模一样，直接写死 —— 八列双栏：左栏 GICS（含 Software 合并行 + 两条缩进分项）、右栏 sponsored 拆分"
+   },
+   {
+    "slug": "fund_gug_closed_deals",
+    "fields": [
+     "header"
+    ],
+    "said": "同上(E42)"
+   },
+   {
+    "slug": "fund_hsbc_sector",
+    "fields": [
+     "chart_form"
+    ],
+    "said": "E43 必须是饼图"
+   },
+   {
+    "slug": "fund_hsbc_margin",
+    "fields": [
+     "chart_form"
+    ],
+    "said": "E44 的条形图必须竖着"
+   },
+   {
+    "slug": "fund_hsbc_comp_qoq",
+    "fields": [
+     "header"
+    ],
+    "said": "E46 和 E47 的表头也必须跟同事 report 的格式一样;另 E45 的 QoQ 必须包含投了哪个项目"
+   },
+   {
+    "slug": "fund_hsbc_portfolio",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "col_widths_cm"
+    ],
+    "said": "E46 还没改？同事的 E46 里有 base 这一列？表头顺序都给我定死，以及最左边的这一列 —— ⛔ 没有 Base 列，base rate 并进 Margin 一格"
+   },
+   {
+    "slug": "ca_scorecard",
+    "fields": [
+     "header_template",
+     "col_widths_cm"
+    ],
+    "said": "E47 这个 2026Q3 表头你下一季度应该要修改 —— 是变动的；E47 第一列也设置一下 让第一列每一行的字就只占一行，跟 E48 要求一样"
+   },
+   {
+    "slug": "ca_named_comparators",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "tier_labels",
+     "col_widths_cm"
+    ],
+    "said": "E48 这个表头也是固定的,表的左侧的表头必须也是一样,要加上 Core-to-upper MM 和 Low-to-core MM,背景是灰色的;最左侧那一列的所有东西都要一样;第一列的列宽拉长到能让每一行都只用一行显示,也不要太长,然后固定这个宽度"
+   },
+   {
+    "slug": "ca_apx_tvpi_by_vintage",
+    "fields": [
+     "ylim",
+     "ytick"
+    ],
+    "said": "图 57 的 y 轴也按同事报告来,必须一样,你改成那个数,然后把数写死"
+   },
+   {
+    "slug": "fund_pag_snapshot",
+    "fields": [
+     "row_labels_fixed",
+     "col_widths_cm",
+     "fund_name"
+    ],
+    "said": "PAG 的表A 六行（2026-08-26 回看确认）"
+   },
+   {
+    "slug": "fund_gug_snapshot",
+    "fields": [
+     "row_labels_fixed",
+     "col_widths_cm",
+     "fund_name"
+    ],
+    "said": "Guggenheim … Fund snapshot 的左边的表格的最左侧一列还是不对，你对照一下同事的，然后固定 —— 五行"
+   },
+   {
+    "slug": "fund_hsbc_snapshot",
+    "fields": [
+     "row_labels_fixed",
+     "col_widths_cm",
+     "fund_name"
+    ],
+    "said": "HSBC RCF … Fund snapshot 的左边的表格的最左侧一列还是不对，你对照一下同事的，然后固定 —— 六行"
+   },
+   {
+    "slug": "fund_pag_snapshot_qoq",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "col_widths_cm"
+    ],
+    "said": "PAG 的表A 六行（2026-08-26 回看确认）"
+   },
+   {
+    "slug": "fund_gug_snapshot_qoq",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "col_widths_cm"
+    ],
+    "said": "Guggenheim … Fund snapshot 的左边的表格的最左侧一列还是不对，你对照一下同事的，然后固定 —— 五行"
+   },
+   {
+    "slug": "fund_hsbc_snapshot_qoq",
+    "fields": [
+     "header",
+     "row_labels_fixed",
+     "col_widths_cm"
+    ],
+    "said": "HSBC RCF … Fund snapshot 的左边的表格的最左侧一列还是不对，你对照一下同事的，然后固定 —— 六行"
+   }
+  ]
+ },
+ "_src_files_rule": "⛔ `src_files` = 本季**实际打开过**的文件（相对本季文件夹的路径），由取数阶段维护。src_audit 拿它逐个比对文件夹，缺一个就单独报出来 —— 不再从 src 散文里用正则抠文件名（真实文件名带空格/逗号/括号，正则要么截断要么把前面的中文吞进来，2026-08-26 两种都踩了）。`_src_files_rq` 记这份清单属于哪一季：跨季缺文件 = 该 exhibit 本季没更新，走缺料对话框；同季缺文件 = 真错。"
+}

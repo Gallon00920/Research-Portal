@@ -1,0 +1,224 @@
+{
+ "_readme": "数据冻结层。每季只往 series 右端追加当季那一期；历史点只读。窗口切片由 window_max 控制：8 = 两年上限（只加不删，满 8 期才裁左端）；null = 不设上限，左端永不裁（图 15-19 必须是 null）。ylim / ytick 也是冻结的，只扩不缩。footnote 用占位符，滚动时自动更新。 T1 也在这里（tbl01_capital_structure）。B 类标题（图 15/16/17/18/20）另存 title_fixed + title_claim，claim 每季按数据重算并跑 titlecheck.verify()。",
+ "meta": {
+  "cq": "Q2'26",
+  "pq": "Q1'26",
+  "as_of": "2026-08-14",
+  "updated": ""
+ },
+ "charts": {
+  "fig01_industry_pie": {
+   "window_max": 2,
+   "_note": "PQ / CQ 双饼"
+  },
+  "fig02_cash_yield": {
+   "window_max": 8,
+   "ylim": [
+    0,
+    12
+   ],
+   "ytick": 2
+  },
+  "fig03_nav_bridge": {
+   "window_max": 1,
+   "_note": "PQ -> CQ 单季瀑布"
+  },
+  "fig04_nii_coverage": {
+   "window_max": 8,
+   "ylim": [
+    0,
+    0.6
+   ],
+   "ytick": 0.1
+  },
+  "fig05_pik_share": {
+   "window_max": 8,
+   "ylim": [
+    4,
+    18
+   ],
+   "ytick": 2,
+   "sector_thru": "1Q26",
+   "footnote": "* PIK interest + PIK dividends ÷ total investment income, single-quarter basis; year-end point = full year − nine months; each point from that period's filing. {cq} = \\${num}mm ÷ \\${den}mm = {val}%. Gray series: BDC sector average PIK share of total investment income — quarterly through {thru}; no {cq} sector print yet.",
+   "series": {
+    "OTF": {},
+    "BDC_SECTOR_AVG": {}
+   }
+  },
+  "fig06_nonaccrual": {
+   "window_max": 8,
+   "ylim": [
+    0,
+    3.5
+   ],
+   "ytick": 0.5,
+   "sector_thru": "1Q26",
+   "series": {
+    "OTF_COST": {},
+    "OTF_FV": {},
+    "BDC_SECTOR_AVG": {}
+   }
+  },
+  "fig07_risk_rating": {
+   "window_max": 8,
+   "ylim": [
+    0,
+    100
+   ],
+   "ytick": 20
+  },
+  "fig08_price_software": {
+   "window_max": 24,
+   "_note": "单位=月；>24 个月改画最近 24 个月"
+  },
+  "fig09_price_bdc": {
+   "window_max": 24,
+   "_note": "单位=月"
+  },
+  "fig10_bdc_nav": {
+   "window_max": 8,
+   "ylim": [
+    14,
+    28
+   ],
+   "ytick": 2
+  },
+  "fig11_bdc_div_yield": {
+   "window_max": 8,
+   "ylim": [
+    8,
+    13
+   ],
+   "ytick": 1
+  },
+  "fig12_bdc_pik": {
+   "window_max": 8,
+   "ylim": [
+    4,
+    18
+   ],
+   "ytick": 2
+  },
+  "fig13_bdc_nonaccrual": {
+   "window_max": 8,
+   "ylim": [
+    0,
+    3.5
+   ],
+   "ytick": 0.5
+  },
+  "fig14_bdc_avg_ebitda": {
+   "window_max": 8,
+   "ylim": [
+    60,
+    320
+   ],
+   "ytick": 40
+  },
+  "fig15_borrower_leverage": {
+   "window_max": null,
+   "ylim": [
+    4.0,
+    7.5
+   ],
+   "ytick": 0.5,
+   "_note": "禁止两年上限。跨度跟 MS Tracker Total Leverage (x) 源图，约 21 期 / 5 年，左端永不裁",
+   "_title_class": "B —— 判断句每季重算，必过 titlecheck.verify()"
+  },
+  "fig16_interest_coverage": {
+   "window_max": null,
+   "ylim": [
+    1.0,
+    4.0
+   ],
+   "ytick": 0.5,
+   "_note": "禁止两年上限。跟 MS Tracker EBITDA Coverage (x)；Lincoln 序列 1Q22 起，之前留空",
+   "_title_class": "B —— 判断句每季重算，必过 titlecheck.verify()"
+  },
+  "fig17_bdc_nonaccrual_avg": {
+   "window_max": null,
+   "ylim": [
+    0,
+    5
+   ],
+   "ytick": 1,
+   "_note": "禁止两年上限。九年跨度是这张图的论点（COVID ~4.5% 峰值 vs 2017-18 的 2.0-2.9% 常态区间）",
+   "_title_class": "B —— 判断句每季重算，必过 titlecheck.verify()"
+  },
+  "fig18_pik_over_tii": {
+   "window_max": null,
+   "ylim": [
+    0,
+    10
+   ],
+   "ytick": 2,
+   "_note": "禁止两年上限。跟 MS Tracker %PIK Income over TII，13 期",
+   "_title_class": "B —— 判断句每季重算，必过 titlecheck.verify()"
+  },
+  "fig19_pik_over_nii": {
+   "window_max": null,
+   "ylim": [
+    10,
+    18
+   ],
+   "ytick": 1,
+   "_note": "禁止两年上限。跟 JPM PIKing into PIK Figure 2，13 期"
+  },
+  "fig20_nonaccrual_sector": {
+   "window_max": null,
+   "_note": "无时间轴，整图重画",
+   "_title_class": "B —— 判断句每季重算，必过 titlecheck.verify()"
+  },
+  "fig21_software_stack": {
+   "window_max": null,
+   "_note": "无时间轴，只更文字层"
+  },
+  "tbl01_capital_structure": {
+   "window_max": 2,
+   "total_row": "Total",
+   "_note": "T1 出成 PNG（tablelib.py）。rows 每行 = {label, pq, cq, qoq, src}；src 必须指到 10-Q 页码 + 算式。绝不许从上一版报告的表格抄数当占位。"
+  },
+  "tbl03_software_layer": {
+   "window_max": 1,
+   "src": "本季 10-Q Schedule of Investments 逐家公允值汇总；公司→分层取 _state/layer_map.json（本季新增 <N> 家已判层）；混合敞口 = Σ 占比×权重。⛔ 禁止取草稿 xlsx 的 Crosscheck sheet，那是去年数据",
+   "portfolio_fv_total": null,
+   "n_companies": null,
+   "layers": [
+    {
+     "layer": "Application",
+     "fv": null,
+     "pct": null,
+     "impact_weight": 0.3,
+     "n": null,
+     "reps": []
+    },
+    {
+     "layer": "Platform",
+     "fv": null,
+     "pct": null,
+     "impact_weight": 0.2,
+     "n": null,
+     "reps": []
+    },
+    {
+     "layer": "Infrastructure",
+     "fv": null,
+     "pct": null,
+     "impact_weight": 0.05,
+     "n": null,
+     "reps": []
+    },
+    {
+     "layer": "Non-software",
+     "fv": null,
+     "pct": null,
+     "impact_weight": 0.0,
+     "n": null,
+     "reps": []
+    }
+   ],
+   "blended_ai_impact": null,
+   "note": "Layer assignment is by borrower primary business, not GICS. Percentages are computed from the current quarter's Schedule of Investments at fair value. Blended AI-impact score = sum of layer share x impact weight. Source: OTF {cq} 10-Q, Schedule of Investments"
+  }
+ }
+}

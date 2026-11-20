@@ -10,5 +10,9 @@
   "macro_weekly": {
     "skill_id": "skill_01T571epSFw6VwPneeVVpSwP",
     "name": "weekly-market-update"
+  },
+  "private_equity": {
+    "skill_id": "skill_01Q82sAJ18qAqjNtySA65pBU",
+    "name": "pe-quarterly-report"
   }
 }

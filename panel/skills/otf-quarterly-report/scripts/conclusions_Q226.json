@@ -1,0 +1,134 @@
+{
+ "cq": "Q2'26",
+ "brokers": [
+  {
+   "name": "BofA",
+   "coverage": "OTF",
+   "covers_otf": true,
+   "rating": "Neutral — maintained",
+   "target_price": "$11.50",
+   "valuation_basis": "~0.7x NAV",
+   "action_date": "2026-08-06",
+   "view_label": "Stable quarter, credit pristine, profitability to lag",
+   "stance_driver": "较上季由 yield-pressure caution 转向 stabilization：NAV 由 −4.9% 转为持平 16.48，组合收益率 +10bp 至 9.3%",
+   "key_points": [
+    "NAV 持平 $16.48，非应计 0.6% 成本口径、两个 issuer，为业内最低之一",
+    "核心 EPS $0.30 环比 +3%，低于一致预期 $0.31 但高于其自身 $0.28",
+    "PIK 降至投资收入的 12.5%，其中约 98% 为原始承做而非修约新增",
+    "2026/2027 核心 EPS 预测维持 $1.21 / $1.26，本季未修订"
+   ]
+  },
+  {
+   "name": "Citizens JMP",
+   "coverage": "OTF",
+   "covers_otf": true,
+   "rating": "Market Outperform — maintained",
+   "target_price": "$17.00",
+   "valuation_basis": "NA；隐含约 1.03x NAV",
+   "action_date": "2026-08-07",
+   "view_label": "Long-standing bull, normalized ROE is the driver",
+   "stance_driver": "目标价由 $16.00 上调至 $17.00，是 Q2 后唯一上调的一家",
+   "key_points": [
+    "以正常化 ROE 作为估值驱动而非当期 P/NAV，目标价 $17.00 对应约 1.03x 账面",
+    "股权挂钩的科技敞口提供上行期权，隐含较 8/14 收盘 $11.46 有约 48% 空间",
+    "四家覆盖中唯一给出高于 NAV $16.48 的目标价",
+    "维持 Market Outperform，目标价由 $16.00 上调至 $17.00，为 Q2 后唯一上调"
+   ]
+  },
+  {
+   "name": "Wells Fargo",
+   "coverage": "OTF",
+   "covers_otf": true,
+   "rating": "Overweight — reiterated",
+   "target_price": "$12.00",
+   "valuation_basis": "NA；隐含约 0.73x NAV",
+   "action_date": "2026-08-07",
+   "view_label": "Discount is sentiment, not credit",
+   "stance_driver": "目标价 5 月由 $13.00 下调至 $12.00 后本季维持，评级自 2025-10 起为 Overweight",
+   "key_points": [
+    "2025 年 10 月因估值折价上调至 Overweight，本季重申",
+    "认为 0.70x 的折价来自情绪而非信用，非应计公允值仅 0.1%",
+    "目标价隐含 0.73x NAV，仍低于账面",
+    "Q2 后未修订盈利预测，目标价沿用 5 月数值"
+   ]
+  },
+  {
+   "name": "Truist",
+   "coverage": "OTF",
+   "covers_otf": true,
+   "rating": "Buy — reaffirmed",
+   "target_price": "$15.00",
+   "valuation_basis": "NA；隐含约 0.91x NAV",
+   "action_date": "2026-08-06",
+   "view_label": "Buy reaffirmed on wide discount",
+   "stance_driver": "目标价 5 月由 $16.00 下调至 $15.00，反映更快的杠杆抬升与更高的债务成本假设，本季维持",
+   "key_points": [
+    "5 月下调目标价的两个理由：杠杆抬升更快、债务成本假设上调",
+    "Q2 后重申 Buy，目标价沿用 5 月的 $15.00",
+    "目标价隐含 0.91x NAV，为四家中第二高",
+    "净杠杆 0.93x 首次进入 0.90–1.25x 目标区间是其关注点"
+   ]
+  }
+ ],
+ "companies": [
+  {
+   "ticker": "MSFT",
+   "view_label": "AI monetization accelerating",
+   "key_metric": "AI ARR 超过 $37bn，同比 +123%",
+   "key_points": [
+    "GitHub Copilot 于 6 月 1 日转为用量计价，验证 seat-to-consumption 迁移",
+    "AI ARR 同比 +123% 至 $37bn 以上，与券商的谨慎判断背离"
+   ]
+  }
+ ],
+ "theses": {
+  "peer_thesis": "本季确认板块的 NAV 回撤是估值重估、尚未构成信用周期实质破裂，但其下的信用分化显著扩大",
+  "consensus": [
+   "承压但可控、非系统性，非应计上升尚未转为普遍偿付问题",
+   "分化是主线：NAV 回撤是板块 beta，折价分化才是个体定价",
+   "赎回是流动性事件而非偿付问题，5% 上限各家均守住",
+   "2028 年软件到期墙是板块的定义性赌注，能否被 amend-and-extend 吸收未有共识"
+  ],
+  "debates": [
+   {
+    "topic": "软件敞口是系统性利空还是分化可控",
+    "side_a": "UBS：软件重仓基金违约率可能达 15%",
+    "side_b": "JPM 信用团队：维持 BDC 债券超配，指数利差回落至约 217bp",
+    "core": "分歧在于 2021 年份软件 LBO 债务的损失是集中在尾部少数名字，还是会扩散至中位数"
+   }
+  ],
+  "layer_ranking": [
+   "Application（最受压）",
+   "Orchestration & Intelligence（价值累积）",
+   "Data & Platform（受益）",
+   "Infrastructure（受益且最具防御性）"
+  ]
+ },
+ "open_items": [
+  {
+   "section": "2.7",
+   "topic": "费率机制进入非线性区间",
+   "transmission": "管理费在资产覆盖率低于 200% 时由 1.50% 降至 1.00%，本季末为 203%，故此后增量杠杆基本按 1.00% 边际费率计",
+   "watch_next": "盯季度 NII 是否下滑约 18% —— 一旦跌入 catch-up 区间，每一元边际收入全部归管理人"
+  },
+  {
+   "section": "2.7",
+   "topic": "分红自 Q4'26 重置",
+   "transmission": "五档 $0.05 特别股息以 10 月 6 日那笔结束，运行率分红回落至 $0.35 基础档",
+   "watch_next": "盯 Q3 业绩是否同时宣布补充分红 —— 每股 $0.32 的溢出收入给了董事会桥接空间"
+  }
+ ],
+ "section_notes": {
+  "2.1": "组合结构本季基本静止，最大变动是普通股及 JV 升至 8.9%、优先股降至 6.5%",
+  "2.2": "资产收益率在四个季度压缩后企稳，9.6% 的升幅来自结构而非重定价，3M SOFR 持平 3.7%",
+  "2.3": "违约代理三项方向不一：PIK 连续两季下行，非应计成本口径升至 0.6% 但公允值仍 0.1%",
+  "2.4": "负向修订周期暂停，四家中三家维持 5 月目标价，仅 Citizens JMP 上调",
+  "2.5": "OTF 仍是 BDC 组内表现最差、落后约 8pp，而同期 NAV 仅跌约 4%",
+  "2.6": "六家 NAV 同步回撤属板块 beta，折价从 0.70x 到 1.16x 的分化才是个体定价所在",
+  "3.1": "券商共识为承压可控，分歧集中在软件敞口是尾部事件还是中位数问题",
+  "3.3": "杠杆三年去化而覆盖倍数仅部分修复，且修复由降息驱动而非盈利驱动",
+  "3.4": "软件已是两个杠杆信贷市场中最大的单一行业，直接口径为直接贷款基准的 23%",
+  "4.1": "券商谨慎与公司自身货币化加速并存，本季分歧未收敛",
+  "4.3": "分层脆弱性排序不变，但数据/平台层向上延伸至智能 OS 与本体层，边界在模糊化"
+ }
+}

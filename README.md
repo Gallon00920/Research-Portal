@@ -177,9 +177,27 @@ the pipeline.
   dialog, offered for sectors that have a Skill uploaded to the Claude API.
   `panel/data/ai_skills.json` maps a sector to its skill id (today
   `private_credit` → private-credit-quarterly-report, `software_otf` →
-  otf-quarterly-report and `macro_weekly` → weekly-market-update; add a line
-  to cover another sector, and upload a Skill folder with
-  `panel/backend/upload_skill.py`). The Macro / Market **Weekly Updates**
+  otf-quarterly-report, `private_equity` → pe-quarterly-report and
+  `macro_weekly` → weekly-market-update). The skills' sources are kept in
+  `panel/skills/` (the four quarterly skills: OTF, private credit, PE,
+  aircraft; plus the weekly update). Each skips a source that is missing
+  and drops the exhibits and sections that depend on it from the report
+  (renumbering the rest), and can run from attached files without the
+  OneDrive research folder. `panel/backend/upload_skill.py <folder> --sector
+  <id> [--update]` uploads one (with `--update` a registered sector's skill
+  gets a new version under the same id; `--all` updates every quarterly
+  skill for its sector), and the registered sector appears in "Generate
+  with AI". The source files may come in compressed
+  bundles (.zip, .7z, .rar, .tar / .tar.gz / .tgz / .tar.bz2 / .tar.xz, a
+  single .gz / .bz2 / .xz), including bundles inside bundles: the server
+  unpacks them (`panel/backend/archives.py`), keeps the source files and
+  lists in the job log what it unpacked and left out. Nothing is written
+  outside the job folder, the unpacked total is capped at 1 GB / 2,000 files,
+  and a password-protected archive is reported. .7z and .rar are read with the
+  7-Zip program (Program Files on Windows; `sudo apt install 7zip` on Ubuntu),
+  or with `py7zr` / `rarfile` where those packages are installed (`py7zr` is
+  in `panel/requirements.txt` for Python below 3.15, which it has no ready-built
+  wheels for yet). The Macro / Market **Weekly Updates**
   tag uses this same dialog ("Upload file" opens it with its two modes): it
   asks for the date of the update instead of a quarter, and in "Generate
   with AI" Claude runs the weekly-market-update Skill on the week's broker

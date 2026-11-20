@@ -34,6 +34,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Callable
 
+import archives  # .zip / .7z / .rar / .tar.gz source bundles, nested too
+
 ROOT = Path(__file__).resolve().parent.parent
 SKILLS_FILE = ROOT / "data" / "ai_skills.json"
 DEFAULT_MODEL = "claude-opus-5-5"
@@ -173,9 +175,17 @@ def start_generation(job_id: str, params: dict[str, Any], files: list[Path], ing
     files = [p for p in files if p.is_file()]
     if not files:
         raise AIError("drop at least one source file")
-    bad = [p.name for p in files if p.suffix.lower() not in SOURCE_EXTS]
+    bad = [p.name for p in files if p.suffix.lower() not in SOURCE_EXTS and not archives.is_archive(p.name)]
     if bad:
-        raise AIError("not a source file type (" + ", ".join(sorted(SOURCE_EXTS)) + "): " + ", ".join(bad))
+        raise AIError("not a source file type (" + ", ".join(sorted(SOURCE_EXTS)) + ", or a .zip / .7z / .rar / .tar.gz of them): " + ", ".join(bad))
+    # compressed bundles (and bundles inside them) are unpacked; their source files join the rest
+    dropped = [p.name for p in files]
+    try:
+        files, unpacked = archives.expand(files, JOBS_DIR / job_id / "in" / "unpacked", SOURCE_EXTS)
+    except archives.ArchiveError as exc:
+        raise AIError(str(exc)) from exc
+    if not files:
+        raise AIError("the archives hold no source files (" + ", ".join(sorted(SOURCE_EXTS)) + "); " + "; ".join(unpacked))
     if not enabled():
         raise MissingKeyError("ANTHROPIC_API_KEY is not set, so reports cannot be generated. Set it before starting the server.")
 
@@ -184,11 +194,13 @@ def start_generation(job_id: str, params: dict[str, Any], files: list[Path], ing
     job = {
         "id": job_id, "state": "queued", "step": "", "log": [], "reports": [], "outputs": [], "error": None,
         "sector": sector, "sector_name": sector_name, "year": year, "quarter": quarter, "language": language, "date": date, "week": week,
-        "files": [p.name for p in files], "output_dir": str(out_dir),
+        "files": [p.name for p in files], "dropped": dropped, "output_dir": str(out_dir),
         "title": str(params.get("title") or "").strip(), "started_at": now_iso(), "finished_at": None, "model": model_name(),
     }
     with _JOBS_LOCK:
         JOBS[job_id] = job
+    for note in unpacked:
+        _log(job, note)
     t = threading.Thread(target=_run_generation, args=(job, files, skills[sector], ingest), daemon=True)
     t.start()
     return job

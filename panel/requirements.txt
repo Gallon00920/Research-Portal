@@ -8,5 +8,9 @@ pillow
 cryptography
 # AI generation and the editing chat (panel/backend/ai_assist.py)
 anthropic
+# .7z source bundles in AI generation (panel/backend/archives.py); .zip / .tar.gz need nothing extra.
+# Its C parts have no ready-built wheels for Python 3.15 yet: there the 7-Zip program is used instead
+# (the 7-Zip folder under Program Files on Windows, sudo apt install 7zip on Ubuntu), which also reads .rar.
+py7zr; python_version < "3.15"
 # validates TLS with the OS trust store (needed behind TLS-inspecting corporate proxies)
 truststore
