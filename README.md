@@ -177,8 +177,8 @@ the pipeline.
   dialog, offered for sectors that have a Skill uploaded to the Claude API.
   `panel/data/ai_skills.json` maps a sector to its skill id (today
   `private_credit` → private-credit-quarterly-report, `software_otf` →
-  otf-quarterly-report, `private_equity` → pe-quarterly-report and
-  `macro_weekly` → weekly-market-update). The skills' sources are kept in
+  otf-quarterly-report, `private_equity` → pe-quarterly-report, `aviation` →
+  aircraft-quarterly-report and `macro_weekly` → weekly-market-update). The skills' sources are kept in
   `panel/skills/` (the four quarterly skills: OTF, private credit, PE,
   aircraft; plus the weekly update). Each skips a source that is missing
   and drops the exhibits and sections that depend on it from the report
