@@ -54,24 +54,6 @@
     "status": "active"
   },
   {
-    "id": "infrastructure",
-    "code": "INF",
-    "name_en": "Infrastructure",
-    "name_cn": "基础设施",
-    "region": "Global",
-    "coverage_en": [
-      "Infrastructure debt",
-      "Energy transition",
-      "Digital infra"
-    ],
-    "coverage_cn": [
-      "基础设施债务",
-      "能源转型",
-      "数字基础设施"
-    ],
-    "status": "active"
-  },
-  {
     "id": "aviation",
     "code": "AVI",
     "name_en": "Aircraft",
@@ -99,6 +81,24 @@
     "coverage_cn": [],
     "status": "active",
     "space": "research"
+  },
+  {
+    "id": "infrastructure",
+    "code": "INF",
+    "name_en": "Infrastructure",
+    "name_cn": "基础设施",
+    "region": "Global",
+    "coverage_en": [
+      "Infrastructure debt",
+      "Energy transition",
+      "Digital infra"
+    ],
+    "coverage_cn": [
+      "基础设施债务",
+      "能源转型",
+      "数字基础设施"
+    ],
+    "status": "active"
   },
   {
     "id": "otf",

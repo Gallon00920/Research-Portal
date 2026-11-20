@@ -1,0 +1,33 @@
+{
+  "id": "private_equity-2026Q4-summary-3504d732",
+  "title": "美国私募股权研究报告摘要 — 2026Q4",
+  "sector": "private_equity",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "summary",
+  "language": "cn",
+  "section": "",
+  "keywords": [
+    "金额",
+    "股权",
+    "退出",
+    "市场",
+    "美国私募",
+    "国私募股"
+  ],
+  "source_name": "Junson_PE_2026Q4_Summary_CN.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-20T06:37:32+00:00",
+  "stats": {
+    "blocks": 17,
+    "images": 4,
+    "tables": 4,
+    "chars": 896
+  },
+  "exhibit_count": 8,
+  "masthead": "JUNSON Capital｜另类投资部(AID)",
+  "toc": [],
+  "summary": "左：美国私募股权募资与基金数量（2026*为年初至今）。右：按基金规模划分的待投资金与投放空间（年，右轴）。（资料来源：PitchBook；募资截至2026年9月30日，待投资金截至2026年3月31日）"
+}

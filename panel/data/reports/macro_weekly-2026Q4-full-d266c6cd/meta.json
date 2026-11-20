@@ -1,0 +1,80 @@
+{
+  "id": "macro_weekly-2026Q4-full-d266c6cd",
+  "title": "202611 Week3",
+  "sector": "macro_weekly",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "cn",
+  "section": "",
+  "keywords": [],
+  "source_name": "Weekly_Market_Update_202611_Week3.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-20T06:34:20+00:00",
+  "date": "2026-11-20",
+  "stats": {
+    "blocks": 41,
+    "images": 4,
+    "tables": 0,
+    "chars": 9035
+  },
+  "exhibit_count": 4,
+  "toc": [
+    {
+      "level": 1,
+      "text": "1. Things We Should Know"
+    },
+    {
+      "level": 1,
+      "text": "2. Macro：通胀三连超预期，加息从「一次保险」变成「一段周期」"
+    },
+    {
+      "level": 2,
+      "text": "2.1 10 月 CPI 的问题不是读数高，是宽度在扩散"
+    },
+    {
+      "level": 2,
+      "text": "2.2 12 月已经 fully priced，分歧全在「之后还有几次、何时停」"
+    },
+    {
+      "level": 2,
+      "text": "2.3 2027 的增长底色没动：AI capex 仍是主引擎，GS 与 Barclays 差 0.4pp"
+    },
+    {
+      "level": 1,
+      "text": "3. Credit：real rates 急涨、credit 不为所动——分化才是本周的真信号"
+    },
+    {
+      "level": 2,
+      "text": "3.1 实际利率驱动的 rates move，信用看穿了"
+    },
+    {
+      "level": 2,
+      "text": "3.2 分化：CCC 单日走阔 15bp，CCC-B basis 已到 3σ"
+    },
+    {
+      "level": 2,
+      "text": "3.3 技术面：史上最重的 IG 供给正进入季节性真空，而资金还在进"
+    },
+    {
+      "level": 1,
+      "text": "4. Private Credit：违约开始兑现，银行与监管同时转身"
+    },
+    {
+      "level": 2,
+      "text": "4.1 直贷的量在收缩，份额被银行抢回"
+    },
+    {
+      "level": 2,
+      "text": "4.2 Houlihan Lokey 的 Q3 违约数据，是本周最硬的一组数"
+    },
+    {
+      "level": 2,
+      "text": "4.3 监管与资金面：ECB 把 fund finance 排进检查清单，募资端照旧"
+    }
+  ],
+  "summary": "连续第三个月超预期，而且驱动项在变宽：10 月 core CPI +0.30% m/m（共识 0.2%）、headline +0.35%（共识 0.3%），core CPI 3 个月年化已到 3.7%、6 个月年化 2.7%（Barclays US Outlook, 11/13）；GS 同样把这份报告定性为「meaningfully to the upside across several categories」、连续第三个月的坏消息（",
+  "updated_at": "2026-11-20T06:36:07+00:00"
+}

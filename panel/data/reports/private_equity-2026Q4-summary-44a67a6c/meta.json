@@ -1,0 +1,31 @@
+{
+  "id": "private_equity-2026Q4-summary-44a67a6c",
+  "title": "US Private Equity Research Summary — 2026Q4",
+  "sector": "private_equity",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "summary",
+  "language": "en",
+  "section": "",
+  "keywords": [
+    "US PE",
+    "Right",
+    "PitchBook",
+    "Sep"
+  ],
+  "source_name": "Junson_PE_2026Q4_Summary_EN.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-20T06:37:14+00:00",
+  "stats": {
+    "blocks": 17,
+    "images": 4,
+    "tables": 4,
+    "chars": 2010
+  },
+  "exhibit_count": 8,
+  "masthead": "JUNSON Capital | Alternative Investment Division",
+  "toc": [],
+  "summary": "Left: US PE quarterly deal value and count. Right: quarterly exit value and count. (Source: PitchBook; as of 30 Sep 2026)"
+}
