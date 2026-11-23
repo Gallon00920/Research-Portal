@@ -6,9 +6,12 @@ from .image_parser import IMAGE_EXTS
 
 # what an upload may be: Word and PDF reports are read for their text, tables and figures; a
 # picture (portfolio management's AID analysis) is read like a slide: text as text, charts,
-# tables and pictures kept whole (parsers/image_parser.py)
+# tables and pictures kept whole (parsers/image_parser.py); a PowerPoint deck (a special topic)
+# likewise, slide by slide: text as text, tables as tables, charts and pictures kept whole
+# (parsers/pptx_parser.py)
 REPORT_EXTS = (".docx", ".pdf")
-UPLOAD_EXTS = REPORT_EXTS + IMAGE_EXTS
+DECK_EXTS = (".pptx", ".ppt")
+UPLOAD_EXTS = REPORT_EXTS + DECK_EXTS + IMAGE_EXTS
 SLIDES_EXT = ".zip"  # the source of several pictures uploaded together, in upload order
 
 
@@ -35,6 +38,10 @@ def parse_report(path: Path, image_dir: Path) -> dict[str, Any]:
         from .pdf_parser import parse_pdf
 
         result = parse_pdf(path, image_dir)
+    elif ext in DECK_EXTS:
+        from .pptx_parser import parse_pptx
+
+        result = parse_pptx(path, image_dir)
     elif ext in IMAGE_EXTS:
         from .image_parser import parse_image
 
@@ -44,7 +51,7 @@ def parse_report(path: Path, image_dir: Path) -> dict[str, Any]:
 
         result = parse_image_zip(path, image_dir)
     else:
-        raise ValueError(f"Unsupported file type: {ext}. Upload a .docx or .pdf report, or an image.")
+        raise ValueError(f"Unsupported file type: {ext}. Upload a .docx, .pdf or .pptx report, or an image.")
     if not result.get("keywords"):
         text = " ".join(_text(b) for b in result["blocks"])
         result["keywords"] = auto_keywords(text, result.get("language", "en"))

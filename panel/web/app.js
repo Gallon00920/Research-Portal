@@ -943,11 +943,15 @@ function openUpload(sectorId, editMeta){
   document.body.style.overflow = 'hidden';
 }
 /* what the file picker takes: Word and PDF everywhere (read for text, tables and figures); a
-   portfolio fund's AID analysis also takes a picture, kept whole as a one-slide report */
+   portfolio fund's AID analysis and a Macro / Market special topic also take a PowerPoint deck
+   or pictures, read slide by slide: text as text, tables as tables, charts kept whole */
 const REPORT_EXTS = ['.docx', '.pdf'];
+const DECK_EXTS = ['.pptx', '.ppt'];
 const IMAGE_EXTS = ['.png', '.jpg', '.jpeg', '.webp', '.gif', '.bmp'];
-function imagesAllowed(){ return state.upSpace === 'portfolio' && $('upSection').value === 'internal'; }
-function uploadExts(){ return imagesAllowed() ? REPORT_EXTS.concat(IMAGE_EXTS) : REPORT_EXTS; }
+function imagesAllowed(){
+  return (state.upSpace === 'portfolio' && $('upSection').value === 'internal') || $('upSector').value === 'macro_topics';
+}
+function uploadExts(){ return imagesAllowed() ? REPORT_EXTS.concat(DECK_EXTS, IMAGE_EXTS) : REPORT_EXTS; }
 function fileExt(name){ const m = /\.[^.]+$/.exec(name || ''); return m ? m[0].toLowerCase() : ''; }
 function paintUploadTypes(){
   const img = imagesAllowed();
@@ -1024,7 +1028,7 @@ function onUploadPaste(e){
    quarter beside the title) */
 function pastedName(){
   const s = sectorById($('upSector').value);
-  return [s ? sectorName(s) : '', sectionName('internal')].filter(Boolean).join(' ').replace(/[\/:*?"<>|]/g, ' ') || 'pasted-image';
+  return [s ? sectorName(s) : '', state.upSpace === 'portfolio' ? sectionName('internal') : ''].filter(Boolean).join(' ').replace(/[\/:*?"<>|]/g, ' ') || 'pasted-image';
 }
 function todayIso(){ const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); }
 /* a dated sector (the weekly updates): the dialog asks for the date of the update, not a year and quarter */
@@ -1069,6 +1073,7 @@ function fillUploadSectors(space, want){
   const choices = spaceSectors(space);
   const cur = want || $('upSector').value;
   fillSelect($('upSector'), choices.map(s => [s.id, sectorName(s)]), choices.some(s => s.id === cur) ? cur : (choices[0] && choices[0].id));
+  paintUploadTypes();  // a special topic takes decks and pictures, a weekly update does not
 }
 /* the upload dialog's two modes: a hand-picked file, or a report that Claude generates with the
    sector's skill from source files dropped into the dialog */
@@ -1294,7 +1299,7 @@ function wireUpload(){
   $('upCancel').addEventListener('click', closeUpload);
   $('upOverlay').addEventListener('click', e => { if (e.target === $('upOverlay')) closeUpload(); });
   $('uploadBtn').addEventListener('click', () => openUpload(state.sectorId));
-  $('upSector').addEventListener('change', applyDated);
+  $('upSector').addEventListener('change', () => { applyDated(); paintUploadTypes(); });
   $('upDate').addEventListener('change', () => { if (datedUpload()) setAiWeekFromDate($('upDate').value); applyDated(); });
   ['aiWeekYear', 'aiWeekMonth', 'aiWeekWeek'].forEach(id => $(id).addEventListener('change', paintAiWeek));
   // the dashboard's upload button: the sector picker lists the current space's sectors

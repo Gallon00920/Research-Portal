@@ -3,6 +3,7 @@ uvicorn
 python-multipart
 mammoth
 python-docx
+lxml  # PowerPoint decks (parsers/pptx_parser.py); already installed with python-docx
 pymupdf
 pillow
 cryptography

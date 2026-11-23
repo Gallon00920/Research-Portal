@@ -20,6 +20,15 @@ one slide each in that order, kept as `source.zip`; the report's title is what
 the slide titles share (e.g. "Progress 2Q26 更新"). It needs `ANTHROPIC_API_KEY`
 on the server; without it (and on the static site's build) each picture is kept
 whole as a slide.
+A Macro / Market special topic takes the same pictures, and both it and the AID
+analysis tab also take a PowerPoint deck (`.pptx`; `panel/backend/parsers/pptx_parser.py`).
+The deck's own XML gives each slide's title, its text (as headings, paragraphs
+and lists, read column by column on a card layout) and its tables (as real
+tables). Charts, pictures and diagrams are cropped whole from the slide, which
+is rendered to PDF by LibreOffice (`soffice`) or, on Windows, PowerPoint. Without
+either, the deck's own pictures are used, and a chart becomes a table of its data.
+An old `.ppt` needs one of the two converters (`PPTX_CONVERTER=none` turns
+conversion off).
 No database: every report lives as
 files under `panel/data/reports/<id>/`. The same site also hosts the
 **News tracker** and **Investment performance** (see below); the three features

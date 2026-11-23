@@ -494,7 +494,7 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
         raise HTTPException(400, "nature must be full or summary")
     ext = Path(source_name or "").suffix.lower()
     if ext not in UPLOAD_EXTS + (SLIDES_EXT,):
-        raise HTTPException(400, "Only .docx and .pdf reports or images (.png .jpg .webp .gif .bmp) are supported")
+        raise HTTPException(400, UNSUPPORTED)
 
     rid = f"{sector}-{year}Q{quarter}-{nature}-{uuid.uuid4().hex[:8]}"
     d = REPORTS / rid
@@ -533,6 +533,9 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
     return saved
 
 
+UNSUPPORTED = "Only .docx, .pdf and .pptx reports or images (.png .jpg .webp .gif .bmp) are supported"
+
+
 @app.post("/api/upload")
 async def api_upload(file: list[UploadFile] = File(...), sector: str = Form(...), year: int | None = Form(None),
                      quarter: int | None = Form(None), nature: str = Form("full"), language: str = Form(""),
@@ -544,7 +547,7 @@ async def api_upload(file: list[UploadFile] = File(...), sector: str = Form(...)
         raise HTTPException(400, "no file")
     exts = [Path(f.filename or "").suffix.lower() for f in files]
     if any(ext not in UPLOAD_EXTS for ext in exts):
-        raise HTTPException(400, "Only .docx and .pdf reports or images (.png .jpg .webp .gif .bmp) are supported")
+        raise HTTPException(400, UNSUPPORTED)
     if len(files) > 1 and any(ext not in IMAGE_EXTS for ext in exts):
         raise HTTPException(400, "Several files can be uploaded together only when all are images (one slide each)")
     tag = uuid.uuid4().hex[:8]
