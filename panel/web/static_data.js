@@ -213,7 +213,7 @@ window.DataLayer = (function(){
     const r = await fetch(path, opts);
     if (r.status === 401) throw Object.assign(new Error('login required'), {needLogin: true, redirect: '/login.html'});
     let data = null; try { data = await r.json(); } catch (e) {}
-    if (!r.ok) throw new Error((data && data.error) || (r.status + ' ' + r.statusText));
+    if (!r.ok) throw new Error((data && (data.error || data.detail)) || (r.status + ' ' + r.statusText));
     return data;
   }
   const J = {'Content-Type': 'application/json'};
@@ -238,6 +238,8 @@ window.DataLayer = (function(){
     },
     updateReport(id, payload){ return api('/api/reports/' + encodeURIComponent(id), {method: 'PUT', headers: J, body: JSON.stringify(payload)}); },
     deleteReport(id){ return api('/api/reports/' + encodeURIComponent(id), {method: 'DELETE'}); },
+    /* the report in the other language: its translation (Claude makes it now if there is none) */
+    translate(id){ return api('/api/reports/' + encodeURIComponent(id) + '/translate', {method: 'POST'}); },
     async saveSectors(list){
       // diff against the server: add new, update changed, delete missing, then set order
       const cur = await api('/api/sectors');

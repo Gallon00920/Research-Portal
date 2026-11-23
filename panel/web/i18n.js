@@ -72,6 +72,8 @@ window.I18N = {
     ai_title: "AI assistant", ai_ph: "Ask for a change to this report, or a question about it…", ai_send: "Send",
     ai_ctx_none: "Open a report: the assistant edits the report on screen", ai_ctx: "Editing: {title}", ai_changed: "Report updated", ai_thinking: "Thinking…",
     no_report_lang: "No report in {sector} yet.", no_report_period: "No report for {period} in {sector}.",
+    translating: "Translating with Claude… about a minute", translate_failed: "Could not translate", translated_note: "Translated by Claude from the {lang} original ·", see_original: "Open the original",
+    upload_translating: "the {lang} version is being translated and appears in a few minutes",
     open_other_lang: "Open the other-language version", open_latest: "Open the latest report", reports_in_lang: "{n} reports",
     lb_of: "{i} / {n}",
   },
@@ -147,6 +149,8 @@ window.I18N = {
     ai_title: "AI 助手", ai_ph: "让 AI 修改这份报告，或提问…", ai_send: "发送",
     ai_ctx_none: "请先打开一份报告：助手会修改当前报告", ai_ctx: "正在编辑：{title}", ai_changed: "报告已更新", ai_thinking: "思考中…",
     no_report_lang: "{sector} 板块暂无报告。", no_report_period: "{sector} 板块 {period} 暂无报告。",
+    translating: "正在用 Claude 翻译… 约一分钟", translate_failed: "翻译失败", translated_note: "由 Claude 译自{lang}原文 ·", see_original: "查看原文",
+    upload_translating: "{lang}版本正在翻译，几分钟后显示",
     open_other_lang: "打开另一语言版本", open_latest: "打开最新一期", reports_in_lang: "{n} 份报告",
     lb_of: "{i} / {n}",
   }

@@ -123,6 +123,36 @@ function sectorReports(sectorId, lang, all){
   return state.reports.filter(r => (all || inSection(r)) && r.nature === 'full' && r.sector === sectorId);
 }
 function latestOf(list){ return list.slice().sort(byUploaded)[0] || null; }
+/* the same report in the other language: its translation or the original it was translated from;
+   else the edition uploaded in that language (the same quarter and type; for a weekly update,
+   the same date; special topics and macro analyses are told apart only by the translation link) */
+function twinOf(meta, lang){
+  if (!meta) return null;
+  const linked = state.reports.find(r => r.id !== meta.id && r.language === lang && (r.translated_from === meta.id
+    || r.id === meta.translated_from || (meta.translated_from && r.translated_from === meta.translated_from)));
+  if (linked) return linked;
+  if (meta.date){
+    if (meta.sector !== 'macro_weekly') return null;
+    return state.reports.find(r => r.sector === meta.sector && r.date === meta.date && r.language === lang && r.nature === meta.nature) || null;
+  }
+  return findReport(meta.sector, meta.period, lang, meta.nature) || findReport(meta.sector, meta.period, lang, 'full');
+}
+/* the switch asked for a language the report does not have yet: Claude translates it now */
+let translating = false;
+async function translateNow(meta){
+  if (translating) return;
+  translating = true;
+  toast(t('translating'));
+  try {
+    const twin = await DL.translate(meta.id);
+    await loadAll();
+    state.docLang = twin.language;
+    try { localStorage.setItem('aid_doclang', state.docLang); } catch (e) {}
+    nav(hashReport(twin.id));
+  } catch (e) { if (e.needLogin) handleErr(e); else toast(t('translate_failed') + ': ' + e.message); }
+  finally { translating = false; }
+}
+function canTranslate(){ return DL.mode === 'api' && typeof DL.translate === 'function'; }
 /* a sector's report count = number of quarters it covers; languages and full/summary editions of one quarter count once */
 function sectorQuarters(sectorId, all){ return new Set(state.reports.filter(r => (all || inSection(r)) && r.sector === sectorId).map(r => r.year + '-' + r.quarter)).size; }
 /* a fund marked as exited sits in the grey section below the grid */
@@ -167,8 +197,10 @@ function setDocLang(l){
   try { localStorage.setItem('aid_doclang', l); } catch (e) {}
   if (state.view === 'art' && state.sectorId){
     const cur = state.report && state.report.meta;
-    const twin = cur ? (findReport(cur.sector, cur.period, l, cur.nature) || findReport(cur.sector, cur.period, l, 'full')) : null;
-    if (twin) nav(hashReport(twin.id)); else nav(hashSector(state.sectorId, state.section));
+    const twin = twinOf(cur, l);
+    if (twin) nav(hashReport(twin.id));
+    else if (cur && canTranslate()) translateNow(cur);
+    else nav(hashSector(state.sectorId, state.section));
     return;
   }
   route();
@@ -433,6 +465,14 @@ async function renderReport(id, anchor){
   if (meta.masthead){ add(meta.masthead); sep(); }
   add(t('uploaded') + ' ' + fmtDate(meta.uploaded_at)); sep();
   add(t('source_file') + ': ' + (meta.source_name || '—'));
+  if (meta.translated_from){
+    // a translation: says so, with the way to the original
+    sep();
+    const sp = el('span', 'translated');
+    sp.appendChild(document.createTextNode(t('translated_note', {lang: t(meta.language === 'en' ? 'cn' : 'en')}) + ' '));
+    const a = el('a', null, t('see_original')); a.href = hashReport(meta.translated_from);
+    sp.appendChild(a); dm.appendChild(sp);
+  }
   const tr = $('tagRow'); tr.innerHTML = '';
   tr.appendChild(el('span', 'lbl', t('keywords')));
   (meta.keywords || []).forEach(k => tr.appendChild(el('span', 'tag', k)));
@@ -463,8 +503,9 @@ function buildSegs(meta, s){
   $('typeToggle').onclick = () => { if (typeTarget) nav(hashReport(typeTarget.id)); };
   // EN / 中文: flips the report language
   const other = otherLang();
-  const langAvailable = period
-    ? !!(findReport(sector, period, other, meta.nature) || findReport(sector, period, other, 'full'))
+  // a report without the other language yet can have Claude translate it (on the server)
+  const langAvailable = meta
+    ? !!twinOf(meta, other) || canTranslate()
     : sectorReports(sector, other).length > 0;
   setToggle('docLangToggle', state.docLang === 'cn', !langAvailable);
   $('docLangToggle').onclick = () => { if (langAvailable) setDocLang(other); };
@@ -540,7 +581,8 @@ function buildDatedPickers(all, meta){
     return weeks;
   };
   py.value = cur.slice(0, 4); fillM(cur.slice(0, 4)); pm.value = cur.slice(0, 7); fillW(cur.slice(0, 7)); pw.value = String(weekOfMonth(cur));
-  $('pickCount').textContent = nReports(all.length);
+  // a report and its translation count once
+  $('pickCount').textContent = nReports(all.filter(r => !(r.translated_from && all.some(o => o.id === r.translated_from))).length);
   const open = (m, w) => { const hits = all.filter(r => ym(r) === m && weekOfMonth(r.date) === w); const r = bestEdition(hits, meta); if (r) nav(hashReport(r.id)); };
   py.onchange = () => { const ms = fillM(py.value); pm.value = ms[0]; const ws = fillW(ms[0]); pw.value = String(ws[0]); open(ms[0], ws[0]); };
   pm.onchange = () => { const ws = fillW(pm.value); pw.value = String(ws[0]); open(pm.value, ws[0]); };
@@ -1279,7 +1321,8 @@ async function submitUpload(ev){
     const m = await DL.upload(fields, files.length > 1 ? files : files[0]);
     closeUpload();
     if (afterWrite(m)) return;
-    toast(m.replaced && m.replaced.length ? t('upload_replaced') : t('upload_ok'));
+    toast((m.replaced && m.replaced.length ? t('upload_replaced') : t('upload_ok'))
+      + (m.translating ? ' · ' + t('upload_translating', {lang: t(m.language === 'en' ? 'cn' : 'en')}) : ''));
     await loadAll();
     nav(hashReport(m.id)); route();
   } catch (e) {

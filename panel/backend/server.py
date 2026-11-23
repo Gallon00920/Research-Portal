@@ -40,6 +40,7 @@ ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "backend"))
 
 import ai_assist  # noqa: E402  (report generation with Skills + the editing chat)
+import translate as translator  # noqa: E402  (a report's twin in the other language)
 from parsers import IMAGE_EXTS, SLIDES_EXT, UPLOAD_EXTS, fill_from_file_name, parse_report  # noqa: E402
 
 DATA = ROOT / "data"
@@ -188,7 +189,7 @@ def read_meta(d: Path) -> dict[str, Any] | None:
 def all_meta() -> list[dict[str, Any]]:
     out = []
     for d in REPORTS.iterdir():
-        if d.is_dir():
+        if d.is_dir() and not d.name.startswith("."):
             m = read_meta(d)
             if m:
                 out.append(m)
@@ -219,13 +220,129 @@ MULTI_PER_DATE = {"macro_analysis", "macro_topics"}  # sectors whose reports of 
 
 
 def remove_duplicates(meta: dict[str, Any]) -> list[str]:
-    """Delete every other report that has the same key as `meta`. Returns the removed ids."""
+    """Delete every other report that has the same key as `meta` (and the translations made of
+    it). Returns the removed ids."""
     removed = []
     for other in all_meta():
         if other.get("id") != meta.get("id") and report_key(other) == report_key(meta):
             shutil.rmtree(REPORTS / other["id"], ignore_errors=True)
             removed.append(other["id"])
+            removed += remove_twins(other["id"], keep=meta.get("id"))
     return removed
+
+
+# ------------------------------------------------------------------ translations
+# Every uploaded report gets a twin in the other language (Chinese <-> English), translated by
+# Claude in the background (translate.py): an ordinary report whose meta names its original
+# ("translated_from"). An edition of the other language that a person uploads always wins: it
+# replaces the translation, and a translation never replaces it. AUTO_TRANSLATE=0 turns the
+# automatic translation off (the reader's EN / 中文 switch still asks for one).
+AUTO_TRANSLATE = os.environ.get("AUTO_TRANSLATE", "1").strip().lower() not in {"0", "false", "no", "off"}
+TRANSLATE_DELAY = float(os.environ.get("TRANSLATE_DELAY", "20"))  # seconds; an AI job's other editions land first
+_TR_LOCK = threading.Lock()
+_TR_RUNNING: set[str] = set()
+_TR_TIMERS: dict[str, threading.Timer] = {}
+
+
+def twins_of(rid: str) -> list[dict[str, Any]]:
+    return [m for m in all_meta() if m.get("translated_from") == rid]
+
+
+def remove_twins(rid: str, keep: str | None = None) -> list[str]:
+    """Delete the translations made of report rid."""
+    gone = []
+    for m in twins_of(rid):
+        if m["id"] != keep:
+            shutil.rmtree(REPORTS / m["id"], ignore_errors=True)
+            gone.append(m["id"])
+    return gone
+
+
+def _uploaded_twin(meta: dict[str, Any]) -> dict[str, Any] | None:
+    """An edition of the same report in the other language that a person uploaded (or Claude
+    wrote with a Skill), if any."""
+    want = report_key(dict(meta, language=translator.other(meta.get("language") or "cn")))
+    return next((o for o in all_meta() if o["id"] != meta["id"] and not o.get("translated_from") and report_key(o) == want), None)
+
+
+def translate_report(rid: str, wait: bool = True) -> dict[str, Any]:
+    """Make (or make again) the translated twin of report rid. Returns the twin's meta, or
+    {"skipped": why} / {"error": what}."""
+    d = REPORTS / rid
+    meta = read_meta(d) if d.is_dir() else None
+    if not meta:
+        return {"skipped": "report not found"}
+    if meta.get("translated_from"):
+        return {"skipped": "this report is itself a translation"}
+    if not ai_assist.enabled():
+        return {"skipped": "ANTHROPIC_API_KEY is not set on the server"}
+    mine = _uploaded_twin(meta)
+    if mine:
+        return {"skipped": "the other language was uploaded", "twin": mine["id"]}
+    with _TR_LOCK:
+        if rid in _TR_RUNNING:
+            return {"skipped": "already translating"}
+        _TR_RUNNING.add(rid)
+    try:
+        src, dst, strings = translator.translation_map(d)
+        done = translator.translate_strings(strings, src, dst)
+        return _install_twin(rid, done, "mock" if ai_assist.mock() else ai_assist.model_name())
+    except Exception as exc:  # the original stays as it is; the switch can ask again
+        print(f"translate {rid}: {exc}", file=sys.stderr)
+        return {"error": str(exc)}
+    finally:
+        with _TR_LOCK:
+            _TR_RUNNING.discard(rid)
+
+
+def _install_twin(rid: str, done: dict[str, str], by: str) -> dict[str, Any]:
+    d = REPORTS / rid
+    meta = read_meta(d) if d.is_dir() else None
+    if not meta:
+        return {"skipped": "the report was removed meanwhile"}
+    new_id = f"{meta['sector']}-{meta['year']}Q{meta['quarter']}-{meta['nature']}-{uuid.uuid4().hex[:8]}"
+    tmp = REPORTS / f".tr-{new_id}"
+    shutil.rmtree(tmp, ignore_errors=True)
+    try:
+        twin = translator.build_twin(d, tmp, done, new_id, by)
+    except Exception:
+        shutil.rmtree(tmp, ignore_errors=True)
+        raise
+    with _TR_LOCK:
+        if not d.is_dir():
+            shutil.rmtree(tmp, ignore_errors=True)
+            return {"skipped": "the report was removed meanwhile"}
+        clash = [o for o in all_meta() if report_key(o) == report_key(twin)]
+        mine = _uploaded_twin(meta) or next((o for o in clash if not o.get("translated_from")), None)
+        if mine:  # a person's edition arrived while Claude was translating: theirs stays
+            shutil.rmtree(tmp, ignore_errors=True)
+            return {"skipped": "the other language was uploaded", "twin": mine["id"]}
+        for o in clash + twins_of(rid):
+            shutil.rmtree(REPORTS / o["id"], ignore_errors=True)
+        tmp.rename(REPORTS / new_id)
+    return twin
+
+
+def schedule_translation(rid: str, delay: float | None = None):
+    """Translate report rid in the background after a short wait; a new request for the same
+    report within the wait (a run of chat edits) restarts it."""
+    if not AUTO_TRANSLATE or not ai_assist.enabled():
+        return
+
+    def run():
+        with _TR_LOCK:
+            _TR_TIMERS.pop(rid, None)
+        out = translate_report(rid)
+        print(f"translate {rid}: {out.get('id') or out}", file=sys.stderr)
+
+    with _TR_LOCK:
+        old = _TR_TIMERS.pop(rid, None)
+        if old:
+            old.cancel()
+        t = threading.Timer(TRANSLATE_DELAY if delay is None else delay, run)
+        t.daemon = True
+        _TR_TIMERS[rid] = t
+        t.start()
 
 
 def quarter_count(metas: list[dict[str, Any]]) -> int:
@@ -410,6 +527,14 @@ def api_update_report(rid: str, payload: dict[str, Any]):
     meta["updated_at"] = now_iso()
     (d / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
     meta["replaced"] = remove_duplicates(meta)
+    # its translation follows: the same sector, quarter and type at once, the words when Claude is done
+    for twin in twins_of(rid):
+        for k in ("sector", "section", "year", "quarter", "period", "period_key", "nature", "date"):
+            if k in meta:
+                twin[k] = meta[k]
+        (REPORTS / twin["id"] / "meta.json").write_text(json.dumps(twin, ensure_ascii=False, indent=2), encoding="utf-8")
+    if not meta.get("translated_from") and ("title" in payload or "keywords" in payload or "language" in payload):
+        schedule_translation(rid)
     return meta
 
 
@@ -417,7 +542,29 @@ def api_update_report(rid: str, payload: dict[str, Any]):
 def api_delete_report(rid: str):
     d = report_dir(rid)
     shutil.rmtree(d)
-    return {"ok": True}
+    return {"ok": True, "removed": remove_twins(rid)}
+
+
+@app.post("/api/reports/{rid}/translate")
+async def api_translate(rid: str):
+    """The report in the other language: its translation (made now by Claude if there is none
+    yet), or the edition of the other language that was uploaded."""
+    meta = read_meta(report_dir(rid)) or {}
+    if meta.get("translated_from"):  # already a translation: its original is the other language
+        orig = read_meta(REPORTS / meta["translated_from"]) if (REPORTS / meta["translated_from"]).is_dir() else None
+        if orig:
+            return orig
+    have = next((m for m in twins_of(rid)), None) or _uploaded_twin(meta)
+    if have:
+        return have
+    out = await run_in_threadpool(translate_report, rid)
+    if out.get("id"):
+        return out
+    if out.get("twin"):
+        return read_meta(REPORTS / out["twin"])
+    if "ANTHROPIC_API_KEY" in str(out.get("skipped", "")):
+        raise HTTPException(503, out["skipped"])
+    raise HTTPException(409 if out.get("skipped") else 422, out.get("skipped") or out.get("error") or "translation failed")
 
 
 @app.post("/api/reports/{rid}/reparse")
@@ -431,6 +578,8 @@ def api_reparse(rid: str):
     shutil.rmtree(img_dir, ignore_errors=True)
     parsed = parse_report(src, img_dir)
     _write_content(d, meta, parsed, keep_title=True)
+    if not meta.get("translated_from"):
+        schedule_translation(rid)
     return read_meta(d)
 
 
@@ -530,6 +679,9 @@ def ingest_report(src_path: Path, source_name: str, sector: str, year: int | Non
     saved = read_meta(d) or meta
     # same sector + quarter + type + language already present: this upload replaces it
     saved["replaced"] = remove_duplicates(saved)
+    # and the other language follows in the background (unless that edition was uploaded too)
+    schedule_translation(rid)
+    saved["translating"] = AUTO_TRANSLATE and ai_assist.enabled() and not _uploaded_twin(saved)
     return saved
 
 
@@ -660,9 +812,12 @@ def ai_chat(payload: dict[str, Any]):
     if not isinstance(msgs, list):
         raise HTTPException(400, "messages must be a list")
     try:
-        return ai_assist.chat(d, msgs)
+        out = ai_assist.chat(d, msgs)
     except ai_assist.AIError as exc:
         raise _ai_err(exc)
+    if out.get("changed") and not (read_meta(d) or {}).get("translated_from"):
+        schedule_translation(rid, delay=90)  # after the run of edits, the translation follows
+    return out
 
 
 @app.get("/api/meta")

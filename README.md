@@ -185,6 +185,36 @@ floating-rate share of the portfolio, the four impact groups and the
 fund-by-fund table) was transcribed by hand from the four slides with
 `--from-raw`; upload the slides again to have Claude read them.
 
+## Every report in both languages
+
+A report uploaded in one language gets a twin in the other (Chinese to English,
+English to Chinese), translated by Claude in the background on the server
+(`panel/backend/translate.py`) about 20 seconds after the upload. All its text is
+sent in numbered batches: headings, paragraphs with their bold and italics,
+list items, table cells, captions, the title and the keywords. Pictures and
+charts stay as they are, and tables drawn as pictures are drawn again in the
+new language. The twin is an ordinary report whose meta names its original
+(`translated_from`). The reader says it is a translation and links to the
+original, and the EN / 中文 switch flips between the two. Lists (dashboards, fund
+pages, the Macro / Market tabs) show the edition in the interface language.
+
+- An edition of the other language that is uploaded (or that a Skill writes)
+  always wins: it replaces the translation, and a translation never replaces
+  it. An AI generation job that writes both languages gets no translation.
+- Deleting or re-uploading the original removes its translation; editing it
+  (new title or keywords, a reparse, a change made in the chat) translates it
+  again.
+- A report from before this feature, or one whose translation failed, is
+  translated when someone flips the EN / 中文 switch (about a minute), or from
+  the shell: `python panel/backend/translate.py <report id> ...`.
+- It needs `ANTHROPIC_API_KEY` on the server (`AI_MOCK=1` writes `[EN] …`
+  placeholders). `AUTO_TRANSLATE=0` turns off the automatic step (the switch
+  still works), and `TRANSLATE_DELAY` sets the wait in seconds. The GitHub
+  Pages site does not translate.
+- The rate-hike slide briefs carry their English in the brief itself (the `en`
+  map that `extract_macro.py` writes); the October 2026 brief's was written by
+  hand.
+
 ## AI: generating reports, and a chat that edits them
 
 Both need the Python server (local or on a VM) with `ANTHROPIC_API_KEY`

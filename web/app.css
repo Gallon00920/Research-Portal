@@ -449,3 +449,6 @@ table.data tr td.mk-neutral{background:#eeeeee; color:#555}
 /* an uploaded picture shown as the report's one slide: full width, no exhibit header */
 figure.fig.slide{margin:8px 0 20px}
 figure.fig.slide img{width:100%; height:auto}
+
+/* a report translated by Claude: the note beside the source file, with the way to the original */
+.translated{color:var(--muted)} .translated a{font-weight:600}

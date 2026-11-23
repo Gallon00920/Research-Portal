@@ -175,7 +175,9 @@ async function loadIndex(force) {
     const sector = topicSector();
     const reps = (data.reports || []).filter((r) => r.sector === sector && r.date);
     const tp = topicById(state.topic);
-    if (tp && tp.briefs) reps.push(...await loadBriefs(tp.briefs));
+    const shown = oneEditionEach(reps);
+    if (tp && tp.briefs) shown.push(...await loadBriefs(tp.briefs));
+    reps.length = 0; reps.push(...shown);
     reps.sort((a, b) => (b.date + (b.uploaded_at || '')).localeCompare(a.date + (a.uploaded_at || '')));
     state.weekly = reps;
     state.index = reps.map((r) => r.date);
@@ -185,6 +187,18 @@ async function loadIndex(force) {
   }
   state.indexTopic = state.topic;
   return state.index;
+}
+/* a report and its translation are one entry: the edition in the interface language, else the
+   original (the reader's EN / 中文 switch flips between the two) */
+function oneEditionEach(reps) {
+  const ids = new Set(reps.map((r) => r.id));
+  const pick = {};
+  const score = (r) => (r.language === state.lang ? 2 : 0) + (r.translated_from ? 0 : 1);
+  reps.forEach((r) => {
+    const g = r.translated_from && ids.has(r.translated_from) ? r.translated_from : r.id;
+    if (!pick[g] || score(r) > score(pick[g])) pick[g] = r;
+  });
+  return Object.values(pick);
 }
 /* the slide briefs of a topic as rows of the list: one per month, opening the brief's own page */
 async function loadBriefs(topic) {
@@ -732,6 +746,7 @@ window.MacroMarket = {
     const next = toLang(lang);
     if (next === state.lang) return;
     state.lang = next;
+    state.indexTopic = null;  // the lists show the edition in the new language
     if (state.built && !$('view-macro').hidden) show(state.topic, state.ym);
   },
 };
