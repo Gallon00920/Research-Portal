@@ -193,7 +193,7 @@ def report_key(m: dict[str, Any]) -> tuple:
     return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "", topic)
 
 
-MULTI_PER_DATE = {"macro_topics"}
+MULTI_PER_DATE = {"macro_analysis", "macro_topics"}
 
 
 def dedupe_all(c: Crypto) -> int:

@@ -657,7 +657,9 @@ def _build(deck: Deck, doc, rendered_by: str, image_dir: Path) -> dict[str, Any]
 
     body = " ".join(b.get("text", "") for b in blocks if b["type"] in ("heading", "paragraph"))
     body += " " + " ".join(html.unescape(x) for b in blocks if b["type"] == "list" for x in b["items"])
-    report_title = next((t for t in titles if t), "") or deck.title()
+    # the deck's title: the first slide's, else the cover's largest line of words (a cover often has
+    # no title placeholder), else the file's own title, else the first slide title found
+    report_title = (titles[0] if titles else "") or _cover_title(deck) or deck.title() or next((t for t in titles if t), "")
     return {
         "title": report_title,
         "keywords": [],
@@ -668,6 +670,22 @@ def _build(deck: Deck, doc, rendered_by: str, image_dir: Path) -> dict[str, Any]
                   "tables": sum(1 for b in blocks if b["type"] == "table"), "chars": len(body.strip()),
                   "pages": len(deck.slides), "rendered_by": rendered_by or "none (pictures from the file)"},
     }
+
+
+def _cover_title(deck: Deck) -> str:
+    """The largest line of words on the first slide (a key figure such as "109" is not one)."""
+    if not deck.slides:
+        return ""
+    words = re.compile(r"[A-Za-z一-鿿]")
+    best, size = "", 0.0
+    for it in flatten(deck, deck.slides[0]):
+        text = " ".join(_text_of(it).split()) if it["tag"] == "sp" else ""
+        if not text or len(text) > 90 or len(words.findall(text)) < 2:
+            continue
+        sz = max((pp.get("size") or 0) for pp in it["paras"])
+        if sz > size:
+            best, size = text, sz
+    return best if size >= 20 else ""
 
 
 def _next_name(image_dir: Path) -> str:

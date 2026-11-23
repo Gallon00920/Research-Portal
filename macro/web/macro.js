@@ -1,10 +1,10 @@
 /* Macro / Market — a view of the AID Research Panel (#/macro/<topic>).
-   Two fixed topics (tags): the weekly updates (每周更新) and special topics (专题研究). Both are dated
-   reports of the panel (sectors macro_weekly and macro_topics), listed newest first, each opening
-   in the report reader; uploads go through the panel's upload dialog (a Word or text-based PDF
-   file with its date). The slide-brief code below (a deck per month, read by Claude) served the
-   former rate-hike topic (市场加息预期), whose data stays in macro/data/rates/ but is no longer
-   listed. Earlier note: each slide brief has one brief per month: a title and the slides of a deck, in upload order. Each slide was read by
+   Three fixed topics (tags): macro analysis (宏观分析), the weekly updates (每周更新) and special
+   topics (专题研究). Each lists dated reports of a panel sector (macro_analysis, macro_weekly,
+   macro_topics), newest first, each opening in the report reader; uploads go through the panel's
+   upload dialog (a file with its date). Macro analysis also lists the rate-hike slide briefs
+   (市场加息预期更新, #/macro/rates/<YYYY-MM>), which open in their own page drawn by the code below.
+   Each slide brief has one brief per month: a title and the slides of a deck, in upload order. Each slide was read by
    Claude (macro/scripts/extract_macro.py) into blocks: charts (line, vertical bars, horizontal
    bars with parts), tables with coloured cells, bullet lists, call-outs, text and footnotes; this
    file draws them. The data comes from data/macro/<YYYY-MM>.json. Uploading several screenshots
@@ -43,6 +43,8 @@ const STR = {
     week: 'Week', week_n: 'Week {n}', all: 'All', no_match: 'No update in that week',
     topics_empty_title: 'No special topic yet', topics_empty_text: 'Upload a special topic report as a text-based PDF (or Word) file, with its date.',
     topics_no_match: 'No special topic in that month',
+    analysis_empty_title: 'No macro analysis yet', analysis_empty_text: 'Upload a macro analysis report (Word, PDF, PowerPoint or pictures), with its date.',
+    analysis_no_match: 'No macro analysis in that month', slides: 'slides', back: 'Return',
   },
   cn: {
     year: '年份', month: '月份', upload: '上传幻灯片', empty_title: '暂无简报',
@@ -63,20 +65,29 @@ const STR = {
     week: '周', week_n: '第 {n} 周', all: '全部', no_match: '该周没有更新',
     topics_empty_title: '暂无专题研究', topics_empty_text: '上传专题研究报告：文字版 PDF（或 Word）文件，并填写日期。',
     topics_no_match: '该月没有专题研究',
+    analysis_empty_title: '暂无宏观分析', analysis_empty_text: '上传宏观分析报告（Word、PDF、PowerPoint 或图片），并填写日期。',
+    analysis_no_match: '该月没有宏观分析', slides: '页', back: '返回',
   },
 };
 
-/* the two fixed topics (tags) of the view, in display order: dated reports of a panel sector each */
+/* the fixed topics (tags) of the view, in display order: dated reports of a panel sector each.
+   Macro analysis also lists the slide briefs of the rate-hike topic, which has no tag of its own:
+   a brief opens in its own page (the slides drawn as charts and tables) under the Macro analysis tag */
 const TOPICS = [
+  {id: 'analysis', en: 'Macro Analysis', cn: '宏观分析', kind: 'file', sector: 'macro_analysis', weeks: false, briefs: 'rates'},
   {id: 'weekly', en: 'Weekly Updates', cn: '每周更新', kind: 'file', sector: 'macro_weekly', weeks: true},
   {id: 'topics', en: 'Special Topics', cn: '专题研究', kind: 'file', sector: 'macro_topics', weeks: false},
+  {id: 'rates', en: 'Rate Hike Expectations', cn: '市场加息预期', kind: 'slides', parent: 'analysis'},  // a deck per month
 ];
-const DEFAULT_TOPIC = 'weekly';
-const TOPIC_ALIAS = {rates: 'topics'};  // the former rate-hike tab's addresses open Special Topics
+const DEFAULT_TOPIC = 'analysis';
 function topicById(id) { return TOPICS.find((x) => x.id === id) || null; }
 function topicSector() { const tp = topicById(state.topic); return tp ? tp.sector : TOPICS[0].sector; }
 function topicWeeks() { const tp = topicById(state.topic); return !!(tp && tp.weeks); }
-function topicText(key) { return t(state.topic === 'topics' ? 'topics_' + key : key); }
+/* a topic's own wording of a message (analysis_no_match), else the general one */
+function topicText(key, fallback) {
+  const k = state.topic + '_' + key;
+  return ((STR[state.lang] || {})[k] !== undefined || STR.en[k] !== undefined) ? t(k) : t(fallback || key);
+}
 function fileTopic() { const tp = topicById(state.topic); return !!(tp && tp.kind === 'file'); }
 function keyLabel(key) { return /^\d{4}-\d{2}-\d{2}$/.test(key || '') ? dateLabel(key) : monthLabel(key); }
 function dateLabel(d) { const [y, m, dd] = d.split('-').map(Number); return new Date(y, m - 1, dd).toLocaleDateString(locale(), {year: 'numeric', month: 'long', day: 'numeric'}); }
@@ -116,6 +127,7 @@ function toast(msg, link) {
 const CJK = /[㐀-䶿一-鿿]/;
 function english() { return state.lang === 'en' ? ((state.doc && state.doc.en) || {}) : null; }
 function L(text) { const en = english(); return (en && text && en[text]) || text; }
+function brief(doc, text) { const en = state.lang === 'en' ? (doc.en || {}) : null; return (en && text && en[text]) || text; }
 function lacksEnglish(doc) {
   if (!doc) return false;
   const en = doc.en || {};
@@ -162,6 +174,8 @@ async function loadIndex(force) {
     const data = await window.DataLayer.load();
     const sector = topicSector();
     const reps = (data.reports || []).filter((r) => r.sector === sector && r.date);
+    const tp = topicById(state.topic);
+    if (tp && tp.briefs) reps.push(...await loadBriefs(tp.briefs));
     reps.sort((a, b) => (b.date + (b.uploaded_at || '')).localeCompare(a.date + (a.uploaded_at || '')));
     state.weekly = reps;
     state.index = reps.map((r) => r.date);
@@ -171,6 +185,19 @@ async function loadIndex(force) {
   }
   state.indexTopic = state.topic;
   return state.index;
+}
+/* the slide briefs of a topic as rows of the list: one per month, opening the brief's own page */
+async function loadBriefs(topic) {
+  const idx = await getJson('data/macro/' + topic + '/index.json').catch(() => null);
+  const out = [];
+  for (const ym of ((idx && idx.months) || [])) {
+    const doc = await getJson('data/macro/' + topic + '/' + ym + '.json').catch(() => null);
+    if (!doc) continue;
+    const date = /^\d{4}-\d{2}-\d{2}$/.test(doc.date || '') ? doc.date : ym + '-01';
+    out.push({href: '#/macro/' + topic + '/' + ym, ym, date, dated: date !== ym + '-01', title: doc.title, doc,
+              pages: (doc.pages || []).length, uploaded_at: doc.extracted_at || ''});
+  }
+  return out;
 }
 function weeklyByDate(date) { return (state.weekly || []).find((r) => r.date === date) || null; }
 function months() { return (state.index || []).slice().sort(); }
@@ -183,13 +210,17 @@ function build() {
   card.textContent = '';
   // the topic tags: fixed, one click switches the view to that topic's months
   const tags = h('nav', 'sub-tabs mk-tags'); tags.id = 'mkTags'; tags.setAttribute('aria-label', 'topics');
-  TOPICS.forEach((tp) => {
+  TOPICS.filter((tp) => !tp.parent).forEach((tp) => {
     const b = h('button'); b.type = 'button'; b.dataset.topic = tp.id;
     b.addEventListener('click', () => { if (state.topic !== tp.id) go(null, tp.id); });
     tags.appendChild(b);
   });
   card.appendChild(tags);
   const bar = h('div', 'mk-bar');
+  // a slide brief's page (shown under the Macro analysis tag): back to that tag's list of reports
+  const back = h('button', 'btn primary small mk-back'); back.type = 'button'; back.id = 'mkBack';
+  back.addEventListener('click', () => { const tp = topicById(state.topic); go(null, (tp && tp.parent) || DEFAULT_TOPIC); });
+  bar.appendChild(back);
   const left = h('div', 'mk-bar-title'); left.id = 'mkBarTitle';
   bar.appendChild(left);
   const ctl = h('div', 'mk-controls');
@@ -216,7 +247,10 @@ function build() {
   state.built = true;
 }
 function paintShell() {
-  Array.from($('mkTags').children).forEach((b) => { b.textContent = topicLabel(b.dataset.topic); b.className = b.dataset.topic === state.topic ? 'on' : ''; });
+  const cur = topicById(state.topic), on = (cur && cur.parent) || state.topic;
+  Array.from($('mkTags').children).forEach((b) => { b.textContent = topicLabel(b.dataset.topic); b.className = b.dataset.topic === on ? 'on' : ''; });
+  $('mkBack').hidden = !(cur && cur.parent);
+  $('mkBack').textContent = '‹ ' + t('back');
   $('mkYearLbl').textContent = t('year');
   $('mkMonthLbl').textContent = t('month');
   $('mkWeekLbl').textContent = t('week');
@@ -260,9 +294,8 @@ function paintShell() {
 async function show(topic, ym) {
   const seq = ++state.seq;
   build();
-  // an address from before the topics (#/macro/2026-10) or of the former rate-hike tab opens Special Topics
-  if (topic && /^\d{4}-\d{2}$/.test(topic)) { ym = null; topic = 'topics'; }
-  if (TOPIC_ALIAS[topic]) topic = TOPIC_ALIAS[topic];
+  // an address from before the topics (#/macro/2026-10) is a rate-hike brief
+  if (topic && /^\d{4}-\d{2}$/.test(topic)) { ym = topic; topic = 'rates'; }
   state.topic = topicById(topic) ? topic : DEFAULT_TOPIC;
   const body = $('mkBody');
   body.classList.add('is-loading');
@@ -303,11 +336,12 @@ function renderWeeklyList(body) {
     && (!state.monthFilter || r.date.startsWith(state.monthFilter)) && (!state.weekFilter || String(weekOfMonth(r.date)) === state.weekFilter));
   if (!shown.length) { body.appendChild(h('div', 'mk-empty', topicText('no_match'))); return; }
   shown.forEach((r) => {
-    const row = h('a', 'mk-week'); row.href = '#/r/' + r.id;
-    row.appendChild(h('span', 'mk-week-date', dateLabel(r.date)));
+    const row = h('a', 'mk-week'); row.href = r.href || '#/r/' + r.id;
+    row.appendChild(h('span', 'mk-week-date', r.ym && !r.dated ? monthLabel(r.ym) : dateLabel(r.date)));
     const main = h('span', 'mk-week-main');
-    main.appendChild(h('b', null, r.title || r.source_name || r.date));
+    main.appendChild(h('b', null, (r.doc ? brief(r.doc, r.title) : r.title) || r.source_name || r.date));
     const bits = [];
+    if (r.pages) bits.push(r.pages + ' ' + t('slides'));
     if (r.stats && r.stats.tables) bits.push(r.stats.tables + ' ' + t('tables'));
     if (r.stats && r.stats.images) bits.push(r.stats.images + ' ' + t('figures'));
     if (r.source_name) bits.push(r.source_name);
@@ -321,8 +355,8 @@ function renderWeeklyList(body) {
 function renderEmpty(body, message) {
   body.textContent = '';
   const box = h('div', 'mk-empty');
-  box.appendChild(h('b', null, message || (fileTopic() ? topicText(state.topic === 'topics' ? 'empty_title' : 'empty_file_title') : t('empty_title'))));
-  if (!message) box.appendChild(document.createTextNode(fileTopic() ? topicText(state.topic === 'topics' ? 'empty_text' : 'empty_file_text') : t('empty_text')));
+  box.appendChild(h('b', null, message || (fileTopic() ? topicText('empty_title', 'empty_file_title') : t('empty_title'))));
+  if (!message) box.appendChild(document.createTextNode(fileTopic() ? topicText('empty_text', 'empty_file_text') : t('empty_text')));
   box.appendChild(document.createElement('br'));
   const b = h('button', 'btn primary', '⬆ ' + (fileTopic() ? t('upload_file') : t('upload'))); b.type = 'button';
   b.addEventListener('click', () => openUpload());
@@ -675,10 +709,24 @@ async function submitUpload(ev) {
 }
 
 /* ---------------------------------------------------------------- panel integration */
+async function openLatest() {
+  const seq = ++state.seq;
+  state.topic = DEFAULT_TOPIC;
+  try { await loadIndex(true); } catch (e) { state.index = null; }
+  if (seq !== state.seq || location.hash.replace(/\/$/, '') !== '#/macro') return;  // the reader moved on meanwhile
+  const latest = (state.weekly || [])[0];  // newest first, as the tiles show them
+  if (latest) { location.replace(latest.href || '#/r/' + latest.id); return; }  // replaces #/macro in the history
+  return show(DEFAULT_TOPIC, null);
+}
 function toLang(lang) { return lang === 'cn' || lang === 'zh' ? 'cn' : 'en'; }
 window.MacroMarket = {
   // every visit lists the reports as they are now (a report uploaded since the last visit appears)
-  mount(lang, topic, ym) { state.lang = toLang(lang); state.indexTopic = null; return show(topic || state.topic, ym || (topic ? null : state.ym)); },
+  // the Macro / Market tab itself (#/macro, no topic) opens the latest macro analysis: a report in
+  // the reader or a slide brief on its page; its Return leads to the Macro analysis tiles
+  mount(lang, topic, ym) {
+    state.lang = toLang(lang); state.indexTopic = null;
+    return topic ? show(topic, ym || null) : openLatest();
+  },
   invalidate() { state.indexTopic = null; },  // the panel's reports changed: reload the list on the next showing
   setLanguage(lang) {
     const next = toLang(lang);

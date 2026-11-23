@@ -123,23 +123,29 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
 
 ## Macro / Market
 
-The "Macro / Market" tab (`#/macro/<topic>`) has two fixed topic tags under
-the title, Weekly Updates (每周更新) and then Special Topics (专题研究); a click
-shows that topic's entries. Both take documents: "Upload file" accepts a
-`.docx` or a text-based `.pdf` with a date, and the file becomes an ordinary
-report of the sector `macro_weekly` or `macro_topics` (space `macro` in
+The "Macro / Market" tab (`#/macro/<topic>`) has three fixed topic tags under
+the title: Macro Analysis (宏观分析), Weekly Updates (每周更新) and Special
+Topics (专题研究). A click shows that topic's entries. Opening the Macro /
+Market tab itself (`#/macro`) shows the latest macro analysis straight away
+(a report in the reader, or a slide brief on its page), and its "Return"
+leads to the Macro Analysis tiles. All three take documents: "Upload file" accepts a `.docx` or a
+text-based `.pdf` with a date (Macro Analysis and Special Topics also take a
+`.pptx` deck or pictures), and the file becomes an ordinary report of the
+sector `macro_analysis`, `macro_weekly` or `macro_topics` (space `macro` in
 `data/sectors.json`), parsed and stored exactly like a research report, with
-the date in its metadata (`date`): one weekly update per date, while special
-topics of one date are told apart by title (a re-upload of the same topic
-replaces it). Each tag lists its
+the date in its metadata (`date`): one weekly update per date, while macro
+analyses and special topics of one date are told apart by title (a re-upload
+of the same one replaces it). Each tag lists its
 reports latest first as boxed entries (date, title, source file), and each
 opens in the report reader: contents on the left, the index of tables and
 figures on the right; "Return" goes back to that tag. Weekly Updates also has
-a week filter and "Generate with AI" (the weekly-market-update skill);
-Special Topics has neither. On GitHub Pages the file goes through
-`panel/incoming/` like any upload. Special Topics replaced the former Rate Hike
-Expectations tag (市场加息预期; old `#/macro/rates` links open Special Topics),
-whose one brief (2026-10) stays in `macro/data/rates/` unlisted. That tag held one
+a week filter and "Generate with AI" (the weekly-market-update skill); the
+other two have neither. On GitHub Pages the file goes through
+`panel/incoming/` like any upload. Macro Analysis also lists the rate-hike
+slide briefs (市场加息预期更新, `macro/data/rates/`, its date from the brief's
+`date`, else its month); such an entry opens the brief's own page
+(`#/macro/rates/<YYYY-MM>`, shown under the Macro Analysis tag) with its year
+and month pickers and its "Upload slides" button. The rate-hike topic holds one
 brief per month, rebuilt slide by slide from screenshots, with the same
 logic as Investment performance.
 You drop several slide images at once (PNG, JPEG or WebP; drag, choose or

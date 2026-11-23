@@ -24,6 +24,8 @@
 /* ───────── sticky strip: brief title, month picker, upload ───────── */
 #view-macro .mk-bar{display:flex; align-items:center; gap:12px; padding:0 22px; min-height:var(--mk-bar-h); border-bottom:1px solid var(--line-soft); border-radius:4px 4px 0 0;
   position:sticky; top:var(--tb-top); z-index:30; background:var(--card); transition:top .28s ease; box-shadow:0 6px 14px -10px rgba(10,30,60,.25)}
+#view-macro .mk-back{flex:none; font-weight:700; padding:6px 14px 6px 10px; letter-spacing:.2px; box-shadow:0 1px 2px rgba(12,43,78,.18)}
+#view-macro .mk-back[hidden]{display:none}
 #view-macro .mk-bar-title{flex:1; min-width:0; font-size:13.5px; font-weight:600; color:var(--ink-2); overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
 #view-macro .mk-controls{display:flex; align-items:center; gap:10px; flex-shrink:0}
 #view-macro .mk-controls label{display:flex; align-items:center; gap:6px; font-size:11px; font-weight:700; color:var(--muted); letter-spacing:.3px; text-transform:uppercase; white-space:nowrap}

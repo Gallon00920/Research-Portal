@@ -281,6 +281,17 @@
     "category": "Alternative Yield"
   },
   {
+    "id": "macro_analysis",
+    "code": "MA",
+    "name_en": "Macro Analysis",
+    "name_cn": "宏观分析",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "macro"
+  },
+  {
     "id": "macro_weekly",
     "code": "WK",
     "name_en": "Weekly Updates",

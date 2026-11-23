@@ -215,7 +215,7 @@ def report_key(m: dict[str, Any]) -> tuple:
     return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "", topic)
 
 
-MULTI_PER_DATE = {"macro_topics"}  # sectors whose reports of one date are separate reports, told apart by title
+MULTI_PER_DATE = {"macro_analysis", "macro_topics"}  # sectors whose reports of one date are separate reports, told apart by title
 
 
 def remove_duplicates(meta: dict[str, Any]) -> list[str]:

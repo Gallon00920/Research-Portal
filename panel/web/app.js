@@ -3,7 +3,7 @@
             #/s/<sector>       opens the latest report of that sector in the current language
             #/portfolio        portfolio management dashboard (the same page for the portfolio funds)
             #/portfolio/s/<id> opens the latest report of that fund
-            #/macro[/<topic>]           Macro / Market: weekly updates and special topics, dated reports (macro/web/macro.js)
+            #/macro[/<topic>]           Macro / Market: macro analysis, weekly updates and special topics, dated reports (macro/web/macro.js)
             #/r/<id>[/anchor]  report reader (any space; the space follows the report's sector)
    Only full reports in the current UI language are ever listed.
    Two "spaces" share this code (see SPACES): the research sectors (space "research", the
@@ -93,7 +93,7 @@ function sectionName(sec){ return t('sec_' + sec); }
 function hashDash(space){ return SPACES[space || state.space].hash; }
 /* a fund's page: #/portfolio[/<section>]/s/<id>. Without a section the fund opens on its first tab that has a report */
 /* the Macro / Market sectors each have a tab of the macro view */
-const MACRO_TOPIC_OF = {macro_weekly: 'weekly', macro_topics: 'topics'};
+const MACRO_TOPIC_OF = {macro_analysis: 'analysis', macro_weekly: 'weekly', macro_topics: 'topics'};
 function hashSector(id, section){
   const sp = spaceOf(id);
   if (sp === 'macro') return '#/macro/' + (MACRO_TOPIC_OF[id] || 'weekly');
@@ -949,7 +949,7 @@ const REPORT_EXTS = ['.docx', '.pdf'];
 const DECK_EXTS = ['.pptx', '.ppt'];
 const IMAGE_EXTS = ['.png', '.jpg', '.jpeg', '.webp', '.gif', '.bmp'];
 function imagesAllowed(){
-  return (state.upSpace === 'portfolio' && $('upSection').value === 'internal') || $('upSector').value === 'macro_topics';
+  return (state.upSpace === 'portfolio' && $('upSection').value === 'internal') || ['macro_analysis', 'macro_topics'].includes($('upSector').value);
 }
 function uploadExts(){ return imagesAllowed() ? REPORT_EXTS.concat(DECK_EXTS, IMAGE_EXTS) : REPORT_EXTS; }
 function fileExt(name){ const m = /\.[^.]+$/.exec(name || ''); return m ? m[0].toLowerCase() : ''; }
