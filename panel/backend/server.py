@@ -209,8 +209,13 @@ def report_key(m: dict[str, Any]) -> tuple:
     """One edition per sector + sub-sector + quarter + type + language; a new upload with the same key
     replaces the old one. The sub-sector ("section": internal review / quarterly updates) exists for
     portfolio funds only and is empty elsewhere."""
-    # a dated report (a weekly update) is one edition per date
-    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "")
+    # a dated report (a weekly update) is one edition per date; in a sector that holds several
+    # reports per date (special topics) the title tells them apart, so a re-upload replaces only its own
+    topic = " ".join((m.get("title") or "").lower().split()) if m.get("sector") in MULTI_PER_DATE else ""
+    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "", topic)
+
+
+MULTI_PER_DATE = {"macro_topics"}  # sectors whose reports of one date are separate reports, told apart by title
 
 
 def remove_duplicates(meta: dict[str, Any]) -> list[str]:

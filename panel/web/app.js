@@ -3,7 +3,7 @@
             #/s/<sector>       opens the latest report of that sector in the current language
             #/portfolio        portfolio management dashboard (the same page for the portfolio funds)
             #/portfolio/s/<id> opens the latest report of that fund
-            #/macro[/<topic>[/YYYY-MM]]  Macro / Market: slide briefs read from screenshots, per topic (macro/web/macro.js)
+            #/macro[/<topic>]           Macro / Market: weekly updates and special topics, dated reports (macro/web/macro.js)
             #/r/<id>[/anchor]  report reader (any space; the space follows the report's sector)
    Only full reports in the current UI language are ever listed.
    Two "spaces" share this code (see SPACES): the research sectors (space "research", the
@@ -92,7 +92,13 @@ function sections(space){ return SPACES[space || state.space].sections || null; 
 function sectionName(sec){ return t('sec_' + sec); }
 function hashDash(space){ return SPACES[space || state.space].hash; }
 /* a fund's page: #/portfolio[/<section>]/s/<id>. Without a section the fund opens on its first tab that has a report */
-function hashSector(id, section){ const sp = spaceOf(id); return SPACES[sp].hash.replace(/\/$/, '') + (sections(sp) && section ? '/' + section : '') + '/s/' + id; }
+/* the Macro / Market sectors each have a tab of the macro view */
+const MACRO_TOPIC_OF = {macro_weekly: 'weekly', macro_topics: 'topics'};
+function hashSector(id, section){
+  const sp = spaceOf(id);
+  if (sp === 'macro') return '#/macro/' + (MACRO_TOPIC_OF[id] || 'weekly');
+  return SPACES[sp].hash.replace(/\/$/, '') + (sections(sp) && section ? '/' + section : '') + '/s/' + id;
+}
 /* in a space with sub-sectors (portfolio management) every report belongs to one: its `section`
    (AID analysis or quarterly updates; reports saved without one count as the first). The funds
    themselves belong to the space as a whole, and a fund's page has one tab per sub-sector. */
@@ -172,6 +178,9 @@ function setDocLang(l){
 async function loadAll(){
   const {sectors, reports, meta} = await DL.load();
   state.sectors = sectors; state.reports = reports; state.meta = meta;
+  state.loadedAt = Date.now();
+  // the Macro / Market view keeps its own list of the dated reports: it reloads it on its next showing
+  if (window.MacroMarket && window.MacroMarket.invalidate) window.MacroMarket.invalidate();
   $('logoutBtn').hidden = !meta.auth;
   $('tokenBtn').hidden = DL.mode !== 'static';
   $('dlBtn').hidden = !DL.canDownload();
@@ -920,7 +929,11 @@ function openUpload(sectorId, editMeta){
   const msg = $('upMsg'); msg.textContent = ''; msg.className = 'form-msg';
   // "Generate with AI" is offered when the server can call Claude and a sector of the space has a
   // skill (the research panel, the Macro / Market weekly updates); a new report only
-  const canAi = aiOn() && !isEdit && spaceSectors(upSpace).some(s => (AI.config.sectors || {})[s.id]);
+  // opened for a Macro / Market sector, the AI mode is offered only when that sector has a skill
+  // (the weekly updates do, special topics do not)
+  const canAi = aiOn() && !isEdit && (sectorId && upSpace === 'macro'
+    ? !!(AI.config.sectors || {})[sectorId]
+    : spaceSectors(upSpace).some(s => (AI.config.sectors || {})[s.id]));
   $('upModes').hidden = !canAi;
   AI.space = upSpace;
   $('upDate').value = isEdit && editMeta.date ? editMeta.date : todayIso();
@@ -1488,9 +1501,18 @@ function parseHash(){
   if (p[0] === 'r' && p[1]) return {view: 'art', id: p[1], anchor: p.slice(2).join('/') || null};
   return {view: 'dash', space: 'research'};
 }
+/* A dashboard or fund page shows the reports as they are now: an upload made in another tab, on
+   another computer or on the server since the list was loaded appears without refreshing the page
+   (the list is reloaded when it is more than 30 seconds old; this tab's own uploads reload it at once). */
+const RELOAD_AFTER_MS = 30000;
+async function freshen(){
+  if (DL.mode !== 'api' || Date.now() - (state.loadedAt || 0) < RELOAD_AFTER_MS) return;
+  try { await loadAll(); } catch (e) { /* keep the list we have; the next visit tries again */ }
+}
 async function route(){
   const h = parseHash();
   try {
+    if (h.view === 'dash' || h.view === 'sector') await freshen();
     if (h.view === 'dash') renderDash(h.space);
     else if (h.view === 'news') renderNews();
     else if (h.view === 'factors') renderFactors(h.tab, h.ym);
@@ -1506,7 +1528,7 @@ async function route(){
 /* ---------------------------------------------------------------- wire up */
 function wire(){
   $('brandBtn').addEventListener('click', () => nav('#/'));
-  $('backBtn').addEventListener('click', () => nav(hashDash()));
+  $('backBtn').addEventListener('click', () => nav(state.space === 'macro' && state.sectorId ? hashSector(state.sectorId) : hashDash()));
   $('langToggle').addEventListener('click', () => setLang(state.lang === 'cn' ? 'en' : 'cn'));
   $('logoutBtn').addEventListener('click', async () => { await DL.logout(); if (DL.mode === 'api') location.href = '/login.html'; else location.reload(); });
   $('q').addEventListener('input', doSearch);

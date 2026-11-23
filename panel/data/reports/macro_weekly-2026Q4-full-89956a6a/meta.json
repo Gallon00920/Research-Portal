@@ -1,0 +1,102 @@
+{
+  "id": "macro_weekly-2026Q4-full-89956a6a",
+  "title": "202611 Week3",
+  "sector": "macro_weekly",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "cn",
+  "section": "",
+  "keywords": [
+    "贷款",
+    "市场",
+    "融资",
+    "定价",
+    "加息",
+    "信用"
+  ],
+  "source_name": "Weekly_Market_Update_202611_Week4.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-23T09:26:57+00:00",
+  "date": "2026-11-23",
+  "stats": {
+    "blocks": 60,
+    "images": 4,
+    "tables": 0,
+    "chars": 15405
+  },
+  "exhibit_count": 4,
+  "toc": [
+    {
+      "level": 1,
+      "text": "1. Things We Should Know"
+    },
+    {
+      "level": 1,
+      "text": "2. Macro：AI 交易的“信仰重估”撞上加息周期"
+    },
+    {
+      "level": 2,
+      "text": "2.1 本周股市大事件：七连跌、三大指数进入 correction"
+    },
+    {
+      "level": 2,
+      "text": "2.2 市场在重新定价什么：不是 Fed，是 AI capex 的“周期属性”"
+    },
+    {
+      "level": 2,
+      "text": "2.3 Fed：12 月加息基本锁定，分歧在“之后几次”"
+    },
+    {
+      "level": 2,
+      "text": "2.4 数据：增长有韧性，通胀下得慢，Fed 没有停手的理由"
+    },
+    {
+      "level": 2,
+      "text": "2.5 金融条件正在替 Fed 加息，但 Fed 不会因此提前收手"
+    },
+    {
+      "level": 1,
+      "text": "3. Credit：correction 还是周期拐点"
+    },
+    {
+      "level": 2,
+      "text": "3.1 信用的 beta 远低于股票：这是“估值事件”的定价方式"
+    },
+    {
+      "level": 2,
+      "text": "3.2 指数之下的分层：BB 与 CCC 已经是两个市场"
+    },
+    {
+      "level": 2,
+      "text": "3.3 Barclays 与 JPM：分歧在时间维度，不在方向"
+    },
+    {
+      "level": 2,
+      "text": "3.4 供给：2027 年 IG 再创纪录，HY 与 loan 的净供给反而下降"
+    },
+    {
+      "level": 1,
+      "text": "4. Private Credit：估值有人接，基本面仍在变差"
+    },
+    {
+      "level": 2,
+      "text": "4.1 Barclays 上调 BDC 至 OW：买的是 carry，不是基本面"
+    },
+    {
+      "level": 2,
+      "text": "4.2 JPM 的贷款违约展望，是直接贷款组合的领先指标"
+    },
+    {
+      "level": 2,
+      "text": "4.3 AI 融资在公开市场受挫的同一周，继续向私募信贷与 ABF 迁移"
+    },
+    {
+      "level": 2,
+      "text": "4.4 监控名单事件"
+    }
+  ],
+  "summary": "这是 2025 年 4 月关税冲击以来美股最差的一周，而且是在“利好兑现”的情况下跌出来的。S&P 500 全周 −8.61% 收于 6,910.39，连续七个交易日下跌，较 10/6 历史收盘高点 7,818.93 回撤 11.62%；Nasdaq Composite −10.02% 至 22,617.73，年内转负；Dow −8.02% 至 48,147.33；Russell 2000 −7.48%。VIX 周一收 22.91、周五"
+}

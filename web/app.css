@@ -245,6 +245,11 @@ table.data tr:nth-child(even) td{background:var(--chip)}
 table.data tr td.mk-shade{background:#c6daf1}  /* as specific as the zebra rule above, and after it */
 table.data tr td.mk-highlight{background:#f6d56a; font-weight:700}
 table.data tr td.mk-bold{font-weight:700; color:var(--blue-600)}
+/* a cell's tone as the source colours it (the Macro / Market slide tables): positive, negative, warning, neutral */
+table.data tr td.mk-positive{background:#e3f1e6; color:#2a7a3b}
+table.data tr td.mk-negative{background:#fbe7e4; color:#b33a2b}
+table.data tr td.mk-warning{background:#fdf3dc; color:#8a6410}
+table.data tr td.mk-neutral{background:#eeeeee; color:#555}
 .callout{border-left:4px solid var(--blue-600); background:var(--chip); padding:13px 18px; border-radius:0 4px 4px 0; margin:6px 0 18px; font-size:14.5px; line-height:1.7; max-width:none}
 
 /* exhibit index at the end of the article */

@@ -1,6 +1,6 @@
 {
   "id": "macro_weekly-2026Q4-full-414f92ba",
-  "title": "202611 Week2",
+  "title": "202611 Week1",
   "sector": "macro_weekly",
   "year": 2026,
   "quarter": 4,
@@ -102,5 +102,6 @@
       "text": "4.4 GP 分化、LP 二级定价与 BDC 财报季"
     }
   ],
-  "summary": "输入：GS / MS / Barclays / JPM 宏观与信用共 8 份报告（2026/11/5–11/13）+ AID Research Portal 新闻（11/6–11/13）。本期不做原文摘录：以下为基于上述材料的综合判断，broker 仅作为数字出处出现；1 为摘要，论证与完整出处见 2–4 节。"
+  "summary": "输入：GS / MS / Barclays / JPM 宏观与信用共 8 份报告（2026/11/5–11/13）+ AID Research Portal 新闻（11/6–11/13）。本期不做原文摘录：以下为基于上述材料的综合判断，broker 仅作为数字出处出现；1 为摘要，论证与完整出处见 2–4 节。",
+  "updated_at": "2026-11-23T09:26:17+00:00"
 }

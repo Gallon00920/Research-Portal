@@ -187,8 +187,13 @@ def period_label(y: int, q: int) -> str:
 
 def report_key(m: dict[str, Any]) -> tuple:
     # the sub-sector ("section": internal review / quarterly updates) exists for portfolio funds only;
-    # a dated report (a weekly update) is one edition per date
-    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "")
+    # a dated report (a weekly update) is one edition per date; in a sector that holds several
+    # reports per date (special topics) the title tells them apart (same rule as server.py)
+    topic = " ".join((m.get("title") or "").lower().split()) if m.get("sector") in MULTI_PER_DATE else ""
+    return (m.get("sector"), m.get("section") or "", m.get("year"), m.get("quarter"), m.get("nature"), m.get("language"), m.get("date") or "", topic)
+
+
+MULTI_PER_DATE = {"macro_topics"}
 
 
 def dedupe_all(c: Crypto) -> int:

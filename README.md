@@ -114,17 +114,23 @@ Then open <http://127.0.0.1:8765>. Python 3.10+ is required.
 
 ## Macro / Market
 
-The "Macro / Market" tab (`#/macro/<topic>[/<key>]`) has two fixed topic
-tags under the title, Weekly Updates (每周更新) and then Rate Hike
-Expectations (市场加息预期); a click shows that topic's entries. **Weekly
-Updates** takes a document: "Upload file" accepts the week's `.docx` or
-`.pdf` with a date, and the file becomes an ordinary report of the sector
-`macro_weekly` (space `macro` in `data/sectors.json`), parsed and stored
-exactly like a research report, with the date in its metadata (`date`) and
-one edition per date. The tag lists the updates latest first, and each
+The "Macro / Market" tab (`#/macro/<topic>`) has two fixed topic tags under
+the title, Weekly Updates (每周更新) and then Special Topics (专题研究); a click
+shows that topic's entries. Both take documents: "Upload file" accepts a
+`.docx` or a text-based `.pdf` with a date, and the file becomes an ordinary
+report of the sector `macro_weekly` or `macro_topics` (space `macro` in
+`data/sectors.json`), parsed and stored exactly like a research report, with
+the date in its metadata (`date`): one weekly update per date, while special
+topics of one date are told apart by title (a re-upload of the same topic
+replaces it). Each tag lists its
+reports latest first as boxed entries (date, title, source file), and each
 opens in the report reader: contents on the left, the index of tables and
-figures on the right. On GitHub Pages the file goes through
-`panel/incoming/` like any upload. **Rate Hike Expectations** holds one
+figures on the right; "Return" goes back to that tag. Weekly Updates also has
+a week filter and "Generate with AI" (the weekly-market-update skill);
+Special Topics has neither. On GitHub Pages the file goes through
+`panel/incoming/` like any upload. Special Topics replaced the former Rate Hike
+Expectations tag (市场加息预期; old `#/macro/rates` links open Special Topics),
+whose one brief (2026-10) stays in `macro/data/rates/` unlisted. That tag held one
 brief per month, rebuilt slide by slide from screenshots, with the same
 logic as Investment performance.
 You drop several slide images at once (PNG, JPEG or WebP; drag, choose or

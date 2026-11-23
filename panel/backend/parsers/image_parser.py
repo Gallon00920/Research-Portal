@@ -390,7 +390,7 @@ def _table_cells(raw: dict[str, Any]) -> tuple[list[list[str]], list[list[Any]]]
             r, c, kind = int(m.get("row")), int(m.get("col")), str(m.get("mark"))
         except (TypeError, ValueError, AttributeError):
             continue
-        if 0 <= r < len(rows) and 0 <= c < ncols and kind in ("shade", "highlight", "bold"):
+        if 0 <= r < len(rows) and 0 <= c < ncols and kind in ("shade", "highlight", "bold", "positive", "negative", "warning", "neutral"):
             marks.append([r, c, kind])
     return rows, marks
 

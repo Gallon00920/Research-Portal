@@ -1,0 +1,142 @@
+{
+  "id": "private_equity-2026Q4-full-e888eac6",
+  "title": "US Private Equity Quarterly Report (2026Q4)",
+  "sector": "private_equity",
+  "year": 2026,
+  "quarter": 4,
+  "period": "4Q2026",
+  "period_key": 20264,
+  "nature": "full",
+  "language": "en",
+  "section": "",
+  "keywords": [
+    "US PE",
+    "IRR",
+    "DPI",
+    "PitchBook",
+    "M&A",
+    "Jun"
+  ],
+  "source_name": "Junson_PE_Report_2026Q4_EN_v1.docx",
+  "source_ext": ".docx",
+  "uploaded_at": "2026-11-20T08:14:15+00:00",
+  "stats": {
+    "blocks": 88,
+    "images": 35,
+    "tables": 7,
+    "chars": 19266
+  },
+  "exhibit_count": 42,
+  "masthead": "JUNSON Capital Research",
+  "toc": [
+    {
+      "level": 1,
+      "text": "1 Market Overview"
+    },
+    {
+      "level": 1,
+      "text": "2 Deal Activity"
+    },
+    {
+      "level": 2,
+      "text": "2.1 Deal value and count"
+    },
+    {
+      "level": 2,
+      "text": "2.2 Deal composition"
+    },
+    {
+      "level": 2,
+      "text": "2.3 LBO volume in M&A context"
+    },
+    {
+      "level": 2,
+      "text": "2.4 Middle market"
+    },
+    {
+      "level": 2,
+      "text": "2.5 How the volume measures nest — and where private credit connects"
+    },
+    {
+      "level": 1,
+      "text": "3 Valuations, Performance & Financing"
+    },
+    {
+      "level": 2,
+      "text": "3.1 Entry multiples"
+    },
+    {
+      "level": 2,
+      "text": "3.2 Fund performance: rolling horizon IRR"
+    },
+    {
+      "level": 1,
+      "text": "4 Exits & Liquidity"
+    },
+    {
+      "level": 2,
+      "text": "4.1 Exit activity"
+    },
+    {
+      "level": 2,
+      "text": "4.2 Holding periods and inventory"
+    },
+    {
+      "level": 1,
+      "text": "5 Fundraising & Dry Powder"
+    },
+    {
+      "level": 2,
+      "text": "5.1 Fundraising"
+    },
+    {
+      "level": 2,
+      "text": "5.2 Dry powder and deployment runway"
+    },
+    {
+      "level": 1,
+      "text": "7 Things We Should Know"
+    },
+    {
+      "level": 2,
+      "text": "7.1 The rotation from software to physical assets"
+    },
+    {
+      "level": 2,
+      "text": "7.2 A top-heavy recovery meets higher rates"
+    },
+    {
+      "level": 2,
+      "text": "7.3 How the PE market impacts the private credit market"
+    },
+    {
+      "level": 2,
+      "text": "7.4 How the PE market impacts GP-stakes funds"
+    },
+    {
+      "level": 2,
+      "text": "7.5 Implications for Junson"
+    },
+    {
+      "level": 1,
+      "text": "8 Fund Update"
+    },
+    {
+      "level": 2,
+      "text": "8.1 Blue Owl GP Stakes V"
+    },
+    {
+      "level": 3,
+      "text": "8.1.1 Fund snapshot"
+    },
+    {
+      "level": 3,
+      "text": "8.1.2 Portfolio composition"
+    },
+    {
+      "level": 3,
+      "text": "8.1.3 Fund-level performance"
+    }
+  ],
+  "summary": "US private equity recovered part of the ground it lost in the second quarter, but the recovery is narrow. 3Q26 deal value rose 20.9% QoQ to US$233.8bn and exit value rose 50.4% to US$165.5bn, yet year-to-date deal value "
+}

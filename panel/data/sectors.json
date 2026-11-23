@@ -290,5 +290,16 @@
     "coverage_cn": [],
     "status": "active",
     "space": "macro"
+  },
+  {
+    "id": "macro_topics",
+    "code": "ST",
+    "name_en": "Special Topics",
+    "name_cn": "专题研究",
+    "region": "",
+    "coverage_en": [],
+    "coverage_cn": [],
+    "status": "active",
+    "space": "macro"
   }
 ]
