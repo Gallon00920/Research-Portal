@@ -26,6 +26,9 @@ import subprocess
 import sys
 import threading
 import time
+import urllib.error
+import urllib.parse
+import urllib.request
 import uuid
 import zipfile
 from datetime import datetime, timezone
@@ -82,7 +85,7 @@ if PANEL_PASSWORD.lower() == "open":
 SECRET_KEY = os.environ.get("SECRET_KEY", "").strip() or hashlib.sha256(("aid-panel:" + PANEL_PASSWORD).encode()).hexdigest()
 SESSION_COOKIE = "aid_session"
 SESSION_DAYS = 30
-PUBLIC_PATHS = {"/login.html", "/api/login", "/api/health"}
+PUBLIC_PATHS = {"/login.html", "/api/login", "/api/health", "/api/auth/login", "/api/auth/loginCallback"}
 
 
 def auth_enabled() -> bool:
@@ -95,14 +98,25 @@ def make_token() -> str:
     return exp + "." + sig
 
 
+def make_user_token(user_id: str) -> str:
+    expires_at = str(int(time.time()) + SESSION_DAYS * 86400)
+    signed = f"ok:{expires_at}:{user_id}"
+    signature = hmac.new(SECRET_KEY.encode(), signed.encode(), hashlib.sha256).hexdigest()
+    return f"{expires_at}.{signature}.{user_id}"
+
+
 def token_ok(token: str | None) -> bool:
     if not token or "." not in token:
         return False
-    exp, sig = token.split(".", 1)
-    if not exp.isdigit() or int(exp) < time.time():
+    pieces = token.split(".", 2)
+    expires_at = pieces[0]
+    signature = pieces[1] if len(pieces) > 1 else ""
+    user_id = pieces[2] if len(pieces) == 3 else ""
+    if not expires_at.isdigit() or int(expires_at) < time.time():
         return False
-    good = hmac.new(SECRET_KEY.encode(), ("ok:" + exp).encode(), hashlib.sha256).hexdigest()
-    return hmac.compare_digest(good, sig)
+    signed = f"ok:{expires_at}:{user_id}" if user_id else f"ok:{expires_at}"
+    good = hmac.new(SECRET_KEY.encode(), signed.encode(), hashlib.sha256).hexdigest()
+    return hmac.compare_digest(good, signature)
 
 
 def is_https(request: Request) -> bool:
@@ -146,6 +160,218 @@ def api_logout():
 @app.get("/api/health")
 def api_health():
     return {"ok": True, "auth": auth_enabled()}
+
+
+# ------------------------------------------------------- JMS Azure sign-in
+# Same shape as report center: this app never talks to Azure. Auto Sign posts
+# here, we ask portal-service for the Microsoft redirect, and portal sends the
+# browser back to /api/auth/loginCallback. Portal host is UAT; prev Azure login is restricted.
+PORTAL_LOGIN_URL = os.environ.get("PORTAL_LOGIN_URL", "https://v3.uat.junson.cloud/portal-service/unified_login").strip()
+PORTAL_LOGIN_VALIDATE_URL = os.environ.get("PORTAL_LOGIN_VALIDATE_URL", "https://v3.uat.junson.cloud/portal-service/unified_login_validate").strip()
+LOGIN_CALLBACK_URL = os.environ.get("LOGIN_CALLBACK_URL", "").strip()
+AZURE_PENDING_SECONDS = 30 * 60
+_azure_pending: dict[str, dict[str, Any]] = {}
+_azure_pending_lock = threading.Lock()
+_truststore_ready = False
+
+
+def ensure_truststore() -> None:
+    global _truststore_ready
+    if _truststore_ready:
+        return
+    try:
+        import truststore  # type: ignore  (TLS-inspecting corporate proxies)
+        truststore.inject_into_ssl()
+    except Exception:
+        pass
+    _truststore_ready = True
+
+
+def external_origin(request: Request) -> str:
+    forwarded_proto = request.headers.get("x-forwarded-proto", "").split(",")[0].strip()
+    forwarded_host = request.headers.get("x-forwarded-host", "").split(",")[0].strip()
+    scheme = forwarded_proto or request.url.scheme
+    host = forwarded_host or request.headers.get("host", request.url.netloc)
+    return f"{scheme}://{host}"
+
+
+def azure_callback_url(request: Request) -> str:
+    if LOGIN_CALLBACK_URL:
+        return LOGIN_CALLBACK_URL
+    return f"{external_origin(request)}/api/auth/loginCallback"
+
+
+def safe_return_url(request: Request, candidate: str) -> str:
+    origin = external_origin(request)
+    fallback = f"{origin}/"
+    if not candidate:
+        return fallback
+    parsed = urllib.parse.urlparse(candidate)
+    if parsed.scheme or parsed.netloc:
+        if f"{parsed.scheme}://{parsed.netloc}" != origin:
+            return fallback
+        path = parsed.path or "/"
+        if not path.startswith("/"):
+            return fallback
+        query = f"?{parsed.query}" if parsed.query else ""
+        fragment = f"#{parsed.fragment}" if parsed.fragment else ""
+        return f"{origin}{path}{query}{fragment}"
+    if candidate.startswith("/") and not candidate.startswith("//"):
+        return f"{origin}{candidate}"
+    return fallback
+
+
+def login_fail(message: str) -> RedirectResponse:
+    quoted = urllib.parse.quote(message[:300] or "Login failed")
+    return RedirectResponse(f"/login.html?result=fail&msg={quoted}", status_code=302)
+
+
+def remember_azure_login(validate_str: str, return_url: str) -> None:
+    now = time.time()
+    with _azure_pending_lock:
+        expired = [key for key, item in _azure_pending.items() if float(item["expires_at"]) < now]
+        for key in expired:
+            _azure_pending.pop(key, None)
+        _azure_pending[validate_str] = {"return_url": return_url, "expires_at": now + AZURE_PENDING_SECONDS}
+
+
+def take_azure_login(validate_str: str) -> dict[str, Any] | None:
+    now = time.time()
+    with _azure_pending_lock:
+        item = _azure_pending.pop(validate_str, None)
+    if not item or float(item["expires_at"]) < now:
+        return None
+    return item
+
+
+class PortalNoRedirect(urllib.request.HTTPRedirectHandler):
+    """Portal puts the Microsoft address in the JSON body. Do not follow it from the server."""
+
+    def redirect_request(self, incoming_request, file_pointer, status_code, message, headers, new_url):
+        return None
+
+
+def post_portal_json(url: str, payload: dict[str, Any]) -> dict[str, Any]:
+    ensure_truststore()
+    body = json.dumps(payload).encode("utf-8")
+    portal_request = urllib.request.Request(
+        url,
+        data=body,
+        headers={"Content-Type": "application/json;charset=UTF-8", "Accept": "application/json"},
+        method="POST",
+    )
+    opener = urllib.request.build_opener(PortalNoRedirect)
+    try:
+        with opener.open(portal_request, timeout=20) as portal_response:
+            raw = portal_response.read().decode("utf-8")
+    except urllib.error.HTTPError as http_error:
+        raw = http_error.read().decode("utf-8", errors="replace")
+        if http_error.code not in {200, 302} or not raw.lstrip().startswith("{"):
+            raise RuntimeError(f"portal http {http_error.code}: {raw[:300]}") from http_error
+    except urllib.error.URLError as url_error:
+        raise RuntimeError(f"portal unreachable: {url_error.reason}") from url_error
+    parsed = json.loads(raw)
+    if not isinstance(parsed, dict):
+        raise RuntimeError("portal returned an unexpected body")
+    return parsed
+
+
+def portal_data(body: dict[str, Any]) -> Any:
+    data = body.get("data")
+    if isinstance(data, str) and data[:1] in "{[":
+        try:
+            return json.loads(data)
+        except json.JSONDecodeError:
+            return data
+    return data
+
+
+@app.post("/api/auth/login")
+async def azure_login(
+    request: Request,
+    loginWay: str = Form(""),
+    loginAfterCallbackUrl: str = Form(""),
+    logout: str = Form(""),
+):
+    if loginWay != "AZURE_AD":
+        return login_fail("Unsupported login way")
+    if not PORTAL_LOGIN_URL:
+        return login_fail("PORTAL_LOGIN_URL is not configured")
+    validate_str = str(uuid.uuid4())
+    return_url = safe_return_url(request, loginAfterCallbackUrl)
+    remember_azure_login(validate_str, return_url)
+    payload = {
+        "login_way": "AZURE_AD",
+        "login_after_callback_url": azure_callback_url(request),
+        "validate_str": validate_str,
+        "logout": "1" if logout == "1" else "",
+        "try_login": "",
+        "account": "",
+        "password": "",
+        "azure_state": "",
+    }
+    try:
+        body = await run_in_threadpool(post_portal_json, PORTAL_LOGIN_URL, payload)
+    except Exception as error:
+        take_azure_login(validate_str)
+        return login_fail(str(error))
+    if str(body.get("code")) not in {"0"}:
+        take_azure_login(validate_str)
+        return login_fail(str(body.get("msg") or "Azure login was rejected"))
+    data = portal_data(body)
+    if not isinstance(data, dict) or str(data.get("status")) != "1":
+        take_azure_login(validate_str)
+        message = data.get("message") if isinstance(data, dict) else body.get("msg")
+        return login_fail(str(message or "Azure login was rejected"))
+    redirect_url = str(data.get("redirect_url") or "")
+    parsed_redirect = urllib.parse.urlparse(redirect_url)
+    if parsed_redirect.scheme not in {"http", "https"} or not parsed_redirect.netloc:
+        take_azure_login(validate_str)
+        return login_fail("Portal did not return a login address")
+    return RedirectResponse(redirect_url, status_code=302)
+
+
+@app.get("/api/auth/loginCallback")
+async def azure_login_callback(request: Request):
+    status = request.query_params.get("status") or ""
+    portal_token = request.query_params.get("token") or ""
+    user_id = request.query_params.get("userId") or ""
+    message = request.query_params.get("msg") or ""
+    validate_str = request.query_params.get("validateStr") or ""
+    pending = take_azure_login(validate_str)
+    if not pending:
+        return login_fail("Login expired, please try Auto Sign again")
+    return_url = str(pending["return_url"])
+    if status != "1" or not portal_token or not user_id:
+        return login_fail(message or "Azure sign-in failed")
+    if not PORTAL_LOGIN_VALIDATE_URL:
+        return login_fail("PORTAL_LOGIN_VALIDATE_URL is not configured")
+    payload = {
+        "status": status,
+        "token": portal_token,
+        "user_id": user_id,
+        "msg": message,
+        "validate_str": validate_str,
+    }
+    try:
+        body = await run_in_threadpool(post_portal_json, PORTAL_LOGIN_VALIDATE_URL, payload)
+    except Exception as error:
+        return login_fail(str(error))
+    if str(body.get("code")) not in {"0"}:
+        return login_fail(str(body.get("msg") or "Login verification failed"))
+    access_token = portal_data(body)
+    if not isinstance(access_token, str) or not access_token.strip():
+        return login_fail("Login verification failed")
+    response = RedirectResponse(return_url, status_code=302)
+    response.set_cookie(
+        SESSION_COOKIE,
+        make_user_token(user_id),
+        max_age=SESSION_DAYS * 86400,
+        httponly=True,
+        samesite="lax",
+        secure=is_https(request),
+    )
+    return response
 
 
 # ----------------------------------------------------------------- utilities

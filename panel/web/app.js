@@ -1578,7 +1578,7 @@ function wire(){
   $('brandBtn').addEventListener('click', () => nav('#/'));
   $('backBtn').addEventListener('click', () => nav(state.space === 'macro' && state.sectorId ? hashSector(state.sectorId) : hashDash()));
   $('langToggle').addEventListener('click', () => setLang(state.lang === 'cn' ? 'en' : 'cn'));
-  $('logoutBtn').addEventListener('click', async () => { await DL.logout(); if (DL.mode === 'api') location.href = '/login.html'; else location.reload(); });
+  $('logoutBtn').addEventListener('click', async () => { await DL.logout(); if (DL.mode === 'api') location.href = '/login.html?logout=1'; else location.reload(); });
   $('q').addEventListener('input', doSearch);
   const jump = () => { const f = doSearch(); if (f) f.click(); };
   $('q').addEventListener('keydown', e => { if (e.key === 'Enter') jump(); });
