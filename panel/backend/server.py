@@ -85,6 +85,8 @@ if PANEL_PASSWORD.lower() == "open":
 SECRET_KEY = os.environ.get("SECRET_KEY", "").strip() or hashlib.sha256(("aid-panel:" + PANEL_PASSWORD).encode()).hexdigest()
 SESSION_COOKIE = "aid_session"
 SESSION_DAYS = 30
+# Set False to turn off password sign-in. Azure Auto Sign is unchanged.
+PASSWORD_LOGIN_ENABLED = False
 PUBLIC_PATHS = {"/login.html", "/api/login", "/api/health", "/api/auth/login", "/api/auth/loginCallback"}
 
 
@@ -139,6 +141,8 @@ async def require_login(request: Request, call_next):
 
 @app.post("/api/login")
 async def api_login(request: Request, payload: dict[str, Any]):
+    if not PASSWORD_LOGIN_ENABLED:
+        raise HTTPException(403, "password login is disabled")
     if not auth_enabled():
         return {"ok": True}
     given = str(payload.get("password", ""))
