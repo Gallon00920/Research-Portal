@@ -166,8 +166,8 @@ def api_health():
 # Same shape as report center: this app never talks to Azure. Auto Sign posts
 # here, we ask portal-service for the Microsoft redirect, and portal sends the
 # browser back to /api/auth/loginCallback. Portal host is UAT; prev Azure login is restricted.
-PORTAL_LOGIN_URL = os.environ.get("PORTAL_LOGIN_URL", "https://v3.uat.junson.cloud/portal-service/unified_login").strip()
-PORTAL_LOGIN_VALIDATE_URL = os.environ.get("PORTAL_LOGIN_VALIDATE_URL", "https://v3.uat.junson.cloud/portal-service/unified_login_validate").strip()
+PORTAL_LOGIN_URL = os.environ.get("PORTAL_LOGIN_URL", "https://junson.cloud/portal-service/unified_login").strip()
+PORTAL_LOGIN_VALIDATE_URL = os.environ.get("PORTAL_LOGIN_VALIDATE_URL", "https://junson.cloud/portal-service/unified_login_validate").strip()
 LOGIN_CALLBACK_URL = os.environ.get("LOGIN_CALLBACK_URL", "").strip()
 AZURE_PENDING_SECONDS = 30 * 60
 _azure_pending: dict[str, dict[str, Any]] = {}
